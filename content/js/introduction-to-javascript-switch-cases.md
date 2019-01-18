@@ -1,11 +1,9 @@
 ﻿---
 title: "Introduction to JavaScript Switch Cases"
-description: "In this short article, I will introduce you to JavaScript switch cases and how
-to use them with practical examples."
 date: 2018-01-04T13:22:14+07:00
 draft: false
 type: "post"
-tags: ["hugo", "theme"]
+tags: ["javascript", "es6", "developers"]
 ---
 
 # Introduction to JavaScript Switch Cases
