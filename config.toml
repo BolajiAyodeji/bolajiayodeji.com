@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://silly-hopper-6067e7.netlify.com/"
 languageCode = "en-us"
 title = "thewebdev.io"
 theme = "hugo-lamp"
