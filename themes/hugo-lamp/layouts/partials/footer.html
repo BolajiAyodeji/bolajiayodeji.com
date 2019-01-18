@@ -8,5 +8,9 @@
 
 {{ if .Site.GoogleAnalytics }}
 <amp-analytics type=googleanalytics>
-  <script type=application/json> { "vars" : { "account" : {{ .Site.GoogleAnalytics }} }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> {{ end }}
+  <script type=application/json>
+{ "vars" : { "account" : {{ .Site.GoogleAnalytics }} }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } }
+</script>
+</amp-analytics>
+{{ end }}
