@@ -1,13 +1,13 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "Hugo LAMP"
+title = "thewebdev Blog"
 theme = "hugo-lamp"
 googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
 [params]
   subtitle = "Light responsive AMP theme"
-  author = "Huy Nguyen"
-  logo = "/img/avatar.jpg"
+  author = "Bolaji Ayodeji"
+  logo = "/img/bolaji.jpg"
   description = "A light responsive Hugo AMP theme for blogger"
   paginate = 10
 
