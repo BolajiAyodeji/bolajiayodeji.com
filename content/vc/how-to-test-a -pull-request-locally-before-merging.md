@@ -3,7 +3,7 @@ title: "How to test a Pull Request locally before Merging."
 date: 2018-11-11T13:22:14+07:00
 draft: false
 type: "post"
-tags: ["javascript", "es6", "developers"]
+tags: ["git", "GitHub", "version  control"]
 ---
 
 # How to test a Pull Request locally before Merging.
