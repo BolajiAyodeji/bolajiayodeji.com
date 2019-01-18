@@ -12,5 +12,15 @@
     { "vars" : { "account" : {{ .Site.GoogleAnalytics }} }, "triggers" : { "trackPageview"
     : { "on" : "visible" , "request" : "pageview" } } }
   </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('../sw.js')
+                .then(function () {
+                    console.log("Service Worker Registered");
+                });
+        });
+    }
+</script>
 </amp-analytics>
 {{ end }}
