@@ -2,7 +2,7 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 author: "Author Name"
 cover: "/img/cover.jpg"
-tags: ["tagA", "tagB"]
+tags: ["tagA", "tagB", "tagC"]
 date: {{ .Date }}
 draft: true
 ---
