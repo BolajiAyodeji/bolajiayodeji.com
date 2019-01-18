@@ -45,7 +45,17 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   identifier = "pwa"
   url = "/pwa/"
 [[menu.main]]
-  name = "Tags"
+  name = "Version Control"
   weight = 3
-  identifier = "tags"
-  url = "/tags/"
+  identifier = "version-control"
+  url = "/version-control/"
+  [[menu.main]]
+  name = "Dev Tools"
+  weight = 4
+  identifier = "dev-tools"
+  url = "/dev-tools/"
+  [[menu.main]]
+  name = "Random"
+  weight = 5
+  identifier = "random"
+  url = "/random/"
