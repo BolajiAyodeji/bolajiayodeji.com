@@ -3,7 +3,7 @@ title: "How to redirect HTTP to HTTPS Using .htaccess"
 date: 2018-11-26T13:22:14+07:00
 draft: false
 type: "post"
-tags: ["javascript", "es6", "developers"]
+tags: ["htaccess", "https", "ssl"]
 ---
 
 # How to redirect HTTP to HTTPS Using .htaccess
