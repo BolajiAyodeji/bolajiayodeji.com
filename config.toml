@@ -39,21 +39,21 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   weight = 1
   identifier = "js"
   url = "/js/"
-[[menu.main]]
-  name = "PWA"
+  [[menu.main]]
+  name = "Dev Tools"
   weight = 2
-  identifier = "pwa"
-  url = "/pwa/"
+  identifier = "dev-tools"
+  url = "/dev-tools/"
 [[menu.main]]
   name = "Version Control"
   weight = 3
   identifier = "version-control"
   url = "/version-control/"
   [[menu.main]]
-  name = "Dev Tools"
+  name = "Optimization"
   weight = 4
-  identifier = "dev-tools"
-  url = "/dev-tools/"
+  identifier = "optimization"
+  url = "/optimization/"
   [[menu.main]]
   name = "Random"
   weight = 5
