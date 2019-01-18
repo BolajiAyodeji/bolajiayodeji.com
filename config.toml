@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "THEWEBDEV Blog"
+title = "thewebdev.io"
 theme = "hugo-lamp"
 googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
@@ -17,7 +17,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 
   # SEO configs
-  seotitle = "THEWEBDEV Blog"
+  seotitle = "thewebdev.io"
   googleSiteVerification = "google_site_verification_code"    # Google Webmaster
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 
