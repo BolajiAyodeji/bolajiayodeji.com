@@ -43,19 +43,19 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   name = "Dev Tools"
   weight = 2
   identifier = "dev-tools"
-  url = "/dev-tools/"
+  url = "/dt/"
 [[menu.main]]
   name = "Version Control"
   weight = 3
   identifier = "version-control"
-  url = "/version-control/"
+  url = "/vc/"
   [[menu.main]]
   name = "Optimization"
   weight = 4
   identifier = "optimization"
-  url = "/optimization/"
+  url = "/op/"
   [[menu.main]]
   name = "Random"
   weight = 5
   identifier = "random"
-  url = "/random/"
+  url = "/rd/"
