@@ -22,13 +22,12 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 
   # Social networks
-  email = "name@domain.com"
-  github = "huyb1991"
-  twitter = "twitter_username"
-  linkedin = "linkedin_username"
-  facebook = "facebook_username"
-  google = "googleplus_id_number"
-  instagram = "instagram_username"
+  email = "mailtobolaji@gmail.com"
+  github = "bolajiayodeji"
+  twitter = "iambolajiayo"
+  linkedin = "iambolajiayo"
+  facebook = "iambolajiayo"
+  instagram = "iambolajiayo"
   youtube = "youtube_username"
   dribbble = "dribbble_username"
 
