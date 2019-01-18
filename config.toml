@@ -5,10 +5,10 @@ theme = "hugo-lamp"
 googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
 [params]
-  subtitle = "Light responsive AMP theme"
+  subtitle = "Articles on Web Development. All articles are written by Bolaji Ayodeji."
   author = "Bolaji Ayodeji"
   logo = "/img/fav.png"
-  description = "A light responsive Hugo AMP theme for blogger"
+  description = "Articles on Web Development. All articles are written by Bolaji Ayodeji."
   paginate = 10
 
   # Publisher
