@@ -1,0 +1,9 @@
+{{ if and .Site.Params.adsensePublisher .Site.Params.adsenseSlot }}
+  <amp-ad type="adsense"
+    width=728
+    height=90
+    layout=responsive
+    data-ad-client="{{ .Site.Params.adsensePublisher }}"
+    data-ad-slot="{{ .Site.Params.adsenseSlot }}">
+  </amp-ad>
+{{ end }}

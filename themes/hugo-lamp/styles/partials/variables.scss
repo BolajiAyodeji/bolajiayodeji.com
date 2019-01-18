@@ -1,0 +1,100 @@
+/* Colors */
+$grey: #777;
+$grey-dark: darken($grey, 20%);
+$grey-light: lighten($grey, 40%);
+$white: #fff;
+$black: #000;
+$green: #6aac0e;
+$green-light: saturate($green, 10%);
+$blue: #3f9adc;
+
+/* Theme colors */
+$primary: $green;
+$light: darken($white, 5%);
+$pre-background: $grey-light;
+
+/* Layout */
+$main-background: darken($white, 5%);
+$sidebar-background: rgba($primary, 0.9);
+
+/* Text colors */
+$text: $grey;
+$text-title: lighten($black, 15%);
+$text-invert: findcolorinvert($text);
+$text-light: $grey;
+$text-strong: $grey-dark;
+$text-content-title: $green-light;
+$text-link: $blue;
+
+/* Border colors */
+$border-color: $grey-light;
+$border-hover: $grey-light;
+
+/* Box shadow colors */
+$box-shadow: rgba($black, 0.05);
+$box-shadow-dark: rgba($black, 0.15);
+$box-shadow-darker: rgba($black, 0.3);
+
+/* Typography */
+$base-font-size: 18px;
+$family-sans-serif: "Roboto",sans-serif;
+$family-monospace: "Roboto Mono",Menlo,Monaco,Consolas,"Courier New",monospace;
+$family-roboto: $family-sans-serif;
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.8rem;
+$weight-light: 100;
+$weight-normal: 300;
+$weight-semibold: 400;
+$weight-bold: 600;
+
+/* Radius */
+$radius-small: 2px;
+$radius: 3px;
+$radius-large: 5px;
+
+/* Responsive break point */
+$phone: 640px;
+$tablet: 800px;
+$desktop: 960px;
+$widescreen: 1440px;
+
+/* Icons */
+$icon-menu: 'e802';
+$icon-close: 'e801';
+$icon-email: 'e804';
+$icon-rss: 'e803';
+$icon-github: 'f09b';
+$icon-dribbble: 'f31b';
+$icon-linkedin: 'f318';
+$icon-twitter: 'f309';
+$icon-facebook: 'f30c';
+$icon-instagram: 'f16d';
+$icon-youtube: 'f16a';
+$icon-google: 'f30f';
+$icon-clock: 'e800';
+// Mixin for convert variable font
+// Read more at: https://github.com/sass/sass/issues/659#issuecomment-71759457
+@mixin variable-icon-font($icon-code) {
+  content: #{"\"\\"}#{$icon-code + "\""};
+}
+
+$color-linkedin: #007bb6;
+$color-twitter: #55acee;
+$color-facebook: #3b5998;
+$color-instagram: #3f729b;
+$color-youtube: #bb0000;
+$color-google: #dd4b39;
+
+/* Animation */
+$easing: ease-out;
+$speed: 0.5s;
+
+/* Metrics */
+$space-small: 10px;
+$space-normal: 20px;
+$space-large: 30px;
