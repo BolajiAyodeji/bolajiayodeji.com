@@ -1,4 +1,4 @@
-# thewebdev.tech
+# :tada: thewebdev.tech :tada:
 
 My personal PWA blog built with Hugo, JavaScript, PWAFire and Hosted on Netlify. <br>
 I write articles on Web & Frontend Development. <br>
@@ -8,8 +8,7 @@ Syntax theme based on [Hugo Lamp Theme](https://github.com/huyb1991/hugo-lamp) w
 
 ## Contributing Guide
 
-To run locally, you need to have [Hugo](https://gohugo.io/) setup first. <br>
-Hugo installation guide can be found [here](https://gohugo.io/getting-started/installing) <br>
+To run locally, you need to have [Hugo](https://gohugo.io/) setup first. Hugo installation guide can be found [here](https://gohugo.io/getting-started/installing) <br>
 
 
 After installing Hugo, clone this repository 
