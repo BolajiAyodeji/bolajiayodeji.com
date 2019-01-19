@@ -5,6 +5,16 @@
   {{ $description := .Description | default .Summary }}
 
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123719673-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123719673-3');
+</script>
+
   <!-- Page Author & Description -->
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
   <meta name="description" content="{{ $description | plainify }}">
