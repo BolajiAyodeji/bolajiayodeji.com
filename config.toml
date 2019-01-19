@@ -2,7 +2,7 @@ baseURL = "https://thewebdev.netlify.com"
 languageCode = "en-us"
 title = "⚡️ thewebdev.io ⚡️"
 theme = "hugo-lamp"
-googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
+googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 
 [params]
   subtitle = "Hi, I'm Bolaji Ayodeji. I write articles on web and frontend development."
