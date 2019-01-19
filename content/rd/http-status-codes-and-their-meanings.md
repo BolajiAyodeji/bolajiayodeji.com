@@ -6,8 +6,6 @@ type: "post"
 tags: ["status code", "browser", "http"]
 ---
 
-# HTTP status codes and their meanings.
-
 ![](https://cdn-images-1.medium.com/max/880/0*23QfPlJt7VEIM2ri.png)
 <span class="figcaption_hack">Source: Google</span>
 

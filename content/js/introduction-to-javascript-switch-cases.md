@@ -6,8 +6,6 @@ type: "post"
 tags: ["javascript", "es6", "developers"]
 ---
 
-# Introduction to JavaScript Switch Cases
-
 In this short article, I will introduce you to JavaScript switch cases and how
 to use them with practical examples.
 

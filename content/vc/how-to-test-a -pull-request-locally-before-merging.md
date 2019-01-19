@@ -6,13 +6,10 @@ type: "post"
 tags: ["git", "GitHub", "version  control"]
 ---
 
-# How to test a Pull Request locally before Merging.
-
 In this tutorial, I would show you how to check, test and make changes to a pull
 request before merging.
 
 ![](https://cdn-images-1.medium.com/max/880/1*ubVyD2GaOAlSfqRNbL0Bjg.png)
-<span class="figcaption_hack">How pull requests work on Github (from — gitcolony.com)</span>
 
 Recently I dived into
 [OpenSource](https://opensource.com/resources/what-open-source) development

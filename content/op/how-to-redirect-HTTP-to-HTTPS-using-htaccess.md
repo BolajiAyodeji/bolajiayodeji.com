@@ -6,8 +6,6 @@ type: "post"
 tags: ["htaccess", "https", "ssl"]
 ---
 
-# How to redirect HTTP to HTTPS Using .htaccess
-
 ![](https://cdn-images-1.medium.com/max/880/0*PMavcvFL8pv1AC47.png)
 
 Chrome and Firefox have started showing insecure warnings on sites without [SSL

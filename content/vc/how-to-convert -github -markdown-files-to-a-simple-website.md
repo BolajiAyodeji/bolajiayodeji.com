@@ -6,9 +6,6 @@ type: "post"
 tags: ["markdown", "GitHub", "website"]
 ---
 
-
-# How to convert GitHub Markdown files to a simple website
-
 ### Easy Markdown to GitHub Pages
 
 ### Introduction
