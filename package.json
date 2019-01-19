@@ -8,7 +8,9 @@
     "build":"hugo && npm run optimize:html", 
     "deploy":"npm run build && firebase deploy", 
     "optimize:html":"./node_modules/.bin/html-minifier --input-dir ./public/ --output-dir ./public/ --file-ext html -c ./.html-minifier-config.json", 
-    "watch":"./node_modules/.bin/nodemon -e scss -w ./ -x npm run build"
+    "watch":"./node_modules/.bin/nodemon -e scss -w ./ -x npm run build", 
+    "theme:build":"node ./.bin/styling", 
+    "theme:watch":"./node_modules/.bin/nodemon -e scss -w ./ -x npm run theme:build"
   }, 
   "author":"Bolaji Ayodeji", 
   "license":"MIT", 
