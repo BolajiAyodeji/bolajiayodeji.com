@@ -1,6 +1,6 @@
 baseURL = "https://thewebdev.netlify.com"
 languageCode = "en-us"
-title = "⚡️ thewebdev.io ⚡️"
+title = "⚡️ thewebdev ⚡️"
 theme = "hugo-lamp"
 googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 
