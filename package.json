@@ -1,5 +1,5 @@
  {
-  "name":"thewebdev Blog", 
+  "name":"thewebdev", 
   "version":"1.0.2", 
   "description":"Articles on Web Development. All written by Bolaji Ayodeji.", 
   "main":"index.js", 
