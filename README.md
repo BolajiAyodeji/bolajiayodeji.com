@@ -1,7 +1,7 @@
 # thewebdev.tech
 
-My personal PWA blog. I write articles on Web & Frontend Development. <br>
-Built with Hugo, JavaScript, PWAFire and Hosted on Netlify. <br>
+My personal PWA blog built with Hugo, JavaScript, PWAFire and Hosted on Netlify. <br>
+I write articles on Web & Frontend Development. <br>
 Blog here: https://thewebdev.netlify.com <br>
 Syntax theme based on [Hugo Lamp Theme](https://github.com/huyb1991/hugo-lamp) with tons of tweaks & modifications.
 
