@@ -16,13 +16,6 @@ switch cases section.*
 This article will explain better with more practical examples to help you
 understand switch cases in depth.
 
-I just learnt about switch cases last night, pretty funny right? :)
-
-I’m in the habit of writing about every new thing I learn, this helps me to
-learn faster and understand concepts deeply.
-
-If you follow me on Facebook, I write a lot about new stuff I learn in
-JavaScript, check me out [here](https://www.facebook.com/iambolajiayo)
 
 ### Prerequisites.
 
