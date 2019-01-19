@@ -12,6 +12,6 @@
   "author": "Bolaji Ayodeji",
   "license": "MIT",
   "devDependencies": {
-    "html-minifier": "^3.5.16"
+    "html-minifier": "^3.5.21"
   }
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Es6 on ⚡️️ thewebdev.io ⚡</title>
+    <link>https://thewebdev.netlify.com/tags/es6/</link>
+    <description>Recent content in Es6 on ⚡️️ thewebdev.io ⚡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jan 2018 13:22:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://thewebdev.netlify.com/tags/es6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to JavaScript Switch Cases</title>
+      <link>https://thewebdev.netlify.com/dt/introduction-to-javascript-switch-cases/</link>
+      <pubDate>Thu, 04 Jan 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/dt/introduction-to-javascript-switch-cases/</guid>
+      <description>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
+PS: This article is not for those without any JavaScript knowledge, it is expected that you’re taking some tutorial or course and you just got to the switch cases section.
+This article will explain better with more practical examples to help you understand switch cases in depth.
+I just learnt about switch cases last night, pretty funny right?</description>
+    </item>
+    
+    <item>
+      <title>Introduction to JavaScript Switch Cases</title>
+      <link>https://thewebdev.netlify.com/js/introduction-to-javascript-switch-cases/</link>
+      <pubDate>Thu, 04 Jan 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/js/introduction-to-javascript-switch-cases/</guid>
+      <description>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
+PS: This article is not for those without any JavaScript knowledge, it is expected that you’re taking some tutorial or course and you just got to the switch cases section.
+This article will explain better with more practical examples to help you understand switch cases in depth.
+I just learnt about switch cases last night, pretty funny right?</description>
+    </item>
+    
+  </channel>
+</rss>

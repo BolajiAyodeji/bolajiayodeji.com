@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ⚡️️ thewebdev.io ⚡</title>
+    <link>https://thewebdev.netlify.com/tags/</link>
+    <description>Recent content in Tags on ⚡️️ thewebdev.io ⚡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Nov 2018 13:22:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://thewebdev.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Browser</title>
+      <link>https://thewebdev.netlify.com/tags/browser/</link>
+      <pubDate>Sat, 24 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/browser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Developers</title>
+      <link>https://thewebdev.netlify.com/tags/developers/</link>
+      <pubDate>Thu, 04 Jan 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Es6</title>
+      <link>https://thewebdev.netlify.com/tags/es6/</link>
+      <pubDate>Thu, 04 Jan 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/es6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://thewebdev.netlify.com/tags/git/</link>
+      <pubDate>Sun, 11 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://thewebdev.netlify.com/tags/github/</link>
+      <pubDate>Sun, 11 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Htaccess</title>
+      <link>https://thewebdev.netlify.com/tags/htaccess/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/htaccess/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Http</title>
+      <link>https://thewebdev.netlify.com/tags/http/</link>
+      <pubDate>Sat, 24 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Https</title>
+      <link>https://thewebdev.netlify.com/tags/https/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://thewebdev.netlify.com/tags/javascript/</link>
+      <pubDate>Thu, 04 Jan 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://thewebdev.netlify.com/tags/markdown/</link>
+      <pubDate>Mon, 05 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ssl</title>
+      <link>https://thewebdev.netlify.com/tags/ssl/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Status Code</title>
+      <link>https://thewebdev.netlify.com/tags/status-code/</link>
+      <pubDate>Sat, 24 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/status-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Version Control</title>
+      <link>https://thewebdev.netlify.com/tags/version-control/</link>
+      <pubDate>Sun, 11 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://thewebdev.netlify.com/tags/website/</link>
+      <pubDate>Mon, 05 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/tags/website/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

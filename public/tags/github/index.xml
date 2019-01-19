@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on ⚡️️ thewebdev.io ⚡</title>
+    <link>https://thewebdev.netlify.com/tags/github/</link>
+    <description>Recent content in Github on ⚡️️ thewebdev.io ⚡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Nov 2018 13:22:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://thewebdev.netlify.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to test a Pull Request locally before Merging.</title>
+      <link>https://thewebdev.netlify.com/vc/how-to-test-a-pull-request-locally-before-merging/</link>
+      <pubDate>Sun, 11 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
+      <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
+Recently I dived into OpenSource development which i�m super psyched about now. I had some projects I made public and OpenSource on GitHub
+Recently i started receiving pull requests and this was pretty awesome and encouraging. A great way to start the party
+One major problem I had was how to test this pull requests, I had to use the local &amp;ldquo;copy and paste&amp;rdquo; method to test and run this pull requests before I merged them, this was really stressful.</description>
+    </item>
+    
+    <item>
+      <title>How to convert GitHub Markdown files to a simple website</title>
+      <link>https://thewebdev.netlify.com/vc/how-to-convert-github-markdown-files-to-a-simple-website/</link>
+      <pubDate>Mon, 05 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/vc/how-to-convert-github-markdown-files-to-a-simple-website/</guid>
+      <description>Easy Markdown to GitHub Pages Introduction This little guide demonstrate how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
+ You don&amp;rsquo;t need to use the command line or anything other than your browser. It doesn&amp;rsquo;t require any knowledge in Jekyll. It&amp;rsquo;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.</description>
+    </item>
+    
+  </channel>
+</rss>

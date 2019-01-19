@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/op/how-to-redirect-http-to-https-using-htaccess/</loc>
+    <lastmod>2018-11-26T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/rd/http-status-codes-and-their-meanings/</loc>
+    <lastmod>2018-11-24T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/vc/how-to-test-a-pull-request-locally-before-merging/</loc>
+    <lastmod>2018-11-11T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/vc/how-to-convert-github-markdown-files-to-a-simple-website/</loc>
+    <lastmod>2018-11-05T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/dt/introduction-to-javascript-switch-cases/</loc>
+    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/js/introduction-to-javascript-switch-cases/</loc>
+    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/browser/</loc>
+    <lastmod>2018-11-24T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/developers/</loc>
+    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/dt/</loc>
+    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/es6/</loc>
+    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/git/</loc>
+    <lastmod>2018-11-11T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/github/</loc>
+    <lastmod>2018-11-11T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/htaccess/</loc>
+    <lastmod>2018-11-26T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/http/</loc>
+    <lastmod>2018-11-24T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/https/</loc>
+    <lastmod>2018-11-26T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/javascript/</loc>
+    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/js/</loc>
+    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/markdown/</loc>
+    <lastmod>2018-11-05T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/op/</loc>
+    <lastmod>2018-11-26T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/rd/</loc>
+    <lastmod>2018-11-24T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/ssl/</loc>
+    <lastmod>2018-11-26T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/status-code/</loc>
+    <lastmod>2018-11-24T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/</loc>
+    <lastmod>2018-11-24T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/vc/</loc>
+    <lastmod>2018-11-11T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/version-control/</loc>
+    <lastmod>2018-11-11T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/tags/website/</loc>
+    <lastmod>2018-11-05T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://thewebdev.netlify.com/</loc>
+    <lastmod>2018-11-26T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

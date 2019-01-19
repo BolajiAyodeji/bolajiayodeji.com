@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Https on ⚡️️ thewebdev.io ⚡</title>
+    <link>https://thewebdev.netlify.com/tags/https/</link>
+    <description>Recent content in Https on ⚡️️ thewebdev.io ⚡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Nov 2018 13:22:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://thewebdev.netlify.com/tags/https/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to redirect HTTP to HTTPS Using .htaccess</title>
+      <link>https://thewebdev.netlify.com/op/how-to-redirect-http-to-https-using-htaccess/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://thewebdev.netlify.com/op/how-to-redirect-http-to-https-using-htaccess/</guid>
+      <description>Chrome and Firefox have started showing insecure warnings on sites without SSL certificates. Without SSL, your website will show insecure to the visitors. Therefore, using an SSL-encrypted connection for safety, accessibility or PCI compliance reasons is necessary. It becomes very important to redirect from HTTP to HTTPS.
+What is SSL? SSL (Secure Sockets Layer) is a standard security protocol for establishing encrypted links between a web server and a browser in an online communication.</description>
+    </item>
+    
+  </channel>
+</rss>
