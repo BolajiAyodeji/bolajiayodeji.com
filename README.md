@@ -1,4 +1,4 @@
-# :tada: thewebdev.tech :tada:
+# ⚡️ thewebdev.tech ⚡️
 
 My personal PWA blog built with Hugo, JavaScript, PWAFire and Hosted on Netlify. <br>
 I write articles on Web & Frontend Development. <br>
