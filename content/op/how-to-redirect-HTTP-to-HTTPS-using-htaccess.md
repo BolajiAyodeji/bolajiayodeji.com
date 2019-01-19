@@ -3,7 +3,7 @@ title: "How to redirect HTTP to HTTPS Using .htaccess"
 date: 2018-11-26T13:22:14+07:00
 draft: false
 type: "post"
-tags: ["htaccess", "https", "ssl"]
+tags: ["htaccess", "https", "SSL"]
 ---
 
 ![](https://cdn-images-1.medium.com/max/880/0*PMavcvFL8pv1AC47.png)
