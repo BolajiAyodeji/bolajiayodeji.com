@@ -49,13 +49,18 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   weight = 3
   identifier = "version-control"
   url = "/vc/"
-  [[menu.main]]
+[[menu.main]]
   name = "Optimization"
   weight = 4
   identifier = "optimization"
   url = "/op/"
-  [[menu.main]]
+[[menu.main]]
   name = "Random"
   weight = 5
   identifier = "random"
   url = "/rd/"
+[[menu.main]]
+  name = "Newsletter"
+  weight = 6
+  identifier = "news"
+  url = "https://help.com"
