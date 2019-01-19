@@ -1,13 +1,28 @@
 # thewebdev.tech
 
-My personal blog. I write articles on Web & Frontend Development. <br>
+My personal PWA blog. I write articles on Web & Frontend Development. <br>
+Built with Hugo, JavaScript, PWAFire and Hosted on Netlify.
+Blog here: https://thewebdev.netlify.com
 Syntax theme based on [Hugo Lamp Theme](https://github.com/huyb1991/hugo-lamp) with tons of tweaks & modifications.
 
-To run locally, `hugo server -D`, then open https://localhost:1313.
+
+## Contributing Guide
+
+To run locally, you need to have [Hugo](https://gohugo.io/) setup first. <br>
+Hugo installation guide can be found [here](https://gohugo.io/getting-started/installing) <br>
+
+
+After installing Hugo, clone this repository 
+```
+git clone https://github.com/BolajiAyodeji/thewebdev.tech.git
+```
+```
+cd thewebdev.tech
+```
+Run this command to start local build `hugo server -D`, then open https://localhost:1313.
 
 
 ## Contributing Translations
 
-If you translate any content into other languages feel free to open a Pull Request. <br>
-*Please ensure translations link to the original content.*
-You can translate any article on the website into your language and send a PR!
+You can translate any article on the website into your language and send a Pull Request! <br>
+*Please ensure translations link to the original content.* <br>
