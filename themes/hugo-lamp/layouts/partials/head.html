@@ -19,6 +19,11 @@
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
   <meta name="description" content="{{ $description | plainify }}">
 
+  <!--Open Graph-->
+  <meta property="og:image" content="{{ $logo }}">
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ $description | plainify }}" />
+
   <!-- Twitter Card -->
   {{ if isset .Params "cover" }}
     <meta name="twitter:card" content="summary_large_image" />
