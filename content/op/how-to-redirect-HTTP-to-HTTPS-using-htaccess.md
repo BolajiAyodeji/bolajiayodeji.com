@@ -26,8 +26,7 @@ server and browser remains encrypted.
 
 An **SSL certificate** is necessary to create SSL connection. You would need to
 give all details about the identity of your website and your company as and when
-you choose to activate SSL on your web server. Following this, two cryptographic
-keys are created — a Private Key and a Public Key.
+you choose to activate SSL on your web server. Following this, two cryptographic keys are created with a Private Key and a Public Key.
 
 [Learn More: Why SSL is
 Critical?](https://www.sslrenewals.com/blog/why-is-ssl-important-benefits-of-using-ssl-certificate)
@@ -109,7 +108,7 @@ Redirecting to HTTPS on a specific folder, add the following:
 
     RewriteRule ^(.*)$ 
 
-Note: Replace *“yourdomain”* with your actual domain name wherever required.
+Note: Replace *"yourdomain"* with your actual domain name wherever required.
 Also, in case of the folder, replace* /folder* with the actual folder name.
 
 Think it was helpful? Share this article to help others come on HTTPS.

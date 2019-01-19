@@ -17,9 +17,9 @@ files into a simple website using [Github Pages](https://pages.github.com/) and
 
 ![](https://cdn-images-1.medium.com/max/880/0*gM8PZEN4U-er19ne)
 
-* You don’t need to use the command line or anything other than your browser.
-* It doesn’t require any knowledge in Jekyll.
-* It’s completely compatible with any bunch of markdown files you already have in
+* You don't need to use the command line or anything other than your browser.
+* It doesn't require any knowledge in Jekyll.
+* It's completely compatible with any bunch of markdown files you already have in
 any existing repository without any modification to those files. That includes
 the basic `README.md`almost all repositories contain.
 * The markdown files will remain just as readable and usable in Github than in
@@ -37,7 +37,7 @@ That file should be created on the root of your repository. Here is some content
 to copy-paste in it:
 
 
-It’s basically just a few tuning of GitHub Pages’ default configuration to have
+It's basically just a few tuning of GitHub Pages’ default configuration to have
 a better handling of Markdown files.
 
 ### Activate GitHub Pages in your repository configuration
@@ -54,7 +54,7 @@ You must also choose a theme:
 
 ![](https://cdn-images-1.medium.com/max/880/0*zdXm2jwli-YMIBAh.png)
 
-That’s it! Now you can just use the link provided by GitHub to access you
+That's it! Now you can just use the link provided by GitHub to access you
 website:
 
     Your site is published at https://bolajiayodeji.github.io/xxxxxx/
@@ -83,5 +83,5 @@ Markdown](https://guides.github.com/features/mastering-markdown/).
 
 * No automatic links with GitHub Pages. The GitHub Markdown renderer can
 automatically detect a simple copy-pasted link and make it a clickable link.
-GitHub Pages doesn’t propose a feature to reproduce that behavior, so you’ll
+GitHub Pages doesn't propose a feature to reproduce that behavior, so you'll
 have to braces your links with the `[]()`syntax.

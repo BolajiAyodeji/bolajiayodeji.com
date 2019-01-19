@@ -22,7 +22,7 @@ encouraging. A great way to start the party
 ![](https://cdn-images-1.medium.com/max/880/1*_SlZ5NlPIr6Fq6TojIpSGw.png)
 
 One major problem I had was how to test this pull requests, I had to use the
-local “copy and paste” method to test and run this pull requests before I merged
+local "copy and paste" method to test and run this pull requests before I merged
 them, this was really stressful.
 
 I made my researches and found easier ways to do this and this is what I would

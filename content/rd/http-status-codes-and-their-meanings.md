@@ -13,7 +13,7 @@ Often time, we come across several errors while surfing through some websites
 which displays with a status code, as developers we need to be familiar with
 this status codes.
 
-In this article, I’d be explaining what each HTTP status code stand for.
+In this article, I'd be explaining what each HTTP status code stand for.
 
 **What is an HTTP status code?**<br> For every request from a web browser the
 server responds with a status code. If there was a error, you can get additional
@@ -47,7 +47,7 @@ than 50 requests are received from the same IP address (cumulative hits) within
 the same second, our server will block that IP for the next 10 minutes as a
 security measure.
 
-**HTTP status 500 — Internal Server Error**<br> This is a “catch all” status for
+**HTTP status 500 — Internal Server Error**<br> This is a "catch all" status for
 unexpected errors. It is a server side error message common causes of this are
 eg. misconfigured .htaccess files or PHP errors, which you can check in the File
 php_error.log on your Web host. You can find the php_error.log file in the /log/
@@ -59,6 +59,6 @@ currently unavailable or the server is over allocated. You can check the file
 php_error.log as described for the status code 500.<br> Should you not find
 helpful error messages in the log file, please try changing the session_cache to
 the option file system, you can do this in the easy name control panel if you
-navigate to [My Hosting]>>[PHP settings] and click the link “Settings”. Please
+navigate to [My Hosting]>>[PHP settings] and click the link "Settings". Please
 note that this change will take up to 15 minutes to take effect, so please try
 waiting 15 minutes before trying to call up your site and refresh it.
