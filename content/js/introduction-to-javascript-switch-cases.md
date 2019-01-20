@@ -10,7 +10,7 @@ In this short article, I will introduce you to JavaScript switch cases and how
 to use them with practical examples.
 
 *PS: This article is not for those without any JavaScript knowledge, it is
-expected that you’re taking some tutorial or course and you just got to the
+expected that you're taking some tutorial or course and you just got to the
 switch cases section.*
 
 This article will explain better with more practical examples to help you

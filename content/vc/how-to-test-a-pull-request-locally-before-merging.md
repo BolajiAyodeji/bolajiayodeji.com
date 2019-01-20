@@ -87,7 +87,7 @@ After making your changes:
 
 That's it, you have tested the pull request and made changes!
 
-If this article helped you, show appreciation by hitting some claps.
+If this article helped you, share!!!
 
 View all my projects on GitHub [here](http://github.com/bolajiayodeji)
 

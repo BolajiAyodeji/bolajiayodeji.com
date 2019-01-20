@@ -34,7 +34,7 @@ Critical?](https://www.sslrenewals.com/blog/why-is-ssl-important-benefits-of-usi
 In order to force your web traffic to use HTTPS, edit the codes in the
 **.htaccess file.**
 
-Before we move onto redirecting HTTP to HTTPS, here’s how you can edit .htaccess
+Before we move onto redirecting HTTP to HTTPS, here's how you can edit .htaccess
 file. If you already know skip to Redirection steps.
 
 ### Editing .htaccess File
@@ -49,7 +49,7 @@ Common directives in .htaccess file:
 **Ways to edit an .htaccess file:**
 
 1.  Edit the file on your computer and upload it to the server using FTP.
-1.  Use “Edit” mode in FTP program that allows you to edit a file remotely.
+1.  Use "Edit" mode in FTP program that allows you to edit a file remotely.
 1.  Use a text editor and SSH to edit the file.
 1.  Use the File Manager in **cPanel** to edit the file.
 
@@ -60,14 +60,14 @@ Common directives in .htaccess file:
 1.  Login to cPanel
 1.  Files > File Manager > Document Root for:
 1.  Now select the domain name you want to access
-1.  Check “Show Hidden Files (dotfiles)”
-1.  Click “Go”
+1.  Check "Show Hidden Files (dotfiles)"
+1.  Click "Go"
 1.  After a new tab or window opens, look for the .htaccess file.
 1.  Right click on the .htaccess file and click on “Code Edit” on the menu.
 1.  A dialogue box may pop up asking about encoding. Click “Edit” button to
 continue.
 1.  Edit the file
-1.  “Save Changes” when done.
+1.  "Save Changes" when done.
 1.  Test your website to make sure it is done correctly. In case, there is an error,
 restore to the previous version and try again.
 1.  Once you are done, click “Close” to close the window.
