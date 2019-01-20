@@ -10,19 +10,12 @@ In this short article, I will introduce you to JavaScript switch cases and how
 to use them with practical examples.
 
 *PS: This article is not for those without any JavaScript knowledge, it is
-expected that you’re taking some tutorial or course and you just got to the
+expected that you're taking some tutorial or course and you just got to the
 switch cases section.*
 
 This article will explain better with more practical examples to help you
 understand switch cases in depth.
 
-I just learnt about switch cases last night, pretty funny right? :)
-
-I’m in the habit of writing about every new thing I learn, this helps me to
-learn faster and understand concepts deeply.
-
-If you follow me on Facebook, I write a lot about new stuff I learn in
-JavaScript, check me out [here](https://www.facebook.com/iambolajiayo)
 
 ### Prerequisites.
 
@@ -31,7 +24,6 @@ JavaScript, check me out [here](https://www.facebook.com/iambolajiayo)
 * Web Browser
 * Your brain :)
 
-![](https://cdn-images-1.medium.com/max/880/0*f2yYmYJFuG3pH07G.jpg)
 
 A `switch` statement can basically replace multiple `if` checks in JavaScript.
 
@@ -165,8 +157,7 @@ There are so many practical examples of switch cases, you can head over to
 [google.com ](https://google.com/)and run a quick search for more switch cases
 examples.
 
-If this article helped you, show it by clapping, sharing or dropping some
-comments :)
+If this article helped you, show it by sharing!!
 
 Thanks for reading!
 

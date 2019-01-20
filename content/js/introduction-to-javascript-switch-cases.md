@@ -24,7 +24,6 @@ understand switch cases in depth.
 * Web Browser
 * Your brain :)
 
-![](https://cdn-images-1.medium.com/max/880/0*f2yYmYJFuG3pH07G.jpg)
 
 A `switch` statement can basically replace multiple `if` checks in JavaScript.
 
@@ -158,8 +157,7 @@ There are so many practical examples of switch cases, you can head over to
 [google.com ](https://google.com/)and run a quick search for more switch cases
 examples.
 
-If this article helped you, show it by clapping, sharing or dropping some
-comments :)
+If this article helped you, show it by sharing!!
 
 Thanks for reading!
 

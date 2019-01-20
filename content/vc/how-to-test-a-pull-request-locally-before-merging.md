@@ -9,7 +9,6 @@ tags: ["git", "GitHub", "version  control"]
 In this tutorial, I would show you how to check, test and make changes to a pull
 request before merging.
 
-![](https://cdn-images-1.medium.com/max/880/1*ubVyD2GaOAlSfqRNbL0Bjg.png)
 
 Recently I dived into
 [OpenSource](https://opensource.com/resources/what-open-source) development
@@ -19,7 +18,6 @@ OpenSource on [GitHub](https://github.com/bolajiayodeji)
 Recently i started receiving pull requests and this was pretty awesome and
 encouraging. A great way to start the party
 
-![](https://cdn-images-1.medium.com/max/880/1*_SlZ5NlPIr6Fq6TojIpSGw.png)
 
 One major problem I had was how to test this pull requests, I had to use the
 local "copy and paste" method to test and run this pull requests before I merged

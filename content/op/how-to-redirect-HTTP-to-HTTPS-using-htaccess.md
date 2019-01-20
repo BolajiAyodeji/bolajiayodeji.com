@@ -6,7 +6,6 @@ type: "post"
 tags: ["htaccess", "https", "SSL"]
 ---
 
-![](https://cdn-images-1.medium.com/max/880/0*PMavcvFL8pv1AC47.png)
 
 Chrome and Firefox have started showing insecure warnings on sites without [SSL
 certificates](https://www.instantssl.com/ssl.html). Without SSL, your website
@@ -14,7 +13,6 @@ will show insecure to the visitors. Therefore, using an SSL-encrypted connection
 for safety, accessibility or PCI compliance reasons is necessary. It becomes
 very important to redirect from HTTP to HTTPS.
 
-![](https://cdn-images-1.medium.com/max/880/0*wUTFJrRSM2vh1H7v.jpg)
 
 ### What is SSL?
 

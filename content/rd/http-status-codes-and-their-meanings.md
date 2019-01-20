@@ -6,8 +6,6 @@ type: "post"
 tags: ["status code", "browser", "http"]
 ---
 
-![](https://cdn-images-1.medium.com/max/880/0*23QfPlJt7VEIM2ri.png)
-<span class="figcaption_hack">Source: Google</span>
 
 Often time, we come across several errors while surfing through some websites
 which displays with a status code, as developers we need to be familiar with
@@ -29,7 +27,7 @@ username and password are correct.
 
 **HTTP status 403 - Forbidden**<br> This is a permissions issue. You often
 encounter this error when no index file (.htm, .html or .php) is present and the
-directory listing is off for a folder in the Web space (Line “Options -Indexes”
+directory listing is off for a folder in the Web space (Line "Options -Indexes"
 in a .htaccess file). Sometimes user authentication was provided, but the
 authenticated user is not permitted to view the content of the folder or file.
 Other times the operation is forbidden to all users. Sometimes this error occurs
