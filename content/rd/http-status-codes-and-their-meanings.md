@@ -60,3 +60,5 @@ the option file system, you can do this in the easy name control panel if you
 navigate to [My Hosting]>>[PHP settings] and click the link "Settings". Please
 note that this change will take up to 15 minutes to take effect, so please try
 waiting 15 minutes before trying to call up your site and refresh it.
+
+![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)

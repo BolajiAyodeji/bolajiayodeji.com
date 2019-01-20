@@ -165,3 +165,5 @@ You can follow me on twitter @iambolajiayo
 
 Check out some of my recent projects on
 [GitHub](https://github.com/bolajiayodeji)
+
+![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)

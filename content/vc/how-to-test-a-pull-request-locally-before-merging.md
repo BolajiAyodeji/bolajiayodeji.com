@@ -91,3 +91,5 @@ View all my projects on GitHub [here](http://github.com/bolajiayodeji)
 
 Contribute to [NettyFinder](https://netty-finder.herokuapp.com/)
 [here](https://github.com/BolajiAyodeji/netty-finder)
+
+![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)

@@ -84,3 +84,5 @@ Markdown](https://guides.github.com/features/mastering-markdown/).
 automatically detect a simple copy-pasted link and make it a clickable link.
 GitHub Pages doesn't propose a feature to reproduce that behavior, so you'll
 have to braces your links with the `[]()`syntax.
+
+![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
