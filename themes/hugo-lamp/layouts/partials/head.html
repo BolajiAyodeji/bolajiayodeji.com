@@ -15,16 +15,16 @@
   gtag('config', 'UA-123719673-3');
 </script>
 
-  <!-- Page Author & Description -->
-  <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
-  <meta name="description" content="{{ $description | plainify }}">
-
   <!--Open Graph-->
   <meta property="og:url" content="https://thewebdev.netlify.com/" />
   <meta property="og:type" content="blog" />
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ $description | plainify }}" />
-  <meta property="og:image" content="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+  <meta property="og:image" content="{{ $logo }}">
+
+  <!-- Page Author & Description -->
+  <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
+  <meta name="description" content="{{ $description | plainify }}">
 
   <!-- Twitter Card -->
   {{ if isset .Params "cover" }}
