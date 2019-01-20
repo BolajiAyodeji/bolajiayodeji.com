@@ -1,6 +1,6 @@
 <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
   <ul class="sidebar-list">
-    <li class="sidebar-menu"><button class="sidebar-icon" on="tap:sidebar.close">&#x274c;</button></li>
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
     {{ $type := .Type }}
     {{ $kind := .Kind }}
     {{ $currentPage := . }}
