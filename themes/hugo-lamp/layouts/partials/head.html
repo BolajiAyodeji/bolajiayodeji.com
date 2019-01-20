@@ -15,12 +15,6 @@
   gtag('config', 'UA-123719673-3');
 </script>
 
-  <!--Open Graph-->
-  <meta property="og:url" content="https://thewebdev.netlify.com/" />
-  <meta property="og:type" content="blog" />
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:description" content="{{ $description | plainify }}" />
-  <meta property="og:image" content="{{ $logo }}">
 
   <!-- Page Author & Description -->
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
@@ -46,6 +40,7 @@
   <!-- Site Author & Description -->
   <meta name="author" content="{{ .Site.Params.author }}" />
   <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta property="og:image" content="{{ $logo }}" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
