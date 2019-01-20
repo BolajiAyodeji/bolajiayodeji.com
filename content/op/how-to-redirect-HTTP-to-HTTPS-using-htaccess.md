@@ -7,8 +7,6 @@ tags: ["htaccess", "https", "SSL"]
 ---
 
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png)
-
 Chrome and Firefox have started showing insecure warnings on sites without [SSL
 certificates](https://www.instantssl.com/ssl.html). Without SSL, your website
 will show insecure to the visitors. Therefore, using an SSL-encrypted connection
@@ -112,3 +110,5 @@ Note: Replace *"yourdomain"* with your actual domain name wherever required.
 Also, in case of the folder, replace* /folder* with the actual folder name.
 
 Think it was helpful? Share this article to help others come on HTTPS.
+
+![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
