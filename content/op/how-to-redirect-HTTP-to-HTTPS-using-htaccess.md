@@ -63,14 +63,14 @@ Common directives in .htaccess file:
 1.  Check "Show Hidden Files (dotfiles)"
 1.  Click "Go"
 1.  After a new tab or window opens, look for the .htaccess file.
-1.  Right click on the .htaccess file and click on “Code Edit” on the menu.
-1.  A dialogue box may pop up asking about encoding. Click “Edit” button to
+1.  Right click on the .htaccess file and click on "Code Edit" on the menu.
+1.  A dialogue box may pop up asking about encoding. Click "Edit" button to
 continue.
 1.  Edit the file
 1.  "Save Changes" when done.
 1.  Test your website to make sure it is done correctly. In case, there is an error,
 restore to the previous version and try again.
-1.  Once you are done, click “Close” to close the window.
+1.  Once you are done, click "Close" to close the window.
 
 ### Redirecting HTTP to HTTPS
 
