@@ -19,11 +19,6 @@
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
   <meta name="description" content="{{ $description | plainify }}">
 
-  <!--Open Graph-->
-  <meta property="og:image" content="/themes/hugo-lamp/static/img/fav-500.png">
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:description" content="{{ $description | plainify }}" />
-
   <!-- Twitter Card -->
   {{ if isset .Params "cover" }}
     <meta name="twitter:card" content="summary_large_image" />
@@ -51,6 +46,11 @@
   <meta name="twitter:title" content="{{ if isset .Site.Params "seotitle" }}{{ .Site.Params.seotitle }}{{ else }}{{ .Site.Title }}{{ end }}" />
   <meta name="twitter:description" content="{{ .Site.Params.description }}" />
   <meta name="twitter:image" content="{{ $logo | absURL }}" />
+
+  <!--Open Graph-->
+  <meta property="og:image" content="/themes/hugo-lamp/static/img/fav-500.png">
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ $description | plainify }}" />
 
 {{ end }}
 
