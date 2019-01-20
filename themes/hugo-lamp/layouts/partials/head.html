@@ -1,11 +1,25 @@
-{{ $gohugoio := "gohugoio" }}
+{{ $gohugoio := "thewebdev" }}
 {{ $logo := "/img/fav-500.png" }}
 <!-- Site & Page Meta Data -->
 {{ if eq .Type "post" }}
   {{ $description := .Description | default .Summary }}
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123719673-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123719673-3');
+</script>
+
+
   <!-- Page Author & Description -->
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
   <meta name="description" content="{{ $description | plainify }}">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
 
   <!-- Twitter Card -->
   {{ if isset .Params "cover" }}
@@ -27,6 +41,11 @@
   <!-- Site Author & Description -->
   <meta name="author" content="{{ .Site.Params.author }}" />
   <meta name="description" content="{{ .Site.Params.description }}" />
+
+  <!--Open Graph-->
+  <meta property="og:image" content="{{ $logo | absURL }}" />
+  <meta property="og:url" content="https://thewebdev.netlify.com/" />
+  <meta property="og:type" content="article" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
@@ -56,11 +75,13 @@
 {{ if isset .Site.Params "msvalidate" }}<meta name="msvalidate.01" content="{{ .Site.Params.msValidate }}" />{{ end }}
 
 <!-- Favicon and Touch icons -->
-<link rel="icon" href="/img/favicon.ico" />
+<link rel="icon" href="/img/fav-500.png" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="apple-touch-icon" sizes="120x120" href="{{ $logo }}">
 
+<!--Manifest setup-->
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#424242" />
 <!-- Styles -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 <style amp-custom>{{ partial "stylesheet" | safeCSS }}</style>
