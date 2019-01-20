@@ -111,4 +111,7 @@ Also, in case of the folder, replace* /folder* with the actual folder name.
 
 Think it was helpful? Share this article to help others come on HTTPS.
 
+
+# Subscribe for my Newsletter [here](https://eepurl.com/geCCfL) and get notified when I write something cool.
+
 ![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
