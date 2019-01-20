@@ -20,9 +20,11 @@
   <meta name="description" content="{{ $description | plainify }}">
 
   <!--Open Graph-->
-  <meta property="og:image" content="/themes/hugo-lamp/static/img/fav-500.png">
+  <meta property="og:url" content="https://thewebdev.netlify.com/" />
+  <meta property="og:type" content="blog" />
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ $description | plainify }}" />
+  <meta property="og:image" content="/themes/hugo-lamp/static/img/fav-500.png">
 
   <!-- Twitter Card -->
   {{ if isset .Params "cover" }}
