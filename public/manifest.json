@@ -1,6 +1,6 @@
  {
-  "name":"thewebdev Blog", 
-  "short_name":"thewebdev", 
+  "name":"bolajiayodeji.com", 
+  "short_name":"bolajiayodeji", 
   "icons":[ {
       "src":"img/icons/icon-72x72.png", 
       "sizes":"72x72", 
@@ -37,6 +37,6 @@
   ], 
   "start_url":"/index.html", 
   "display":"standalone", 
-  "background_color":"#2dce89", 
-  "theme_color":"#11cdef"
+  "background_color":"#63D1F4", 
+  "theme_color":"#424242"
 }
