@@ -37,32 +37,37 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   category = "categories"
 
 [[menu.main]]
-  name = "JavaScript"
+  name = "Home"
   weight = 1
+  identifier = "home"
+  url = "/"
+  [[menu.main]]
+  name = "JavaScript"
+  weight = 2
   identifier = "js"
   url = "/js/"
   [[menu.main]]
   name = "Dev Tools"
-  weight = 2
+  weight = 3
   identifier = "dev-tools"
   url = "/dt/"
 [[menu.main]]
   name = "Version Control"
-  weight = 3
+  weight = 4
   identifier = "version-control"
   url = "/vc/"
 [[menu.main]]
   name = "Optimization"
-  weight = 4
+  weight = 5
   identifier = "optimization"
   url = "/op/"
 [[menu.main]]
   name = "Random"
-  weight = 5
+  weight = 6
   identifier = "random"
   url = "/rd/"
 [[menu.main]]
   name = "Newsletter"
-  weight = 6
+  weight = 7
   identifier = "news"
   url = "https://eepurl.com/geCCfL"
