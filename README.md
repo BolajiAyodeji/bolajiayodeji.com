@@ -16,7 +16,7 @@ After installing Hugo, clone this repository
 git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git
 ```
 ```
-cd thewebdev.tech
+cd bolajiayodeji.com
 ```
 Run this command to start local build `hugo server -D`, then open https://localhost:1313.
 
