@@ -13,7 +13,7 @@ To run locally, you need to have [Hugo](https://gohugo.io/) setup first. Hugo in
 
 After installing Hugo, clone this repository 
 ```
-git clone https://github.com/BolajiAyodeji/thewebdev.tech.git
+git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git
 ```
 ```
 cd thewebdev.tech
