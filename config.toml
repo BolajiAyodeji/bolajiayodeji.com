@@ -8,8 +8,8 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   titleName = "Hi, I'm Bolaji."
   subtitle = "I write articles on web and frontend development. 🚀"
   portfolio = "View my Portfolio →"
-  author = "Bolaji Ayodeji"
-  logo = "/img/fav-500.png"
+  author = "⚡️Bolaji Ayodeji⚡️"
+  logo = "img/fav-500.png"
   description = "Articles on Web & Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀"
   paginate = 10
 
