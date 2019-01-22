@@ -19,7 +19,7 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 
   # SEO configs
-  seotitle = "thewebdev"
+  seotitle = "Bolaji Ayodeji"
   googleSiteVerification = "3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk"    # Google Webmaster
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 
