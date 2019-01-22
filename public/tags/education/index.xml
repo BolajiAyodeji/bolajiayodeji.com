@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rds on ⚡️Bolaji Ayodeji⚡️</title>
-    <link>https://bolajiayodeji.com/rd/</link>
-    <description>Recent content in Rds on ⚡️Bolaji Ayodeji⚡️</description>
+    <title>Education on ⚡️Bolaji Ayodeji⚡️</title>
+    <link>https://bolajiayodeji.com/tags/education/</link>
+    <description>Recent content in Education on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jan 2019 13:22:14 +0700</lastBuildDate>
     
-	<atom:link href="https://bolajiayodeji.com/rd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/education/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,18 +21,6 @@
 Those are the words of a developer drenched and soaked with imposter syndrome.
 Over time we keep fighting ourselves, trying to run away from our shadows, trying to find shortcuts, yes I did also, I really did :(
 At a point in my life, I just felt some things were not meant for me, I felt maths was too complex for me, JavaScript was not my thing!</description>
-    </item>
-    
-    <item>
-      <title>HTTP status codes and their meanings</title>
-      <link>https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/</link>
-      <pubDate>Sat, 24 Nov 2018 13:22:14 +0700</pubDate>
-      
-      <guid>https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/</guid>
-      <description>Often time, we come across several errors while surfing through some websites which displays with a status code, as developers we need to be familiar with this status codes.
-In this article, I&amp;rsquo;d be explaining what each HTTP status code stand for.
-What is an HTTP status code?
-For every request from a web browser the server responds with a status code. If there was a error, you can get additional information about the error.</description>
     </item>
     
   </channel>

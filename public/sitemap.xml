@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bolajiayodeji.com/rd/the-growth-mindet-demystified/</loc>
+    <lastmod>2019-01-21T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</loc>
     <lastmod>2019-01-04T13:22:14+07:00</lastmod>
   </url>
@@ -45,13 +50,19 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/developers/</loc>
-    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-21T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bolajiayodeji.com/dt/</loc>
     <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/education/</loc>
+    <lastmod>2019-01-21T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -70,6 +81,12 @@
   <url>
     <loc>https://bolajiayodeji.com/tags/github/</loc>
     <lastmod>2018-11-11T13:22:14+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/growth-mindset/</loc>
+    <lastmod>2019-01-21T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -117,7 +134,7 @@
   
   <url>
     <loc>https://bolajiayodeji.com/rd/</loc>
-    <lastmod>2018-11-24T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-21T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -159,7 +176,7 @@
   
   <url>
     <loc>https://bolajiayodeji.com/</loc>
-    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-21T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
