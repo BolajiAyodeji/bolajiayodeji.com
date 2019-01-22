@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Version Control on ⚡️Bolaji Ayodeji⚡️</title>
-    <link>https://thewebdev.netlify.com/tags/version-control/</link>
+    <link>https://bolajiayodeji.com/tags/version-control/</link>
     <description>Recent content in Version Control on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Nov 2018 13:22:14 +0700</lastBuildDate>
     
-	<atom:link href="https://thewebdev.netlify.com/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to test a Pull Request locally before Merging.</title>
-      <link>https://thewebdev.netlify.com/vc/how-to-test-a-pull-request-locally-before-merging/</link>
+      <link>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</link>
       <pubDate>Sun, 11 Nov 2018 13:22:14 +0700</pubDate>
       
-      <guid>https://thewebdev.netlify.com/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
+      <guid>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
       <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
 Recently I dived into OpenSource development which i&amp;rsquo;m super psyched about now. I had some projects I made public and OpenSource on GitHub
 Recently i started receiving pull requests and this was pretty awesome and encouraging. A great way to start the party
