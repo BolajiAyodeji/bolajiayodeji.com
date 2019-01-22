@@ -6,17 +6,17 @@
     <description>Recent content in Javascript on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jan 2018 13:22:14 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 13:22:14 +0700</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction to JavaScript Switch Cases</title>
-      <link>https://bolajiayodeji.com/dt/introduction-to-javascript-switch-cases/</link>
-      <pubDate>Thu, 04 Jan 2018 13:22:14 +0700</pubDate>
+      <link>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</link>
+      <pubDate>Fri, 04 Jan 2019 13:22:14 +0700</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/introduction-to-javascript-switch-cases/</guid>
+      <guid>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</guid>
       <description>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
 PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.
 This article will explain better with more practical examples to help you understand switch cases in depth.
@@ -25,10 +25,10 @@ Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)
     
     <item>
       <title>Introduction to JavaScript Switch Cases</title>
-      <link>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</link>
+      <link>https://bolajiayodeji.com/dt/introduction-to-javascript-switch-cases/</link>
       <pubDate>Thu, 04 Jan 2018 13:22:14 +0700</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</guid>
+      <guid>https://bolajiayodeji.com/dt/introduction-to-javascript-switch-cases/</guid>
       <description>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
 PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.
 This article will explain better with more practical examples to help you understand switch cases in depth.

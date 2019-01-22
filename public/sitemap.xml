@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</loc>
+    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/</loc>
     <lastmod>2018-11-26T13:22:14+07:00</lastmod>
   </url>
@@ -28,11 +33,6 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</loc>
-    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/tags/browser/</loc>
     <lastmod>2018-11-24T13:22:14+07:00</lastmod>
     <priority>0</priority>
@@ -45,7 +45,7 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/developers/</loc>
-    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,7 +57,7 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/es6/</loc>
-    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,13 +93,13 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/javascript/</loc>
-    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bolajiayodeji.com/js/</loc>
-    <lastmod>2018-01-04T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -159,7 +159,7 @@
   
   <url>
     <loc>https://bolajiayodeji.com/</loc>
-    <lastmod>2018-11-26T13:22:14+07:00</lastmod>
+    <lastmod>2019-01-04T13:22:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
