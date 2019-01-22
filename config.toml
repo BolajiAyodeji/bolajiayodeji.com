@@ -9,7 +9,7 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   subtitle = "I write articles on web and frontend development. 🚀"
   portfolio = "View my Portfolio →"
   author = "⚡️Bolaji Ayodeji⚡️"
-  logo = "https://bolajiayodeji.com/img/fav-500.png"
+  logo = "https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
   description = "Articles on Web & Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀"
   paginate = 10
 
