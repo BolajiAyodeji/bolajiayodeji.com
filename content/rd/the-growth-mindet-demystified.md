@@ -115,7 +115,7 @@ The list continues...
 
 > "The growth mindset does allow people to love what they're doing and continue
 > to love it in the face of difficulties, the growth mindset allows people to
-value what they're doing regardless of the outcome." — Dr Dweck
+value what they're doing regardless of the outcome." - Dr Dweck
 
 Now, this is pretty much it, Plants don't grow and become fruitful once its seed
 hit the ground, it takes a lot of weeding, watering, manuring and strategies to
@@ -201,10 +201,7 @@ Begin your journey of growth today!!
 
 *****
 
-Thank you for reading, If this helped you in any way, drop some comments and
-let's hear your views.
-
-Don't forget to clap and share :)
+Thank you for reading, If this helped you in any way, share and help someone too:)
 
 
 ![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
