@@ -113,8 +113,8 @@ stability
 
 The list continues...
 
-> "The growth mindset does allow people to love what they're doing — and continue
-> to love it in the face of difficulties. … The growth mindset allows people to
+> "The growth mindset does allow people to love what they're doing and continue
+> to love it in the face of difficulties, the growth mindset allows people to
 value what they're doing regardless of the outcome." — Dr Dweck
 
 Now, this is pretty much it, Plants don't grow and become fruitful once its seed
@@ -188,7 +188,7 @@ know and get better doing them repeatedly.
 
 *****
 
-Your mindset is the view you adopt of yourself — whether your abilities and
+Your mindset is the view you adopt of yourself whether your abilities and
 characteristics can change, or whether they are set in stone, the decision is
 all yours.
 
