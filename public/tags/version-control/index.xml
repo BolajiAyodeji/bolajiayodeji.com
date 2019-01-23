@@ -18,9 +18,8 @@
       
       <guid>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
       <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
-Recently I dived into OpenSource development which i&amp;rsquo;m super psyched about now. I had some projects I made public and OpenSource on GitHub
-Recently i started receiving pull requests and this was pretty awesome and encouraging. A great way to start the party
-One major problem I had was how to test this pull requests, I had to use the local &amp;ldquo;copy and paste&amp;rdquo; method to test and run this pull requests before I merged them, this was really stressful.</description>
+So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
+The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.</description>
     </item>
     
   </channel>

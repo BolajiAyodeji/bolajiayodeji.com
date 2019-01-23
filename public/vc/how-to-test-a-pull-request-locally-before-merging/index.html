@@ -15,12 +15,12 @@ window.dataLayer = window.dataLayer || [];
   gtag('config', 'UA-123719673-3');
 </script>
 <meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="In this tutorial, I would show you how to check, test and make changes to a pull request before merging.Recently I dived into OpenSource development which i&amp;rsquo;m super psyched about now. I had some projects I made public and OpenSource on GitHubRecently i started receiving pull requests and this was pretty awesome and encouraging. A great way to start the partyOne major problem I had was how to test this pull requests, I had to use the local &amp;ldquo;copy and paste&amp;rdquo; method to test and run this pull requests before I merged them, this was really stressful.">
+<meta name=description content="In this tutorial, I would show you how to check, test and make changes to a pull request before merging.So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.">
 <meta name=keywords content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content=@iambolajiayo>
 <meta name=twitter:title content="How to test a Pull Request locally before Merging.">
-<meta name=twitter:description content="In this tutorial, I would show you how to check, test and make changes to a pull request before merging.Recently I dived into OpenSource development which i&amp;rsquo;m super psyched about now. I had some projects I made public and OpenSource on GitHubRecently i started receiving pull requests and this was pretty awesome and encouraging. A great way to start the partyOne major problem I had was how to test this pull requests, I had to use the local &amp;ldquo;copy and paste&amp;rdquo; method to test and run this pull requests before I merged them, this was really stressful.">
+<meta name=twitter:description content="In this tutorial, I would show you how to check, test and make changes to a pull request before merging.So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
 <meta name=generator content="Hugo 0.53">
 <link rel=canonical href=https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/ >
@@ -106,35 +106,30 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}::
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>How to test a Pull Request locally before Merging.</h1>
-<p class=entry-meta><span class=entry-time>Nov 11, 2018</span> 3 min read</p>
+<p class=entry-meta><span class=entry-time>Nov 11, 2018</span> 2 min read</p>
 </header>
 <article class=post-content>
 <p>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.</p>
-<p>Recently I dived into
-<a href=https://opensource.com/resources/what-open-source>OpenSource</a> development which i’m super psyched about now. I had some projects I made public and OpenSource on <a href=https://github.com/bolajiayodeji>GitHub</a></p>
-<p>Recently i started receiving pull requests and this was pretty awesome and encouraging. A great way to start the party</p>
-<p>One major problem I had was how to test this pull requests, I had to use the local “copy and paste” method to test and run this pull requests before I merged them, this was really stressful.</p>
-<p>I made my researches and found easier ways to do this and this is what I would be sharing with you.</p>
 <p>So your repository got a new Pull Request?, You don’t want to merge it before testing it out yourself locally on your machine. How do you go about it ?</p>
 <p>The pull request is available on this git ref <code>pull/{ID}/head</code> which you can fetch using this, where ID is the pull request id.</p>
 <p><strong>REQUIREMENTS</strong></p>
-<p>*(1) Make sure you have a cloned version of the repository on your machine, Check <em><a href=https://help.github.com/articles/cloning-a-repository/ >here</a></em> to learn how to clone repositories from GitHub.*</p>
-<p>*(2) Have your cloned Repository integrated into your
+<p>(1) Make sure you have a cloned version of the repository on your machine, Check <em><a href=https://help.github.com/articles/cloning-a-repository/ >here</a></em> to learn how to clone repositories from GitHub.</p>
+<p>(2) Have your cloned Repository integrated into your
 <em><a href=https://en.wikipedia.org/wiki/Integrated_development_environment>IDE</a></em>
-preferably <em><a href=https://code.visualstudio.com/ >Visual Studio Code</a></em> [In this tutorial, I used VsCode]*</p>
-<p>*(3) Be conversant with <em><a href=https://git-scm.com/ >git</a></em> commands*</p>
+preferably <em><a href=https://code.visualstudio.com/ >Visual Studio Code</a></em> [In this tutorial, I used VsCode]</p>
+<p>(3) Be conversant with <em><a href=https://git-scm.com/ >git</a></em> commands</p>
 <ul>
 <li><p>Go to your repository folder</li>
 <li><p>Initialize git (you can do that by right clicking in the root folder)</li>
 <li><p>Ensure your work tree is clean (you can do that by running <code>git status</code>)</li>
 <li><p>Run the following commands to FETCH the pull request from GitHub where <strong>ID</strong>
-is the pull request�s ID</p>
-<p>git fetch origin pull/ /head && git checkout FETCH_HEAD</li>
+is the pull request’s ID</li>
 </ul>
+<pre><code>git fetch origin pull/ID/head && git checkout FETCH_HEAD
+</code></pre>
 <p>Or, if you only want to <a href=https://git-scm.com/docs/git-cherry-pick>cherry pick</a>
 it, instead of checking it out, you can use</p>
-<pre><code>git fetch origin pull/
-/head && git cherry-pick FETCH_HEAD
+<pre><code>git fetch origin pull/ID/head && git cherry-pick FETCH_HEAD
 </code></pre>
 <ul>
 <li>Open your IDE (VsCode) Your folder structure should change now pending on the contents of the PR.</li>
@@ -144,7 +139,9 @@ it, instead of checking it out, you can use</p>
 <p>Once satisfied <code>git checkout master</code> to return to the master branch.</p>
 <p>You can also make changes to the pull request and push back to GitHub as a new commit or pull request.</p>
 <p>After making your changes:</p>
-<pre><code>git push origin 
+<pre><code>git add --all
+git commit -m "Modified PR"
+git push origin BRANCHNAME (e.g master or test)
 </code></pre>
 <p>That’s it, you have tested the pull request and made changes!</p>
 <p>If this article helped you, share!!!</p>

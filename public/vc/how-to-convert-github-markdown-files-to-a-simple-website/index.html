@@ -106,7 +106,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}::
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>How to convert GitHub Markdown files to a simple website</h1>
-<p class=entry-meta><span class=entry-time>Nov 5, 2018</span> 2 min read</p>
+<p class=entry-meta><span class=entry-time>Nov 5, 2018</span> 3 min read</p>
 </header>
 <article class=post-content>
 <h3 id=easy-markdown-to-github-pages>Easy Markdown to GitHub Pages</h3>
@@ -126,7 +126,22 @@ files into a simple website using <a href=https://pages.github.com/ >Github Page
 <p>You can of course create a new repository if you want.</p>
 <h3 id=create-the-config-yml-file>Create the <code>_.config.yml</code> file</h3>
 <p>That file should be created on the root of your repository. Here is some content to copy-paste in it:</p>
-<p>It’s basically just a few tuning of GitHub Pages� default configuration to have a better handling of Markdown files.</p>
+<pre><code>plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - CONTRIBUTING.md
+  - README.md
+  - LICENSE.md
+  - COPYING.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - ISSUE_TEMPLATE.md
+  - PULL_REQUEST_TEMPLATE.md
+</code></pre>
+<p>It’s basically just a few tuning of GitHub Pages default configuration to have a better handling of Markdown files.</p>
 <h3 id=activate-github-pages-in-your-repository-configuration>Activate GitHub Pages in your repository configuration</h3>
 <p>On the GitHub page of your project go into <code>Settings > Options > Github Pages</code>:</p>
 <p><img src=https://cdn-images-1.medium.com/max/880/0*eZBV54NOulDlzKy8.png alt=""></p>

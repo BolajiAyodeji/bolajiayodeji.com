@@ -123,6 +123,20 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}::
 <p>It gives a more descriptive way to compare a value with multiple variants.</p>
 <h3 id=the-switch-syntax><strong>The Switch Syntax</strong></h3>
 <p>The <code>switch</code> has one or more <code>case</code> blocks and an optional default case.</p>
+<pre><code>switch(x) {
+  case 'value1':  // if (x === 'value1')
+    //code here
+    [break]
+
+  case 'value2':  // if (x === 'value2')
+    //code here
+    [break]
+
+  default:
+    //code here
+    [break]
+}
+</code></pre>
 <ul>
 <li>The value of <code>x</code> is checked for strict equality to the value from the first
 <code>case</code> (that is, <code>value1</code>) then to the second (<code>value2</code>) and so on.</li>
@@ -134,19 +148,80 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}::
 <li><strong>Simple Play & Pause Switch</strong></li>
 </ul>
 <p>The <code>switch</code> statement can be used for multiple branches based on a number or string:</p>
+<pre><code>switch (movie) {
+  case 'play':
+    playMovie();
+    break;
+  case 'pause':
+    pauseMovie();
+    break;
+  default:
+    doNothing();
+}
+</code></pre>
 <p>If you don’t add a <code>break</code> statement, the execution will “fall through” to the next level. It’s essential that you deliberately label the fall through with a comment if you really meant it to aid debugging:</p>
+<pre><code>switch (movie) {
+  case 'play': // fallthrough
+  case 'pause':
+    pauseMovie();
+    break;
+  default:
+    doNothing();
+}
+</code></pre>
 <p>The default clause is optional. You can have expressions in both the switch part and the cases if you like; comparisons take place between the two using the
 <code>===</code> operator:</p>
+<pre><code>switch (3 + 7) {
+  case 5 + 5:
+    correct();
+    break;
+  default:
+    neverhappens();
+}
+</code></pre>
 <ul>
 <li><strong>Simple Maths Calc Switch</strong></li>
 </ul>
+<pre><code>let average = 2 + 6;
+
+switch (average) {
+  case 4:
+    alert( 'Too small' );
+    break;
+  case 8:
+    alert( 'Exactly!' );
+    break;
+  case 10:
+    alert( 'Too large' );
+    break;
+  default:
+    alert( "Incorrect values!" );
+}
+</code></pre>
 <p>Here the <code>switch</code> starts to compare <code>average</code>from the first <code>case</code> variant that is <code>4</code>. The match fails.</p>
 <p>Then <code>8</code>. That’s a match, so the execution starts from <code>case 8</code>until the nearest
 <code>break</code>.</p>
 <p>If** there is no <strong><code>break</code></strong> then the execution continues with the next
 <strong><code>case</code></strong> without any checks.**</p>
 <p>Here is an example without <code>break</code>:</p>
-<p>In the example above we’ll see sequential execution of three <code>alert</code>s:</p>
+<pre><code>let average = 2 + 6;
+
+switch (average) {
+  case 4:
+    alert( 'Too small' );
+  case 8:
+    alert( 'Exactly!' );
+  case 10:
+    alert( 'Too big' );
+  default:
+    alert( "Incorrect values!" );
+}
+</code></pre>
+<p>In the example above we’ll see sequential execution of three <code>alerts</code>:</p>
+<pre><code>alert( 'Exactly!' );
+alert( 'Too big' );
+alert( "Incorrect values!" );
+</code></pre>
 <ul>
 <li><strong>getDay() method switch case</strong></li>
 </ul>
@@ -213,8 +288,8 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}::
 <p><strong>If default is not the last case in the switch block, remember to end the default case with a break.</strong></p>
 </blockquote>
 <h3 id=conclusion><strong>Conclusion</strong></h3>
-<p>There are so many practical examples of switch cases, you can head over to
-<a href=https://google.com/ >google.com </a>and run a quick search for more switch cases examples.</p>
+<p>There are so many practical examples of switch cases, you can head
+<a href=https://javascript.info/switch>here </a>to learn more about switch cases.</p>
 <p>If this article helped you, show it by sharing!!</p>
 <p>Thanks for reading!</p>
 <p>You can follow me on twitter @iambolajiayo</p>
