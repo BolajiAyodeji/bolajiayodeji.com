@@ -53,7 +53,7 @@ Common directives in .htaccess file:
 
 ### Editing .htaccess in cPanel File Manager
 
-**Note: **Backup your website in case something goes wrong.
+**Note:** Backup your website in case something goes wrong.
 
 1.  Login to cPanel
 1.  Files > File Manager > Document Root for:
@@ -107,7 +107,7 @@ Redirecting to HTTPS on a specific folder, add the following:
     RewriteRule ^(.*)$ 
 
 Note: Replace *"yourdomain"* with your actual domain name wherever required.
-Also, in case of the folder, replace* /folder* with the actual folder name.
+Also, in case of the folder, replace */folder* with the actual folder name.
 
 Think it was helpful? Share this article to help others come on HTTPS.
 

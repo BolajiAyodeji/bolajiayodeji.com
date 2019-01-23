@@ -35,8 +35,25 @@ You can of course create a new repository if you want.
 That file should be created on the root of your repository. Here is some content
 to copy-paste in it:
 
+```
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - CONTRIBUTING.md
+  - README.md
+  - LICENSE.md
+  - COPYING.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - ISSUE_TEMPLATE.md
+  - PULL_REQUEST_TEMPLATE.md
+```
 
-It's basically just a few tuning of GitHub Pages’ default configuration to have
+
+It's basically just a few tuning of GitHub Pages default configuration to have
 a better handling of Markdown files.
 
 ### Activate GitHub Pages in your repository configuration
