@@ -11,13 +11,8 @@ When many developers refer to a database, they are usually referring to MySQL, a
 very popular DBMS that powers projects of all sizes. The USP of MySQL is its
 ability to handle huge volumes of data without breaking a sweat.
 
-In this article I will discuss how to connect MySQL Database on different
-servers and also give an overview of connecting Database using PDO.
+In this article I will discuss how to connect MySQL Database using Localhost Server.
 
-1.  Connect MySQL using Localhost Server
-1.  Connect MySQL using Cloudways Server
-1.  Connect MySQL using PDO
-1.  Connect MySQL using Remote MySQL
 
 ### Create MySQL Database at the Localhost
 
