@@ -6,6 +6,8 @@ type: "post"
 tags: ["git", "GitHub", "version  control"]
 ---
 
+In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
+
 So your repository got a new Pull Request?, You don't want to merge it before
 testing it out yourself locally on your machine. How do you go about it ?
 
@@ -72,8 +74,6 @@ git push origin BRANCHNAME (e.g master or test)
 That's it, you have tested the pull request and made changes!
 
 If this article helped you, share!!!
-
-View all my projects on GitHub [here](http://github.com/bolajiayodeji)
 
 Contribute to [NettyFinder](https://netty-finder.herokuapp.com/)
 [here](https://github.com/BolajiAyodeji/netty-finder)
