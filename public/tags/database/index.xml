@@ -18,8 +18,8 @@
       
       <guid>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</guid>
       <description>When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
-In this article I will discuss how to connect MySQL Database using Localhost Server.
-Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.</description>
+In this article I will discuss how to connect MySQL Database on different servers and also give an overview of connecting Database using PDO.
+ Connect MySQL using Localhost Server Connect MySQL using Cloudways Server Connect MySQL using PDO Connect MySQL using Remote MySQL  Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is.</description>
     </item>
     
   </channel>
