@@ -6,9 +6,6 @@ type: "post"
 tags: ["git", "GitHub", "version  control"]
 ---
 
-In this tutorial, I would show you how to check, test and make changes to a pull
-request before merging.
-
 So your repository got a new Pull Request?, You don't want to merge it before
 testing it out yourself locally on your machine. How do you go about it ?
 
