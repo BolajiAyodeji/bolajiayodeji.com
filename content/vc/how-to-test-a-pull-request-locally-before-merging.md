@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to test a Pull Request locally before Merging."
 date: 2018-11-11T13:22:14+07:00
 draft: false
@@ -19,7 +19,7 @@ Check *[here](https://help.github.com/articles/cloning-a-repository/)* to learn
 how to clone repositories from GitHub.
 
 (2) Have your cloned Repository integrated into your
-*[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)*
+[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)
 preferably *[Visual Studio Code](https://code.visualstudio.com/)* [In this
 tutorial, I used VsCode]
 

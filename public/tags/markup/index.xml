@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markup on ⚡️Bolaji Ayodeji⚡️</title>
+    <link>https://bolajiayodeji.com/tags/markup/</link>
+    <description>Recent content in Markup on ⚡️Bolaji Ayodeji⚡️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 May 2018 13:22:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://bolajiayodeji.com/tags/markup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The new features of HTML 5.2</title>
+      <link>https://bolajiayodeji.com/rd/the-new-features-of-html-5.2/</link>
+      <pubDate>Wed, 02 May 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://bolajiayodeji.com/rd/the-new-features-of-html-5.2/</guid>
+      <description>Less than a month ago, HTML 5.2 became an official W3C Recommendation (REC). When a specification reaches the REC stage, this means that it has received the official endorsement of W3C Members and the Director, and that the W3C officially recommends it�s deployment by user agents, and it�s implementation by web page authors.
+By the REC stage, anything new should have had at least 2 independent implementations. This makes it a great time for us, as web page developers, to begin implementation of any new feature.</description>
+    </item>
+    
+  </channel>
+</rss>

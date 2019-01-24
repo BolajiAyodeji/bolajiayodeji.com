@@ -36,16 +36,6 @@ Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)
     </item>
     
     <item>
-      <title>How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</title>
-      <link>https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-eploy-to-github-ages-and-firebase/</link>
-      <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
-      
-      <guid>https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-eploy-to-github-ages-and-firebase/</guid>
-      <description>Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!
-I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences.</description>
-    </item>
-    
-    <item>
       <title>How to redirect HTTP to HTTPS Using .htaccess</title>
       <link>https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/</link>
       <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
@@ -73,9 +63,10 @@ For every request from a web browser the server responds with a status code. If 
       <pubDate>Sun, 11 Nov 2018 13:22:14 +0700</pubDate>
       
       <guid>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
-      <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
-So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
-The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.</description>
+      <description>So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
+The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.
+REQUIREMENTS
+(1) Make sure you have a cloned version of the repository on your machine, Check here to learn how to clone repositories from GitHub.</description>
     </item>
     
     <item>
@@ -89,14 +80,13 @@ The pull request is available on this git ref pull/{ID}/head which you can fetch
     </item>
     
     <item>
-      <title>How to Connect Mysql with PHP</title>
-      <link>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</link>
-      <pubDate>Sat, 28 Apr 2018 13:22:14 +0700</pubDate>
+      <title>The new features of HTML 5.2</title>
+      <link>https://bolajiayodeji.com/rd/the-new-features-of-html-5.2/</link>
+      <pubDate>Wed, 02 May 2018 13:22:14 +0700</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</guid>
-      <description>When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
-In this article I will discuss how to connect MySQL Database using Localhost Server.
-Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.</description>
+      <guid>https://bolajiayodeji.com/rd/the-new-features-of-html-5.2/</guid>
+      <description>Less than a month ago, HTML 5.2 became an official W3C Recommendation (REC). When a specification reaches the REC stage, this means that it has received the official endorsement of W3C Members and the Director, and that the W3C officially recommends it�s deployment by user agents, and it�s implementation by web page authors.
+By the REC stage, anything new should have had at least 2 independent implementations. This makes it a great time for us, as web page developers, to begin implementation of any new feature.</description>
     </item>
     
   </channel>
