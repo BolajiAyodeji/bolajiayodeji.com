@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Database</title>
+      <link>https://bolajiayodeji.com/tags/database/</link>
+      <pubDate>Sat, 28 Apr 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Developers</title>
       <link>https://bolajiayodeji.com/tags/developers/</link>
       <pubDate>Mon, 21 Jan 2019 13:22:14 +0700</pubDate>
@@ -84,15 +93,6 @@
     </item>
     
     <item>
-      <title>Html</title>
-      <link>https://bolajiayodeji.com/tags/html/</link>
-      <pubDate>Wed, 02 May 2018 13:22:14 +0700</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Http</title>
       <link>https://bolajiayodeji.com/tags/http/</link>
       <pubDate>Sat, 24 Nov 2018 13:22:14 +0700</pubDate>
@@ -129,11 +129,38 @@
     </item>
     
     <item>
-      <title>Markup</title>
-      <link>https://bolajiayodeji.com/tags/markup/</link>
-      <pubDate>Wed, 02 May 2018 13:22:14 +0700</pubDate>
+      <title>Mysql</title>
+      <link>https://bolajiayodeji.com/tags/mysql/</link>
+      <pubDate>Sat, 28 Apr 2018 13:22:14 +0700</pubDate>
       
-      <guid>https://bolajiayodeji.com/tags/markup/</guid>
+      <guid>https://bolajiayodeji.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>https://bolajiayodeji.com/tags/php/</link>
+      <pubDate>Sat, 28 Apr 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pwa</title>
+      <link>https://bolajiayodeji.com/tags/pwa/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/pwa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Workers</title>
+      <link>https://bolajiayodeji.com/tags/service-workers/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/service-workers/</guid>
       <description></description>
     </item>
     
@@ -161,15 +188,6 @@
       <pubDate>Sun, 11 Nov 2018 13:22:14 +0700</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/version-control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>W3c</title>
-      <link>https://bolajiayodeji.com/tags/w3c/</link>
-      <pubDate>Wed, 02 May 2018 13:22:14 +0700</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/w3c/</guid>
       <description></description>
     </item>
     
