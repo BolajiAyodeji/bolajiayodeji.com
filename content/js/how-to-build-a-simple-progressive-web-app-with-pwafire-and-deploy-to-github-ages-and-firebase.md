@@ -482,7 +482,7 @@ Add, Commit and Push your Changes
 ```
 $ git add -all
 $ git commit -m "Initial commit"
-$ git git push -u origin master
+$ git push -u origin master
 ```
 
 6. Celebrate. You’re done! Your app will be deployed to the domain:
