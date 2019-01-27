@@ -22,17 +22,5 @@ In this article I will discuss how to connect MySQL Database using Localhost Ser
 Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.</description>
     </item>
     
-    <item>
-      <title>
-Introduction to Chrome Lighthouse</title>
-      <link>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</link>
-      <pubDate>Sun, 28 Jan 2018 13:22:14 +0700</pubDate>
-      
-      <guid>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</guid>
-      <description>Chrome Lighthouse has been around for a long while now, but wait if I ask you to explain what it does can you explain vividly?
-I discovered that so many web developers, including beginners, have not heard about this tool and those who heard have not tried it yet, that&amp;rsquo;s not cool :(.
-In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.</description>
-    </item>
-    
   </channel>
 </rss>
