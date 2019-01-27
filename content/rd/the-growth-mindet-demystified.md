@@ -1,6 +1,6 @@
 ---
 title: "The GROWTH MINDSET demystified"
-date: 2019-01-21T13:22:14+07:00
+date: 2019-01-21T13:22:14+24:00
 draft: false
 type: "post"
 tags: ["education", "growth mindset", "developers"]

@@ -1,6 +1,6 @@
 ---
 title: "HTTP status codes and their meanings"
-date: 2018-11-24T13:22:14+07:00
+date: 2018-11-24T13:22:14+24:00
 draft: false
 type: "post"
 tags: ["status code", "browser", "http"]

@@ -1,6 +1,6 @@
 ---
 title: "How to convert GitHub Markdown files to a simple website"
-date: 2018-11-05T13:22:14+07:00
+date: 2018-11-05T13:22:14+24:00
 draft: false
 type: "post"
 tags: ["markdown", "GitHub", "website"]

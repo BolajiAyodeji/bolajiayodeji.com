@@ -1,6 +1,6 @@
 ﻿---
 title: "How to Connect Mysql with PHP"
-date: 2018-04-28T13:22:14+07:00
+date: 2018-04-28T13:22:14+24:00
 draft: false
 type: "post"
 tags: ["php", "mysql", "database"]
