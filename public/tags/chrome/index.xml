@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome on ⚡️Bolaji Ayodeji⚡️</title>
+    <link>https://bolajiayodeji.com/tags/chrome/</link>
+    <description>Recent content in Chrome on ⚡️Bolaji Ayodeji⚡️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jan 2018 13:22:14 +0700</lastBuildDate>
+    
+	<atom:link href="https://bolajiayodeji.com/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>
+Introduction to Chrome Lighthouse</title>
+      <link>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</link>
+      <pubDate>Sun, 28 Jan 2018 13:22:14 +0700</pubDate>
+      
+      <guid>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</guid>
+      <description>Chrome Lighthouse has been around for a long while now, but wait if I ask you to explain what it does can you explain vividly?
+I discovered that so many web developers, including beginners, have not heard about this tool and those who heard have not tried it yet, that&amp;rsquo;s not cool :(.
+In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.</description>
+    </item>
+    
+  </channel>
+</rss>
