@@ -2,7 +2,7 @@
 title: "
 
 Introduction to Chrome Lighthouse"
-date: 2018-01-28T13:22:14+07:00
+date: 2019-01-28T13:22:14+07:00
 draft: false
 type: "post"
 tags: ["Chrome", "Lighthouse", "devtools"]
