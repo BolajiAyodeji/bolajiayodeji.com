@@ -2,18 +2,18 @@
 title: "
 
 Introduction to Chrome Lighthouse"
-date: 2019-01-28T13:22:14+07:00
+date: 2018-01-28T13:22:14+07:00
 draft: false
 type: "post"
 tags: ["Chrome", "Lighthouse", "devtools"]
 ---
 
 
-Chrome Lighthouse has been around for a long while now, but wait if I ask you to
+Chrome Lighthouse has been around for a while now, but wait if I ask you to
 explain what it does can you explain vividly?
 
-I discovered that so many web developers, including beginners, have not heard
-about this tool and those who heard have not tried it yet, that's not cool :(.
+I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have,
+have not tried it yet, that's not cool :(.
 
 In this article, I would introduce you Chrome Lighthouse, what it does and how
 to start using it.
@@ -41,7 +41,7 @@ Well, Lighthouse is a tool developed by Google that analyzes web apps and web
 pages, collecting modern performance metrics and insights on developer best
 practices.
 
-Think of Lighthouse like the speedometer in a car that checks and balances the
+Think of Lighthouse as the speedometer in a car that checks and balances the
 cars speed limit.
 
 Basically, Lighthouse works with developer best practices and performance
@@ -79,7 +79,7 @@ What you should note is that I didn’t get great scores like this on my first
 audit. I had to use my first report to fix and improve the performance and
 quality of my app.
 
-This is the idea behind Lighthouse, Identify and fix common problems that affect
+This is the idea behind Lighthouse, it is to dentify and fix common problems that affect
 your sites performance, accessibility and user experience.
 
 <br> 
@@ -94,8 +94,8 @@ LightHouse is available in three workflows
 * Command line (Node) 
 * A Chrome extension
 
-I personally prefer using LightHouse in Dev Tools, using the extension does not
-make sense as the Dev Tool and extension work in the same Chrome browser, well
+I personally prefer using LightHouse in Dev Tools. Using the extension does not
+make sense as the Dev Tool and extension work in the same chrome browser, well
 our preference varies, use what works best for you.
 
 Lighthouse was first available only with the Chrome extension before it was
@@ -186,7 +186,8 @@ Output samples:
     # json output sent to stdout
     lighthouse --output html --output-path ./report.html
     # saves `./report.html`
-    # NOTE: specifying an output path with multiple formats ignores your specified extension for *ALL* formats
+    # NOTE: specifying an output path with multiple formats ignores your specified extension
+    for ALL formats
     lighthouse --output json --output html --output-path ./myfile.json
     # saves `./myfile.report.json` and `./myfile.report.html`
     lighthouse --output json --output html
