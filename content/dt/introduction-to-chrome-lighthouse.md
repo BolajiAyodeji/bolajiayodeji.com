@@ -9,7 +9,7 @@ tags: ["Chrome", "Lighthouse", "devtools"]
 ---
 
 
-Chrome Lighthouse has been around for a while now, but wait if I ask you to
+Chrome Lighthouse has been around for a while now, but what if I ask you to
 explain what it does can you explain vividly?
 
 I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have,
