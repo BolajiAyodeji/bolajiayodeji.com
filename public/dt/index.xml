@@ -6,15 +6,27 @@
     <description>Recent content in Dts on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Apr 2018 13:22:14 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jan 2019 15:12:21 +2400</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/dt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>
+Introduction to Chrome Lighthouse</title>
+      <link>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</link>
+      <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</guid>
+      <description>Chrome Lighthouse has been around for a while now, but wait if I ask you to explain what it does can you explain vividly?
+I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have, have not tried it yet, that&amp;rsquo;s not cool :(.
+In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.</description>
+    </item>
+    
+    <item>
       <title>How to Connect Mysql with PHP</title>
       <link>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</link>
-      <pubDate>Sat, 28 Apr 2018 13:22:14 +0700</pubDate>
+      <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</guid>
       <description>When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
