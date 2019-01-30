@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database on ⚡️Bolaji Ayodeji⚡️</title>
-    <link>https://bolajiayodeji.com/tags/database/</link>
+    <link>/tags/database/</link>
     <description>Recent content in Database on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Apr 2018 13:22:14 +2400</lastBuildDate>
     
-	<atom:link href="https://bolajiayodeji.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/database/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Connect Mysql with PHP</title>
-      <link>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</link>
+      <link>/dt/how-to-connect-mysql-with-php/</link>
       <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</guid>
+      <guid>/dt/how-to-connect-mysql-with-php/</guid>
       <description>When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
 In this article I will discuss how to connect MySQL Database using Localhost Server.
 Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.</description>
