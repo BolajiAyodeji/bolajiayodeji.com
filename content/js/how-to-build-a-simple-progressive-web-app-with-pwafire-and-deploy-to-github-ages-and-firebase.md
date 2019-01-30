@@ -416,7 +416,7 @@ as `/`. To the other prompts, reply NO; `N`
 
 9. Celebrate. You’re done! Your app will be deployed to the domain:
 
-`https://YOUR-FIREBASE-APP.firebaseapp.com`
+https://YOUR-FIREBASE-APP.firebaseapp.com
 
 10. Visit your web app on your phone now.
 
@@ -487,7 +487,7 @@ $ git push -u origin master
 
 6. Celebrate. You’re done! Your app will be deployed to the domain:
 
-`https://username.github.io`
+https://username.github.io
 
 5. Visit your web app on your phone now. You should see an **“install to
 homescreen”** banner prompt! Welcome to the new world!! Further reading: [GitHub

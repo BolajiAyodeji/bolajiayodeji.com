@@ -127,6 +127,7 @@
 
     &::before,
     &::after {
+      color: #000;
       letter-spacing: -0.2em;
       content: "\00a0";
     }
