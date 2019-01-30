@@ -17,10 +17,11 @@ self.addEventListener('fetch', function (event) {
           caches.open('cache').then(function (cache) {
             return cache.addAll([
               '/index.html',
-              '/index.html?homescreen = 1',
+              '/index.html?homescreen=1',
               '/404.html',
               './img/fav.png',
-              './img/fav-500.png'
+              './img/fav-500.png',
+              'https://bolajiayodeji-com.disqus.com/embed.js'
             ]);
           })
         );
