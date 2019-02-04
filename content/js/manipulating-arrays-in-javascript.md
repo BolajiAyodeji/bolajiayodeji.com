@@ -34,7 +34,7 @@ Arrays can contain multiple data types
 
 *****
 
-Arrays can be manipulated by using several actions known as **methods. **Some of
+Arrays can be manipulated by using several actions known as **methods.** Some of
 these methods allow us to add, remove, modify and do lots more to arrays.
 
 I would be showing you a few in this article, let’s roll :)
