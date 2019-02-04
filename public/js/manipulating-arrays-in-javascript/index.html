@@ -449,6 +449,9 @@ elements.</p>
 
 <p>The syntax is:</p>
 
+<pre><code>array.splice(index[, deleteCount, element1, ..., elementN])
+</code></pre>
+
 <ul>
 <li><code>Index</code> here is the starting point for removing elements in the array</li>
 <li><code>deleteCount</code>is the number of elements to be deleted from that index</li>
@@ -484,16 +487,22 @@ console.log(colors); // [&quot;green&quot;, &quot;yellow&quot;, &quot;blue&quot;
 <p>In the next example we will remove 3 elements from the array and replace them
 with more items:</p>
 
-<pre><code>[&quot;we&quot;, &quot;are&quot;, &quot;going&quot;, &quot;to&quot;, &quot;swim&quot;, &quot;tommorrow&quot;]
+<pre><code>let schedule = ['I', 'have', 'a', 'meeting', 'tommorrow'];
+// removes 4 first elements and replace them with another
+schedule.splice(0, 4, 'we', 'are', 'going', 'to', 'swim');
+console.log(schedule); 
+// [&quot;we&quot;, &quot;are&quot;, &quot;going&quot;, &quot;to&quot;, &quot;swim&quot;, &quot;tommorrow&quot;]
 </code></pre>
 
 <p><strong>Adding items</strong></p>
 
 <p>To add items, we need to set the <code>deleteCount</code> to zero</p>
 
-<pre><code>tommorrow
-
-[&quot;I&quot;, &quot;have&quot;, &quot;a&quot;, &quot;meeting&quot;, &quot;with&quot;, &quot;some&quot;, &quot;clients&quot;, &quot;tommorrow&quot;]
+<pre><code>let schedule = ['I', 'have', 'a', 'meeting', 'with'];
+// adds 3 new elements to the array
+schedule.splice(5, 0, 'some', 'clients', 'tommorrow');
+console.log(schedule); 
+// [&quot;I&quot;, &quot;have&quot;, &quot;a&quot;, &quot;meeting&quot;, &quot;with&quot;, &quot;some&quot;, &quot;clients&quot;, &quot;tommorrow&quot;]
 </code></pre>
 
 <h3 id="slice">slice()</h3>
@@ -507,6 +516,9 @@ instead of substrings.</p>
 a new array. <strong>It does not change the original array.</strong></p>
 
 <p>The syntax is:</p>
+
+<pre><code>array.slice(start, end)
+</code></pre>
 
 <p>Here’s a basic example:</p>
 
@@ -587,11 +599,18 @@ condition.</p>
 
 <p>The syntax is:</p>
 
+<pre><code>let results = array.filter(function(item, index, array) {
+  // returns true if the item passes the filter
+});
+</code></pre>
+
 <p>Example:</p>
 
 <p>Checks users from Nigeria</p>
 
-<pre><code>console.log(nigerian); // [&quot;+234&quot;, &quot;+234&quot;]
+<pre><code>const countryCode = ['+234', '+144', '+233', '+234'];
+const nigerian = countryCode.filter( code =&gt; code === '+234');
+console.log(nigerian); // [&quot;+234&quot;, &quot;+234&quot;]
 </code></pre>
 
 <h3 id="map">map()</h3>
@@ -615,11 +634,25 @@ document.write(render);
 
 <p>another example:</p>
 
+<pre><code>// adds dollar sign to numbers
+const numbers = [10, 3, 4, 6];
+const dollars = numbers.map( number =&gt; '$' + number);
+console.log(dollars);
+// ['$10', '$3', '$4', '$6'];
+</code></pre>
+
 <h3 id="reduce">reduce()</h3>
 
 <p>This method is good for calculating totals.</p>
 
 <p><strong>reduce()</strong> is used to calculate a single value based on an array.</p>
+
+<p>The syntax is:</p>
+
+<pre><code>let value = array.reduce(function(previousValue, item, index, array) {
+  // ...
+}, initial);
+</code></pre>
 
 <p>example:</p>
 
@@ -629,6 +662,10 @@ of loop.</p>
 </blockquote>
 
 <pre><code>const numbers = [100, 300, 500, 70];
+let sum = 0;
+for (let n of numbers) {
+sum += n;
+}
 console.log(sum);
 </code></pre>
 

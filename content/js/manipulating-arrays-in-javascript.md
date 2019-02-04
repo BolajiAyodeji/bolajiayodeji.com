@@ -127,6 +127,9 @@ This method **changes** an array, by adding, removing and inserting
 elements.
 
 The syntax is:
+```
+array.splice(index[, deleteCount, element1, ..., elementN])
+```
 
 
 * `Index` here is the starting point for removing elements in the array
@@ -156,18 +159,27 @@ index will be removed from the array:
 In the next example we will remove 3 elements from the array and replace them
 with more items:
 
+```
+let schedule = ['I', 'have', 'a', 'meeting', 'tommorrow'];
+// removes 4 first elements and replace them with another
+schedule.splice(0, 4, 'we', 'are', 'going', 'to', 'swim');
+console.log(schedule); 
+// ["we", "are", "going", "to", "swim", "tommorrow"]
+```
 
-
-    ["we", "are", "going", "to", "swim", "tommorrow"]
 
 **Adding items**
 
 To add items, we need to set the `deleteCount` to zero
+```
+let schedule = ['I', 'have', 'a', 'meeting', 'with'];
+// adds 3 new elements to the array
+schedule.splice(5, 0, 'some', 'clients', 'tommorrow');
+console.log(schedule); 
+// ["I", "have", "a", "meeting", "with", "some", "clients", "tommorrow"]
+```
 
 
-    tommorrow
-
-    ["I", "have", "a", "meeting", "with", "some", "clients", "tommorrow"]
 
 ### slice()
 
@@ -178,6 +190,9 @@ This method **copies** a given part of an array and returns that copied part as
 a new array. **It does not change the original array.**
 
 The syntax is:
+```
+array.slice(start, end)
+```
 
 
 Here’s a basic example:
@@ -247,14 +262,21 @@ This method creates a new array if the items of an array pass a certain
 condition.
 
 The syntax is:
+```
+let results = array.filter(function(item, index, array) {
+  // returns true if the item passes the filter
+});
+```
 
 
 Example:
 
 Checks users from Nigeria
-
-
-    console.log(nigerian); // ["+234", "+234"]
+```
+const countryCode = ['+234', '+144', '+233', '+234'];
+const nigerian = countryCode.filter( code => code === '+234');
+console.log(nigerian); // ["+234", "+234"]
+```
 
 ### map()
 
@@ -275,8 +297,13 @@ Displays usernames on a page. (Basic friend list display)
 ![](https://cdn-images-1.medium.com/max/880/1*obuBZKFb5vKmUP7D4TX2XA.png)
 
 another example:
-
-
+```
+// adds dollar sign to numbers
+const numbers = [10, 3, 4, 6];
+const dollars = numbers.map( number => '$' + number);
+console.log(dollars);
+// ['$10', '$3', '$4', '$6'];
+```
 
 ### reduce()
 
@@ -284,14 +311,26 @@ This method is good for calculating totals.
 
 **reduce()** is used to calculate a single value based on an array.
 
+The syntax is:
+```
+let value = array.reduce(function(previousValue, item, index, array) {
+  // ...
+}, initial);
+```
 
 example:
 
 > To loop through an array and sum all numbers in the array up, we can use the for
 > of loop.
 
-    const numbers = [100, 300, 500, 70];
-    console.log(sum);
+```
+const numbers = [100, 300, 500, 70];
+let sum = 0;
+for (let n of numbers) {
+sum += n;
+}
+console.log(sum);
+```
 
 Here’s how to do same with `reduce()`
 
