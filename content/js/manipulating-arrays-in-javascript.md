@@ -433,7 +433,7 @@ urlSlug.
 
 > **URL slug** is the exact address of a specific page or post on your site.
 
-When you write an article on **Medium **or any other writing platform, your post
+When you write an article on **[Medium](https://medium.com)** or any other writing platform, your post
 title is automatically converted to a slug with white spaces removed, characters
 turned to lowercase and each word in the title separated by a hyphen.
 
