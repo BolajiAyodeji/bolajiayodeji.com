@@ -6,10 +6,19 @@
     <description>Recent content in Tags on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Nov 2018 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Mon, 04 Feb 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arrays</title>
+      <link>/tags/arrays/</link>
+      <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>/tags/arrays/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Browser</title>
@@ -68,7 +77,7 @@
     <item>
       <title>Es6</title>
       <link>/tags/es6/</link>
-      <pubDate>Fri, 04 Jan 2019 13:22:14 +2400</pubDate>
+      <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
       
       <guid>/tags/es6/</guid>
       <description></description>
@@ -131,7 +140,7 @@
     <item>
       <title>Javascript</title>
       <link>/tags/javascript/</link>
-      <pubDate>Fri, 04 Jan 2019 13:22:14 +2400</pubDate>
+      <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
       
       <guid>/tags/javascript/</guid>
       <description></description>

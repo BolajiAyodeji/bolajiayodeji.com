@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/js/manipulating-arrays-in-javascript/</loc>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/dt/introduction-to-chrome-lighthouse/</loc>
     <lastmod>2019-01-28T15:12:21+24:00</lastmod>
   </url>
@@ -45,6 +50,12 @@
   <url>
     <loc>/dt/how-to-connect-mysql-with-php/</loc>
     <lastmod>2018-04-28T13:22:14+24:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/arrays/</loc>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -96,7 +107,7 @@
   
   <url>
     <loc>/tags/es6/</loc>
-    <lastmod>2019-01-04T13:22:14+24:00</lastmod>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -138,13 +149,13 @@
   
   <url>
     <loc>/tags/javascript/</loc>
-    <lastmod>2019-01-04T13:22:14+24:00</lastmod>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/js/</loc>
-    <lastmod>2019-01-04T13:22:14+24:00</lastmod>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -210,7 +221,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-11-24T13:22:14+24:00</lastmod>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -234,7 +245,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-01-28T15:12:21+24:00</lastmod>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   

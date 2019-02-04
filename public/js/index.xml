@@ -6,10 +6,23 @@
     <description>Recent content in Js on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jan 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Mon, 04 Feb 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Manipulating Arrays in JavaScript</title>
+      <link>/js/manipulating-arrays-in-javascript/</link>
+      <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>/js/manipulating-arrays-in-javascript/</guid>
+      <description>Manipulating Arrays in JavaScript Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, and hence this article.
+In this article, I would show you various methods of manipulating arrays in JavaScript [^^]
+
+What are Arrays in JavaScript? Before we proceed, you need to understand what arrays really mean.
+ In JavaScript, an array is a variable that is used to store different data types.</description>
+    </item>
     
     <item>
       <title>Introduction to JavaScript Switch Cases</title>
