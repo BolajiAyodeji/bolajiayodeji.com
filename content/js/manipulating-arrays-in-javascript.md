@@ -387,7 +387,7 @@ iteration can be done without passing the index argument
 ### every()
 
 This method checks if all items in an array pass the specified condition and
-return`true` if passed, else `false`.
+return `true` if passed, else `false`.
 
 > check if all numbers are positive
 
