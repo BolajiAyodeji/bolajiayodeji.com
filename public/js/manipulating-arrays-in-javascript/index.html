@@ -796,19 +796,17 @@ turned to lowercase and each word in the title separated by a hyphen.</p>
 <p>Here’s a basic function that does that using some of the methods we learnt just
 now.</p>
 
-<pre><code>const url = 'https://bolajiayodeji.com'
-
+<pre><code>const url = 'https://bolajiayodeji.com/'
 const urlSlug = (postTitle, category) =&gt; {
 let postUrl = postTitle.toLowerCase().split(' ');
 let postSlug = `${url}` + category + '/' + postUrl.join('-');
- postSlug;
+return postSlug;
 }
-
 let postTitle = 'Introduction to Chrome Lighthouse'
 let category = 'dt'
 console.log(urlSlug(postTitle, category));
 
-// 
+// https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse
 </code></pre>
 
 <p>in <code>postUrl</code>, we convert the string to lowercase then we use the <strong>split()</strong>
