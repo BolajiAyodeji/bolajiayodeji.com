@@ -34,9 +34,8 @@
 
   
   <meta name="author" content="⚡️Bolaji Ayodeji⚡️" />
-  <meta name="description" content="Manipulating Arrays in JavaScript Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, and hence this article.
+  <meta name="description" content="Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, hence this article.
 In this article, I would show you various methods of manipulating arrays in JavaScript [^^]
-
 What are Arrays in JavaScript? Before we proceed, you need to understand what arrays really mean.
  In JavaScript, an array is a variable that is used to store different data types.">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
@@ -46,9 +45,8 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@iambolajiayo" />
     <meta name="twitter:title" content="Manipulating Arrays in JavaScript" />
-    <meta name="twitter:description" content="Manipulating Arrays in JavaScript Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, and hence this article.
+    <meta name="twitter:description" content="Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, hence this article.
 In this article, I would show you various methods of manipulating arrays in JavaScript [^^]
-
 What are Arrays in JavaScript? Before we proceed, you need to understand what arrays really mean.
  In JavaScript, an array is a variable that is used to store different data types." />
     <meta name="twitter:image" content="/img/fav-500.png" />
@@ -308,23 +306,21 @@ monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{f
 <section class="main post-detail">
   <header class="post-header">
     <h1 class="post-title">Manipulating Arrays in JavaScript</h1>
-    <p class="entry-meta"><span class="entry-time">Feb 4, 2019</span> 9 min read</p>
+    <p class="entry-meta"><span class="entry-time">Feb 4, 2019</span> 10 min read</p>
   </header>
   
 
   <article class="post-content">
 
-<h3 id="manipulating-arrays-in-javascript">Manipulating Arrays in JavaScript</h3>
-
 <p>Arrays have become an important part of any programming language. Most times we
-need to do several operations on arrays, and hence this article.</p>
+need to do several operations on arrays, hence this article.</p>
 
 <p>In this article, I would show you various methods of manipulating arrays in
 JavaScript [^^]</p>
 
 <p><img src="https://cdn-images-1.medium.com/max/880/1*EK3RyHqvMS-ZIy9UyNMxTA.png" alt="" /></p>
 
-<p><br></p>
+<hr />
 
 <h3 id="what-are-arrays-in-javascript">What are Arrays in JavaScript?</h3>
 
@@ -333,7 +329,7 @@ JavaScript [^^]</p>
 <blockquote>
 <p>In JavaScript, an array is a variable that is used to store different data
 types. It basically stores different elements in one box and can be later
-assesssed by with the variable.</p>
+assesssed with the variable.</p>
 </blockquote>
 
 <p>Declaring an array:</p>
@@ -352,6 +348,13 @@ assesssed by with the variable.</p>
 these methods allow us to add, remove, modify and do lots more to arrays.</p>
 
 <p>I would be showing you a few in this article, let’s roll :)</p>
+
+<blockquote>
+<p>NB: I used <strong>Arrow functions</strong> in this post, If you don’t know what this means,
+you should read
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">here</a>.
+Arrow function is an <strong>ES6 feature</strong>.</p>
+</blockquote>
 
 <hr />
 
@@ -409,9 +412,9 @@ console.log(browsers);
 <p>This method removes the last item of an array and <strong>returns</strong> it</p>
 
 <pre><code>let browsers = ['chrome', 'firefox', 'edge'];
-browsers.pop();
+browsers.pop(); // &quot;edge&quot;
 
-console.log(browsers); // &quot;edge&quot;
+console.log(browsers); // [&quot;chrome&quot;, &quot;firefox&quot;]
 </code></pre>
 
 <h3 id="shift">shift()</h3>
@@ -419,9 +422,9 @@ console.log(browsers); // &quot;edge&quot;
 <p>This method removes the first item of an array and <strong>returns</strong> it</p>
 
 <pre><code>let browsers = ['chrome', 'firefox', 'edge'];
-browsers.shift();
+browsers.shift(); // &quot;chrome&quot;
 
-console.log(browsers); // &quot;chrome&quot;
+console.log(browsers); // [&quot;firefox&quot;, &quot;edge&quot;]
 </code></pre>
 
 <h3 id="unshift">unshift()</h3>
@@ -441,22 +444,22 @@ console.log(browsers); //  [&quot;safari&quot;, &quot;chrome&quot;, &quot;firefo
 
 <h3 id="splice">splice()</h3>
 
-<p>This** **method <strong>changes</strong> an array, by adding, removing and inserting
+<p>This method <strong>changes</strong> an array, by adding, removing and inserting
 elements.</p>
 
 <p>The syntax is:</p>
 
 <ul>
-<li>**Index **here is the starting point for removing elements in the array</li>
-<li><strong>deleteCount</strong> is the number of elements to be deleted from that index</li>
-<li><strong>element1, …, elementN</strong> is the element(s) to be added</li>
+<li><code>Index</code> here is the starting point for removing elements in the array</li>
+<li><code>deleteCount</code>is the number of elements to be deleted from that index</li>
+<li><code>element1, …, elementN</code>is the element(s) to be added</li>
 </ul>
 
 <p><strong>Removing items</strong></p>
 
 <blockquote>
-<p>after running **splice() **, it returns the removed item and removes it from the
-original array.</p>
+<p>after running <strong>splice()</strong>, it returns the array with the item(s) removed and
+removes it from the original array.</p>
 </blockquote>
 
 <pre><code>let colors = ['green', 'yellow', 'blue', 'purple'];
@@ -495,10 +498,12 @@ with more items:</p>
 
 <h3 id="slice">slice()</h3>
 
-<p>This method is similar to <strong>splice()</strong> but very different except that it returns
-subarrays instead of substrings.</p>
+<blockquote>
+<p>This method is similar to <code>splice()</code> but very different. It returns subarrays
+instead of substrings.</p>
+</blockquote>
 
-<p>This method **copies **a given part of an array and returns that copied part as
+<p>This method <strong>copies</strong> a given part of an array and returns that copied part as
 a new array. <strong>It does not change the original array.</strong></p>
 
 <p>The syntax is:</p>
@@ -512,10 +517,11 @@ numbers.slice(0, 3)
 console.log(numbers) // returns the original array
 </code></pre>
 
-<p>another example</p>
+<p>The best way to use <code>slice()</code> is to assign it to a new variable.</p>
 
 <pre><code>let message = 'congratulations'
-message.slice(0, 7); // returns &quot;congrat&quot;
+const abbrv = message.slice(0, 7) + 's!'; 
+console.log(abbrv) // returns &quot;congrats!&quot;
 </code></pre>
 
 <h3 id="split">split()</h3>
@@ -529,22 +535,24 @@ returns them as an array.</p>
 </code></pre>
 
 <ul>
-<li>The <strong>separator</strong> here defines how to split a string either by a comma.</li>
-
-<li><p>The <strong>limit</strong> determines the number of splits to be carried out</p>
-
-<p>let firstName = &lsquo;Bolaji&rsquo;;
-firstName.split() // [&ldquo;Bolaji&rdquo;]</p></li>
+<li>The <code>separator</code> here defines how to split a string either by a comma.</li>
+<li>The <code>limit</code> determines the number of splits to be carried out
+<br /></li>
 </ul>
+
+<pre><code>let firstName = 'Bolaji';
+// return the string as an array
+firstName.split() // [&quot;Bolaji&quot;]
+</code></pre>
 
 <p>another example:</p>
 
-<pre><code>let firstName = 'b,o,l,a,j,i'
-firstName.split(',', 3); // [&quot;b&quot;, &quot;o&quot;, &quot;l&quot;]
+<pre><code>let firstName = 'hello, my name is bolaji, I am a dev.';
+firstName.split(',', 2); // [&quot;hello&quot;, &quot; my name is bolaji&quot;]
 </code></pre>
 
 <blockquote>
-<p><strong>NB:</strong>* If we declare an empty array, like this:<em><code>firstName.split('');</code></em> then
+<p><strong>NB:</strong> If we declare an empty array, like this: <em><code>firstName.split('');</code></em> then
 each item in the string will be divided as substrings:*</p>
 </blockquote>
 
@@ -624,7 +632,7 @@ of loop.</p>
 console.log(sum);
 </code></pre>
 
-<p>Here’s how to do same with <strong>reduce()</strong></p>
+<p>Here’s how to do same with <code>reduce()</code></p>
 
 <pre><code>const numbers = [100, 300, 500, 70];
 const sum = numbers.reduce((accummulator, value) =&gt;
@@ -664,7 +672,7 @@ found <a href="https://medium.freecodecamp.org/reduce-f47a7da511a9">here</a> and
 
 <pre><code>const colors = ['green', 'yellow', 'blue'];
 
-colors.forEach((item, index) =&gt; console.log(index, number));
+colors.forEach((item, index) =&gt; console.log(index, item));
 // returns the index and the every item in the array
 // 0 &quot;green&quot;
 // 1 &quot;yellow&quot;
@@ -685,7 +693,7 @@ colors.forEach((item) =&gt; console.log(item));
 <h3 id="every">every()</h3>
 
 <p>This method checks if all items in an array pass the specified condition and
-return true if passed, else false.</p>
+return<code>true</code> if passed, else <code>false</code>.</p>
 
 <blockquote>
 <p>check if all numbers are positive</p>
@@ -719,19 +727,19 @@ console.log(atLeastOnePositive);
 <h3 id="includes">includes()</h3>
 
 <p>This method checks if an array contains a certain item. It is similar to
-<code>.some()</code>,but instead of looking for a specific condition to pass, it checks if
+<code>.some()</code>, but instead of looking for a specific condition to pass, it checks if
 the array contains a specific item.</p>
 
 <pre><code>let users = ['paddy', 'zaddy', 'faddy', 'baddy'];
 users.includes('baddy'); // returns true
 </code></pre>
 
-<p>If the item is not found, it returns false</p>
+<p>If the item is not found, it returns <code>false</code></p>
 
 <hr />
 
-<p>There are more methods, this is just a few of them. Also, there are tons of
-other actions that can be performed on arrays, try checking MDN docs
+<p>There are more array methods, this is just a few of them. Also, there are tons
+of other actions that can be performed on arrays, try checking MDN docs
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/">here</a>
 for deeper insights.</p>
 
@@ -742,13 +750,14 @@ for deeper insights.</p>
 <li><strong>join()</strong> combines all array elements into a string.</li>
 <li><strong>concat</strong> combines two arrays together or add more items to an array and then
 return a new array.</li>
-<li><strong>push()</strong> adds items to the end of an array and <strong>changes</strong> the original array.</li>
+<li><strong>push()</strong> adds item(s) to the end of an array and <strong>changes</strong> the original
+array.</li>
 <li><strong>pop()</strong> removes the last item of an array and <strong>returns</strong> it</li>
 <li><strong>shift()</strong> removes the first item of an array and <strong>returns</strong> it</li>
 <li><strong>unshift()</strong> adds an item(s) to the beginning of an array and <strong>changes</strong> the
 original array.</li>
-<li><strong>splice()</strong> c<strong>hanges</strong> an array, by adding, removing and inserting elements.</li>
-<li><strong>slice()</strong> copies** **a given part of an array and returns that copied part as
+<li><strong>splice()</strong> <strong>changes</strong> an array, by adding, removing and inserting elements.</li>
+<li><strong>slice()</strong> <strong>copies</strong> a given part of an array and returns that copied part as
 a new array. <strong>It does not change the original array.</strong></li>
 <li><strong>split()</strong> divides a string into substrings and returns them as an array.</li>
 <li><strong>indexOf()</strong> looks for an item in an array and returns <strong>the index</strong> where it
@@ -776,27 +785,68 @@ creates the Algorithms real-world applications use.</p>
 <p>Let&rsquo;s do a create a small function, one that converts a post title into a
 urlSlug.</p>
 
+<blockquote>
 <p><strong>URL slug</strong> is the exact address of a specific page or post on your site.</p>
+</blockquote>
 
-<p>When you write an article on <strong>Medium</strong> or any other writing platform, your post
+<p>When you write an article on **Medium **or any other writing platform, your post
 title is automatically converted to a slug with white spaces removed, characters
 turned to lowercase and each word in the title separated by a hyphen.</p>
 
 <p>Here’s a basic function that does that using some of the methods we learnt just
 now.</p>
 
-<pre><code>const url = 'https://bolajiayodeji.com/dt/'
+<pre><code>const url = 'https://bolajiayodeji.com/'
 
-const postTitle = 'Introduction to Chrome Lighthouse'
+const urlSlug = (postTitle, category) =&gt; {
+let postUrl = postTitle.toLowerCase().split(' ');
+let postSlug = `${url}` + category + '/' + postUrl.join('-');
+ postSlug;
+}
 
-const urlSlug = postTitle.toLowerCase().split(' ');
+let postTitle = 'Introduction to Chrome Lighthouse'
+let category = 'dt'
+console.log(urlSlug(postTitle, category));
 
-const postUrl = `${url}` + urlSlug.join('-')
-
-console.log(postUrl);
+// 
 </code></pre>
 
-<p><br></p>
+<p>in <code>postUrl</code>, we convert the string to lowercase then we use the <strong>split()</strong>
+method to convert the string into substrings and returns it in an array</p>
+
+<pre><code>[&quot;introduction&quot;, &quot;to&quot;, &quot;chrome&quot;, &quot;lighthouse&quot;]
+</code></pre>
+
+<p>in <code>post slug</code> we join the returned array with a hyphen and then concatenate it
+to the category string and main <code>url</code>.</p>
+
+<pre><code>let postSlug = `${url}` + category + '/' + postUrl.join('-');
+postUrl.join('-') // introduction-to-chrome-lighthouse
+</code></pre>
+
+<p>That’s it, pretty simple, right? :)</p>
+
+<hr />
+
+<p>If you’re just getting started with JavaScript, you should check this repository
+<a href="https://github.com/BolajiAyodeji/js-code-snippets">here</a>, I’m compiling a list
+of basic JavaScript snippets ranging from</p>
+
+<ul>
+<li>Arrays</li>
+<li>Control flow</li>
+<li>Functions</li>
+<li>Objects</li>
+<li>Operators</li>
+</ul>
+
+<p>Don’t forget to Star and share! :)</p>
+
+<p>You should also read my last article</p>
+
+<p>Thank you for reading, got any questions or views? Let&rsquo;s discuss in comments.</p>
+
+<p>You can tweet to me<a href="https://twitter.com/iambolajiayo"> @iambolajiayo</a> 🔥</p>
 
 <p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev" /></p>
 
