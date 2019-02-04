@@ -440,7 +440,7 @@ turned to lowercase and each word in the title separated by a hyphen.
 Here’s a basic function that does that using some of the methods we learnt just
 now.
 
-    const url = 'https://bolajiayodeji.com/'
+    const url = 'https://bolajiayodeji.com'
 
     const urlSlug = (postTitle, category) => {
     let postUrl = postTitle.toLowerCase().split(' ');
