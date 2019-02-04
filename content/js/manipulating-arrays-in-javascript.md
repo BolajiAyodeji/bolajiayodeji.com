@@ -218,7 +218,7 @@ another example:
     firstName.split(',', 2); // ["hello", " my name is bolaji"]
 
 > **NB:** If we declare an empty array, like this: *`firstName.split('');`* then
-> each item in the string will be divided as substrings:*
+> each item in the string will be divided as substrings:
 
     let firstName = 'Bolaji';
     firstName.split('') // ["B", "o", "l", "a", "j", "i"]
@@ -480,8 +480,6 @@ of basic JavaScript snippets ranging from
 * Operators
 
 Don’t forget to Star and share! :)
-
-You should also read my last article
 
 Thank you for reading, got any questions or views? Let's discuss in comments.
 
