@@ -133,8 +133,8 @@ array.splice(index[, deleteCount, element1, ..., elementN])
 
 
 * `Index` here is the starting point for removing elements in the array
-* `deleteCount `is the number of elements to be deleted from that index
-* `element1, …, elementN `is the element(s) to be added
+* `deleteCount` is the number of elements to be deleted from that index
+* `element1, …, elementN` is the element(s) to be added
 
 **Removing items**
 
