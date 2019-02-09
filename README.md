@@ -18,6 +18,11 @@ git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git
 ```
 cd bolajiayodeji.com
 ```
+Install dependencies
+```
+npm install
+```
+
 Run this command to start local build `hugo server -D`, then open https://localhost:1313.
 
 
