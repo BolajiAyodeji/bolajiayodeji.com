@@ -21,7 +21,8 @@ self.addEventListener('fetch', function (event) {
               '/404.html',
               './img/fav.png',
               './img/fav-500.png',
-              'https://bolajiayodeji-com.disqus.com/embed.js'
+              'https://bolajiayodeji-com.disqus.com/embed.js',
+              'https://bolaji-ayodeji.glitch.me/index.html'
             ]);
           })
         );
