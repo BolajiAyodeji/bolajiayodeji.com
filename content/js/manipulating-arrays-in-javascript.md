@@ -513,6 +513,7 @@ of basic JavaScript snippets ranging from
 
 * Arrays
 * Control flow
+* Dom
 * Functions
 * Objects
 * Operators

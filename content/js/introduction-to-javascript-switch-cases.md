@@ -126,8 +126,8 @@ is `4`. The match fails.
 Then `8`. That’s a match, so the execution starts from `case 8`until the nearest
 `break`.
 
-If** there is no **`break`** then the execution continues with the next
-**`case`** without any checks.**
+If there is no **`break`** then the execution continues with the next
+**`case`** without any checks.
 
 Here is an example without `break`:
 
