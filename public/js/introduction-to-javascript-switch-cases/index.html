@@ -7,7 +7,7 @@
     src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script id="dsq-count-scr" src="//bolajiayodeji-com.disqus.com/count.js" async></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 
     
     
@@ -570,16 +570,13 @@ default case with a break.</strong></p>
     </ul>
     
 
-    <div id="disqus_thread"></div>
-<script>
-(function() { 
-var d = document, s = d.createElement('script');
-s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <amp-iframe width=600 height=140
+            layout="responsive"
+            sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+            resizable
+            src="https://bolaji-ayodeji.glitch.me/index.html">
+            <div overflow tabindex=0></div>
+</amp-iframe>
 
 
   </footer>
