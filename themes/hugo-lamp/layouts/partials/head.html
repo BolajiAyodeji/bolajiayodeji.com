@@ -2,17 +2,11 @@
 {{ $logo := "/img/fav-500.png" }}
 <!-- Site & Page Meta Data -->
 {{ if eq .Type "post" }}
-  {{ $description := .Description | default .Summary }}
+{{ $description := .Description | default .Summary }}
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123719673-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-123719673-3');
+<script async custom-element="amp-install-serviceworker"
+  src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js">
 </script>
 
 

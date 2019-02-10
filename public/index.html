@@ -520,16 +520,11 @@ Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is
     { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
     : { "on" : "visible" , "request" : "pageview" } } }
   </script>
-  <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/sw.js')
-                .then(function () {
-                    console.log("Service Worker Registered");
-                });
-        });
-    }
-</script>
+
+  <amp-install-serviceworker
+      src="/sw.js"
+      layout="nodisplay">
+</amp-install-serviceworker>
 </amp-analytics>
 
 

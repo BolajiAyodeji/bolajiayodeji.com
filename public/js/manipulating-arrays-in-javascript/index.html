@@ -18,17 +18,11 @@
 
 
 
-  
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123719673-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-123719673-3');
+<script async custom-element="amp-install-serviceworker"
+  src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js">
 </script>
 
 
@@ -927,16 +921,11 @@ s.setAttribute('data-timestamp', +new Date());
     { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
     : { "on" : "visible" , "request" : "pageview" } } }
   </script>
-  <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/sw.js')
-                .then(function () {
-                    console.log("Service Worker Registered");
-                });
-        });
-    }
-</script>
+
+  <amp-install-serviceworker
+      src="/sw.js"
+      layout="nodisplay">
+</amp-install-serviceworker>
 </amp-analytics>
 
 
