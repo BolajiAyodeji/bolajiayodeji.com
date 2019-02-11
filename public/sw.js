@@ -22,7 +22,7 @@ self.addEventListener('fetch', function (event) {
               './img/fav.png',
               './img/fav-500.png',
               'https://bolajiayodeji-com.disqus.com/embed.js',
-              'https://bolaji-ayodeji.glitch.me/index.html'
+              '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d'
             ]);
           })
         );

@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://bolajiayodeji.com/"
 languageCode = "en-us"
 title = "⚡️Bolaji Ayodeji⚡️"
 theme = "hugo-lamp"
@@ -12,6 +12,9 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   logo = "https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
   description = "Articles on Web & Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀"
   paginate = 10
+
+  # Addthis
+  addThis = "ra-5c60f134dfdba39d"
 
   # Publisher
   ## adsensePublisher = "ca-pub-XXX"    # Required if you want to include Google Adsense

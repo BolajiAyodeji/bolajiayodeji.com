@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on ⚡️Bolaji Ayodeji⚡️</title>
-    <link>/tags/git/</link>
+    <link>https://bolajiayodeji.com/tags/git/</link>
     <description>Recent content in Git on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Nov 2018 13:22:14 +2400</lastBuildDate>
     
-	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to test a Pull Request locally before Merging.</title>
-      <link>/vc/how-to-test-a-pull-request-locally-before-merging/</link>
+      <link>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</link>
       <pubDate>Sun, 11 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
+      <guid>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
       <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
 So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
 The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.</description>

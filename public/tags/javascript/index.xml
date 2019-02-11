@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on ⚡️Bolaji Ayodeji⚡️</title>
-    <link>/tags/javascript/</link>
+    <link>https://bolajiayodeji.com/tags/javascript/</link>
     <description>Recent content in Javascript on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Feb 2019 13:22:14 +2400</lastBuildDate>
     
-	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction to ES6 modules</title>
-      <link>/js/introduction-to-es6-modules/</link>
+      <link>https://bolajiayodeji.com/js/introduction-to-es6-modules/</link>
       <pubDate>Mon, 11 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>/js/introduction-to-es6-modules/</guid>
+      <guid>https://bolajiayodeji.com/js/introduction-to-es6-modules/</guid>
       <description>An essential aspect of software engineering is efficiency. Every successful app needs a solid architectural structure that allows it to scale at all levels without breaking. In respect to this, several techniques and patterns are engaged to ensure code efficiency.
 In this article, I would introduce you to ES6 modules, what they are, how to use them and why you should care {0[]0}
 What exactly is a module? In JavaScript, the word “modules” refers to small units of independent, reusable code.</description>
@@ -24,10 +24,10 @@ What exactly is a module? In JavaScript, the word “modules” refers to small 
     
     <item>
       <title>Manipulating Arrays in JavaScript</title>
-      <link>/js/manipulating-arrays-in-javascript/</link>
+      <link>https://bolajiayodeji.com/js/manipulating-arrays-in-javascript/</link>
       <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>/js/manipulating-arrays-in-javascript/</guid>
+      <guid>https://bolajiayodeji.com/js/manipulating-arrays-in-javascript/</guid>
       <description>Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, hence this article.
 In this article, I would show you various methods of manipulating arrays in JavaScript [^^]
 What are Arrays in JavaScript? Before we proceed, you need to understand what arrays really mean.
@@ -36,10 +36,10 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
     
     <item>
       <title>Introduction to JavaScript Switch Cases</title>
-      <link>/js/introduction-to-javascript-switch-cases/</link>
+      <link>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</link>
       <pubDate>Fri, 04 Jan 2019 13:22:14 +2400</pubDate>
       
-      <guid>/js/introduction-to-javascript-switch-cases/</guid>
+      <guid>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</guid>
       <description>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
 PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.
 This article will explain better with more practical examples to help you understand switch cases in depth.
@@ -48,10 +48,10 @@ Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)
     
     <item>
       <title>How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</title>
-      <link>/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</link>
+      <link>https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</link>
       <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</guid>
+      <guid>https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</guid>
       <description>Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!
 I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences.</description>
     </item>

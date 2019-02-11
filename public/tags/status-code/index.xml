@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Status Code on ⚡️Bolaji Ayodeji⚡️</title>
-    <link>/tags/status-code/</link>
+    <link>https://bolajiayodeji.com/tags/status-code/</link>
     <description>Recent content in Status Code on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Nov 2018 13:22:14 +2400</lastBuildDate>
     
-	<atom:link href="/tags/status-code/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/status-code/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HTTP status codes and their meanings</title>
-      <link>/rd/http-status-codes-and-their-meanings/</link>
+      <link>https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/</link>
       <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>/rd/http-status-codes-and-their-meanings/</guid>
+      <guid>https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/</guid>
       <description>Often time, we come across several errors while surfing through some websites which displays with a status code, as developers we need to be familiar with this status codes.
 In this article, I&amp;rsquo;d be explaining what each HTTP status code stand for.
 What is an HTTP status code?
