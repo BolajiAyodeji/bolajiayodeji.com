@@ -47,6 +47,15 @@ Before now, it was impossible to directly reference or include one JavaScript
 file in another, as such, developers therefore resorted to alternative options
 like multiple HTML script tags
 
+```
+<script src="app.js"></script>
+ <script src="search.js"></script>
+ <script src="user.js"></script>
+ <script>
+ console.log('inline code');
+ </script>
+```
+
 
 This is a bad practice as each script initiates a new HTTP request, which
 affects page performance and disrupts further processing while it runs.
@@ -83,7 +92,7 @@ Before ES2015 release, there were at least 3 major modules competing standards:
 * **RequireJS Modules**
 * **CommonJS Modules**
 
-A single, native module standard was therefore proposed in** ES6 (ES2015).**
+A single, native module standard was therefore proposed in **ES6 (ES2015).**
 
 ES6 modules is a very powerful concept, although support is not available
 everywhere yet, a common way of using it is to transpile into ES5. You can use

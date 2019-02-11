@@ -343,6 +343,14 @@ be accessed in other modules unless the module file exports them.</li>
 file in another, as such, developers therefore resorted to alternative options
 like multiple HTML script tags</p>
 
+<pre><code>&lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;search.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;user.js&quot;&gt;&lt;/script&gt;
+ &lt;script&gt;
+ console.log('inline code');
+ &lt;/script&gt;
+</code></pre>
+
 <p>This is a bad practice as each script initiates a new HTTP request, which
 affects page performance and disrupts further processing while it runs.</p>
 
@@ -383,7 +391,7 @@ some of them as exports, then other modules can import them.</p>
 <li><strong>CommonJS Modules</strong></li>
 </ul>
 
-<p>A single, native module standard was therefore proposed in** ES6 (ES2015).**</p>
+<p>A single, native module standard was therefore proposed in <strong>ES6 (ES2015).</strong></p>
 
 <p>ES6 modules is a very powerful concept, although support is not available
 everywhere yet, a common way of using it is to transpile into ES5. You can use
