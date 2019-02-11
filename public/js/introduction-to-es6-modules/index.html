@@ -126,7 +126,7 @@ screen and
 0;-o-object-fit:cover;object-fit:cover;box-shadow:none}.entry-title{margin:0;padding:20px 30px
 0}.entry-link{font-size:1.5rem;font-weight:600;color:#fff}.entry-summary{padding:0
 30px;text-align:justify;max-height:4rem;overflow:hidden}.entry-footer{margin:0 30px;padding:10px 0;border-top:1px solid
-#ddd;display:flex;justify-content:space-between}.entry-meta{margin:0;font-size:.8rem;letter-spacing:1px;text-transform:uppercase}.entry-time{color:#fff}.entry-time:after{content:"";border-right:1px
+#ddd;display:flex;justify-content:space-between}.entry-meta{margin:0;font-size:.6rem;letter-spacing:1px;text-transform:uppercase}.entry-time{color:#fff}.entry-time:after{content:"";border-right:1px
 solid #ddd;margin:0 8px 0
 10px}.pagination{display:flex;justify-content:flex-start}.pagination-btn{color:#fff;padding:.8rem;background-color:#424242;border:1px
 solid
@@ -501,19 +501,19 @@ several ways of doing this also;</p>
 <li>You can import individually</li>
 </ul>
 
-<pre><code>import {sumAll} from './math.js'
+<pre><code>import {sumAll} from './math.js';
 </code></pre>
 
 <p>Let&rsquo;s test our import</p>
 
-<pre><code>console.log(sumAll(9, 8)) //17
+<pre><code>console.log(sumAll(9, 8)); //17
 </code></pre>
 
 <ul>
 <li>You can import multiple modules at once:</li>
 </ul>
 
-<pre><code>import {sumAll, subtractAll, divideAll} from './math.js'
+<pre><code>import {sumAll, subtractAll, divideAll} from './math.js';
 </code></pre>
 
 <ul>
@@ -609,7 +609,7 @@ export {max};
 <p>Now you can import <code>max.js</code> and <code>math.js</code> together in <code>app.js</code></p>
 
 <pre><code>import * as math from './math.js';
- import {max} from './max.js'
+ import {max} from './max.js';
 
  console.log(max(50, 10)); // 50
 
@@ -733,8 +733,8 @@ s.setAttribute('data-timestamp', +new Date());
   </footer>
 </section>
 <footer class="footer">
-  <p>Copyright © 2018-2019 ⚡️Bolaji Ayodeji⚡️</p>
-  <p>All articles written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
+  <p>Copyright © 2018-2019</p>
+  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
 </footer>
 
 

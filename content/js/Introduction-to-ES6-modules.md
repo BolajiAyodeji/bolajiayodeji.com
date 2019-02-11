@@ -191,18 +191,18 @@ several ways of doing this also;
 * You can import individually
 
 ```
-import {sumAll} from './math.js'
+import {sumAll} from './math.js';
 ```
 
 Let's test our import
 ```
-console.log(sumAll(9, 8)) //17
+console.log(sumAll(9, 8)); //17
 ```
 
 * You can import multiple modules at once:
 
 ```
-import {sumAll, subtractAll, divideAll} from './math.js'
+import {sumAll, subtractAll, divideAll} from './math.js';
 ```
 
 * You can import modules as aliases
@@ -292,7 +292,7 @@ Now you can import `max.js` and `math.js` together in `app.js`
 
 ```
 import * as math from './math.js';
- import {max} from './max.js'
+ import {max} from './max.js';
 
  console.log(max(50, 10)); // 50
 
