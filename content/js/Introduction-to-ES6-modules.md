@@ -174,6 +174,14 @@ let sumAll = (a, b) => {return a + b;}
  export {sumAll, subtractAll, divideAll, multiplyAll, findModulus};
 ```
 
+* You can also export default values
+
+
+
+```
+export default {sumAll, subtractAll, multiplyAll, divideAll};
+```
+
 > **Note:** You only export modules you want to use in other parts of your code,
 > its not mandatory for you to export every module in this script
 
@@ -220,6 +228,30 @@ console.log(math.sumAll(50, 10)); // 60
  console.log(math.divideAll(50, 10)); // 5
 
  console.log(math.findModulus(50, 15)); // 5
+```
+
+* You can also import default values
+
+```
+import math from './math.js';
+ console.log(math.sumAll(5, 2)); // 7
+```
+
+Here we have imported `sumAll()` in `math.js` and assigned it to the alias
+`math` . There is no need to add `* as` here. 
+
+> If you don’t export as `default` and you import using this method, you will get
+> this error:
+
+```
+Uncaught SyntaxError: The requested module './math.js' does not
+ provide an export named 'default'
+```
+
+To use this method, you must export `sumAll()` as `default`
+
+```
+export default {sumAll};
 ```
 
 * You can also use an absolute path for the module import, to reference modules

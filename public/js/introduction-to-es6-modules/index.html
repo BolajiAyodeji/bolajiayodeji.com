@@ -482,6 +482,13 @@ let findModulus = (a, b) =&gt; {return a % b;}
  export {sumAll, subtractAll, divideAll, multiplyAll, findModulus};
 </code></pre>
 
+<ul>
+<li>You can also export default values</li>
+</ul>
+
+<pre><code>export default {sumAll, subtractAll, multiplyAll, divideAll};
+</code></pre>
+
 <blockquote>
 <p><strong>Note:</strong> You only export modules you want to use in other parts of your code,
 its not mandatory for you to export every module in this script</p>
@@ -535,6 +542,31 @@ alias <code>math</code> . To use this imported module we do this:</p>
  console.log(math.divideAll(50, 10)); // 5
 
  console.log(math.findModulus(50, 15)); // 5
+</code></pre>
+
+<ul>
+<li>You can also import default values</li>
+</ul>
+
+<pre><code>import math from './math.js';
+ console.log(math.sumAll(5, 2)); // 7
+</code></pre>
+
+<p>Here we have imported <code>sumAll()</code> in <code>math.js</code> and assigned it to the alias
+<code>math</code> . There is no need to add <code>* as</code> here.</p>
+
+<blockquote>
+<p>If you don’t export as <code>default</code> and you import using this method, you will get
+this error:</p>
+</blockquote>
+
+<pre><code>Uncaught SyntaxError: The requested module './math.js' does not
+ provide an export named 'default'
+</code></pre>
+
+<p>To use this method, you must export <code>sumAll()</code> as <code>default</code></p>
+
+<pre><code>export default {sumAll};
 </code></pre>
 
 <ul>
