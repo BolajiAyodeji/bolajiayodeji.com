@@ -6,10 +6,21 @@
     <description>Recent content in Js on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to ES6 modules</title>
+      <link>/js/introduction-to-es6-modules/</link>
+      <pubDate>Mon, 11 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>/js/introduction-to-es6-modules/</guid>
+      <description>An essential aspect of software engineering is efficiency. Every successful app needs a solid architectural structure that allows it to scale at all levels without breaking. In respect to this, several techniques and patterns are engaged to ensure code efficiency.
+In this article, I would introduce you to ES6 modules, what they are, how to use them and why you should care {0[]0}
+What exactly is a module? In JavaScript, the word “modules” refers to small units of independent, reusable code.</description>
+    </item>
     
     <item>
       <title>Manipulating Arrays in JavaScript</title>
