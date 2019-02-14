@@ -6,10 +6,20 @@
     <description>Recent content in Javascript on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Feb 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Thu, 14 Feb 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to Babel and JavaScript Bundlers</title>
+      <link>https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/</link>
+      <pubDate>Thu, 14 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/</guid>
+      <description>As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.
+In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.</description>
+    </item>
     
     <item>
       <title>Introduction to ES6 modules</title>
