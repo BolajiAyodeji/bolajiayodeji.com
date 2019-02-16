@@ -13,7 +13,7 @@
     
 
     
-    <title>How to Connect Mysql with PHP</title>
+    <title>Git Cheat Sheet</title>
 
     
     
@@ -26,19 +26,17 @@
 
   
   <meta name="author" content="⚡️Bolaji Ayodeji⚡️" />
-  <meta name="description" content="When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
-In this article I will discuss how to connect MySQL Database using Localhost Server.
-Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.">
+  <meta name="description" content="Git cheat sheet saves you time when you just can’t remember a specific command. It is hard to memorize all the important Git commands as a newbie, most times Senior Developers forget too. This is why you need a reference you can come back to when you get stuck.
+In this article, I’d show you the basic Git commands to help you learn Git, and more advanced concepts around Git branches, remote repositories, reverting changes, and more.">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
 
   
   
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@iambolajiayo" />
-    <meta name="twitter:title" content="How to Connect Mysql with PHP" />
-    <meta name="twitter:description" content="When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
-In this article I will discuss how to connect MySQL Database using Localhost Server.
-Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created." />
+    <meta name="twitter:title" content="Git Cheat Sheet" />
+    <meta name="twitter:description" content="Git cheat sheet saves you time when you just can’t remember a specific command. It is hard to memorize all the important Git commands as a newbie, most times Senior Developers forget too. This is why you need a reference you can come back to when you get stuck.
+In this article, I’d show you the basic Git commands to help you learn Git, and more advanced concepts around Git branches, remote repositories, reverting changes, and more." />
     <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
   
 
@@ -48,7 +46,7 @@ Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is
 <meta name="generator" content="Hugo 0.53">
 
 
-<link rel="canonical" href="https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/">
+<link rel="canonical" href="https://bolajiayodeji.com/vc/git-cheat-sheet/">
 <link rel="alternative" href="/index.xml" title="⚡️Bolaji Ayodeji⚡️" type="application/atom+xml">
 
 
@@ -294,136 +292,87 @@ monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{f
 
 <section class="main post-detail">
   <header class="post-header">
-    <h1 class="post-title">How to Connect Mysql with PHP</h1>
-    <p class="entry-meta"><span class="entry-time">Apr 28, 2018</span> 4 min read</p>
+    <h1 class="post-title">Git Cheat Sheet</h1>
+    <p class="entry-meta"><span class="entry-time">Feb 16, 2019</span> 2 min read</p>
   </header>
   
 
   <article class="post-content">
 
-<p>When many developers refer to a database, they are usually referring to MySQL, a
-very popular DBMS that powers projects of all sizes. The USP of MySQL is its
-ability to handle huge volumes of data without breaking a sweat.</p>
+<p>Git cheat sheet saves you time when you just can’t remember a specific command.
+It is hard to memorize all the important Git commands as a newbie, most times
+Senior Developers forget too. This is why you need a reference you can come back
+to when you get stuck.</p>
 
-<p>In this article I will discuss how to connect MySQL Database using Localhost Server.</p>
+<p>In this article, I’d show you the basic Git commands to help you learn Git, and
+more advanced concepts around Git branches, remote repositories, reverting
+changes, and more. At the end of this article, I’d also show you some <strong>Version
+Control Best Practice</strong>s.</p>
 
-<h3 id="create-mysql-database-at-the-localhost">Create MySQL Database at the Localhost</h3>
+<p><img src="https://cdn-images-1.medium.com/max/800/1*YrW-yGnNBHYHJzKvo-0tDg.png" alt="" /></p>
 
-<p>First, let me tell you what PHPMyAdmin is. It is a control panel from where you
-can manage your database that you have created. Open your browser and go to
-localhost/PHPMyAdmin or click “Admin” in XAMPP UI.</p>
+<p>Let’s get started :)</p>
 
-<p>When you first installed XAMPP, it only created the username for it to be
-accessed, you now have to add a password to it by yourself. For this, you have
-to go to User account where the user is same as the one shown in this picture:</p>
+<h3 id="cheat-sheet-contents">Cheat Sheet Contents</h3>
 
-<p><img src="https://cdn-images-1.medium.com/max/880/0*Kjc-5Hwt0tHeDZJE.png" alt="" /></p>
+<ul>
+<li>Git Basics</li>
+<li>Reverting Changes</li>
+<li>Rewriting Git History</li>
+<li>Git Branches</li>
+<li>Remote Repositories</li>
+<li>git config</li>
+<li>git log</li>
+<li>git dif</li>
+<li>git reset</li>
+<li>Version Control best practises</li>
+</ul>
 
-<p>Now click <em>Edit privileges</em> and go to Change Admin password, type your password
-there and save it. Remember this password as it will be use to connect to your
-Database.</p>
+<p>I believe you already know git and you probably should be using it, but in case
+you don’t know:</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/880/0*Bf6g12KPGGtGDHuS.png" alt="" /></p>
+<blockquote>
+<p>Git is a free and open source distributed version control system designed to
+handle everything from small to very large projects with speed and efficiency.
+Git manages your source code history and versions. More details
+<a href="https://git-scm.com/">here</a></p>
+</blockquote>
 
-<p>Note: It is not necessary to change password to access databases on local host.
-It is a good practice and that is why we have used a password.</p>
+<p>Here’s the cheat sheet. You can also find it
+<a href="https://gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda">here</a>;</p>
 
-<h3 id="create-database">Create Database</h3>
+<p><script type="application/javascript" src="//gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda.js"></script>
+<br></p>
 
-<p>Now return to the homepage of phpmyadmin. Click <em>New</em> button to create a new
-database.</p>
+<h3 id="version-control-best-practises">Version Control Best Practises</h3>
 
-<p><img src="https://cdn-images-1.medium.com/max/880/0*7IUxi9DeitEReIya.png" alt="" /></p>
+<ul>
+<li>Commit Related Changes</li>
+<li>Don’t commit an unfinished work</li>
+<li>Your commit message should be clear enough and describes changes you made</li>
+<li>Add screenshots where possible to describe your changes better</li>
+<li>Ensure you open an issue first before you work on a new feature</li>
+<li>When pushing a new feature that was not discussed before, add a reason why you
+made that commit</li>
+<li>Test your commits before you push</li>
+<li>Use branches to work on new features</li>
+<li>Always pull before you push</li>
+<li>Fix merge conflicts as soon as possible</li>
+</ul>
 
-<p>In the new window, name your database as per your need, I am naming it
-“<strong>practice</strong>”. Now select Collation as utf8_general_ci, as we are using it for
-learning purposes and it will handle all of our queries and data that will be
-covered in this tutorial series. Now click on <em>Create</em> and your database will be
-created.</p>
+<h3 id="conclusion">Conclusion</h3>
 
-<p><img src="https://cdn-images-1.medium.com/max/880/0*2Cysb8IhDpvzDuQ7.png" alt="" /></p>
+<p>Git is a tricky tool to get your head around. Knowing the commands is one thing,
+but knowing how and when to use them is another. This cheat-sheet would come in
+handy whenever you forget any command.</p>
 
-<p>The newly created database will be empty now, as there are no tables in it. I
-will be covering that in the upcoming series where we will learn how to create
-tables and insert data in it. In this tutorial, we are going to connect this
-database to a localhost using PHP.</p>
+<p>Do share with your friends also, :)</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/880/0*zjlRKjiDUjimMy7q.png" alt="" /></p>
+<h3 id="reference">Reference</h3>
 
-<h3 id="create-a-folder-in-htdocs">Create a Folder in htdocs</h3>
+<p><a href="https://git-scm.com/">https://git-scm.com/</a></p>
 
-<p>Now, locate the folder where you installed XAMPP and open htdocs folder (usually
-c:/xampp). Create a new folder inside c:/xampp/htdocs/ and name it “practice” we
-will place web files in this folder. Why we have created folder in htdocs? XAMPP
-uses folders in htdocs to execute and run your PHP sites.</p>
-
-<p>Note: If your using WAMP, then add your practice folder in c:/wamp/www folder.</p>
-
-<h3 id="create-database-connection-file-in-php">Create Database Connection File In PHP</h3>
-
-<p>Create a new php file and name it <em>db_connnection.php</em> and save it. Why am I
-creating a separate database connection file? Because if you have created
-multiple files in which you want to insert data or select data from the
-databases, you don’t need to write the code for database connection every time.
-You just have to include it by using PHP custom function <strong>include</strong> (include
-‘connection.php’) on the top of your code and call its function and use it. It
-also helps when you are moving your project location from one PC to another and
-you have to change the values on the single file and all the changes will be
-applied to all the other files automatically. Write the following code in your
-db_connection file.</p>
-
-<pre><code>&lt;?php function OpenCon()
-{
-$dbhost = “localhost”;
-$dbuser = “root”;
-$dbpass = “1234”;
-$db = “example”;
-$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die(“Connect failed: %s\n”. $conn -&gt; error);
-return $conn;
-}
-function CloseCon($conn)
-{
-$conn -&gt; close();
-}
-?&gt;
-</code></pre>
-
-<p>Here is the explanation of the variable that we have used in our db_connection
-file:</p>
-
-<ol>
-<li>$dbhost will be the host where your server is running it is usually localhost.</li>
-<li>$dbuser will be the username i.e. <strong>root</strong> and $dbpass will be the password
-which is the same that you used to access your phpmyadmin.</li>
-<li>$dbname will be the name of your database which we have created in this
-tutorial.</li>
-</ol>
-
-<h3 id="create-new-php-file-to-check-your-database-connection">Create new php file to check your database connection</h3>
-
-<p>Create a new php file to connect to your database. Name it index.php and add
-this code in this file.</p>
-
-<pre><code>&lt;?PHP
-INCLUDE ‘DB_CONNECTION.PHP’;
-$CONN = OPENCON();
-ECHO “CONNECTED SUCCESSFULLY”;
-CLOSECON($CONN);
-?&gt;
-</code></pre>
-
-<h3 id="run-it">Run it!</h3>
-
-<p>Now open your browser and go to <code>localhost/practice/index.php</code> and you should see
-this screen:</p>
-
-<p><img src="https://cdn-images-1.medium.com/max/880/0*Jl6hwq9wTGqgI67x.png" alt="" /></p>
-
-<p>Confirmation Message</p>
-
-<p>Congratulations! You’ve successfully connected your database with your
-localhost! If you are not able to see this screen, then check if you have done
-everything right in your db_connection.php file.</p>
+<p><a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud">https://www.atlassian.com/git/</a></p>
 
 <p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev" /></p>
 
@@ -433,11 +382,11 @@ everything right in your db_connection.php file.</p>
     
     <ul class="post-tags">
       
-      <li class="post-tag"><a href="/tags/php"><span class="tag">Php</span></a></li>
+      <li class="post-tag"><a href="/tags/git"><span class="tag">Git</span></a></li>
       
-      <li class="post-tag"><a href="/tags/mysql"><span class="tag">Mysql</span></a></li>
+      <li class="post-tag"><a href="/tags/version-control"><span class="tag">Version Control</span></a></li>
       
-      <li class="post-tag"><a href="/tags/database"><span class="tag">Database</span></a></li>
+      <li class="post-tag"><a href="/tags/cli"><span class="tag">CLI</span></a></li>
       
     </ul>
     
