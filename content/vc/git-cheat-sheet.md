@@ -1,9 +1,9 @@
 ﻿---
 title: "Git Cheat Sheet"
-date: 2019-02-16T13:22:14+24:00
+date: 2019-02-18T13:22:14+24:00
 draft: false
 type: "post"
-tags: ["git", "Version Control", "CLI"]
+tags: ["git", "cheat sheet", "Version Control"]
 ---
 
 

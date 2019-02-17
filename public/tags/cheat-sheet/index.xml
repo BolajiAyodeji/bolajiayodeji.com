@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cli on ⚡️Bolaji Ayodeji⚡️</title>
-    <link>https://bolajiayodeji.com/tags/cli/</link>
-    <description>Recent content in Cli on ⚡️Bolaji Ayodeji⚡️</description>
+    <title>Cheat Sheet on ⚡️Bolaji Ayodeji⚡️</title>
+    <link>https://bolajiayodeji.com/tags/cheat-sheet/</link>
+    <description>Recent content in Cheat Sheet on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 13:22:14 +2400</lastBuildDate>
     
-	<atom:link href="https://bolajiayodeji.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Git Cheat Sheet</title>
       <link>https://bolajiayodeji.com/vc/git-cheat-sheet/</link>
-      <pubDate>Sun, 17 Feb 2019 13:22:14 +2400</pubDate>
+      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/vc/git-cheat-sheet/</guid>
       <description>Git cheat sheet saves you time when you just can’t remember a specific command. It is hard to memorize all the important Git commands as a newbie, most times Senior Developers forget too. This is why you need a reference you can come back to when you get stuck.
