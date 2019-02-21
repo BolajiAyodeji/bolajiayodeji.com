@@ -46,6 +46,7 @@ Here’s the cheat sheet. You can also find it
 [here](https://gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda);
 
 {{< gist BolajiAyodeji d5393b90650c49ba9ef81493bfca9cda >}}
+
 <br>
 
 ### Version Control Best Practises
