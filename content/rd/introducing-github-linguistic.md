@@ -19,7 +19,7 @@ In this article I would:
 * Introduce you to GitHub Linguist
 * How it works
 * How to fix common Linguist issues
-* How to use `gitattributes`to overriding Linguist :)
+* How to use `gitattributes`to override Linguist :)
 * How to use Emacs or Vim modelines to override Linguist
 * How to contribute to GitHub Linguist
 
