@@ -234,7 +234,7 @@ a global market from the start.
 <span class="figcaption_hack">[https://www.unrealengine.com/en-US/what-is-unreal-engine-4](https://www.unrealengine.com/en-US/what-is-unreal-engine-4)</span>
 
 * A complete suite of game development tools for PC, console, mobile, web and VR
-* Unreal Engine while you’re a student (OMG!)
+* Unreal Engine free while you’re a student (OMG!)
 
 > This is all the current contents of the pack. More would be added frequently as
 > GitHub gets more partner companies.
