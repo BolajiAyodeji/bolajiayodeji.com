@@ -284,6 +284,11 @@ For more information about the pack, check
 
 Thank you for reading!
 
+### Reference
+
+All guides used in this post were gotten from [GitHub
+Education](https://education.github.com/pack
+
 
 
 ![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
