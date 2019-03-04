@@ -248,6 +248,9 @@ pro. Ensure you **learn by doing,** use these tools to improve and advance your
 skills. Be creative, these tools would allow you to build and develop the future
 at no cost, build brilliant innovations and make the world better.
 
+For more information about the pack, check
+[here](https://education.github.com/pack)
+
 Thank you for reading!
 
 
