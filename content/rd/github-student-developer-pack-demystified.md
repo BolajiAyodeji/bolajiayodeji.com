@@ -287,7 +287,7 @@ Thank you for reading!
 ### Reference
 
 All guides used in this post were gotten from [GitHub
-Education](https://education.github.com/pack
+Education](https://education.github.com/pack)
 
 
 
