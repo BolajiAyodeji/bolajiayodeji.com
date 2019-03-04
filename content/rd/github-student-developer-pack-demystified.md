@@ -1,6 +1,6 @@
 ﻿---
 title: "GitHub Student Developer Pack Demystified"
-date: 2019-03-03T13:22:14+24:00
+date: 2019-03-04T13:22:14+24:00
 draft: false
 type: "post"
 tags: ["github", "github education", "developers"]
