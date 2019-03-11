@@ -23,7 +23,7 @@ tests to show you which is faster and more efficient.
 Object properties, besides a `value`, have three special attributes (also known
 as “flags”):
 
-* `writable` – if `true`, it’s read-only.
+* `writable` – if `true`, can be edited, else it's read-only.
 * `enumerable` – if `true`, then listed in loops.
 * `configurable` – if `true`, the property can be deleted and these attributes can
 be modified.
@@ -123,6 +123,16 @@ According to our tests, here are the results in ascending order;
 
 So, according to these results, the fastest and most efficient way to iterate
 through JavaScript Objects is the **for…in loop.**
+
+Now, this doesn't mean the other methods are void or useless, it all depends on
+use cases. For example, if you need to get only the keys in an object, there’s
+no point using a for…in loop even though according to our test is the fastest,
+you can easily use Object.keys() which would faster in this use case.
+
+So if you’re dealing with both keys and values, then for…in loop should be your
+best shot as it is flexible and allows you to access both keys and values within
+the loop without having to run other methods otherwise, you should use the other
+methods.
 
 ### Reference
 

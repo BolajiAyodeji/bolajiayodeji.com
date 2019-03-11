@@ -293,7 +293,7 @@ monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{f
 <section class="main post-detail">
   <header class="post-header">
     <h1 class="post-title">Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</h1>
-    <p class="entry-meta"><span class="entry-time">Mar 10, 2019</span> 2 min read</p>
+    <p class="entry-meta"><span class="entry-time">Mar 10, 2019</span> 3 min read</p>
   </header>
   
 
@@ -317,7 +317,7 @@ tests to show you which is faster and more efficient.</p>
 as “flags”):</p>
 
 <ul>
-<li><code>writable</code> – if <code>true</code>, it’s read-only.</li>
+<li><code>writable</code> – if <code>true</code>, can be edited, else it&rsquo;s read-only.</li>
 <li><code>enumerable</code> – if <code>true</code>, then listed in loops.</li>
 <li><code>configurable</code> – if <code>true</code>, the property can be deleted and these attributes can
 be modified.</li>
@@ -417,6 +417,16 @@ let duration = performance.now() - start;
 
 <p>So, according to these results, the fastest and most efficient way to iterate
 through JavaScript Objects is the <strong>for…in loop.</strong></p>
+
+<p>Now, this doesn&rsquo;t mean the other methods are void or useless, it all depends on
+use cases. For example, if you need to get only the keys in an object, there’s
+no point using a for…in loop even though according to our test is the fastest,
+you can easily use Object.keys() which would faster in this use case.</p>
+
+<p>So if you’re dealing with both keys and values, then for…in loop should be your
+best shot as it is flexible and allows you to access both keys and values within
+the loop without having to run other methods otherwise, you should use the other
+methods.</p>
 
 <h3 id="reference">Reference</h3>
 
