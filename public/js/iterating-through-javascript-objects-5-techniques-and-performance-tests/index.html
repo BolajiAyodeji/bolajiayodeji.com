@@ -355,15 +355,17 @@ of an object.</p>
 
 <h3 id="2-object-keys">2. Object.keys</h3>
 
-<p>The <code>Object.keys()</code> method returns an array of Object keys. This only returns
-keys of enumerable properties.</p>
+<p>The <code>Object.keys()</code> method returns an array of Object keys. This creates an
+array that contains the properties of the object. You can then loop through the
+array to get the keys and values you need.</p>
 
 <script type="application/javascript" src="//gist.github.com/BolajiAyodeji/96f4d8012b961c790224503985a759ff.js"></script>
 
 <h3 id="3-object-values">3. Object.values</h3>
 
-<p>The <code>Object.values()</code> method returns an array of Objects Values. This only
-returns values of enumerable properties.</p>
+<p>The <code>Object.values()</code> method returns an array of Objects Values. This creates an
+array that contains the properties of the object. You can then loop through the
+array to get the keys and values you need.</p>
 
 <script type="application/javascript" src="//gist.github.com/BolajiAyodeji/fc94861337260f9c8ab16153801e847c.js"></script>
 
@@ -371,7 +373,9 @@ returns values of enumerable properties.</p>
 
 <p>The <code>Object.getOwnPropertyNames()</code> method returns an array of all properties
 (including non-enumerable properties except for those which use Symbol) found
-directly in a given object.</p>
+directly in a given object. This creates an array that contains the properties
+of the object. You can then loop through the array to get the keys and values
+you need.</p>
 
 <script type="application/javascript" src="//gist.github.com/BolajiAyodeji/ae8829a2efffa7fa93a6e0511d9d4158.js"></script>
 
@@ -415,18 +419,24 @@ let duration = performance.now() - start;
 
 <p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/v1552257253/loop.png" alt="" /></p>
 
-<p>So, according to these results, the fastest and most efficient way to iterate
-through JavaScript Objects is the <strong>for…in loop.</strong></p>
+<p>So, according to these results, the fastest way to iterate through JavaScript
+Objects is the <strong>for…in loop.</strong> Now, this doesn&rsquo;t mean the other methods are
+void or useless, it all depends on use cases.</p>
 
-<p>Now, this doesn&rsquo;t mean the other methods are void or useless, it all depends on
-use cases. For example, if you need to get only the keys in an object, there’s
-no point using a for…in loop even though according to our test is the fastest,
-you can easily use Object.keys() which would faster in this use case.</p>
+<p>The problem with a <code>for...in</code> loop is that it iterates through properties in the
+Prototype chain. It iterates over object properties. Javascript arrays are just
+a specific kind of object with some handy properties that help you treat them as
+arrays, but they still have internal object properties and you don&rsquo;t mean to
+iterate over these. <code>for...in</code>also iterates over **all enumerable properties
+** and not just the array’s elements. This can also lead to unexpected results.</p>
 
-<p>So if you’re dealing with both keys and values, then for…in loop should be your
-best shot as it is flexible and allows you to access both keys and values within
-the loop without having to run other methods otherwise, you should use the other
-methods.</p>
+<p>When you loop through an object with the <code>for...in</code> loop, you need to check if
+the property belongs to the object. You can do this with <code>hasOwnProperty</code>.</p>
+
+<p>A better and more efficient way to loop through objects in ES6 is to first
+convert the object into an array using <code>Object.keys()</code> , <code>Object.values()</code> ,
+<code>Object.getOwnPropertyNames</code> or <code>Object.entries()</code> . Then you loop through the
+array to get the keys and values.</p>
 
 <h3 id="reference">Reference</h3>
 
