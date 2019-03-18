@@ -13,29 +13,32 @@
     
 
     
-    <title>Bolaji Ayodeji</title>
+    <title>Getting Started With Hugo and Deploying to Netlify</title>
 
     
     
+
+
+
 
 
 
 
   
   <meta name="author" content="⚡️Bolaji Ayodeji⚡️" />
-  <meta name="description" content="Articles on Web &amp; Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀" />
+  <meta name="description" content="Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.
+Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs.">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
 
   
-  <meta property="og:image" content="https://bolajiayodeji.com/img/fav-500.png" />
-  <meta property="og:url" content="https://bolajiayodeji.com" />
-  <meta property="og:type" content="article" />
-
   
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@iambolajiayo" />
-  <meta name="twitter:title" content="Bolaji Ayodeji" />
-  <meta name="twitter:description" content="Articles on Web &amp; Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀" />
-  <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@iambolajiayo" />
+    <meta name="twitter:title" content="Getting Started With Hugo and Deploying to Netlify" />
+    <meta name="twitter:description" content="Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.
+Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs." />
+    <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+  
 
 
 
@@ -43,7 +46,7 @@
 <meta name="generator" content="Hugo 0.53">
 
 
-<link rel="canonical" href="https://bolajiayodeji.com/">
+<link rel="canonical" href="https://bolajiayodeji.com/dt/getting-started-with-hugo-and-deploying-to-netlify/">
 <link rel="alternative" href="/index.xml" title="⚡️Bolaji Ayodeji⚡️" type="application/atom+xml">
 
 
@@ -205,7 +208,7 @@ monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{f
 </amp-sidebar>
 
     
-  <header class="header">
+<header class="header">
   <amp-img alt="⚡️Bolaji Ayodeji⚡️"
     width="128px"
     height="128px"
@@ -287,146 +290,474 @@ monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{f
 
 </header>
 
-  <section class="main entry-list">
+<section class="main post-detail">
+  <header class="post-header">
+    <h1 class="post-title">Getting Started With Hugo and Deploying to Netlify</h1>
+    <p class="entry-meta"><span class="entry-time">Mar 18, 2019</span> 7 min read</p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*3VZ6C9SZ58a039z4.png" alt="" /></p>
+
+<p>Hugo is a fast and modern static site generator written in
+<a href="https://golang.org/">Go</a>, and designed to make website creation fun again. It
+builds pages when you create or update your content. Websites built with Hugo
+are extremely fast and secure like
+<a href="https://bolajiayodeji.com/">https://bolajiayodeji.com</a>. In technical terms,
+Hugo takes a source directory of files and templates and uses these as input to
+create a complete website.</p>
+
+<p>Hugo sites can be hosted anywhere, including <a href="https://netlify.com/">Netlify</a>,
+<a href="https://www.heroku.com/">Heroku</a>, <a href="https://www.godaddy.com/">GoDaddy</a>,
+<a href="https://www.dreamhost.com/">DreamHost</a>, <a href="https://pages.github.com/">GitHub
+Pages</a>, <a href="https://about.gitlab.com/features/pages/">GitLab
+Pages</a>, <a href="https://surge.sh/">Surge</a>,
+<a href="https://www.aerobatic.com/">Aerobatic</a>,
+<a href="https://firebase.google.com/docs/hosting/">Firebase</a>, <a href="https://cloud.google.com/storage/">Google Cloud
+Storage</a>, <a href="https://aws.amazon.com/s3/">Amazon
+S3</a>,
+<a href="https://www.rackspace.com/cloud/files">Rackspace</a>,
+<a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website">Azure</a>,
+and <a href="https://aws.amazon.com/cloudfront/">CloudFront</a> and work well with CDNs.
+Hugo sites run without the need for a database or dependencies on expensive
+runtimes like Ruby, Python, or PHP.</p>
+
+<p>In this tutorial, I’d show you how to build your first Hugo site and deploy to
+Netlify. Let’s roll :)</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*oIEz4ooK0G4XUVViipHHjA.png" alt="" /></p>
+
+<h3 id="hugo-features">Hugo Features</h3>
+
+<ul>
+<li>Hugo is the fastest tool of its kind. At &lt;1 ms per page, the average site builds
+in less than a second.</li>
+<li>Hugo supports unlimited content types, taxonomies, menus, dynamic API-driven
+content, and more, all without plugins.</li>
+<li>We love the beautiful simplicity of markdown’s syntax, but there are times when
+we want more flexibility. Hugo shortcodes allow for both beauty and flexibility.</li>
+<li>Hugo ships with pre-made templates to make quick work of SEO, commenting,
+analytics and other functions. One line of code and you’re done.</li>
+<li>Hugo provides full i18n support for multi-language sites with the same
+straightforward development experience Hugo users love in single-language sites.</li>
+<li>Hugo allows you to output your content in multiple formats, including JSON or
+AMP and makes it easy to create your own.</li>
+</ul>
+
+<p>All features can be found <a href="https://gohugo.io/about/features/">here</a></p>
+
+<hr />
+
+<h3 id="getting-started">Getting Started</h3>
+
+<p>For this tutorial, we’re going to build a Simple Blog with Hugo.</p>
+
+<p>PS: I would be using a windows machine in this tutorial, so all steps would be
+based on windows, but I added installation guides for other operating systems.</p>
+
+<p>I’ve also created a repository with starter files which can be found
+<a href="https://github.com/BolajiAyodeji/hugo101">here</a>. Use the installation guide to
+get Hugo running on your machine and fork the starter files. Ensure you follow
+the steps.</p>
+
+<h4 id="prerequisites">Prerequisites</h4>
+
+<ul>
+<li>Git</li>
+<li>Code Explorer</li>
+</ul>
+
+<h4 id="steps">Steps</h4>
+
+<ul>
+<li>Install Hugo</li>
+<li>Fork the starter repository
+<a href="https://github.com/BolajiAyodeji/hugo101/fork">here</a></li>
+<li>Create a new site</li>
+<li>Deploy to Netlify</li>
+</ul>
+
+<h4 id="installation-guide">Installation guide</h4>
+
+<p>To start using Hugo, you need to first install it.</p>
+
+<blockquote>
+<p>Hugo was written in Go, but you don’t need to install Go to enjoy Hugo. You only
+need a precompiled binary!</p>
+</blockquote>
+
+<p>Hugo currently provides pre-built binaries for the following:</p>
+
+<ul>
+<li>macOS (Darwin) for x64, i386, and ARM architectures</li>
+<li>Windows</li>
+<li>Linux</li>
+<li>OpenBSD</li>
+<li>FreeBSD</li>
+</ul>
+
+<h4 id="installing-on-mac">Installing on Mac</h4>
+
+<p>Follow the video below to install Hugo on your macOS or read the <a href="https://gohugo.io/getting-started/installing#macos">Installation
+guide</a>. There are several
+techniques for installing Hugo on mac, so I won’t be going through them. BTW,
+I’m using a windows machine so I possibly don&rsquo;t know how to guide you :)</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/WvhCGlLcrF8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h4 id="installing-on-windows">Installing on Windows</h4>
+
+<p>Follow the video below to install Hugo on your windows machine or read the
+<a href="https://gohugo.io/getting-started/installing#windows">Installation guide</a>. This
+video is a complete guide, but if you have installation issues, please let me
+know in comments.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/G7umPCU-8xc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h4 id="installing-on-linux">Installing on Linux</h4>
+
+<ul>
+<li><a href="https://docs.snapcraft.io/installing-snapd/6735">Using Snaps</a></li>
+</ul>
+
+<p>To install the “extended” Sass/SCSS:</p>
+
+<pre><code>snap install hugo --channel=extended
+</code></pre>
+
+<p>To install the non-extended version without Sass/SCSS support:</p>
+
+<pre><code>snap install hugo
+</code></pre>
+
+<ul>
+<li>Using the <a href="https://packages.debian.org/search?keywords=hugo">Debian Package</a> for
+Ubuntu.</li>
+</ul>
+
+<p>This installs the “extended” Sass/SCSS version.</p>
+
+<pre><code>sudo apt-get install hugo
+</code></pre>
+
+<ul>
+<li><p>For Arch Linux</p>
+
+<p>sudo pacman -Syu hugo</p></li>
+
+<li><p>For Fedora, Red Hat and CentOS</p>
+
+<p>sudo dnf install hugo</p></li>
+</ul>
+
+<h4 id="installing-on-openbsd">Installing on OpenBSD</h4>
+
+<pre><code>doas pkg_add hugo
+</code></pre>
+
+<h3 id="creating-a-new-site">Creating a new site</h3>
+
+<p>You can simply fork the starter repository. It contains the finished work with
+Theme and custom posts. Creating a site with Hugo is quite simple, just follow
+the following steps.</p>
+
+<ul>
+<li><p>Create a new site with name <code>Hugo101</code></p>
+
+<p>hugo new site Hugo101</p></li>
+</ul>
+
+<p>Now you should have a new folder <code>Hugo101</code> with subfolders:</p>
+
+<pre><code>.
+├── archetypes
+├── assets
+├── config
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre>
+
+<p>Full directory structure explanation can be found
+<a href="https://gohugo.io/getting-started/directory-structure/">here</a></p>
+
+<p>Additional resource:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/sB0HLHjgQ7E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<ul>
+<li>Add a new theme. All Hugo themes can be found <a href="https://themes.gohugo.io/">here</a>.
+For this tutorial, we’d be using the <a href="https://github.com/htdvisser/hugo-base16-theme">Hugo Base16
+</a>theme by <a href="https://github.com/htdvisser">Hylke
+Visser</a>.</li>
+</ul>
+
+<p>This video would show you how to install and use themes on Hugo. Installing is
+very simple, you just need to find the theme you like and download it into the
+<code>themes</code> subdirectory. If you’re using the starter file, I’ve done that already.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/L34JL_3Jkyc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<ul>
+<li><p>After installing the theme or cloning the starter file, start the Hugo server</p>
+
+<p>hugo server -D</p></li>
+</ul>
+
+<p>Now your new site should be available at**
+<strong><a href="http://localhost:1313/">localhost:1313</a></strong>.**</p>
+
+<ul>
+<li><p>To add a new post</p>
+
+<p>hugo new post/my-first-post.md</p></li>
+</ul>
+
+<p>This would be added in <code>/contents/post</code></p>
+
+<ul>
+<li>Some posts parameters would be added at the top of the file. I’ve added some
+additional parameters you might need.</li>
+</ul>
+
+<pre><code>    ---
+    title: &quot;my first post&quot;
+    date: 2018-11-05T13:22:14+24:00
+    draft: false 
+    tags: [&quot;markdown&quot;, &quot;GitHub&quot;, &quot;website&quot;]
+    categories: [&quot;hugo&quot;, &quot;base16&quot;]
+    ---
+</code></pre>
+
+<ul>
+<li>To build files, run</li>
+</ul>
+
+<pre><code>    hugo
+</code></pre>
+
+<p>Now your directory would have a new subfolder <code>public</code> , this is the final
+build. <em>Hugo takes a source directory of files and templates and uses these as
+input to create a complete website.</em> The <code>public</code> is the complete website and is
+what you’d deploy.</p>
+
+<pre><code>    .
+    ├── archetypes
+    ├── assets
+    ├── config
+    ├── content
+    ├── data
+    ├── layouts
+    ├── public
+    ├── static
+    └── themes
+</code></pre>
+
+<ul>
+<li>Configure Hugo for deployment</li>
+</ul>
+
+<p>We would deploy to Netlify in the next section of this tutorial, but before
+that, we need to configure Hugo for Netlify.</p>
+
+<p>Create a new file in the root of your project, If you’re using the starter file,
+I’ve added this already.</p>
+
+<pre><code>touch netlify.toml
+</code></pre>
+
+<p>Paste this in it: (This is just configuring how Hugo should work with Netlify)</p>
+
+<pre><code>[build]
+publish = &quot;public&quot;
+command = &quot;hugo --gc --minify&quot;
+
+[context.production.environment]
+HUGO_VERSION = &quot;0.54.0&quot;
+HUGO_ENV = &quot;production&quot;
+HUGO_ENABLEGITINFO = &quot;true&quot;
+
+[context.split1]
+command = &quot;hugo --gc --minify --enableGitInfo&quot;
+
+[context.split1.environment]
+HUGO_VERSION = &quot;0.54.0&quot;
+HUGO_ENV = &quot;production&quot;
+
+[context.deploy-preview]
+command = &quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&quot;
+
+[context.deploy-preview.environment]
+HUGO_VERSION = &quot;0.54.0&quot;
+
+[context.branch-deploy]
+command = &quot;hugo --gc --minify -b $DEPLOY_PRIME_URL&quot;
+
+[context.branch-deploy.environment]
+HUGO_VERSION = &quot;0.54.0&quot;
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = &quot;true&quot;
+</code></pre>
+
+<h3 id="deploying-to-netlify">Deploying to Netlify</h3>
+
+<p><a href="https://www.netlify.com/">Netlify</a> is an all-in-one workflow that combines
+global deployment, continuous integration, automatic HTTPS and many other
+features.</p>
+
+<p>Ensure you have a forked version of the <a href="https://github.com/BolajiAyodeji/hugo101">starter
+files</a> or a version of your own
+project hosted on GitHub</p>
+
+<h4 id="create-a-netlify-account"><strong>Create a Netlify account</strong></h4>
+
+<p>Visit <a href="https://app.netlify.com/">app.netlify.com</a> and select your preferred
+signup method.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*Io0Yvvzt0avlMLJt.jpg" alt="" /></p>
+
+<h4 id="create-a-new-site-with-continuous-deployment"><strong>Create a New Site with Continuous Deployment</strong></h4>
+
+<p>Select the “New site from git.” button</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*vFXRkn0f-D22wQdP.jpg" alt="" /></p>
+
+<h4 id="select-your-git-provider"><strong>Select your git provider</strong></h4>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*wVPVKGmAZgI0dJanJ6XDNw.png" alt="" /></p>
+
+<h4 id="select-the-repository-you-want-to-use-for-continuous-deployment"><strong>Select the repository you want to use for continuous deployment.</strong></h4>
+
+<p>For this tutorial, I assume its <code>Hugo101</code>, else you can filter through your
+repositories in real time.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*eLqmQvQ-EO_gdgSdlu3jjQ.png" alt="" /></p>
+
+<h4 id="deploy-settings"><strong>Deploy settings</strong></h4>
+
+<p>Here you select the branch you wanted published, your <a href="https://gohugo.io/getting-started/usage/#the-hugo-command">build
+command</a>, and your
+publish (i.e. deploy) directory. The publish directory is <code>public</code>. The
+following steps assume you are publishing from the <code>master</code> branch.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*eS_547o7sh8vVqiHAopqNw.png" alt="" /></p>
+
+<h4 id="build-and-deploy-site">Build and Deploy Site</h4>
+
+<p>In the Netlify console, select “Deploy site” and wait for it to build</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*aJAHwKA-zRCZgvps.gif" alt="" /></p>
+
+<p>Once the build is finished, you should now see a “Hero Card” at the top of your
+screen letting you know the deployment is successful. You’ll see that the URL is
+automatically generated by Netlify. You can update the URL in “Settings.” <a href="https://hugo101.netlify.com/">Visit
+the live site</a>.</p>
+
+<p>Now every time you push changes to your hosted git repository, Netlify will
+rebuild and redeploy your site. You can add your own changes to the starter
+files and tweak as you wish.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Hugo is the world’s fastest framework for building websites. It is one of the
+most popular open-source static site generators. With its amazing speed and
+flexibility, Hugo makes building websites fun again. (Hugo docs)</p>
+
+<p>Hugo is open-source and completely free, you can contribute to Hugo
+<a href="https://github.com/gohugoio/hugo">here</a></p>
+
+<p>This is just a beginners guide, there’s still more to Hugo, head out and read
+the Hugo docs to learn more. Below is a list of useful resources you might need.</p>
+
+<ul>
+<li><a href="https://gohugo.io/themes/creating/">Create a Hugo Theme</a></li>
+<li><a href="https://gohugo.io/themes/theme-components/">Hugo Theme Components</a></li>
+<li><a href="https://gohugo.io/templates/introduction/">Introduction to Hugo Templating</a></li>
+<li><a href="https://gohugo.io/content-management/organization/">Content Organization</a></li>
+<li><a href="https://www.netlify.com/docs/custom-domains/">Using a Custom Domain with
+Netlify</a></li>
+<li><a href="https://gohugo.io/getting-started/configuration/">Hugo configuration</a></li>
+<li><a href="https://gohugo.io/commands/">Hugo CLI commands</a></li>
+<li><a href="https://gohugo.io/variables/">Hugo variables and Params</a></li>
+<li><a href="https://gohugo.io/hugo-pipes/">Hugo Pipes</a></li>
+<li><a href="https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/">How Netlify handles Hugo
+versions</a></li>
+</ul>
+
+<h3 id="credits">Credits</h3>
+
+<ul>
+<li><a href="https://gohugo.io/documentation/">Hugo Docs</a></li>
+<li><a href="https://www.youtube.com/channel/UCvmINlrza7JHB1zkIOuXEbw">Mike Dane Youtube
+Channel</a></li>
+<li><a href="https://github.com/htdvisser/hugo-base16-theme">Hugo Base16 </a>theme by <a href="https://github.com/htdvisser">Hylke
+Visser</a>.</li>
+</ul>
+
+<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev" /></p>
+
+<h1 id="subscribe-for-my-newsletter-here-https-eepurl-com-geccfl-and-get-notified-when-i-write-something-cool">Subscribe for my Newsletter <a href="https://eepurl.com/geCCfL">here</a> and get notified when I write something cool.</h1>
+</article>
+  <footer class="post-footer">
     
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/hugo"><span class="tag">Hugo</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/go"><span class="tag">Go</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/netlify"><span class="tag">Netlify</span></a></li>
+      
+    </ul>
     
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/" title="Introduction to JavaScript Switch Cases" class="entry-link">Introduction to JavaScript Switch Cases</a></h3>
-  </header>
 
-  <p class="entry-summary">In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
-PS: This article is not for those without any JavaScript knowledge, it is expected that you’re taking some tutorial or course and you just got to the switch cases section.
-This article will explain better with more practical examples to help you understand switch cases in depth.
-Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)  A switch statement can basically replace multiple if checks in JavaScript.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Jan 4, 2019</span> 4 min read</p>
     <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/" title="Introduction to JavaScript Switch Cases" class="">READ ARTICLE →</a></h6>
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
     </div>
+
+
+    <div id="disqus_thread"></div>
+<script>
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
   </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/" title="How to redirect HTTP to HTTPS Using .htaccess" class="entry-link">How to redirect HTTP to HTTPS Using .htaccess</a></h3>
-  </header>
-
-  <p class="entry-summary">Chrome and Firefox have started showing insecure warnings on sites without SSL certificates. Without SSL, your website will show insecure to the visitors. Therefore, using an SSL-encrypted connection for safety, accessibility or PCI compliance reasons is necessary. It becomes very important to redirect from HTTP to HTTPS.
-What is SSL? SSL (Secure Sockets Layer) is a standard security protocol for establishing encrypted links between a web server and a browser in an online communication.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Nov 26, 2018</span> 3 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/" title="How to redirect HTTP to HTTPS Using .htaccess" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/" title="How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase." class="entry-link">How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</a></h3>
-  </header>
-
-  <p class="entry-summary">Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!
-I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Nov 26, 2018</span> 12 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/" title="How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase." class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/" title="HTTP status codes and their meanings" class="entry-link">HTTP status codes and their meanings</a></h3>
-  </header>
-
-  <p class="entry-summary">Often time, we come across several errors while surfing through some websites which displays with a status code, as developers we need to be familiar with this status codes.
-In this article, I’d be explaining what each HTTP status code stand for.
-What is an HTTP status code?
-For every request from a web browser the server responds with a status code. If there was a error, you can get additional information about the error.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Nov 24, 2018</span> 3 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/" title="HTTP status codes and their meanings" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/" title="How to test a Pull Request locally before Merging." class="entry-link">How to test a Pull Request locally before Merging.</a></h3>
-  </header>
-
-  <p class="entry-summary">In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
-So your repository got a new Pull Request?, You don’t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
-The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Nov 11, 2018</span> 2 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/" title="How to test a Pull Request locally before Merging." class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/vc/how-to-convert-github-markdown-files-to-a-simple-website/" title="How to convert GitHub Markdown files to a simple website" class="entry-link">How to convert GitHub Markdown files to a simple website</a></h3>
-  </header>
-
-  <p class="entry-summary">Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
- You don’t need to use the command line or anything other than your browser. It doesn’t require any knowledge in Jekyll. It’s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Nov 5, 2018</span> 3 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/vc/how-to-convert-github-markdown-files-to-a-simple-website/" title="How to convert GitHub Markdown files to a simple website" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/" title="How to Connect Mysql with PHP" class="entry-link">How to Connect Mysql with PHP</a></h3>
-  </header>
-
-  <p class="entry-summary">When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
-In this article I will discuss how to connect MySQL Database using Localhost Server.
-Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Apr 28, 2018</span> 4 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/" title="How to Connect Mysql with PHP" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-    
-    
-      <nav class="pagination">
-        
-          <a class="pagination-btn" href="/">← Newer Posts</a>
-        
-        
-      </nav>
-    
-  </section>
-  <footer class="footer">
+</section>
+<footer class="footer">
   <p>Copyright © 2018-2019</p>
   <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
 </footer>

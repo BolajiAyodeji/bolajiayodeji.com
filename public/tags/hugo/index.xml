@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on ⚡️Bolaji Ayodeji⚡️</title>
+    <link>https://bolajiayodeji.com/tags/hugo/</link>
+    <description>Recent content in Hugo on ⚡️Bolaji Ayodeji⚡️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Mar 2019 13:50:26 +0100</lastBuildDate>
+    
+	<atom:link href="https://bolajiayodeji.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started With Hugo and Deploying to Netlify</title>
+      <link>https://bolajiayodeji.com/dt/getting-started-with-hugo-and-deploying-to-netlify/</link>
+      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
+      
+      <guid>https://bolajiayodeji.com/dt/getting-started-with-hugo-and-deploying-to-netlify/</guid>
+      <description>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.
+Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs.</description>
+    </item>
+    
+  </channel>
+</rss>
