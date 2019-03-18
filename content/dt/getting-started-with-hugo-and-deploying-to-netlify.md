@@ -9,7 +9,7 @@ tags: ["hugo", "go", "netlify"]
 ---
 
 
-![](https://cdn-images-1.medium.com/max/800/0*3VZ6C9SZ58a039z4.png)
+![](https://cdn-images-1.medium.com/max/800/1*oIEz4ooK0G4XUVViipHHjA.png)
 
 Hugo is a fast and modern static site generator written in
 [Go](https://golang.org/), and designed to make website creation fun again. It
@@ -36,8 +36,6 @@ runtimes like Ruby, Python, or PHP.
 
 In this tutorial, I’d show you how to build your first Hugo site and deploy to
 Netlify. Let’s roll :)
-
-![](https://cdn-images-1.medium.com/max/800/1*oIEz4ooK0G4XUVViipHHjA.png)
 
 ### Hugo Features
 
