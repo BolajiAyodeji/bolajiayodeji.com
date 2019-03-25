@@ -13,10 +13,10 @@
     
     <item>
       <title>Getting Started With Hugo and Deploying to Netlify</title>
-      <link>https://bolajiayodeji.com/dt/getting-started-with-hugo-and-deploying-to-netlify/</link>
+      <link>https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/</link>
       <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/getting-started-with-hugo-and-deploying-to-netlify/</guid>
+      <guid>https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/</guid>
       <description>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.
 Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs.</description>
     </item>

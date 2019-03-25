@@ -13,10 +13,10 @@
     
     <item>
       <title>Introducing GitHub Linguist</title>
-      <link>https://bolajiayodeji.com/rd/introducing-github-linguistic/</link>
+      <link>https://bolajiayodeji.com/introducing-github-linguistic/</link>
       <pubDate>Mon, 25 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/rd/introducing-github-linguistic/</guid>
+      <guid>https://bolajiayodeji.com/introducing-github-linguistic/</guid>
       <description>The files and directories within a repository determine the languages that make up the repository. With GitHub, you can view a repository’s languages to get a quick overview of the repository. But how does this happen? What powers this repository language overview?
 In this article I would:
  Introduce you to GitHub Linguist How it works How to fix common Linguist issues How to use gitattributesto override Linguist :) How to use Emacs or Vim modelines to override Linguist How to contribute to GitHub Linguist  Let’s Roll!</description>

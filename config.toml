@@ -7,7 +7,6 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 [params]
   titleName = "Hi, I'm Bolaji."
   subtitle = "I write articles on web and frontend development. 🚀"
-  portfolio = "View my Portfolio →"
   author = "⚡️Bolaji Ayodeji⚡️"
   logo = "https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
   description = "Articles on Web & Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀"
@@ -44,33 +43,23 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   weight = 1
   identifier = "home"
   url = "/"
-  [[menu.main]]
-  name = "JavaScript"
+[[menu.main]]
+  name = "About Me →"
   weight = 2
-  identifier = "js"
-  url = "/js/"
-  [[menu.main]]
-  name = "Dev Tools"
+  identifier = "portfolio"
+  url = "/portfolio/"
+[[menu.main]]
+  name = "Resume"
   weight = 3
-  identifier = "dev-tools"
-  url = "/dt/"
+  identifier = "resume"
+  url = "/portfolio/resume.pdf/"
 [[menu.main]]
-  name = "Version Control"
+  name = "Projects"
   weight = 4
-  identifier = "version-control"
-  url = "/vc/"
-[[menu.main]]
-  name = "Optimization"
-  weight = 5
-  identifier = "optimization"
-  url = "/op/"
-[[menu.main]]
-  name = "Random"
-  weight = 6
-  identifier = "random"
-  url = "/rd/"
+  identifier = "projects"
+  url = "https://github.com/bolajiayodeji"
 [[menu.main]]
   name = "Newsletter"
-  weight = 7
+  weight = 5
   identifier = "news"
   url = "https://eepurl.com/geCCfL"

@@ -13,30 +13,30 @@
     
     <item>
       <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
-      <link>https://bolajiayodeji.com/js/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
+      <link>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
       <pubDate>Sun, 10 Mar 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
+      <guid>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
       <description>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
 * Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
     </item>
     
     <item>
       <title>Introduction to Babel and JavaScript Bundlers</title>
-      <link>https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/</link>
+      <link>https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/</link>
       <pubDate>Thu, 14 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/</guid>
+      <guid>https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/</guid>
       <description>As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.
 In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.</description>
     </item>
     
     <item>
       <title>Introduction to ES6 modules</title>
-      <link>https://bolajiayodeji.com/js/introduction-to-es6-modules/</link>
+      <link>https://bolajiayodeji.com/introduction-to-es6-modules/</link>
       <pubDate>Mon, 11 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/introduction-to-es6-modules/</guid>
+      <guid>https://bolajiayodeji.com/introduction-to-es6-modules/</guid>
       <description>An essential aspect of software engineering is efficiency. Every successful app needs a solid architectural structure that allows it to scale at all levels without breaking. In respect to this, several techniques and patterns are engaged to ensure code efficiency.
 In this article, I would introduce you to ES6 modules, what they are, how to use them and why you should care {0[]0}
 What exactly is a module? In JavaScript, the word “modules” refers to small units of independent, reusable code.</description>
@@ -44,10 +44,10 @@ What exactly is a module? In JavaScript, the word “modules” refers to small 
     
     <item>
       <title>Manipulating Arrays in JavaScript</title>
-      <link>https://bolajiayodeji.com/js/manipulating-arrays-in-javascript/</link>
+      <link>https://bolajiayodeji.com/manipulating-arrays-in-javascript/</link>
       <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/manipulating-arrays-in-javascript/</guid>
+      <guid>https://bolajiayodeji.com/manipulating-arrays-in-javascript/</guid>
       <description>Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, hence this article.
 In this article, I would show you various methods of manipulating arrays in JavaScript [^^]
 What are Arrays in JavaScript? Before we proceed, you need to understand what arrays really mean.
@@ -56,10 +56,10 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
     
     <item>
       <title>Introduction to JavaScript Switch Cases</title>
-      <link>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</link>
+      <link>https://bolajiayodeji.com/introduction-to-javascript-switch-cases/</link>
       <pubDate>Fri, 04 Jan 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</guid>
+      <guid>https://bolajiayodeji.com/introduction-to-javascript-switch-cases/</guid>
       <description>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
 PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.
 This article will explain better with more practical examples to help you understand switch cases in depth.

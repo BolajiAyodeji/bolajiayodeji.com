@@ -13,10 +13,10 @@
     
     <item>
       <title>How to redirect HTTP to HTTPS Using .htaccess</title>
-      <link>https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/</link>
+      <link>https://bolajiayodeji.com/how-to-redirect-http-to-https-using-htaccess/</link>
       <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/</guid>
+      <guid>https://bolajiayodeji.com/how-to-redirect-http-to-https-using-htaccess/</guid>
       <description>Chrome and Firefox have started showing insecure warnings on sites without SSL certificates. Without SSL, your website will show insecure to the visitors. Therefore, using an SSL-encrypted connection for safety, accessibility or PCI compliance reasons is necessary. It becomes very important to redirect from HTTP to HTTPS.
 What is SSL? SSL (Secure Sockets Layer) is a standard security protocol for establishing encrypted links between a web server and a browser in an online communication.</description>
     </item>

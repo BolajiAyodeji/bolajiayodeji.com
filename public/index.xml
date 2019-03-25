@@ -6,37 +6,47 @@
     <description>Recent content on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Mar 2019 13:50:26 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 25 Mar 2019 14:57:05 +0100</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Introducing Css Custom Properties Variables</title>
+      <link>https://bolajiayodeji.com/introducing-css-custom-properties-variables/</link>
+      <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
+      
+      <guid>https://bolajiayodeji.com/introducing-css-custom-properties-variables/</guid>
+      <description>Basically, CSS tells the browser how to display HTML pages. Before now, maintaining CSS was a very big problem for bigger projects or complex apps. Building reusable components and cleaner styles were hard to achieve in the past years.
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c), they extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.</description>
+    </item>
+    
+    <item>
       <title>Getting Started With Hugo and Deploying to Netlify</title>
-      <link>https://bolajiayodeji.com/dt/getting-started-with-hugo-and-deploying-to-netlify/</link>
+      <link>https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/</link>
       <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/getting-started-with-hugo-and-deploying-to-netlify/</guid>
+      <guid>https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/</guid>
       <description>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.
 Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs.</description>
     </item>
     
     <item>
       <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
-      <link>https://bolajiayodeji.com/js/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
+      <link>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
       <pubDate>Sun, 10 Mar 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
+      <guid>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
       <description>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
 * Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
     </item>
     
     <item>
       <title>GitHub Student Developer Pack Demystified</title>
-      <link>https://bolajiayodeji.com/rd/github-student-developer-pack-demystified/</link>
+      <link>https://bolajiayodeji.com/github-student-developer-pack-demystified/</link>
       <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/rd/github-student-developer-pack-demystified/</guid>
+      <guid>https://bolajiayodeji.com/github-student-developer-pack-demystified/</guid>
       <description>There’s no substitute for hands-on experience, but for most students, real-world tools can be quite expensive. That’s why GitHub created the GitHub Student Developer Pack to give students free access to the best developer tools in one place so they can learn by doing.
 In this article, I’d take you through:
  What is GitHub Student Developer Pack Contents of the pack Terms and Conditions How to apply for the pack Expiration and renewals  Let’s roll :)</description>
@@ -44,10 +54,10 @@ In this article, I’d take you through:
     
     <item>
       <title>Introducing GitHub Linguist</title>
-      <link>https://bolajiayodeji.com/rd/introducing-github-linguistic/</link>
+      <link>https://bolajiayodeji.com/introducing-github-linguistic/</link>
       <pubDate>Mon, 25 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/rd/introducing-github-linguistic/</guid>
+      <guid>https://bolajiayodeji.com/introducing-github-linguistic/</guid>
       <description>The files and directories within a repository determine the languages that make up the repository. With GitHub, you can view a repository’s languages to get a quick overview of the repository. But how does this happen? What powers this repository language overview?
 In this article I would:
  Introduce you to GitHub Linguist How it works How to fix common Linguist issues How to use gitattributesto override Linguist :) How to use Emacs or Vim modelines to override Linguist How to contribute to GitHub Linguist  Let’s Roll!</description>
@@ -55,30 +65,30 @@ In this article I would:
     
     <item>
       <title>Git Cheat Sheet</title>
-      <link>https://bolajiayodeji.com/vc/git-cheat-sheet/</link>
+      <link>https://bolajiayodeji.com/git-cheat-sheet/</link>
       <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/vc/git-cheat-sheet/</guid>
+      <guid>https://bolajiayodeji.com/git-cheat-sheet/</guid>
       <description>Git cheat sheet saves you time when you just can’t remember a specific command. It is hard to memorize all the important Git commands as a newbie, most times Senior Developers forget too. This is why you need a reference you can come back to when you get stuck.
 In this article, I’d show you the basic Git commands to help you learn Git, and more advanced concepts around Git branches, remote repositories, reverting changes, and more.</description>
     </item>
     
     <item>
       <title>Introduction to Babel and JavaScript Bundlers</title>
-      <link>https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/</link>
+      <link>https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/</link>
       <pubDate>Thu, 14 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/</guid>
+      <guid>https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/</guid>
       <description>As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.
 In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.</description>
     </item>
     
     <item>
       <title>Introduction to ES6 modules</title>
-      <link>https://bolajiayodeji.com/js/introduction-to-es6-modules/</link>
+      <link>https://bolajiayodeji.com/introduction-to-es6-modules/</link>
       <pubDate>Mon, 11 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/introduction-to-es6-modules/</guid>
+      <guid>https://bolajiayodeji.com/introduction-to-es6-modules/</guid>
       <description>An essential aspect of software engineering is efficiency. Every successful app needs a solid architectural structure that allows it to scale at all levels without breaking. In respect to this, several techniques and patterns are engaged to ensure code efficiency.
 In this article, I would introduce you to ES6 modules, what they are, how to use them and why you should care {0[]0}
 What exactly is a module? In JavaScript, the word “modules” refers to small units of independent, reusable code.</description>
@@ -86,10 +96,10 @@ What exactly is a module? In JavaScript, the word “modules” refers to small 
     
     <item>
       <title>Manipulating Arrays in JavaScript</title>
-      <link>https://bolajiayodeji.com/js/manipulating-arrays-in-javascript/</link>
+      <link>https://bolajiayodeji.com/manipulating-arrays-in-javascript/</link>
       <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/manipulating-arrays-in-javascript/</guid>
+      <guid>https://bolajiayodeji.com/manipulating-arrays-in-javascript/</guid>
       <description>Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, hence this article.
 In this article, I would show you various methods of manipulating arrays in JavaScript [^^]
 What are Arrays in JavaScript? Before we proceed, you need to understand what arrays really mean.
@@ -99,10 +109,10 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
     <item>
       <title>
 Introduction to Chrome Lighthouse</title>
-      <link>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</link>
+      <link>https://bolajiayodeji.com/introduction-to-chrome-lighthouse/</link>
       <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse/</guid>
+      <guid>https://bolajiayodeji.com/introduction-to-chrome-lighthouse/</guid>
       <description>Chrome Lighthouse has been around for a while now, but what if I ask you to explain what it does can you explain vividly?
 I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have, have not tried it yet, that&amp;rsquo;s not cool :(.
 In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.</description>
@@ -110,10 +120,10 @@ In this article, I would introduce you Chrome Lighthouse, what it does and how t
     
     <item>
       <title>The GROWTH MINDSET demystified</title>
-      <link>https://bolajiayodeji.com/rd/the-growth-mindet-demystified/</link>
+      <link>https://bolajiayodeji.com/the-growth-mindet-demystified/</link>
       <pubDate>Mon, 21 Jan 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/rd/the-growth-mindet-demystified/</guid>
+      <guid>https://bolajiayodeji.com/the-growth-mindet-demystified/</guid>
       <description>I can&amp;rsquo;t do it, I can&amp;rsquo;t learn this, it&amp;rsquo;s too hard, Come on, I&amp;rsquo;m just a Junior Developer, WebPack is not my thing, I tried it and failed.
 Those are the words of a developer drenched and soaked with imposter syndrome.
 Over time we keep fighting ourselves, trying to run away from our shadows, trying to find shortcuts, yes I did also, I really did :(
@@ -122,10 +132,10 @@ At a point in my life, I just felt some things were not meant for me, I felt mat
     
     <item>
       <title>Introduction to JavaScript Switch Cases</title>
-      <link>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</link>
+      <link>https://bolajiayodeji.com/introduction-to-javascript-switch-cases/</link>
       <pubDate>Fri, 04 Jan 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/introduction-to-javascript-switch-cases/</guid>
+      <guid>https://bolajiayodeji.com/introduction-to-javascript-switch-cases/</guid>
       <description>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
 PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.
 This article will explain better with more practical examples to help you understand switch cases in depth.
@@ -134,30 +144,30 @@ Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)
     
     <item>
       <title>How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</title>
-      <link>https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</link>
+      <link>https://bolajiayodeji.com/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</link>
       <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</guid>
+      <guid>https://bolajiayodeji.com/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-ages-and-firebase/</guid>
       <description>Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!
 I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences.</description>
     </item>
     
     <item>
       <title>How to redirect HTTP to HTTPS Using .htaccess</title>
-      <link>https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/</link>
+      <link>https://bolajiayodeji.com/how-to-redirect-http-to-https-using-htaccess/</link>
       <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/op/how-to-redirect-http-to-https-using-htaccess/</guid>
+      <guid>https://bolajiayodeji.com/how-to-redirect-http-to-https-using-htaccess/</guid>
       <description>Chrome and Firefox have started showing insecure warnings on sites without SSL certificates. Without SSL, your website will show insecure to the visitors. Therefore, using an SSL-encrypted connection for safety, accessibility or PCI compliance reasons is necessary. It becomes very important to redirect from HTTP to HTTPS.
 What is SSL? SSL (Secure Sockets Layer) is a standard security protocol for establishing encrypted links between a web server and a browser in an online communication.</description>
     </item>
     
     <item>
       <title>HTTP status codes and their meanings</title>
-      <link>https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/</link>
+      <link>https://bolajiayodeji.com/http-status-codes-and-their-meanings/</link>
       <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/rd/http-status-codes-and-their-meanings/</guid>
+      <guid>https://bolajiayodeji.com/http-status-codes-and-their-meanings/</guid>
       <description>Often time, we come across several errors while surfing through some websites which displays with a status code, as developers we need to be familiar with this status codes.
 In this article, I&amp;rsquo;d be explaining what each HTTP status code stand for.
 What is an HTTP status code?
@@ -166,10 +176,10 @@ For every request from a web browser the server responds with a status code. If 
     
     <item>
       <title>How to test a Pull Request locally before Merging.</title>
-      <link>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</link>
+      <link>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</link>
       <pubDate>Sun, 11 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/vc/how-to-test-a-pull-request-locally-before-merging/</guid>
+      <guid>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</guid>
       <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
 So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
 The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.</description>
@@ -177,20 +187,20 @@ The pull request is available on this git ref pull/{ID}/head which you can fetch
     
     <item>
       <title>How to convert GitHub Markdown files to a simple website</title>
-      <link>https://bolajiayodeji.com/vc/how-to-convert-github-markdown-files-to-a-simple-website/</link>
+      <link>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</link>
       <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/vc/how-to-convert-github-markdown-files-to-a-simple-website/</guid>
+      <guid>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</guid>
       <description>Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
  You don&amp;rsquo;t need to use the command line or anything other than your browser. It doesn&amp;rsquo;t require any knowledge in Jekyll. It&amp;rsquo;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.</description>
     </item>
     
     <item>
       <title>How to Connect Mysql with PHP</title>
-      <link>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</link>
+      <link>https://bolajiayodeji.com/how-to-connect-mysql-with-php/</link>
       <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/dt/how-to-connect-mysql-with-php/</guid>
+      <guid>https://bolajiayodeji.com/how-to-connect-mysql-with-php/</guid>
       <description>When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
 In this article I will discuss how to connect MySQL Database using Localhost Server.
 Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.</description>

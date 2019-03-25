@@ -13,10 +13,10 @@
     
     <item>
       <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
-      <link>https://bolajiayodeji.com/js/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
+      <link>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
       <pubDate>Sun, 10 Mar 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/js/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
+      <guid>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
       <description>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
 * Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
     </item>
