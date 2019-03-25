@@ -1,6 +1,6 @@
 ﻿---
 
-title: "Introducing Css Custom Properties Variables"
+title: "Introducing CSS Custom Properties (Variables)"
 
 date: 2019-03-25T14:57:05+01:00
 
@@ -19,19 +19,13 @@ Building reusable components and cleaner styles were hard to achieve in the past
 years.
 
 [CSS Preprocessors](https://guide.freecodecamp.org/css/css-preprocessors/) came
-to solve this problem and have been around for years now (SASS, LESS, e.t.c),
-they extend CSS with key features like variables, operators, interpolations,
+to solve this problem and have been around for years now (SASS, LESS, e.t.c).
+They extend CSS with key features like variables, operators, interpolations,
 functions, imports, mixins e.t.c.
 
-    $black: #000;
-    body {
-     background-color: $black;
-    }
-
-However, in [Modern
-CSS](https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525),
+However, in [Modern CSS](https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525),
 we now have a new powerful feature called **Custom properties**, otherwise known
-as **CSS variables **or** cascading variables**. Now you can declare variables
+as **CSS variables** or **cascading variables**. Now you can declare variables
 directly in your CSS without having to use CSS Preprocessors.
 
 In this article, I’d show you how to start using CSS variables. Let’s roll :)
@@ -77,6 +71,23 @@ You can access the already declared variable using `var()`
 
 CSS Variables can be defined inside any CSS element.
 
+```
+body {
+  --color: red;
+}
+h1 {
+  --color: red;
+}
+p {
+  --color: red;
+}
+span {
+  --color: red;
+}
+a {
+  --color: red;
+}
+```
 However, adding variables to a selector make them available to **ONLY** its
 children. If you add a variable inside a `.container` selector, it’s only going
 to be available to children of `.container` . Outside `.container` , the
@@ -101,8 +112,14 @@ Now all `p` tags are red irrespective of its position or parent.
 
 This variable:
 
+```
+--color: red;
+```
 
 is not the same as:
+```
+--Color: red;
+```
 
 
 ### Setting a fallback value for var()
@@ -142,7 +159,7 @@ values. For example, the same color might be used in hundreds of different
 places, requiring global search and replace if that color needs to change.
 Custom properties allow a value to be stored in one place, then referenced in
 multiple other places. An additional benefit is semantic identifiers. For
-example, *`--black`* is easier to understand than *`#00000`*, especially if this
+example, `--black` is easier to understand than `#00000`, especially if this
 same color is also used in other contexts. -**MDN**
 
 CSS variables are cool and have come to stay, if you want your CSS styles and

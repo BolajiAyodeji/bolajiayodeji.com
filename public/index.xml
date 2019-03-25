@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>Introducing Css Custom Properties Variables</title>
+      <title>Introducing CSS Custom Properties (Variables)</title>
       <link>https://bolajiayodeji.com/introducing-css-custom-properties-variables/</link>
       <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
       
       <guid>https://bolajiayodeji.com/introducing-css-custom-properties-variables/</guid>
       <description>Basically, CSS tells the browser how to display HTML pages. Before now, maintaining CSS was a very big problem for bigger projects or complex apps. Building reusable components and cleaner styles were hard to achieve in the past years.
-CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c), they extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.</description>
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.</description>
     </item>
     
     <item>

@@ -13,7 +13,7 @@
     
 
     
-    <title>Introducing Css Custom Properties Variables</title>
+    <title>Introducing CSS Custom Properties (Variables)</title>
 
     
     
@@ -27,16 +27,16 @@
   
   <meta name="author" content="⚡️Bolaji Ayodeji⚡️" />
   <meta name="description" content="Basically, CSS tells the browser how to display HTML pages. Before now, maintaining CSS was a very big problem for bigger projects or complex apps. Building reusable components and cleaner styles were hard to achieve in the past years.
-CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c), they extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.">
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
 
   
   
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@iambolajiayo" />
-    <meta name="twitter:title" content="Introducing Css Custom Properties Variables" />
+    <meta name="twitter:title" content="Introducing CSS Custom Properties (Variables)" />
     <meta name="twitter:description" content="Basically, CSS tells the browser how to display HTML pages. Before now, maintaining CSS was a very big problem for bigger projects or complex apps. Building reusable components and cleaner styles were hard to achieve in the past years.
-CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c), they extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e." />
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e." />
     <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
   
 
@@ -288,7 +288,7 @@ monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{f
 
 <section class="main post-detail">
   <header class="post-header">
-    <h1 class="post-title">Introducing Css Custom Properties Variables</h1>
+    <h1 class="post-title">Introducing CSS Custom Properties (Variables)</h1>
     <p class="entry-meta"><span class="entry-time">Mar 25, 2019</span> 4 min read</p>
   </header>
   
@@ -303,20 +303,13 @@ Building reusable components and cleaner styles were hard to achieve in the past
 years.</p>
 
 <p><a href="https://guide.freecodecamp.org/css/css-preprocessors/">CSS Preprocessors</a> came
-to solve this problem and have been around for years now (SASS, LESS, e.t.c),
-they extend CSS with key features like variables, operators, interpolations,
+to solve this problem and have been around for years now (SASS, LESS, e.t.c).
+They extend CSS with key features like variables, operators, interpolations,
 functions, imports, mixins e.t.c.</p>
 
-<pre><code>$black: #000;
-body {
- background-color: $black;
-}
-</code></pre>
-
-<p>However, in <a href="https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525">Modern
-CSS</a>,
+<p>However, in <a href="https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525">Modern CSS</a>,
 we now have a new powerful feature called <strong>Custom properties</strong>, otherwise known
-as **CSS variables <strong>or</strong> cascading variables**. Now you can declare variables
+as <strong>CSS variables</strong> or <strong>cascading variables</strong>. Now you can declare variables
 directly in your CSS without having to use CSS Preprocessors.</p>
 
 <p>In this article, I’d show you how to start using CSS variables. Let’s roll :)</p>
@@ -368,6 +361,23 @@ variable name (<code>--variable-name</code>), then a colon and the variable valu
 
 <p>CSS Variables can be defined inside any CSS element.</p>
 
+<pre><code>body {
+  --color: red;
+}
+h1 {
+  --color: red;
+}
+p {
+  --color: red;
+}
+span {
+  --color: red;
+}
+a {
+  --color: red;
+}
+</code></pre>
+
 <p>However, adding variables to a selector make them available to <strong>ONLY</strong> its
 children. If you add a variable inside a <code>.container</code> selector, it’s only going
 to be available to children of <code>.container</code> . Outside <code>.container</code> , the
@@ -412,7 +422,13 @@ makes it available to all the elements in the page.</p>
 
 <p>This variable:</p>
 
+<pre><code>--color: red;
+</code></pre>
+
 <p>is not the same as:</p>
+
+<pre><code>--Color: red;
+</code></pre>
 
 <h3 id="setting-a-fallback-value-for-var">Setting a fallback value for var()</h3>
 
@@ -462,7 +478,7 @@ values. For example, the same color might be used in hundreds of different
 places, requiring global search and replace if that color needs to change.
 Custom properties allow a value to be stored in one place, then referenced in
 multiple other places. An additional benefit is semantic identifiers. For
-example, <em><code>--black</code></em> is easier to understand than <em><code>#00000</code></em>, especially if this
+example, <code>--black</code> is easier to understand than <code>#00000</code>, especially if this
 same color is also used in other contexts. -<strong>MDN</strong></p>
 
 <p>CSS variables are cool and have come to stay, if you want your CSS styles and
