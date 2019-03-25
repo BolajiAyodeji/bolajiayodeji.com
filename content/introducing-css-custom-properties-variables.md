@@ -6,7 +6,7 @@ date: 2019-03-25T14:57:05+01:00
 
 draft: false
 type: "post"
-tags: ["git", "cheat sheet", "Version Control"]
+tags: ["CSS", "variables", "web development"]
 ---
 
 
