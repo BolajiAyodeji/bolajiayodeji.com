@@ -7,6 +7,7 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 [params]
   titleName = "Hi, I'm Bolaji."
   subtitle = "I write articles on web and frontend development. 🚀"
+  portfolio = "View portfolio →"
   author = "⚡️Bolaji Ayodeji⚡️"
   logo = "https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
   description = "Articles on Web & Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀"
@@ -39,27 +40,27 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   category = "categories"
 
 [[menu.main]]
-  name = "Home"
+  name = "Home 🏠"
   weight = 1
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "About Me →"
+  name = "About Me 😊"
   weight = 2
   identifier = "portfolio"
   url = "/portfolio/"
 [[menu.main]]
-  name = "Resume"
+  name = "Resume 📁"
   weight = 3
   identifier = "resume"
   url = "/portfolio/resume.pdf/"
 [[menu.main]]
-  name = "Projects"
+  name = "Projects 👨‍💻"
   weight = 4
   identifier = "projects"
   url = "https://github.com/bolajiayodeji"
 [[menu.main]]
-  name = "Newsletter"
+  name = "Newsletter 📩"
   weight = 5
   identifier = "news"
   url = "https://eepurl.com/geCCfL"
