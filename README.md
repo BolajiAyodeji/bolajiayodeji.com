@@ -24,9 +24,3 @@ npm install
 ```
 
 Run this command to start local build `hugo server -D`, then open https://localhost:1313.
-
-
-## Contributing Translations
-
-You can translate any article on the website into your language and send a Pull Request! <br>
-*Please ensure translations link to the original content.* <br>
