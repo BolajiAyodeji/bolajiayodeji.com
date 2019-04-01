@@ -160,7 +160,7 @@ and Ounce
 > This is just basic JavaScript, if you have no idea what all this means, you
 > should get [JavaScript Teacher](https://medium.com/u/6727c1eb71f8)’s `Grammar
 JavaScript` book. This will teach you all the basics and contents of Modern
-JavaScript. Get a free copy below:
+JavaScript. Get a free copy [here](http://javascriptgrammar.com).
 
 Now you should have a functioning app
 
