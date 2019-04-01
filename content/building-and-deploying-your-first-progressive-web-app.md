@@ -1,5 +1,5 @@
 ﻿---
-title: "Build your first Progressive Web App and Deploy to Netlify."
+title: "Building & Deploying your first Progressive Web App"
 date: 2019-04-01T13:22:14+24:00
 draft: false
 type: "post"
@@ -7,12 +7,13 @@ tags: ["javascript", "PWA", "web apps"]
 ---
  
 
-![](https://cdn-images-1.medium.com/max/800/1*kL3kxdz8dvvqSwE86h_AHA.png)
+![](https://cdn-images-1.medium.com/max/800/1*5MB2BgLFKmsLfgNCwli4EA.png)
 
 Progressive Web Apps are very much in use by some of the biggest companies like
 Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity.
 Building a PWA is quite easy and simple. In this tutorial, we’re going to build
-a simple Progressive web app (A website bookmarker app). Let’s roll :)
+a simple Progressive web app (A weight converter app).
+Let's roll :)
 
 ### TABLE OF CONTENTS
 
@@ -124,10 +125,14 @@ Now. let’s build the markup
 
 — In `index.html` , add this
 
+<span class="figcaption_hack">{{< gist BolajiAyodeji b1b8d3b20f8d8f6de59ea09e2343f42e >}}</span>
+
 We’ve added some Bootstrap classes already in `index.html` but we have not
 included Bootstrap CDN yet. In `app.css` we’re going to do that.
 
 — Add this in `css/app.css` 
+
+<span class="figcaption_hack">{{< gist BolajiAyodeji 82dfa8ca5f7bb903999c2dd3b5813678 >}}</span>
 
 Now your app should look like this:
 
@@ -149,6 +154,8 @@ and Ounce
 * 1 Ounce = Pounds * 16
 
 — Add this in `js/app.js` 
+
+<span class="figcaption_hack">{{< gist BolajiAyodeji f9d728fc405f63a881ee5eaa90e3b3e1 >}}</span>
 
 > This is just basic JavaScript, if you have no idea what all this means, you
 > should get [JavaScript Teacher](https://medium.com/u/6727c1eb71f8)’s `Grammar
@@ -178,6 +185,7 @@ your web application and how it should behave when ‘installed’ on the user�
 mobile device or desktop. Having a **manifest** is required by Chrome to show
 the Add to Home Screen prompt. [Read
 more](https://developers.google.com/web/fundamentals/web-app-manifest/)
+
 * **Icons**
 
 This icons control your application and are provided in different sizes for
@@ -221,6 +229,8 @@ If the browser supports it, you should get this in your console
 
 Your final `app.js` should look like this
 
+<span class="figcaption_hack">{{< gist BolajiAyodeji e12a4b2d7a6e31d309ef7877ef342fac >}}</span>
+
 We’re going to use the
 [Workbox](https://developers.google.com/web/tools/workbox/) library to power our
 service worker
@@ -238,6 +248,43 @@ and how it should be returned to the user.
 
 — In `sw.js` , add this:
 
+<span class="figcaption_hack">{{< gist BolajiAyodeji 724f0e782981f4d24bba324a4274e854 >}}</span>
+
+So basically we imported `workbox-sw.js` which is Workbox’s service worker file,
+then we checked if Workbox is loaded in our own service worker.
+
+    if (workbox) {
+      console.log(`Yay! Workbox is loaded 🎉`);
+    } else {
+      console.log(`Boo! Workbox didn't load 😬`);
+    }
+
+One of Workbox’s primary features is it’s routing and caching strategy modules.
+It allows you to listen for requests from your web page and determine if and how
+that request should be cached and responded to.
+
+Routing in Workbox is the process of a Router *matching* a request to a route
+and the route then *handling* that request (i.e. providing a response).
+
+In `sw.js` , we did something like this:
+
+    workbox.routing.registerRoute(
+      /\.(?:js|css|scss)$/,
+      new workbox.strategies.StaleWhileRevalidate(),
+    );
+
+Basically, this tells Workbox that when a request is made, it should see if the
+regular expression matches part of the URL (`.css, .scss, .js`) and if it does,
+cache that file.
+
+The `StaleWhileRevalidate()` function allows us to use this cache in our
+application but still update in the background if the file has changed. You
+would need to refresh again to see the new files.
+
+Precaching a file will ensure that a file is downloaded and cached before a
+service worker is installed, meaning that if your service worker is installed,
+your files will be cached.s
+
 ![](https://cdn-images-1.medium.com/max/800/1*iwVOX-zY8RmmEIIj5qkpTw.png)
 
 Now our service worker works and would cache files once the page loads.
@@ -245,6 +292,8 @@ Now our service worker works and would cache files once the page loads.
 Now let's make our app installable.
 
 — Add this in `manifest.json` 
+
+<span class="figcaption_hack">{{< gist BolajiAyodeji a2a04ac9eb7872214512f59e7c488d04 >}}</span>
 
 <br> 
 
@@ -259,14 +308,18 @@ Now let's make our app installable.
 Now we need to connect our web app to the manifest to allow “add to home screen”
 from that page. Add this to your `index.html` 
 
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#333" />
+```
+<link rel="manifest" href="/manifest.json" />
+ <meta name="theme-color" content="#333" />
+```
 
 > If you have multiple pages, you need to add this to all of them.
 
 > You can also use the same `theme-color` you used in `manifest.json` here
 
 Now your final `index.html` should look like this (PS: I’ve added some SEO tags)
+
+<span class="figcaption_hack">{{< gist BolajiAyodeji d6b82c98d7d7def8ce737b0993ed1017 >}}</span>
 
 Now caching will begin once the page loads
 
@@ -378,9 +431,9 @@ Thank you for reading!
 
 #### Credits
 
-* Google Developer Docs
-* Workbox
-* PWAFire App Manifest Generator
+* [Google Developer Docs](https://developers.google.com/web/progressive-web-apps/)
+* [Workbox](https://developers.google.com/web/tools/workbox/)
+* [PWAFire App Manifest Generator](https://app-manifest.firebaseapp.com/)
 
 
 ![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
