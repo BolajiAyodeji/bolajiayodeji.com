@@ -27,8 +27,9 @@ TABLE OF CONTENTS  Introduction Starter files App description Building the UI Ad
       <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
       
       <guid>https://bolajiayodeji.com/introducing-css-custom-properties-variables/</guid>
-      <description>Basically, CSS tells the browser how to display HTML pages. Before now, maintaining CSS was a very big problem for bigger projects or complex apps. Building reusable components and cleaner styles were hard to achieve in the past years.
-CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.</description>
+      <description>In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.
+However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables.</description>
     </item>
     
     <item>

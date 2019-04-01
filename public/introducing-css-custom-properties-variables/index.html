@@ -26,8 +26,9 @@
 
   
   <meta name="author" content="⚡️Bolaji Ayodeji⚡️" />
-  <meta name="description" content="Basically, CSS tells the browser how to display HTML pages. Before now, maintaining CSS was a very big problem for bigger projects or complex apps. Building reusable components and cleaner styles were hard to achieve in the past years.
-CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.">
+  <meta name="description" content="In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.
+However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables.">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
 
   
@@ -35,8 +36,9 @@ CSS Preprocessors came to solve this problem and have been around for years now 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@iambolajiayo" />
     <meta name="twitter:title" content="Introducing CSS Custom Properties (Variables)" />
-    <meta name="twitter:description" content="Basically, CSS tells the browser how to display HTML pages. Before now, maintaining CSS was a very big problem for bigger projects or complex apps. Building reusable components and cleaner styles were hard to achieve in the past years.
-CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e." />
+    <meta name="twitter:description" content="In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.
+However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables." />
     <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
   
 
@@ -297,10 +299,9 @@ monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{f
 
 <p><img src="https://cdn-images-1.medium.com/max/800/1*JEnrE7aT2K6vfV0nQlbFIw.png" alt="" /></p>
 
-<p>Basically, CSS tells the browser how to display HTML pages. Before now,
-maintaining CSS was a very big problem for bigger projects or complex apps.
-Building reusable components and cleaner styles were hard to achieve in the past
-years.</p>
+<p>In the past years, maintaining CSS was a very big problem for bigger projects or
+complex apps as a result, building reusable components and cleaner styles were
+hard to achieve.</p>
 
 <p><a href="https://guide.freecodecamp.org/css/css-preprocessors/">CSS Preprocessors</a> came
 to solve this problem and have been around for years now (SASS, LESS, e.t.c).
@@ -322,7 +323,7 @@ understand how variables work already.</p>
 <pre><code>let name = 'Bolaji Ayodeji'
 </code></pre>
 
-<p>Basically, a variable store some sort of information or data, that would be used
+<p>A variable stores some sort of information or data, that would be used
 later in your program.</p>
 
 <pre><code>console.log(name);
@@ -378,10 +379,10 @@ a {
 }
 </code></pre>
 
-<p>However, adding variables to a selector make them available to <strong>ONLY</strong> its
+<p>However, adding variables to a selector makes them available to <strong>ONLY</strong> their
 children. If you add a variable inside a <code>.container</code> selector, it’s only going
 to be available to children of <code>.container</code> . Outside <code>.container</code> , the
-variable would not work.</p>
+variable will not work.</p>
 
 
 
@@ -395,7 +396,8 @@ variable would not work.</p>
   data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
 
 
-<p>Even though we set <code>p</code> to be red, it works for only <code>p</code> tags within <code>.container</code> , any <code>p</code> outside <code>.container</code> would not inherit this style.</p>
+<p>Though we set <code>p</code> to be red, it works for only <code>p</code> tags within <code>.container</code> ,
+any <code>p</code> outside <code>.container</code> will not inherit this style.</p>
 
 <h3 id="root">: root</h3>
 
@@ -416,7 +418,7 @@ makes it available to all the elements in the page.</p>
   data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
 
 
-<p>Now all <code>p</code> tags are red irrespective of its position or parent.</p>
+<p>Now all <code>p</code> tags are red irrespective of their position or parent.</p>
 
 <h3 id="css-variables-are-case-sensitive">CSS Variables are case sensitive</h3>
 

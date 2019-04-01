@@ -13,10 +13,9 @@ tags: ["CSS", "variables", "web development"]
 
 ![](https://cdn-images-1.medium.com/max/800/1*JEnrE7aT2K6vfV0nQlbFIw.png)
 
-Basically, CSS tells the browser how to display HTML pages. Before now,
-maintaining CSS was a very big problem for bigger projects or complex apps.
-Building reusable components and cleaner styles were hard to achieve in the past
-years.
+In the past years, maintaining CSS was a very big problem for bigger projects or
+complex apps as a result, building reusable components and cleaner styles were
+hard to achieve.
 
 [CSS Preprocessors](https://guide.freecodecamp.org/css/css-preprocessors/) came
 to solve this problem and have been around for years now (SASS, LESS, e.t.c).
@@ -37,7 +36,7 @@ understand how variables work already.
 
     let name = 'Bolaji Ayodeji'
 
-Basically, a variable store some sort of information or data, that would be used
+A variable stores some sort of information or data, that would be used
 later in your program.
 
     console.log(name);
@@ -88,14 +87,15 @@ a {
   --color: red;
 }
 ```
-However, adding variables to a selector make them available to **ONLY** its
+However, adding variables to a selector makes them available to **ONLY** their
 children. If you add a variable inside a `.container` selector, it’s only going
 to be available to children of `.container` . Outside `.container` , the
-variable would not work.
+variable will not work.
 
 {{% pen id="BbMGqr" %}}
 
-Even though we set `p` to be red, it works for only `p` tags within `.container` , any `p` outside `.container` would not inherit this style.
+Though we set `p` to be red, it works for only `p` tags within `.container` ,
+any `p` outside `.container` will not inherit this style.
 
 ### : root
 
@@ -106,7 +106,7 @@ makes it available to all the elements in the page.
 
 {{% pen id="gEqZOe" %}}
 
-Now all `p` tags are red irrespective of its position or parent.
+Now all `p` tags are red irrespective of their position or parent.
 
 ### CSS Variables are case sensitive
 
