@@ -1,15 +1,11 @@
 <header class="header">
-  <amp-img alt="{{ .Site.Title }}"
-    width="128px"
-    height="128px"
-    class="logo"
-    src="{{ .Site.Params.Logo }}"
+  <amp-img alt="{{ .Site.Title }}" width="128px" height="128px" class="logo" src="{{ .Site.Params.Logo }}"
     sizes="(max-width: 800px) 36px, 128px">
   </amp-img>
 
   <p class="subtitle">{{ .Site.Params.titleName }}</p>
   <p class="subtitle">{{ .Site.Params.subtitle }}</p>
-  <p class="subtitle"><a style="color:#63D1F4"; href="https://bolajiayodeji.com/portfolio">{{ .Site.Params.portfolio }}</a></p>
+  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">{{ .Site.Params.portfolio }}</a></p>
   <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
     <span class="icon icon-menu"></span>
   </button>
@@ -21,7 +17,9 @@
       {{ $kind := .Kind }}
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
-        <li class="menu-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}{{ if and (eq .Identifier "home") (eq $type "post") }} is-active{{ end }}{{ if and (eq .Identifier "home") (and (eq $type "page") (eq $kind "taxonomy"))}} is-active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+      <li
+        class="menu-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}{{ if and (eq .Identifier "home") (eq $type "post") }} is-active{{ end }}{{ if and (eq .Identifier "home") (and (eq $type "page") (eq $kind "taxonomy"))}} is-active{{ end }}">
+        <a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
     </ul>
   </nav>

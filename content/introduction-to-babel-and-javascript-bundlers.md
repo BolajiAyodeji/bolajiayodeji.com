@@ -35,8 +35,8 @@ was originally called **6to5** but was later renamed to **Babel**. With the
 release of Babel 6, the focus turned more towards making Babel pluggable. The
 default action for Babel in version 6 is not to transform your ES6 to ES5
 anymore, but towards making Babel pluggable (Allows you to create plugins to
-transform your code) so you now have to include various [presets](http://so you
-now have to include various presets./). The latest release is **Babel 7**
+transform your code) so you now have to include various [presets](https://babeljs.io/docs/en/presets/).
+The latest release is **Babel 7**
 
 > Babel has support for the latest version of JavaScript through syntax
 > transformers. These plugins allow you to use new syntax, right now without
@@ -441,6 +441,6 @@ such as [browserify](http://browserify.org/),
 
 
 
-![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
+![](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
 
 # Subscribe for my Newsletter [here](https://eepurl.com/geCCfL) and get notified when I write something cool.

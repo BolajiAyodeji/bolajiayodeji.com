@@ -1,5 +1,4 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400');
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}::selection{background:
 #ddd;}::-moz-selection{background:
 #ddd;}::-webkit-scrollbar{width:7px;}::-webkit-scrollbar-track{background:#8c8a8a;border-radius:10px;}::-webkit-scrollbar-thumb{background:#63D1F4;border-radius:10px;}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em
@@ -35,8 +34,7 @@ monospace}}.header{position:fixed;left:0;top:0;bottom:0;width:20rem;padding:1rem
 #fff}}.title{font-size:1.5rem;font-family: 'Roboto Mono', monospace;font-weight:600;margin:1rem auto}@media screen and
 (max-width:800px){.title{margin:0 auto}}.subtitle,.title
 a{color:#63D1F4;}.subtitle{font-size:17px;margin-bottom:1rem;}.title a{font-size:23px;}.menu{display:none}@media screen
-and (min-width:800px){.menu{display:block}}.menu-list{margin-top:60px;list-style:none;padding:0}.menu-item{padding:5px;
-0}.menu-item
+and (min-width:800px){.menu{display:block}}.menu-list{margin-top:60px;list-style:none;padding:0}.menu-item{padding:5px;}.menu-item
 a{font-weight:450;opacity:.8;color:#fff}.menu-item a:focus,.menu-item a:hover{opacity:1}.menu-item.is-active
 a{color:#63D1F4;opacity:1;font-weight:500}.menu-toggle{border:none;outline:none;font-size:2rem;background-color:transparent;color:#424242;position:absolute;top:1rem;right:1rem}@media
 screen and (min-width:800px){.menu-toggle{display:none}}.sidebar{background-color:#424242;width:100vw}@media screen and
