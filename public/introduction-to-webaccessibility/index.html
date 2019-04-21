@@ -13,7 +13,7 @@
     
 
     
-    <title>Bolaji Ayodeji</title>
+    <title>Introduction to Web Accessibility</title>
 
     
     
@@ -22,21 +22,25 @@
 
 
 
-<meta name="author" content="⚡️Bolaji Ayodeji⚡️" />
-<meta name="description" content="Articles on Web &amp; Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀" />
 
 
-<meta property="og:image" content="https://bolajiayodeji.com/img/fav-500.png" />
-<meta property="og:url" content="https://bolajiayodeji.com" />
-<meta property="og:type" content="article" />
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
+Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,node,pwafire,hugo">
+
 
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@iambolajiayo" />
-<meta name="twitter:title"
-  content="Bolaji Ayodeji" />
-<meta name="twitter:description" content="Articles on Web &amp; Frontend Development. ⚡️⚡️ All written by Bolaji Ayodeji. 🚀" />
+<meta name="twitter:title" content="Introduction to Web Accessibility" />
+<meta name="twitter:description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
+Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer." />
 <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
 
 
 
@@ -44,7 +48,7 @@
 <meta name="generator" content="Hugo 0.53">
 
 
-<link rel="canonical" href="https://bolajiayodeji.com/">
+<link rel="canonical" href="https://bolajiayodeji.com/introduction-to-webaccessibility/">
 <link rel="alternative" href="/index.xml" title="⚡️Bolaji Ayodeji⚡️" type="application/atom+xml">
 
 
@@ -1312,7 +1316,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </amp-sidebar>
 
     
-  <header class="header">
+<header class="header">
   <amp-img alt="⚡️Bolaji Ayodeji⚡️" width="128px" height="128px" class="logo" src="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
     sizes="(max-width: 800px) 36px, 128px">
   </amp-img>
@@ -1396,195 +1400,428 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 
 </header>
 
-  <section class="main entry-list">
+<section class="main post-detail">
+  <header class="post-header">
+    <h1 class="post-title">Introduction to Web Accessibility</h1>
+    <p class="entry-meta"><span class="entry-time">Apr 5, 2019</span> 7 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*aCjM9p-nzRGLeGMtNFx0Qw.png" alt="" /></p>
+
+<p>As developers, it’s easy to assume that all users can see and use a keyboard,
+mouse, or screen, you feel everyone can interact with your web page the same way
+you do. This can lead to a user experience that works well for some people but
+creates issues for others :(</p>
+
+<p>Many developers have only a little or blurred understanding of what
+accessibility means, of course, accessibility can be a complex and difficult
+topic but understanding it, its scope and its impact can make you a better and
+inclusive web developer.</p>
+
+<p>In this article, I’d introduce you to accessibility, what it means, why you
+should care, a few tips, tools and resources to get you started.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*WXgUQC2V92dkcYgZ" alt="" />
+<br />
+<span class="figcaption_hack"><em>Gif by <a href="https://dribbble.com/jonadinges">Jona Dinges</a></em></span></p>
+
+<hr />
+
+<h3 id="what-is-accessibility">What is Accessibility?</h3>
+
+<p>Let’s start by defining accessibility and inclusion.</p>
+
+<blockquote>
+<p>Basically, accessibility means something that is available, and its
+functionality can be operated, by literally <em>anyone with no exceptions</em>.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong>Inclusion</strong> is a societal ideology regarding individuals with disabilities and
+special education. I<strong>nclusion</strong> describes a group that’s particularly welcoming
+to all kinds of people irrespective of their differences.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p>In computer-human interaction, accessibility simply means making the web
+accessible to everyone including those with all forms of disabilities,
+limitations and conditions.</p>
+</blockquote>
+
+<hr />
+
+<h4 id="those-with-disabilities">Those with Disabilities</h4>
+
+<p>Blind and visually impaired make up 285,000,000 people according to the <a href="http://www.who.int/mediacentre/factsheets/fs282/en/">World
+Health Organization</a> (June
+2012) with 39,000,000 categorized as legally blind and the remaining 246,000,000
+visually impaired. Deaf and hearing impaired make up 275,000,000 (2004) in the
+moderate-to-profound hearing impairment category.</p>
+
+<p>Some forms of disabilities include:</p>
+
+<ul>
+<li><strong>Physical disabilities</strong> (One that affects a person’s mobility or dexterity)</li>
+<li><strong>Intellectual or Learning Disabilities</strong> ( People with an intellectual,
+learning, or cognitive disability have a reduced capacity to read, learn tasks
+or process information.)</li>
+<li><strong>Visual impairments</strong> (People with sight challenges, visually impaired
+individuals and blind people.)</li>
+<li><strong>Hearing impairments</strong> ( Deafness and hearing loss)</li>
+<li><strong>Neurological disabilities</strong> ( Disabilities associated with damage to the
+nervous system that results in the loss of some physical or mental functions.)</li>
+</ul>
+
+<h4 id="those-with-limitations-conditions">Those with limitations/ conditions</h4>
+
+<p>Disabilities can also be conditional.</p>
+
+<ul>
+<li>A broken arm</li>
+<li>A loud restaurant</li>
+<li>Not speaking the local language e.t.c</li>
+</ul>
+
+<p>All these are examples where someone may benefit from accessible practices.</p>
+
+<blockquote>
+<p>Everybody is a keyboard user when they are eating with their mouse hand.</p>
+
+<p>— Adrian Roselli</p>
+</blockquote>
+
+<h4 id="how-can-we-help-these-people">How can we help these people?</h4>
+
+<p>Web Accessibility comes to the rescue. It is a practice whereby web applications
+are designed and developed so that its functionality can be operated by people
+with disabilities.</p>
+
+<hr />
+
+<h3 id="web-accessibility-guidelines">Web Accessibility Guidelines</h3>
+
+<blockquote>
+<p>Throughout this article, I’ll refer to the <a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines
+(WCAG) 2.0</a>, a set of guidelines and best
+practices put together by accessibility experts to address what “accessibility”
+means in a methodical way.</p>
+</blockquote>
+
+<p>WCAG is organized around four principles often called <em>The POUR Principle</em>:</p>
+
+<ul>
+<li><strong>Perceivable</strong>: Can users perceive the content? This ensures that our
+applications are perceivable with <em>sight, touch, or hearing</em> senses via the
+browser or assistive technologies e.g Screen readers</li>
+<li><strong>Operable</strong>: Can users use UI components easily and navigate the content? For
+example, something that requires a hover interaction cannot be operated by
+someone who can’t use a mouse or touch screen. This means users should be able
+to control your web apps elements using either the mouse, keyboard or an
+assistive device.</li>
+<li><strong>Understandable</strong>: Can users understand the content? Can users understand the
+interface and is it clear and concise? This ensures an easy understanding and
+smooth user experience.</li>
+<li><strong>Robust</strong>: Can the content be consumed by a wide variety of user on several
+browsers? This ensures compatibility of your app across several devices,
+browsers or operating systems.</li>
+</ul>
+
+<hr />
+
+<h3 id="web-accessibility-tips">Web accessibility tips</h3>
+
+<p>Now that you understand what Web Accessibility means and why you should care,
+let me walk you through a few tips that would help you to build accessible
+websites :)</p>
+
+<ul>
+<li><strong>Always add alternative texts to images</strong></li>
+</ul>
+
+<p>This is one thing most developers miss, I used to miss this too when I started
+out because I didn’t really understand the essence of <em>alternative texts.
+Alternative texts aids screen readers and other screen assistive technologies.</em></p>
+
+<p>You add alternative texts to images with the <em><code>alt</code></em> attribute</p>
+
+<pre><code>&lt;img src=&quot;./school.png&quot; alt=&quot;a private school in Kogi State.&quot;&gt;
+</code></pre>
+
+<p>Another important aspect of the <code>alt</code> attribute is that you should be specific
+when adding these texts. For example, examine the images below:</p>
+
+<p><br></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/600/0*l82N_5g3MF01TecN.jpg" alt="" />
+<span class="figcaption_hack">Beautiful <a href="https://medium.com/u/61b12cb51464">Aniekan Inyang</a></span></p>
+
+<p><br></p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful lady&quot;&gt;
+</code></pre>
+
+<p>&ndash;</p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful lady smiling in front of a brown door&quot;&gt;
+</code></pre>
+
+<p><br></p>
+
+<p>Which of the code above would support accessibility more, 1 or 2?</p>
+
+<p><br></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/600/0*0-CYDoZHLHaOY2c2" alt="" />
+<span class="figcaption_hack">Beautiful <a href="https://medium.com/u/fb80690688e0">Ada Nduka Oyom</a></span></p>
+
+<p><br></p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful and alluring lady&quot;&gt;
+</code></pre>
+
+<p>&ndash;</p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful and alluring lady smiling next to the beach waves&quot;&gt;
+</code></pre>
+
+<p><br></p>
+
+<p>Which of the code above would support accessibility more, 1 or 2?</p>
+
+<p><br></p>
+
+<p>Now you should understand the context of being specific when using alternative
+texts. You might not see the need, you probably would not need it, but a whole
+lot of users with disabilities need it.</p>
+
+<ul>
+<li><strong>Design your forms for Accessibility</strong></li>
+</ul>
+
+<p>Ensure you add <code>&lt;label&gt;</code> to your form elements even if they would not be
+visible. You can add labels for screen readers and still hide them from
+displaying to other users.</p>
+
+<pre><code>&lt;form action=&quot;./contact.php&quot; method=&quot;POST&quot;&gt;
+  &lt;label for=&quot;fullname&quot;&gt;Full name&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;fullname&quot; id=&quot;fullname&quot;&gt;
+  &lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+  &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot;&gt;
+  &lt;label for=&quot;phone&quot;&gt;Telephone&lt;/label&gt;
+  &lt;input type=&quot;number&quot; name=&quot;phone&quot; id=&quot;phone&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>Ensure that your <code>for</code> attribute matches the <code>id</code></p>
+
+<ul>
+<li><strong>Always specify your web app language</strong></li>
+</ul>
+
+<pre><code>&lt;html lang=&quot;en-US&quot;&gt; // American english
+
+ &lt;html lang=&quot;en-UK&quot;&gt; // British english
+
+ &lt;html lang=&quot;fr&quot;&gt; // French
+</code></pre>
+
+<p>If your app supports multiple languages or translations, ensure to specify that
+too.</p>
+
+<ul>
+<li><strong>Don’t use tables for anything except tabular data</strong></li>
+<li><strong>Don’t auto-play video, music or other media files</strong> (Please avoid this)</li>
+<li><strong>Ensure that links are recognizable. Either underlined or with a different
+colour</strong></li>
+<li><strong>Always provide a skip to main content option</strong></li>
+</ul>
+
+<p>Skipping to main content links are useful for users who use keyboard navigation
+only</p>
+
+<pre><code>&lt;body&gt;
+...
+  &lt;a href=&quot;#main&quot;&gt;Get Started&lt;/a&gt;
+...
+  &lt;p&gt;
+   Our story is a story which explains another story. Cut the crap
+   this is too long and I don't want to read it.
+  &lt;/p&gt;
+...
+  &lt;main id=&quot;main&quot;&gt;
+    &lt;!-- page specific content --&gt;
+   &lt;p&gt; Here's the main stuff bro &lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+</code></pre>
+
+<ul>
+<li><strong>Reduce your divs and make use of semantic elements</strong></li>
+</ul>
+
+<p>HTML5 provides additional elements, such as <code>&lt;nav&gt;</code> , <code>section</code> and <code>&lt;aside&gt;</code>,
+to better structure your content.</p>
+
+<hr />
+
+<p>I’d stop here as we have tons of accessibility guidelines, but don’t worry, I’ve
+included links for further reading below :)</p>
+
+<h3 id="the-a11y-project">The A11y project</h3>
+
+<p>This is a community-driven effort to make web accessibility easier with tons of
+resources, events, patterns, checklists and lots more to help you build more
+accessible applications. <a href="https://a11yproject.com/">https://a11yproject.com/</a></p>
+
+<blockquote>
+<p>Accessibility can be a complex and difficult topic. The Accessibility Project
+understands this and wants to help make it easier to implement on the web.</p>
+</blockquote>
+
+<h3 id="web-accessibility-tools">Web accessibility tools</h3>
+
+<ul>
+<li><strong>ally.css</strong></li>
+</ul>
+
+<p>This CSS file intends to warn developers about possible risks and mistakes that
+exist in HTML code. It can also be used to roughly evaluate a site’s quality by
+simply including it as an external stylesheet.</p>
+
+<p>Get the Ally.css built by <a href="https://github.com/ffoodd">Gaël Poupard</a>
+<a href="https://ffoodd.github.io/a11y.css/">here</a> or download the equivalent web
+extension (chrome, firefox and opera) Alix built by <a href="https://medium.com/u/f7f8398c3660">Ire
+Aderinokun</a>
+<a href="https://github.com/ireade/alix">here</a></p>
+
+<ul>
+<li><strong>Chrome lighthouse</strong></li>
+</ul>
+
+<p>Lighthouse is an <a href="https://github.com/GoogleChrome/lighthouse">open-source</a>,
+automated tool for improving the quality of web pages. You can run it against
+any web page, public or requiring authentication. It has audits for performance,
+accessibility, progressive web apps, and more. Read my previous article:
+<a href="https://bolajiayodeji.com/introduction-to-chrome-lighthouse/">Introduction to chrome
+lighthouse</a> to get
+started.</p>
+
+<ul>
+<li><strong>Contrast Checker</strong></li>
+</ul>
+
+<p>Check the contrast of your colour design for accessibility base on Web Content
+Accessibility Guideline (WCAG). Check it <a href="https://contrastchecker.com/">here</a>.</p>
+
+<ul>
+<li><strong>NoCoffee</strong></li>
+</ul>
+
+<p>A chrome extension which is helpful for understanding the problems faced by
+people with slight to extreme vision problems. Download
+<a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl">here</a></p>
+
+<h4 id="a-full-list-of-web-accessibility-tools-can-be-found">A full list of web accessibility tools can be found</h4>
+
+<p><a href="https://www.w3.org/WAI/ER/tools/">here</a></p>
+
+<hr />
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG 2.0)</a></li>
+<li><a href="https://www.w3docs.com/learn-html/html-language-codes.html">HTML Language
+Codes</a></li>
+<li><a href="https://www.giftegwuenu.com/guide-to-using-alternative-text-on-images">Guide to using Alternative Texts on
+images</a>
+by <a href="https://medium.com/u/46bccfc2f42c">Egwuenu Gift</a></li>
+<li><a href="https://a11yproject.com/posts/creating-valid-and-accessible-links/">Creating valid and accessible
+links</a></li>
+<li><a href="https://a11yproject.com/posts/aria-landmark-roles/">ARIA Landmark roles and HTML5 implicit
+mapping</a></li>
+<li><a href="https://a11yproject.com/posts/getting-started-with-nvda/">Introduction to NDVA</a></li>
+<li><a href="https://a11yproject.com/posts/how-to-hide-content/">How-to hide content but still make it accessible to screen
+readers.</a></li>
+<li><a href="https://a11yproject.com/posts/using-caption-services-with-html5-video/">How-to: Using caption services with HTML5
+video</a></li>
+<li><a href="https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/">Basic screen reader commands for accessibility
+testing</a></li>
+</ul>
+
+<h4 id="a-full-list-of-web-accessibility-resources-can-be-found">A full list of web accessibility resources can be found</h4>
+
+<p><a href="https://a11yproject.com/resources">here</a></p>
+
+<hr />
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Everyone should be able to access and enjoy the web irrespective of their
+challenges or limitations. As developers, we’re building solutions for <strong>every
+user</strong> and not just **users. **As much as we focus on UI/UX, we should also put
+extra focus on accessibility. Thanks for reading!</p>
+
+<p><br></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*BQcPB-Ak2H8VA0AT.png" alt="" /></p>
+
+<p>Like this article? Kindly follow me on twitter
+<a href="https://twitter.com/iambolajiayo">@iambolajiayo</a></p>
+
+<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev" /></p>
+
+<h1 id="subscribe-for-my-newsletter-here-https-eepurl-com-geccfl-and-get-notified-when-i-write-something-cool">Subscribe for my Newsletter <a href="https://eepurl.com/geCCfL">here</a> and get notified when I write something cool.</h1>
+</article>
+  <footer class="post-footer">
     
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/web"><span class="tag">Web</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/accessibility"><span class="tag">Accessibility</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/a11y"><span class="tag">A11y</span></a></li>
+      
+    </ul>
     
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/introduction-to-webaccessibility/" title="Introduction to Web Accessibility" class="entry-link">Introduction to Web Accessibility</a></h3>
-  </header>
 
-  <p class="entry-summary">As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
-Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Apr 5, 2019</span> 7 min read</p>
     <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/introduction-to-webaccessibility/" title="Introduction to Web Accessibility" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
+      <div class="addthis_inline_share_toolbox"></div>
+
 
       
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/" title="Building &amp; Deploying your first Progressive Web App" class="entry-link">Building &amp; Deploying your first Progressive Web App</a></h3>
-  </header>
 
-  <p class="entry-summary">Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let’s roll :)
-TABLE OF CONTENTS  Introduction Starter files App description Building the UI Add JavaScript Functionality Build the Progressive Web App Deploy to Netlify Conclusion  INTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Apr 1, 2019</span> 9 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/" title="Building &amp; Deploying your first Progressive Web App" class="">READ ARTICLE →</a></h6>
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
     </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
   </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/introducing-css-custom-properties-variables/" title="Introducing CSS Custom Properties (Variables)" class="entry-link">Introducing CSS Custom Properties (Variables)</a></h3>
-  </header>
-
-  <p class="entry-summary">In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.
-CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.
-However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Mar 25, 2019</span> 4 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/introducing-css-custom-properties-variables/" title="Introducing CSS Custom Properties (Variables)" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/" title="Getting Started With Hugo and Deploying to Netlify" class="entry-link">Getting Started With Hugo and Deploying to Netlify</a></h3>
-  </header>
-
-  <p class="entry-summary">Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.
-Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Mar 18, 2019</span> 7 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/" title="Getting Started With Hugo and Deploying to Netlify" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/" title="Iterating through JavaScript Objects  -  5 Techniques and Performance Tests." class="entry-link">Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</a></h3>
-  </header>
-
-  <p class="entry-summary">Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
-* Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Mar 10, 2019</span> 3 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/" title="Iterating through JavaScript Objects  -  5 Techniques and Performance Tests." class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/github-student-developer-pack-demystified/" title="GitHub Student Developer Pack Demystified" class="entry-link">GitHub Student Developer Pack Demystified</a></h3>
-  </header>
-
-  <p class="entry-summary">There’s no substitute for hands-on experience, but for most students, real-world tools can be quite expensive. That’s why GitHub created the GitHub Student Developer Pack to give students free access to the best developer tools in one place so they can learn by doing.
-In this article, I’d take you through:
- What is GitHub Student Developer Pack Contents of the pack Terms and Conditions How to apply for the pack Expiration and renewals  Let’s roll :)</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Mar 4, 2019</span> 6 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/github-student-developer-pack-demystified/" title="GitHub Student Developer Pack Demystified" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/introducing-github-linguistic/" title="Introducing GitHub Linguist" class="entry-link">Introducing GitHub Linguist</a></h3>
-  </header>
-
-  <p class="entry-summary">The files and directories within a repository determine the languages that make up the repository. With GitHub, you can view a repository’s languages to get a quick overview of the repository. But how does this happen? What powers this repository language overview?
-In this article I would:
- Introduce you to GitHub Linguist How it works How to fix common Linguist issues How to use gitattributesto override Linguist :) How to use Emacs or Vim modelines to override Linguist How to contribute to GitHub Linguist  Let’s Roll!</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Feb 25, 2019</span> 6 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/introducing-github-linguistic/" title="Introducing GitHub Linguist" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/git-cheat-sheet/" title="Git Cheat Sheet" class="entry-link">Git Cheat Sheet</a></h3>
-  </header>
-
-  <p class="entry-summary">Git cheat sheet saves you time when you just can’t remember a specific command. It is hard to memorize all the important Git commands as a newbie, most times Senior Developers forget too. This is why you need a reference you can come back to when you get stuck.
-In this article, I’d show you the basic Git commands to help you learn Git, and more advanced concepts around Git branches, remote repositories, reverting changes, and more.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Feb 18, 2019</span> 2 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/git-cheat-sheet/" title="Git Cheat Sheet" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/" title="Introduction to Babel and JavaScript Bundlers" class="entry-link">Introduction to Babel and JavaScript Bundlers</a></h3>
-  </header>
-
-  <p class="entry-summary">As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.
-In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Feb 14, 2019</span> 9 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/" title="Introduction to Babel and JavaScript Bundlers" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-        <article class="entry-single">
-  
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://bolajiayodeji.com/introduction-to-es6-modules/" title="Introduction to ES6 modules" class="entry-link">Introduction to ES6 modules</a></h3>
-  </header>
-
-  <p class="entry-summary">An essential aspect of software engineering is efficiency. Every successful app needs a solid architectural structure that allows it to scale at all levels without breaking. In respect to this, several techniques and patterns are engaged to ensure code efficiency.
-In this article, I would introduce you to ES6 modules, what they are, how to use them and why you should care {0[]0}
-What exactly is a module? In JavaScript, the word “modules” refers to small units of independent, reusable code.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Feb 11, 2019</span> 8 min read</p>
-    <div class="sharing">
-      <h6 class="entry-meta"><a href="https://bolajiayodeji.com/introduction-to-es6-modules/" title="Introduction to ES6 modules" class="">READ ARTICLE →</a></h6>
-    </div>
-  </footer>
-</article>
-
-      
-    
-    
-      <nav class="pagination">
-        
-        
-          <a class="pagination-btn pagination-next" href="/page/2/">Older Posts →</a>
-        
-      </nav>
-    
-  </section>
-  <footer class="footer">
+</section>
+<footer class="footer">
   <p>Copyright © 2018-2019</p>
   <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
 </footer>

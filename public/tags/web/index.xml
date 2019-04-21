@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on ⚡️Bolaji Ayodeji⚡️</title>
+    <link>https://bolajiayodeji.com/tags/web/</link>
+    <description>Recent content in Web on ⚡️Bolaji Ayodeji⚡️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Apr 2019 13:22:14 +2400</lastBuildDate>
+    
+	<atom:link href="https://bolajiayodeji.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Web Accessibility</title>
+      <link>https://bolajiayodeji.com/introduction-to-webaccessibility/</link>
+      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/introduction-to-webaccessibility/</guid>
+      <description>As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
+Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer.</description>
+    </item>
+    
+  </channel>
+</rss>

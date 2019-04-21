@@ -6,10 +6,28 @@
     <description>Recent content in Tags on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A11y</title>
+      <link>https://bolajiayodeji.com/tags/a11y/</link>
+      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/a11y/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accessibility</title>
+      <link>https://bolajiayodeji.com/tags/accessibility/</link>
+      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/accessibility/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Arrays</title>
@@ -332,6 +350,15 @@
       <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://bolajiayodeji.com/tags/web/</link>
+      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/web/</guid>
       <description></description>
     </item>
     
