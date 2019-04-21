@@ -323,7 +323,7 @@ testing](https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-co
 
 Everyone should be able to access and enjoy the web irrespective of their
 challenges or limitations. As developers, we’re building solutions for **every
-user** and not just **users. **As much as we focus on UI/UX, we should also put
+user** and not just **users.** As much as we focus on UI/UX, we should also put
 extra focus on accessibility. Thanks for reading!
 
 <br> 
