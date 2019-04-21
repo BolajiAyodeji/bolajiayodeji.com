@@ -1,0 +1,1841 @@
+<!doctype html>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    
+    
+
+    
+    <title>Introduction to Web Accessibility</title>
+
+    
+    
+
+
+
+
+
+
+
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
+Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,node,pwafire,hugo">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@iambolajiayo" />
+<meta name="twitter:title" content="Introduction to Web Accessibility" />
+<meta name="twitter:description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
+Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer." />
+<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.53">
+
+
+<link rel="canonical" href="https://bolajiayodeji.com/introduction-to-web-accessibility/">
+<link rel="alternative" href="/index.xml" title="⚡️Bolaji Ayodeji⚡️" type="application/atom+xml">
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+
+<meta name="msvalidate.01" content="bing_site_verification_code" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+
+
+<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120"
+  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#20242b" />
+
+
+<style amp-boilerplate>
+  body {
+    -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    animation: -amp-start 8s steps(1, end) 0s 1 normal both
+  }
+
+  @-webkit-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @-moz-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @-ms-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @-o-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+</style><noscript>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      animation: none
+    }
+  </style>
+</noscript>
+<style amp-custom>
+   
+  html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+  }
+
+  ::selection {
+    background: #63D1F4;
+  }
+
+  ::-moz-selection {
+    background:
+      #ddd;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #8c8a8a;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #63D1F4;
+    border-radius: 10px;
+  }
+
+  body {
+    margin: 0
+  }
+
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+    display: block
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: .67em 0
+  }
+
+  figcaption,
+  figure,
+  main {
+    display: block
+  }
+
+  figure {
+    margin: 1em 40px
+  }
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+  }
+
+  pre {
+    font-family: 'Roboto Mono',
+      monospace;
+    font-size: 1em
+  }
+
+  a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+  }
+
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+  }
+
+  b,
+  strong {
+    font-weight: inherit;
+    font-weight: bolder
+  }
+
+  code,
+  kbd,
+  samp {
+    font-family: monospace;
+    font-size: 1em
+  }
+
+  dfn {
+    font-style: italic
+  }
+
+  mark {
+    background-color: #ff0;
+    color: #424242
+  }
+
+  small {
+    font-size: 80%
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+  }
+
+  sub {
+    bottom: -.25em
+  }
+
+  sup {
+    top: -.5em
+  }
+
+  audio,
+  video {
+    display: inline-block
+  }
+
+  audio:not([controls]) {
+    display: none;
+    height: 0
+  }
+
+  img {
+    border-style: none;
+    max-width: 100%;
+  }
+
+  svg:not(:root) {
+    overflow: hidden
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family:
+      'Poppins',
+      sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+  }
+
+  button,
+  input {
+    overflow: visible
+  }
+
+  button,
+  select {
+    text-transform: none
+  }
+
+  [type=reset],
+  [type=submit],
+  button,
+  html [type=button] {
+    -webkit-appearance: button
+  }
+
+  [type=button]::-moz-focus-inner,
+  [type=reset]::-moz-focus-inner,
+  [type=submit]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+  }
+
+  [type=button]:-moz-focusring,
+  [type=reset]:-moz-focusring,
+  [type=submit]:-moz-focusring,
+  button:-moz-focusring {
+    outline: 1px dotted ButtonText
+  }
+
+  fieldset {
+    padding: .35em .75em .625em
+  }
+
+  legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+  }
+
+  progress {
+    display: inline-block;
+    vertical-align: baseline
+  }
+
+  textarea {
+    overflow: auto
+  }
+
+  [type=checkbox],
+  [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+  }
+
+  [type=number]::-webkit-inner-spin-button,
+  [type=number]::-webkit-outer-spin-button {
+    height: auto
+  }
+
+  [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+  }
+
+  [type=search]::-webkit-search-cancel-button,
+  [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+  }
+
+  details,
+  menu {
+    display: block
+  }
+
+  summary {
+    display: list-item
+  }
+
+  canvas {
+    display: inline-block
+  }
+
+  [hidden],
+  template {
+    display: none
+  }
+
+  @font-face {
+    font-family: fe;
+    font-weight: 400;
+    font-style: normal;
+    src: url(/fonts/fe.eot);
+    src: url(/fonts/fe.eot#iefix) format("embedded-opentype"), url(/fonts/fe.woff2) format("woff2"), url(/fonts/fe.woff) format("woff"), url(/fonts/fe.ttf) format("truetype"), url(/fonts/fe.svg#fe) format("svg")
+  }
+
+  .icon {
+    font-family: fe;
+    font-style: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+
+  .icon-menu:before {
+    content: "\e802";
+    color: #fff;
+  }
+
+  .icon-email:before {
+    content: "\e804"
+  }
+
+  .icon-rss:before {
+    content: "\e803"
+  }
+
+  .icon-github:before {
+    content: "\f09b"
+  }
+
+  .icon-dribbble:before {
+    content: "\f31b"
+  }
+
+  .icon-linkedin:before {
+    content: "\f318"
+  }
+
+  .icon-twitter:before {
+    content: "\f309"
+  }
+
+  .icon-facebook:before {
+    content: "\f30c"
+  }
+
+  .icon-instagram:before {
+    content: "\f16d"
+  }
+
+  .icon-youtube:before {
+    content: "\f16a"
+  }
+
+  .icon-google:before {
+    content: "\f30f"
+  }
+
+  .icon-clock:before {
+    content: "\e800"
+  }
+
+  .share {
+    font-family: fe;
+    font-weight: 400;
+    margin-left: .2rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #20242b;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%
+  }
+
+  .share-twitter {
+    background-color: #55acee
+  }
+
+  .share-twitter:before {
+    content: "\f309"
+  }
+
+  .share-facebook {
+    background-color: #3b5998
+  }
+
+  .share-facebook:before {
+    content: "\f30c"
+  }
+
+  .share-google {
+    background-color: #dd4b39
+  }
+
+  .share-google:before {
+    content: "\f30f"
+  }
+
+  body {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.618;
+    font-family:
+      'Roboto Mono',
+      monospace;
+    color: #fff;
+    background: #20242b;
+    text-rendering: optimizeLegibility;
+    -webkit-overflow-scrolling: touch
+  }
+
+  a {
+    color: #63D1F4;
+    text-decoration: none;
+    font-weight: 300
+  }
+
+  a:focus,
+  a:hover {
+    color: #63D1F4;
+    outline: none;
+    pacity: .9;
+  }
+
+  amp-img {
+    margin: 0 auto;
+    box-shadow: 2px 20px 40px 10px rgba(0, 0, 0, .15)
+  }
+
+  button:hover {
+    cursor: pointer
+  }
+
+  .main {
+    margin-left: 20rem;
+    padding: 1rem 2rem;
+    max-width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box
+  }
+
+  @media screen and (max-width:1440px) {
+    .main {
+      width: calc(100% - 20rem)
+    }
+  }
+
+  @media (min-width:800px) and (max-width:960px) {
+    .main {
+      margin-left: 15rem;
+      width: calc(100% - 15rem)
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .main {
+      margin-left: 0;
+      padding: 0 1rem 1rem;
+      width: 100%;
+      min-height: 0;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd
+    }
+  }
+
+  .footer {
+    display: none
+  }
+
+  @media screen and (max-width:800px) {
+    .footer {
+      display: block;
+      padding: 1rem;
+      font-size: .8rem;
+      text-align: center;
+      font-family: 'Roboto Mono',
+        monospace
+    }
+  }
+
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #20242b;
+  }
+
+  @media screen and (max-width:800px) {
+    .header {
+      width: 100%;
+      position: relative
+    }
+  }
+
+  @media (min-width:800px) and (max-width:960px) {
+    .header {
+      width: 15rem
+    }
+  }
+
+  .logo {
+    padding-top: 591.44px / 1127.34px * 100%;
+    margin-top: 2.5rem;
+    border-radius: 10%;
+    border: 3px solid #63D1F4;
+    transition: all .5s ease-out
+  }
+
+  .logo:hover {
+    padding-top:
+      591.44px / 1127.34px * 100%;
+    border-radius: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3)
+  }
+
+  @media screen and (max-width:800px) {
+    .logo {
+      padding-top: 591.44px / 1127.34px * 100%;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 2rem;
+      height: 2rem;
+      margin-top: 0;
+      border: 2px solid #fff
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    margin: 1rem auto
+  }
+
+  @media screen and (max-width:800px) {
+    .title {
+      margin: 0 auto
+    }
+  }
+
+  .subtitle,
+  .title a {
+    color: #63D1F4;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
+
+  .title a {
+    font-size: 23px;
+  }
+
+  .menu {
+    display: none
+  }
+
+  @media screen and (min-width:800px) {
+    .menu {
+      display: block
+    }
+  }
+
+  .menu-list {
+    margin-top: 50px;
+    list-style: none;
+    padding: 0
+  }
+
+  .menu-item {
+    padding: 5px;
+  }
+
+  .menu-item a {
+    font-weight: 450;
+    opacity: .8;
+    color: #fff
+  }
+
+  .menu-item a:focus,
+  .menu-item a:hover {
+    opacity: 1
+  }
+
+  .menu-item.is-active a {
+    color: #63D1F4;
+    opacity: 1;
+    font-weight: 500
+  }
+
+  .menu-toggle {
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #20242b;
+    position: absolute;
+    top: 1rem;
+    right: 1rem
+  }
+
+  @media screen and (min-width:800px) {
+    .menu-toggle {
+      display: none
+    }
+  }
+
+  .sidebar {
+    background-color: #20242b;
+    width: 100vw
+  }
+
+  @media screen and (min-width:640px) {
+    .sidebar {
+      width: 50vw
+    }
+  }
+
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0
+  }
+
+  .sidebar-menu {
+    text-align: right;
+    padding: 16px
+  }
+
+  .sidebar-item {
+    font-size: 2rem;
+    padding: 20px 25px 20px 15px;
+    border-top: 1px solid #ddd
+  }
+
+  .sidebar-icon {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Roboto Mono',
+      monospace;
+    font-weight: 100;
+    font-size: 2rem
+  }
+
+  .sidebar-link {
+    color: #fff;
+    font-weight: 200
+  }
+
+  .social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none
+  }
+
+  @media screen and (min-width:800px) {
+    .social-list {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0
+    }
+  }
+
+  .social-item {
+    display: inline-block;
+    margin: 0 .2rem
+  }
+
+  .social-item a {
+    color: #63D1F4;
+    font-weight: 400
+  }
+
+  .entry-list {
+    background-color: #8c8a8a
+  }
+
+  @media screen and (max-width:800px) {
+    .entry-list {
+      padding-top: 30px;
+    }
+  }
+
+  .entry-single {
+    line-height: 1.8;
+    margin-bottom: 22px;
+    background-color: #20242b;
+    box-shadow: 0 0 2px 0 rgba(137, 146, 177, .15), 0 3px 10px 0 rgba(137, 146, 177, .1);
+    border-radius: 5px
+  }
+
+  .entry-single:hover {
+    box-shadow: 0 1px 15px 0 rgba(137, 146, 177, .15), 0 10px 20px 0 rgba(137, 146, 177, .15)
+  }
+
+  .entry-cover {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    box-shadow: none
+  }
+
+  .entry-title {
+    margin: 0;
+    padding: 20px 30px 0
+  }
+
+  .entry-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff
+  }
+
+  .entry-summary {
+    padding: 0 30px;
+    text-align: justify;
+    max-height: 4rem;
+    overflow: hidden
+  }
+
+  .entry-footer {
+    margin: 0 30px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .entry-meta {
+    margin: 0;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase
+  }
+
+  .entry-time {
+    color: #fff
+  }
+
+  .entry-time:after {
+    content: "";
+    border-right: 1px solid #ddd;
+    margin: 0 8px 0 10px
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-start
+  }
+
+  .pagination-btn {
+    color: #fff;
+    padding: .8rem;
+    background-color: #20242b;
+    border: 1px solid #ddd;
+    font-size: .8rem;
+    text-transform: uppercase;
+    border-radius: 5px
+  }
+
+  .pagination-btn:focus,
+  .pagination-btn:hover {
+    color: #20242b;
+    background-color: #63D1F4;
+    border-color: #63D1F4
+  }
+
+  .pagination-next {
+    margin-left: auto
+  }
+
+  .post-header:after {
+    display: block;
+    content: "";
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    width: 60px;
+    padding-top: 10px;
+    border-bottom-color: #63D1F4
+  }
+
+  .post-title {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem
+  }
+
+  .post-footer {
+    margin: 1rem 0;
+    line-height: 1.8
+  }
+
+  .post-tags {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0
+  }
+
+  .post-tag {
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: #f1f0ea;
+    font-size: .8rem
+  }
+
+  .post-tag:hover {
+    background: #eee;
+    box-shadow: 0 1px 15px 0 rgba(137, 146, 177, .15), 0 10px 20px 0 rgba(137, 146, 177, .15)
+  }
+
+  .post-tag a {
+    color: #444;
+  }
+
+  .post-content {
+    line-height: 1.8;
+  }
+
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    color: #63D1F4;
+    font-weight: 600;
+    line-height: 1.125;
+    text-transform: uppercase;
+  }
+
+  .post-content h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem
+  }
+
+  .post-content h2 {
+    margin-top: 1.75rem;
+    margin-bottom: .75rem;
+    font-size: 1.5rem
+  }
+
+  .post-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: 1.25rem
+  }
+
+  .post-content h4 {
+    margin-top: 1.25rem;
+    margin-bottom: .25rem;
+    font-size: 1rem
+  }
+
+  .post-content h5,
+  .post-content h6 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: .8rem
+  }
+
+  .post-content li+li {
+    margin-top: .5rem
+  }
+
+  .post-content em {
+    color: #fff;
+    font-style: italic
+  }
+
+  .post-content strong {
+    color: #fff
+  }
+
+  .post-content del {
+    color: #fff;
+    text-decoration: line-through
+  }
+
+  .post-content ins {
+    color: #fff;
+    text-decoration: underline
+  }
+
+  .post-content hr {
+    position: relative;
+    margin: 2rem auto;
+    border-top: 1px dashed #ddd;
+    border-bottom: none
+  }
+
+  .post-content hr:before {
+    content: "sep line";
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 40px);
+    padding: 0 .5rem;
+    background-color: #20242b;
+    color: #ddd;
+    font-size: .8rem;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .post-content p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: justify
+  }
+
+  .post-content blockquote {
+    background-color: transparent;
+    border-left: 5px solid #ddd;
+    opacity: 0.7;
+    padding: .5rem 1rem;
+    margin: 2rem 0
+  }
+
+  .post-content blockquote p {
+    margin-top: .5rem;
+    margin-bottom: .5rem
+  }
+
+  .post-content blockquote cite {
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: .9rem
+  }
+
+  .post-content code,
+  .post-content tt {
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    margin: 0;
+    font-size: .9em;
+    background-color: #282c34;
+    color: #fff;
+    font-family:
+      'Roboto Mono', monospace;
+  }
+
+  .post-content code:after,
+  .post-content code:before,
+  .post-content tt:after,
+  .post-content tt:before {
+    letter-spacing: -.2em;
+    content: "\00a0"
+  }
+
+  .post-content kbd {
+    display: inline-block;
+    padding: .25em;
+    background-color: #8c8a8a;
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .05);
+    font-size: .8em;
+    line-height: 1.25;
+    font-family: 'Roboto Mono', monospace;
+    ;
+    color: #fff
+  }
+
+  .post-content pre {
+    margin: 2rem auto;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    font-size: .9rem;
+    line-height: 1.618;
+    white-space: pre;
+    word-wrap: normal;
+    word-break: normal;
+    background: #2b313a;
+    color: #fff
+  }
+
+  .post-content pre code {
+    font-size: .9rem;
+    background-color: transparent
+  }
+
+  .post-content pre code:after,
+  .post-content pre code:before {
+    content: none
+  }
+
+  .post-content sub,
+  .post-content sup {
+    font-size: .8rem
+  }
+
+  .post-content sub a,
+  .post-content sub a:focus,
+  .post-content sub a:hover,
+  .post-content sup a,
+  .post-content sup a:focus,
+  .post-content sup a:hover {
+    border-bottom: none
+  }
+
+  .post-content ol {
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    list-style: decimal outside
+  }
+
+  .post-content ol ol {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: lower-roman outside
+  }
+
+  .post-content ol ul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: disc outside
+  }
+
+  .post-content ul {
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    list-style: disc outside
+  }
+
+  .post-content ul ul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: circle outside
+  }
+
+  .post-content ul ol {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: decimal outside
+  }
+
+  .post-content dl {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+  }
+
+  .post-content dl dt {
+    color: #63D1F4;
+    margin-top: 1rem
+  }
+
+  .post-content dl dt:after {
+    content: ":"
+  }
+
+  .post-content dl dd {
+    text-indent: 2rem;
+    margin-left: 0;
+    margin-top: .25rem
+  }
+
+  .post-content figure {
+    display: block;
+    margin: 2rem auto
+  }
+
+  .post-content figure img {
+    max-width: 100%;
+    box-shadow: 2px 20px 40px 10px rgba(0, 0, 0, .15)
+  }
+
+  @media screen and (max-width:800px) {
+    .post-content figure img {
+      box-shadow: none;
+      max-width:
+        100%;
+    }
+  }
+
+  .post-content figure figcaption h4 {
+    color: #ddd;
+    font-size: .9rem;
+    text-align: center
+  }
+
+  table {
+    background-color: #8c8a8a;
+    color: #000;
+    font-family: 'Roboto
+Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{border:1px solid #ddd;border-width:0 0
+1px;
+    padding: .5em .75em;
+    vertical-align: center
+  }
+
+  table th {
+    color: #fff
+  }
+
+  table tr:hover {
+    background-color: #ddd
+  }
+
+  table thead td,
+  table thead th {
+    border-width: 0 0 2px;
+    color: #000
+  }
+
+  table tfoot td,
+  table tfoot th {
+    border-width: 2px 0 0;
+    color: #000
+  }
+
+  table tbody tr:last-child td,
+  table tbody tr:last-child th {
+    border-bottom-width: 0
+  }
+
+  table tr:first-child th:first-child {
+    border-top-left-radius: 5px
+  }
+
+  table tr:first-child th:last-child {
+    border-top-right-radius: 5px
+  }
+
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px
+  }
+
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px
+  }
+
+  .not-found {
+    margin: 5rem auto 0;
+    font-family: 'Roboto Mono',
+      monospace;
+    text-align: center
+  }
+
+  .error-emoji {
+    color: #fff;
+    font-size: 3rem
+  }
+
+  .error-text {
+    font-size: 1.25rem
+  }
+
+  .error-link {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #63D1F4
+  }
+</style>
+
+  </head>
+  <body>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
+    
+    
+    
+    
+      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/portfolio/">About Me 😊</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/portfolio/resume.pdf/">Resume 📁</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://github.com/bolajiayodeji">Projects 👨‍💻</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://eepurl.com/geCCfL">Newsletter 📩</a></li>
+    
+  </ul>
+</amp-sidebar>
+
+    
+<header class="header">
+  <amp-img alt="⚡️Bolaji Ayodeji⚡️" width="128px" height="128px" class="logo" src="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
+    sizes="(max-width: 800px) 36px, 128px">
+  </amp-img>
+
+  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
+  <p class="subtitle">I write articles on web and frontend development. 🚀</p>
+  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">View portfolio →</a></p>
+  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+      <li
+        class="menu-item  is-active">
+        <a href="/">Home 🏠</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/portfolio/">About Me 😊</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/portfolio/resume.pdf/">Resume 📁</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://github.com/bolajiayodeji">Projects 👨‍💻</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://eepurl.com/geCCfL">Newsletter 📩</a></li>
+      
+    </ul>
+  </nav>
+
+  <ul class="social-list">
+  
+
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//twitter.com/iambolajiayo" title="Twitter" target="_blank" rel="noopener"><span class="icon icon-twitter"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
+</ul>
+
+</header>
+
+<section class="main post-detail">
+  <header class="post-header">
+    <h1 class="post-title">Introduction to Web Accessibility</h1>
+    <p class="entry-meta"><span class="entry-time">Apr 5, 2019</span> 7 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*aCjM9p-nzRGLeGMtNFx0Qw.png" alt="" /></p>
+
+<p>As developers, it’s easy to assume that all users can see and use a keyboard,
+mouse, or screen, you feel everyone can interact with your web page the same way
+you do. This can lead to a user experience that works well for some people but
+creates issues for others :(</p>
+
+<p>Many developers have only a little or blurred understanding of what
+accessibility means, of course, accessibility can be a complex and difficult
+topic but understanding it, its scope and its impact can make you a better and
+inclusive web developer.</p>
+
+<p>In this article, I’d introduce you to accessibility, what it means, why you
+should care, a few tips, tools and resources to get you started.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*WXgUQC2V92dkcYgZ" alt="" />
+<br />
+<span class="figcaption_hack"><em>Gif by <a href="https://dribbble.com/jonadinges">Jona Dinges</a></em></span></p>
+
+<hr />
+
+<h3 id="what-is-accessibility">What is Accessibility?</h3>
+
+<p>Let’s start by defining accessibility and inclusion.</p>
+
+<blockquote>
+<p>Basically, accessibility means something that is available, and its
+functionality can be operated, by literally <em>anyone with no exceptions</em>.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p><strong>Inclusion</strong> is a societal ideology regarding individuals with disabilities and
+special education. I<strong>nclusion</strong> describes a group that’s particularly welcoming
+to all kinds of people irrespective of their differences.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+<p>In computer-human interaction, accessibility simply means making the web
+accessible to everyone including those with all forms of disabilities,
+limitations and conditions.</p>
+</blockquote>
+
+<hr />
+
+<h4 id="those-with-disabilities">Those with Disabilities</h4>
+
+<p>Blind and visually impaired make up 285,000,000 people according to the <a href="http://www.who.int/mediacentre/factsheets/fs282/en/">World
+Health Organization</a> (June
+2012) with 39,000,000 categorized as legally blind and the remaining 246,000,000
+visually impaired. Deaf and hearing impaired make up 275,000,000 (2004) in the
+moderate-to-profound hearing impairment category.</p>
+
+<p>Some forms of disabilities include:</p>
+
+<ul>
+<li><strong>Physical disabilities</strong> (One that affects a person’s mobility or dexterity)</li>
+<li><strong>Intellectual or Learning Disabilities</strong> ( People with an intellectual,
+learning, or cognitive disability have a reduced capacity to read, learn tasks
+or process information.)</li>
+<li><strong>Visual impairments</strong> (People with sight challenges, visually impaired
+individuals and blind people.)</li>
+<li><strong>Hearing impairments</strong> ( Deafness and hearing loss)</li>
+<li><strong>Neurological disabilities</strong> ( Disabilities associated with damage to the
+nervous system that results in the loss of some physical or mental functions.)</li>
+</ul>
+
+<h4 id="those-with-limitations-conditions">Those with limitations/ conditions</h4>
+
+<p>Disabilities can also be conditional.</p>
+
+<ul>
+<li>A broken arm</li>
+<li>A loud restaurant</li>
+<li>Not speaking the local language e.t.c</li>
+</ul>
+
+<p>All these are examples where someone may benefit from accessible practices.</p>
+
+<blockquote>
+<p>Everybody is a keyboard user when they are eating with their mouse hand.</p>
+
+<p>— Adrian Roselli</p>
+</blockquote>
+
+<h4 id="how-can-we-help-these-people">How can we help these people?</h4>
+
+<p>Web Accessibility comes to the rescue. It is a practice whereby web applications
+are designed and developed so that its functionality can be operated by people
+with disabilities.</p>
+
+<hr />
+
+<h3 id="web-accessibility-guidelines">Web Accessibility Guidelines</h3>
+
+<blockquote>
+<p>Throughout this article, I’ll refer to the <a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines
+(WCAG) 2.0</a>, a set of guidelines and best
+practices put together by accessibility experts to address what “accessibility”
+means in a methodical way.</p>
+</blockquote>
+
+<p>WCAG is organized around four principles often called <em>The POUR Principle</em>:</p>
+
+<ul>
+<li><strong>Perceivable</strong>: Can users perceive the content? This ensures that our
+applications are perceivable with <em>sight, touch, or hearing</em> senses via the
+browser or assistive technologies e.g Screen readers</li>
+<li><strong>Operable</strong>: Can users use UI components easily and navigate the content? For
+example, something that requires a hover interaction cannot be operated by
+someone who can’t use a mouse or touch screen. This means users should be able
+to control your web apps elements using either the mouse, keyboard or an
+assistive device.</li>
+<li><strong>Understandable</strong>: Can users understand the content? Can users understand the
+interface and is it clear and concise? This ensures an easy understanding and
+smooth user experience.</li>
+<li><strong>Robust</strong>: Can the content be consumed by a wide variety of user on several
+browsers? This ensures compatibility of your app across several devices,
+browsers or operating systems.</li>
+</ul>
+
+<hr />
+
+<h3 id="web-accessibility-tips">Web accessibility tips</h3>
+
+<p>Now that you understand what Web Accessibility means and why you should care,
+let me walk you through a few tips that would help you to build accessible
+websites :)</p>
+
+<ul>
+<li><strong>Always add alternative texts to images</strong></li>
+</ul>
+
+<p>This is one thing most developers miss, I used to miss this too when I started
+out because I didn’t really understand the essence of <em>alternative texts.
+Alternative texts aids screen readers and other screen assistive technologies.</em></p>
+
+<p>You add alternative texts to images with the <em><code>alt</code></em> attribute</p>
+
+<pre><code>&lt;img src=&quot;./school.png&quot; alt=&quot;a private school in Kogi State.&quot;&gt;
+</code></pre>
+
+<p>Another important aspect of the <code>alt</code> attribute is that you should be specific
+when adding these texts. For example, examine the images below:</p>
+
+<p><br></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/600/0*l82N_5g3MF01TecN.jpg" alt="" />
+<span class="figcaption_hack">Beautiful <a href="https://medium.com/u/61b12cb51464">Aniekan Inyang</a></span></p>
+
+<p><br></p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful lady&quot;&gt;
+</code></pre>
+
+<p>&ndash;</p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful lady smiling in front of a brown door&quot;&gt;
+</code></pre>
+
+<p><br></p>
+
+<p>Which of the code above would support accessibility more, 1 or 2?</p>
+
+<p><br></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/600/0*0-CYDoZHLHaOY2c2" alt="" />
+<span class="figcaption_hack">Beautiful <a href="https://medium.com/u/fb80690688e0">Ada Nduka Oyom</a></span></p>
+
+<p><br></p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful and alluring lady&quot;&gt;
+</code></pre>
+
+<p>&ndash;</p>
+
+<pre><code>&lt;img src=&quot;./lady.png&quot; alt=&quot;a beautiful and alluring lady smiling next to the beach waves&quot;&gt;
+</code></pre>
+
+<p><br></p>
+
+<p>Which of the code above would support accessibility more, 1 or 2?</p>
+
+<p><br></p>
+
+<p>Now you should understand the context of being specific when using alternative
+texts. You might not see the need, you probably would not need it, but a whole
+lot of users with disabilities need it.</p>
+
+<ul>
+<li><strong>Design your forms for Accessibility</strong></li>
+</ul>
+
+<p>Ensure you add <code>&lt;label&gt;</code> to your form elements even if they would not be
+visible. You can add labels for screen readers and still hide them from
+displaying to other users.</p>
+
+<pre><code>&lt;form action=&quot;./contact.php&quot; method=&quot;POST&quot;&gt;
+  &lt;label for=&quot;fullname&quot;&gt;Full name&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;fullname&quot; id=&quot;fullname&quot;&gt;
+  &lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+  &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot;&gt;
+  &lt;label for=&quot;phone&quot;&gt;Telephone&lt;/label&gt;
+  &lt;input type=&quot;number&quot; name=&quot;phone&quot; id=&quot;phone&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>Ensure that your <code>for</code> attribute matches the <code>id</code></p>
+
+<ul>
+<li><strong>Always specify your web app language</strong></li>
+</ul>
+
+<pre><code>&lt;html lang=&quot;en-US&quot;&gt; // American english
+
+ &lt;html lang=&quot;en-UK&quot;&gt; // British english
+
+ &lt;html lang=&quot;fr&quot;&gt; // French
+</code></pre>
+
+<p>If your app supports multiple languages or translations, ensure to specify that
+too.</p>
+
+<ul>
+<li><strong>Don’t use tables for anything except tabular data</strong></li>
+<li><strong>Don’t auto-play video, music or other media files</strong> (Please avoid this)</li>
+<li><strong>Ensure that links are recognizable. Either underlined or with a different
+colour</strong></li>
+<li><strong>Always provide a skip to main content option</strong></li>
+</ul>
+
+<p>Skipping to main content links are useful for users who use keyboard navigation
+only</p>
+
+<pre><code>&lt;body&gt;
+...
+  &lt;a href=&quot;#main&quot;&gt;Get Started&lt;/a&gt;
+...
+  &lt;p&gt;
+   Our story is a story which explains another story. Cut the crap
+   this is too long and I don't want to read it.
+  &lt;/p&gt;
+...
+  &lt;main id=&quot;main&quot;&gt;
+    &lt;!-- page specific content --&gt;
+   &lt;p&gt; Here's the main stuff bro &lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+</code></pre>
+
+<ul>
+<li><strong>Reduce your divs and make use of semantic elements</strong></li>
+</ul>
+
+<p>HTML5 provides additional elements, such as <code>&lt;nav&gt;</code> , <code>section</code> and <code>&lt;aside&gt;</code>,
+to better structure your content.</p>
+
+<hr />
+
+<p>I’d stop here as we have tons of accessibility guidelines, but don’t worry, I’ve
+included links for further reading below :)</p>
+
+<h3 id="the-a11y-project">The A11y project</h3>
+
+<p>This is a community-driven effort to make web accessibility easier with tons of
+resources, events, patterns, checklists and lots more to help you build more
+accessible applications. <a href="https://a11yproject.com/">https://a11yproject.com/</a></p>
+
+<blockquote>
+<p>Accessibility can be a complex and difficult topic. The Accessibility Project
+understands this and wants to help make it easier to implement on the web.</p>
+</blockquote>
+
+<h3 id="web-accessibility-tools">Web accessibility tools</h3>
+
+<ul>
+<li><strong>ally.css</strong></li>
+</ul>
+
+<p>This CSS file intends to warn developers about possible risks and mistakes that
+exist in HTML code. It can also be used to roughly evaluate a site’s quality by
+simply including it as an external stylesheet.</p>
+
+<p>Get the Ally.css built by <a href="https://github.com/ffoodd">Gaël Poupard</a>
+<a href="https://ffoodd.github.io/a11y.css/">here</a> or download the equivalent web
+extension (chrome, firefox and opera) Alix built by <a href="https://medium.com/u/f7f8398c3660">Ire
+Aderinokun</a>
+<a href="https://github.com/ireade/alix">here</a></p>
+
+<ul>
+<li><strong>Chrome lighthouse</strong></li>
+</ul>
+
+<p>Lighthouse is an <a href="https://github.com/GoogleChrome/lighthouse">open-source</a>,
+automated tool for improving the quality of web pages. You can run it against
+any web page, public or requiring authentication. It has audits for performance,
+accessibility, progressive web apps, and more. Read my previous article:
+<a href="https://bolajiayodeji.com/introduction-to-chrome-lighthouse/">Introduction to chrome
+lighthouse</a> to get
+started.</p>
+
+<ul>
+<li><strong>Contrast Checker</strong></li>
+</ul>
+
+<p>Check the contrast of your colour design for accessibility base on Web Content
+Accessibility Guideline (WCAG). Check it <a href="https://contrastchecker.com/">here</a>.</p>
+
+<ul>
+<li><strong>NoCoffee</strong></li>
+</ul>
+
+<p>A chrome extension which is helpful for understanding the problems faced by
+people with slight to extreme vision problems. Download
+<a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl">here</a></p>
+
+<h4 id="a-full-list-of-web-accessibility-tools-can-be-found">A full list of web accessibility tools can be found</h4>
+
+<p><a href="https://www.w3.org/WAI/ER/tools/">here</a></p>
+
+<hr />
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG 2.0)</a></li>
+<li><a href="https://www.w3docs.com/learn-html/html-language-codes.html">HTML Language
+Codes</a></li>
+<li><a href="https://www.giftegwuenu.com/guide-to-using-alternative-text-on-images">Guide to using Alternative Texts on
+images</a>
+by <a href="https://medium.com/u/46bccfc2f42c">Egwuenu Gift</a></li>
+<li><a href="https://a11yproject.com/posts/creating-valid-and-accessible-links/">Creating valid and accessible
+links</a></li>
+<li><a href="https://a11yproject.com/posts/aria-landmark-roles/">ARIA Landmark roles and HTML5 implicit
+mapping</a></li>
+<li><a href="https://a11yproject.com/posts/getting-started-with-nvda/">Introduction to NDVA</a></li>
+<li><a href="https://a11yproject.com/posts/how-to-hide-content/">How-to hide content but still make it accessible to screen
+readers.</a></li>
+<li><a href="https://a11yproject.com/posts/using-caption-services-with-html5-video/">How-to: Using caption services with HTML5
+video</a></li>
+<li><a href="https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/">Basic screen reader commands for accessibility
+testing</a></li>
+</ul>
+
+<h4 id="a-full-list-of-web-accessibility-resources-can-be-found">A full list of web accessibility resources can be found</h4>
+
+<p><a href="https://a11yproject.com/resources">here</a></p>
+
+<hr />
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Everyone should be able to access and enjoy the web irrespective of their
+challenges or limitations. As developers, we’re building solutions for <strong>every
+user</strong> and not just <strong>users.</strong> As much as we focus on UI/UX, we should also put
+extra focus on accessibility. Thanks for reading!</p>
+
+<p><br></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*BQcPB-Ak2H8VA0AT.png" alt="" /></p>
+
+<p>Like this article? Kindly follow me on twitter
+<a href="https://twitter.com/iambolajiayo">@iambolajiayo</a></p>
+
+<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev" /></p>
+
+<h1 id="subscribe-for-my-newsletter-here-https-eepurl-com-geccfl-and-get-notified-when-i-write-something-cool">Subscribe for my Newsletter <a href="https://eepurl.com/geCCfL">here</a> and get notified when I write something cool.</h1>
+</article>
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/web"><span class="tag">Web</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/accessibility"><span class="tag">Accessibility</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/a11y"><span class="tag">A11y</span></a></li>
+      
+    </ul>
+    
+
+    <div class="sharing">
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+      
+
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+  </footer>
+</section>
+<footer class="footer">
+  <p>Copyright © 2018-2019</p>
+  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
+</footer>
+
+
+
+
+
+<amp-analytics type=googleanalytics>
+  <script type=application/json>
+    { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } }
+  </script>
+</amp-analytics>
+
+<amp-install-serviceworker
+      src="/sw.js"
+      layout="nodisplay">
+</amp-install-serviceworker>
+
+
+
+  </body>
+</html>
