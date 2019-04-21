@@ -27,11 +27,9 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 
   # Social networks
-  email = "hi@bolajiayodeji.com"
   github = "bolajiayodeji"
   twitter = "iambolajiayo"
   linkedin = "iambolajiayo"
-  facebook = "iambolajiayo"
   instagram = "iambolajiayo"
   youtube = "UCpFxuQyjQYal738TW0TJUNw"
 
