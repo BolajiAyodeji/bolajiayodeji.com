@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search | Bolaji Ayodeji</title>
+
+  <link rel="stylesheet" href="search.css">
+
+  <!-- Favicon and Touch icons -->
+  <link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+  <!--Manifest setup-->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#20242b" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2 class="display-4 text-center mt-5 mb-5"> Search </h2>
+        <p>Looking for something?, check if I've written about it...</p>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" id="search" placeholder="Enter keyword..." required>
+          </div>
+        </form>
+        <div id="output">
+          <ul id="results"></ul>
+
+          <br /><br />
+          <a href="/" class="btn btn-lg btn-secondary">⇤ Return Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  <script src="search.js"></script>
+</body>
+
+</html>
