@@ -4,9 +4,10 @@
 
 My personal PWA blog built with Hugo, JavaScript and Hosted on Netlify. <br>
 I write articles on Web & Frontend Development. <br>
-Blog [here](https://bolajiayodeji.com) <br>
 
 Syntax theme based on [Hugo Lamp Theme](https://github.com/huyb1991/hugo-lamp) with tons of tweaks & modifications.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a596dc79-6e68-4927-8d05-2c32cae50786/deploy-status)](https://app.netlify.com/sites/bolaji-test/deploys)
 
 </div>
 
