@@ -46,6 +46,10 @@ ul {
   list-style: none;
 }
 
+li {
+  padding: 10px;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -65,19 +69,31 @@ input[type=text] {
   color: #fff;
   text-align: center;
   background-color: transparent;
-  border: 2px solid #ddd ;
+  border: 2px solid #ddd;
   border-radius: 25px;
 }
 input[type=text]:focus {
   background-color: transparent;
+  color: #fff;
 }
 
-.btn-primary {
-  background-color: #1b2f3d;
+.logo {
+  width: 20%;
+  height: auto;
+  padding-top: 591.44px / 1127.34px * 100%;
+  margin-top: 0.5rem;
+  border-radius: 10%;
+  border: 3px solid #63D1F4;
+  transition: all .5s ease-out
+}
+
+.logo:hover {
+  padding-top:
+    591.44px / 1127.34px * 100%;
+  border-radius: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3)
 }
 
 #results {
-  background-color: #1b2f3d;
-  border-radius: 10px;
   padding: 10px;
 }

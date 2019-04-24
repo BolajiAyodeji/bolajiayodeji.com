@@ -11,7 +11,7 @@ function initLunr() {
         if (request.status >= 200 && request.status < 400) {
 
             pagesIndex = JSON.parse(request.responseText);
-            console.log("index:", pagesIndex);
+            //console.log("index:", pagesIndex);
 
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
@@ -91,9 +91,12 @@ function renderResults(results) {
     // Only show the ten first results
     $results = document.getElementById("results");
     results.slice(0, 10).forEach(function (result) {
+        $results.style.backgroundColor="#1b2f3d";
+        $results.style.borderRadius="10px";
+
         var li = document.createElement("li");
         var ahref = document.createElement("a");
-        ahref.href = result.href;
+        ahref.href = result.href.replace(/content|.md/g, "");
         ahref.text = "» " + result.title.toUpperCase().replace(/-/g, " ");
         li.append(ahref);
         $results.appendChild(li);
