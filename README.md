@@ -32,7 +32,7 @@ Run this command to start local build `hugo server -D`, then open https://localh
 
 ## Modifying posts
 
-Run this to build search indes
+Run this to build search index
 ```
-lunr-index" task
+grunt lunr-index
 ```
