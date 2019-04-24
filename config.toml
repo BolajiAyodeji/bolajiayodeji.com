@@ -28,10 +28,13 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 
   # Social networks
   github = "bolajiayodeji"
-  twitter = "iambolajiayo"
   linkedin = "iambolajiayo"
   instagram = "iambolajiayo"
   youtube = "UCpFxuQyjQYal738TW0TJUNw"
+
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
+  blog = ["HTML", "JSON", "RSS"]
 
 [taxonomies]
   tag = "tags"
