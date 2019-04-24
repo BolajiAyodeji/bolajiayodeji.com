@@ -9,18 +9,14 @@ tags: ["web", "accessibility", "a11y"]
 
 ![](https://cdn-images-1.medium.com/max/800/1*aCjM9p-nzRGLeGMtNFx0Qw.png)
 
-As developers, it’s easy to assume that all users can see and use a keyboard,
-mouse, or screen, you feel everyone can interact with your web page the same way
-you do. This can lead to a user experience that works well for some people but
-creates issues for others :(
+As developers, it’s easy to assume that all users can see and use a keyboard, mouse or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
 
 Many developers have only a little or blurred understanding of what
 accessibility means, of course, accessibility can be a complex and difficult
 topic but understanding it, its scope and its impact can make you a better and
 inclusive web developer.
 
-In this article, I’d introduce you to accessibility, what it means, why you
-should care, a few tips, tools and resources to get you started.
+In this article, I’ll introduce you to accessibility, what it means, why you should care, a few tips, tools and resources to get you started.
 
 ![](https://cdn-images-1.medium.com/max/800/0*WXgUQC2V92dkcYgZ)
 <br />
@@ -32,8 +28,9 @@ should care, a few tips, tools and resources to get you started.
 
 Let’s start by defining accessibility and inclusion.
 
-> Basically, accessibility means something that is available, and its
-> functionality can be operated, by literally *anyone with no exceptions*.
+> According to [thesaurus
+> dictionary](https://www.dictionary.com/browse/accessibility), accessibility
+simply means: easy to approach, reach, enter, speak with, or use.
 
 *****
 
@@ -44,20 +41,21 @@ to all kinds of people irrespective of their differences.
 *****
 
 > In computer-human interaction, accessibility simply means making the web
-> accessible to everyone including those with all forms of disabilities,
-limitations and conditions.
+> accessible and having functionalities that can be operated by literally everyone
+including those with all forms of disabilities, limitations and conditions..
 
 *****
 
 #### Those with Disabilities
 
-Blind and visually impaired make up 285,000,000 people according to the [World
+According to WHO, there are about 285,000,000 people in the world today. Blind
+and visually impaired make up of the 285,000,000 people according to the [World
 Health Organization](http://www.who.int/mediacentre/factsheets/fs282/en/) (June
 2012) with 39,000,000 categorized as legally blind and the remaining 246,000,000
-visually impaired. Deaf and hearing impaired make up 275,000,000 (2004) in the
-moderate-to-profound hearing impairment category.
+visually impaired. The deaf and hearing impaired make up 275,000,000 (2004) in
+the moderate-to-profound hearing impairment category.
 
-Some forms of disabilities include: 
+Some forms of disabilities include:
 
 * **Physical disabilities** (One that affects a person’s mobility or dexterity)
 * **Intellectual or Learning Disabilities** ( People with an intellectual,
@@ -95,23 +93,27 @@ with disabilities.
 
 > Throughout this article, I’ll refer to the [Web Content Accessibility Guidelines
 > (WCAG) 2.0](https://www.w3.org/TR/WCAG20/), a set of guidelines and best
-practices put together by accessibility experts to address what “accessibility”
-means in a methodical way.
+practices put together by web accessibility experts to address what
+“accessibility” means in a methodical way.
 
 WCAG is organized around four principles often called *The POUR Principle*:
 
-* **Perceivable**: Can users perceive the content? This ensures that our
+* **Perceivable** <br>
+ Can users perceive the content? This ensures that our
 applications are perceivable with *sight, touch, or hearing* senses via the
 browser or assistive technologies e.g Screen readers
-* **Operable**: Can users use UI components easily and navigate the content? For
+* **Operable** <br>
+Can users use UI components easily and navigate the content? For
 example, something that requires a hover interaction cannot be operated by
 someone who can’t use a mouse or touch screen. This means users should be able
 to control your web apps elements using either the mouse, keyboard or an
 assistive device.
-* **Understandable**: Can users understand the content? Can users understand the
+* **Understandable** <br>
+Can users understand the content? Can users understand the
 interface and is it clear and concise? This ensures an easy understanding and
 smooth user experience.
-* **Robust**: Can the content be consumed by a wide variety of user on several
+* **Robust** <br>
+Can the content be consumed by a wide variety of users on several
 browsers? This ensures compatibility of your app across several devices,
 browsers or operating systems.
 
@@ -125,9 +127,24 @@ websites :)
 
 * **Always add alternative texts to images**
 
+Now that you understand what Web Accessibility means and why you should care,
+let me walk you through a few tips that would help you to build accessible
+websites :)
+
+* **Always add alternative texts to images**
+
 This is one thing most developers miss, I used to miss this too when I started
-out because I didn’t really understand the essence of *alternative texts.
-Alternative texts aids screen readers and other screen assistive technologies.*
+out because I didn’t really understand the essence of *alternative texts.*
+
+> Alternative texts (also know as `alt`) is a word that can be inserted as an
+> attribute in an HTML document to tell your website users the contents of an
+image. The alt text appears in a blank box that would normally contain the
+image. Alt text is useful when an image is not available because of a broken
+link, changed URL or something else.
+
+*Alternative texts as the name imply serve as an alternative for screen readers.
+They are read aloud to blind users on a screen reader and other screen
+assistive technologies.*
 
 You add alternative texts to images with the *`alt`* attribute
 
@@ -178,9 +195,9 @@ lot of users with disabilities need it.
 
 * **Design your forms for Accessibility**
 
-Ensure you add `<label>` to your form elements even if they would not be
-visible. You can add labels for screen readers and still hide them from
-displaying to other users.
+Ensure you add `<label>` to your form elements though they might not be visible.
+You can add labels for screen readers and still hide them from displaying to
+other users.
 
 ```
 <form action="./contact.php" method="POST">
@@ -280,7 +297,7 @@ started.
 
 * **Contrast Checker**
 
-Check the contrast of your colour design for accessibility base on Web Content
+Check the contrast of your colour design for accessibility based on Web Content
 Accessibility Guideline (WCAG). Check it [here](https://contrastchecker.com/).
 
 * **NoCoffee**
@@ -323,8 +340,8 @@ testing](https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-co
 
 Everyone should be able to access and enjoy the web irrespective of their
 challenges or limitations. As developers, we’re building solutions for **every
-user** and not just **users.** As much as we focus on UI/UX, we should also put
-extra focus on accessibility. Thanks for reading!
+user** and not just **some users**. As much as we focus on UI/UX, we should also
+put extra focus on accessibility. Thanks for reading!
 
 <br> 
 

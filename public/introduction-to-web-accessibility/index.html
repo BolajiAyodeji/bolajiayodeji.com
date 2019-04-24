@@ -27,7 +27,7 @@
 
 <meta name="author"
   content="⚡️Bolaji Ayodeji⚡️" />
-<meta name="description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
+<meta name="description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
 Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer.">
 <meta name="keywords"
   content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,node,pwafire,hugo">
@@ -37,7 +37,7 @@ Many developers have only a little or blurred understanding of what accessibilit
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@iambolajiayo" />
 <meta name="twitter:title" content="Introduction to Web Accessibility" />
-<meta name="twitter:description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse, or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
+<meta name="twitter:description" content="As developers, it’s easy to assume that all users can see and use a keyboard, mouse or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
 Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer." />
 <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
 
@@ -1396,7 +1396,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <section class="main post-detail">
   <header class="post-header">
     <h1 class="post-title">Introduction to Web Accessibility</h1>
-    <p class="entry-meta"><span class="entry-time">Apr 5, 2019</span> 7 min read
+    <p class="entry-meta"><span class="entry-time">Apr 5, 2019</span> 8 min read
     </p>
   </header>
   
@@ -1405,18 +1405,14 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 
 <p><img src="https://cdn-images-1.medium.com/max/800/1*aCjM9p-nzRGLeGMtNFx0Qw.png" alt="" /></p>
 
-<p>As developers, it’s easy to assume that all users can see and use a keyboard,
-mouse, or screen, you feel everyone can interact with your web page the same way
-you do. This can lead to a user experience that works well for some people but
-creates issues for others :(</p>
+<p>As developers, it’s easy to assume that all users can see and use a keyboard, mouse or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(</p>
 
 <p>Many developers have only a little or blurred understanding of what
 accessibility means, of course, accessibility can be a complex and difficult
 topic but understanding it, its scope and its impact can make you a better and
 inclusive web developer.</p>
 
-<p>In this article, I’d introduce you to accessibility, what it means, why you
-should care, a few tips, tools and resources to get you started.</p>
+<p>In this article, I’ll introduce you to accessibility, what it means, why you should care, a few tips, tools and resources to get you started.</p>
 
 <p><img src="https://cdn-images-1.medium.com/max/800/0*WXgUQC2V92dkcYgZ" alt="" />
 <br />
@@ -1429,8 +1425,9 @@ should care, a few tips, tools and resources to get you started.</p>
 <p>Let’s start by defining accessibility and inclusion.</p>
 
 <blockquote>
-<p>Basically, accessibility means something that is available, and its
-functionality can be operated, by literally <em>anyone with no exceptions</em>.</p>
+<p>According to <a href="https://www.dictionary.com/browse/accessibility">thesaurus
+dictionary</a>, accessibility
+simply means: easy to approach, reach, enter, speak with, or use.</p>
 </blockquote>
 
 <hr />
@@ -1445,19 +1442,20 @@ to all kinds of people irrespective of their differences.</p>
 
 <blockquote>
 <p>In computer-human interaction, accessibility simply means making the web
-accessible to everyone including those with all forms of disabilities,
-limitations and conditions.</p>
+accessible and having functionalities that can be operated by literally everyone
+including those with all forms of disabilities, limitations and conditions..</p>
 </blockquote>
 
 <hr />
 
 <h4 id="those-with-disabilities">Those with Disabilities</h4>
 
-<p>Blind and visually impaired make up 285,000,000 people according to the <a href="http://www.who.int/mediacentre/factsheets/fs282/en/">World
+<p>According to WHO, there are about 285,000,000 people in the world today. Blind
+and visually impaired make up of the 285,000,000 people according to the <a href="http://www.who.int/mediacentre/factsheets/fs282/en/">World
 Health Organization</a> (June
 2012) with 39,000,000 categorized as legally blind and the remaining 246,000,000
-visually impaired. Deaf and hearing impaired make up 275,000,000 (2004) in the
-moderate-to-profound hearing impairment category.</p>
+visually impaired. The deaf and hearing impaired make up 275,000,000 (2004) in
+the moderate-to-profound hearing impairment category.</p>
 
 <p>Some forms of disabilities include:</p>
 
@@ -1504,25 +1502,29 @@ with disabilities.</p>
 <blockquote>
 <p>Throughout this article, I’ll refer to the <a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines
 (WCAG) 2.0</a>, a set of guidelines and best
-practices put together by accessibility experts to address what “accessibility”
-means in a methodical way.</p>
+practices put together by web accessibility experts to address what
+“accessibility” means in a methodical way.</p>
 </blockquote>
 
 <p>WCAG is organized around four principles often called <em>The POUR Principle</em>:</p>
 
 <ul>
-<li><strong>Perceivable</strong>: Can users perceive the content? This ensures that our
+<li><strong>Perceivable</strong> <br>
+Can users perceive the content? This ensures that our
 applications are perceivable with <em>sight, touch, or hearing</em> senses via the
 browser or assistive technologies e.g Screen readers</li>
-<li><strong>Operable</strong>: Can users use UI components easily and navigate the content? For
+<li><strong>Operable</strong> <br>
+Can users use UI components easily and navigate the content? For
 example, something that requires a hover interaction cannot be operated by
 someone who can’t use a mouse or touch screen. This means users should be able
 to control your web apps elements using either the mouse, keyboard or an
 assistive device.</li>
-<li><strong>Understandable</strong>: Can users understand the content? Can users understand the
+<li><strong>Understandable</strong> <br>
+Can users understand the content? Can users understand the
 interface and is it clear and concise? This ensures an easy understanding and
 smooth user experience.</li>
-<li><strong>Robust</strong>: Can the content be consumed by a wide variety of user on several
+<li><strong>Robust</strong> <br>
+Can the content be consumed by a wide variety of users on several
 browsers? This ensures compatibility of your app across several devices,
 browsers or operating systems.</li>
 </ul>
@@ -1539,9 +1541,28 @@ websites :)</p>
 <li><strong>Always add alternative texts to images</strong></li>
 </ul>
 
+<p>Now that you understand what Web Accessibility means and why you should care,
+let me walk you through a few tips that would help you to build accessible
+websites :)</p>
+
+<ul>
+<li><strong>Always add alternative texts to images</strong></li>
+</ul>
+
 <p>This is one thing most developers miss, I used to miss this too when I started
-out because I didn’t really understand the essence of <em>alternative texts.
-Alternative texts aids screen readers and other screen assistive technologies.</em></p>
+out because I didn’t really understand the essence of <em>alternative texts.</em></p>
+
+<blockquote>
+<p>Alternative texts (also know as <code>alt</code>) is a word that can be inserted as an
+attribute in an HTML document to tell your website users the contents of an
+image. The alt text appears in a blank box that would normally contain the
+image. Alt text is useful when an image is not available because of a broken
+link, changed URL or something else.</p>
+</blockquote>
+
+<p><em>Alternative texts as the name imply serve as an alternative for screen readers.
+They are read aloud to blind users on a screen reader and other screen
+assistive technologies.</em></p>
 
 <p>You add alternative texts to images with the <em><code>alt</code></em> attribute</p>
 
@@ -1599,9 +1620,9 @@ lot of users with disabilities need it.</p>
 <li><strong>Design your forms for Accessibility</strong></li>
 </ul>
 
-<p>Ensure you add <code>&lt;label&gt;</code> to your form elements even if they would not be
-visible. You can add labels for screen readers and still hide them from
-displaying to other users.</p>
+<p>Ensure you add <code>&lt;label&gt;</code> to your form elements though they might not be visible.
+You can add labels for screen readers and still hide them from displaying to
+other users.</p>
 
 <pre><code>&lt;form action=&quot;./contact.php&quot; method=&quot;POST&quot;&gt;
   &lt;label for=&quot;fullname&quot;&gt;Full name&lt;/label&gt;
@@ -1711,7 +1732,7 @@ started.</p>
 <li><strong>Contrast Checker</strong></li>
 </ul>
 
-<p>Check the contrast of your colour design for accessibility base on Web Content
+<p>Check the contrast of your colour design for accessibility based on Web Content
 Accessibility Guideline (WCAG). Check it <a href="https://contrastchecker.com/">here</a>.</p>
 
 <ul>
@@ -1760,8 +1781,8 @@ testing</a></li>
 
 <p>Everyone should be able to access and enjoy the web irrespective of their
 challenges or limitations. As developers, we’re building solutions for <strong>every
-user</strong> and not just <strong>users.</strong> As much as we focus on UI/UX, we should also put
-extra focus on accessibility. Thanks for reading!</p>
+user</strong> and not just <strong>some users</strong>. As much as we focus on UI/UX, we should also
+put extra focus on accessibility. Thanks for reading!</p>
 
 <p><br></p>
 
