@@ -11,7 +11,7 @@ tags: ["javascript", "es6", "objects"]
 
 ES6 has brought several new features and methods into JavaScript since its
 release. These features have better improved our workflow and productivity as
-JavaScript developers. Amongst these new features are`Object.freeze()` method
+JavaScript developers. Amongst these new features are `Object.freeze()` method
 and `const` .
 
 It is argued among a few developers especially newbies that these two feature

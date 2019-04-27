@@ -17,7 +17,7 @@
       <pubDate>Sat, 27 Apr 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/object.freeze-vs-const/</guid>
-      <description>ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features areObject.freeze() method and const .
+      <description>ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .
 It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!
 const and Object.freeze() are totally different.</description>
     </item>
