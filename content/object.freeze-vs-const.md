@@ -172,7 +172,7 @@ Mode](http://www.javascriptgrammar.com/)
 
 Also, please support [JavaScript Teacher](https://medium.com/u/6727c1eb71f8) on
 [Patreon](https://www.patreon.com/js_tut?v=1) to enable him to distribute more
-materials for FREE
+materials like this for FREE
 
 Thanks for reading!
 
