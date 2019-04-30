@@ -404,6 +404,11 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
     display: none
   }
 
+  #codefund {
+    width: 100%;
+    height: 10%;
+  }
+
   @font-face {
     font-family: fe;
     font-weight: 400;
@@ -625,7 +630,7 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
 
   .logo {
     padding-top: 591.44px / 1127.34px * 100%;
-    margin-top: 2.5rem;
+    margin-top: 0.1rem;
     border-radius: 10%;
     border: 3px solid #63D1F4;
     transition: all .5s ease-out
@@ -797,8 +802,8 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
   }
 
   .social-item a {
-    color: #63D1F4;
-    font-weight: 400
+    color: #000;
+    font-weight: 500
   }
 
   .entry-list {
@@ -1306,8 +1311,6 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     
       <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
     
-      <li class="sidebar-item "><a class="sidebar-link" href="https://github.com/bolajiayodeji">Projects 🚀</a></li>
-    
       <li class="sidebar-item "><a class="sidebar-link" href="https://eepurl.com/geCCfL">Newsletter 📩</a></li>
     
   </ul>
@@ -1326,8 +1329,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </p>
 
-  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">View portfolio →</a></p>
-  <p class="subtitle"><a href="https://bolajiayodeji.com/search">Search 🔍</a></p>
+
   <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
     <span class="icon icon-menu"></span>
   </button>
@@ -1345,14 +1347,15 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
       
       <li
         class="menu-item ">
-        <a href="https://github.com/bolajiayodeji">Projects 🚀</a></li>
-      
-      <li
-        class="menu-item ">
         <a href="https://eepurl.com/geCCfL">Newsletter 📩</a></li>
       
     </ul>
   </nav>
+
+  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">Portfolio →</a></p>
+  <p class="subtitle"><a href="https://bolajiayodeji.com/search">Search 🔍</a></p>
+
+  <div id="codefund"></div>
 
   <ul class="social-list">
   
@@ -2015,7 +2018,8 @@ of basic JavaScript snippets ranging from</p>
 </section>
 <footer class="footer">
   <p>Copyright © 2018-2019</p>
-  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
+  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji
+      Ayodeji</a></p>
 </footer>
 
 
@@ -2023,17 +2027,13 @@ of basic JavaScript snippets ranging from</p>
 
 
 <amp-analytics type=googleanalytics>
-  <script type=application/json>
-    { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }
-  </script>
-</amp-analytics>
+  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
 
-<amp-install-serviceworker
-      src="/sw.js"
-      layout="nodisplay">
-</amp-install-serviceworker>
-
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  
 
 
   </body>

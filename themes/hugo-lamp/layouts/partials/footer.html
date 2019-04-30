@@ -1,20 +1,17 @@
 <footer class="footer">
   <p>Copyright © {{ if eq now.Year 2018 }}2018{{ else }}2018-{{ now.Year }}{{ end }}</p>
-  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
+  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji
+      Ayodeji</a></p>
 </footer>
 
 {{ partial "adsense-sticky.html" . }}
 
 {{ if .Site.GoogleAnalytics }}
 <amp-analytics type=googleanalytics>
-  <script type=application/json>
-    { "vars" : { "account" : {{ .Site.GoogleAnalytics }} }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }
-  </script>
-</amp-analytics>
+  <script type=application/json> { "vars" : { "account" : {{ .Site.GoogleAnalytics }} }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
 
-<amp-install-serviceworker
-      src="/sw.js"
-      layout="nodisplay">
-</amp-install-serviceworker>
-{{ end }}
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  {{ end }}

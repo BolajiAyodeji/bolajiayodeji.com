@@ -10,8 +10,7 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </p>
 
-  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">{{ .Site.Params.portfolio }}</a></p>
-  <p class="subtitle"><a href="https://bolajiayodeji.com/search">{{ .Site.Params.search }}</a></p>
+
   <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
     <span class="icon icon-menu"></span>
   </button>
@@ -29,6 +28,11 @@
       {{ end }}
     </ul>
   </nav>
+
+  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">{{ .Site.Params.portfolio }}</a></p>
+  <p class="subtitle"><a href="https://bolajiayodeji.com/search">{{ .Site.Params.search }}</a></p>
+
+  <div id="codefund"></div>
 
   {{ partial "social.html" . }}
 </header>
