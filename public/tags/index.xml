@@ -6,121 +6,13 @@
     <description>Recent content in Tags on ⚡️Bolaji Ayodeji⚡️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Apr 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Sat, 27 Apr 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A11y</title>
-      <link>https://bolajiayodeji.com/tags/a11y/</link>
-      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/a11y/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Accessibility</title>
-      <link>https://bolajiayodeji.com/tags/accessibility/</link>
-      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/accessibility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arrays</title>
-      <link>https://bolajiayodeji.com/tags/arrays/</link>
-      <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/arrays/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Babel</title>
-      <link>https://bolajiayodeji.com/tags/babel/</link>
-      <pubDate>Thu, 14 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/babel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Browser</title>
-      <link>https://bolajiayodeji.com/tags/browser/</link>
-      <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/browser/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cheat Sheet</title>
-      <link>https://bolajiayodeji.com/tags/cheat-sheet/</link>
-      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/cheat-sheet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chrome</title>
-      <link>https://bolajiayodeji.com/tags/chrome/</link>
-      <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/chrome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Css</title>
-      <link>https://bolajiayodeji.com/tags/css/</link>
-      <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Database</title>
-      <link>https://bolajiayodeji.com/tags/database/</link>
-      <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Developers</title>
-      <link>https://bolajiayodeji.com/tags/developers/</link>
-      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/developers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devtools</title>
-      <link>https://bolajiayodeji.com/tags/devtools/</link>
-      <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/devtools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Education</title>
-      <link>https://bolajiayodeji.com/tags/education/</link>
-      <pubDate>Mon, 21 Jan 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Es6</title>
+      <title>es6</title>
       <link>https://bolajiayodeji.com/tags/es6/</link>
       <pubDate>Sat, 27 Apr 2019 13:22:14 +2400</pubDate>
       
@@ -129,88 +21,7 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://bolajiayodeji.com/tags/git/</link>
-      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Github</title>
-      <link>https://bolajiayodeji.com/tags/github/</link>
-      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Github Education</title>
-      <link>https://bolajiayodeji.com/tags/github-education/</link>
-      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/github-education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://bolajiayodeji.com/tags/go/</link>
-      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Growth Mindset</title>
-      <link>https://bolajiayodeji.com/tags/growth-mindset/</link>
-      <pubDate>Mon, 21 Jan 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/growth-mindset/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Htaccess</title>
-      <link>https://bolajiayodeji.com/tags/htaccess/</link>
-      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/htaccess/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Http</title>
-      <link>https://bolajiayodeji.com/tags/http/</link>
-      <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/http/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Https</title>
-      <link>https://bolajiayodeji.com/tags/https/</link>
-      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/https/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://bolajiayodeji.com/tags/hugo/</link>
-      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
+      <title>javascript</title>
       <link>https://bolajiayodeji.com/tags/javascript/</link>
       <pubDate>Sat, 27 Apr 2019 13:22:14 +2400</pubDate>
       
@@ -219,70 +30,7 @@
     </item>
     
     <item>
-      <title>Lang</title>
-      <link>https://bolajiayodeji.com/tags/lang/</link>
-      <pubDate>Mon, 25 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/lang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lighthouse</title>
-      <link>https://bolajiayodeji.com/tags/lighthouse/</link>
-      <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/lighthouse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linguistic</title>
-      <link>https://bolajiayodeji.com/tags/linguistic/</link>
-      <pubDate>Mon, 25 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/linguistic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://bolajiayodeji.com/tags/markdown/</link>
-      <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Modules</title>
-      <link>https://bolajiayodeji.com/tags/modules/</link>
-      <pubDate>Mon, 11 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/modules/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mysql</title>
-      <link>https://bolajiayodeji.com/tags/mysql/</link>
-      <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Netlify</title>
-      <link>https://bolajiayodeji.com/tags/netlify/</link>
-      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/netlify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Objects</title>
+      <title>objects</title>
       <link>https://bolajiayodeji.com/tags/objects/</link>
       <pubDate>Sat, 27 Apr 2019 13:22:14 +2400</pubDate>
       
@@ -291,16 +39,34 @@
     </item>
     
     <item>
-      <title>Php</title>
-      <link>https://bolajiayodeji.com/tags/php/</link>
-      <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
+      <title>a11y</title>
+      <link>https://bolajiayodeji.com/tags/a11y/</link>
+      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/tags/php/</guid>
+      <guid>https://bolajiayodeji.com/tags/a11y/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Pwa</title>
+      <title>accessibility</title>
+      <link>https://bolajiayodeji.com/tags/accessibility/</link>
+      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/accessibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://bolajiayodeji.com/tags/web/</link>
+      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PWA</title>
       <link>https://bolajiayodeji.com/tags/pwa/</link>
       <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
       
@@ -309,38 +75,110 @@
     </item>
     
     <item>
-      <title>Service Workers</title>
-      <link>https://bolajiayodeji.com/tags/service-workers/</link>
-      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
+      <title>web apps</title>
+      <link>https://bolajiayodeji.com/tags/web-apps/</link>
+      <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/tags/service-workers/</guid>
+      <guid>https://bolajiayodeji.com/tags/web-apps/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ssl</title>
-      <link>https://bolajiayodeji.com/tags/ssl/</link>
-      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
+      <title>CSS</title>
+      <link>https://bolajiayodeji.com/tags/css/</link>
+      <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
       
-      <guid>https://bolajiayodeji.com/tags/ssl/</guid>
+      <guid>https://bolajiayodeji.com/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Status Code</title>
-      <link>https://bolajiayodeji.com/tags/status-code/</link>
-      <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/status-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Variables</title>
+      <title>variables</title>
       <link>https://bolajiayodeji.com/tags/variables/</link>
       <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/variables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web development</title>
+      <link>https://bolajiayodeji.com/tags/web-development/</link>
+      <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/web-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://bolajiayodeji.com/tags/go/</link>
+      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://bolajiayodeji.com/tags/hugo/</link>
+      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>netlify</title>
+      <link>https://bolajiayodeji.com/tags/netlify/</link>
+      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/netlify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developers</title>
+      <link>https://bolajiayodeji.com/tags/developers/</link>
+      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://bolajiayodeji.com/tags/github/</link>
+      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github education</title>
+      <link>https://bolajiayodeji.com/tags/github-education/</link>
+      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/github-education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lang</title>
+      <link>https://bolajiayodeji.com/tags/lang/</link>
+      <pubDate>Mon, 25 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/lang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linguistic</title>
+      <link>https://bolajiayodeji.com/tags/linguistic/</link>
+      <pubDate>Mon, 25 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/linguistic/</guid>
       <description></description>
     </item>
     
@@ -354,38 +192,200 @@
     </item>
     
     <item>
-      <title>Web</title>
-      <link>https://bolajiayodeji.com/tags/web/</link>
-      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
+      <title>cheat sheet</title>
+      <link>https://bolajiayodeji.com/tags/cheat-sheet/</link>
+      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/tags/web/</guid>
+      <guid>https://bolajiayodeji.com/tags/cheat-sheet/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Web Apps</title>
-      <link>https://bolajiayodeji.com/tags/web-apps/</link>
-      <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
+      <title>git</title>
+      <link>https://bolajiayodeji.com/tags/git/</link>
+      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/tags/web-apps/</guid>
+      <guid>https://bolajiayodeji.com/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Web Development</title>
-      <link>https://bolajiayodeji.com/tags/web-development/</link>
-      <pubDate>Mon, 25 Mar 2019 14:57:05 +0100</pubDate>
+      <title>babel</title>
+      <link>https://bolajiayodeji.com/tags/babel/</link>
+      <pubDate>Thu, 14 Feb 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/tags/web-development/</guid>
+      <guid>https://bolajiayodeji.com/tags/babel/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Website</title>
+      <title>modules</title>
+      <link>https://bolajiayodeji.com/tags/modules/</link>
+      <pubDate>Mon, 11 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/modules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arrays</title>
+      <link>https://bolajiayodeji.com/tags/arrays/</link>
+      <pubDate>Mon, 04 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/arrays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chrome</title>
+      <link>https://bolajiayodeji.com/tags/chrome/</link>
+      <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lighthouse</title>
+      <link>https://bolajiayodeji.com/tags/lighthouse/</link>
+      <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/lighthouse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devtools</title>
+      <link>https://bolajiayodeji.com/tags/devtools/</link>
+      <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/devtools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://bolajiayodeji.com/tags/education/</link>
+      <pubDate>Mon, 21 Jan 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>growth mindset</title>
+      <link>https://bolajiayodeji.com/tags/growth-mindset/</link>
+      <pubDate>Mon, 21 Jan 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/growth-mindset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSL</title>
+      <link>https://bolajiayodeji.com/tags/ssl/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>htaccess</title>
+      <link>https://bolajiayodeji.com/tags/htaccess/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/htaccess/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>https</title>
+      <link>https://bolajiayodeji.com/tags/https/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service workers</title>
+      <link>https://bolajiayodeji.com/tags/service-workers/</link>
+      <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/service-workers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>browser</title>
+      <link>https://bolajiayodeji.com/tags/browser/</link>
+      <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/browser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>http</title>
+      <link>https://bolajiayodeji.com/tags/http/</link>
+      <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>status code</title>
+      <link>https://bolajiayodeji.com/tags/status-code/</link>
+      <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/status-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://bolajiayodeji.com/tags/markdown/</link>
+      <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>website</title>
       <link>https://bolajiayodeji.com/tags/website/</link>
       <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://bolajiayodeji.com/tags/database/</link>
+      <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://bolajiayodeji.com/tags/mysql/</link>
+      <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://bolajiayodeji.com/tags/php/</link>
+      <pubDate>Sat, 28 Apr 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/php/</guid>
       <description></description>
     </item>
     

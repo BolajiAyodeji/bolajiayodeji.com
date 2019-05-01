@@ -47,7 +47,7 @@ However, in Modern CSS, we now have a new powerful feature called Custom propert
 
 
 
-<meta name="generator" content="Hugo 0.53">
+<meta name="generator" content="Hugo 0.55.4">
 
 
 <link rel="canonical" href="https://bolajiayodeji.com/introducing-css-custom-properties-variables/">
@@ -1492,17 +1492,9 @@ children. If you add a variable inside a <code>.container</code> selector, it’
 to be available to children of <code>.container</code> . Outside <code>.container</code> , the
 variable will not work.</p>
 
-
-
-
-
-
-
-
 <script data-slug-hash="BbMGqr" data-user="iambolajiayo"
   data-height="500" data-default-tab="result"
   data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
-
 
 <p>Though we set <code>p</code> to be red, it works for only <code>p</code> tags within <code>.container</code> ,
 any <code>p</code> outside <code>.container</code> will not inherit this style.</p>
@@ -1514,17 +1506,9 @@ any <code>p</code> outside <code>.container</code> will not inherit this style.<
 <p>A better way to declare CSS variables is to add the variable to <code>:root</code>, this
 makes it available to all the elements in the page.</p>
 
-
-
-
-
-
-
-
 <script data-slug-hash="gEqZOe" data-user="iambolajiayo"
   data-height="500" data-default-tab="result"
   data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
-
 
 <p>Now all <code>p</code> tags are red irrespective of their position or parent.</p>
 
@@ -1550,17 +1534,9 @@ variable value is not set:</p>
 }
 </code></pre>
 
-
-
-
-
-
-
-
 <script data-slug-hash="xBMmrq" data-user="iambolajiayo"
   data-height="500" data-default-tab="result"
   data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
-
 
 <p>Here we forgot to declare <code>--red</code> but <code>p</code> still has the red color because we
 already have a fallback value.</p>
