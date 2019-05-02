@@ -4,21 +4,20 @@
 @import url("../css/magnific-popup.css");
 @import url("../css/font-awesome.min.css");
 @import url("../assets/nucleo/css/nucleo.css");
+
+
 body {
     background: #FFFFFF;
     font-family: 'Roboto Mono', monospace;
     overflow-x: hidden;
 }
-
-body::-webkit-scrollbar {
-    width: 10px;
+::-webkit-scrollbar {
+    width: 8px;
 }
-
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #63D1F4;
     border-radius: 10px;
 }
