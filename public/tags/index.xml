@@ -66,7 +66,7 @@
     </item>
     
     <item>
-      <title>pwa</title>
+      <title>PWA</title>
       <link>https://bolajiayodeji.com/tags/pwa/</link>
       <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
       
@@ -138,20 +138,20 @@
     </item>
     
     <item>
-      <title>GitHub</title>
-      <link>https://bolajiayodeji.com/tags/github/</link>
-      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>developers</title>
       <link>https://bolajiayodeji.com/tags/developers/</link>
       <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://bolajiayodeji.com/tags/github/</link>
+      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/github/</guid>
       <description></description>
     </item>
     

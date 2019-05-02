@@ -437,177 +437,6 @@ a:focus {
 }
 
 
-/*---------------------------------------
-   WORK
------------------------------------------*/
-
-.work-info img {
-    width: 100%;
-    border-radius: 100%;
-}
-
-#work .work-thumb {
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.work-thumb .work-info {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.work-thumb .work-info:after {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    content: "";
-    background: #eeeeee;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.work-thumb .work-info:hover::after {
-    opacity: 0.9;
-}
-
-.work-thumb .work-info h3,
-.work-thumb .work-info small {
-    transform: translateY(100%);
-    opacity: 0;
-    display: block;
-    transition: 0.5s 0.2s;
-    color: #000;
-    z-index: 2;
-    position: relative;
-}
-
-.work-thumb .work-info small {
-    color: #332233;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 3px;
-}
-
-.work-thumb:hover .work-info h3,
-.work-thumb:hover .work-info small {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-
-/*---------------------------------------
-   BLOG
------------------------------------------*/
-
-#blog {
-    background: #f0f0f0;
-}
-
-#blog-header,
-#blog-detail {
-    text-align: left;
-}
-
-#blog-header {
-    background: url('../images/blog-header-bg.jpg') no-repeat center center;
-    background-size: cover;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 65vh;
-    color: #FFFFFF;
-    position: relative;
-    padding-top: 12em;
-}
-
-#blog-header h2 {
-    color: #FFFFFF;
-}
-
-.blog-thumb {
-    background: #FFFFFF;
-    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-    text-align: left;
-    margin-bottom: 30px;
-    height: 350px;
-}
-
-.media.blog-thumb .media-left {
-    width: 45%;
-}
-
-.blog-thumb small {
-    color: #2dce89;
-    font-weight: 500;
-    display: block;
-}
-
-.blog-thumb small .fa {
-    margin-right: 5px;
-}
-
-.blog-thumb h4 {
-    margin-top: 2px;
-    margin-bottom: 0px;
-}
-
-#blog-detail h2 {
-    padding: 25px 0 10px 0;
-}
-
-.blog-info {
-    padding: 75px 25px;
-}
-
-.blog-info h3 {
-    margin: 0;
-    padding: 8px 0 6px 0;
-    text-transform: capitalize;
-}
-
-.blog-info .section-btn {
-    background: #f0f0f0;
-    color: #393939;
-    margin-top: 20px;
-}
-
-.blog-info .section-btn:hover {
-    background: #24a46d;
-    color: #FFFFFF;
-}
-
-.blog-thumb ul {
-    margin: 32px 12px 22px 0px;
-}
-
-.blog-thumb ul li {
-    list-style: square;
-    font-weight: normal;
-    padding: 4px 12px 4px 0px;
-}
-
 .link-btn {
     background: #24a46d;
     border: 0;
@@ -711,20 +540,6 @@ a:focus {
 
 #contact .section-title h2 {
     color: #fff;
-}
-
-.google-map {
-    border-radius: 20px;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.google-map iframe {
-    border: 0;
-    width: 300px;
-    height: 300px;
 }
 
 #contact .form-control {
@@ -917,43 +732,6 @@ footer span,
     .custom-navbar .section-btn {
         margin-left: 1em;
     }
-    .blog-thumb {
-        height: inherit;
-    }
-    .blog-info {
-        padding: 45px 25px;
-    }
-    .media.blog-thumb .media-left {
-        display: block;
-        width: 100%;
-        padding-right: 0;
-        overflow: hidden;
-    }
-    .media.blog-thumb .media-left {
-        height: 250px;
-    }
-    .media.blog-thumb .media-left img {
-        position: relative;
-        bottom: 10em;
-    }
-    #work .work-thumb,
-    .footer-thumb {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-}
-
-@media only screen and (min-width: 640px) and (max-width: 767px) {
-    #blog-header {
-        height: 100vh;
-    }
-    .media.blog-thumb .media-left {
-        height: 550px;
-    }
-    .media.blog-thumb .media-left img {
-        position: relative;
-        bottom: 10em;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1000,9 +778,6 @@ footer span,
     }
     .about-info {
         margin: 40px 0 40px 0;
-    }
-    .google-map {
-        margin-top: 50px;
     }
     footer {
         text-align: center;
