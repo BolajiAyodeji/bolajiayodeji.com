@@ -43,12 +43,12 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "Newsletter 📩"
-  weight = 5
-  identifier = "news"
-  url = "https://eepurl.com/geCCfL"
-[[menu.main]]
   name = "Search 🔍"
-  weight = 5
+  weight = 2
   identifier = "search"
   url = "/search"
+[[menu.main]]
+  name = "Newsletter 📩"
+  weight = 3
+  identifier = "news"
+  url = "https://eepurl.com/geCCfL"
