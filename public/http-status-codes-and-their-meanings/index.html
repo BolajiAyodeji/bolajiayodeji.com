@@ -171,7 +171,7 @@ For every request from a web browser the server responds with a status code. If 
   }
 
   ::-webkit-scrollbar-track {
-    background: #20242b;
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
@@ -1629,14 +1629,14 @@ waiting 15 minutes before trying to call up your site and refresh it.</p>
 
     <div id="newsletter">
       <div class="container">
-        <div class="description"> Get notified when I write something cool. </div>
+        <div class="description"> 📩 Get notified when I write something cool. </div>
 
         <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
           onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
 
           <div class="email-group">
             <label for="email" class="sr-only"> Email </label>
-            <input type="email" id="email" name="email" value="" placeholder=" Your Email Address... ">
+            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
             <button class="button" type="submit"> Subscribe </button>
           </div>
         </form>
@@ -1671,6 +1671,8 @@ waiting 15 minutes before trying to call up your site and refresh it.</p>
   </footer>
 </section>
 <footer class="footer">
+  <div id="codefund"></div>
+
   <p>Copyright © 2018-2019</p>
   <ul class="social-list">
   
