@@ -172,16 +172,15 @@ Which of the code above would support accessibility more, 1 or 2?
 
 <br> 
 
-![](https://cdn-images-1.medium.com/max/600/0*0-CYDoZHLHaOY2c2)
-<span class="figcaption_hack">Beautiful [Ada Nduka Oyom](https://medium.com/u/fb80690688e0)</span>
+![](https://cdn-images-1.medium.com/max/800/1*VwaIywCKRAu6d8M74gkQVg.jpeg)
 
 <br> 
 
-    <img src="./lady.png" alt="a beautiful and alluring lady">
+    <img src="./dog.png" alt="a cute dog">
 
 --
 
-    <img src="./lady.png" alt="a beautiful and alluring lady smiling next to the beach waves">
+    <img src="./dog.png" alt="a cute dog sitting beside a pillow on a gray couch">
 
 <br> 
 
