@@ -131,9 +131,3 @@ Confirmation Message
 Congratulations! You’ve successfully connected your database with your
 localhost! If you are not able to see this screen, then check if you have done
 everything right in your db_connection.php file.
-
-
-
-![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
-
-# Subscribe for my Newsletter [here](https://eepurl.com/geCCfL) and get notified when I write something cool.

@@ -289,8 +289,3 @@ Thank you for reading!
 All guides used in this post were gotten from [GitHub
 Education](https://education.github.com/pack)
 
-
-
-![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
-
-# Subscribe for my Newsletter [here](https://eepurl.com/geCCfL) and get notified when I write something cool.

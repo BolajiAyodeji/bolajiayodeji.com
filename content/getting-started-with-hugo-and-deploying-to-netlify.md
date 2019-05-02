@@ -378,8 +378,3 @@ versions](https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-bey
 Channel](https://www.youtube.com/channel/UCvmINlrza7JHB1zkIOuXEbw)
 * [Hugo Base16 ](https://github.com/htdvisser/hugo-base16-theme)theme by [Hylke
 Visser](https://github.com/htdvisser).
-
-
-![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
-
-# Subscribe for my Newsletter [here](https://eepurl.com/geCCfL) and get notified when I write something cool.

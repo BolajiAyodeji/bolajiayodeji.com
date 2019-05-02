@@ -373,10 +373,3 @@ explained to get a better grasp of ES6 modules.
 Check out my last article, I wrote on [Manipulating JavaScript Arrays](https://bolajiayodeji.com/js/manipulating-arrays-in-javascript/)
 
 Confused or got questions, please ask in the comments section!
-
-
-
-
-![thewebdev](https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png)
-
-# Subscribe for my Newsletter [here](https://eepurl.com/geCCfL) and get notified when I write something cool.
