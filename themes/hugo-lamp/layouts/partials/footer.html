@@ -1,9 +1,6 @@
 <footer class="footer">
   <p>Copyright © {{ if eq now.Year 2018 }}2018{{ else }}2018-{{ now.Year }}{{ end }}</p>
-  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji
-      Ayodeji</a></p>
-
-  <div id="codefund"></div>
+  {{ partial "social.html" . }}
 </footer>
 
 {{ partial "adsense-sticky.html" . }}

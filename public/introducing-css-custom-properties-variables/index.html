@@ -402,7 +402,10 @@ However, in Modern CSS, we now have a new powerful feature called Custom propert
     display: none
   }
 
-  #codefund {}
+  #codefund {
+    width: 100%;
+    min-height: 50%;
+  }
 
   @font-face {
     font-family: fe;
@@ -797,7 +800,7 @@ However, in Modern CSS, we now have a new powerful feature called Custom propert
   }
 
   .social-item a {
-    color: #000;
+    color: #63D1F4;
     font-weight: 500
   }
 
@@ -1322,11 +1325,11 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 
   <p class="subtitle">Hi, I&#39;m Bolaji.</p>
   <p class="subtitle">I write articles on web and frontend development.</p>
+  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">About Me →</a></p>
   <p>
     <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </p>
-
 
   <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
     <span class="icon icon-menu"></span>
@@ -1351,47 +1354,12 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
         class="menu-item ">
         <a href="/search">Search 🔍</a></li>
       
+      <li>
+        <div id="codefund"></div>
+      </li>
     </ul>
 
   </nav>
-
-  <p class="subtitle"><a href="https://bolajiayodeji.com/portfolio">About Me →</a></p>
-  <p class="subtitle"><a href="https://bolajiayodeji.com/search"></a></p>
-
-  <div id="codefund"></div>
-
-  <ul class="social-list">
-  
-
-  
-  <li class="social-item">
-    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
-  </li>
-
-  
-
-  <li class="social-item">
-    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
-  </li>
-
-  
-
-  
-
-  <li class="social-item">
-    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
-  </li>
-
-  <li class="social-item">
-    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
-  </li>
-
-  
-
-  <li class="social-item">
-    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
-  </li>
-</ul>
 
 </header>
 
@@ -1616,10 +1584,39 @@ variables :)</p>
 </section>
 <footer class="footer">
   <p>Copyright © 2018-2019</p>
-  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji
-      Ayodeji</a></p>
+  <ul class="social-list">
+  
 
-  <div id="codefund"></div>
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
+</ul>
+
 </footer>
 
 
