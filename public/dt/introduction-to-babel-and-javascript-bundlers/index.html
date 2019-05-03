@@ -1,74 +1,36 @@
 <!doctype html>
-<html ⚡ lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-install-serviceworker"
-    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-
-    
-    
-
-    
-    <title>Introduction to Babel and JavaScript Bundlers</title>
-
-    
-    
-
-
-
-
-
-
-
-  
-  <meta name="author" content="⚡️Bolaji Ayodeji⚡️" />
-  <meta name="description" content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.
-In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
-
-  
-  
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@iambolajiayo" />
-    <meta name="twitter:title" content="Introduction to Babel and JavaScript Bundlers" />
-    <meta name="twitter:description" content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.
-In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify." />
-    <meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
-  
-
-
-
-
-<meta name="generator" content="Hugo 0.53">
-
-
-<link rel="canonical" href="https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/">
-<link rel="alternative" href="/index.xml" title="⚡️Bolaji Ayodeji⚡️" type="application/atom+xml">
-
-
-<meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="format-detection" content="telephone=no,email=no,adress=no" />
-
-
-<meta name="robots" content="index,follow" />
-<meta name="referrer" content="origin-when-cross-origin" />
-<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
-<meta name="msvalidate.01" content="bing_site_verification_code" />
-
-
-<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
-<meta name="apple-mobile-web-app-capable" content="yes">
-<link rel="apple-touch-icon" sizes="120x120" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
-
-
-<link rel="manifest" href="/manifest.json" />
-<meta name="theme-color" content="#424242" />
-
+<html ⚡ lang=en-us>
+<head>
+<meta charset=utf-8>
+<script async src=https://cdn.ampproject.org/v0.js></script>
+<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
+<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
+<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
+<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
+<title>Introduction to Babel and JavaScript Bundlers</title>
+<meta name=author content="⚡️Bolaji Ayodeji⚡️">
+<meta name=description content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.">
+<meta name=keywords content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,thewebdev,coder,git,github,react,node,pwafire,hugo">
+<meta name=twitter:card content=summary>
+<meta name=twitter:site content=@iambolajiayo>
+<meta name=twitter:title content="Introduction to Babel and JavaScript Bundlers">
+<meta name=twitter:description content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.">
+<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
+<meta name=generator content="Hugo 0.53">
+<link rel=canonical href=https://bolajiayodeji.com/dt/introduction-to-babel-and-javascript-bundlers/ >
+<link rel=alternative href=/index.xml title="⚡️Bolaji Ayodeji⚡️" type=application/atom+xml>
+<meta name=renderer content=webkit>
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name=format-detection content="telephone=no,email=no,adress=no">
+<meta name=robots content=index,follow>
+<meta name=referrer content=origin-when-cross-origin>
+<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
+<meta name=msvalidate.01 content=bing_site_verification_code>
+<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<meta name=apple-mobile-web-app-capable content=yes>
+<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<link rel=manifest href=/manifest.json>
+<meta name=theme-color content=#424242>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 <style amp-custom>/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400');
@@ -180,220 +142,120 @@ tr:last-child td:first-child{border-bottom-left-radius:5px}table tr:last-child
 td:last-child{border-bottom-right-radius:5px}.not-found{margin:5rem auto 0;font-family: 'Roboto Mono',
 monospace;text-align:center}.error-emoji{color:#fff;font-size:3rem}.error-text{font-size:1.25rem}.error-link{margin-top:2rem;font-size:1rem;color:#63D1F4}
 </style>
-
-  </head>
-  <body>
-    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
-  <ul class="sidebar-list">
-    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
-    
-    
-    
-    
-      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="/js/">JavaScript</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="/dt/">Dev Tools</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="/vc/">Version Control</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="/op/">Optimization</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="/rd/">Random</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="https://eepurl.com/geCCfL">Newsletter</a></li>
-    
-  </ul>
+</head>
+<body>
+<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
+<ul class=sidebar-list>
+<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
+<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/js/ >JavaScript</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/dt/ >Dev Tools</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/vc/ >Version Control</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/op/ >Optimization</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/rd/ >Random</a></li>
+<li class=sidebar-item><a class=sidebar-link href=https://eepurl.com/geCCfL>Newsletter</a></li>
+</ul>
 </amp-sidebar>
-
-    
-<header class="header">
-  <amp-img alt="⚡️Bolaji Ayodeji⚡️"
-    width="128px"
-    height="128px"
-    class="logo"
-    src="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
-    sizes="(max-width: 800px) 36px, 128px">
-  </amp-img>
-
-  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
-  <p class="subtitle">I write articles on web and frontend development. 🚀</p>
-  <p class="subtitle"><a style="color:#63D1F4"; href="https://bolajiayodeji.com/portfolio">View my Portfolio →</a></p>
-  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
-    <span class="icon icon-menu"></span>
-  </button>
-
-  
-  <nav class="menu">
-    <ul class="menu-list">
-      
-      
-      
-      
-        <li class="menu-item  is-active"><a href="/">Home</a></li>
-      
-        <li class="menu-item "><a href="/js/">JavaScript</a></li>
-      
-        <li class="menu-item "><a href="/dt/">Dev Tools</a></li>
-      
-        <li class="menu-item "><a href="/vc/">Version Control</a></li>
-      
-        <li class="menu-item "><a href="/op/">Optimization</a></li>
-      
-        <li class="menu-item "><a href="/rd/">Random</a></li>
-      
-        <li class="menu-item "><a href="https://eepurl.com/geCCfL">Newsletter</a></li>
-      
-    </ul>
-  </nav>
-
-  <ul class="social-list">
-  
-  <li class="social-item">
-    <a href="mailto:hi@bolajiayodeji.com" title="Email" target="_blank" rel="noopener"><span class="icon icon-email"></span></a>
-  </li>
-
-  
-  <li class="social-item">
-    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
-  </li>
-
-  <li class="social-item">
-    <a href="//twitter.com/iambolajiayo" title="Twitter" target="_blank" rel="noopener"><span class="icon icon-twitter"></span></a>
-  </li>
-
-  <li class="social-item">
-    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
-  </li>
-
-  <li class="social-item">
-    <a href="//www.facebook.com/iambolajiayo" title="Facebook" target="_blank" rel="noopener"><span class="icon icon-facebook"></span></a>
-  </li>
-
-  
-
-  <li class="social-item">
-    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
-  </li>
-
-  <li class="social-item">
-    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
-  </li>
-
-  
-
-  <li class="social-item">
-    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
-  </li>
+<header class=header>
+<amp-img alt="⚡️Bolaji Ayodeji⚡️" width=128px height=128px class=logo src=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png sizes="(max-width: 800px) 36px, 128px">
+</amp-img>
+<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>I write articles on web and frontend development. 🚀</p>
+<p class=subtitle><a style=color:#63D1F4 ; href=https://bolajiayodeji.com/portfolio>View my Portfolio →</a></p>
+<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
+<span class="icon icon-menu"></span>
+</button>
+<nav class=menu>
+<ul class=menu-list>
+<li class="menu-item is-active"><a href=/ >Home</a></li>
+<li class=menu-item><a href=/js/ >JavaScript</a></li>
+<li class=menu-item><a href=/dt/ >Dev Tools</a></li>
+<li class=menu-item><a href=/vc/ >Version Control</a></li>
+<li class=menu-item><a href=/op/ >Optimization</a></li>
+<li class=menu-item><a href=/rd/ >Random</a></li>
+<li class=menu-item><a href=https://eepurl.com/geCCfL>Newsletter</a></li>
 </ul>
-
+</nav>
+<ul class=social-list>
+<li class=social-item>
+<a href=mailto:hi@bolajiayodeji.com title=Email target=_blank rel=noopener><span class="icon icon-email"></span></a>
+</li>
+<li class=social-item>
+<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
+</li>
+<li class=social-item>
+<a href=//twitter.com/iambolajiayo title=Twitter target=_blank rel=noopener><span class="icon icon-twitter"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.facebook.com/iambolajiayo title=Facebook target=_blank rel=noopener><span class="icon icon-facebook"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
+</li>
+<li class=social-item>
+<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
+</li>
+</ul>
 </header>
-
 <section class="main post-detail">
-  <header class="post-header">
-    <h1 class="post-title">Introduction to Babel and JavaScript Bundlers</h1>
-    <p class="entry-meta"><span class="entry-time">Feb 14, 2019</span> 9 min read</p>
-  </header>
-  
-
-  <article class="post-content">
-
-<p><img src="https://cdn-images-1.medium.com/max/2560/1*j8camHQHTexkYljhEHLdvg.png" alt="" />
-<span class="figcaption_hack"></p>
-
-<p>As earlier stated in my <a href="https://bolajiayodeji.com/js/introduction-to-es6-modules/">previous
-article</a> ES6 modules
-is a very powerful concept. Although support is not available everywhere yet, a
-common way of using it is to transpile into ES5. You can use
-<a href="https://gruntjs.com/">Grunt</a>, <a href="https://gulpjs.com/">Gulp</a>,
-<a href="https://webpack.js.org/">Webpack</a>, <a href="https://babeljs.io/">Babe</a>l or some other
-transpiler to compile the modules during a build process.</p>
-
-<p>In this article, I’d guide through an introduction to transpiling ES6 with babel
-and bundling your modules with Browserify. This guide will cover basic
-installations and configurations.</p>
-
-<p>Let&rsquo;s roll :)</p>
-
-<h3 id="introducing-babel">Introducing Babel</h3>
-
-<p><a href="https://babeljs.io/">Babel</a> is a free and open-source <strong>JavaScript</strong> compiler
-and configurable transpiler which is commonly used for transpiling ES6.</p>
-
-<p>Babel was created by <a href="https://github.com/kittens">Sebastian McKenzien</a>
-JavaScript Developer <a href="http://facebook.com/">@facebook </a>in September of 2014. It
-was originally called <strong>6to5</strong> but was later renamed to <strong>Babel</strong>. With the
-release of Babel 6, the focus turned more towards making Babel pluggable. The
-default action for Babel in version 6 is not to transform your ES6 to ES5
-anymore, but towards making Babel pluggable (Allows you to create plugins to
-transform your code) so you now have to include various <a href="http://so you
+<header class=post-header>
+<h1 class=post-title>Introduction to Babel and JavaScript Bundlers</h1>
+<p class=entry-meta><span class=entry-time>Feb 14, 2019</span> 9 min read</p>
+</header>
+<article class=post-content>
+<p><img src=https://cdn-images-1.medium.com/max/2560/1*j8camHQHTexkYljhEHLdvg.png alt="">
+<span class=figcaption_hack></span></p>
+<p>As earlier stated in my <a href=https://bolajiayodeji.com/js/introduction-to-es6-modules/ >previous article</a> ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use
+<a href=https://gruntjs.com/ >Grunt</a>, <a href=https://gulpjs.com/ >Gulp</a>,
+<a href=https://webpack.js.org/ >Webpack</a>, <a href=https://babeljs.io/ >Babe</a>l or some other transpiler to compile the modules during a build process.</p>
+<p>In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify. This guide will cover basic installations and configurations.</p>
+<p>Let’s roll :)</p>
+<h3 id=introducing-babel>Introducing Babel</h3>
+<p><a href=https://babeljs.io/ >Babel</a> is a free and open-source <strong>JavaScript</strong> compiler and configurable transpiler which is commonly used for transpiling ES6.</p>
+<p>Babel was created by <a href=https://github.com/kittens>Sebastian McKenzien</a>
+JavaScript Developer <a href=http://facebook.com/ >@facebook </a>in September of 2014. It was originally called <strong>6to5</strong> but was later renamed to <strong>Babel</strong>. With the release of Babel 6, the focus turned more towards making Babel pluggable. The default action for Babel in version 6 is not to transform your ES6 to ES5 anymore, but towards making Babel pluggable (Allows you to create plugins to transform your code) so you now have to include various <a href="http://so you
 now have to include various presets./">presets</a>. The latest release is <strong>Babel 7</strong></p>
-
 <blockquote>
-<p>Babel has support for the latest version of JavaScript through syntax
-transformers. These plugins allow you to use new syntax, right now without
-waiting for browser support.</p>
+<p>Babel has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support.</p>
 </blockquote>
-
-<p><img src="https://cdn-images-1.medium.com/max/800/0*DCOgES9vSiGtSUyp.jpg" alt="" />
-<span class="figcaption_hack">How Babel works</span></p>
-
-<h3 id="things-you-should-know">Things you should know!</h3>
-
+<p><img src=https://cdn-images-1.medium.com/max/800/0*DCOgES9vSiGtSUyp.jpg alt="">
+<span class=figcaption_hack>How Babel works</span></p>
+<h3 id=things-you-should-know>Things you should know!</h3>
 <ul>
-<li><strong>Transpilers</strong>, or source-to-source compilers, are tools that read source code
-written in one programming language and produce the equivalent code in another
-language. (Wikipedia)</li>
-<li><strong><a href="https://www.npmjs.com/">NPM</a></strong> is a <strong>package manager</strong> for <strong>JavaScript</strong>
-with a huge listing of reusable code modules and <strong>packages</strong>. You can <a href="https://docs.npmjs.com/files/package.json#dependencies">specify
-all of your project’s
-dependencies</a> inside
-your <code>package.json</code> file, then any time you (or anyone else) needs to get
-started with your project they can just run <code>npm install</code> and immediately have
-all of the dependencies installed.</li>
-<li><strong>local packages</strong> are installed in the directory where you run, <code>npm
-install&lt;package-name&gt;</code> and they are put in the <code>node_modules</code> folder inside this
-directory <em>[You must install in the project directory].</em></li>
-<li><strong>global packages</strong> are all put in a single place in your system (exactly where
-depends on your setup and OS), regardless of where you run <code>npm install -g
-&lt;package-name&gt;</code> <em>[You can install anywhere].</em></li>
+<li><strong>Transpilers</strong>, or source-to-source compilers, are tools that read source code written in one programming language and produce the equivalent code in another language. (Wikipedia)</li>
+<li><strong><a href=https://www.npmjs.com/ >NPM</a></strong> is a <strong>package manager</strong> for <strong>JavaScript</strong>
+with a huge listing of reusable code modules and <strong>packages</strong>. You can <a href=https://docs.npmjs.com/files/package.json#dependencies>specify all of your project’s dependencies</a> inside your <code>package.json</code> file, then any time you (or anyone else) needs to get started with your project they can just run <code>npm install</code> and immediately have all of the dependencies installed.</li>
+<li><strong>local packages</strong> are installed in the directory where you run, <code>npm install&lt;package-name></code> and they are put in the <code>node_modules</code> folder inside this directory <em>[You must install in the project directory].</em></li>
+<li><strong>global packages</strong> are all put in a single place in your system (exactly where depends on your setup and OS), regardless of where you run <code>npm install -g &lt;package-name></code> <em>[You can install anywhere].</em></li>
 </ul>
-
 <blockquote>
-<p>In general, <strong>all packages should be installed locally, t</strong>here are two primary
-reasons for this.</p>
+<p>In general, <strong>all packages should be installed locally, t</strong>here are two primary reasons for this.</p>
 </blockquote>
-
 <ol>
-<li>Different projects on the same machine can depend on different versions of
-packages allowing you to update one at a time.</li>
-<li>It means you do not have an implicit dependency on the environment you are
-working in. Making your project far more portable and easier to set up.</li>
+<li>Different projects on the same machine can depend on different versions of packages allowing you to update one at a time.</li>
+<li>It means you do not have an implicit dependency on the environment you are working in. Making your project far more portable and easier to set up.</li>
 </ol>
-
 <blockquote>
-<p>A package <strong>should be installed globally</strong> when it provides an executable
-command that you run from the shell (CLI), and it’s reused across projects. e.g
+<p>A package <strong>should be installed globally</strong> when it provides an executable command that you run from the shell (CLI), and it’s reused across projects. e.g
 <code>create-react-app</code> , <code>nodemon</code> <code>npm</code> e.t.c</p>
 </blockquote>
-
-<hr />
-
+<hr>
 <p>This guide would be split into five parts:</p>
-
 <ul>
 <li><strong>Installing Babel CLI</strong></li>
 <li><strong>Setting up Babel Presets</strong></li>
 <li><strong>.babelrc Configurations</strong></li>
 <li><strong>NPM Scripts Configurations</strong></li>
-<li><strong>Installing Babel for Browser (Browserify &amp; Parcel)</strong></li>
+<li><strong>Installing Babel for Browser (Browserify & Parcel)</strong></li>
 </ul>
-
-<h3 id="starter-files">Starter files</h3>
-
+<h3 id=starter-files>Starter files</h3>
 <p>For testing purposes, create these files in the right structure as shown below:</p>
-
 <pre><code>.
 ├── public
 │   └── index.html
@@ -401,129 +263,75 @@ command that you run from the shell (CLI), and it’s reused across projects. e.
 │   └── app.js
 │   └── math.js
 </code></pre>
-
 <blockquote>
-<p><strong>Tip:</strong> you can create files in the command line by running <code>touch</code> followed by
-the file name <strong>+ extension</strong> i.e <code>touch app.js</code></p>
+<p><strong>Tip:</strong> you can create files in the command line by running <code>touch</code> followed by the file name <strong>+ extension</strong> i.e <code>touch app.js</code></p>
 </blockquote>
-
-<hr />
-
-<h3 id="installing-babel-cli">Installing Babel CLI</h3>
-
+<hr>
+<h3 id=installing-babel-cli>Installing Babel CLI</h3>
 <ul>
-<li>Before we proceed, you need to install <a href="https://nodejs.org/">Node.js</a></li>
+<li>Before we proceed, you need to install <a href=https://nodejs.org/ >Node.js</a></li>
 </ul>
-
 <blockquote>
-<p>Head <a href="https://nodejs.org/en/download/">here</a>, download and install the latest
-version for your Operating system.</p>
+<p>Head <a href=https://nodejs.org/en/download/ >here</a>, download and install the latest version for your Operating system.</p>
 </blockquote>
-
 <p>To confirm if node.js is installed properly,</p>
-
 <pre><code> node -v
 // should return the version the installed
 // v10.13.0
 </code></pre>
-
 <ul>
 <li>Next, you need to generate your <code>package.json</code> file.</li>
 </ul>
-
 <blockquote>
 <p>All npm packages contain a file, usually in the project root, called
-<code>package.json</code> - this file holds various metadata relevant to the project. This
-file is used to give information to <code>npm</code> that allows it to identify the project
-as well as handle the project&rsquo;s dependencies.
-<a href="https://docs.nodejitsu.com/articles/getting-started/npm/what-is-the-file-package-json/">Source</a></p>
+<code>package.json</code> - this file holds various metadata relevant to the project. This file is used to give information to <code>npm</code> that allows it to identify the project as well as handle the project’s dependencies.
+<a href=https://docs.nodejitsu.com/articles/getting-started/npm/what-is-the-file-package-json/ >Source</a></p>
 </blockquote>
-
 <pre><code>npm init
 </code></pre>
-
-<p>This will walk you through a few questions like what is the name of your
-project, version, description, etc. When it asks you about the “entry point”,
-you can leave it as <code>app.js</code> for now. Typically this is the primary entry point
-to your program. Read <a href="https://docs.npmjs.com/files/package.json">npm docs</a> for
-a full guide on setting up your <code>package.json</code></p>
-
-<p>Once you’re done with this, your <code>package.json</code> file should be created now in
-your project root.</p>
-
-<p>Now let&rsquo;s install Babel CLI <strong>(NB: we’re installing locally)</strong></p>
-
+<p>This will walk you through a few questions like what is the name of your project, version, description, etc. When it asks you about the “entry point”, you can leave it as <code>app.js</code> for now. Typically this is the primary entry point to your program. Read <a href=https://docs.npmjs.com/files/package.json>npm docs</a> for a full guide on setting up your <code>package.json</code></p>
+<p>Once you’re done with this, your <code>package.json</code> file should be created now in your project root.</p>
+<p>Now let’s install Babel CLI <strong>(NB: we’re installing locally)</strong></p>
 <blockquote>
-<p>There are several tools for installing Babel, Babel CLI is a common and
-recommended built-in method that works on the command line. Othertools can be
-found <a href="https://babeljs.io/setup#installation">here</a>.</p>
+<p>There are several tools for installing Babel, Babel CLI is a common and recommended built-in method that works on the command line. Othertools can be found <a href=https://babeljs.io/setup#installation>here</a>.</p>
 </blockquote>
-
 <pre><code>npm install --save-dev @babel/core @babel/cli
 </code></pre>
-
 <p>This might take a while pending on your network strength.</p>
-
 <p>After running this, three things should happen</p>
-
-<p>— You should have a new subfolder in your project root <code>node_modules</code> (This is
-where all packages are installed)</p>
-
+<p>— You should have a new subfolder in your project root <code>node_modules</code> (This is where all packages are installed)</p>
 <p>— Your <code>package.json</code> should have some new entry</p>
-
-<pre><code>&quot;devDependencies&quot;: {
-&quot;@babel/cli&quot;: &quot;^7.2.3&quot;,
-&quot;@babel/core&quot;: &quot;^7.2.2&quot;
+<pre><code>"devDependencies": {
+"@babel/cli": "^7.2.3",
+"@babel/core": "^7.2.2"
 }
 </code></pre>
-
-<p>— You should have a new file also <code>package-lock.json</code> (This files basically
-stores all information about the newly installed packages, so if someone else
-would want to work on that project, they could <code>npm insatll</code> and get the same
-dependencies on their machine.</p>
-
-<h3 id="setting-up-babel-presets">Setting up Babel Presets</h3>
-
-<p>As mentioned earlier, Babel does not transpile to ES6 by default. We have to
-include some <a href="https://babeljs.io/docs/plugins">plugins</a>. To start, you can use
-the <a href="https://babeljs.io/docs/plugins/preset-env">env preset</a>, which enables
-transforms for ES2015+</p>
-
+<p>— You should have a new file also <code>package-lock.json</code> (This files basically stores all information about the newly installed packages, so if someone else would want to work on that project, they could <code>npm insatll</code> and get the same dependencies on their machine.</p>
+<h3 id=setting-up-babel-presets>Setting up Babel Presets</h3>
+<p>As mentioned earlier, Babel does not transpile to ES6 by default. We have to include some <a href=https://babeljs.io/docs/plugins>plugins</a>. To start, you can use the <a href=https://babeljs.io/docs/plugins/preset-env>env preset</a>, which enables transforms for ES2015+</p>
 <pre><code>npm install @babel/preset-env --save-dev
 </code></pre>
-
 <p>Now your <code>package-lock.json</code> should be updated with more dependencies</p>
-
-<h3 id="babelrc-configurations">.babelrc Configurations</h3>
-
+<h3 id=babelrc-configurations>.babelrc Configurations</h3>
 <p><code>.babelrc</code> is the configuration file used to manage your presets and plugins</p>
-
 <pre><code>touch .babelrc
 </code></pre>
-
 <ul>
 <li>Inside the created file, add this:</li>
 </ul>
-
 <pre><code>{
- &quot;presets&quot;: [&quot;@babel/preset-env&quot;]
+ "presets": ["@babel/preset-env"]
  }
 </code></pre>
-
-<p>Basically, this tells babel to use the <code>env-preset</code> you installed earlier. This
-configuration might change depending on your setup</p>
-
+<p>Basically, this tells babel to use the <code>env-preset</code> you installed earlier. This configuration might change depending on your setup</p>
 <blockquote>
 <p>Some Online Editors automatically run Babel for you:
-<a href="https://jsfiddle.net/fh5whLfd/">JSFiddle</a>,
-<a href="http://jsbin.com/rokimopuse/edit?html,js,console,output">JSBin</a>,
-<a href="http://codepen.io/anon/pen/dOGgeO">Codepen</a>.</p>
+<a href=https://jsfiddle.net/fh5whLfd/ >JSFiddle</a>,
+<a href=http://jsbin.com/rokimopuse/edit?html,js,console,output>JSBin</a>,
+<a href=http://codepen.io/anon/pen/dOGgeO>Codepen</a>.</p>
 </blockquote>
-
-<h4 id="folder-structure">Folder Structure</h4>
-
+<h4 id=folder-structure>Folder Structure</h4>
 <p>At the end of all this, your folder structure should look like this:</p>
-
 <pre><code>.
 ├── node_modules
 ├── public
@@ -535,73 +343,50 @@ configuration might change depending on your setup</p>
 ├── package.json
 ├── package-lock.json
 </code></pre>
-
-<h3 id="npm-scripts-configurations"><strong>NPM Scripts Configurations</strong></h3>
-
+<h3 id=npm-scripts-configurations><strong>NPM Scripts Configurations</strong></h3>
 <p>Now let’s setup NPM to run babel on the CLI</p>
-
 <ul>
-<li>In your <code>package.json</code> , there is a section called <code>&quot;scripts&quot;</code> This holds
-various commands to be performed on your project. Some common commands are:
+<li>In your <code>package.json</code> , there is a section called <code>"scripts"</code> This holds various commands to be performed on your project. Some common commands are:
 <code>start</code> , <code>build</code> , <code>test</code> e.t.c</li>
 </ul>
-
-<pre><code>&quot;scripts&quot;: {
+<pre><code>"scripts": {
  // some commands here
 },
 </code></pre>
-
 <blockquote>
-<p>A list of all commands can be found <a href="https://docs.npmjs.com/misc/scripts">here</a></p>
+<p>A list of all commands can be found <a href=https://docs.npmjs.com/misc/scripts>here</a></p>
 </blockquote>
-
 <ul>
 <li>Now add this to the script section</li>
 </ul>
-
-<pre><code>&quot;scripts&quot;: {
-  &quot;build&quot;: &quot;babel src -d public&quot;
+<pre><code>"scripts": {
+  "build": "babel src -d public"
 },
 </code></pre>
-
-<p>Adding the above to our <code>package.json</code> in the <code>scripts</code> section will take our
-code from <code>src</code>, run it through Babel, and output the file in <code>public</code> .</p>
-
+<p>Adding the above to our <code>package.json</code> in the <code>scripts</code> section will take our code from <code>src</code>, run it through Babel, and output the file in <code>public</code> .</p>
 <blockquote>
-<p>NB: Scripts are written as JSON objects, if you have multiple commands, seperate
-them with a comma.</p>
+<p>NB: Scripts are written as JSON objects, if you have multiple commands, seperate them with a comma.</p>
 </blockquote>
-
 <p>A common practice is to set up watching.</p>
-
 <blockquote>
-<p>Watching simply <strong>listens for file changes</strong> and <strong>automatically
-transpiles.Y</strong>ou don’t need to run the command everytime you make a change.</p>
+<p>Watching simply <strong>listens for file changes</strong> and <strong>automatically transpiles.Y</strong>ou don’t need to run the command everytime you make a change.</p>
 </blockquote>
-
 <p>edit your build script and add <code>-w</code> or <code>-watch</code></p>
-
-<pre><code>&quot;scripts&quot;: {
-&quot;build&quot;: &quot;babel src -d public -w&quot;
+<pre><code>"scripts": {
+"build": "babel src -d public -w"
 },
 </code></pre>
-
-<h3 id="let-s-test-babel">Let’s test Babel</h3>
-
+<h3 id=let-s-test-babel>Let’s test Babel</h3>
 <p>Let’s use the files from my last tutorial</p>
-
 <p>In <code>src/math.js</code> , add this</p>
-
-<pre><code>let sumAll = (a, b) =&gt; {return a + b;}
- let subtractAll = (a, b) =&gt; {return a - b;}
- let divideAll = (a, b) =&gt; {return a / b;}
- let multiplyAll = (a, b) =&gt; {return a * b;}
+<pre><code>let sumAll = (a, b) => {return a + b;}
+ let subtractAll = (a, b) => {return a - b;}
+ let divideAll = (a, b) => {return a / b;}
+ let multiplyAll = (a, b) => {return a * b;}
 
  export default {sumAll, subtractAll, divideAll, multiplyAll};
 </code></pre>
-
 <p>In <code>src/app.js</code> , add this</p>
-
 <pre><code>import math from './math.js';
 
  console.log(math.sumAll(50, 10));
@@ -610,205 +395,119 @@ transpiles.Y</strong>ou don’t need to run the command everytime you make a cha
  console.log(math.divideAll(50, 10));
 
 </code></pre>
-
 <p>To test this code, add <code>src/app.js</code> to the <code>index.html</code></p>
-
-<pre><code>&lt;script type=&quot;module&quot; src=&quot;../src/app.js&quot;&gt;&lt;/script&gt;
+<pre><code>&lt;script type="module" src="../src/app.js">&lt;/script>
 
 </code></pre>
-
 <p>Open the HTML and view console, you should get</p>
-
 <pre><code>60
  40
  500
  5
 </code></pre>
-
-<p>Now let&rsquo;s reset out script path to the transpiled JavaScript</p>
-
-<pre><code>&lt;script src=&quot;./app.js&quot;&gt;&lt;/script&gt;
+<p>Now let’s reset out script path to the transpiled JavaScript</p>
+<pre><code>&lt;script src="./app.js">&lt;/script>
 
 </code></pre>
-
 <p>To begin Babel transpiling, run:</p>
-
 <pre><code>npm run build
 </code></pre>
-
-<p><img src="https://cdn-images-1.medium.com/max/800/1*LAgfdweuunW2Mn2XZyrMIA.png" alt="" /></p>
-
+<p><img src=https://cdn-images-1.medium.com/max/800/1*LAgfdweuunW2Mn2XZyrMIA.png alt=""></p>
 <p>Now Babel has done its magic;</p>
-
-<p><code>public/app.js</code> should look like this now, It is now ES5 and cross-browser
-compatible</p>
-
-<script type="application/javascript" src="//gist.github.com/BolajiAyodeji/dec85f8287295630f90c78f208905691.js"></script>
-
+<p><code>public/app.js</code> should look like this now, It is now ES5 and cross-browser compatible</p>
+<script src=//gist.github.com/BolajiAyodeji/dec85f8287295630f90c78f208905691.js></script>
 <p>Also, <code>public/math.js</code> should look like this:</p>
-
-<script type="application/javascript" src="//gist.github.com/BolajiAyodeji/22f43cfec5604eca85353bfcab3961ff.js"></script>
-
+<script src=//gist.github.com/BolajiAyodeji/22f43cfec5604eca85353bfcab3961ff.js></script>
 <p>Now, If you run your HTML, you’d get this error in the console;</p>
-
 <pre><code>Uncaught ReferenceError: require is not defined
 </code></pre>
-
-<p>This is because in <code>app.js</code> our <code>import</code> statement is transpiled into ES5 and it
-becomes <code>require</code> ;</p>
-
-<pre><code>var math = _interopRequireWildcard(require(&quot;./math.js&quot;));
+<p>This is because in <code>app.js</code> our <code>import</code> statement is transpiled into ES5 and it becomes <code>require</code> ;</p>
+<pre><code>var math = _interopRequireWildcard(require("./math.js"));
 </code></pre>
-
 <p>Browsers don’t have the <strong>require</strong> method defined, but Node.js does.</p>
-
 <p>If you run <code>app.js</code> in node, you will get the right results;</p>
-
 <p>Open your CLI and run</p>
-
 <pre><code>node public/app.js
 </code></pre>
-
-<p><img src="https://cdn-images-1.medium.com/max/800/1*uZv33lB3pLT0csriGsMATg.png" alt="" /></p>
-
-<p>So basically using Babel for Vanilla JavaScript is an overkill, you would run
-into errors. Babel is mostly used with Node or frameworks like React and
-Angular.</p>
-
+<p><img src=https://cdn-images-1.medium.com/max/800/1*uZv33lB3pLT0csriGsMATg.png alt=""></p>
+<p>So basically using Babel for Vanilla JavaScript is an overkill, you would run into errors. Babel is mostly used with Node or frameworks like React and Angular.</p>
 <blockquote>
 <p>A great way to work with Babel in the browser is to use code bundlers such as
-<a href="http://browserify.org/">browserify</a>, <a href="https://webpack.js.org/">webpack</a>,
-<a href="https://parceljs.org/">parcel </a>etc.</p>
-
-<p>Module <strong>bundlers</strong> are used to bundle several modules into one or more
-optimized <strong>bundles</strong> for the browser. This lets you use <strong>require(‘modules’)</strong>
+<a href=http://browserify.org/ >browserify</a>, <a href=https://webpack.js.org/ >webpack</a>,
+<a href=https://parceljs.org/ >parcel </a>etc.</p>
+<p>Module <strong>bundlers</strong> are used to bundle several modules into one or more optimized <strong>bundles</strong> for the browser. This lets you use <strong>require(‘modules’)</strong>
 in the browser by bundling up all of your dependencies.</p>
 </blockquote>
-
-<h3 id="working-with-browserify">Working with Browserify</h3>
-
+<h3 id=working-with-browserify>Working with Browserify</h3>
 <pre><code>npm install -g browserify
 </code></pre>
-
-<p>Install the uniq module with <a href="https://npmjs.org/">npm</a>:</p>
-
+<p>Install the uniq module with <a href=https://npmjs.org/ >npm</a>:</p>
 <blockquote>
 <p>Uniq removes all duplicates from an array in place. More details
-<a href="https://www.npmjs.com/package/uniq">here</a></p>
+<a href=https://www.npmjs.com/package/uniq>here</a></p>
 </blockquote>
-
 <pre><code>npm install uniq
 </code></pre>
-
-<p>Now recursively bundle up all the required modules starting at <code>app.js</code> into a
-single file called <code>bundle.js</code> with the browserify command:</p>
-
+<p>Now recursively bundle up all the required modules starting at <code>app.js</code> into a single file called <code>bundle.js</code> with the browserify command:</p>
 <pre><code>browserify app.js -o bundle.js
 </code></pre>
-
 <p>Add to your HTML:</p>
-
-<pre><code>&lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+<pre><code>&lt;script src="bundle.js">&lt;/script>
 </code></pre>
-
-<h3 id="working-with-parcel">Working with Parcel</h3>
-
+<h3 id=working-with-parcel>Working with Parcel</h3>
 <blockquote>
-<p>Parcel is a web application bundler, differentiated by its developer experience.
-It offers blazing fast performance utilizing multicore processing, and requires
-zero configuration. <a href="https://parceljs.org/getting_started.html">source</a></p>
+<p>Parcel is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration. <a href=https://parceljs.org/getting_started.html>source</a></p>
 </blockquote>
-
 <p>To install:</p>
-
 <pre><code>npm install parcel-bundler --save-dev
 </code></pre>
-
-<p>Parcel can take any type of file as an entry point, but an HTML or JavaScript
-file is a good place to start.</p>
-
+<p>Parcel can take any type of file as an entry point, but an HTML or JavaScript file is a good place to start.</p>
 <p>Modify your scripts in <code>package.json</code></p>
-
 <pre><code>{
-  &quot;scripts&quot;: {
-    &quot;dev&quot;: &quot;parcel .src/index.html&quot;,
-    &quot;build&quot;: &quot;parcel build .src/index.html&quot;
+  "scripts": {
+    "dev": "parcel .src/index.html",
+    "build": "parcel build .src/index.html"
   }
 }
 </code></pre>
-
 <p>To run in development mode:</p>
-
-<p>Now open <a href="http://localhost:1234/">http://localhost:1234/</a> in your browser.
-Everything should log correctly now.</p>
-
+<p>Now open <a href=http://localhost:1234/ >http://localhost:1234/</a> in your browser. Everything should log correctly now.</p>
 <p>To build for production</p>
-
 <pre><code>npm run build
 </code></pre>
-
-<p>You’d get a new subfolder <code>dist</code> which contains your bundled files, here you
-won’t need <code>public</code> subfolder anymore, you can delete it.</p>
-
+<p>You’d get a new subfolder <code>dist</code> which contains your bundled files, here you won’t need <code>public</code> subfolder anymore, you can delete it.</p>
 <blockquote>
-<p>Read <a href="https://parceljs.org/getting_started.html">Parcel docs</a> for a complete and
-deep guide to all the features of Parcel.</p>
+<p>Read <a href=https://parceljs.org/getting_started.html>Parcel docs</a> for a complete and deep guide to all the features of Parcel.</p>
 </blockquote>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<p>Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a
-backwards compatible version of JavaScript in current and older browsers or
-environments.</p>
-
+<h3 id=conclusion>Conclusion</h3>
+<p>Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.</p>
 <p>Here are the main things Babel can do for you:</p>
-
 <ul>
 <li>Transform syntax</li>
 <li>Polyfill features that are missing in your target environment (through
-<a href="https://babeljs.io/docs/en/babel-polyfill">@babel/polyfill</a>)</li>
+<a href=https://babeljs.io/docs/en/babel-polyfill>@babel/polyfill</a>)</li>
 <li>Source code transformations (codemods)</li>
-<li>And more! (check out these <a href="https://babeljs.io/videos.html">videos</a> for
-inspiration)</li>
+<li>And more! (check out these <a href=https://babeljs.io/videos.html>videos</a> for inspiration)</li>
 </ul>
-
 <blockquote>
-<p>Please read <a href="https://babeljs.io/docs/en/">Babel docs</a> for a complete and deep guide to all the features of Babel.</p>
+<p>Please read <a href=https://babeljs.io/docs/en/ >Babel docs</a> for a complete and deep guide to all the features of Babel.</p>
 </blockquote>
-
-<p>A great way to work with Babel in the browser is to use to use code bundlers
-such as <a href="http://browserify.org/">browserify</a>,
-<a href="https://webpack.js.org/">webpack</a>, <a href="https://parceljs.org/">parcel </a>etc.</p>
-
-<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png" alt="thewebdev" /></p>
-
-<h1 id="subscribe-for-my-newsletter-here-https-eepurl-com-geccfl-and-get-notified-when-i-write-something-cool">Subscribe for my Newsletter <a href="https://eepurl.com/geCCfL">here</a> and get notified when I write something cool.</h1>
+<p>A great way to work with Babel in the browser is to use to use code bundlers such as <a href=http://browserify.org/ >browserify</a>,
+<a href=https://webpack.js.org/ >webpack</a>, <a href=https://parceljs.org/ >parcel </a>etc.</p>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/c_scale,w_100/v1547954566/fav-500.png alt=thewebdev></p>
+<h1 id=subscribe-for-my-newsletter-here-https-eepurl-com-geccfl-and-get-notified-when-i-write-something-cool>Subscribe for my Newsletter <a href=https://eepurl.com/geCCfL>here</a> and get notified when I write something cool.</h1>
 </article>
-  <footer class="post-footer">
-    
-    <ul class="post-tags">
-      
-      <li class="post-tag"><a href="/tags/javascript"><span class="tag">Javascript</span></a></li>
-      
-      <li class="post-tag"><a href="/tags/es6"><span class="tag">Es6</span></a></li>
-      
-      <li class="post-tag"><a href="/tags/babel"><span class="tag">Babel</span></a></li>
-      
-    </ul>
-    
-
-    <div class="sharing">
-      <div class="addthis_inline_share_toolbox"></div>
-
-
-
-
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-
-    </div>
-
-
-    <div id="disqus_thread"></div>
+<footer class=post-footer>
+<ul class=post-tags>
+<li class=post-tag><a href=/tags/javascript><span class=tag>Javascript</span></a></li>
+<li class=post-tag><a href=/tags/es6><span class=tag>Es6</span></a></li>
+<li class=post-tag><a href=/tags/babel><span class=tag>Babel</span></a></li>
+</ul>
+<div class=sharing>
+<div class=addthis_inline_share_toolbox></div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+</div>
+<div id=disqus_thread></div>
 <script>
 (function() { 
 var d = document, s = d.createElement('script');
@@ -817,33 +516,18 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-  </footer>
-</section>
-<footer class="footer">
-  <p>Copyright © 2018-2019</p>
-  <p>All articles are written by: <a href="https://github.com/bolajiayodeji" target="_blank" rel="noopener">Bolaji Ayodeji</a></p>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
 </footer>
-
-
-
-
-
+</section>
+<footer class=footer>
+<p>Copyright © 2018-2019</p>
+<p>All articles are written by: <a href=https://github.com/bolajiayodeji target=_blank rel=noopener>Bolaji Ayodeji</a></p>
+</footer>
 <amp-analytics type=googleanalytics>
-  <script type=application/json>
-    { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+<script type=application/json>
+{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
     : { "on" : "visible" , "request" : "pageview" } } }
-  </script>
+</script>
 </amp-analytics>
-
-<amp-install-serviceworker
-      src="/sw.js"
-      layout="nodisplay">
+<amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
-
-
-
-  </body>
-</html>

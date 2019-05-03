@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "hugo server -D",
-    "build": "hugo && npm run optimize:html",
+    "build": "hugo && npm run optimize:html && grunt lunr-index",
     "deploy": "npm run build && firebase deploy",
     "optimize:html": "./node_modules/.bin/html-minifier --input-dir ./public/ --output-dir ./public/ --file-ext html -c ./.html-minifier-config.json",
     "watch": "./node_modules/.bin/nodemon -e scss -w ./ -x npm run build",
