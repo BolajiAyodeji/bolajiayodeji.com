@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('./bootstrap.min.css');
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+::selection {
+  background: #63D1F4;
+}
+
+::-moz-selection {
+  background:
+    #ddd;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8c8a8a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #63D1F4;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.618;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  background: #20242b;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #63D1F4;
+  outline: none;
+  opacity: .9;
+}
+input[type=text] {
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+}
+input[type=text]:focus {
+  background-color: transparent;
+  color: #fff;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  padding-top: 591.44px / 1127.34px * 100%;
+  margin-top: 0.5rem;
+  border-radius: 10%;
+  border: 3px solid #63D1F4;
+  transition: all .5s ease-out
+}
+
+.logo:hover {
+  padding-top:
+    591.44px / 1127.34px * 100%;
+  border-radius: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3)
+}
+
+#results {
+  padding: 10px;
+}
