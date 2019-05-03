@@ -197,12 +197,6 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/tags/cheat-sheet/</loc>
     <lastmod>2019-02-18T13:22:14+24:00</lastmod>
     <priority>0</priority>
@@ -210,6 +204,12 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/git/</loc>
+    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
     <lastmod>2019-02-18T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
