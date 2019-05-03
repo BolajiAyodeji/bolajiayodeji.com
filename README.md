@@ -16,23 +16,22 @@ Syntax theme based on [Hugo Lamp Theme](https://github.com/huyb1991/hugo-lamp) w
 To run locally, you need to have [Hugo](https://gohugo.io/) setup first. Hugo installation guide can be found [here](https://gohugo.io/getting-started/installing) <br>
 
 
-After installing Hugo, clone this repository 
-```
-git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git
-```
-```
-cd bolajiayodeji.com
-```
-Install dependencies
-```
-npm install
-```
+After installing Hugo, clone this repository <br>
+`git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git && cd bolajiayodeji.com`
 
-Run this command to start local build `hugo server -D`, then open https://localhost:1313.
+Install dependencies <br>
+`npm install`
 
-## Modifying posts
+Start server <br>
+`npm run start`
+then open https://localhost:1313.
 
-Run this to build search index
+Build files and search index <br>
+`npm run build`
+
+## Deploying
 ```
-grunt lunr-index
+git add --all
+git commit -m "commit description"
+git push
 ```
