@@ -17,17 +17,25 @@ To run locally, you need to have [Hugo](https://gohugo.io/) setup first. Hugo in
 
 
 After installing Hugo, clone this repository <br>
-`git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git && cd bolajiayodeji.com`
+```
+git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git && cd bolajiayodeji.com
+```
 
 Install dependencies <br>
-`npm install`
+```
+npm install
+```
 
 Start server <br>
-`npm run start`
+```
+npm run start
+```
 then open https://localhost:1313.
 
 Build files and search index <br>
-`npm run build`
+```
+npm run build
+```
 
 ## Deploying
 ```
