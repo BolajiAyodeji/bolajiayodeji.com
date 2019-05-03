@@ -1,7 +1,7 @@
 {
-  "name": "hugo-lamp",
-  "version": "1.0.2",
-  "description": "Articles on Web Development. All written by Bolaji Ayodeji.",
+  "name": "bolajiayodeji.com",
+  "version": "2.0.0",
+  "description": "Articles on web and front-end development, written by Bolaji Ayodeji.",
   "main": "index.js",
   "scripts": {
     "start": "hugo server -D",
