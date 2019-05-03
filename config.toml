@@ -5,7 +5,7 @@ theme = "hugo-lamp"
 googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 
 [params]
-  titleName = "Hi, I'm BBolaji."
+  titleName = "Hi, I'm Bolaji."
   subtitle = "I write articles on web and frontend development."
   portfolio = "About Me →"
   author = "⚡️Bolaji Ayodeji⚡️"
