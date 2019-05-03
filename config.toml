@@ -1,11 +1,11 @@
 baseURL = "https://bolajiayodeji.com/"
 languageCode = "en-us"
-title = "⚡️Bolaji Ayodeji⚡️"
+title = "Bolaji Ayodeji"
 theme = "hugo-lamp"
 googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 
 [params]
-  titleName = "Hi, I'm Bolaji."
+  titleName = "Hi, I'm Bolaji Ayodeji."
   subtitle = "I write articles on web and frontend development."
   portfolio = "About Me →"
   author = "⚡️Bolaji Ayodeji⚡️"
