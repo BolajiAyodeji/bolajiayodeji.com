@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open source on ⚡️Bolaji Ayodeji⚡️</title>
+    <link>https://bolajiayodeji.com/tags/open-source/</link>
+    <description>Recent content in open source on ⚡️Bolaji Ayodeji⚡️</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 May 2019 13:22:14 +2400</lastBuildDate>
+    
+	<atom:link href="https://bolajiayodeji.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducing Google Season of Docs</title>
+      <link>https://bolajiayodeji.com/introducing-google-season-of-docs/</link>
+      <pubDate>Fri, 03 May 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/introducing-google-season-of-docs/</guid>
+      <description>Google believes that open source is good for everyone. By being open and freely available, it enables and encourages collaboration, development of technology and solving real-world problems.
+Over the years, Google has created a healthy ecosystem for the sustainability of open source for all via its several communities
+ Beyond the open source software we directly use and release at Google, we also work to support the sustainability of open source organizations and communities.</description>
+    </item>
+    
+  </channel>
+</rss>
