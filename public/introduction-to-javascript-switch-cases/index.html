@@ -1,39 +1,89 @@
 <!doctype html>
-<html ⚡ lang=en-us>
-<head>
-<meta charset=utf-8>
-<script async src=https://cdn.ampproject.org/v0.js></script>
-<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
-<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
-<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
-<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Introduction to JavaScript Switch Cases</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.This article will explain better with more practical examples to help you understand switch cases in depth.Prerequisites.Basic JavaScript knowledge Code editor Web Browser Your brain :)A switch statement can basically replace multiple if checks in JavaScript.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,node,pwafire,hugo">
-<meta name=twitter:card content=summary>
-<meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Introduction to JavaScript Switch Cases">
-<meta name=twitter:description content="In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.This article will explain better with more practical examples to help you understand switch cases in depth.Prerequisites.Basic JavaScript knowledge Code editor Web Browser Your brain :)A switch statement can basically replace multiple if checks in JavaScript.">
-<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.4">
-<link rel=canonical href=https://bolajiayodeji.com/introduction-to-javascript-switch-cases/ >
-<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
-<meta name=renderer content=webkit>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name=format-detection content="telephone=no,email=no,adress=no">
-<meta name=robots content=index,follow>
-<meta name=referrer content=origin-when-cross-origin>
-<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
-<meta name=msvalidate.01 content=bing_site_verification_code>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<link rel=manifest href=/manifest.json>
-<meta name=theme-color content=#20242b>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    
+    
+
+    
+    <title>Introduction to JavaScript Switch Cases</title>
+
+    
+    
+
+
+
+
+
+
+
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
+PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.
+This article will explain better with more practical examples to help you understand switch cases in depth.
+Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)  A switch statement can basically replace multiple if checks in JavaScript.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,node,pwafire,hugo">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Bolaji Ayodeji" />
+<meta name="twitter:title" content="Introduction to JavaScript Switch Cases" />
+<meta name="twitter:description" content="In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.
+PS: This article is not for those without any JavaScript knowledge, it is expected that you&amp;rsquo;re taking some tutorial or course and you just got to the switch cases section.
+This article will explain better with more practical examples to help you understand switch cases in depth.
+Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)  A switch statement can basically replace multiple if checks in JavaScript." />
+<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.4">
+
+
+<link rel="canonical" href="https://bolajiayodeji.com/introduction-to-javascript-switch-cases/">
+<link rel="alternative" href="/index.xml" title="Bolaji Ayodeji" type="application/atom+xml">
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+
+<meta name="msvalidate.01" content="bing_site_verification_code" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+
+
+<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120"
+  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#20242b" />
+
+
 <style amp-boilerplate>
-body {
+  body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -90,17 +140,18 @@ body {
     }
   }
 </style><noscript>
-<style amp-boilerplate>
-body {
+  <style amp-boilerplate>
+    body {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       animation: none
     }
-</style>
+  </style>
 </noscript>
 <style amp-custom>
-html {
+   
+  html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1426,62 +1477,104 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     }
   }
 </style>
-</head>
-<body>
-<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
-<ul class=sidebar-list>
-<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-</ul>
+
+  </head>
+  <body>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
+    
+    
+    
+    
+      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/search">Search 🔍</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+    
+  </ul>
 </amp-sidebar>
-<header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<p>
-<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
-<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</p>
-<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
-<span class="icon icon-menu"></span>
-</button>
-<nav class=menu>
-<ul class=menu-list>
-<li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
-<li class=menu-item>
-<a href=/search>Search 🔍</a></li>
-<li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
-</ul>
-</nav>
+
+    
+<header class="header">
+  <p class="subtitle">Hi, I&#39;m Bolaji</p>
+  <p class="subtitle">I write articles on web and frontend development.</p>
+  <p class="subtitle"><a href="/portfolio">About Me →</a></p>
+  <p>
+    <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </p>
+
+  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+      <li
+        class="menu-item  is-active">
+        <a href="/">Home 🏠</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/search">Search 🔍</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+      
+      <li>
+        <div id="codefund"></div>
+      </li>
+    </ul>
+
+  </nav>
+
 </header>
+
 <section class="main post-detail">
-<header class=post-header>
-<h1 class=post-title>Introduction to JavaScript Switch Cases</h1>
-<p class=entry-meta><span class=entry-time>Jan 4, 2019</span> 4 min read
-</p>
-</header>
-<article class=post-content>
-<p>In this short article, I will introduce you to JavaScript switch cases and how to use them with practical examples.</p>
-<p><em>PS: This article is not for those without any JavaScript knowledge, it is expected that you’re taking some tutorial or course and you just got to the switch cases section.</em></p>
-<p>This article will explain better with more practical examples to help you understand switch cases in depth.</p>
-<h3 id=prerequisites>Prerequisites.</h3>
+  <header class="post-header">
+    <h1 class="post-title">Introduction to JavaScript Switch Cases</h1>
+    <p class="entry-meta"><span class="entry-time">Jan 4, 2019</span> 4 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p>In this short article, I will introduce you to JavaScript switch cases and how
+to use them with practical examples.</p>
+
+<p><em>PS: This article is not for those without any JavaScript knowledge, it is
+expected that you&rsquo;re taking some tutorial or course and you just got to the
+switch cases section.</em></p>
+
+<p>This article will explain better with more practical examples to help you
+understand switch cases in depth.</p>
+
+<h3 id="prerequisites">Prerequisites.</h3>
+
 <ul>
 <li>Basic JavaScript knowledge</li>
 <li>Code editor</li>
 <li>Web Browser</li>
 <li>Your brain :)</li>
 </ul>
+
 <p>A <code>switch</code> statement can basically replace multiple <code>if</code> checks in JavaScript.</p>
+
 <p>It gives a more descriptive way to compare a value with multiple variants.</p>
-<h3 id=the-switch-syntax><strong>The Switch Syntax</strong></h3>
+
+<h3 id="the-switch-syntax"><strong>The Switch Syntax</strong></h3>
+
 <p>The <code>switch</code> has one or more <code>case</code> blocks and an optional default case.</p>
+
 <pre><code>switch(x) {
   case 'value1':  // if (x === 'value1')
     //code here
@@ -1496,17 +1589,24 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     [break]
 }
 </code></pre>
+
 <ul>
 <li>The value of <code>x</code> is checked for strict equality to the value from the first
 <code>case</code> (that is, <code>value1</code>) then to the second (<code>value2</code>) and so on.</li>
-<li>If the equality is found, <code>switch</code> starts to execute the code starting from the corresponding <code>case</code>, until the nearest <code>break</code>(or until the end of <code>switch</code>).</li>
+<li>If the equality is found, <code>switch</code> starts to execute the code starting from the
+corresponding <code>case</code>, until the nearest <code>break</code>(or until the end of <code>switch</code>).</li>
 <li>If no case is matched then the <code>default</code> code is executed (if it exists).</li>
 </ul>
-<h3 id=some-few-real-examples><strong>Some few real examples</strong></h3>
+
+<h3 id="some-few-real-examples"><strong>Some few real examples</strong></h3>
+
 <ul>
-<li><strong>Simple Play & Pause Switch</strong></li>
+<li><strong>Simple Play &amp; Pause Switch</strong></li>
 </ul>
-<p>The <code>switch</code> statement can be used for multiple branches based on a number or string:</p>
+
+<p>The <code>switch</code> statement can be used for multiple branches based on a number or
+string:</p>
+
 <pre><code>switch (movie) {
   case 'play':
     playMovie();
@@ -1518,7 +1618,11 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     doNothing();
 }
 </code></pre>
-<p>If you don’t add a <code>break</code> statement, the execution will “fall through” to the next level. It’s essential that you deliberately label the fall through with a comment if you really meant it to aid debugging:</p>
+
+<p>If you don’t add a <code>break</code> statement, the execution will &ldquo;fall through&rdquo; to the
+next level. It&rsquo;s essential that you deliberately label the fall through with a
+comment if you really meant it to aid debugging:</p>
+
 <pre><code>switch (movie) {
   case 'play': // fallthrough
   case 'pause':
@@ -1528,8 +1632,11 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     doNothing();
 }
 </code></pre>
-<p>The default clause is optional. You can have expressions in both the switch part and the cases if you like; comparisons take place between the two using the
+
+<p>The default clause is optional. You can have expressions in both the switch part
+and the cases if you like; comparisons take place between the two using the
 <code>===</code> operator:</p>
+
 <pre><code>switch (3 + 7) {
   case 5 + 5:
     correct();
@@ -1538,9 +1645,11 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     neverhappens();
 }
 </code></pre>
+
 <ul>
 <li><strong>Simple Maths Calc Switch</strong></li>
 </ul>
+
 <pre><code>let average = 2 + 6;
 
 switch (average) {
@@ -1554,15 +1663,21 @@ switch (average) {
     alert( 'Too large' );
     break;
   default:
-    alert( "Incorrect values!" );
+    alert( &quot;Incorrect values!&quot; );
 }
 </code></pre>
-<p>Here the <code>switch</code> starts to compare <code>average</code>from the first <code>case</code> variant that is <code>4</code>. The match fails.</p>
+
+<p>Here the <code>switch</code> starts to compare <code>average</code>from the first <code>case</code> variant that
+is <code>4</code>. The match fails.</p>
+
 <p>Then <code>8</code>. That’s a match, so the execution starts from <code>case 8</code>until the nearest
 <code>break</code>.</p>
+
 <p>If there is no <strong><code>break</code></strong> then the execution continues with the next
 <strong><code>case</code></strong> without any checks.</p>
+
 <p>Here is an example without <code>break</code>:</p>
+
 <pre><code>let average = 2 + 6;
 
 switch (average) {
@@ -1573,145 +1688,223 @@ switch (average) {
   case 10:
     alert( 'Too big' );
   default:
-    alert( "Incorrect values!" );
+    alert( &quot;Incorrect values!&quot; );
 }
 </code></pre>
+
 <p>In the example above we’ll see sequential execution of three <code>alerts</code>:</p>
+
 <pre><code>alert( 'Exactly!' );
 alert( 'Too big' );
-alert( "Incorrect values!" );
+alert( &quot;Incorrect values!&quot; );
 </code></pre>
+
 <ul>
 <li><strong>getDay() method switch case</strong></li>
 </ul>
+
 <p>The getDay() method returns the weekday as a number between 0 and 6.</p>
+
 <p>(Sunday=0, Monday=1, Tuesday=2 , Wednesday=3, Thursday=4, Friday=5, Saturday=6)</p>
+
 <p>This example uses the weekday number to calculate the weekday name:</p>
+
 <pre><code>switch (new Date().getDay()) {
   case 0:
-    day = "Sunday";
+    day = &quot;Sunday&quot;;
     break;
   case 1:
-    day = "Monday";
+    day = &quot;Monday&quot;;
     break;
   case 2:
-     day = "Tuesday";
+     day = &quot;Tuesday&quot;;
     break;
   case 3:
-    day = "Wednesday";
+    day = &quot;Wednesday&quot;;
     break;
   case 4:
-    day = "Thursday";
+    day = &quot;Thursday&quot;;
     break;
   case 5:
-    day = "Friday";
+    day = &quot;Friday&quot;;
     break;
   case 6:
-    day = "Saturday";
+    day = &quot;Saturday&quot;;
 }
 </code></pre>
+
 <p>The result of day will be the current weekday in day format</p>
+
 <p>PS: This would change according to when you’re reading this article</p>
+
 <p>I wrote this artcle on 01/04/2019 which is a Friday, so the result would be:</p>
+
 <pre><code>Friday
 </code></pre>
-<h3 id=the-default-keyword>The default Keyword</h3>
-<p>The <strong>default</strong> keyword specifies the code to run if there is no case match, more like an else statement:</p>
+
+<h3 id="the-default-keyword">The default Keyword</h3>
+
+<p>The <strong>default</strong> keyword specifies the code to run if there is no case match,
+more like an else statement:</p>
+
 <pre><code>switch (new Date().getDay()) {
   case 6:
-    text = "Today is Saturday";
+    text = &quot;Today is Saturday&quot;;
     break; 
   case 0:
-    text = "Today is Sunday";
+    text = &quot;Today is Sunday&quot;;
     break; 
   default: 
-    text = "Its not weekend yet!";
+    text = &quot;Its not weekend yet!&quot;;
 }
 </code></pre>
+
 <p>The result of text will be:</p>
+
 <pre><code>Its not weekend yet!
 </code></pre>
+
 <p>The <strong>default</strong> case does not have to be the last case in a switch block:</p>
+
 <pre><code>switch (new Date().getDay()) {
   default: 
-    text = "Its not weekend yet!";
+    text = &quot;Its not weekend yet!&quot;;
     break;
   case 6:
-    text = "Today is Saturday";
+    text = &quot;Today is Saturday&quot;;
     break; 
   case 0:
-    text = "Today is Sunday";
+    text = &quot;Today is Sunday&quot;;
 }
 </code></pre>
+
 <blockquote>
-<p><strong>If default is not the last case in the switch block, remember to end the default case with a break.</strong></p>
+<p><strong>If default is not the last case in the switch block, remember to end the
+default case with a break.</strong></p>
 </blockquote>
-<h3 id=conclusion><strong>Conclusion</strong></h3>
+
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+
 <p>There are so many practical examples of switch cases, you can head
-<a href=https://javascript.info/switch>here </a>to learn more about switch cases.</p>
+<a href="https://javascript.info/switch">here </a>to learn more about switch cases.</p>
+
 <p>If this article helped you, show it by sharing!!</p>
+
 <p>Thanks for reading!</p>
+
 <p>You can follow me on twitter @iambolajiayo</p>
+
 <p>Check out some of my recent projects on
-<a href=https://github.com/bolajiayodeji>GitHub</a></p>
+<a href="https://github.com/bolajiayodeji">GitHub</a></p>
 </article>
-<footer class=post-footer>
-<ul class=post-tags>
-<li class=post-tag><a href=/tags/javascript><span class=tag>Javascript</span></a></li>
-<li class=post-tag><a href=/tags/es6><span class=tag>Es6</span></a></li>
-<li class=post-tag><a href=/tags/developers><span class=tag>Developers</span></a></li>
-</ul>
-<div id=newsletter>
-<div class=container>
-<div class=description>Get notified when I write something cool.</div>
-<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
-<div class=email-group>
-<label for=email class=sr-only>Email</label>
-<input type=email id=email name=email placeholder=" Your Email Address... " required>
-<button class=button type=submit>Subscribe 📩</button>
-</div>
-</form>
-</div>
-</div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
-<div id=disqus_thread></div>
-<script async custom-element=amp-iframe>
-(function () { 
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/javascript"><span class="tag">Javascript</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/es6"><span class="tag">Es6</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/developers"><span class="tag">Developers</span></a></li>
+      
+    </ul>
+    
+
+    <div id="newsletter">
+      <div class="container">
+        <div class="description"> Get notified when I write something cool. </div>
+
+        <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+
+          <div class="email-group">
+            <label for="email" class="sr-only"> Email </label>
+            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
+            <button class="button" type="submit"> Subscribe 📩</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sharing">
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+      
+
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
         var d = document, s = d.createElement('script');
         s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-</footer>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+  </footer>
 </section>
-<footer class=footer>
-<div id=codefund></div>
-<p>Copyright © 2018-2019</p>
-<ul class=social-list>
-<li class=social-item>
-<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
-</li>
-<li class=social-item>
-<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
-</li>
+<footer class="footer">
+  <div id="codefund"></div>
+
+  <p>Copyright © 2018-2019</p>
+  <ul class="social-list">
+  
+
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
 </ul>
+
 </footer>
+
+
+
+
+
 <amp-analytics type=googleanalytics>
-<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
-<amp-install-serviceworker src=/sw.js layout=nodisplay>
-</amp-install-serviceworker>
+  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
+
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  
+
+
+  </body>
+</html>
