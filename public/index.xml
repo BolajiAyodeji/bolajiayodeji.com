@@ -6,10 +6,20 @@
     <description>Recent content on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 May 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introducing JAMstack: The Modern Web Architecture</title>
+      <link>https://bolajiayodeji.com/introducing-jamstack-the-modern-web-architecture/</link>
+      <pubDate>Wed, 15 May 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/introducing-jamstack-the-modern-web-architecture/</guid>
+      <description>I’m sure you’ve come across the word JAMstack before but you probably didn’t understand what it really meant. I’ve seen this word before also but didn’t care to check it out until Egwuenu Gift organized JAMstack Lagos, then I realised that I’ve been building JAMstack applications already.
+JAMstack is a Modern web development architecture, it is not a programming language or any form of tool. It is more of a web development practice aimed towards enforcing better performance, higher security, lower cost of scaling, and better developer experience.</description>
+    </item>
     
     <item>
       <title>Introducing Google Season of Docs</title>

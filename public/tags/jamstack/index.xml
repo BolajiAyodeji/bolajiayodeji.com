@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web on Bolaji Ayodeji</title>
-    <link>https://bolajiayodeji.com/tags/web/</link>
-    <description>Recent content in web on Bolaji Ayodeji</description>
+    <title>jamstack on Bolaji Ayodeji</title>
+    <link>https://bolajiayodeji.com/tags/jamstack/</link>
+    <description>Recent content in jamstack on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 13:22:14 +2400</lastBuildDate>
     
-	<atom:link href="https://bolajiayodeji.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/jamstack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://bolajiayodeji.com/introducing-jamstack-the-modern-web-architecture/</guid>
       <description>I’m sure you’ve come across the word JAMstack before but you probably didn’t understand what it really meant. I’ve seen this word before also but didn’t care to check it out until Egwuenu Gift organized JAMstack Lagos, then I realised that I’ve been building JAMstack applications already.
 JAMstack is a Modern web development architecture, it is not a programming language or any form of tool. It is more of a web development practice aimed towards enforcing better performance, higher security, lower cost of scaling, and better developer experience.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Web Accessibility</title>
-      <link>https://bolajiayodeji.com/introduction-to-web-accessibility/</link>
-      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/introduction-to-web-accessibility/</guid>
-      <description>As developers, it’s easy to assume that all users can see and use a keyboard, mouse or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :(
-Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer.</description>
     </item>
     
   </channel>

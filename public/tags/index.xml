@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 May 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jamstack</title>
+      <link>https://bolajiayodeji.com/tags/jamstack/</link>
+      <pubDate>Wed, 15 May 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/jamstack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://bolajiayodeji.com/tags/javascript/</link>
+      <pubDate>Wed, 15 May 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://bolajiayodeji.com/tags/web/</link>
+      <pubDate>Wed, 15 May 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/web/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>google</title>
@@ -48,15 +75,6 @@
     </item>
     
     <item>
-      <title>javascript</title>
-      <link>https://bolajiayodeji.com/tags/javascript/</link>
-      <pubDate>Sat, 27 Apr 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>objects</title>
       <link>https://bolajiayodeji.com/tags/objects/</link>
       <pubDate>Sat, 27 Apr 2019 13:22:14 +2400</pubDate>
@@ -84,16 +102,7 @@
     </item>
     
     <item>
-      <title>web</title>
-      <link>https://bolajiayodeji.com/tags/web/</link>
-      <pubDate>Fri, 05 Apr 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PWA</title>
+      <title>pwa</title>
       <link>https://bolajiayodeji.com/tags/pwa/</link>
       <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
       
