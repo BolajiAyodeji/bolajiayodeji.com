@@ -9,7 +9,6 @@ tags: ["jamstack", "javascript", "web"]
  
 
 ![](https://cdn-images-1.medium.com/max/720/1*xYSNCnp6eh2ZDpwQtYL6qg.jpeg)
-<span class="figcaption_hack"><img src=”Google”></span>
 
 I’m sure you’ve come across the word JAMstack before but you probably didn’t
 understand what it really meant. I’ve seen this word before also but didn’t care
@@ -52,11 +51,11 @@ technologies with the aim of achieving a particular goal.
 
 JAMstack here stands for
 
-JavaScript
+**JavaScript**
 
-API
+**API**
 
-Markup
+**Markup**
 
 > stacks generally is just a combination of several technologies used to create a
 > web or mobile application. So JAMstack is the combination of JavaScript, APIs
@@ -119,7 +118,7 @@ via CDNs.
 ### JAMstack Best Practices
 
 * Use CDN to distribute your files rather than servers 
-* Installing and contributing to yr project should be easy and less complex, use
+* Installing and contributing to your project should be easy and less complex, use
 tools like npm and Git to ensure standard and faster setup.
 * Use build tools and make your project compatible for all browsers (e.g Babel,
 Browserify, Webpack e.t.c)
