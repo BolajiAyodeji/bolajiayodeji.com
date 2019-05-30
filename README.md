@@ -17,9 +17,9 @@ To run locally, you need to have [Hugo](https://gohugo.io/) setup first.
 Hugo installation guide can be found [here](https://gohugo.io/getting-started/installing) <br>
 
 
-After installing Hugo, clone this repository <br>
+After installing Hugo,  Fork and clone the forked repository <br>
 ```
-git clone https://github.com/BolajiAyodeji/bolajiayodeji.com.git && cd bolajiayodeji.com
+git clone https://github.com/<yourUsername>/bolajiayodeji.com.git && cd bolajiayodeji.com
 ```
 
 Install dependencies <br>
