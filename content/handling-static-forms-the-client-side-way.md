@@ -107,10 +107,10 @@ is shown the Formspree “Thank You” page. You can provide an alternative URL 
 that page like so: `<input type=”hidden” name=”_next” value=”/thanks.html" />`
 
 ![](https://cdn-images-1.medium.com/max/800/1*M2O2tR08URl1I2i5bVGU5Q.png)
-<span class="figcaption_hack"> >formspree default success page</span>
+<span class="figcaption_hack"> > formspree default success page</span>
 
 ![](https://cdn-images-1.medium.com/max/800/1*nLA5m3_yjx4mmmJAmuu8Yg.png)
-<span class="figcaption_hack"> >custom success page I built for a client.</span>
+<span class="figcaption_hack"> > custom success page I built for a client.</span>
 
 * We added a value attribute to the send button [**value=”Send”**]
 
