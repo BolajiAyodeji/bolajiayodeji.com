@@ -24,18 +24,6 @@ Traditionally, forms are managed with the help of a server (also known as server
     </item>
     
     <item>
-      <title>Handling Static Forms - The Client-side Way</title>
-      <link>https://bolajiayodeji.com/handling-static-forms-the-client-side-way/</link>
-      <pubDate>Wed, 05 Jun 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/handling-static-forms-the-client-side-way/</guid>
-      <description>Forms are interactive elements used to get input from the user for further processing.
-
-Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.c
-Traditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.</description>
-    </item>
-    
-    <item>
       <title>Getting Started With Hugo and Deploying to Netlify</title>
       <link>https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/</link>
       <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
