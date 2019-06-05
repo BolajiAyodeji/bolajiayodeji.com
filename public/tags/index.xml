@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2019 13:22:14 +2400</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>forms</title>
+      <link>https://bolajiayodeji.com/tags/forms/</link>
+      <pubDate>Wed, 05 Jun 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/forms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>formspree</title>
+      <link>https://bolajiayodeji.com/tags/formspree/</link>
+      <pubDate>Wed, 05 Jun 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/formspree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>netlify</title>
+      <link>https://bolajiayodeji.com/tags/netlify/</link>
+      <pubDate>Wed, 05 Jun 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/netlify/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>jamstack</title>
@@ -102,7 +129,7 @@
     </item>
     
     <item>
-      <title>pwa</title>
+      <title>PWA</title>
       <link>https://bolajiayodeji.com/tags/pwa/</link>
       <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
       
@@ -165,29 +192,20 @@
     </item>
     
     <item>
-      <title>netlify</title>
-      <link>https://bolajiayodeji.com/tags/netlify/</link>
-      <pubDate>Mon, 18 Mar 2019 13:50:26 +0100</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/netlify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://bolajiayodeji.com/tags/github/</link>
-      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>developers</title>
       <link>https://bolajiayodeji.com/tags/developers/</link>
       <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://bolajiayodeji.com/tags/github/</link>
+      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/github/</guid>
       <description></description>
     </item>
     
@@ -219,6 +237,15 @@
     </item>
     
     <item>
+      <title>Version Control</title>
+      <link>https://bolajiayodeji.com/tags/version-control/</link>
+      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>cheat sheet</title>
       <link>https://bolajiayodeji.com/tags/cheat-sheet/</link>
       <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
@@ -233,15 +260,6 @@
       <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>version  control</title>
-      <link>https://bolajiayodeji.com/tags/version-control/</link>
-      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/version-control/</guid>
       <description></description>
     </item>
     
