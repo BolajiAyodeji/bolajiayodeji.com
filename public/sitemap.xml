@@ -185,18 +185,18 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/github/</loc>
-    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/github-student-developer-pack-demystified/</loc>
     <lastmod>2019-03-04T13:22:14+24:00</lastmod>
   </url>
   
   <url>
     <loc>https://bolajiayodeji.com/tags/developers/</loc>
+    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/github/</loc>
     <lastmod>2019-03-04T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
@@ -230,6 +230,12 @@
   </url>
   
   <url>
+    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
+    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bolajiayodeji.com/tags/cheat-sheet/</loc>
     <lastmod>2019-02-18T13:22:14+24:00</lastmod>
     <priority>0</priority>
@@ -237,12 +243,6 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/git/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
     <lastmod>2019-02-18T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
