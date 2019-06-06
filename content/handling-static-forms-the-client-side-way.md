@@ -36,7 +36,7 @@ site? There should be an easier way of doing this client side right?
 
 In this article, I’ll introduce you to two methods of handling form data client
 side in static sites. There are other methods but I’ve used these two and
-considered them to be the best and easiest (no hard feelings :)
+considered them to be the best and easiest. (no hard feelings :) )
 
 NO hectic configurations, NO servers, NO serious stuff, just build your form, do
 some little tweaks, the user submits and bingo it heads straight to your
@@ -63,14 +63,14 @@ Now, let’s get started!!
 ![](https://cdn-images-1.medium.com/max/800/0*7DZwsHAjwcTxTzfR)
 
 [Formspree](http://formspree.io) provides functional HTML forms via their
-platform with no PHP or JavaScript. Just send your form to their URL and they’ll
-forward it to your email. No PHP, Javascript or sign up required — perfect for
+platform with no PHP or JavaScript. Send your form to their URL and it'll be forwarded to your email.
+No PHP, Javascript or sign up required — perfect for
 static sites!
 
 Wait!, wait!!, wait!!! it’s [Open
 Sourced](https://github.com/formspree/formspree) too
 
-#### Getting Started
+#### Form handling with Formspree
 
 * Build your form, [we’ve done that
 already](https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010) 
@@ -86,7 +86,7 @@ already](https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010)
         <input type="submit" value="Send">
     </form>
 
-Now let’s go over the new stuff I added above.
+Now let’s go over the new stuff added above.
 
 * We changed the form’s action-attribute to `https://formspree.io/you@email.com`
 [replace [your@email.com](mailto:your@email.com) with your own email.] This is
@@ -96,7 +96,7 @@ acting as a third party here.
 each field so we can grab the data and send to formspree.
 
 — For Email address, I added a **_replyto attribute** (This just mean,
-you’ll be able to reply back to the user who originally submitted via email)
+you’ll be able to quickly reply to the user who originally submitted via email)
 
 — I’ve added a **_subject** attribute. This value is used for the email’s
 subject so that you can quickly reply to submissions without having to edit the
@@ -199,7 +199,7 @@ A star would make me happy! :)
 [Netlify](https://www.netlify.com/) offers form handling for sites deployed on
 their platform.
 
-#### Getting started
+#### Form handling with Netlify
 
 * Create an account on Netlify and deploy your site there. 
 
@@ -210,7 +210,7 @@ Branches, and more!
 
 {{< youtube qAUX2A-W4Bc >}}
 
-* Now that you have deployed your site, let’s create the FORM again
+* Now that you have deployed your site, let’s create the form again
 
 ```
     <form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">

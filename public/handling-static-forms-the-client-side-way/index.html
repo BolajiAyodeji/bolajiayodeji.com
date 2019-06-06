@@ -1476,7 +1476,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p>Traditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.</p>
 <p>When you’re building a simple form where you’re only receiving data from the user and not processing (i.e contact form) the goal is to get the data from the form and send to your company support email (e.g info@…, support@…)</p>
 <p>Using a server here is not ideal and is only an overkill, a very common way of doing this is via <a href=https://github.com/PHPMailer/PHPMailer>PHPMailer</a> ( The classic email sending library for PHP). PHPMailer is used with PHP and requires a lot of boring server configurations. What if you’re just building a static site? There should be an easier way of doing this client side right?</p>
-<p>In this article, I’ll introduce you to two methods of handling form data client side in static sites. There are other methods but I’ve used these two and considered them to be the best and easiest (no hard feelings :)</p>
+<p>In this article, I’ll introduce you to two methods of handling form data client side in static sites. There are other methods but I’ve used these two and considered them to be the best and easiest. (no hard feelings :) )</p>
 <p>NO hectic configurations, NO servers, NO serious stuff, just build your form, do some little tweaks, the user submits and bingo it heads straight to your designated email. :)</p>
 <h3 id=starter-form>STARTER FORM</h3>
 <p>For the purpose of this article, I’ve built a basic form with HTML5 and Bootstrap 4, you can fork it from the <a href=https://codepen.io/iambolajiayo/pen/MdGdex>Codepen below.</a></p>
@@ -1488,9 +1488,9 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <h3 id=method-one>METHOD ONE</h3>
 <p><br></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/0*7DZwsHAjwcTxTzfR alt=""></p>
-<p><a href=http://formspree.io>Formspree</a> provides functional HTML forms via their platform with no PHP or JavaScript. Just send your form to their URL and they’ll forward it to your email. No PHP, Javascript or sign up required — perfect for static sites!</p>
+<p><a href=http://formspree.io>Formspree</a> provides functional HTML forms via their platform with no PHP or JavaScript. Send your form to their URL and it’ll be forwarded to your email. No PHP, Javascript or sign up required — perfect for static sites!</p>
 <p>Wait!, wait!!, wait!!! it’s <a href=https://github.com/formspree/formspree>Open Sourced</a> too</p>
-<h4 id=getting-started>Getting Started</h4>
+<h4 id=form-handling-with-formspree>Form handling with Formspree</h4>
 <ul>
 <li>Build your form, <a href="https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010">we’ve done that already</a></li>
 </ul>
@@ -1504,13 +1504,13 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     &lt;input type="submit" value="Send">
 &lt;/form>
 </code></pre>
-<p>Now let’s go over the new stuff I added above.</p>
+<p>Now let’s go over the new stuff added above.</p>
 <ul>
 <li>We changed the form’s action-attribute to <code>https://formspree.io/you@email.com</code>
 [replace <a href=mailto:your@email.com>your@email.com</a> with your own email.] This is simply sending your form data to formspree then to your email. Formspree is acting as a third party here.</li>
 <li>I’ve added some name attributes to the input fields. This is just configuring each field so we can grab the data and send to formspree.</li>
 </ul>
-<p>— For Email address, I added a <strong>_replyto attribute</strong> (This just mean, you’ll be able to reply back to the user who originally submitted via email)</p>
+<p>— For Email address, I added a <strong>_replyto attribute</strong> (This just mean, you’ll be able to quickly reply to the user who originally submitted via email)</p>
 <p>— I’ve added a <strong>_subject</strong> attribute. This value is used for the email’s subject so that you can quickly reply to submissions without having to edit the subject line each time.</p>
 <p>— I’ve added a <strong>_next</strong> attribute. By default, after submitting a form the user is shown the Formspree “Thank You” page. You can provide an alternative URL for that page like so: <code>&lt;input type=”hidden” name=”_next” value=”/thanks.html" /></code></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*M2O2tR08URl1I2i5bVGU5Q.png alt="">
@@ -1575,7 +1575,7 @@ http.post('https://formspree.io/FORM_ID', data,
 <p><br></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*XvD7ANv0nt6zkk6jcPJZLg.png alt=""></p>
 <p><a href=https://www.netlify.com/ >Netlify</a> offers form handling for sites deployed on their platform.</p>
-<h4 id=getting-started-1>Getting started</h4>
+<h4 id=form-handling-with-netlify>Form handling with Netlify</h4>
 <ul>
 <li>Create an account on Netlify and deploy your site there.</li>
 </ul>
@@ -1587,7 +1587,7 @@ below if you don’t know what Netlify is. Learn about all of the awesome featur
 <iframe src=//www.youtube.com/embed/qAUX2A-W4Bc style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 <ul>
-<li>Now that you have deployed your site, let’s create the FORM again</li>
+<li>Now that you have deployed your site, let’s create the form again</li>
 </ul>
 <pre><code>    &lt;form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">
         &lt;input type="text" name="name">
