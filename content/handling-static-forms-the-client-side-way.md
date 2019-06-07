@@ -36,7 +36,7 @@ site? There should be an easier way of doing this client side right?
 
 In this article, I’ll introduce you to two methods of handling form data client
 side in static sites. There are other methods but I’ve used these two and
-considered them to be the best and easiest. (no hard feelings :) )
+considered them to be the best and easiest (no hard feelings :) ).
 
 NO hectic configurations, NO servers, NO serious stuff, just build your form, do
 some little tweaks, the user submits and bingo it heads straight to your
