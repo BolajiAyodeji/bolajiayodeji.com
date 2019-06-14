@@ -1494,17 +1494,15 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <h3 id=tostring>toString()</h3>
 <p>The JavaScript method <code>toString()</code> converts an array to a string separated by a comma.</p>
 <pre><code>let colors = ['green', 'yellow', 'blue'];
-colors.toString();
 
-console.log(colors); // "green,yellow,blue"
+console.log(colors.toString()); // green,yellow,blue
 </code></pre>
 <h3 id=join>join()</h3>
 <p>The JavaScript <code>join()</code> method combines all array elements into a string.</p>
 <p>It is similar to <code>toString()</code> method, but here you can specify the separator instead of the default comma.</p>
 <pre><code>let colors = ['green', 'yellow', 'blue'];
-colors.join('-');
 
-console.log(colors); // "green-yellow-blue"
+console.log(colors.join('-')); // green-yellow-blue
 </code></pre>
 <h3 id=concat>concat</h3>
 <p>This method combines two arrays together or add more items to an array and then return a new array.</p>

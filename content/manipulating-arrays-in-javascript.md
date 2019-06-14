@@ -52,9 +52,8 @@ The JavaScript method `toString()` converts an array to a string separated by a
 comma.
 
     let colors = ['green', 'yellow', 'blue'];
-    colors.toString();
-
-    console.log(colors); // "green,yellow,blue"
+ 
+    console.log(colors.toString()); // green,yellow,blue
 
 ### join()
 
@@ -64,9 +63,8 @@ It is similar to `toString()` method, but here you can specify the separator
 instead of the default comma.
 
     let colors = ['green', 'yellow', 'blue'];
-    colors.join('-');
 
-    console.log(colors); // "green-yellow-blue"
+    console.log(colors.join('-')); // green-yellow-blue
 
 ### concat
 
