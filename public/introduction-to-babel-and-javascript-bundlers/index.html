@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Introduction to Babel and JavaScript Bundlers">
 <meta name=twitter:description content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.4">
+<meta name=generator content="Hugo 0.55.6">
 <link rel=canonical href=https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1575,12 +1575,12 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <pre><code>touch .babelrc
 </code></pre>
 <ul>
-<li>Inside the created file, add this:</li>
-</ul>
+<li><p>Inside the created file, add this:</p>
 <pre><code>{
- "presets": ["@babel/preset-env"]
- }
-</code></pre>
+"presets": ["@babel/preset-env"]
+}
+</code></pre></li>
+</ul>
 <p>Basically, this tells babel to use the <code>env-preset</code> you installed earlier. This configuration might change depending on your setup</p>
 <blockquote>
 <p>Some Online Editors automatically run Babel for you:
@@ -1604,23 +1604,23 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <h3 id=npm-scripts-configurations><strong>NPM Scripts Configurations</strong></h3>
 <p>Now let’s setup NPM to run babel on the CLI</p>
 <ul>
-<li>In your <code>package.json</code> , there is a section called <code>"scripts"</code> This holds various commands to be performed on your project. Some common commands are:
-<code>start</code> , <code>build</code> , <code>test</code> e.t.c</li>
-</ul>
+<li><p>In your <code>package.json</code> , there is a section called <code>"scripts"</code> This holds various commands to be performed on your project. Some common commands are:
+<code>start</code> , <code>build</code> , <code>test</code> e.t.c</p>
 <pre><code>"scripts": {
- // some commands here
+// some commands here
 },
-</code></pre>
+</code></pre></li>
+</ul>
 <blockquote>
 <p>A list of all commands can be found <a href=https://docs.npmjs.com/misc/scripts>here</a></p>
 </blockquote>
 <ul>
-<li>Now add this to the script section</li>
-</ul>
+<li><p>Now add this to the script section</p>
 <pre><code>"scripts": {
-  "build": "babel src -d public"
+"build": "babel src -d public"
 },
-</code></pre>
+</code></pre></li>
+</ul>
 <p>Adding the above to our <code>package.json</code> in the <code>scripts</code> section will take our code from <code>src</code>, run it through Babel, and output the file in <code>public</code> .</p>
 <blockquote>
 <p>NB: Scripts are written as JSON objects, if you have multiple commands, seperate them with a comma.</p>

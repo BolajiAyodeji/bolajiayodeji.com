@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Introduction to ES6 modules">
 <meta name=twitter:description content="An essential aspect of software engineering is efficiency. Every successful app needs a solid architectural structure that allows it to scale at all levels without breaking. In respect to this, several techniques and patterns are engaged to ensure code efficiency.In this article, I would introduce you to ES6 modules, what they are, how to use them and why you should care {0[]0}What exactly is a module? In JavaScript, the word “modules” refers to small units of independent, reusable code.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.4">
+<meta name=generator content="Hugo 0.55.6">
 <link rel=canonical href=https://bolajiayodeji.com/introduction-to-es6-modules/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1556,57 +1556,51 @@ let findModulus = (a, b) => {return a % b;}
 <p>Now to make this module accessible to other parts of our code, we need to
 <code>export</code> them. There are several ways of doing this;</p>
 <ul>
-<li>You can export each module individually:</li>
-</ul>
+<li><p>You can export each module individually:</p>
 <pre><code>export let sumAll = (a, b) => {return a + b;}
 
- export let subtractAll = (a, b) => {return a - b;}
+export let subtractAll = (a, b) => {return a - b;}
 
- export let divideAll = (a, b) => {return a / b;}
+export let divideAll = (a, b) => {return a / b;}
 
- export let multiplyAll = (a, b) => {return a * b;}
+export let multiplyAll = (a, b) => {return a * b;}
 
- export let findModulus = (a, b) => {return a % b;}
-</code></pre>
-<ul>
-<li>A better way is to use a single export statement:</li>
-</ul>
+export let findModulus = (a, b) => {return a % b;}
+</code></pre></li>
+<li><p>A better way is to use a single export statement:</p>
 <pre><code>let sumAll = (a, b) => {return a + b;}
 
- let subtractAll = (a, b) => {return a - b;}
+let subtractAll = (a, b) => {return a - b;}
 
- let divideAll = (a, b) => {return a / b;}
+let divideAll = (a, b) => {return a / b;}
 
- let multiplyAll = (a, b) => {return a * b;}
+let multiplyAll = (a, b) => {return a * b;}
 
- let findModulus = (a, b) => {return a % b;}
+let findModulus = (a, b) => {return a % b;}
 
- export {sumAll, subtractAll, divideAll, multiplyAll, findModulus};
-</code></pre>
-<ul>
-<li>You can also export default values</li>
-</ul>
+export {sumAll, subtractAll, divideAll, multiplyAll, findModulus};
+</code></pre></li>
+<li><p>You can also export default values</p>
 <pre><code>export default {sumAll, subtractAll, multiplyAll, divideAll};
-</code></pre>
+</code></pre></li>
+</ul>
 <blockquote>
 <p><strong>Note:</strong> You only export modules you want to use in other parts of your code, its not mandatory for you to export every module in this script</p>
 </blockquote>
 <p>Now to use our exported modules, we need to import them in <code>app.js</code> There are several ways of doing this also;</p>
 <ul>
-<li>You can import individually</li>
-</ul>
+<li><p>You can import individually</p>
 <pre><code>import {sumAll} from './math.js';
-</code></pre>
+</code></pre></li>
+</ul>
 <p>Let’s test our import</p>
 <pre><code>console.log(sumAll(9, 8)); //17
 </code></pre>
 <ul>
-<li>You can import multiple modules at once:</li>
-</ul>
+<li><p>You can import multiple modules at once:</p>
 <pre><code>import {sumAll, subtractAll, divideAll} from './math.js';
-</code></pre>
-<ul>
-<li>You can import modules as aliases</li>
+</code></pre></li>
+<li><p>You can import modules as aliases</li>
 </ul>
 <blockquote>
 <p>In some computer operating systems and <strong>programming</strong> languages, an <strong>alias</strong>
@@ -1627,11 +1621,11 @@ is an alternative and usually easier-to-understand or more significant name for 
  console.log(math.findModulus(50, 15)); // 5
 </code></pre>
 <ul>
-<li>You can also import default values</li>
-</ul>
+<li><p>You can also import default values</p>
 <pre><code>import math from './math.js';
- console.log(math.sumAll(5, 2)); // 7
-</code></pre>
+console.log(math.sumAll(5, 2)); // 7
+</code></pre></li>
+</ul>
 <p>Here we have imported <code>sumAll()</code> in <code>math.js</code> and assigned it to the alias
 <code>math</code> . There is no need to add <code>* as</code> here.</p>
 <blockquote>
@@ -1644,11 +1638,11 @@ is an alternative and usually easier-to-understand or more significant name for 
 <pre><code>export default {sumAll};
 </code></pre>
 <ul>
-<li>You can also use an absolute path for the module import, to reference modules defined on another domain:</li>
-</ul>
+<li><p>You can also use an absolute path for the module import, to reference modules defined on another domain:</p>
 <pre><code>import {sumAll} from 'https://bolaji-module.glitch.me/sumAll.js';
- console.log(sumAll(50, 10)); // 60
-</code></pre>
+console.log(sumAll(50, 10)); // 60
+</code></pre></li>
+</ul>
 <blockquote>
 <p><strong>Note:</strong> Modules are fetched using
 <a href=https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>CORS.</a> This means that if you reference scripts from other domains, they must have a valid CORS header that allows cross-site loading.</p>
@@ -1662,13 +1656,13 @@ is an alternative and usually easier-to-understand or more significant name for 
  import {sumAll} from 'https://bolaji-module.glitch.me/sumAll.js'; ✔️
 </code></pre>
 <ul>
-<li>You can import several modules from different files, in our <code>max.js</code> add this:</li>
-</ul>
+<li><p>You can import several modules from different files, in our <code>max.js</code> add this:</p>
 <pre><code>let max = (a, b) => {
 return (a > b) ? a : b;
 }
 export {max};
-</code></pre>
+</code></pre></li>
+</ul>
 <p>Now you can import <code>max.js</code> and <code>math.js</code> together in <code>app.js</code></p>
 <pre><code>import * as math from './math.js';
  import {max} from './max.js';

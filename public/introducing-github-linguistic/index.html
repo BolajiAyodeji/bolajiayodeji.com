@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Introducing GitHub Linguist">
 <meta name=twitter:description content="The files and directories within a repository determine the languages that make up the repository. With GitHub, you can view a repository’s languages to get a quick overview of the repository. But how does this happen? What powers this repository language overview?In this article I would: Introduce you to GitHub Linguist How it works How to fix common Linguist issues How to use gitattributesto override Linguist :) How to use Emacs or Vim modelines to override Linguist How to contribute to GitHub LinguistLet’s Roll!">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.4">
+<meta name=generator content="Hugo 0.55.6">
 <link rel=canonical href=https://bolajiayodeji.com/introducing-github-linguistic/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1532,12 +1532,10 @@ may result in files identified in the language statistics not appearing in the s
 <p>Basically, gitattributes is just a file used to command or tell Git to perform some specific tasks, sort of a way to tweaking it.</p>
 <h4 id=here-s-how-to-use-the-linguist-override-feature><strong>Here’s how to use the Linguist override feature</strong></h4>
 <ul>
-<li>Add a <code>.gitattributes</code> file to the root of your project</li>
-</ul>
+<li><p>Add a <code>.gitattributes</code> file to the root of your project</p>
 <pre><code>touch .gitattributes
-</code></pre>
-<ul>
-<li>Use the standard git-style path matchers for the files you want to override using the <code>linguist-documentation</code>, <code>linguist-language</code>, <code>linguist-vendored</code>,
+</code></pre></li>
+<li><p>Use the standard git-style path matchers for the files you want to override using the <code>linguist-documentation</code>, <code>linguist-language</code>, <code>linguist-vendored</code>,
 <code>linguist-generated</code> and <code>linguist-detectable</code> attributes.</li>
 </ul>
 <blockquote>

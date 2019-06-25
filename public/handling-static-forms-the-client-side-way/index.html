@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Handling Static Forms - The Client-side Way">
 <meta name=twitter:description content="Forms are interactive elements used to get input from the user for further processing.Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.cTraditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.4">
+<meta name=generator content="Hugo 0.55.6">
 <link rel=canonical href=https://bolajiayodeji.com/handling-static-forms-the-client-side-way/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1541,15 +1541,15 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p><img src=https://cdn-images-1.medium.com/max/800/1*UZwPE17ZnWZym5qaDkYIwA.png alt=""></p>
 <p>If you’re building a basic site, you shouldn’t worry about Paid plans, Paid plans are mostly needed by Enterprise applications and companies, the Free plan would cover all your needs. I use this for some client projects too :)</p>
 <ul>
-<li>Formspree premium users can submit forms via AJAX. Just set the Accept header to application/json. If you’re using jQuery this can be done like so:</li>
+<li><p>Formspree premium users can submit forms via AJAX. Just set the Accept header to application/json. If you’re using jQuery this can be done like so:</p>
+<pre><code>$.ajax({
+    url: "https://formspree.io/FORM_ID",
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
+});
+</code></pre></li>
 </ul>
-<pre><code>    $.ajax({
-        url: "https://formspree.io/FORM_ID",
-        method: "POST",
-        data: {message: "hello!"},
-        dataType: "json"
-    });
-</code></pre>
 <p>Well, this is for paid users :)</p>
 <blockquote>
 <p>If you don’t use jQUERY like me and you’re tired of the lengthy AJAX default syntax, check out <a href=https://github.com/BolajiAyodeji/simple-ajax-library>simpleAJAX library</a>, a simple library I built for handling HTTP requests. Like so:</p>
@@ -1587,15 +1587,15 @@ below if you don’t know what Netlify is. Learn about all of the awesome featur
 <iframe src=//www.youtube.com/embed/qAUX2A-W4Bc style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 <ul>
-<li>Now that you have deployed your site, let’s create the form again</li>
+<li><p>Now that you have deployed your site, let’s create the form again</p>
+<pre><code>&lt;form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">
+    &lt;input type="text" name="name">
+    &lt;input type="email" name="email">
+    &lt;input type="text" name="phone">
+    &lt;input type="submit">
+&lt;/form>
+</code></pre></li>
 </ul>
-<pre><code>    &lt;form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">
-        &lt;input type="text" name="name">
-        &lt;input type="email" name="email">
-        &lt;input type="text" name="phone">
-        &lt;input type="submit">
-    &lt;/form>
-</code></pre>
 <p>Now let’s go over the new stuff I added above.</p>
 <ul>
 <li>Netlify is quite easier, you simply add the <code>netlify</code> attribute
