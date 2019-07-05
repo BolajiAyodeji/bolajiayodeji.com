@@ -78,6 +78,9 @@ What is SSL? SSL (Secure Sockets Layer) is a standard security protocol for esta
 <meta name="theme-color" content="#20242b" />
 
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
 <style amp-boilerplate>
   body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -1764,6 +1767,17 @@ Also, in case of the folder, replace <em>/folder</em> with the actual folder nam
   </amp-install-serviceworker>
   
 
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
   </body>
 </html>
