@@ -1,39 +1,87 @@
 <!doctype html>
-<html ⚡ lang=en-us>
-<head>
-<meta charset=utf-8>
-<script async src=https://cdn.ampproject.org/v0.js></script>
-<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
-<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
-<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
-<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Introducing CSS Custom Properties (Variables)</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
-<meta name=twitter:card content=summary>
-<meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Introducing CSS Custom Properties (Variables)">
-<meta name=twitter:description content="In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables.">
-<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.6">
-<link rel=canonical href=https://bolajiayodeji.com/introducing-css-custom-properties-variables/ >
-<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
-<meta name=renderer content=webkit>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name=format-detection content="telephone=no,email=no,adress=no">
-<meta name=robots content=index,follow>
-<meta name=referrer content=origin-when-cross-origin>
-<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
-<meta name=msvalidate.01 content=bing_site_verification_code>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<link rel=manifest href=/manifest.json>
-<meta name=theme-color content=#20242b>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    
+    
+
+    
+    <title>Introducing CSS Custom Properties (Variables)</title>
+
+    
+    
+
+
+
+
+
+
+
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.
+However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Bolaji Ayodeji" />
+<meta name="twitter:title" content="Introducing CSS Custom Properties (Variables)" />
+<meta name="twitter:description" content="In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.
+CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.
+However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables." />
+<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6">
+
+
+<link rel="canonical" href="https://bolajiayodeji.com/introducing-css-custom-properties-variables/">
+<link rel="alternative" href="/index.xml" title="Bolaji Ayodeji" type="application/atom+xml">
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+
+<meta name="msvalidate.01" content="bing_site_verification_code" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+
+
+<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120"
+  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#20242b" />
+
+
 <style amp-boilerplate>
-body {
+  body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -90,17 +138,18 @@ body {
     }
   }
 </style><noscript>
-<style amp-boilerplate>
-body {
+  <style amp-boilerplate>
+    body {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       animation: none
     }
-</style>
+  </style>
 </noscript>
 <style amp-custom>
-html {
+   
+  html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1426,80 +1475,142 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     }
   }
 </style>
-</head>
-<body>
-<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
-<ul class=sidebar-list>
-<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-</ul>
+
+  </head>
+  <body>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
+    
+    
+    
+    
+      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/search">Search 🔍</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+    
+  </ul>
 </amp-sidebar>
-<header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<p>
-<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
-<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</p>
-<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
-<span class="icon icon-menu"></span>
-</button>
-<nav class=menu>
-<ul class=menu-list>
-<li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
-<li class=menu-item>
-<a href=/search>Search 🔍</a></li>
-<li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
-</ul>
-</nav>
+
+    
+<header class="header">
+  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
+  <p class="subtitle">I write articles on web and frontend development.</p>
+  <p class="subtitle"><a href="/portfolio">About Me →</a></p>
+  <p>
+    <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </p>
+
+  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+      <li
+        class="menu-item  is-active">
+        <a href="/">Home 🏠</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/search">Search 🔍</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+      
+      <li>
+        <div id="codefund"></div>
+      </li>
+    </ul>
+
+  </nav>
+
 </header>
+
 <section class="main post-detail">
-<header class=post-header>
-<h1 class=post-title>Introducing CSS Custom Properties (Variables)</h1>
-<p class=entry-meta><span class=entry-time>Mar 25, 2019</span> 4 min read
-</p>
-</header>
-<article class=post-content>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*JEnrE7aT2K6vfV0nQlbFIw.png alt=""></p>
-<p>In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve.</p>
-<p><a href=https://guide.freecodecamp.org/css/css-preprocessors/ >CSS Preprocessors</a> came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c.</p>
-<p>However, in <a href=https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525>Modern CSS</a>, we now have a new powerful feature called <strong>Custom properties</strong>, otherwise known as <strong>CSS variables</strong> or <strong>cascading variables</strong>. Now you can declare variables directly in your CSS without having to use CSS Preprocessors.</p>
+  <header class="post-header">
+    <h1 class="post-title">Introducing CSS Custom Properties (Variables)</h1>
+    <p class="entry-meta"><span class="entry-time">Mar 25, 2019</span> 4 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*JEnrE7aT2K6vfV0nQlbFIw.png" alt="" /></p>
+
+<p>In the past years, maintaining CSS was a very big problem for bigger projects or
+complex apps as a result, building reusable components and cleaner styles were
+hard to achieve.</p>
+
+<p><a href="https://guide.freecodecamp.org/css/css-preprocessors/">CSS Preprocessors</a> came
+to solve this problem and have been around for years now (SASS, LESS, e.t.c).
+They extend CSS with key features like variables, operators, interpolations,
+functions, imports, mixins e.t.c.</p>
+
+<p>However, in <a href="https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525">Modern CSS</a>,
+we now have a new powerful feature called <strong>Custom properties</strong>, otherwise known
+as <strong>CSS variables</strong> or <strong>cascading variables</strong>. Now you can declare variables
+directly in your CSS without having to use CSS Preprocessors.</p>
+
 <p>In this article, I’d show you how to start using CSS variables. Let’s roll :)</p>
-<hr>
-<p>If you’re familiar with JavaScript or other programming languages, you should understand how variables work already.</p>
+
+<hr />
+
+<p>If you’re familiar with JavaScript or other programming languages, you should
+understand how variables work already.</p>
+
 <pre><code>let name = 'Bolaji Ayodeji'
 </code></pre>
-<p>A variable stores some sort of information or data, that would be used later in your program.</p>
+
+<p>A variable stores some sort of information or data, that would be used
+later in your program.</p>
+
 <pre><code>console.log(name);
 </code></pre>
-<h3 id=what-are-css-variables>What are CSS variables?</h3>
+
+<h3 id="what-are-css-variables">What are CSS variables?</h3>
+
 <blockquote>
 <p><strong>Custom properties</strong> (sometimes referred to as <strong><em>CSS variables</em></strong> or
-<strong><em>cascading variables</em></strong>) are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation. — <strong>MDN DOCS</strong></p>
+<strong><em>cascading variables</em></strong>) are entities defined by CSS authors that contain
+specific values to be reused throughout a document. They are set using custom
+property notation. — <strong>MDN DOCS</strong></p>
 </blockquote>
-<h3 id=css-variables-syntax>CSS variables syntax</h3>
-<p>A CSS Variable is defined with a special syntax, with <strong>two dashes</strong> before the variable name (<code>--variable-name</code>), then a colon and the variable value.</p>
+
+<h3 id="css-variables-syntax">CSS variables syntax</h3>
+
+<p>A CSS Variable is defined with a special syntax, with <strong>two dashes</strong> before the
+variable name (<code>--variable-name</code>), then a colon and the variable value.</p>
+
 <pre><code>.container {
  --black: #000;
 }
 </code></pre>
-<h3 id=accessing-the-variable>Accessing the variable</h3>
+
+<h3 id="accessing-the-variable">Accessing the variable</h3>
+
 <p>You can access the already declared variable using <code>var()</code></p>
+
 <pre><code>.container {
  --black: #000
  color: var(--black);
 }
 </code></pre>
-<h3 id=variables-scope>Variables Scope</h3>
+
+<h3 id="variables-scope">Variables Scope</h3>
+
 <p>CSS Variables can be defined inside any CSS element.</p>
+
 <pre><code>body {
   --color: red;
 }
@@ -1516,97 +1627,202 @@ a {
   --color: red;
 }
 </code></pre>
-<p>However, adding variables to a selector makes them available to <strong>ONLY</strong> their children. If you add a variable inside a <code>.container</code> selector, it’s only going to be available to children of <code>.container</code> . Outside <code>.container</code> , the variable will not work.</p>
-<script data-slug-hash=BbMGqr data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
-<p>Though we set <code>p</code> to be red, it works for only <code>p</code> tags within <code>.container</code> , any <code>p</code> outside <code>.container</code> will not inherit this style.</p>
-<h3 id=root>: root</h3>
+
+<p>However, adding variables to a selector makes them available to <strong>ONLY</strong> their
+children. If you add a variable inside a <code>.container</code> selector, it’s only going
+to be available to children of <code>.container</code> . Outside <code>.container</code> , the
+variable will not work.</p>
+
+<script data-slug-hash="BbMGqr" data-user="iambolajiayo"
+  data-height="500" data-default-tab="result"
+  data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p>Though we set <code>p</code> to be red, it works for only <code>p</code> tags within <code>.container</code> ,
+any <code>p</code> outside <code>.container</code> will not inherit this style.</p>
+
+<h3 id="root">: root</h3>
+
 <p><code>:root</code> is a CSS pseudo-class that identifies the document itself.</p>
-<p>A better way to declare CSS variables is to add the variable to <code>:root</code>, this makes it available to all the elements in the page.</p>
-<script data-slug-hash=gEqZOe data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
+
+<p>A better way to declare CSS variables is to add the variable to <code>:root</code>, this
+makes it available to all the elements in the page.</p>
+
+<script data-slug-hash="gEqZOe" data-user="iambolajiayo"
+  data-height="500" data-default-tab="result"
+  data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
+
 <p>Now all <code>p</code> tags are red irrespective of their position or parent.</p>
-<h3 id=css-variables-are-case-sensitive>CSS Variables are case sensitive</h3>
+
+<h3 id="css-variables-are-case-sensitive">CSS Variables are case sensitive</h3>
+
 <p>This variable:</p>
+
 <pre><code>--color: red;
 </code></pre>
+
 <p>is not the same as:</p>
+
 <pre><code>--Color: red;
 </code></pre>
-<h3 id=setting-a-fallback-value-for-var>Setting a fallback value for var()</h3>
-<p><code>var()</code> accepts a second parameter, which is the default fallback value when the variable value is not set:</p>
+
+<h3 id="setting-a-fallback-value-for-var">Setting a fallback value for var()</h3>
+
+<p><code>var()</code> accepts a second parameter, which is the default fallback value when the
+variable value is not set:</p>
+
 <pre><code>p {
   color: var(--red, #f00);
 }
 </code></pre>
-<script data-slug-hash=xBMmrq data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
-<p>Here we forgot to declare <code>--red</code> but <code>p</code> still has the red color because we already have a fallback value.</p>
-<h3 id=browser-support>Browser Support</h3>
-<p><img src=https://cdn-images-1.medium.com/max/1200/1*-HHDutFGICwb84UsH91rsQ.png alt="">
-<span class=figcaption_hack>Browser support for CSS Variables <a href="https://www.caniuse.com/#feat=css-variables">according to Can I Use</a>.</span></p>
-<p>CSS variables are supported in modern browsers. I personally don’t focus on IE and far older browsers because a large number of internet users are using modern browsers now, just a few aren’t. So If you don’t need to support Internet Explorer and old versions of the other browsers, CSS variables should be your best friend.</p>
-<h3 id=conclusion>Conclusion</h3>
-<p>CSS Variables follow the normal CSS cascading rules, with precedence set according to the specificity. We can also use the values of custom properties in JavaScript, just like standard properties.</p>
-<p>Complex websites have very large amounts of CSS, often with a lot of repeated values. For example, the same color might be used in hundreds of different places, requiring global search and replace if that color needs to change. Custom properties allow a value to be stored in one place, then referenced in multiple other places. An additional benefit is semantic identifiers. For example, <code>--black</code> is easier to understand than <code>#00000</code>, especially if this same color is also used in other contexts. -<strong>MDN</strong></p>
-<p>CSS variables are cool and have come to stay, if you want your CSS styles and development to become clean, easier and more efficient, you should stick to CSS variables :)</p>
+
+<script data-slug-hash="xBMmrq" data-user="iambolajiayo"
+  data-height="500" data-default-tab="result"
+  data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
+
+<p>Here we forgot to declare <code>--red</code> but <code>p</code> still has the red color because we
+already have a fallback value.</p>
+
+<h3 id="browser-support">Browser Support</h3>
+
+<p><img src="https://cdn-images-1.medium.com/max/1200/1*-HHDutFGICwb84UsH91rsQ.png" alt="" />
+<span class="figcaption_hack">Browser support for CSS Variables <a href="https://www.caniuse.com/#feat=css-variables">according to Can I
+Use</a>.</span></p>
+
+<p>CSS variables are supported in modern browsers. I personally don’t focus on IE
+and far older browsers because a large number of internet users are using modern
+browsers now, just a few aren’t. So If you don’t need to support Internet
+Explorer and old versions of the other browsers, CSS variables should be your
+best friend.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>CSS Variables follow the normal CSS cascading rules, with precedence set
+according to the specificity. We can also use the values of custom properties in
+JavaScript, just like standard properties.</p>
+
+<p>Complex websites have very large amounts of CSS, often with a lot of repeated
+values. For example, the same color might be used in hundreds of different
+places, requiring global search and replace if that color needs to change.
+Custom properties allow a value to be stored in one place, then referenced in
+multiple other places. An additional benefit is semantic identifiers. For
+example, <code>--black</code> is easier to understand than <code>#00000</code>, especially if this
+same color is also used in other contexts. -<strong>MDN</strong></p>
+
+<p>CSS variables are cool and have come to stay, if you want your CSS styles and
+development to become clean, easier and more efficient, you should stick to CSS
+variables :)</p>
+
 <p>For more knowledge, read
-<a href=https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>here</a></p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">here</a></p>
 </article>
-<footer class=post-footer>
-<ul class=post-tags>
-<li class=post-tag><a href=/tags/css><span class=tag>CSS</span></a></li>
-<li class=post-tag><a href=/tags/variables><span class=tag>Variables</span></a></li>
-<li class=post-tag><a href=/tags/web-development><span class=tag>Web Development</span></a></li>
-</ul>
-<div id=newsletter>
-<div class=container>
-<div class=description>Get notified when I write something cool.</div>
-<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
-<div class=email-group>
-<label for=email class=sr-only>Email</label>
-<input type=email id=email name=email placeholder=" Your Email Address... " required>
-<button class=button type=submit>Subscribe 📩</button>
-</div>
-</form>
-</div>
-</div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
-<div id=disqus_thread></div>
-<script async custom-element=amp-iframe>
-(function () { 
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/css"><span class="tag">CSS</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/variables"><span class="tag">Variables</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/web-development"><span class="tag">Web Development</span></a></li>
+      
+    </ul>
+    
+
+    <div id="newsletter">
+      <div class="container">
+        <div class="description"> Get notified when I write something cool. </div>
+
+        <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+
+          <div class="email-group">
+            <label for="email" class="sr-only"> Email </label>
+            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
+            <button class="button" type="submit"> Subscribe 📩</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sharing">
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+      
+
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
         var d = document, s = d.createElement('script');
         s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-</footer>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+  </footer>
 </section>
-<footer class=footer>
-<div id=codefund></div>
-<p>Copyright © 2018-2019</p>
-<ul class=social-list>
-<li class=social-item>
-<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
-</li>
-<li class=social-item>
-<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
-</li>
+<footer class="footer">
+  <div id="codefund"></div>
+
+  <p>Copyright © 2018-2019</p>
+  <ul class="social-list">
+  
+
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
 </ul>
+
 </footer>
+
+
+
+
+
 <amp-analytics type=googleanalytics>
-<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
-<amp-install-serviceworker src=/sw.js layout=nodisplay>
-</amp-install-serviceworker>
+  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
+
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  
+
+
+  </body>
+</html>

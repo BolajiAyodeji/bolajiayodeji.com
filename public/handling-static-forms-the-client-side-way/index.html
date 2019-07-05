@@ -1,39 +1,89 @@
 <!doctype html>
-<html ⚡ lang=en-us>
-<head>
-<meta charset=utf-8>
-<script async src=https://cdn.ampproject.org/v0.js></script>
-<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
-<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
-<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
-<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Handling Static Forms - The Client-side Way</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="Forms are interactive elements used to get input from the user for further processing.Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.cTraditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
-<meta name=twitter:card content=summary>
-<meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Handling Static Forms - The Client-side Way">
-<meta name=twitter:description content="Forms are interactive elements used to get input from the user for further processing.Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.cTraditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.">
-<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.6">
-<link rel=canonical href=https://bolajiayodeji.com/handling-static-forms-the-client-side-way/ >
-<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
-<meta name=renderer content=webkit>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name=format-detection content="telephone=no,email=no,adress=no">
-<meta name=robots content=index,follow>
-<meta name=referrer content=origin-when-cross-origin>
-<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
-<meta name=msvalidate.01 content=bing_site_verification_code>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<link rel=manifest href=/manifest.json>
-<meta name=theme-color content=#20242b>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    
+    
+
+    
+    <title>Handling Static Forms - The Client-side Way</title>
+
+    
+    
+
+
+
+
+
+
+
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="Forms are interactive elements used to get input from the user for further processing.
+
+Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.c
+Traditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Bolaji Ayodeji" />
+<meta name="twitter:title" content="Handling Static Forms - The Client-side Way" />
+<meta name="twitter:description" content="Forms are interactive elements used to get input from the user for further processing.
+
+Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.c
+Traditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database." />
+<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6">
+
+
+<link rel="canonical" href="https://bolajiayodeji.com/handling-static-forms-the-client-side-way/">
+<link rel="alternative" href="/index.xml" title="Bolaji Ayodeji" type="application/atom+xml">
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+
+<meta name="msvalidate.01" content="bing_site_verification_code" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+
+
+<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120"
+  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#20242b" />
+
+
 <style amp-boilerplate>
-body {
+  body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -90,17 +140,18 @@ body {
     }
   }
 </style><noscript>
-<style amp-boilerplate>
-body {
+  <style amp-boilerplate>
+    body {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       animation: none
     }
-</style>
+  </style>
 </noscript>
 <style amp-custom>
-html {
+   
+  html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1426,143 +1477,270 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     }
   }
 </style>
-</head>
-<body>
-<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
-<ul class=sidebar-list>
-<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-</ul>
+
+  </head>
+  <body>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
+    
+    
+    
+    
+      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/search">Search 🔍</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+    
+  </ul>
 </amp-sidebar>
-<header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<p>
-<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
-<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</p>
-<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
-<span class="icon icon-menu"></span>
-</button>
-<nav class=menu>
-<ul class=menu-list>
-<li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
-<li class=menu-item>
-<a href=/search>Search 🔍</a></li>
-<li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
-</ul>
-</nav>
+
+    
+<header class="header">
+  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
+  <p class="subtitle">I write articles on web and frontend development.</p>
+  <p class="subtitle"><a href="/portfolio">About Me →</a></p>
+  <p>
+    <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </p>
+
+  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+      <li
+        class="menu-item  is-active">
+        <a href="/">Home 🏠</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/search">Search 🔍</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+      
+      <li>
+        <div id="codefund"></div>
+      </li>
+    </ul>
+
+  </nav>
+
 </header>
+
 <section class="main post-detail">
-<header class=post-header>
-<h1 class=post-title>Handling Static Forms - The Client-side Way</h1>
-<p class=entry-meta><span class=entry-time>Jun 5, 2019</span> 7 min read
-</p>
-</header>
-<article class=post-content>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*NjU8ApeQC0wK4NgIaOjALw.png alt=""></p>
-<p>Forms are interactive elements used to get input from the user for further processing.</p>
+  <header class="post-header">
+    <h1 class="post-title">Handling Static Forms - The Client-side Way</h1>
+    <p class="entry-meta"><span class="entry-time">Jun 5, 2019</span> 7 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*NjU8ApeQC0wK4NgIaOjALw.png" alt="" /></p>
+
+<p>Forms are interactive elements used to get input from the user for further
+processing.</p>
+
 <p><br></p>
-<p><img src=https://cdn-images-1.medium.com/max/800/0*C_GoiWT8KU7KSGuI.png alt=""></p>
-<p>Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.c</p>
-<p>Traditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.</p>
-<p>When you’re building a simple form where you’re only receiving data from the user and not processing (i.e contact form) the goal is to get the data from the form and send to your company support email (e.g info@…, support@…)</p>
-<p>Using a server here is not ideal and is only an overkill, a very common way of doing this is via <a href=https://github.com/PHPMailer/PHPMailer>PHPMailer</a> ( The classic email sending library for PHP). PHPMailer is used with PHP and requires a lot of boring server configurations. What if you’re just building a static site? There should be an easier way of doing this client side right?</p>
-<p>In this article, I’ll introduce you to two methods of handling form data client side in static sites. There are other methods but I’ve used these two and considered them to be the best and easiest (no hard feelings :) ).</p>
-<p>NO hectic configurations, NO servers, NO serious stuff, just build your form, do some little tweaks, the user submits and bingo it heads straight to your designated email. :)</p>
-<h3 id=starter-form>STARTER FORM</h3>
-<p>For the purpose of this article, I’ve built a basic form with HTML5 and Bootstrap 4, you can fork it from the <a href=https://codepen.io/iambolajiayo/pen/MdGdex>Codepen below.</a></p>
-<script data-slug-hash=MdGdex data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*C_GoiWT8KU7KSGuI.png" alt="" /></p>
+
+<p>Most times, forms are just used to receive input that requires no processing but
+rather just receiving data, this might be a contact form, RSVP, get a quote
+e.t.c</p>
+
+<p>Traditionally, forms are managed with the help of a server (also known as server
+side), but this is more efficient when you’re processing the data from the form,
+maybe a user registration form where the form data is validated, authenticated
+and saved in a database.</p>
+
+<p>When you’re building a simple form where you’re only receiving data from the
+user and not processing (i.e contact form) the goal is to get the data from the
+form and send to your company support email (e.g info@…, support@…)</p>
+
+<p>Using a server here is not ideal and is only an overkill, a very common way of
+doing this is via <a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a> ( The
+classic email sending library for PHP). PHPMailer is used with PHP and requires
+a lot of boring server configurations. What if you’re just building a static
+site? There should be an easier way of doing this client side right?</p>
+
+<p>In this article, I’ll introduce you to two methods of handling form data client
+side in static sites. There are other methods but I’ve used these two and
+considered them to be the best and easiest (no hard feelings :) ).</p>
+
+<p>NO hectic configurations, NO servers, NO serious stuff, just build your form, do
+some little tweaks, the user submits and bingo it heads straight to your
+designated email. :)</p>
+
+<h3 id="starter-form">STARTER FORM</h3>
+
+<p>For the purpose of this article, I’ve built a basic form with HTML5 and
+Bootstrap 4, you can fork it from the <a href="https://codepen.io/iambolajiayo/pen/MdGdex">Codepen
+below.</a></p>
+
+<script data-slug-hash="MdGdex" data-user="iambolajiayo"
+  data-height="500" data-default-tab="result"
+  data-theme-id="8862" class='codepen' async src="//codepen.io/assets/embed/ei.js"></script>
+
 <blockquote>
-<p>Currently, this form uses none of the methods we’ll talk about, at the end of the article, I’ll provide the full <code>code</code> for both methods, you can then update the form and test. I’ve added a little validation, don’t worry about that</p>
+<p>Currently, this form uses none of the methods we’ll talk about, at the end of
+the article, I’ll provide the full <code>code</code> for both methods, you can then update
+the form and test. I’ve added a little validation, don’t worry about that</p>
 </blockquote>
+
 <p>Now, let’s get started!!</p>
-<h3 id=method-one>METHOD ONE</h3>
+
+<h3 id="method-one">METHOD ONE</h3>
+
 <p><br></p>
-<p><img src=https://cdn-images-1.medium.com/max/800/0*7DZwsHAjwcTxTzfR alt=""></p>
-<p><a href=http://formspree.io>Formspree</a> provides functional HTML forms via their platform with no PHP or JavaScript. Send your form to their URL and it’ll be forwarded to your email. No PHP, Javascript or sign up required — perfect for static sites!</p>
-<p>Wait!, wait!!, wait!!! it’s <a href=https://github.com/formspree/formspree>Open Sourced</a> too</p>
-<h4 id=form-handling-with-formspree>Form handling with Formspree</h4>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/0*7DZwsHAjwcTxTzfR" alt="" /></p>
+
+<p><a href="http://formspree.io">Formspree</a> provides functional HTML forms via their
+platform with no PHP or JavaScript. Send your form to their URL and it&rsquo;ll be forwarded to your email.
+No PHP, Javascript or sign up required — perfect for
+static sites!</p>
+
+<p>Wait!, wait!!, wait!!! it’s <a href="https://github.com/formspree/formspree">Open
+Sourced</a> too</p>
+
+<h4 id="form-handling-with-formspree">Form handling with Formspree</h4>
+
 <ul>
-<li>Build your form, <a href="https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010">we’ve done that already</a></li>
+<li>Build your form, <a href="https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010">we’ve done that
+already</a></li>
 </ul>
+
 <p>(Follow the next step and update this form to use this method)</p>
-<pre><code>&lt;form action="https://formspree.io/you@email.com" method="POST">
-    &lt;input type="hidden" name="_subject" value="Bolaji's Form">                 
-    &lt;input type="hidden" name="_next" value="/thanks.html" >
-    &lt;input type="text" name="name">
-    &lt;input type="email" name="_replyto">
-    &lt;input type="text" name="phone">
-    &lt;input type="submit" value="Send">
-&lt;/form>
+
+<pre><code>&lt;form action=&quot;https://formspree.io/you@email.com&quot; method=&quot;POST&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;_subject&quot; value=&quot;Bolaji's Form&quot;&gt;                 
+    &lt;input type=&quot;hidden&quot; name=&quot;_next&quot; value=&quot;/thanks.html&quot; &gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
+    &lt;input type=&quot;email&quot; name=&quot;_replyto&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;phone&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;
+&lt;/form&gt;
 </code></pre>
+
 <p>Now let’s go over the new stuff added above.</p>
+
 <ul>
 <li>We changed the form’s action-attribute to <code>https://formspree.io/you@email.com</code>
-[replace <a href=mailto:your@email.com>your@email.com</a> with your own email.] This is simply sending your form data to formspree then to your email. Formspree is acting as a third party here.</li>
-<li>I’ve added some name attributes to the input fields. This is just configuring each field so we can grab the data and send to formspree.</li>
+[replace <a href="mailto:your@email.com">your@email.com</a> with your own email.] This is
+simply sending your form data to formspree then to your email. Formspree is
+acting as a third party here.</li>
+<li>I’ve added some name attributes to the input fields. This is just configuring
+each field so we can grab the data and send to formspree.</li>
 </ul>
-<p>— For Email address, I added a <strong>_replyto attribute</strong> (This just mean, you’ll be able to quickly reply to the user who originally submitted via email)</p>
-<p>— I’ve added a <strong>_subject</strong> attribute. This value is used for the email’s subject so that you can quickly reply to submissions without having to edit the subject line each time.</p>
-<p>— I’ve added a <strong>_next</strong> attribute. By default, after submitting a form the user is shown the Formspree “Thank You” page. You can provide an alternative URL for that page like so: <code>&lt;input type=”hidden” name=”_next” value=”/thanks.html" /></code></p>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*M2O2tR08URl1I2i5bVGU5Q.png alt="">
-<span class=figcaption_hack>> formspree default success page</span></p>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*nLA5m3_yjx4mmmJAmuu8Yg.png alt="">
-<span class=figcaption_hack>> custom success page I built for a client.</span></p>
+
+<p>— For Email address, I added a <strong>_replyto attribute</strong> (This just mean,
+you’ll be able to quickly reply to the user who originally submitted via email)</p>
+
+<p>— I’ve added a <strong>_subject</strong> attribute. This value is used for the email’s
+subject so that you can quickly reply to submissions without having to edit the
+subject line each time.</p>
+
+<p>— I’ve added a <strong>_next</strong> attribute. By default, after submitting a form the user
+is shown the Formspree “Thank You” page. You can provide an alternative URL for
+that page like so: <code>&lt;input type=”hidden” name=”_next” value=”/thanks.html&quot; /&gt;</code></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*M2O2tR08URl1I2i5bVGU5Q.png" alt="" />
+<span class="figcaption_hack"> &gt; formspree default success page</span></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*nLA5m3_yjx4mmmJAmuu8Yg.png" alt="" />
+<span class="figcaption_hack"> &gt; custom success page I built for a client.</span></p>
+
 <ul>
 <li>We added a value attribute to the send button [<strong>value=”Send”</strong>]</li>
 </ul>
-<p>This is our Thanos, one snap at this button and your form is erased and its data sent to your email.</p>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*lura6hCC_Gs8w5UhtwdIIA.png alt=""></p>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*hnEhoz4pSb4pNtzXD0pDpw.png alt=""></p>
-<p>That’s all to using formspree :) Although there are other configuration settings for several other features, you can check <a href=https://formspree.io>here</a>.</p>
-<h4 id=things-to-note>Things to note!</h4>
+
+<p>This is our Thanos, one snap at this button and your form is erased and its data
+sent to your email.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*lura6hCC_Gs8w5UhtwdIIA.png" alt="" /></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*hnEhoz4pSb4pNtzXD0pDpw.png" alt="" /></p>
+
+<p>That’s all to using formspree :) Although there are other configuration settings
+for several other features, you can check <a href="https://formspree.io">here</a>.</p>
+
+<h4 id="things-to-note">Things to note!</h4>
+
 <ul>
-<li>You don’t need to signup to use formspree, just add your action attribute and you’re good to go. You only signup if you want a <a href=https://formspree.io/plans>Paid plan</a>.</li>
+<li>You don’t need to signup to use formspree, just add your action attribute and
+you’re good to go. You only signup if you want a <a href="https://formspree.io/plans">Paid
+plan</a>.</li>
 <li>Make sure your form has the <code>method=”POST”</code> attribute</li>
 <li>Formspree uses reCAPTCHA to identify spam submissions. After a user clicks our
-<em>Thanos</em>, they’ll have to do some CAPTCHA verification. Cool way of stopping spam submissions.</li>
+<em>Thanos</em>, they’ll have to do some CAPTCHA verification. Cool way of stopping
+spam submissions.</li>
 </ul>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*0mq3GFJ4_fRWnR5_vX1L5g.png alt=""></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*0mq3GFJ4_fRWnR5_vX1L5g.png" alt="" /></p>
+
 <ul>
-<li>After that, the form is sent to your designated email and the custom success page is displayed!</li>
-<li>Formspree does not read your form data, they have no access to it, they’re just a delivery service, you send your parcel sealed to them, they deliver to your customer, cool right? :)</li>
-<li>Formspree is free for 50 submissions per form per month ONLY! Need more, you can upgrade to the <a href=https://formspree.io/plans>Paid plan</a>.</li>
-<li>Formspree has both Free and Paid plans. Paid plans have several other features like admin dashboard, unlimited submissions, AJAX handling e.t.c Paid plans and their features can be found <a href=https://formspree.io/plans>here</a></li>
+<li>After that, the form is sent to your designated email and the custom success
+page is displayed!</li>
+<li>Formspree does not read your form data, they have no access to it, they’re just
+a delivery service, you send your parcel sealed to them, they deliver to your
+customer, cool right? :)</li>
+<li>Formspree is free for 50 submissions per form per month ONLY! Need more, you can
+upgrade to the <a href="https://formspree.io/plans">Paid plan</a>.</li>
+<li>Formspree has both Free and Paid plans. Paid plans have several other features
+like admin dashboard, unlimited submissions, AJAX handling e.t.c Paid plans and
+their features can be found <a href="https://formspree.io/plans">here</a></li>
 </ul>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*UZwPE17ZnWZym5qaDkYIwA.png alt=""></p>
-<p>If you’re building a basic site, you shouldn’t worry about Paid plans, Paid plans are mostly needed by Enterprise applications and companies, the Free plan would cover all your needs. I use this for some client projects too :)</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*UZwPE17ZnWZym5qaDkYIwA.png" alt="" /></p>
+
+<p>If you’re building a basic site, you shouldn’t worry about Paid plans, Paid
+plans are mostly needed by Enterprise applications and companies, the Free plan
+would cover all your needs. I use this for some client projects too :)</p>
+
 <ul>
-<li><p>Formspree premium users can submit forms via AJAX. Just set the Accept header to application/json. If you’re using jQuery this can be done like so:</p>
+<li><p>Formspree premium users can submit forms via AJAX. Just set the Accept header to
+application/json. If you’re using jQuery this can be done like so:</p>
+
 <pre><code>$.ajax({
-    url: "https://formspree.io/FORM_ID",
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
+    url: &quot;https://formspree.io/FORM_ID&quot;,
+    method: &quot;POST&quot;,
+    data: {message: &quot;hello!&quot;},
+    dataType: &quot;json&quot;
 });
 </code></pre></li>
 </ul>
+
 <p>Well, this is for paid users :)</p>
+
 <blockquote>
-<p>If you don’t use jQUERY like me and you’re tired of the lengthy AJAX default syntax, check out <a href=https://github.com/BolajiAyodeji/simple-ajax-library>simpleAJAX library</a>, a simple library I built for handling HTTP requests. Like so:</p>
+<p>If you don’t use jQUERY like me and you’re tired of the lengthy AJAX default
+syntax, check out <a href="https://github.com/BolajiAyodeji/simple-ajax-library">simpleAJAX
+library</a>, a simple library
+I built for handling HTTP requests. Like so:</p>
 </blockquote>
+
 <pre><code>const http = new simpleAJAX;
 
 const data = {
-    "name": "Bolaji Ayodeji",
-    "email": "hi@bolajiayodeji.com",
-    "message": "hi"
+    &quot;name&quot;: &quot;Bolaji Ayodeji&quot;,
+    &quot;email&quot;: &quot;hi@bolajiayodeji.com&quot;,
+    &quot;message&quot;: &quot;hi&quot;
 };
 http.post('https://formspree.io/FORM_ID', data,
-(err, user) => {
+(err, user) =&gt; {
     if(err) {
      console.log(err)
     } else {
@@ -1570,140 +1748,250 @@ http.post('https://formspree.io/FORM_ID', data,
    }
  });
 </code></pre>
+
 <p>A star would make me happy! :)</p>
-<h3 id=method-two>METHOD TWO</h3>
+
+<h3 id="method-two">METHOD TWO</h3>
+
 <p><br></p>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*XvD7ANv0nt6zkk6jcPJZLg.png alt=""></p>
-<p><a href=https://www.netlify.com/ >Netlify</a> offers form handling for sites deployed on their platform.</p>
-<h4 id=form-handling-with-netlify>Form handling with Netlify</h4>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*XvD7ANv0nt6zkk6jcPJZLg.png" alt="" /></p>
+
+<p><a href="https://www.netlify.com/">Netlify</a> offers form handling for sites deployed on
+their platform.</p>
+
+<h4 id="form-handling-with-netlify">Form handling with Netlify</h4>
+
 <ul>
 <li>Create an account on Netlify and deploy your site there.</li>
 </ul>
+
 <blockquote>
-<p>Please watch this 14min video by <a href=https://twitter.com/jamesqquick>@JamesQuick</a>
-below if you don’t know what Netlify is. Learn about all of the awesome features in Netlify like Continuous Deployment, Lambda Functions, Split Testing, Preview Branches, and more!</p>
+<p>Please watch this 14min video by <a href="https://twitter.com/jamesqquick">@JamesQuick</a>
+below if you don’t know what Netlify is. Learn about all of the awesome features
+in Netlify like Continuous Deployment, Lambda Functions, Split Testing, Preview
+Branches, and more!</p>
 </blockquote>
+
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<iframe src=//www.youtube.com/embed/qAUX2A-W4Bc style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="//www.youtube.com/embed/qAUX2A-W4Bc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
+
+
 <ul>
 <li><p>Now that you have deployed your site, let’s create the form again</p>
-<pre><code>&lt;form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">
-    &lt;input type="text" name="name">
-    &lt;input type="email" name="email">
-    &lt;input type="text" name="phone">
-    &lt;input type="submit">
-&lt;/form>
+
+<pre><code>&lt;form action=&quot;/thanks.html&quot; name=&quot;Bolaji's form&quot; method=&quot;POST&quot; data-netlify=&quot;true&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;phone&quot;&gt;
+    &lt;input type=&quot;submit&quot;&gt;
+&lt;/form&gt;
 </code></pre></li>
 </ul>
+
 <p>Now let’s go over the new stuff I added above.</p>
+
 <ul>
 <li>Netlify is quite easier, you simply add the <code>netlify</code> attribute
-<code>data-netlify="true"</code>to the <code>&lt;form></code> tag, and you can start receiving submissions in your Netlify site admin panel.</li>
+<code>data-netlify=&quot;true&quot;</code>to the <code>&lt;form&gt;</code> tag, and you can start receiving
+submissions in your Netlify site admin panel.</li>
 <li>Here, the <code>action</code> attribute serves as your custom success page</li>
 </ul>
+
 <p>That’s all, your form submissions goes straight to your Netlify admin panel</p>
-<p>Settings > Build & deploy > Environment > Environment variables</p>
+
+<p>Settings &gt; Build &amp; deploy &gt; Environment &gt; Environment variables</p>
+
 <p>(Watch the video above if you don’t understand what the panel means)</p>
+
 <p><strong>Things to note!</strong></p>
+
 <ul>
 <li>Your site must be hosted on netlify to use this method</li>
 <li>You must add the netlify attribute for the form to work</li>
-<li>You can find all submissions to your Netlify forms in the Forms tab of your site dashboard. <strong>Settings > Forms</strong></li>
+<li>You can find all submissions to your Netlify forms in the Forms tab of your site
+dashboard. <strong>Settings &gt; Forms</strong></li>
 <li>Netlify has free and paid plans too</li>
 </ul>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*_sg2Fo1r5gniCilQjBcMhA.png alt="">
-<span class=figcaption_hack><a href=https://www.netlify.com/pricing/#features>https://www.netlify.com/pricing</a></span></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*_sg2Fo1r5gniCilQjBcMhA.png" alt="" />
+<span class="figcaption_hack"><a href="https://www.netlify.com/pricing/#features">https://www.netlify.com/pricing</a></span></p>
+
 <ul>
-<li>Netlify has several built-in notification options for verified form submissions, including email and Slack notifications. <strong>(Only available in Paid plans)</strong>. You can find them in <strong>Settings > Forms > Form notifications</strong>.</li>
-<li>Netlify also integrates with <a href=https://zapier.com/app/dashboard>Zapier</a>, so you can set up triggers that send your verified form submissions to any of the 500+ applications in their catalogue.</li>
-<li>All notification emails are sent from <code>team@netlify.com</code>, and any replies to a notification will go to that address. If you would like to respond to a form submitter, you will need to enter their address manually.</li>
+<li>Netlify has several built-in notification options for verified form submissions,
+including email and Slack notifications. <strong>(Only available in Paid plans)</strong>. You
+can find them in <strong>Settings &gt; Forms &gt; Form notifications</strong>.</li>
+<li>Netlify also integrates with <a href="https://zapier.com/app/dashboard">Zapier</a>, so you
+can set up triggers that send your verified form submissions to any of the 500+
+applications in their catalogue.</li>
+<li>All notification emails are sent from <code>team@netlify.com</code>, and any replies to a
+notification will go to that address. If you would like to respond to a form
+submitter, you will need to enter their address manually.</li>
 <li>Netlify Forms can receive files uploads via form submissions too :).</li>
 </ul>
-<p>To do this, add an input with <code>type="file"</code> to any form. When a form is submitted, a link to each uploaded file will be included in the form submission details.</p>
+
+<p>To do this, add an input with <code>type=&quot;file&quot;</code> to any form. When a form is
+submitted, a link to each uploaded file will be included in the form submission
+details.</p>
+
 <ul>
-<li>Netlify is limited to 100 submissions per month and 10MB uploads per month for the FREE plan, If you want more, you’ll need to upgrade</li>
+<li>Netlify is limited to 100 submissions per month and 10MB uploads per month for
+the FREE plan, If you want more, you’ll need to upgrade</li>
 </ul>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*XaWaJi_I6eQq06_ogPEHUg.png alt="">
-<span class=figcaption_hack>form submissions in the admin panel</span></p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*XaWaJi_I6eQq06_ogPEHUg.png" alt="" />
+<span class="figcaption_hack">form submissions in the admin panel</span></p>
+
 <p>And that’s all!!</p>
-<h3 id=final-html-form-code>Final HTML Form code</h3>
-<script src=//gist.github.com/BolajiAyodeji/5fb88278f28302423d657c9a91d2e3f8.js></script>
-<script src=//gist.github.com/BolajiAyodeji/e95ca45355aec76c477ec3cac7fc1d9a.js></script>
+
+<h3 id="final-html-form-code">Final HTML Form code</h3>
+
+<script type="application/javascript" src="//gist.github.com/BolajiAyodeji/5fb88278f28302423d657c9a91d2e3f8.js"></script>
+
+<script type="application/javascript" src="//gist.github.com/BolajiAyodeji/e95ca45355aec76c477ec3cac7fc1d9a.js"></script>
+
 <p><br></p>
-<h3 id=conclusion>Conclusion</h3>
-<p>One thing to note about formspree is that the free version leaves your email address exposed to scrapers and bots so you might want to set up a temporary disposable email address while you use it. If you want to hide your email address by default, you’ll need to upgrade your plan.</p>
-<p>Do you want extra practice? Watch this tutorial video below by <a href=https://medium.com/u/861216ad5921>Brad Traversy</a> and learn how to add a contact or any type of form to your website by using the Netlify form feature including file uploads and spam filtering. [Full guide + practical code]</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>One thing to note about formspree is that the free version leaves your email
+address exposed to scrapers and bots so you might want to set up a temporary
+disposable email address while you use it. If you want to hide your email
+address by default, you’ll need to upgrade your plan.</p>
+
+<p>Do you want extra practice? Watch this tutorial video below by <a href="https://medium.com/u/861216ad5921">Brad
+Traversy</a> and learn how to add a contact or
+any type of form to your website by using the Netlify form feature including
+file uploads and spam filtering. [Full guide + practical code]</p>
+
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<iframe src=//www.youtube.com/embed/6ElQ689HRcY style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="//www.youtube.com/embed/6ElQ689HRcY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-<h3 id=useful-links>Useful Links</h3>
+
+
+<h3 id="useful-links">Useful Links</h3>
+
 <ul>
-<li><a href=https://www.netlify.com/docs/form-handling/ >https://www.netlify.com/docs/form-handling/</a></li>
-<li><a href=https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/ >https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/</a></li>
-<li><a href=https://zapier.com/apps/gmail/integrations/netlify/29683/send-emails-for-new-netlify-form-submissions>https://zapier.com/apps/gmail/integrations/netlify/29683/send-emails-for-new-netlify-form-submissions</a></li>
-<li><a href=https://gridsome.org/docs/guide-forms/ >https://gridsome.org/docs/guide-forms/</a></li>
-<li><a href=https://www.freecodecamp.org/forum/t/formspree-a-free-working-contact-form-for-your-portfolio/32442>https://www.freecodecamp.org/forum/t/formspree-a-free-working-contact-form-for-your-portfolio/32442</a></li>
+<li><a href="https://www.netlify.com/docs/form-handling/">https://www.netlify.com/docs/form-handling/</a></li>
+<li><a href="https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/">https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/</a></li>
+<li><a href="https://zapier.com/apps/gmail/integrations/netlify/29683/send-emails-for-new-netlify-form-submissions">https://zapier.com/apps/gmail/integrations/netlify/29683/send-emails-for-new-netlify-form-submissions</a></li>
+<li><a href="https://gridsome.org/docs/guide-forms/">https://gridsome.org/docs/guide-forms/</a></li>
+<li><a href="https://www.freecodecamp.org/forum/t/formspree-a-free-working-contact-form-for-your-portfolio/32442">https://www.freecodecamp.org/forum/t/formspree-a-free-working-contact-form-for-your-portfolio/32442</a></li>
 </ul>
+
 <p>Thanks for reading! Please share and subscribe :)</p>
 </article>
-<footer class=post-footer>
-<ul class=post-tags>
-<li class=post-tag><a href=/tags/forms><span class=tag>Forms</span></a></li>
-<li class=post-tag><a href=/tags/netlify><span class=tag>Netlify</span></a></li>
-<li class=post-tag><a href=/tags/formspree><span class=tag>Formspree</span></a></li>
-</ul>
-<div id=newsletter>
-<div class=container>
-<div class=description>Get notified when I write something cool.</div>
-<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
-<div class=email-group>
-<label for=email class=sr-only>Email</label>
-<input type=email id=email name=email placeholder=" Your Email Address... " required>
-<button class=button type=submit>Subscribe 📩</button>
-</div>
-</form>
-</div>
-</div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
-<div id=disqus_thread></div>
-<script async custom-element=amp-iframe>
-(function () { 
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/forms"><span class="tag">Forms</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/netlify"><span class="tag">Netlify</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/formspree"><span class="tag">Formspree</span></a></li>
+      
+    </ul>
+    
+
+    <div id="newsletter">
+      <div class="container">
+        <div class="description"> Get notified when I write something cool. </div>
+
+        <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+
+          <div class="email-group">
+            <label for="email" class="sr-only"> Email </label>
+            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
+            <button class="button" type="submit"> Subscribe 📩</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sharing">
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+      
+
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
         var d = document, s = d.createElement('script');
         s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-</footer>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+  </footer>
 </section>
-<footer class=footer>
-<div id=codefund></div>
-<p>Copyright © 2018-2019</p>
-<ul class=social-list>
-<li class=social-item>
-<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
-</li>
-<li class=social-item>
-<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
-</li>
+<footer class="footer">
+  <div id="codefund"></div>
+
+  <p>Copyright © 2018-2019</p>
+  <ul class="social-list">
+  
+
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
 </ul>
+
 </footer>
+
+
+
+
+
 <amp-analytics type=googleanalytics>
-<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
-<amp-install-serviceworker src=/sw.js layout=nodisplay>
-</amp-install-serviceworker>
+  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
+
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  
+
+
+  </body>
+</html>

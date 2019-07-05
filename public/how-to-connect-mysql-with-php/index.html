@@ -1,39 +1,87 @@
 <!doctype html>
-<html ⚡ lang=en-us>
-<head>
-<meta charset=utf-8>
-<script async src=https://cdn.ampproject.org/v0.js></script>
-<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
-<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
-<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
-<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>How to Connect Mysql with PHP</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.In this article I will discuss how to connect MySQL Database using Localhost Server.Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
-<meta name=twitter:card content=summary>
-<meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="How to Connect Mysql with PHP">
-<meta name=twitter:description content="When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.In this article I will discuss how to connect MySQL Database using Localhost Server.Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.">
-<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.6">
-<link rel=canonical href=https://bolajiayodeji.com/how-to-connect-mysql-with-php/ >
-<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
-<meta name=renderer content=webkit>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name=format-detection content="telephone=no,email=no,adress=no">
-<meta name=robots content=index,follow>
-<meta name=referrer content=origin-when-cross-origin>
-<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
-<meta name=msvalidate.01 content=bing_site_verification_code>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<link rel=manifest href=/manifest.json>
-<meta name=theme-color content=#20242b>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    
+    
+
+    
+    <title>How to Connect Mysql with PHP</title>
+
+    
+    
+
+
+
+
+
+
+
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
+In this article I will discuss how to connect MySQL Database using Localhost Server.
+Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Bolaji Ayodeji" />
+<meta name="twitter:title" content="How to Connect Mysql with PHP" />
+<meta name="twitter:description" content="When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.
+In this article I will discuss how to connect MySQL Database using Localhost Server.
+Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created." />
+<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6">
+
+
+<link rel="canonical" href="https://bolajiayodeji.com/how-to-connect-mysql-with-php/">
+<link rel="alternative" href="/index.xml" title="Bolaji Ayodeji" type="application/atom+xml">
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+
+<meta name="msvalidate.01" content="bing_site_verification_code" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+
+
+<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120"
+  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#20242b" />
+
+
 <style amp-boilerplate>
-body {
+  body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -90,17 +138,18 @@ body {
     }
   }
 </style><noscript>
-<style amp-boilerplate>
-body {
+  <style amp-boilerplate>
+    body {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       animation: none
     }
-</style>
+  </style>
 </noscript>
 <style amp-custom>
-html {
+   
+  html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1426,162 +1475,309 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     }
   }
 </style>
-</head>
-<body>
-<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
-<ul class=sidebar-list>
-<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-</ul>
+
+  </head>
+  <body>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
+    
+    
+    
+    
+      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/search">Search 🔍</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+    
+  </ul>
 </amp-sidebar>
-<header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<p>
-<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
-<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</p>
-<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
-<span class="icon icon-menu"></span>
-</button>
-<nav class=menu>
-<ul class=menu-list>
-<li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
-<li class=menu-item>
-<a href=/search>Search 🔍</a></li>
-<li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
-</ul>
-</nav>
+
+    
+<header class="header">
+  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
+  <p class="subtitle">I write articles on web and frontend development.</p>
+  <p class="subtitle"><a href="/portfolio">About Me →</a></p>
+  <p>
+    <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </p>
+
+  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+      <li
+        class="menu-item  is-active">
+        <a href="/">Home 🏠</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/search">Search 🔍</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+      
+      <li>
+        <div id="codefund"></div>
+      </li>
+    </ul>
+
+  </nav>
+
 </header>
+
 <section class="main post-detail">
-<header class=post-header>
-<h1 class=post-title>How to Connect Mysql with PHP</h1>
-<p class=entry-meta><span class=entry-time>Apr 28, 2018</span> 4 min read
-</p>
-</header>
-<article class=post-content>
-<p>When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat.</p>
+  <header class="post-header">
+    <h1 class="post-title">How to Connect Mysql with PHP</h1>
+    <p class="entry-meta"><span class="entry-time">Apr 28, 2018</span> 4 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p>When many developers refer to a database, they are usually referring to MySQL, a
+very popular DBMS that powers projects of all sizes. The USP of MySQL is its
+ability to handle huge volumes of data without breaking a sweat.</p>
+
 <p>In this article I will discuss how to connect MySQL Database using Localhost Server.</p>
-<h3 id=create-mysql-database-at-the-localhost>Create MySQL Database at the Localhost</h3>
-<p>First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created. Open your browser and go to localhost/PHPMyAdmin or click “Admin” in XAMPP UI.</p>
-<p>When you first installed XAMPP, it only created the username for it to be accessed, you now have to add a password to it by yourself. For this, you have to go to User account where the user is same as the one shown in this picture:</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*Kjc-5Hwt0tHeDZJE.png alt=""></p>
-<p>Now click <em>Edit privileges</em> and go to Change Admin password, type your password there and save it. Remember this password as it will be use to connect to your Database.</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*Bf6g12KPGGtGDHuS.png alt=""></p>
-<p>Note: It is not necessary to change password to access databases on local host. It is a good practice and that is why we have used a password.</p>
-<h3 id=create-database>Create Database</h3>
-<p>Now return to the homepage of phpmyadmin. Click <em>New</em> button to create a new database.</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*7IUxi9DeitEReIya.png alt=""></p>
-<p>In the new window, name your database as per your need, I am naming it “<strong>practice</strong>”. Now select Collation as utf8_general_ci, as we are using it for learning purposes and it will handle all of our queries and data that will be covered in this tutorial series. Now click on <em>Create</em> and your database will be created.</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*2Cysb8IhDpvzDuQ7.png alt=""></p>
-<p>The newly created database will be empty now, as there are no tables in it. I will be covering that in the upcoming series where we will learn how to create tables and insert data in it. In this tutorial, we are going to connect this database to a localhost using PHP.</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*zjlRKjiDUjimMy7q.png alt=""></p>
-<h3 id=create-a-folder-in-htdocs>Create a Folder in htdocs</h3>
-<p>Now, locate the folder where you installed XAMPP and open htdocs folder (usually c:/xampp). Create a new folder inside c:/xampp/htdocs/ and name it “practice” we will place web files in this folder. Why we have created folder in htdocs? XAMPP uses folders in htdocs to execute and run your PHP sites.</p>
+
+<h3 id="create-mysql-database-at-the-localhost">Create MySQL Database at the Localhost</h3>
+
+<p>First, let me tell you what PHPMyAdmin is. It is a control panel from where you
+can manage your database that you have created. Open your browser and go to
+localhost/PHPMyAdmin or click “Admin” in XAMPP UI.</p>
+
+<p>When you first installed XAMPP, it only created the username for it to be
+accessed, you now have to add a password to it by yourself. For this, you have
+to go to User account where the user is same as the one shown in this picture:</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*Kjc-5Hwt0tHeDZJE.png" alt="" /></p>
+
+<p>Now click <em>Edit privileges</em> and go to Change Admin password, type your password
+there and save it. Remember this password as it will be use to connect to your
+Database.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*Bf6g12KPGGtGDHuS.png" alt="" /></p>
+
+<p>Note: It is not necessary to change password to access databases on local host.
+It is a good practice and that is why we have used a password.</p>
+
+<h3 id="create-database">Create Database</h3>
+
+<p>Now return to the homepage of phpmyadmin. Click <em>New</em> button to create a new
+database.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*7IUxi9DeitEReIya.png" alt="" /></p>
+
+<p>In the new window, name your database as per your need, I am naming it
+“<strong>practice</strong>”. Now select Collation as utf8_general_ci, as we are using it for
+learning purposes and it will handle all of our queries and data that will be
+covered in this tutorial series. Now click on <em>Create</em> and your database will be
+created.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*2Cysb8IhDpvzDuQ7.png" alt="" /></p>
+
+<p>The newly created database will be empty now, as there are no tables in it. I
+will be covering that in the upcoming series where we will learn how to create
+tables and insert data in it. In this tutorial, we are going to connect this
+database to a localhost using PHP.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*zjlRKjiDUjimMy7q.png" alt="" /></p>
+
+<h3 id="create-a-folder-in-htdocs">Create a Folder in htdocs</h3>
+
+<p>Now, locate the folder where you installed XAMPP and open htdocs folder (usually
+c:/xampp). Create a new folder inside c:/xampp/htdocs/ and name it “practice” we
+will place web files in this folder. Why we have created folder in htdocs? XAMPP
+uses folders in htdocs to execute and run your PHP sites.</p>
+
 <p>Note: If your using WAMP, then add your practice folder in c:/wamp/www folder.</p>
-<h3 id=create-database-connection-file-in-php>Create Database Connection File In PHP</h3>
-<p>Create a new php file and name it <em>db_connnection.php</em> and save it. Why am I creating a separate database connection file? Because if you have created multiple files in which you want to insert data or select data from the databases, you don’t need to write the code for database connection every time. You just have to include it by using PHP custom function <strong>include</strong> (include ‘connection.php’) on the top of your code and call its function and use it. It also helps when you are moving your project location from one PC to another and you have to change the values on the single file and all the changes will be applied to all the other files automatically. Write the following code in your db_connection file.</p>
+
+<h3 id="create-database-connection-file-in-php">Create Database Connection File In PHP</h3>
+
+<p>Create a new php file and name it <em>db_connnection.php</em> and save it. Why am I
+creating a separate database connection file? Because if you have created
+multiple files in which you want to insert data or select data from the
+databases, you don’t need to write the code for database connection every time.
+You just have to include it by using PHP custom function <strong>include</strong> (include
+‘connection.php’) on the top of your code and call its function and use it. It
+also helps when you are moving your project location from one PC to another and
+you have to change the values on the single file and all the changes will be
+applied to all the other files automatically. Write the following code in your
+db_connection file.</p>
+
 <pre><code>&lt;?php function OpenCon()
 {
 $dbhost = “localhost”;
 $dbuser = “root”;
 $dbpass = “1234”;
 $db = “example”;
-$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die(“Connect failed: %s\n”. $conn -> error);
+$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die(“Connect failed: %s\n”. $conn -&gt; error);
 return $conn;
 }
 function CloseCon($conn)
 {
-$conn -> close();
+$conn -&gt; close();
 }
-?>
+?&gt;
 </code></pre>
-<p>Here is the explanation of the variable that we have used in our db_connection file:</p>
+
+<p>Here is the explanation of the variable that we have used in our db_connection
+file:</p>
+
 <ol>
 <li>$dbhost will be the host where your server is running it is usually localhost.</li>
-<li>$dbuser will be the username i.e. <strong>root</strong> and $dbpass will be the password which is the same that you used to access your phpmyadmin.</li>
-<li>$dbname will be the name of your database which we have created in this tutorial.</li>
+<li>$dbuser will be the username i.e. <strong>root</strong> and $dbpass will be the password
+which is the same that you used to access your phpmyadmin.</li>
+<li>$dbname will be the name of your database which we have created in this
+tutorial.</li>
 </ol>
-<h3 id=create-new-php-file-to-check-your-database-connection>Create new php file to check your database connection</h3>
-<p>Create a new php file to connect to your database. Name it index.php and add this code in this file.</p>
+
+<h3 id="create-new-php-file-to-check-your-database-connection">Create new php file to check your database connection</h3>
+
+<p>Create a new php file to connect to your database. Name it index.php and add
+this code in this file.</p>
+
 <pre><code>&lt;?PHP
 INCLUDE ‘DB_CONNECTION.PHP’;
 $CONN = OPENCON();
 ECHO “CONNECTED SUCCESSFULLY”;
 CLOSECON($CONN);
-?>
+?&gt;
 </code></pre>
-<h3 id=run-it>Run it!</h3>
-<p>Now open your browser and go to <code>localhost/practice/index.php</code> and you should see this screen:</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*Jl6hwq9wTGqgI67x.png alt=""></p>
+
+<h3 id="run-it">Run it!</h3>
+
+<p>Now open your browser and go to <code>localhost/practice/index.php</code> and you should see
+this screen:</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*Jl6hwq9wTGqgI67x.png" alt="" /></p>
+
 <p>Confirmation Message</p>
-<p>Congratulations! You’ve successfully connected your database with your localhost! If you are not able to see this screen, then check if you have done everything right in your db_connection.php file.</p>
+
+<p>Congratulations! You’ve successfully connected your database with your
+localhost! If you are not able to see this screen, then check if you have done
+everything right in your db_connection.php file.</p>
 </article>
-<footer class=post-footer>
-<ul class=post-tags>
-<li class=post-tag><a href=/tags/php><span class=tag>Php</span></a></li>
-<li class=post-tag><a href=/tags/mysql><span class=tag>Mysql</span></a></li>
-<li class=post-tag><a href=/tags/database><span class=tag>Database</span></a></li>
-</ul>
-<div id=newsletter>
-<div class=container>
-<div class=description>Get notified when I write something cool.</div>
-<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
-<div class=email-group>
-<label for=email class=sr-only>Email</label>
-<input type=email id=email name=email placeholder=" Your Email Address... " required>
-<button class=button type=submit>Subscribe 📩</button>
-</div>
-</form>
-</div>
-</div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
-<div id=disqus_thread></div>
-<script async custom-element=amp-iframe>
-(function () { 
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/php"><span class="tag">Php</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/mysql"><span class="tag">Mysql</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/database"><span class="tag">Database</span></a></li>
+      
+    </ul>
+    
+
+    <div id="newsletter">
+      <div class="container">
+        <div class="description"> Get notified when I write something cool. </div>
+
+        <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+
+          <div class="email-group">
+            <label for="email" class="sr-only"> Email </label>
+            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
+            <button class="button" type="submit"> Subscribe 📩</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sharing">
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+      
+
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
         var d = document, s = d.createElement('script');
         s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-</footer>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+  </footer>
 </section>
-<footer class=footer>
-<div id=codefund></div>
-<p>Copyright © 2018-2019</p>
-<ul class=social-list>
-<li class=social-item>
-<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
-</li>
-<li class=social-item>
-<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
-</li>
+<footer class="footer">
+  <div id="codefund"></div>
+
+  <p>Copyright © 2018-2019</p>
+  <ul class="social-list">
+  
+
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
 </ul>
+
 </footer>
+
+
+
+
+
 <amp-analytics type=googleanalytics>
-<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
-<amp-install-serviceworker src=/sw.js layout=nodisplay>
-</amp-install-serviceworker>
+  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
+
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  
+
+
+  </body>
+</html>
