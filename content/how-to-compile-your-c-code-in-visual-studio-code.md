@@ -57,6 +57,7 @@ Now let's get started!
 * In the menu at the top left corner, click on “Installation  > Apply Changes”
   
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562570171/blog/0001/Capture3.png)
+
 * Wait and allow to install completely. Ensure you have a stable internet during this process.
 
 # Edit your PATH environment variable to include the directory where the C++ compiler is located
