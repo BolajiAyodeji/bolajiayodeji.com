@@ -44,7 +44,8 @@ Now let's get started!
 # Download and install a C++ compiler
 
 * Head to [www.mingw.org](www.mingw.org/) and click the “Download/Installer” link to download the MinGW setup file or click [here](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/) for windows, [here](http://www.mingw.org/wiki/LinuxCrossMinGW) for Linux. and [here](https://brewinstall.org/Install-mingw-w64-on-Mac-with-Brew/) for Mac
-  > > MinGW, is a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
+
+> > MinGW, is a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
 * After downloading, install MinGW and wait for the “MinGW Installation Manager” to show up.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562569825/blog/0001/Capture1.png)
@@ -180,6 +181,6 @@ Here are some C++ resources you can use to get started with learning C++
 * [MinGW Project](http://www.mingw.org/)
 * [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) by [Jun Han](https://marketplace.visualstudio.com/publishers/formulahendry)
 * [NetlifyCMS](https://www.netlifycms.org/)
-  (I wrote this article with my new NetlifyCMS setup, I'll write an article to show you how I did it soon :) ).
+> > I wrote this article with my new NetlifyCMS setup, I'll write an article to show you how I did it soon :).
 
 Thank you for reading!
