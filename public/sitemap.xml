@@ -4,24 +4,36 @@
   
   <url>
     <loc>https://bolajiayodeji.com/</loc>
-    <lastmod>2019-07-08T08:03:28+00:00</lastmod>
+    <lastmod>2019-07-08T08:03:28+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2019-07-08T08:03:28+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/compiler/</loc>
+    <lastmod>2019-07-08T08:03:28+24:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/</loc>
-    <lastmod>2019-07-08T08:03:28+00:00</lastmod>
+    <lastmod>2019-07-08T08:03:28+24:00</lastmod>
   </url>
   
   <url>
     <loc>https://bolajiayodeji.com/tags/</loc>
-    <lastmod>2019-07-08T08:03:28+00:00</lastmod>
+    <lastmod>2019-07-08T08:03:28+24:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/c&#43;&#43;-vscode-compiler/</loc>
-    <lastmod>2019-07-08T08:03:28+00:00</lastmod>
+    <loc>https://bolajiayodeji.com/tags/vscode/</loc>
+    <lastmod>2019-07-08T08:03:28+24:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -236,12 +248,6 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/tags/cheat-sheet/</loc>
     <lastmod>2019-02-18T13:22:14+24:00</lastmod>
     <priority>0</priority>
@@ -249,6 +255,12 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/git/</loc>
+    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
     <lastmod>2019-02-18T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
