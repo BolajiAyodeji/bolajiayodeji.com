@@ -1,6 +1,6 @@
 ---
 title: How to compile your C++ code in Visual Studio Code
-post: post
+type: post
 date: 2019-07-08T08:03:28+24:00
 tags: ["C++", "VsCode", "Compiler"]
 ---
