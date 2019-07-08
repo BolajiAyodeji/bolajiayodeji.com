@@ -18,7 +18,7 @@
       
       <guid>https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/</guid>
       <description>C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”
-In simple terms, C++ is a sophisticated, efficient and a general-purpose programming language based on C.
+In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.
 It was developed by Bjarne Stroustrup in 1979.
 One of C++&amp;rsquo;s main feature is the compiler. This is used to compile and run C++ code.
   A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.</description>

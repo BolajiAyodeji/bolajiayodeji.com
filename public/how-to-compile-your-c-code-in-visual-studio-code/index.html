@@ -28,7 +28,7 @@
 <meta name="author"
   content="⚡️Bolaji Ayodeji⚡️" />
 <meta name="description" content="C&#43;&#43; is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”
-In simple terms, C&#43;&#43; is a sophisticated, efficient and a general-purpose programming language based on C.
+In simple terms, C&#43;&#43; is a sophisticated, efficient and general-purpose programming language based on C.
 It was developed by Bjarne Stroustrup in 1979.
 One of C&#43;&#43;&amp;rsquo;s main feature is the compiler. This is used to compile and run C&#43;&#43; code.
   A compiler is a special program that processes statements written in a particular programming language like C&#43;&#43; and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.">
@@ -41,7 +41,7 @@ One of C&#43;&#43;&amp;rsquo;s main feature is the compiler. This is used to com
 <meta name="twitter:site" content="@Bolaji Ayodeji" />
 <meta name="twitter:title" content="How to compile your C&#43;&#43; code in Visual Studio Code" />
 <meta name="twitter:description" content="C&#43;&#43; is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”
-In simple terms, C&#43;&#43; is a sophisticated, efficient and a general-purpose programming language based on C.
+In simple terms, C&#43;&#43; is a sophisticated, efficient and general-purpose programming language based on C.
 It was developed by Bjarne Stroustrup in 1979.
 One of C&#43;&#43;&amp;rsquo;s main feature is the compiler. This is used to compile and run C&#43;&#43; code.
   A compiler is a special program that processes statements written in a particular programming language like C&#43;&#43; and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses." />
@@ -1557,7 +1557,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 
 <p>C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”</p>
 
-<p>In simple terms, C++ is a sophisticated, efficient and a general-purpose programming language based on C.</p>
+<p>In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.</p>
 
 <p>It was developed by <a href="http://www.stroustrup.com/">Bjarne Stroustrup</a> in 1979.</p>
 
@@ -1569,11 +1569,11 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </blockquote>
 </blockquote>
 
-<p>I actually wrote this article because I had a C++ assignment which required using a compiler. As usual everyone was using <a href="http://www.codeblocks.org/">CodeBlocks IDE</a> and <a href="https://visualstudio.microsoft.com/">Visual Studio IDE</a>. But I was already used to Visual Studio Code for all my programming stuff.</p>
+<p>I actually wrote this article because I had a C++ assignment which required using a compiler. As usual, everyone was using the <a href="http://www.codeblocks.org/">CodeBlocks IDE</a> and <a href="https://visualstudio.microsoft.com/">Visual Studio IDE</a>. But I was already used to Visual Studio Code for all my programming stuff.</p>
 
 <p>I then set out to find a way of compiling C++ directly inside my own VsCode Editor and hence this article :).</p>
 
-<p>In this article I&rsquo;ll show you how to setup your compiler in VsCode and at the end give you some links to some of the best C++ resources.</p>
+<p>In this article, I&rsquo;ll show you how to set up your compiler in VsCode and at the end give you some links to some of the best C++ resources.</p>
 
 <p><img src="https://media0.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif" alt="" /></p>
 
@@ -1584,7 +1584,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>Prior knowledge of C++ </br>
 (I assume you&rsquo;re learning C++, about to start learning or just reading this for fun, this article is not a C++ 101 tutorial, some understanding of C++ is needed.)</li>
-<li>Visual Studio Code Editor </br> Download <a href="https://code.visualstudio.com/#alt-downloads">here</a> and read the setup docs for <a href="https://code.visualstudio.com/docs/?dv=win">Windows</a>, [Linux](&lt;&gt;) and <a href="https://code.visualstudio.com/docs/?dv=osx">Mac</a></li>
+<li>Visual Studio Code Editor </br> Download <a href="https://code.visualstudio.com/#alt-downloads">here</a> and read the setup docs for <a href="https://code.visualstudio.com/docs/?dv=win">Windows</a>, <a href="https://code.visualstudio.com/docs/?dv=linux64_deb">Linux</a> and <a href="https://code.visualstudio.com/docs/?dv=osx">Mac</a></li>
 <li><strong>Internet connection (!important)</strong></li>
 <li>Your geek glasses :).</li>
 </ul>
@@ -1599,10 +1599,15 @@ I would be using a Windows OS throughout this article but I&rsquo;ll provide lin
 <h1 id="download-and-install-a-c-compiler">Download and install a C++ compiler</h1>
 
 <ul>
-<li>Head to <a href="www.mingw.org/">www.mingw.org</a> and click the “Download/Installer” link to download the MinGW setup file or click <a href="https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/">here</a> for windows, <a href="http://www.mingw.org/wiki/LinuxCrossMinGW">here</a> for Linux. and <a href="https://brewinstall.org/Install-mingw-w64-on-Mac-with-Brew/">here</a> for Mac
-&gt; &gt; MinGW, is a contraction of &ldquo;Minimalist GNU for Windows&rdquo;, is a minimalist development environment for native Microsoft Windows applications.</li>
-<li>After downloading, install MinGW and wait for the “MinGW Installation Manager” to show up.</li>
+<li>Head to <a href="www.mingw.org/">www.mingw.org</a> and click the “Download/Installer” link to download the MinGW setup file or click <a href="https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/">here</a> for windows, <a href="http://www.mingw.org/wiki/LinuxCrossMinGW">here</a> for Linux. and <a href="https://brewinstall.org/Install-mingw-w64-on-Mac-with-Brew/">here</a> for Mac</li>
 </ul>
+
+<blockquote>
+<blockquote>
+<p>MinGW is a contraction of &ldquo;Minimalist GNU for Windows&rdquo;, is a minimalist development environment for native Microsoft Windows applications.
+* After downloading, install MinGW and wait for the “MinGW Installation Manager” to show up.</p>
+</blockquote>
+</blockquote>
 
 <p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/v1562569825/blog/0001/Capture1.png" alt="" /></p>
 
@@ -1617,8 +1622,11 @@ I would be using a Windows OS throughout this article but I&rsquo;ll provide lin
 <br /></li>
 </ul>
 
-<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/v1562570171/blog/0001/Capture3.png" alt="" />
-* Wait and allow to install completely. Ensure you have a stable internet during this process.</p>
+<p><img src="https://res.cloudinary.com/iambeejayayo/image/upload/v1562570171/blog/0001/Capture3.png" alt="" /></p>
+
+<ul>
+<li>Wait and allow to install completely. Ensure you have a stable internet during this process.</li>
+</ul>
 
 <h1 id="edit-your-path-environment-variable-to-include-the-directory-where-the-c-compiler-is-located">Edit your PATH environment variable to include the directory where the C++ compiler is located</h1>
 
@@ -1628,7 +1636,7 @@ I would be using a Windows OS throughout this article but I&rsquo;ll provide lin
 </blockquote>
 </blockquote>
 
-<p>After installing MinGW, it was installed in <code>C:\MinGW\bin</code>. Now you have to include this directory in your environment variable PATH. if you&rsquo;ve been using computers for a while now, you used know how to do this already, but if you don&rsquo;t, here are a few resources:</p>
+<p>After installing MinGW, it was installed in <code>C:\MinGW\bin</code>. Now you have to include this directory in your environment variable PATH. if you&rsquo;ve been using computers for a while now, you should know how to do this already, but if you don&rsquo;t, here are a few resources:</p>
 
 <ul>
 <li>Click <a href="https://www.computerhope.com/issues/ch000549.htm">here</a> for Windows OS guide</li>
@@ -1679,7 +1687,7 @@ return 0;
 <ul>
 <li>Use the shortcut <code>Ctrl+Alt+N</code></li>
 <li>Or press F1 and then select/type Run Code</li>
-<li>Or right click the Text Editor and then click Run Code in editor context menu
+<li>Or right-click the Text Editor and then click Run Code in the editor context menu
 &gt; &gt; The code will run and the output will be shown in the Output Window. Open the output window with `Ctrl+ shortcut.</li>
 </ul>
 
@@ -1690,12 +1698,12 @@ return 0;
 <ul>
 <li>Use the shortcut <code>Ctrl+Alt+M</code></li>
 <li>Or press F1 and then select/type Stop Code Run</li>
-<li>Or right click the Output Channel and then click Stop Code Run in context menu</li>
+<li>Or right-click the Output Channel and then click Stop Code Run in the context menu</li>
 </ul>
 
 <blockquote>
 <blockquote>
-<p>Hurray, you jut successfully set up your C++ environment in VsCode.</p>
+<p>Hurray, you just successfully set up your C++ environment in VsCode.</p>
 </blockquote>
 </blockquote>
 
@@ -1729,13 +1737,13 @@ int main()
 </code></pre>
 
 <p>you won&rsquo;t be able to type into the terminal, <code>Cannot edit in read-only terminal</code>.
-To fix this, you need to to manually enable read-write.</p>
+To fix this, you need to manually enable read-write.</p>
 
 <ul>
 <li>In VsCode, Go to File &gt; Preference &gt; Setting.</li>
 <li>In the User tab on the left panel, find the extensions section</li>
 <li>Scroll and find &lsquo;Run Code Configuration&rsquo;</li>
-<li>Scroll anf find a checkbox <code>Run in Terminal</code> (Whether to run code in Integrated Terminal) Check the box.</li>
+<li>Scroll and find a checkbox <code>Run in Terminal</code> (Whether to run code in Integrated Terminal) Check the box.</li>
 </ul>
 
 <blockquote>
@@ -1772,9 +1780,14 @@ To fix this, you need to to manually enable read-write.</p>
 <ul>
 <li><a href="http://www.mingw.org/">MinGW Project</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner">Code Runner</a> by <a href="https://marketplace.visualstudio.com/publishers/formulahendry">Jun Han</a></li>
-<li><a href="https://www.netlifycms.org/">NetlifyCMS</a>
-(I wrote this article with my new NetlifyCMS setup, I&rsquo;ll write an article to show you how I did it soon :) ).</li>
+<li><a href="https://www.netlifycms.org/">NetlifyCMS</a></li>
 </ul>
+
+<blockquote>
+<blockquote>
+<p>I wrote this article with my new NetlifyCMS setup, I&rsquo;ll write an article to show you how I did it soon :).</p>
+</blockquote>
+</blockquote>
 
 <p>Thank you for reading!</p>
 </article>
