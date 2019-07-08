@@ -1,8 +1,5 @@
 backend:
   name: git-gateway
-  accept_roles:
-    - admin
-    - editor
   branch: master
   site_url: https://www.bolajiayodeji.com
   logo_url: https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png
@@ -21,5 +18,5 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Type", name: "post", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "array"}
+      - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}     
