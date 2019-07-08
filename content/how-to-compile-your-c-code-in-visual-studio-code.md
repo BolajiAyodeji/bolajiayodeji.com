@@ -8,7 +8,7 @@ tags: [ "C++", "VsCode", "Compiler" ]
 
 C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”
 
-In simple terms, C++ is a sophisticated, efficient and a general-purpose programming language based on C. 
+In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C. 
 
 It was developed by [Bjarne Stroustrup](http://www.stroustrup.com/) in 1979.
 
@@ -16,11 +16,11 @@ One of C++'s main feature is the compiler. This is used to compile and run C++ c
 
 > > A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or "code" that a computer's processor uses. 
 
-I actually wrote this article because I had a C++ assignment which required using a compiler. As usual everyone was using [CodeBlocks IDE](http://www.codeblocks.org/) and [Visual Studio IDE](https://visualstudio.microsoft.com/). But I was already used to Visual Studio Code for all my programming stuff.
+I actually wrote this article because I had a C++ assignment which required using a compiler. As usual, everyone was using the [CodeBlocks IDE](http://www.codeblocks.org/) and [Visual Studio IDE](https://visualstudio.microsoft.com/). But I was already used to Visual Studio Code for all my programming stuff.
 
 I then set out to find a way of compiling C++ directly inside my own VsCode Editor and hence this article :).
 
-In this article I'll show you how to setup your compiler in VsCode and at the end give you some links to some of the best C++ resources.
+In this article, I'll show you how to set up your compiler in VsCode and at the end give you some links to some of the best C++ resources.
 
 ![](https://media0.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif)
 
@@ -45,7 +45,7 @@ Now let's get started!
 
 * Head to [www.mingw.org](www.mingw.org/) and click the “Download/Installer” link to download the MinGW setup file or click [here](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/) for windows, [here](http://www.mingw.org/wiki/LinuxCrossMinGW) for Linux. and [here](https://brewinstall.org/Install-mingw-w64-on-Mac-with-Brew/) for Mac
 
-> > MinGW, is a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
+> > MinGW is a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
 * After downloading, install MinGW and wait for the “MinGW Installation Manager” to show up.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562569825/blog/0001/Capture1.png)
@@ -64,7 +64,7 @@ Now let's get started!
 
 > > PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. - [Wikipedia](https://en.wikipedia.org/wiki/PATH_(variable))
 
-After installing MinGW, it was installed in `C:\MinGW\bin`. Now you have to include this directory in your environment variable PATH. if you've been using computers for a while now, you used know how to do this already, but if you don't, here are a few resources:
+After installing MinGW, it was installed in `C:\MinGW\bin`. Now you have to include this directory in your environment variable PATH. if you've been using computers for a while now, you should know how to do this already, but if you don't, here are a few resources:
 
 * Click [here](https://www.computerhope.com/issues/ch000549.htm) for Windows OS guide
 * Click [here](https://www.cyberciti.biz/faq/unix-linux-adding-path/) for Linux
@@ -101,7 +101,7 @@ int main()
 
 * Use the shortcut `Ctrl+Alt+N`
 * Or press F1 and then select/type Run Code
-* Or right click the Text Editor and then click Run Code in editor context menu
+* Or right-click the Text Editor and then click Run Code in the editor context menu
   > > The code will run and the output will be shown in the Output Window. Open the output window with `Ctrl+ shortcut.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562571766/blog/0001/Capture5.png)
@@ -112,9 +112,9 @@ int main()
 
 * Use the shortcut `Ctrl+Alt+M`
 * Or press F1 and then select/type Stop Code Run
-* Or right click the Output Channel and then click Stop Code Run in context menu
+* Or right-click the Output Channel and then click Stop Code Run in the context menu
 
-> > Hurray, you jut successfully set up your C++ environment in VsCode.
+> > Hurray, you just successfully set up your C++ environment in VsCode.
 
 # Conclusion
 
@@ -147,12 +147,12 @@ int main()
 ```
 
 you won't be able to type into the terminal, `Cannot edit in read-only terminal`.
-To fix this, you need to to manually enable read-write.
+To fix this, you need to manually enable read-write.
 
 * In VsCode, Go to File > Preference > Setting.
 * In the User tab on the left panel, find the extensions section
 * Scroll and find 'Run Code Configuration'
-* Scroll anf find a checkbox `Run in Terminal` (Whether to run code in Integrated Terminal) Check the box.
+* Scroll and find a checkbox `Run in Terminal` (Whether to run code in Integrated Terminal) Check the box.
 
 > > OR
 
