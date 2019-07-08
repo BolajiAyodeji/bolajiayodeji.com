@@ -1,8 +1,11 @@
 ---
 title: How to compile your C++ code in Visual Studio Code
-type: post
-date: 2019-07-08T08:03:28+24:00
-tags: ["C++", "VsCode", "Compiler"]
+post: post
+date: 2019-07-07T08:03:28.000Z
+tags:
+  - C++
+  - VsCode
+  - Compiler
 ---
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562567274/blog/0001/banner.png)
 
@@ -26,7 +29,7 @@ In this article I'll show you how to setup your compiler in VsCode and at the en
 
 - - -
 
-Perequisite
+# Prerequisite
 
 * Prior knowledge of C++ </br>
   (I assume you're learning C++, about to start learning or just reading this for fun, this article is not a C++ 101 tutorial, some understanding of C++ is needed.)
@@ -54,7 +57,8 @@ Now let's get started!
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562570172/blog/0001/Capture2.png)
 
 * In the menu at the top left corner, click on “Installation  > Apply Changes”
-  ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562570171/blog/0001/Capture3.png)
+  
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562570171/blog/0001/Capture3.png)
 * Wait and allow to install completely. Ensure you have a stable internet during this process.
 
 # Edit your PATH environment variable to include the directory where the C++ compiler is located
@@ -92,7 +96,7 @@ int main()
 }
 ```
 
-> > Save this file as <file_name.cpp>
+> > Save this file as `test.cpp`
 
 # Run your code using Code Runner
 
@@ -179,6 +183,6 @@ Here are some C++ resources you can use to get started with learning C++
 * [MinGW Project](http://www.mingw.org/)
 * [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) by [Jun Han](https://marketplace.visualstudio.com/publishers/formulahendry)
 * [NetlifyCMS](https://www.netlifycms.org/)
-  > > I wrote this article with my new NetlifyCMS setup, I'll write an article to show you how I did it soon :).
+  (I wrote this article with my new NetlifyCMS setup, I'll write an article to show you how I did it soon :) ).
 
 Thank you for reading!
