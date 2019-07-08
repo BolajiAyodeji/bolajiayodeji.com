@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jun 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jul 2019 08:03:28 +0000</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[&#34;C&#43;&#43;&#34;, &#34;VsCode&#34;, &#34;Compiler&#34;]</title>
+      <link>https://bolajiayodeji.com/tags/c&#43;&#43;-vscode-compiler/</link>
+      <pubDate>Mon, 08 Jul 2019 08:03:28 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/c&#43;&#43;-vscode-compiler/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>forms</title>
@@ -129,7 +138,7 @@
     </item>
     
     <item>
-      <title>PWA</title>
+      <title>pwa</title>
       <link>https://bolajiayodeji.com/tags/pwa/</link>
       <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
       
