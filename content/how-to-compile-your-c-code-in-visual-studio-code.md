@@ -30,7 +30,7 @@ In this article I'll show you how to setup your compiler in VsCode and at the en
 
 * Prior knowledge of C++ </br>
   (I assume you're learning C++, about to start learning or just reading this for fun, this article is not a C++ 101 tutorial, some understanding of C++ is needed.)
-* Visual Studio Code Editor </br> Download [here](https://code.visualstudio.com/#alt-downloads) and read the setup docs for [Windows](https://code.visualstudio.com/docs/?dv=win), [Linux](<>) and [Mac](https://code.visualstudio.com/docs/?dv=osx)
+* Visual Studio Code Editor </br> Download [here](https://code.visualstudio.com/#alt-downloads) and read the setup docs for [Windows](https://code.visualstudio.com/docs/?dv=win), [Linux](https://code.visualstudio.com/docs/?dv=linux64_deb) and [Mac](https://code.visualstudio.com/docs/?dv=osx)
 * **Internet connection (!important)**
 * Your geek glasses :).
 
