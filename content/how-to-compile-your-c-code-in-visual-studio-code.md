@@ -182,6 +182,7 @@ Here are some C++ resources you can use to get started with learning C++
 * [MinGW Project](http://www.mingw.org/)
 * [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) by [Jun Han](https://marketplace.visualstudio.com/publishers/formulahendry)
 * [NetlifyCMS](https://www.netlifycms.org/)
+
 > > I wrote this article with my new NetlifyCMS setup, I'll write an article to show you how I did it soon :).
 
 Thank you for reading!
