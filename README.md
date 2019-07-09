@@ -2,7 +2,7 @@
   
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png)
 
-My personal PWA blog built with Hugo, JavaScript and Hosted on Netlify. <br>
+My personal PWA blog built with Hugo, JavaScript and Hosted on Netlify ⚡ <br>
 
 Syntax theme based on [Hugo Lamp Theme](https://github.com/huyb1991/hugo-lamp) with tons of tweaks & modifications.
 
