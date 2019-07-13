@@ -111,10 +111,10 @@ Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost
     
     <item>
       <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
-      <link>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
+      <link>https://bolajiayodeji.com/iterating-through-javascript--objects-5-techniques-and-performance-tests/</link>
       <pubDate>Sun, 10 Mar 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
+      <guid>https://bolajiayodeji.com/iterating-through-javascript--objects-5-techniques-and-performance-tests/</guid>
       <description>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
 * Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
     </item>
@@ -265,10 +265,10 @@ The pull request is available on this git ref pull/{ID}/head which you can fetch
     
     <item>
       <title>How to convert GitHub Markdown files to a simple website</title>
-      <link>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</link>
+      <link>https://bolajiayodeji.com/how-to-convert--github--markdown-files-to-a-simple-website/</link>
       <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</guid>
+      <guid>https://bolajiayodeji.com/how-to-convert--github--markdown-files-to-a-simple-website/</guid>
       <description>Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
  You don&amp;rsquo;t need to use the command line or anything other than your browser. It doesn&amp;rsquo;t require any knowledge in Jekyll. It&amp;rsquo;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.</description>
     </item>

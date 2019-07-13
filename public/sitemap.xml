@@ -3,38 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bolajiayodeji.com/</loc>
-    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/c&#43;&#43;/</loc>
-    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/compiler/</loc>
-    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/</loc>
     <lastmod>2019-07-07T08:03:28+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/</loc>
-    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/vscode/</loc>
-    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -43,44 +13,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/forms/</loc>
-    <lastmod>2019-06-05T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/formspree/</loc>
-    <lastmod>2019-06-05T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/netlify/</loc>
-    <lastmod>2019-06-05T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/introducing-jamstack-the-modern-web-architecture/</loc>
     <lastmod>2019-05-15T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/jamstack/</loc>
-    <lastmod>2019-05-15T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/javascript/</loc>
-    <lastmod>2019-05-15T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/web/</loc>
-    <lastmod>2019-05-15T13:22:14+24:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -89,38 +23,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/google/</loc>
-    <lastmod>2019-05-03T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/open-source/</loc>
-    <lastmod>2019-05-03T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/technical-writing/</loc>
-    <lastmod>2019-05-03T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/object.freeze-vs-const/</loc>
     <lastmod>2019-04-27T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/es6/</loc>
-    <lastmod>2019-04-27T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/objects/</loc>
-    <lastmod>2019-04-27T13:22:14+24:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -129,38 +33,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/a11y/</loc>
-    <lastmod>2019-04-05T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/accessibility/</loc>
-    <lastmod>2019-04-05T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/</loc>
     <lastmod>2019-04-01T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/pwa/</loc>
-    <lastmod>2019-04-01T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/web-apps/</loc>
-    <lastmod>2019-04-01T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/css/</loc>
-    <lastmod>2019-03-25T14:57:05+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -169,43 +43,13 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/variables/</loc>
-    <lastmod>2019-03-25T14:57:05+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/web-development/</loc>
-    <lastmod>2019-03-25T14:57:05+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/</loc>
     <lastmod>2019-03-18T13:50:26+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/go/</loc>
-    <lastmod>2019-03-18T13:50:26+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/hugo/</loc>
-    <lastmod>2019-03-18T13:50:26+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</loc>
+    <loc>https://bolajiayodeji.com/iterating-through-javascript--objects-5-techniques-and-performance-tests/</loc>
     <lastmod>2019-03-10T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/github/</loc>
-    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -214,32 +58,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/developers/</loc>
-    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/github-education/</loc>
-    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/introducing-github-linguistic/</loc>
     <lastmod>2019-02-25T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/lang/</loc>
-    <lastmod>2019-02-25T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/linguistic/</loc>
-    <lastmod>2019-02-25T13:22:14+24:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -248,32 +68,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/cheat-sheet/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/git/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/</loc>
     <lastmod>2019-02-14T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/babel/</loc>
-    <lastmod>2019-02-14T13:22:14+24:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -282,20 +78,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/modules/</loc>
-    <lastmod>2019-02-11T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/manipulating-arrays-in-javascript/</loc>
     <lastmod>2019-02-04T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/arrays/</loc>
-    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -304,38 +88,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/chrome/</loc>
-    <lastmod>2019-01-28T15:12:21+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/lighthouse/</loc>
-    <lastmod>2019-01-28T15:12:21+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/devtools/</loc>
-    <lastmod>2019-01-28T15:12:21+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/the-growth-mindet-demystified/</loc>
     <lastmod>2019-01-21T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/education/</loc>
-    <lastmod>2019-01-21T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/growth-mindset/</loc>
-    <lastmod>2019-01-21T13:22:14+24:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -354,8 +108,171 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/ssl/</loc>
-    <lastmod>2018-11-26T13:22:14+24:00</lastmod>
+    <loc>https://bolajiayodeji.com/http-status-codes-and-their-meanings/</loc>
+    <lastmod>2018-11-24T13:22:14+24:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</loc>
+    <lastmod>2018-11-11T13:22:14+24:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/how-to-convert--github--markdown-files-to-a-simple-website/</loc>
+    <lastmod>2018-11-05T13:22:14+24:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/how-to-connect-mysql-with-php/</loc>
+    <lastmod>2018-04-28T13:22:14+24:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/a11y/</loc>
+    <lastmod>2019-04-05T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/accessibility/</loc>
+    <lastmod>2019-04-05T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/arrays/</loc>
+    <lastmod>2019-02-04T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/babel/</loc>
+    <lastmod>2019-02-14T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/</loc>
+    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/browser/</loc>
+    <lastmod>2018-11-24T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/cheat-sheet/</loc>
+    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/chrome/</loc>
+    <lastmod>2019-01-28T15:12:21+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/compiler/</loc>
+    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/css/</loc>
+    <lastmod>2019-03-25T14:57:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/database/</loc>
+    <lastmod>2018-04-28T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/developers/</loc>
+    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/devtools/</loc>
+    <lastmod>2019-01-28T15:12:21+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/education/</loc>
+    <lastmod>2019-01-21T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/es6/</loc>
+    <lastmod>2019-04-27T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/forms/</loc>
+    <lastmod>2019-06-05T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/formspree/</loc>
+    <lastmod>2019-06-05T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/git/</loc>
+    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/github/</loc>
+    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/github-education/</loc>
+    <lastmod>2019-03-04T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/go/</loc>
+    <lastmod>2019-03-18T13:50:26+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/google/</loc>
+    <lastmod>2019-05-03T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/growth-mindset/</loc>
+    <lastmod>2019-01-21T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -366,48 +283,51 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/https/</loc>
-    <lastmod>2018-11-26T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/service-workers/</loc>
-    <lastmod>2018-11-26T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/http-status-codes-and-their-meanings/</loc>
-    <lastmod>2018-11-24T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/browser/</loc>
-    <lastmod>2018-11-24T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/tags/http/</loc>
     <lastmod>2018-11-24T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/status-code/</loc>
-    <lastmod>2018-11-24T13:22:14+24:00</lastmod>
+    <loc>https://bolajiayodeji.com/tags/https/</loc>
+    <lastmod>2018-11-26T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</loc>
-    <lastmod>2018-11-11T13:22:14+24:00</lastmod>
+    <loc>https://bolajiayodeji.com/tags/hugo/</loc>
+    <lastmod>2019-03-18T13:50:26+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</loc>
-    <lastmod>2018-11-05T13:22:14+24:00</lastmod>
+    <loc>https://bolajiayodeji.com/tags/jamstack/</loc>
+    <lastmod>2019-05-15T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/javascript/</loc>
+    <lastmod>2019-05-15T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/lang/</loc>
+    <lastmod>2019-02-25T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/lighthouse/</loc>
+    <lastmod>2019-01-28T15:12:21+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/linguistic/</loc>
+    <lastmod>2019-02-25T13:22:14+24:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -417,19 +337,8 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/tags/website/</loc>
-    <lastmod>2018-11-05T13:22:14+24:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/how-to-connect-mysql-with-php/</loc>
-    <lastmod>2018-04-28T13:22:14+24:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/database/</loc>
-    <lastmod>2018-04-28T13:22:14+24:00</lastmod>
+    <loc>https://bolajiayodeji.com/tags/modules/</loc>
+    <lastmod>2019-02-11T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -440,13 +349,110 @@
   </url>
   
   <url>
+    <loc>https://bolajiayodeji.com/tags/netlify/</loc>
+    <lastmod>2019-06-05T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/objects/</loc>
+    <lastmod>2019-04-27T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/open-source/</loc>
+    <lastmod>2019-05-03T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bolajiayodeji.com/tags/php/</loc>
     <lastmod>2018-04-28T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/categories/</loc>
+    <loc>https://bolajiayodeji.com/tags/pwa/</loc>
+    <lastmod>2019-04-01T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/service-workers/</loc>
+    <lastmod>2018-11-26T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/ssl/</loc>
+    <lastmod>2018-11-26T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/status-code/</loc>
+    <lastmod>2018-11-24T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/</loc>
+    <lastmod>2019-04-05T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/technical-writing/</loc>
+    <lastmod>2019-05-03T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/variables/</loc>
+    <lastmod>2019-03-25T14:57:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/version--control/</loc>
+    <lastmod>2018-11-11T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
+    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/vscode/</loc>
+    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/web/</loc>
+    <lastmod>2019-05-15T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/web-apps/</loc>
+    <lastmod>2019-04-01T13:22:14+24:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/web-development/</loc>
+    <lastmod>2019-03-25T14:57:05+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/website/</loc>
+    <lastmod>2018-11-05T13:22:14+24:00</lastmod>
     <priority>0</priority>
   </url>
   
