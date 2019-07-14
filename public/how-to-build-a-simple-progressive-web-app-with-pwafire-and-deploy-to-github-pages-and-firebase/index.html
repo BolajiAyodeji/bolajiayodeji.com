@@ -1,40 +1,88 @@
 <!doctype html>
-<html ⚡ lang=en-us>
-<head>
-<meta charset=utf-8>
-<script async src=https://cdn.ampproject.org/v0.js></script>
-<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
-<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
-<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
-<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
-<meta name=twitter:card content=summary>
-<meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.">
-<meta name=twitter:description content="Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences.">
-<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.40.1">
-<link rel=canonical href=https://bolajiayodeji.com/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-pages-and-firebase/ >
-<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
-<meta name=renderer content=webkit>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name=format-detection content="telephone=no,email=no,adress=no">
-<meta name=robots content=index,follow>
-<meta name=referrer content=origin-when-cross-origin>
-<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
-<meta name=msvalidate.01 content=bing_site_verification_code>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<link rel=manifest href=/manifest.json>
-<meta name=theme-color content=#20242b>
-<script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    
+    
+
+    
+    <title>How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</title>
+
+    
+    
+
+
+
+
+
+
+
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!
+I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Bolaji Ayodeji" />
+<meta name="twitter:title" content="How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase." />
+<meta name="twitter:description" content="Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!
+I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to PWAFire an Open Sourced framework that helps you to Build Scalable Progressive Web Apps/First Experiences." />
+<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1">
+
+
+<link rel="canonical" href="https://bolajiayodeji.com/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-pages-and-firebase/">
+<link rel="alternative" href="/index.xml" title="Bolaji Ayodeji" type="application/atom+xml">
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+
+<meta name="msvalidate.01" content="bing_site_verification_code" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+
+
+<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120"
+  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#20242b" />
+
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
 <style amp-boilerplate>
-body {
+  body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -91,17 +139,18 @@ body {
     }
   }
 </style><noscript>
-<style amp-boilerplate>
-body {
+  <style amp-boilerplate>
+    body {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       animation: none
     }
-</style>
+  </style>
 </noscript>
 <style amp-custom>
-html {
+   
+  html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1427,108 +1476,213 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     }
   }
 </style>
-</head>
-<body>
-<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
-<ul class=sidebar-list>
-<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-</ul>
+
+  </head>
+  <body>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
+    
+    
+    
+    
+      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/search">Search 🔍</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+    
+  </ul>
 </amp-sidebar>
-<header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<p>
-<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
-<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</p>
-<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
-<span class="icon icon-menu"></span>
-</button>
-<nav class=menu>
-<ul class=menu-list>
-<li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
-<li class=menu-item>
-<a href=/search>Search 🔍</a></li>
-<li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
-</ul>
-</nav>
+
+    
+<header class="header">
+  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
+  <p class="subtitle">I write articles on web and frontend development.</p>
+  <p class="subtitle"><a href="/portfolio">About Me →</a></p>
+  <p>
+    <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </p>
+
+  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+      <li
+        class="menu-item  is-active">
+        <a href="/">Home 🏠</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/search">Search 🔍</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+      
+      <li>
+        <div id="codefund"></div>
+      </li>
+    </ul>
+
+  </nav>
+
 </header>
+
 <section class="main post-detail">
-<header class=post-header>
-<h1 class=post-title>How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</h1>
-<p class=entry-meta><span class=entry-time>Nov 26, 2018</span> 12 min read
-</p>
-</header>
-<article class=post-content>
-<p>Recently I discovered a new trend, a powerful web technology, one that every Web Developer should know, yeah I said every!</p>
-<p>I first heard about PWA’s few months back, and at first it was weird trying to understand the concept and then trying to learn it. I stumbled on a link that led me to <a href=https://github.com/mayeedwin/pwafire>PWAFire</a> an Open Sourced framework that helps you to <em>Build Scalable Progressive Web Apps/First Experiences.</em></p>
-<p>I started out by reading what PWA really mean and why I should learn it. After understanding the entire concept, I decided to dive in.</p>
+  <header class="post-header">
+    <h1 class="post-title">How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</h1>
+    <p class="entry-meta"><span class="entry-time">Nov 26, 2018</span> 12 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p>Recently I discovered a new trend, a powerful web technology, one that every Web
+Developer should know, yeah I said every!</p>
+
+<p>I first heard about PWA’s few months back, and at first it was weird trying to
+understand the concept and then trying to learn it. I stumbled on a link that
+led me to <a href="https://github.com/mayeedwin/pwafire">PWAFire</a> an Open Sourced
+framework that helps you to <em>Build Scalable Progressive Web Apps/First
+Experiences.</em></p>
+
+<p>I started out by reading what PWA really mean and why I should learn it. After
+understanding the entire concept, I decided to dive in.</p>
+
 <blockquote>
-<p>As a Developer, one skill you should possess is “Learning”. What you knew yesterday might be obsolete today. It happens on the web from time to time that powerful technologies come to exist, if you are still behind, you’d miss out on this evolution.</p>
+<p>As a Developer, one skill you should possess is “Learning”. What you knew
+yesterday might be obsolete today. It happens on the web from time to time that
+powerful technologies come to exist, if you are still behind, you’d miss out on
+this evolution.</p>
 </blockquote>
-<p>So you should have heard of PWA or Progressive Web Apps and you probably might be wondering what this really means?</p>
+
+<p>So you should have heard of PWA or Progressive Web Apps and you probably might
+be wondering what this really means?</p>
+
 <blockquote>
-<p>Basically a Progressive Web App is a mobile website that can perform super-fast and behave just like a mobile app.</p>
+<p>Basically a Progressive Web App is a mobile website that can perform super-fast
+and behave just like a mobile app.</p>
 </blockquote>
-<p>A Progressive Web App (PWA) is a web app that uses modern web capabilities to deliver an app-like experience to users.</p>
+
+<p>A Progressive Web App (PWA) is a web app that uses modern web capabilities to
+deliver an app-like experience to users.</p>
+
 <p>Now lets break this down!</p>
+
 <p>Lets break the word <em>Progressive Web App;</em></p>
+
 <p><strong>Progressive</strong>: <em>happening or developing gradually or in stages.</em></p>
-<p><strong>Web</strong>: A <em>common name for the World Wide Web, a subset of the Internet consisting of the pages that can be accessed by a Web browser.</em></p>
+
+<p><strong>Web</strong>: A <em>common name for the World Wide Web, a subset of the Internet
+consisting of the pages that can be accessed by a Web browser.</em></p>
+
 <p><strong>App:</strong> An application, especially as downloaded by a user to a mobile device</p>
+
 <blockquote>
-<p>Lets merge all this definition; *a subset of the Internet consisting of the pages that can be accessed by a Web browser, happening or developing gradually or in stages and can be *downloaded by a user to a mobile device.</p>
+<p>Lets merge all this definition; *a subset of the Internet consisting of the
+pages that can be accessed by a Web browser, happening or developing gradually
+or in stages and can be *downloaded by a user to a mobile device.</p>
 </blockquote>
-<p>To wrap up; <em>A progressive Web App is a modern web application built with a number of specific technologies and standard patterns which allow them to take advantage of both web and native app features.</em></p>
-<p>PWA helps us to build Cross-platform web apps (Works on the web, Android, iOS and Desktop)</p>
-<p>Progressive Web Apps are installable and live on a user’s <strong>home screen</strong>, without the need for an app store. They offer an <strong>immersive full screen</strong>
-experience with help from a web app manifest file and can even re-engage users with web <strong>push notifications</strong>.</p>
-<h3 id=what-does-a-progressive-web-app-looks-like><strong>What does a Progressive Web App Looks Like?</strong></h3>
-<p>When you visit a website with PWA, It pops up with a notification telling you to add the website to your homescreen. This is just like downloading an app from the App Store or Play Store.</p>
+
+<p>To wrap up; <em>A progressive Web App is a modern web application built with a
+number of specific technologies and standard patterns which allow them to take
+advantage of both web and native app features.</em></p>
+
+<p>PWA helps us to build Cross-platform web apps (Works on the web, Android, iOS
+and Desktop)</p>
+
+<p>Progressive Web Apps are installable and live on a user’s <strong>home screen</strong>,
+without the need for an app store. They offer an <strong>immersive full screen</strong>
+experience with help from a web app manifest file and can even re-engage users
+with web <strong>push notifications</strong>.</p>
+
+<h3 id="what-does-a-progressive-web-app-looks-like"><strong>What does a Progressive Web App Looks Like?</strong></h3>
+
+<p>When you visit a website with PWA, It pops up with a notification telling you to
+add the website to your homescreen. This is just like downloading an app from
+the App Store or Play Store.</p>
+
 <p>I would be showing you shots from
-<a href=http://netty-finder.herokuapp.com/ >Netty-Finder</a> a little project I built, you can contribute <a href=https://github.com/BolajiAyodeji/netty-finder>here</a>.</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*8DOr_NvYwXwEzhOw alt=""></p>
-<p>Once you’ve clicked <strong>ADD,</strong> the website is then installed on your device and yes it acts like a mobile app.</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/0*UhbmvAiQyPXNiBIC alt=""></p>
-<p>You can uninstall it and share it; basically you use it like a normal Mobile App. Cool right?</p>
+<a href="http://netty-finder.herokuapp.com/">Netty-Finder</a> a little project I built, you
+can contribute <a href="https://github.com/BolajiAyodeji/netty-finder">here</a>.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*8DOr_NvYwXwEzhOw" alt="" /></p>
+
+<p>Once you’ve clicked <strong>ADD,</strong> the website is then installed on your device and
+yes it acts like a mobile app.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/0*UhbmvAiQyPXNiBIC" alt="" /></p>
+
+<p>You can uninstall it and share it; basically you use it like a normal Mobile
+App. Cool right?</p>
+
 <p>PWA’s can also be installed on Android, iOS and Desktop.</p>
+
 <p>Here’s how it looks on Desktop</p>
-<p><img src=https://cdn-images-1.medium.com/max/880/1*ItX86SzE0hFhPyfhHksn5g.png alt=""></p>
-<h3 id=why-build-a-progressive-web-app>Why build a Progressive Web App?</h3>
+
+<p><img src="https://cdn-images-1.medium.com/max/880/1*ItX86SzE0hFhPyfhHksn5g.png" alt="" /></p>
+
+<h3 id="why-build-a-progressive-web-app">Why build a Progressive Web App?</h3>
+
 <p>So why should you build a PWA?</p>
-<p>Building a high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase traffic.</p>
-<hr>
+
+<p>Building a high-quality Progressive Web App has incredible benefits, making it
+easy to delight your users, grow engagement and increase traffic.</p>
+
+<hr />
+
 <ul>
-<li><strong>they’re installable</strong> — if a user visits your website for the second, third, or fourth time, they get the option of adding it to their home screen. After that, it’s still linkable and therefore shareable via URL.</li>
-<li><strong>they’re indexable</strong> — your app is visible in the browsers and so it’s searchable for users.</li>
-<li><strong>they work offline</strong> — once you download it to your device, you can cache contents from the app without an Internet connection. Your users will never see the running downasaur :)</li>
-<li>t**hey can send push notifications **— once a new article/product/piece of news shows up on your website, your users will be notified just like every mobile app out there.</li>
+<li><strong>they’re installable</strong> — if a user visits your website for the second, third,
+or fourth time, they get the option of adding it to their home screen. After
+that, it’s still linkable and therefore shareable via URL.</li>
+<li><strong>they’re indexable</strong> — your app is visible in the browsers and so it’s
+searchable for users.</li>
+<li><strong>they work offline</strong> — once you download it to your device, you can cache
+contents from the app without an Internet connection. Your users will never see
+the running downasaur :)</li>
+<li>t**hey can send push notifications **— once a new article/product/piece of news
+shows up on your website, your users will be notified just like every mobile app
+out there.</li>
 <li><strong>they cut down page load times</strong> — as proved by
-<a href=https://developers.google.com/web/showcase/2016/pdfs/housing.pdf>housing.com</a>, PWAs can significantly reduce page load times and thus improve overall UX.</li>
-<li><strong>they’re progressive</strong> — they will work for any user on any device, even with a poor Internet connection.</li>
+<a href="https://developers.google.com/web/showcase/2016/pdfs/housing.pdf">housing.com</a>,
+PWAs can significantly reduce page load times and thus improve overall UX.</li>
+<li><strong>they’re progressive</strong> — they will work for any user on any device, even with a
+poor Internet connection.</li>
 </ul>
+
 <p>The benefits of Progressive Web Apps are enormous — you can check more on
-<a href=https://developers.google.com/web/progressive-web-apps/ >Google Developers Docs</a>.</p>
-<h3 id=the-three-basic-criteria-for-a-pwa>The three basic criteria for a PWA</h3>
-<p>The three baseline criteria a website must fulfil in order to qualify as a Progressive Web App are:</p>
+<a href="https://developers.google.com/web/progressive-web-apps/">Google Developers
+Docs</a>.</p>
+
+<h3 id="the-three-basic-criteria-for-a-pwa">The three basic criteria for a PWA</h3>
+
+<p>The three baseline criteria a website must fulfil in order to qualify as a
+Progressive Web App are:</p>
+
 <blockquote>
 <ul>
-<li><p>You need to be running under HTTPS.</li>
-<li><p>You need a Web App Manifest.</li>
-<li><p>You need a Service Worker.</li>
+<li><p>You need to be running under HTTPS.</p></li>
+
+<li><p>You need a Web App Manifest.</p></li>
+
+<li><p>You need a Service Worker.</p></li>
 </ul>
 </blockquote>
+
 <p>Now lets move to the Codelab section :)</p>
-<h3 id=codelab-flow>Codelab Flow</h3>
+
+<h3 id="codelab-flow">Codelab Flow</h3>
+
 <ul>
 <li>What we shall do in this codelab</li>
 <li>Download Demo Project</li>
@@ -1541,52 +1695,92 @@ experience with help from a web app manifest file and can even re-engage users w
 <li>GitHub Pages Hosting</li>
 <li>Whats next</li>
 </ul>
-<h3 id=what-to-do>What to do</h3>
+
+<h3 id="what-to-do">What to do</h3>
+
 <p>We are going to convert a basic static site into a Progressive Web App.</p>
+
 <p>Make sure to follow all the steps as documented later below.</p>
-<p><a href=https://github.com/BolajiAyodeji/code-lab-demo/archive/master.zip>Download</a>
-the project template. <strong>Unzip</strong> the downloaded file to your preferred location after <strong>download.</strong></p>
+
+<p><a href="https://github.com/BolajiAyodeji/code-lab-demo/archive/master.zip">Download</a>
+the project template. <strong>Unzip</strong> the downloaded file to your preferred location
+after <strong>download.</strong></p>
+
 <p>If you are using <strong>GitHub Desktop,</strong> simply
-<a href=https://github.com/BolajiAyodeji/code-lab-demo/fork>Fork</a> and
-<a href=https://github.com/BolajiAyodeji/code-lab-demo/fork>clone</a> it. If you’re using Git, <code>git clone https://github.com/BolajiAyodeji/code-lab-demo.git</code></p>
-<h3 id=download-demo-project>Download Demo Project</h3>
+<a href="https://github.com/BolajiAyodeji/code-lab-demo/fork">Fork</a> and
+<a href="https://github.com/BolajiAyodeji/code-lab-demo/fork">clone</a> it. If you’re using
+Git, <code>git clone https://github.com/BolajiAyodeji/code-lab-demo.git</code></p>
+
+<h3 id="download-demo-project">Download Demo Project</h3>
+
 <p>This project is a basic app built with HTML, CSS, BOOTSTRAP AND JAVASCRIPT.</p>
-<p>The App checks your Date of Birth and detects the Day of the Week you were born. Pretty cool right? 😀</p>
-<p>We are going to convert this web app into a Progressive Web App and test it using the <a href=https://pwafire.org/developer/docs/checklist/ >PWAFire Checklist</a></p>
-<p><a href=https://github.com/BolajiAyodeji/code-lab-demo/fork>DOWNLOAD THE DEMO WEB APP</a></p>
-<h3 id=starter-guide>Starter Guide</h3>
+
+<p>The App checks your Date of Birth and detects the Day of the Week you were born.
+Pretty cool right? 😀</p>
+
+<p>We are going to convert this web app into a Progressive Web App and test it
+using the <a href="https://pwafire.org/developer/docs/checklist/">PWAFire Checklist</a></p>
+
+<p><a href="https://github.com/BolajiAyodeji/code-lab-demo/fork">DOWNLOAD THE DEMO WEB APP</a></p>
+
+<h3 id="starter-guide">Starter Guide</h3>
+
 <p>In your root folder, create two empty files; <code>service-worker.js</code> and
-<code>manifest.json</code> and save. Once done; let’s proceed down here;</p>
-<h3 id=setup-service-worker>Setup Service Worker</h3>
-<p>This is the first step to making our web app work offline. Copy and paste this code to the <strong>index file</strong> just before the end of the body tag or in the head tag.</p>
+<code>manifest.json</code> and save. Once done; let&rsquo;s proceed down here;</p>
+
+<h3 id="setup-service-worker">Setup Service Worker</h3>
+
+<p>This is the first step to making our web app work offline. Copy and paste this
+code to the <strong>index file</strong> just before the end of the body tag or in the head
+tag.</p>
+
 <p><strong>N/B : YOU NEED HTTPS</strong> :</p>
-<p>We are going to use <a href=https://firebase.google.com/docs/hosting/deploying#section-hosting-setup>Firebase Hosting</a>
-and <a href=https://pages.github.com/ >GitHub Pages</a> later which shall have <strong>HTTPS</strong>
+
+<p>We are going to use <a href="https://firebase.google.com/docs/hosting/deploying#section-hosting-setup">Firebase
+Hosting</a>
+and <a href="https://pages.github.com/">GitHub Pages</a> later which shall have <strong>HTTPS</strong>
 already provisioned for our project.</p>
-<p>First, we need to check if the browser supports service workers, and if it does, register the service worker.</p>
-<pre><code>&lt;!-- register service worker -->
-        &lt;script>
+
+<p>First, we need to check if the browser supports service workers, and if it does,
+register the service worker.</p>
+
+<pre><code>&lt;!-- register service worker --&gt;
+        &lt;script&gt;
           if ('serviceWorker' in navigator)
           {
           window.addEventListener('load', function() {
             navigator.serviceWorker.register('/service-worker.js')
-            .then(function() { console.log("Service Worker Registered, Cheers to PWA Fire!"); });
+            .then(function() { console.log(&quot;Service Worker Registered, Cheers to PWA Fire!&quot;); });
           }
           );
         }
-        &lt;/script>
- &lt;!-- end of service worker -->
+        &lt;/script&gt;
+ &lt;!-- end of service worker --&gt;
 </code></pre>
-<h3 id=setup-web-manifest>Setup Web Manifest</h3>
-<p>We are going to add a link tag to all the pages that encompass our web app inside the head tag. For our case, we only have one page, the <strong>index.html</strong>. Add the following code to it.</p>
-<pre><code>&lt;!-- start of web manifest -->
-&lt;link rel="manifest" href="/manifest.json">
-&lt;!-- end of web manifest -->
+
+<h3 id="setup-web-manifest">Setup Web Manifest</h3>
+
+<p>We are going to add a link tag to all the pages that encompass our web app
+inside the head tag. For our case, we only have one page, the <strong>index.html</strong>.
+Add the following code to it.</p>
+
+<pre><code>&lt;!-- start of web manifest --&gt;
+&lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;
+&lt;!-- end of web manifest --&gt;
 </code></pre>
-<h3 id=configure-service-worker-service-worker-js>Configure Service Worker // service-worker.js</h3>
-<p>A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don’t need a web page or user interaction.</p>
-<p><strong>NOTE</strong> : The important thing to understand about the <strong>Service Worker</strong> is that you are in control of the network. You get to decide what is cached, how it is cached and how it should be returned to the user.</p>
+
+<h3 id="configure-service-worker-service-worker-js">Configure Service Worker // service-worker.js</h3>
+
+<p>A service worker is a script that your browser runs in the background, separate
+from a web page, opening the door to features that don’t need a web page or user
+interaction.</p>
+
+<p><strong>NOTE</strong> : The important thing to understand about the <strong>Service Worker</strong> is
+that you are in control of the network. You get to decide what is cached, how it
+is cached and how it should be returned to the user.</p>
+
 <p>Follow the steps in the code below, configure to your desired taste :)</p>
+
 <pre><code>/ PWA Fire Bundle
                       
         // after a service worker is installed and the user navigates to a different page or 
@@ -1595,17 +1789,17 @@ already provisioned for our project.</p>
         self.addEventListener('fetch', function(event) {
         event.respondWith(caches.open('cache').then(function(cache) {
         return cache.match(event.request).then(function(response) {
-        console.log("cache request: " + event.request.url);
+        console.log(&quot;cache request: &quot; + event.request.url);
         var fetchPromise = fetch(event.request).then(function(networkResponse) {           
         // if we got a response from the cache, update the cache                   
-        console.log("fetch completed: " + event.request.url, networkResponse);
+        console.log(&quot;fetch completed: &quot; + event.request.url, networkResponse);
         if (networkResponse) {
-            console.debug("updated cached page: " + event.request.url, networkResponse);
+            console.debug(&quot;updated cached page: &quot; + event.request.url, networkResponse);
               cache.put(event.request, networkResponse.clone());}
               return networkResponse;
                   }, function (event) {   
         // rejected promise - just ignore it, we're offline!   
-                  console.log("Error in fetch()", event);
+                  console.log(&quot;Error in fetch()&quot;, event);
                   event.waitUntil(
                   caches.open('cache').then(function(cache) { 
         // our cache is named *cache* in the caches.open() above
@@ -1639,229 +1833,372 @@ already provisioned for our project.</p>
         self.addEventListener('install', function(event) {
           // The promise that skipWaiting() returns can be safely ignored.
           self.skipWaiting();
-          console.log("Latest version installed!");
+          console.log(&quot;Latest version installed!&quot;);
         });
 </code></pre>
-<h3 id=configure-web-manifest-manifest-json>Configure Web Manifest // manifest.json</h3>
-<p>Configuring the <code>manifest.json</code> file helps you to specify how you want your web app to look like when launched on the device.</p>
-<p>You can also use the <a href=https://app-manifest.firebaseapp.com/ >WEB MANIFEST GENERATOR</a> to automatically generate your
+
+<h3 id="configure-web-manifest-manifest-json">Configure Web Manifest // manifest.json</h3>
+
+<p>Configuring the <code>manifest.json</code> file helps you to specify how you want your web
+app to look like when launched on the device.</p>
+
+<p>You can also use the <a href="https://app-manifest.firebaseapp.com/">WEB MANIFEST
+GENERATOR</a> to automatically generate your
 <code>manifest.json</code> file</p>
+
 <pre><code>{
-          "background_color": "#fff",
-          "display": "standalone",
-          "orientation":"portrait",
-          "theme_color": "#fff",
-          "short_name": "DOB Finder",
-          "name": "Date of Birth Finder",
-          "description": "description or purpose of your progressive web app",
-          "lang": "en-US",
-          "icons": [
+          &quot;background_color&quot;: &quot;#fff&quot;,
+          &quot;display&quot;: &quot;standalone&quot;,
+          &quot;orientation&quot;:&quot;portrait&quot;,
+          &quot;theme_color&quot;: &quot;#fff&quot;,
+          &quot;short_name&quot;: &quot;DOB Finder&quot;,
+          &quot;name&quot;: &quot;Date of Birth Finder&quot;,
+          &quot;description&quot;: &quot;description or purpose of your progressive web app&quot;,
+          &quot;lang&quot;: &quot;en-US&quot;,
+          &quot;icons&quot;: [
           {
-            "src": "img/icons/icon-72x72.png",
-            "sizes": "72x72",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-72x72.png&quot;,
+            &quot;sizes&quot;: &quot;72x72&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           },
           {
-            "src": "img/icons/icon-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-96x96.png&quot;,
+            &quot;sizes&quot;: &quot;96x96&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           },
           {
-            "src": "img/icons/icon-128x128.png",
-            "sizes": "128x128",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-128x128.png&quot;,
+            &quot;sizes&quot;: &quot;128x128&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           },
           {
-            "src": "img/icons/icon-144x144.png",
-            "sizes": "144x144",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-144x144.png&quot;,
+            &quot;sizes&quot;: &quot;144x144&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           },
           {
-            "src": "img/icons/icon-152x152.png",
-            "sizes": "152x152",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-152x152.png&quot;,
+            &quot;sizes&quot;: &quot;152x152&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           },
           {
-            "src": "img/icons/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-192x192.png&quot;,
+            &quot;sizes&quot;: &quot;192x192&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           },
           {
-            "src": "img/icons/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-384x384.png&quot;,
+            &quot;sizes&quot;: &quot;384x384&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           },
           {
-            "src": "img/icons/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
+            &quot;src&quot;: &quot;img/icons/icon-512x512.png&quot;,
+            &quot;sizes&quot;: &quot;512x512&quot;,
+            &quot;type&quot;: &quot;image/png&quot;
           }
           ],
-          "start_url": "index.html?launcher=true",
+          &quot;start_url&quot;: &quot;index.html?launcher=true&quot;,
           }
 </code></pre>
-<p><strong>PLEASE NOTE</strong>: When using your own logos, ensure that the image has equal width and height preferably <strong>(500px x 500px)</strong>, sizes like 400px x 350px will result in <strong>errors!</strong> Find more starter guide on PWAFire Web Manifest developer docs <a href=https://pwafire.org/developer/docs/web-manifest/ >available here</a>.</p>
-<p>In the head tag, add theme color to all your pages as shown in the code below; You could use the same theme color as in the <strong>manfest.json</strong> file.</p>
-<pre><code>&lt;!-- theme-color -->
-&lt;meta name="theme-color" content="#fff" />
-&lt;!-- end-theme-color -->
+
+<p><strong>PLEASE NOTE</strong>: When using your own logos, ensure that the image has equal
+width and height preferably <strong>(500px x 500px)</strong>, sizes like 400px x 350px will
+result in <strong>errors!</strong> Find more starter guide on PWAFire Web Manifest developer
+docs <a href="https://pwafire.org/developer/docs/web-manifest/">available here</a>.</p>
+
+<p>In the head tag, add theme color to all your pages as shown in the code below;
+You could use the same theme color as in the <strong>manfest.json</strong> file.</p>
+
+<pre><code>&lt;!-- theme-color --&gt;
+&lt;meta name=&quot;theme-color&quot; content=&quot;#fff&quot; /&gt;
+&lt;!-- end-theme-color --&gt;
 </code></pre>
-<h3 id=firebase-hosting>Firebase Hosting</h3>
-<p>If you’re new to <a href=https://firebase.google.com/ >Firebase</a>, you’ll need to create your account and install some tools first.</p>
+
+<h3 id="firebase-hosting">Firebase Hosting</h3>
+
+<p>If you’re new to <a href="https://firebase.google.com/">Firebase</a>, you’ll need to create
+your account and install some tools first.</p>
+
 <ol>
 <li><p>Create a <strong>Firebase account</strong> at
-<a href=https://firebase.google.com/console/ >https://firebase.google.com/console/</a>. Once your account has been created and you’ve signed in, you’re ready to deploy!</li>
+<a href="https://firebase.google.com/console/">https://firebase.google.com/console/</a>.
+Once your account has been created and you’ve signed in, you’re ready to deploy!</p></li>
+
 <li><p>Create a new Firebase app at
-<a href=https://firebase.google.com/console/ >https://firebase.google.com/console/</a></li>
+<a href="https://firebase.google.com/console/">https://firebase.google.com/console/</a></p></li>
 </ol>
+
 <p>For this codelab, name the project<code>DOB Finder</code> and take note of the Project ID</p>
+
 <ol>
-<li>Install the <strong>Firebase tools</strong> via npm (run this in your command line). The Firebase Command Line Interface (CLI) will allow you to serve the web app locally and deploy.</li>
+<li>Install the <strong>Firebase tools</strong> via npm (run this in your command line). The
+Firebase Command Line Interface (CLI) will allow you to serve the web app
+locally and deploy.</li>
 </ol>
+
 <p><code>npm -g install firebase-tools</code></p>
+
 <ol>
 <li>To verify that the CLI has been installed correctly, open a console and run:</li>
 </ol>
+
 <p><code>firebase --version</code></p>
+
 <ol>
-<li>If you haven’t recently signed in to the Firebase tools, update your credentials:</li>
+<li>If you haven’t recently signed in to the Firebase tools, update your
+credentials:</li>
 </ol>
+
 <p><code>firebase login</code></p>
+
 <ol>
-<li>Make sure you are in the <code>Date of Birth Finder</code> directory<br><code>cd Date-of-Birth-Finder</code> to switch to the directory then Initialize your app to use Firebase.</li>
+<li>Make sure you are in the <code>Date of Birth Finder</code> directory <br> <code>cd
+Date-of-Birth-Finder</code> to switch to the directory then Initialize your app to use
+Firebase.</li>
 </ol>
+
 <p>Select your Project ID and follow the instructions.</p>
+
 <p>When prompted, you can choose any Alias, such as <code>pwafire</code> for instance. Select
-<strong>Firebase Hosting</strong> as the Firebase CLI feature. Provide the default directory as <code>/</code>. To the other prompts, reply NO; <code>N</code></p>
+<strong>Firebase Hosting</strong> as the Firebase CLI feature. Provide the default directory
+as <code>/</code>. To the other prompts, reply NO; <code>N</code></p>
+
 <p><code>firebase init</code></p>
+
 <ol>
 <li>Finally, deploy the app to Firebase:</li>
 </ol>
+
 <p><code>firebase deploy</code></p>
+
 <ol>
 <li>Celebrate. You’re done! Your app will be deployed to the domain:</li>
 </ol>
-<p><a href=https://YOUR-FIREBASE-APP.firebaseapp.com>https://YOUR-FIREBASE-APP.firebaseapp.com</a></p>
+
+<p><a href="https://YOUR-FIREBASE-APP.firebaseapp.com">https://YOUR-FIREBASE-APP.firebaseapp.com</a></p>
+
 <ol>
 <li>Visit your web app on your phone now.</li>
 </ol>
+
 <p>You should see an <strong>“install to homescreen”</strong> banner prompt!</p>
-<p>Welcome to the new world!! Further reading: <a href=https://firebase.google.com/console/ >Firebase Hosting Guide.</a></p>
-<h3 id=github-pages-hosting>Github Pages Hosting</h3>
-<p>If you’re new to <a href=https://github.com/ >GitHub</a>, you’ll need to create your account and create a repository first.</p>
+
+<p>Welcome to the new world!! Further reading: <a href="https://firebase.google.com/console/">Firebase Hosting
+Guide.</a></p>
+
+<h3 id="github-pages-hosting">Github Pages Hosting</h3>
+
+<p>If you’re new to <a href="https://github.com/">GitHub</a>, you’ll need to create your
+account and create a repository first.</p>
+
 <ol>
 <li><p>Create a <strong>GitHub account</strong> at
-<a href=https://github.com/login>https://github.com/signup</a>. Once your account has been created and you’ve signed in, you’re ready to start!</li>
-<li><p>Create a new <strong>Repository</strong> <a href=https://github.com/new>https://github.com/new</a>
-named username.github.io, where <strong>username</strong> is your username (or organization name) on <strong>GitHub</strong>.</li>
+<a href="https://github.com/login">https://github.com/signup</a>. Once your account has
+been created and you’ve signed in, you’re ready to start!</p></li>
+
+<li><p>Create a new <strong>Repository</strong> <a href="https://github.com/new">https://github.com/new</a>
+named username.github.io, where <strong>username</strong> is your username (or organization
+name) on <strong>GitHub</strong>.</p></li>
 </ol>
-<p>If you created a repository with your username before, don’t worry, just name the Repository anything, your project would still be hosted on the url
-<code>username.github.io/project-name</code> where <strong>username</strong> is your username (or organization name) on GitHub and <strong>project-name</strong> is the name of your project repository</p>
+
+<p>If you created a repository with your username before, don’t worry, just name
+the Repository anything, your project would still be hosted on the url
+<code>username.github.io/project-name</code> where <strong>username</strong> is your username (or
+organization name) on GitHub and <strong>project-name</strong> is the name of your project
+repository</p>
+
 <p>For this codelab, name the repository<code>DOB Finder</code></p>
+
 <ol>
 <li><p>Enable GitHub <strong>Pages</strong>
-<a href=https://github.com/repository-name/settings>https://github.com/repository-name/settings</a>, where <strong>repository-name</strong> is the name of your repository on <strong>GitHub</strong>.</li>
-<li><p>Scroll down to the GitHub Pages section,Click the <strong>NONE</strong> Drop down button, Select master branch, Click Save.</li>
-<li><p>Upload your files to your repository</li>
+<a href="https://github.com/repository-name/settings">https://github.com/repository-name/settings</a>,
+where <strong>repository-name</strong> is the name of your repository on <strong>GitHub</strong>.</p></li>
+
+<li><p>Scroll down to the GitHub Pages section,Click the <strong>NONE</strong> Drop down button,
+Select master branch, Click Save.</p></li>
+
+<li><p>Upload your files to your repository</p></li>
 </ol>
-<p>Using GitHub Desktop [<a href=https://desktop.github.com/ >Download GitHub Desktop</a> ]</p>
+
+<p>Using GitHub Desktop [<a href="https://desktop.github.com/">Download GitHub Desktop</a> ]</p>
+
 <ul>
-<li><strong>Clone the repository</strong><br><em>Click the “Set up in Desktop” button. When the GitHub desktop app opens, save the project. If the app doesn’t open, launch it and clone the repository from the app.</em></li>
+<li><strong>Clone the repository</strong> <br> <em>Click the “Set up in Desktop” button. When the
+GitHub desktop app opens, save the project. If the app doesn’t open, launch it
+and clone the repository from the app.</em></li>
 <li><strong>Add your files to the cloned repository</strong></li>
-<li><strong>Commit & publish</strong><br><em>Return to the GitHub Desktop app, Enter the repository, commit your changes, and press the publish button.</em></li>
+<li><strong>Commit &amp; publish</strong> <br> <em>Return to the GitHub Desktop app, Enter the
+repository, commit your changes, and press the publish button.</em></li>
 </ul>
-<p>Using Git Terminal. [<a href=https://git-scm.com/downloads>Download here</a>]</p>
+
+<p>Using Git Terminal. [<a href="https://git-scm.com/downloads">Download here</a>]</p>
+
 <p>Clone the Repository</p>
+
 <p><code>$ git clone https://github.com/username/username.github.io</code></p>
+
 <p>Enter the Project folder</p>
+
 <p><code>$ cd username.github.io</code></p>
+
 <p><strong>Add your files to the cloned repository folder</strong></p>
+
 <p>Add, Commit and Push your Changes</p>
+
 <pre><code>$ git add -all
-$ git commit -m "Initial commit"
+$ git commit -m &quot;Initial commit&quot;
 $ git push -u origin master
 </code></pre>
+
 <ol>
 <li>Celebrate. You’re done! Your app will be deployed to the domain:</li>
 </ol>
-<p><a href=https://username.github.io>https://username.github.io</a></p>
+
+<p><a href="https://username.github.io">https://username.github.io</a></p>
+
 <ol>
-<li>Visit your web app on your phone now. You should see an <strong>“install to homescreen”</strong> banner prompt! Welcome to the new world!! Further reading: <a href=https://pages.github.com/ >GitHub Pages Hosting Guide.</a></li>
+<li>Visit your web app on your phone now. You should see an <strong>“install to
+homescreen”</strong> banner prompt! Welcome to the new world!! Further reading: <a href="https://pages.github.com/">GitHub
+Pages Hosting Guide.</a></li>
 </ol>
-<p>View the Demo App <a href=https://dob-finder.firebaseapp.com/ >here</a></p>
-<h3 id=what-s-next>What’s next?</h3>
-<p>Check out the <strong>Progressive Web Apps Checklist</strong> <a href=https://pwafire.org/developer/docs/checklist/ >in this codelab</a> and check if your web app qualified enough to be a called a PWA.</p>
+
+<p>View the Demo App <a href="https://dob-finder.firebaseapp.com/">here</a></p>
+
+<h3 id="what-s-next">What’s next?</h3>
+
+<p>Check out the <strong>Progressive Web Apps Checklist</strong> <a href="https://pwafire.org/developer/docs/checklist/">in this
+codelab</a> and check if your web
+app qualified enough to be a called a PWA.</p>
+
 <p>You can also use
-<a href=https://developers.google.com/web/tools/lighthouse/ >LightHouse</a> in Chrome Dev Tools to checklist your web app.</p>
-<p>Also <a href=https://pwafire.org/ >PWAFire</a> is an Open Sourced tool built by <a href=https://github.com/mayeedwin>Maye Edwin</a> that helps you build amazing web experiences by providing you with web.dev guide and tool-kits that helps you build progressive web apps with best web practices. One major aspect of PWAFire I enjoy most is the <a href=https://pwafire.org/developer/codelabs/ >Codelabs</a> section :)</p>
+<a href="https://developers.google.com/web/tools/lighthouse/">LightHouse</a> in Chrome Dev
+Tools to checklist your web app.</p>
+
+<p>Also <a href="https://pwafire.org/">PWAFire</a> is an Open Sourced tool built by <a href="https://github.com/mayeedwin">Maye
+Edwin</a> that helps you build amazing web
+experiences by providing you with web.dev guide and tool-kits that helps you
+build progressive web apps with best web practices. One major aspect of PWAFire
+I enjoy most is the <a href="https://pwafire.org/developer/codelabs/">Codelabs</a> section
+:)</p>
+
 <p>You can join the build and contribute
-<a href=https://github.com/mayeedwin/pwafire>here</a></p>
+<a href="https://github.com/mayeedwin/pwafire">here</a></p>
+
 <p>If you still have problems with building your PWA, you can tweet to me
-<a href=http://twitter.com/iambolajiayo>@iambolajiayo</a>, I will respond asap!</p>
+<a href="http://twitter.com/iambolajiayo">@iambolajiayo</a>, I will respond asap!</p>
+
 <p>Thank you for reading, If you did enjoy this article, share!! :)</p>
 </article>
-<footer class=post-footer>
-<ul class=post-tags>
-<li class=post-tag><a href=/tags/javascript><span class=tag>Javascript</span></a></li>
-<li class=post-tag><a href=/tags/pwa><span class=tag>Pwa</span></a></li>
-<li class=post-tag><a href=/tags/service-workers><span class=tag>Service Workers</span></a></li>
-</ul>
-<div id=newsletter>
-<div class=container>
-<div class=description>Get notified when I write something cool.</div>
-<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
-<div class=email-group>
-<label for=email class=sr-only>Email</label>
-<input type=email id=email name=email placeholder=" Your Email Address... " required>
-<button class=button type=submit>Subscribe 📩</button>
-</div>
-</form>
-</div>
-</div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
-<div id=disqus_thread></div>
-<script async custom-element=amp-iframe>
-(function () { 
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/javascript"><span class="tag">Javascript</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/pwa"><span class="tag">Pwa</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/service-workers"><span class="tag">Service Workers</span></a></li>
+      
+    </ul>
+    
+
+    <div id="newsletter">
+      <div class="container">
+        <div class="description"> Get notified when I write something cool. </div>
+
+        <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+
+          <div class="email-group">
+            <label for="email" class="sr-only"> Email </label>
+            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
+            <button class="button" type="submit"> Subscribe 📩</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sharing">
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+      
+
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
         var d = document, s = d.createElement('script');
         s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-</footer>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+  </footer>
 </section>
-<footer class=footer>
-<div id=codefund></div>
-<p>Copyright © 2018-2019</p>
-<ul class=social-list>
-<li class=social-item>
-<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
-</li>
-<li class=social-item>
-<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
-</li>
+<footer class="footer">
+  <div id="codefund"></div>
+
+  <p>Copyright © 2018-2019</p>
+  <ul class="social-list">
+  
+
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
 </ul>
+
 </footer>
+
+
+
+
+
 <amp-analytics type=googleanalytics>
-<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
-<amp-install-serviceworker src=/sw.js layout=nodisplay>
-</amp-install-serviceworker>
-<script>
-if (window.netlifyIdentity) {
+  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
+
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  
+
+  <script>
+    if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
@@ -1870,4 +2207,7 @@ if (window.netlifyIdentity) {
         }
       });
     }
-</script>
+  </script>
+
+  </body>
+</html>

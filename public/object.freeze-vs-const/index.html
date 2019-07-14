@@ -1,40 +1,90 @@
 <!doctype html>
-<html ⚡ lang=en-us>
-<head>
-<meta charset=utf-8>
-<script async src=https://cdn.ampproject.org/v0.js></script>
-<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
-<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
-<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
-<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Object.freeze() vs Const</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!const and Object.freeze() are totally different.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
-<meta name=twitter:card content=summary>
-<meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Object.freeze() vs Const">
-<meta name=twitter:description content="ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!const and Object.freeze() are totally different.">
-<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.40.1">
-<link rel=canonical href=https://bolajiayodeji.com/object.freeze-vs-const/ >
-<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
-<meta name=renderer content=webkit>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name=format-detection content="telephone=no,email=no,adress=no">
-<meta name=robots content=index,follow>
-<meta name=referrer content=origin-when-cross-origin>
-<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
-<meta name=msvalidate.01 content=bing_site_verification_code>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
-<link rel=manifest href=/manifest.json>
-<meta name=theme-color content=#20242b>
-<script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    
+    
+
+    
+    <title>Object.freeze() vs Const</title>
+
+    
+    
+
+
+
+
+
+
+
+
+<meta name="author"
+  content="⚡️Bolaji Ayodeji⚡️" />
+<meta name="description" content="ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .
+It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!
+const and Object.freeze() are totally different.">
+<meta name="keywords"
+  content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Bolaji Ayodeji" />
+<meta name="twitter:title" content="Object.freeze() vs Const" />
+<meta name="twitter:description" content="ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .
+It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!
+const and Object.freeze() are totally different." />
+<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1">
+
+
+<link rel="canonical" href="https://bolajiayodeji.com/object.freeze-vs-const/">
+<link rel="alternative" href="/index.xml" title="Bolaji Ayodeji" type="application/atom+xml">
+
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+
+<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
+
+<meta name="msvalidate.01" content="bing_site_verification_code" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
+
+
+<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120"
+  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+
+<link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#20242b" />
+
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
 <style amp-boilerplate>
-body {
+  body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -91,17 +141,18 @@ body {
     }
   }
 </style><noscript>
-<style amp-boilerplate>
-body {
+  <style amp-boilerplate>
+    body {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       animation: none
     }
-</style>
+  </style>
 </noscript>
 <style amp-custom>
-html {
+   
+  html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1427,74 +1478,133 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     }
   }
 </style>
-</head>
-<body>
-<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
-<ul class=sidebar-list>
-<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-</ul>
+
+  </head>
+  <body>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
+    
+    
+    
+    
+      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="/search">Search 🔍</a></li>
+    
+      <li class="sidebar-item "><a class="sidebar-link" href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+    
+  </ul>
 </amp-sidebar>
-<header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<p>
-<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
-<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</p>
-<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
-<span class="icon icon-menu"></span>
-</button>
-<nav class=menu>
-<ul class=menu-list>
-<li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
-<li class=menu-item>
-<a href=/search>Search 🔍</a></li>
-<li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
-</ul>
-</nav>
+
+    
+<header class="header">
+  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
+  <p class="subtitle">I write articles on web and frontend development.</p>
+  <p class="subtitle"><a href="/portfolio">About Me →</a></p>
+  <p>
+    <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </p>
+
+  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+      <li
+        class="menu-item  is-active">
+        <a href="/">Home 🏠</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="/search">Search 🔍</a></li>
+      
+      <li
+        class="menu-item ">
+        <a href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
+      
+      <li>
+        <div id="codefund"></div>
+      </li>
+    </ul>
+
+  </nav>
+
 </header>
+
 <section class="main post-detail">
-<header class=post-header>
-<h1 class=post-title>Object.freeze() vs Const</h1>
-<p class=entry-meta><span class=entry-time>Apr 27, 2019</span> 3 min read
-</p>
-</header>
-<article class=post-content>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*JaXLkOnChRrhugh6jlQS7A.png alt=""></p>
-<p>ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are <code>Object.freeze()</code> method and <code>const</code> .</p>
-<p>It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. <code>Object.freeze()</code> and <code>const</code> work differently. Let me show you how!</p>
-<hr>
+  <header class="post-header">
+    <h1 class="post-title">Object.freeze() vs Const</h1>
+    <p class="entry-meta"><span class="entry-time">Apr 27, 2019</span> 3 min read
+    </p>
+  </header>
+  
+
+  <article class="post-content">
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*JaXLkOnChRrhugh6jlQS7A.png" alt="" /></p>
+
+<p>ES6 has brought several new features and methods into JavaScript since its
+release. These features have better improved our workflow and productivity as
+JavaScript developers. Amongst these new features are <code>Object.freeze()</code> method
+and <code>const</code> .</p>
+
+<p>It is argued among a few developers especially newbies that these two feature
+works the same way, but NO it doesn’t. <code>Object.freeze()</code> and <code>const</code> work
+differently. Let me show you how!</p>
+
+<hr />
+
 <p><code>const</code> and <code>Object.freeze()</code> are totally different.</p>
+
 <ul>
-<li><code>const</code> behaves like <code>let</code>, the only difference is, it defines a variable that cannot be reassigned. Variables declared by <code>const</code> are block scoped and not function scoped like variables declared with <code>var</code></li>
-<li><code>Object.freeze()</code> takes an object as an argument, and returns the same object as an immutable object. This implies that <strong>no properties of the object can be added, removed, or changed.</strong></li>
+<li><code>const</code> behaves like <code>let</code>, the only difference is, it defines a variable that
+cannot be reassigned. Variables declared by <code>const</code> are block scoped and not
+function scoped like variables declared with <code>var</code></li>
+<li><code>Object.freeze()</code> takes an object as an argument, and returns the same object as
+an immutable object. This implies that <strong>no properties of the object can be
+added, removed, or changed.</strong></li>
 </ul>
+
 <blockquote>
 <p><strong>Mutable objects</strong> have properties that can be changed, immutable <strong>objects</strong>
 have no properties that can be changed after the <strong>object</strong> is created.</p>
 </blockquote>
-<hr>
-<h3 id=examples>Examples:</h3>
-<h4 id=const>Const</h4>
+
+<hr />
+
+<h3 id="examples">Examples:</h3>
+
+<h4 id="const">Const</h4>
+
 <pre><code>const user = 'Bolaji Ayodeji'
 
  user = 'Joe Nash'
 </code></pre>
-<p>This would throw an <code>Uncaught TypeError</code> because we are trying to reassign the variable <strong>user</strong> which was declared with the <code>const</code> keyword, THIS IS NOT VALID.</p>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*fkm8tv7a1jdhQSWa1Hl5tg.png alt=""></p>
+
+<p>This would throw an <code>Uncaught TypeError</code> because we are trying to reassign the
+variable <strong>user</strong> which was declared with the <code>const</code> keyword, THIS IS NOT
+VALID.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*fkm8tv7a1jdhQSWa1Hl5tg.png" alt="" /></p>
+
 <p>Originally, this would work with <code>var</code> or <code>let</code> but will not with <code>const</code></p>
-<h4 id=the-problem-with-const>The problem with const</h4>
-<p>When working with Objects, using const only prevents reassignment and not immutability (Ability to prevent changes to its properties)</p>
-<p>Consider the code below. We have declared a variable using the <code>const</code> keyword and assigned an object named <code>user</code> to it.</p>
+
+<h4 id="the-problem-with-const">The problem with const</h4>
+
+<p>When working with Objects, using const only prevents reassignment and not
+immutability (Ability to prevent changes to its properties)</p>
+
+<p>Consider the code below. We have declared a variable using the <code>const</code> keyword
+and assigned an object named <code>user</code> to it.</p>
+
 <pre><code>const user = {
   first_name: 'bolaji',
   last_name: 'ayodeji',
@@ -1507,17 +1617,28 @@ user.net_worth = 983265975975950;
 // this would work too, user is still mutable and getting rich :)!
 console.log(user);  // user is mutated
 </code></pre>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*fXjTs7lGxDXd3bFv2rF1Vg.png alt=""></p>
-<p>Although we can’t reassign to this variable called object, we can still mutate the object itself.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*fXjTs7lGxDXd3bFv2rF1Vg.png" alt="" /></p>
+
+<p>Although we can’t reassign to this variable called object, we can still mutate
+the object itself.</p>
+
 <pre><code>const user = {
   user_name: 'bolajiayodeji'
 }
 // won't work
 </code></pre>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*hxSHWKuB8nopFHif_ETW9g.png alt=""></p>
-<p>We definitely would want to have Objects with properties that cannot be modified or deleted, <code>const</code> cannot do this and this is where <code>Object.freeze()</code> saves the day :).</p>
-<h4 id=behold-object-freeze>Behold Object.freeze()</h4>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*hxSHWKuB8nopFHif_ETW9g.png" alt="" /></p>
+
+<p>We definitely would want to have Objects with properties that cannot be modified
+or deleted, <code>const</code> cannot do this and this is where <code>Object.freeze()</code> saves the
+day :).</p>
+
+<h4 id="behold-object-freeze">Behold Object.freeze()</h4>
+
 <p>To disable any changes to the object we need <code>Object.freeze()</code>.</p>
+
 <pre><code>const user = {
   first_name: 'bolaji',
   last_name: 'ayodeji',
@@ -1531,9 +1652,14 @@ user.net_worth = 983265975975950;
 // this won't work too, user is still immutable and still broke :(!
 console.log(user);  // user is immutated
 </code></pre>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*uiv64RdHsencUe9ZKptrbw.png alt=""></p>
-<h4 id=objects-with-nested-properties-are-not-actually-frozen>Objects with nested properties are not actually frozen</h4>
-<p>Well, <code>Object.freeze()</code> is a bit shallow, you will need to recursively apply it on nested objects to protect them.</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*uiv64RdHsencUe9ZKptrbw.png" alt="" /></p>
+
+<h4 id="objects-with-nested-properties-are-not-actually-frozen">Objects with nested properties are not actually frozen</h4>
+
+<p>Well, <code>Object.freeze()</code> is a bit shallow, you will need to recursively apply it
+on nested objects to protect them.</p>
+
 <pre><code>const user = {
   first_name: 'bolaji',
   last_name: 'ayodeji',
@@ -1551,88 +1677,157 @@ user.contact.telephone = 07054394926;
 // this will work because the nested object is not frozen
 console.log(user);
 </code></pre>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*xL0vmY5YC7n3hq5SfIT-Vg.png alt=""></p>
-<p>So <code>Object.freeze()</code> doesn’t fully <strong>freeze</strong> an object when it has properties which are nested.</p>
-<hr>
-<p>To completely freeze objects and its nested properties, you can write your own library or use already created libraries like
-<a href=https://github.com/substack/deep-freeze>Deepfreeze</a> or
-<a href=https://github.com/immutable-js/immutable-js>immutable-js</a></p>
-<h3 id=conclusion>Conclusion</h3>
-<p><code>const</code> and <code>Object.freeze()</code> are not the same, <code>const</code> prevents reassignment and <code>Object.freeze()</code> prevents immutability</p>
-<hr>
-<h3 id=bonus-tip>Bonus Tip</h3>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*xL0vmY5YC7n3hq5SfIT-Vg.png" alt="" /></p>
+
+<p>So <code>Object.freeze()</code> doesn&rsquo;t fully <strong>freeze</strong> an object when it has properties
+which are nested.</p>
+
+<hr />
+
+<p>To completely freeze objects and its nested properties, you can write your own
+library or use already created libraries like
+<a href="https://github.com/substack/deep-freeze">Deepfreeze</a> or
+<a href="https://github.com/immutable-js/immutable-js">immutable-js</a></p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p><code>const</code> and <code>Object.freeze()</code> are not the same, <code>const</code> prevents reassignment
+and <code>Object.freeze()</code> prevents immutability</p>
+
+<hr />
+
+<h3 id="bonus-tip">Bonus Tip</h3>
+
 <p>Want to learn modern JavaScript? I’ve got great news for you :)</p>
-<p><img src=https://cdn-images-1.medium.com/max/800/1*Daw2qsmEpLjth1ko-vRyfg.png alt=""></p>
-<p><a href=https://medium.com/u/6727c1eb71f8>JavaScript Teacher</a> has written a book
-<a href="http://www.javascriptgrammar.com/?v=ABC">JavaScript Grammar</a>. Market value $34.99 but yours is FREE!</p>
+
+<p><img src="https://cdn-images-1.medium.com/max/800/1*Daw2qsmEpLjth1ko-vRyfg.png" alt="" /></p>
+
+<p><a href="https://medium.com/u/6727c1eb71f8">JavaScript Teacher</a> has written a book
+<a href="http://www.javascriptgrammar.com/?v=ABC">JavaScript Grammar</a>. Market value
+$34.99 but yours is FREE!</p>
+
 <p>This book covers all you need to learn Modern JavaScript and get hired!</p>
-<p>Get your copy here: <a href=http://www.javascriptgrammar.com/dark/ >Dark Mode</a> — <a href=http://www.javascriptgrammar.com/ >Light Mode</a></p>
-<p>Also, please support <a href=https://medium.com/u/6727c1eb71f8>JavaScript Teacher</a> on
-<a href="https://www.patreon.com/js_tut?v=1">Patreon</a> to enable him to distribute more materials like this for FREE</p>
+
+<p>Get your copy here: <a href="http://www.javascriptgrammar.com/dark/">Dark Mode</a> — <a href="http://www.javascriptgrammar.com/">Light
+Mode</a></p>
+
+<p>Also, please support <a href="https://medium.com/u/6727c1eb71f8">JavaScript Teacher</a> on
+<a href="https://www.patreon.com/js_tut?v=1">Patreon</a> to enable him to distribute more
+materials like this for FREE</p>
+
 <p>Thanks for reading!</p>
 </article>
-<footer class=post-footer>
-<ul class=post-tags>
-<li class=post-tag><a href=/tags/javascript><span class=tag>Javascript</span></a></li>
-<li class=post-tag><a href=/tags/es6><span class=tag>Es6</span></a></li>
-<li class=post-tag><a href=/tags/objects><span class=tag>Objects</span></a></li>
-</ul>
-<div id=newsletter>
-<div class=container>
-<div class=description>Get notified when I write something cool.</div>
-<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
-<div class=email-group>
-<label for=email class=sr-only>Email</label>
-<input type=email id=email name=email placeholder=" Your Email Address... " required>
-<button class=button type=submit>Subscribe 📩</button>
-</div>
-</form>
-</div>
-</div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
-<div id=disqus_thread></div>
-<script async custom-element=amp-iframe>
-(function () { 
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li class="post-tag"><a href="/tags/javascript"><span class="tag">Javascript</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/es6"><span class="tag">Es6</span></a></li>
+      
+      <li class="post-tag"><a href="/tags/objects"><span class="tag">Objects</span></a></li>
+      
+    </ul>
+    
+
+    <div id="newsletter">
+      <div class="container">
+        <div class="description"> Get notified when I write something cool. </div>
+
+        <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+
+          <div class="email-group">
+            <label for="email" class="sr-only"> Email </label>
+            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
+            <button class="button" type="submit"> Subscribe 📩</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sharing">
+      <div class="addthis_inline_share_toolbox"></div>
+
+
+      
+
+      <script async custom-element="amp-addthis"
+  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script async custom-element="amp-iframe">
+      (function () { 
         var d = document, s = d.createElement('script');
         s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-</footer>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+  </footer>
 </section>
-<footer class=footer>
-<div id=codefund></div>
-<p>Copyright © 2018-2019</p>
-<ul class=social-list>
-<li class=social-item>
-<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
-</li>
-<li class=social-item>
-<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
-</li>
+<footer class="footer">
+  <div id="codefund"></div>
+
+  <p>Copyright © 2018-2019</p>
+  <ul class="social-list">
+  
+
+  
+  <li class="social-item">
+    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
+  </li>
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
+  </li>
+
+  <li class="social-item">
+    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
+  </li>
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
+  </li>
 </ul>
+
 </footer>
+
+
+
+
+
 <amp-analytics type=googleanalytics>
-<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
-<amp-install-serviceworker src=/sw.js layout=nodisplay>
-</amp-install-serviceworker>
-<script>
-if (window.netlifyIdentity) {
+  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
+    src="https://codefund.app/properties/273/funder.js" async="async"></script>
+
+  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
+  </amp-install-serviceworker>
+  
+
+  <script>
+    if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
@@ -1641,4 +1836,7 @@ if (window.netlifyIdentity) {
         }
       });
     }
-</script>
+  </script>
+
+  </body>
+</html>
