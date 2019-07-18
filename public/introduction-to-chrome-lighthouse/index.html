@@ -1,92 +1,41 @@
 <!doctype html>
-<html ⚡ lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-install-serviceworker"
-    src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-
-    
-    
-
-    
-    <title>
+<html ⚡ lang=en-us>
+<head>
+<meta charset=utf-8>
+<script async src=https://cdn.ampproject.org/v0.js></script>
+<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
+<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
+<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
+<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
+<title>
 Introduction to Chrome Lighthouse</title>
-
-    
-    
-
-
-
-
-
-
-
-
-<meta name="author"
-  content="⚡️Bolaji Ayodeji⚡️" />
-<meta name="description" content="Chrome Lighthouse has been around for a while now, but what if I ask you to explain what it does can you explain vividly?
-I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have, have not tried it yet, that&amp;rsquo;s not cool :(.
-In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.">
-<meta name="keywords"
-  content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
-
-
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@Bolaji Ayodeji" />
-<meta name="twitter:title" content="
-Introduction to Chrome Lighthouse" />
-<meta name="twitter:description" content="Chrome Lighthouse has been around for a while now, but what if I ask you to explain what it does can you explain vividly?
-I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have, have not tried it yet, that&amp;rsquo;s not cool :(.
-In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it." />
-<meta name="twitter:image" content="https://bolajiayodeji.com/img/fav-500.png" />
-
-
-
-
-
-<meta name="generator" content="Hugo 0.40.1">
-
-
-<link rel="canonical" href="https://bolajiayodeji.com/introduction-to-chrome-lighthouse/">
-<link rel="alternative" href="/index.xml" title="Bolaji Ayodeji" type="application/atom+xml">
-
-
-<meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="format-detection" content="telephone=no,email=no,adress=no" />
-
-
-<meta name="robots" content="index,follow" />
-<meta name="referrer" content="origin-when-cross-origin" />
-
-<meta name="google-site-verification" content="3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk" />
-
-<meta name="msvalidate.01" content="bing_site_verification_code" />
-
-
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
-
-
-<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png" />
-<meta name="apple-mobile-web-app-capable" content="yes">
-<link rel="apple-touch-icon" sizes="120x120"
-  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
-
-
-<link rel="manifest" href="/manifest.json" />
-<meta name="theme-color" content="#20242b" />
-
-
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-
+<meta name=author content="⚡️Bolaji Ayodeji⚡️">
+<meta name=description content="Chrome Lighthouse has been around for a while now, but what if I ask you to explain what it does can you explain vividly?I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have, have not tried it yet, that&amp;rsquo;s not cool :(.In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.">
+<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+<meta name=twitter:card content=summary>
+<meta name=twitter:site content="@Bolaji Ayodeji">
+<meta name=twitter:title content="Introduction to Chrome Lighthouse">
+<meta name=twitter:description content="Chrome Lighthouse has been around for a while now, but what if I ask you to explain what it does can you explain vividly?I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have, have not tried it yet, that&amp;rsquo;s not cool :(.In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.">
+<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
+<meta name=generator content="Hugo 0.40.1">
+<link rel=canonical href=https://bolajiayodeji.com/introduction-to-chrome-lighthouse/ >
+<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
+<meta name=renderer content=webkit>
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name=format-detection content="telephone=no,email=no,adress=no">
+<meta name=robots content=index,follow>
+<meta name=referrer content=origin-when-cross-origin>
+<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
+<meta name=msvalidate.01 content=bing_site_verification_code>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
+<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<meta name=apple-mobile-web-app-capable content=yes>
+<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<link rel=manifest href=/manifest.json>
+<meta name=theme-color content=#20242b>
+<script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
 <style amp-boilerplate>
-  body {
+body {
     -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
     -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -143,18 +92,17 @@ In this article, I would introduce you Chrome Lighthouse, what it does and how t
     }
   }
 </style><noscript>
-  <style amp-boilerplate>
-    body {
+<style amp-boilerplate>
+body {
       -webkit-animation: none;
       -moz-animation: none;
       -ms-animation: none;
       animation: none
     }
-  </style>
+</style>
 </noscript>
 <style amp-custom>
-   
-  html {
+html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -1480,280 +1428,159 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     }
   }
 </style>
-
-  </head>
-  <body>
-    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
-  <ul class="sidebar-list">
-    <li class="sidebar-menu"><button class="sidebar-icon" aria-hidden="true" on="tap:sidebar.close">&#x274c;</button></li>
-    
-    
-    
-    
-      <li class="sidebar-item  is-active"><a class="sidebar-link" href="/">Home 🏠</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="/search">Search 🔍</a></li>
-    
-      <li class="sidebar-item "><a class="sidebar-link" href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
-    
-  </ul>
+</head>
+<body>
+<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
+<ul class=sidebar-list>
+<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
+<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
+<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
+</ul>
 </amp-sidebar>
-
-    
-<header class="header">
-  <p class="subtitle">Hi, I&#39;m Bolaji.</p>
-  <p class="subtitle">I write articles on web and frontend development.</p>
-  <p class="subtitle"><a href="/portfolio">About Me →</a></p>
-  <p>
-    <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class="twitter-follow-button"></a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </p>
-
-  <button class="menu-toggle" aria-hidden="true" type="button" on="tap:sidebar.open">
-    <span class="icon icon-menu"></span>
-  </button>
-
-  
-  <nav class="menu">
-    <ul class="menu-list">
-      
-      
-      
-      
-      <li
-        class="menu-item  is-active">
-        <a href="/">Home 🏠</a></li>
-      
-      <li
-        class="menu-item ">
-        <a href="/search">Search 🔍</a></li>
-      
-      <li
-        class="menu-item ">
-        <a href="https://tinyletter.com/bolajiayodeji/">Newsletter 📩</a></li>
-      
-      <li>
-        <div id="codefund"></div>
-      </li>
-    </ul>
-
-  </nav>
-
+<header class=header>
+<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>I write articles on web and frontend development.</p>
+<p class=subtitle><a href=/portfolio>About Me →</a></p>
+<p>
+<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
+<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
+</p>
+<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
+<span class="icon icon-menu"></span>
+</button>
+<nav class=menu>
+<ul class=menu-list>
+<li class="menu-item is-active">
+<a href=/ >Home 🏠</a></li>
+<li class=menu-item>
+<a href=/search>Search 🔍</a></li>
+<li class=menu-item>
+<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
+<li>
+<div id=codefund></div>
+</li>
+</ul>
+</nav>
 </header>
-
 <section class="main post-detail">
-  <header class="post-header">
-    <h1 class="post-title">
+<header class=post-header>
+<h1 class=post-title>
 Introduction to Chrome Lighthouse</h1>
-    <p class="entry-meta"><span class="entry-time">Jan 28, 2019</span> 6 min read
-    </p>
-  </header>
-  
-
-  <article class="post-content"><p>Chrome Lighthouse has been around for a while now, but what if I ask you to
-explain what it does can you explain vividly?</p>
-
-<p>I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have,
-have not tried it yet, that&rsquo;s not cool :(.</p>
-
-<p>In this article, I would introduce you Chrome Lighthouse, what it does and how
-to start using it.</p>
-
+<p class=entry-meta><span class=entry-time>Jan 28, 2019</span> 6 min read
+</p>
+</header>
+<article class=post-content><p>Chrome Lighthouse has been around for a while now, but what if I ask you to explain what it does can you explain vividly?</p>
+<p>I discovered that a lot of web developers, including beginners, have not heard about this tool and those who have, have not tried it yet, that’s not cool :(.</p>
+<p>In this article, I would introduce you Chrome Lighthouse, what it does and how to start using it.</p>
 <p>Let’s get started :)</p>
-
-<hr />
-
+<hr>
 <blockquote>
-<p>According to Wikipedia, A <strong><em>lighthouse</em></strong> is a tower, building, or other types
-of structure designed to emit light from a system of lamps and
-<em><a href="https://en.wikipedia.org/wiki/Lens_(optics)">lenses</a></em> and to serve as a
-<em><a href="https://en.wikipedia.org/wiki/Navigational_aid">navigational aid</a></em> for
-<em><a href="https://en.wikipedia.org/wiki/Maritime_pilot">maritime pilots</a></em> at sea or on
-inland waterways.</p>
+<p>According to Wikipedia, A <strong><em>lighthouse</em></strong> is a tower, building, or other types of structure designed to emit light from a system of lamps and
+<em><a href=https://en.wikipedia.org/wiki/Lens_(optics)>lenses</a></em> and to serve as a
+<em><a href=https://en.wikipedia.org/wiki/Navigational_aid>navigational aid</a></em> for
+<em><a href=https://en.wikipedia.org/wiki/Maritime_pilot>maritime pilots</a></em> at sea or on inland waterways.</p>
 </blockquote>
-
-<p>Okay, let&rsquo;s turn this into a tech term;</p>
-
+<p>Okay, let’s turn this into a tech term;</p>
 <blockquote>
-<p>Lighthouse is a tower, building, or other types of structure designed to emit
-light from a system <em>under the “Audits” panel</em> in Chrome Developer Tools and
-to serve as a guide for developers</p>
+<p>Lighthouse is a tower, building, or other types of structure designed to emit light from a system <em>under the “Audits” panel</em> in Chrome Developer Tools and to serve as a guide for developers</p>
 </blockquote>
-
 <p>Making any sense? :)</p>
-
-<p>Well, Lighthouse is a tool developed by Google that analyzes web apps and web
-pages, collecting modern performance metrics and insights on developer best
-practices.</p>
-
-<p>Think of Lighthouse as the speedometer in a car that checks and balances the
-cars speed limit.</p>
-
-<p>Basically, Lighthouse works with developer best practices and performance
-metrics. It runs checks on a web app and gives you feedback on errors, practices
-below standard, tips for better performance and how to fix them.</p>
-
+<p>Well, Lighthouse is a tool developed by Google that analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.</p>
+<p>Think of Lighthouse as the speedometer in a car that checks and balances the cars speed limit.</p>
+<p>Basically, Lighthouse works with developer best practices and performance metrics. It runs checks on a web app and gives you feedback on errors, practices below standard, tips for better performance and how to fix them.</p>
 <p>According to Google Developers Docs</p>
-
 <blockquote>
-<p>Lighthouse is an <a href="https://github.com/GoogleChrome/lighthouse">open-source</a>,
-automated tool for improving the quality of web pages. You can run it against
-any web page, public or requiring authentication. It has audits for performance,
-accessibility, progressive web apps, and more.</p>
-
-<p>You can run Lighthouse in Chrome DevTools, from the command line, or as a Node
-module. You give Lighthouse a URL to audit, it runs a series of audits against
-the page, and then it generates a report on how well the page did. From there,
-use the failing audits as indicators on how to improve the page. Each audit has
-a reference doc explaining why the audit is important, as well as how to fix it.</p>
+<p>Lighthouse is an <a href=https://github.com/GoogleChrome/lighthouse>open-source</a>, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.</p>
+<p>You can run Lighthouse in Chrome DevTools, from the command line, or as a Node module. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.</p>
 </blockquote>
-
-<p>That’s pretty much all about Lighthouse, It audits the URL of a web app and
-generates a report telling you how bad and good your web app is according to web
-standards and developers best practices. Also attached to each section of the
-report is documentation explaining why that part of your app was audited, why
-you should improve that part of your app and how to fix it.</p>
-
+<p>That’s pretty much all about Lighthouse, It audits the URL of a web app and generates a report telling you how bad and good your web app is according to web standards and developers best practices. Also attached to each section of the report is documentation explaining why that part of your app was audited, why you should improve that part of your app and how to fix it.</p>
 <p>Here is a demo of Lighthouse audits report for this blog
-<a href="https://bolajiayodehi.com">https://bolajiayodeji.com</a></p>
-
-<p><img src="https://cdn-images-1.medium.com/max/880/1*UDPKsgsImqhawyB_shQfHw.png" alt="" />
-<span class="figcaption_hack">L: My blog :) R: Lighthouse audits report</span></p>
-
+<a href=https://bolajiayodehi.com>https://bolajiayodeji.com</a></p>
+<p><img src=https://cdn-images-1.medium.com/max/880/1*UDPKsgsImqhawyB_shQfHw.png alt="">
+<span class=figcaption_hack>L: My blog :) R: Lighthouse audits report</span></p>
 <p>Pretty cool right? :)</p>
-
-<p>What you should note is that I didn’t get great scores like this on my first
-audit. I had to use my first report to fix and improve the performance and
-quality of my app.</p>
-
-<p>This is the idea behind Lighthouse, it is to dentify and fix common problems that affect
-your sites performance, accessibility and user experience.</p>
-
+<p>What you should note is that I didn’t get great scores like this on my first audit. I had to use my first report to fix and improve the performance and quality of my app.</p>
+<p>This is the idea behind Lighthouse, it is to dentify and fix common problems that affect your sites performance, accessibility and user experience.</p>
 <p><br></p>
-
-<hr />
-
-<p>Now, let&rsquo;s move to the interesting part, <strong>HOW TO GET STARTED!!</strong></p>
-
+<hr>
+<p>Now, let’s move to the interesting part, <strong>HOW TO GET STARTED!!</strong></p>
 <p>LightHouse is available in three workflows</p>
-
 <ul>
 <li>Chrome Developer Tools</li>
 <li>Command line (Node)</li>
 <li>A Chrome extension</li>
 </ul>
-
-<p>I personally prefer using LightHouse in Dev Tools. Using the extension does not
-make sense as the Dev Tool and extension work in the same chrome browser, well
-our preference varies, use what works best for you.</p>
-
-<p>Lighthouse was first available only with the Chrome extension before it was
-added to the Chrome DevTools.</p>
-
+<p>I personally prefer using LightHouse in Dev Tools. Using the extension does not make sense as the Dev Tool and extension work in the same chrome browser, well our preference varies, use what works best for you.</p>
+<p>Lighthouse was first available only with the Chrome extension before it was added to the Chrome DevTools.</p>
 <p>Using lighthouse on the command line is really cool also,(For geeks :))</p>
-
 <p><em>Let’s Get Started!!!</em></p>
-
-<hr />
-
+<hr>
 <p><strong>[1] Run Lighthouse in Chrome DevTools</strong></p>
-
 <ul>
 <li>Download Google Chrome web browser
-<a href="https://www.google.com/chrome/browser/desktop/">here</a></li>
+<a href=https://www.google.com/chrome/browser/desktop/ >here</a></li>
 </ul>
-
 <blockquote>
 <p>Note that Lighthouse can only be run on a desktop and not mobile</p>
 </blockquote>
-
 <ul>
 <li>Go to the URL you want to audit in Google Chrome.</li>
 </ul>
-
 <blockquote>
 <p>You can audit any URL on the web.</p>
 </blockquote>
-
 <ul>
 <li>Open Chrome DevTools</li>
 </ul>
-
 <pre><code>Command+Option+C (Mac)
 Control+Shift+C (Windows, Linux, Chrome OS).
 </code></pre>
-
 <ul>
 <li>Click on the <strong>Audits</strong> panel</li>
 </ul>
-
-<p><img src="https://cdn-images-1.medium.com/max/880/1*ACdyR8_RoTjoPNE4mNDeEw.png" alt="" /></p>
-
-<p>To the left is the viewport of the page that will be audited, here that’s my
-blog :). To the right is the <strong>Audits panel</strong> of Chrome DevTools, which is now
-powered by Lighthouse</p>
-
+<p><img src=https://cdn-images-1.medium.com/max/880/1*ACdyR8_RoTjoPNE4mNDeEw.png alt=""></p>
+<p>To the left is the viewport of the page that will be audited, here that’s my blog :). To the right is the <strong>Audits panel</strong> of Chrome DevTools, which is now powered by Lighthouse</p>
 <ul>
 <li>Click on <strong>Run audits</strong></li>
 </ul>
-
 <blockquote>
-<p>DevTools shows you a list of audit categories. Ensure that you leave them all
-checked. If you want to personalise what part of your app to be audited, you can
-set that by checking the categories you want to audit.</p>
+<p>DevTools shows you a list of audit categories. Ensure that you leave them all checked. If you want to personalise what part of your app to be audited, you can set that by checking the categories you want to audit.</p>
 </blockquote>
-
 <ul>
-<li>After 60 to 90 seconds — depending on your internet strength, Lighthouse gives
-you a report on the page.</li>
+<li>After 60 to 90 seconds — depending on your internet strength, Lighthouse gives you a report on the page.</li>
 </ul>
-
 <blockquote>
-<p>Not that your internet speed and pre installed extensions can affect lighthouse
-audits. For better experience, run audits in <strong><a href="https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&amp;hl=en">Icognito
-mode</a></strong> to avoid any interference</p>
+<p>Not that your internet speed and pre installed extensions can affect lighthouse audits. For better experience, run audits in <strong><a href="https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=en">Icognito mode</a></strong> to avoid any interference</p>
 </blockquote>
-
 <p><br></p>
-
 <p><strong>[2] Run Lighthouse in Command line</strong></p>
-
 <ul>
 <li>Download Google Chrome web browser
-<a href="https://www.google.com/chrome/browser/desktop/">here</a></li>
-<li>Download node <a href="https://nodejs.org/en/">here</a>, If you have it installed already,
-skip this step!</li>
+<a href=https://www.google.com/chrome/browser/desktop/ >here</a></li>
+<li>Download node <a href=https://nodejs.org/en/ >here</a>, If you have it installed already, skip this step!</li>
 <li>Install Lighthouse</li>
 </ul>
-
 <pre><code>npm install -g lighthouse
 
 # or use yarn:
 
 yarn global add lighthouse
 </code></pre>
-
 <blockquote>
 <p>The <code>-g</code> flag installs it as a global module.</p>
 </blockquote>
-
 <ul>
 <li>Run your audits
-<code>lighthouse &lt;url&gt;</code></li>
+<code>lighthouse &lt;url></code></li>
 </ul>
-
 <p>Sample;
 <code>lighthouse https://bolajiayodeji.com/</code></p>
-
-<p>By default, Lighthouse writes the report to an HTML file. You can control the
-output format by passing flags.</p>
-
+<p>By default, Lighthouse writes the report to an HTML file. You can control the output format by passing flags.</p>
 <p>The report can be displayed in <strong>HTML</strong> or <strong>JSON</strong> format</p>
-
 <p>Output samples:</p>
-
 <pre><code>lighthouse
-# saves `./&lt;HOST&gt;_&lt;DATE&gt;.report.html`
+# saves `./&lt;HOST>_&lt;DATE>.report.html`
 lighthouse --output json
 # json output sent to stdout
 lighthouse --output html --output-path ./report.html
@@ -1763,190 +1590,108 @@ for ALL formats
 lighthouse --output json --output html --output-path ./myfile.json
 # saves `./myfile.report.json` and `./myfile.report.html`
 lighthouse --output json --output html
-# saves `./&lt;HOST&gt;_&lt;DATE&gt;.report.json` and `./&lt;HOST&gt;_&lt;DATE&gt;.report.html`
+# saves `./&lt;HOST>_&lt;DATE>.report.json` and `./&lt;HOST>_&lt;DATE>.report.html`
 lighthouse --output-path=~/mydir/foo.out --save-assets
 # saves `~/mydir/foo.report.html`
 # saves `~/mydir/foo-0.trace.json` and `~/mydir/foo-0.devtoolslog.json`
 lighthouse --output-path=./report.json --output json
 # saves `./report.json`
 </code></pre>
-
 <p>Run <code>$ lighthouse --help</code> for CLI options</p>
-
 <p><strong>[3] Run Lighthouse with the Chrome extension</strong></p>
-
-<p><em>As I earlier said, The DevTools workflow is the best as it provides the same
-benefits as the Extension workflow, with the added bonus of no installation
-needed.</em></p>
-
-<p><em>To use this method you need to install the extension, but If you have your
-reasons, here is the guide</em>;</p>
-
+<p><em>As I earlier said, The DevTools workflow is the best as it provides the same benefits as the Extension workflow, with the added bonus of no installation needed.</em></p>
+<p><em>To use this method you need to install the extension, but If you have your reasons, here is the guide</em>;</p>
 <ul>
 <li>Download Google Chrome web browser
-<a href="https://www.google.com/chrome/browser/desktop/">here</a></li>
-<li>Install the <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse Chrome
-Extension</a>
+<a href=https://www.google.com/chrome/browser/desktop/ >here</a></li>
+<li>Install the <a href=https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk>Lighthouse Chrome Extension</a>
 from the Chrome Webstore.</li>
 <li>Navigate to the page you want to audit</li>
 <li>Click <strong>Lighthouse Icon</strong>.</li>
 </ul>
-
 <blockquote>
-<p>It should be next to the Chrome address bar. If not, open Chrome’s main menu
-(the three dots on the upper right) and access it at the top of the menu. After
-clicking, the Lighthouse menu expands.</p>
+<p>It should be next to the Chrome address bar. If not, open Chrome’s main menu (the three dots on the upper right) and access it at the top of the menu. After clicking, the Lighthouse menu expands.</p>
 </blockquote>
-
 <ul>
 <li>Click <strong>Generate report</strong>.</li>
 </ul>
-
 <blockquote>
-<p>Lighthouse runs its audits against the opened page, then opens up a new tab with
-a report of the results.</p>
+<p>Lighthouse runs its audits against the opened page, then opens up a new tab with a report of the results.</p>
 </blockquote>
-
 <p>Bingo! You did it</p>
-
-<hr />
-
+<hr>
 <p>That’s pretty much it, Lighthouse is a great tool, especially for beginners.</p>
-
-<p>It is a very useful tool when it comes to auditing Progressive web apps, read my
-other article <a href="https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-eploy-to-github-ages-and-firebase/">here</a> to
-learn more about PWA</p>
-
-<p>I actually learned so much about optimization and performance standards when I
-started using Lighthouse. In no time you would become an expert in building full
-optimized web apps with great performance, accessibility and user experience. :)</p>
-
+<p>It is a very useful tool when it comes to auditing Progressive web apps, read my other article <a href=https://bolajiayodeji.com/js/how-to-build-a-simple-progressive-web-app-with-pwafire-and-eploy-to-github-ages-and-firebase/ >here</a> to learn more about PWA</p>
+<p>I actually learned so much about optimization and performance standards when I started using Lighthouse. In no time you would become an expert in building full optimized web apps with great performance, accessibility and user experience. :)</p>
 <blockquote>
 <p>Lighthouse is not magic, it was created by humans. It is open source and
-<a href="https://github.com/GoogleChrome/lighthouse/blob/master/CONTRIBUTING.md">contributions are
-welcome</a>.
-Check out the repository’s <a href="https://github.com/GoogleChrome/lighthouse/issues">issue
-tracker</a> to find bugs that
-you can fix, or audits that you can create or improve upon. The issues tracker
-is also a good place to discuss audit metrics, ideas for new audits, or anything
-else related to Lighthouse.</p>
+<a href=https://github.com/GoogleChrome/lighthouse/blob/master/CONTRIBUTING.md>contributions are welcome</a>. Check out the repository’s <a href=https://github.com/GoogleChrome/lighthouse/issues>issue tracker</a> to find bugs that you can fix, or audits that you can create or improve upon. The issues tracker is also a good place to discuss audit metrics, ideas for new audits, or anything else related to Lighthouse.</p>
 </blockquote>
-
-<p>Thank you for reading this, after installing and using Lighthouse, share your
-success stories.</p>
-
-<p>You can tweet to me via<a href="http://twitter.com/iambolajiayo"> @iambolajiayo</a></p>
+<p>Thank you for reading this, after installing and using Lighthouse, share your success stories.</p>
+<p>You can tweet to me via<a href=http://twitter.com/iambolajiayo> @iambolajiayo</a></p>
 </article>
-  <footer class="post-footer">
-    
-    <ul class="post-tags">
-      
-      <li class="post-tag"><a href="/tags/chrome"><span class="tag">Chrome</span></a></li>
-      
-      <li class="post-tag"><a href="/tags/lighthouse"><span class="tag">Lighthouse</span></a></li>
-      
-      <li class="post-tag"><a href="/tags/devtools"><span class="tag">Devtools</span></a></li>
-      
-    </ul>
-    
-
-    <div id="newsletter">
-      <div class="container">
-        <div class="description"> Get notified when I write something cool. </div>
-
-        <form id="subscribe-form" action="https://tinyletter.com/bolajiayodeji" method="post" target="popupwindow"
-          onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
-
-          <div class="email-group">
-            <label for="email" class="sr-only"> Email </label>
-            <input type="email" id="email" name="email" placeholder=" Your Email Address... " required>
-            <button class="button" type="submit"> Subscribe 📩</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="sharing">
-      <div class="addthis_inline_share_toolbox"></div>
-
-
-      
-
-      <script async custom-element="amp-addthis"
-  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-
-    </div>
-
-
-    <div id="disqus_thread"></div>
-    <script async custom-element="amp-iframe">
-      (function () { 
+<footer class=post-footer>
+<ul class=post-tags>
+<li class=post-tag><a href=/tags/chrome><span class=tag>Chrome</span></a></li>
+<li class=post-tag><a href=/tags/lighthouse><span class=tag>Lighthouse</span></a></li>
+<li class=post-tag><a href=/tags/devtools><span class=tag>Devtools</span></a></li>
+</ul>
+<div id=newsletter>
+<div class=container>
+<div class=description>Get notified when I write something cool.</div>
+<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+<div class=email-group>
+<label for=email class=sr-only>Email</label>
+<input type=email id=email name=email placeholder=" Your Email Address... " required>
+<button class=button type=submit>Subscribe 📩</button>
+</div>
+</form>
+</div>
+</div>
+<div class=sharing>
+<div class=addthis_inline_share_toolbox></div>
+<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+</div>
+<div id=disqus_thread></div>
+<script async custom-element=amp-iframe>
+(function () { 
         var d = document, s = d.createElement('script');
         s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-
-
-  </footer>
-</section>
-<footer class="footer">
-  <div id="codefund"></div>
-
-  <p>Copyright © 2018-2019</p>
-  <ul class="social-list">
-  
-
-  
-  <li class="social-item">
-    <a href="//github.com/bolajiayodeji" title="GitHub" target="_blank" rel="noopener"><span class="icon icon-github"></span></a>
-  </li>
-
-  
-
-  <li class="social-item">
-    <a href="//www.linkedin.com/in/iambolajiayo" title="Linkedin" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span></a>
-  </li>
-
-  
-
-  
-
-  <li class="social-item">
-    <a href="//www.instagram.com/iambolajiayo" title="Instagram" target="_blank" rel="noopener"><span class="icon icon-instagram"></span></a>
-  </li>
-
-  <li class="social-item">
-    <a href="//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw" title="YouTube" target="_blank" rel="noopener"><span class="icon icon-youtube"></span></a>
-  </li>
-
-  
-
-  <li class="social-item">
-    <a href="/index.xml" title="RSS" target="_blank"><span class="icon icon-rss" rel="noopener"></span></a>
-  </li>
-</ul>
-
+</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
 </footer>
-
-
-
-
-
+</section>
+<footer class=footer>
+<div id=codefund></div>
+<p>Copyright © 2018-2019</p>
+<ul class=social-list>
+<li class=social-item>
+<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
+</li>
+<li class=social-item>
+<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
+</li>
+</ul>
+</footer>
 <amp-analytics type=googleanalytics>
-  <script type=application/json> { "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } } </script> </amp-analytics> <script
-    src="https://codefund.app/properties/273/funder.js" async="async"></script>
-
-  <amp-install-serviceworker src="/sw.js" layout="nodisplay">
-  </amp-install-serviceworker>
-  
-
-  <script>
-    if (window.netlifyIdentity) {
+<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
+<amp-install-serviceworker src=/sw.js layout=nodisplay>
+</amp-install-serviceworker>
+<script>
+if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
@@ -1955,7 +1700,4 @@ success stories.</p>
         }
       });
     }
-  </script>
-
-  </body>
-</html>
+</script>
