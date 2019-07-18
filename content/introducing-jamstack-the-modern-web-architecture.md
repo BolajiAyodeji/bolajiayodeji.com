@@ -2,11 +2,10 @@
 title: 'Introducing JAMstack: The Modern Web Architecture'
 type: post
 date: 2019-05-14T13:22:14.000Z
-tags:
-  - jamstack
-  - javascript
-  - web
+tags: ["jamstack", "javascript", "web"]
 ---
+
+
 ![](https://cdn-images-1.medium.com/max/720/1*xYSNCnp6eh2ZDpwQtYL6qg.jpeg)
 
 I’m sure you’ve come across the word JAMstack before but you probably didn’t
