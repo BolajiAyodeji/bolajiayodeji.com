@@ -1,13 +1,12 @@
-﻿---
-title: "Introducing JAMstack: The Modern Web Architecture"
-date: 2019-05-15T13:22:14+24:00
-draft: false
-type: "post"
-tags: ["jamstack", "javascript", "web"]
 ---
-
- 
-
+title: 'Introducing JAMstack: The Modern Web Architecture'
+type: post
+date: 2019-05-14T13:22:14.000Z
+tags:
+  - jamstack
+  - javascript
+  - web
+---
 ![](https://cdn-images-1.medium.com/max/720/1*xYSNCnp6eh2ZDpwQtYL6qg.jpeg)
 
 I’m sure you’ve come across the word JAMstack before but you probably didn’t
@@ -32,13 +31,13 @@ According to the official [JAMstack documentation](https://jamstack.org/),
 
 > JAMstack is a Modern web development architecture based on client-side
 > JavaScript, reusable APIs, and prebuilt Markup.
-
+>
 > When we talk about “The Stack,” we no longer talk about operating systems,
 > specific web servers, backend programming languages, or databases.
-
+>
 > The JAMstack is not about specific technologies. It’s a new way of building
 > websites and apps that delivers better performance, higher security, lower cost
-of scaling, and a better developer experience.
+> of scaling, and a better developer experience.
 
 **JAMstack** is a major trend in web development coined by [Mathias
 Biilman](https://twitter.com/biilmann), the CEO and co-founder of Netlify. 
@@ -59,7 +58,7 @@ JAMstack here stands for
 
 > stacks generally is just a combination of several technologies used to create a
 > web or mobile application. So JAMstack is the combination of JavaScript, APIs
-and Markup. Pretty interesting right?
+> and Markup. Pretty interesting right?
 
 JAMstack projects don’t rely on server-side code, they can be distributed
 instead of relying on a server. Served directly from a CDN, JAMstack apps unlock
@@ -73,15 +72,15 @@ I’ll be using these terms in this article frequently and I thought you should
 know their meanings (If you don’t)
 
 * **API** is the acronym for Application Programming Interface, which is a
-software intermediary that allows two applications to talk to each other.
+  software intermediary that allows two applications to talk to each other.
 * **CDN** (content delivery network) is a system of distributed servers (network)
-that deliver pages and other Web content to a user, based on the geographic
-locations of the user, the origin of the webpage and the content delivery
-server.
+  that deliver pages and other Web content to a user, based on the geographic
+  locations of the user, the origin of the webpage and the content delivery
+  server.
 * A **Server** is a computer designed to process requests and deliver data to
-another computer over the internet or a local network.
+  another computer over the internet or a local network.
 * **A Database** is a collection of information that is organized so that it can
-be easily accessed, managed and updated
+  be easily accessed, managed and updated
 
 ### Why JAMstack?
 
@@ -119,13 +118,13 @@ via CDNs.
 
 * Use CDN to distribute your files rather than servers 
 * Installing and contributing to your project should be easy and less complex, use
-tools like npm and Git to ensure standard and faster setup.
+  tools like npm and Git to ensure standard and faster setup.
 * Use build tools and make your project compatible for all browsers (e.g Babel,
-Browserify, Webpack e.t.c)
+  Browserify, Webpack e.t.c)
 * Ensure your project is up to web standards and highly accessible 
 * Ensure your build process is automated to reduce stress.
 * Make your deployment process automatic, you can use platforms like
-[Netlify](https://netlify.com) to do this
+  [Netlify](https://netlify.com) to do this
 
 ### How do I Get Started?
 
@@ -165,7 +164,7 @@ ensuring digital products ship to the market faster.
 
 Svelte is a radical new approach to building user interfaces. Whereas
 traditional frameworks like React and Vue do the bulk of their work in the
-*browser*, Svelte shifts that work into a *compile step* that happens when you
+_browser_, Svelte shifts that work into a _compile step_ that happens when you
 build your app.
 
 [and many more. . .](https://www.staticgen.com/)
@@ -173,24 +172,24 @@ build your app.
 ### Useful Resources
 
 * [JAMstack WTF](https://jamstack.wtf/)
+* [What is JAMstack](https://buttercms.com/blog/what-is-jamstack)
 * [How to Build a JAMstack
-Website](https://cosmicjs.com/blog/how-to-build-a-jamstack-website)
+  Website](https://cosmicjs.com/blog/how-to-build-a-jamstack-website)
 * [What is JAMstack and why you should try
-it](https://www.giftegwuenu.com/what-is-jamstack-and-why-you-should-try-it/)
+  it](https://www.giftegwuenu.com/what-is-jamstack-and-why-you-should-try-it/)
 * [A JAMstack-ready CMS](https://www.contentful.com/r/knowledgebase/jamstack-cms/)
 * [JAMstack for Clients: On Benefits & Static Site
-CMS](https://snipcart.com/blog/jamstack-clients-static-site-cms)
+  CMS](https://snipcart.com/blog/jamstack-clients-static-site-cms)
 * [Go static: 5 reasons to try JAMstack on your next
-project](https://builtvisible.com/go-static-try-jamstack/)
+  project](https://builtvisible.com/go-static-try-jamstack/)
 * [Static Websites + JAMstack =
-❤](https://julian.is/article/static-websites-and-jamstack/)
+  ❤](https://julian.is/article/static-websites-and-jamstack/)
 
 Find more resources [here](https://jamstack.org/resources/)
 
-
 {{< youtube uWTMEDEPw8c >}}
 
-*Creator of JAMstack and CEO of Netlify speaking on the Rise of JAMstack*
+_Creator of JAMstack and CEO of Netlify speaking on the Rise of JAMstack_
 
 ### Conclusion
 
