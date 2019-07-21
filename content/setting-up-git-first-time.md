@@ -4,6 +4,8 @@ type: post
 date: 2019-07-21T12:24:04.696Z
 tags: '["git", "bash", "version control"]'
 ---
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1563720476/blog/0002/banner.png)
+
 Git is a Free and Open Source Distributed Version Control System.
 
 By far, Git is the most widely used modern version control system in the world today. Git is a distributed and actively maintained open source project originally developed in 2005 by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the famous creator of the Linux operating system kernel.
