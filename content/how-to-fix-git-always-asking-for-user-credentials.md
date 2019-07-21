@@ -2,7 +2,7 @@
 title: How to fix Git always asking for user credentials
 type: post
 date: 2019-07-21T14:52:13.541Z
-tags: '["Git", "Bash", "Version Control"]'
+tags: ["Git", "Bash", "Version Control"]
 ---
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1563722428/blog/0003/banner.png)
 
