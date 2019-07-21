@@ -63,6 +63,8 @@ sudo yum upgrade
 
 [Download Git for Windows](https://git-scm.com/download/win)
 
+---
+
 > Here's a more detailed installation guide for different systems on [Git official docs](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 ---
 
