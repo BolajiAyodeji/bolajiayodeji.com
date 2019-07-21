@@ -3,6 +3,7 @@ title: Git first time setup
 type: post
 date: 2019-07-21T12:24:04.696Z
 tags: ["git", "bash", "version control"]
+cover: "https://res.cloudinary.com/iambeejayayo/image/upload/v1563720476/blog/0002/banner.png"
 ---
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1563720476/blog/0002/banner.png)
 
