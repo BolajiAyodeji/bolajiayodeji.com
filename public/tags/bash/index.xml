@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on Bolaji Ayodeji</title>
-    <link>https://bolajiayodeji.com/tags/git/</link>
-    <description>Recent content in Git on Bolaji Ayodeji</description>
+    <title>Bash on Bolaji Ayodeji</title>
+    <link>https://bolajiayodeji.com/tags/bash/</link>
+    <description>Recent content in Bash on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jul 2019 14:52:13 +0000</lastBuildDate>
     
-	<atom:link href="https://bolajiayodeji.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bolajiayodeji.com/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -30,27 +30,6 @@ The https:// clone URLs are available on all public and private repositories. Th
       <description>Git is a Free and Open Source Distributed Version Control System.
 By far, Git is the most widely used modern version control system in the world today. Git is a distributed and actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel.
 Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally.</description>
-    </item>
-    
-    <item>
-      <title>Git Cheat Sheet</title>
-      <link>https://bolajiayodeji.com/git-cheat-sheet/</link>
-      <pubDate>Mon, 18 Feb 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/git-cheat-sheet/</guid>
-      <description>Git cheat sheet saves you time when you just can’t remember a specific command. It is hard to memorize all the important Git commands as a newbie, most times Senior Developers forget too. This is why you need a reference you can come back to when you get stuck.
-In this article, I’d show you the basic Git commands to help you learn Git, and more advanced concepts around Git branches, remote repositories, reverting changes, and more.</description>
-    </item>
-    
-    <item>
-      <title>How to test a Pull Request locally before Merging.</title>
-      <link>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</link>
-      <pubDate>Sun, 11 Nov 2018 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</guid>
-      <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
-So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
-The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.</description>
     </item>
     
   </channel>

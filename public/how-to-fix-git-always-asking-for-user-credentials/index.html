@@ -7,19 +7,17 @@
 <script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
 <script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Bolaji Ayodeji</title>
+<title>How to fix Git always asking for user credentials</title>
 <meta name=author content="⚡️Bolaji Ayodeji⚡️">
-<meta name=description content="Articles on web & frontend development, all written by Bolaji Ayodeji. 🚀">
-<meta property=og:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta property=og:url content=https://bolajiayodeji.com>
-<meta property=og:type content=article>
+<meta name=description content="Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well, this is a very common problem among users who use the HTTPS clone URL for their repository. In this article, I&amp;rsquo;ll show you how to fix this.The https:// clone URLs are available on all public and private repositories. These URLs work everywhere, even if you are behind a firewall or proxy.">
+<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Bolaji Ayodeji">
-<meta name=twitter:description content="Articles on web & frontend development, all written by Bolaji Ayodeji. 🚀">
+<meta name=twitter:title content="How to fix Git always asking for user credentials">
+<meta name=twitter:description content="Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well, this is a very common problem among users who use the HTTPS clone URL for their repository. In this article, I&amp;rsquo;ll show you how to fix this.The https:// clone URLs are available on all public and private repositories. These URLs work everywhere, even if you are behind a firewall or proxy.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
 <meta name=generator content="Hugo 0.40.1">
-<link rel=canonical href=https://bolajiayodeji.com/ >
+<link rel=canonical href=https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
 <meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -1464,205 +1462,84 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
-<section class="main entry-list">
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/ title="How to fix Git always asking for user credentials" class=entry-link>How to fix Git always asking for user credentials</a></h3>
-</header>
-<p class=entry-summary>Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well, this is a very common problem among users who use the HTTPS clone URL for their repository. In this article, I’ll show you how to fix this. The https:// clone URLs are available on all public and private repositories. These URLs work everywhere, even if you are behind a firewall or proxy.</p>
-<footer class=entry-footer>
+<section class="main post-detail">
+<header class=post-header>
+<h1 class=post-title>How to fix Git always asking for user credentials</h1>
 <p class=entry-meta><span class=entry-time>Jul 21, 2019</span> 2 min read
 </p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/ title="How to fix Git always asking for user credentials">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/setting-up-git-first-time/ title="Git first time setup" class=entry-link>Git first time setup</a></h3>
 </header>
-<p class=entry-summary>Git is a Free and Open Source Distributed Version Control System. By far, Git is the most widely used modern version control system in the world today. Git is a distributed and actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Jul 21, 2019</span> 3 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/setting-up-git-first-time/ title="Git first time setup">READ ARTICLE →</a></h6>
-</div>
-</footer>
+<article class=post-content>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1563722428/blog/0003/banner.png alt=""></p>
+<p>Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well, this is a very common problem among users who use the HTTPS clone URL for their repository. In this article, I’ll show you how to fix this.</p>
+<hr>
+<p>The <code>https://</code> clone URLs are available on all public and private repositories. These URLs work everywhere, even if you are behind a firewall or proxy.</p>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1563722834/blog/0003/clone.png alt=""></p>
+<p>When you interact with a remote repository using HTTPS URLs on the command line, you’ll be asked for your GitHub username and password, this sucks right?</p>
+<p>Well using an HTTPS remote URL has some advantages: it’s easier to set up than SSH :), and usually works through strict firewalls and proxies. However, it also prompts you to enter your GitHub user credentials every time you pull or push a repository :(.</p>
+<h4 id=you-can-fix-this-by-configuring-git-to-store-your-password-for-you-br>You can fix this by configuring Git to store your password for you.<br></h4>
+<hr>
+<p>Here’s how:</p>
+<ul>
+<li>Update the URL of origin remote using SSH instead of HTTPS;</li>
+</ul>
+<pre><code>git remote set-url origin git@github.com:username/repo.git
+</code></pre>
+<p>or</p>
+<ul>
+<li>Make Git store the username and password and it will never ask for them.</li>
+</ul>
+<pre><code>git config --global credential.helper store
+</code></pre>
+<ul>
+<li>Save the username and password for a session (cache it);</li>
+</ul>
+<pre><code>git config --global credential.helper cache
+</code></pre>
+<ul>
+<li>You can also set a timeout for the above setting</li>
+</ul>
+<pre><code>git config --global credential.helper 'cache --timeout=600'
+</code></pre>
+<p>Bingo, you just fixed it, Git will never ask for your credentials again.</p>
+<hr>
+<h1 id=conclusion>Conclusion</h1>
+<p>However, due to security reasons, it is advisable that you use SSH to interact with GitHub, especially if you work for a company or you’re using a computer that isn’t yours.<br></p>
+<p>Using the SSH protocol, you can connect to GitHub without supplying your username or password every time.<br>
+Learn how to connect to GitHub with SSH <a href=https://help.github.com/en/articles/connecting-to-github-with-ssh>here</a></p>
 </article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/ title="How to compile your C++ code in Visual Studio Code" class=entry-link>How to compile your C++ code in Visual Studio Code</a></h3>
-</header>
-<p class=entry-summary>C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.” In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C. It was developed by Bjarne Stroustrup in 1979. One of C++’s main feature is the compiler. This is used to compile and run C++ code. A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or “code” that a computer’s processor uses.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Jul 7, 2019</span> 5 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/ title="How to compile your C++ code in Visual Studio Code">READ ARTICLE →</a></h6>
+<footer class=post-footer>
+<ul class=post-tags>
+<li class=post-tag><a href=/tags/git><span class=tag>Git</span></a></li>
+<li class=post-tag><a href=/tags/bash><span class=tag>Bash</span></a></li>
+<li class=post-tag><a href=/tags/version-control><span class=tag>Version Control</span></a></li>
+</ul>
+<div id=newsletter>
+<div class=container>
+<div class=description>Get notified when I write something cool.</div>
+<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+<div class=email-group>
+<label for=email class=sr-only>Email</label>
+<input type=email id=email name=email placeholder=" Your Email Address... " required>
+<button class=button type=submit>Subscribe 📩</button>
 </div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/handling-static-forms-the-client-side-way/ title="Handling Static Forms - The Client-side Way" class=entry-link>Handling Static Forms - The Client-side Way</a></h3>
-</header>
-<p class=entry-summary>Forms are interactive elements used to get input from the user for further processing. Most times, forms are just used to receive input that requires no processing but rather just receiving data, this might be a contact form, RSVP, get a quote e.t.c Traditionally, forms are managed with the help of a server (also known as server side), but this is more efficient when you’re processing the data from the form, maybe a user registration form where the form data is validated, authenticated and saved in a database.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Jun 5, 2019</span> 7 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/handling-static-forms-the-client-side-way/ title="Handling Static Forms - The Client-side Way">READ ARTICLE →</a></h6>
+</form>
 </div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/introducing-jamstack-the-modern-web-architecture/ title="Introducing JAMstack: The Modern Web Architecture" class=entry-link>Introducing JAMstack: The Modern Web Architecture</a></h3>
-</header>
-<p class=entry-summary>I’m sure you’ve come across the word JAMstack before but you probably didn’t understand what it really meant. I’ve seen this word before also but didn’t care to check it out until Egwuenu Gift organized JAMstack Lagos, then I realised that I’ve been building JAMstack applications already. JAMstack is a Modern web development architecture, it is not a programming language or any form of tool. It is more of a web development practice aimed towards enforcing better performance, higher security, lower cost of scaling, and better developer experience.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>May 14, 2019</span> 5 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/introducing-jamstack-the-modern-web-architecture/ title="Introducing JAMstack: The Modern Web Architecture">READ ARTICLE →</a></h6>
 </div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/introducing-google-season-of-docs/ title="Introducing Google Season of Docs" class=entry-link>Introducing Google Season of Docs</a></h3>
-</header>
-<p class=entry-summary>Google believes that open source is good for everyone. By being open and freely available, it enables and encourages collaboration, development of technology and solving real-world problems. Over the years, Google has created a healthy ecosystem for the sustainability of open source for all via its several communities Beyond the open source software we directly use and release at Google, we also work to support the sustainability of open source organizations and communities.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>May 3, 2019</span> 5 min read
-</p>
 <div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/introducing-google-season-of-docs/ title="Introducing Google Season of Docs">READ ARTICLE →</a></h6>
+<div class=addthis_inline_share_toolbox></div>
+<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
 </div>
+<div id=disqus_thread></div>
+<script async custom-element=amp-iframe>
+(function () { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
 </footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/object.freeze-vs-const/ title="Object.freeze() vs Const" class=entry-link>Object.freeze() vs Const</a></h3>
-</header>
-<p class=entry-summary>ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const . It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how! const and Object.freeze() are totally different.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Apr 27, 2019</span> 3 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/object.freeze-vs-const/ title="Object.freeze() vs Const">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/introduction-to-web-accessibility/ title="Introduction to Web Accessibility" class=entry-link>Introduction to Web Accessibility</a></h3>
-</header>
-<p class=entry-summary>As developers, it’s easy to assume that all users can see and use a keyboard, mouse or screen, you feel everyone can interact with your web page the same way you do. This can lead to a user experience that works well for some people but creates issues for others :( Many developers have only a little or blurred understanding of what accessibility means, of course, accessibility can be a complex and difficult topic but understanding it, its scope and its impact can make you a better and inclusive web developer.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Apr 5, 2019</span> 8 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/introduction-to-web-accessibility/ title="Introduction to Web Accessibility">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/ title="Building & Deploying your first Progressive Web App" class=entry-link>Building & Deploying your first Progressive Web App</a></h3>
-</header>
-<p class=entry-summary>Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let’s roll :) TABLE OF CONTENTS Introduction Starter files App description Building the UI Add JavaScript Functionality Build the Progressive Web App Deploy to Netlify Conclusion INTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Apr 1, 2019</span> 9 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/ title="Building & Deploying your first Progressive Web App">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/introducing-css-custom-properties-variables/ title="Introducing CSS Custom Properties (Variables)" class=entry-link>Introducing CSS Custom Properties (Variables)</a></h3>
-</header>
-<p class=entry-summary>In the past years, maintaining CSS was a very big problem for bigger projects or complex apps as a result, building reusable components and cleaner styles were hard to achieve. CSS Preprocessors came to solve this problem and have been around for years now (SASS, LESS, e.t.c). They extend CSS with key features like variables, operators, interpolations, functions, imports, mixins e.t.c. However, in Modern CSS, we now have a new powerful feature called Custom properties, otherwise known as CSS variables or cascading variables.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Mar 25, 2019</span> 4 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/introducing-css-custom-properties-variables/ title="Introducing CSS Custom Properties (Variables)">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/ title="Getting Started With Hugo and Deploying to Netlify" class=entry-link>Getting Started With Hugo and Deploying to Netlify</a></h3>
-</header>
-<p class=entry-summary>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website. Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Mar 18, 2019</span> 7 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/ title="Getting Started With Hugo and Deploying to Netlify">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/iterating-through-javascript--objects-5-techniques-and-performance-tests/ title="Iterating through JavaScript Objects-5 Techniques and Performance Tests." class=entry-link>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</a></h3>
-</header>
-<p class=entry-summary>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient. * Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Mar 10, 2019</span> 3 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/iterating-through-javascript--objects-5-techniques-and-performance-tests/ title="Iterating through JavaScript Objects-5 Techniques and Performance Tests.">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/github-student-developer-pack-demystified/ title="GitHub Student Developer Pack Demystified" class=entry-link>GitHub Student Developer Pack Demystified</a></h3>
-</header>
-<p class=entry-summary>There’s no substitute for hands-on experience, but for most students, real-world tools can be quite expensive. That’s why GitHub created the GitHub Student Developer Pack to give students free access to the best developer tools in one place so they can learn by doing. In this article, I’d take you through: What is GitHub Student Developer Pack Contents of the pack Terms and Conditions How to apply for the pack Expiration and renewals Let’s roll :)</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Mar 4, 2019</span> 6 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/github-student-developer-pack-demystified/ title="GitHub Student Developer Pack Demystified">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/introducing-github-linguistic/ title="Introducing GitHub Linguist" class=entry-link>Introducing GitHub Linguist</a></h3>
-</header>
-<p class=entry-summary>The files and directories within a repository determine the languages that make up the repository. With GitHub, you can view a repository’s languages to get a quick overview of the repository. But how does this happen? What powers this repository language overview? In this article I would: Introduce you to GitHub Linguist How it works How to fix common Linguist issues How to use gitattributesto override Linguist :) How to use Emacs or Vim modelines to override Linguist How to contribute to GitHub Linguist Let’s Roll!</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Feb 25, 2019</span> 6 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/introducing-github-linguistic/ title="Introducing GitHub Linguist">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/git-cheat-sheet/ title="Git Cheat Sheet" class=entry-link>Git Cheat Sheet</a></h3>
-</header>
-<p class=entry-summary>Git cheat sheet saves you time when you just can’t remember a specific command. It is hard to memorize all the important Git commands as a newbie, most times Senior Developers forget too. This is why you need a reference you can come back to when you get stuck. In this article, I’d show you the basic Git commands to help you learn Git, and more advanced concepts around Git branches, remote repositories, reverting changes, and more.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Feb 18, 2019</span> 2 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/git-cheat-sheet/ title="Git Cheat Sheet">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-<nav class=pagination>
-<a class="pagination-btn pagination-next" href=/page/2/ >Older Posts →</a>
-</nav>
 </section>
 <footer class=footer>
 <div id=codefund></div>

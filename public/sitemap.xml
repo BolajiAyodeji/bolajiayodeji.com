@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/</loc>
+    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/setting-up-git-first-time/</loc>
+    <lastmod>2019-07-21T12:24:04+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/</loc>
     <lastmod>2019-07-07T08:03:28+00:00</lastmod>
   </url>
@@ -152,8 +162,14 @@
   </url>
   
   <url>
+    <loc>https://bolajiayodeji.com/tags/bash/</loc>
+    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bolajiayodeji.com/</loc>
-    <lastmod>2019-07-07T08:03:28+00:00</lastmod>
+    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -242,7 +258,7 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/git/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -422,7 +438,7 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/version-control/</loc>
-    <lastmod>2019-02-18T13:22:14+24:00</lastmod>
+    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   

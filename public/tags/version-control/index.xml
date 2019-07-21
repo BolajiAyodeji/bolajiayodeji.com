@@ -6,10 +6,31 @@
     <description>Recent content in Version Control on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 13:22:14 +2400</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 14:52:13 +0000</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to fix Git always asking for user credentials</title>
+      <link>https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/</link>
+      <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/</guid>
+      <description>Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well, this is a very common problem among users who use the HTTPS clone URL for their repository. In this article, I&amp;rsquo;ll show you how to fix this.
+The https:// clone URLs are available on all public and private repositories. These URLs work everywhere, even if you are behind a firewall or proxy.</description>
+    </item>
+    
+    <item>
+      <title>Git first time setup</title>
+      <link>https://bolajiayodeji.com/setting-up-git-first-time/</link>
+      <pubDate>Sun, 21 Jul 2019 12:24:04 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/setting-up-git-first-time/</guid>
+      <description>Git is a Free and Open Source Distributed Version Control System.
+By far, Git is the most widely used modern version control system in the world today. Git is a distributed and actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel.
+Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally.</description>
+    </item>
     
     <item>
       <title>Git Cheat Sheet</title>
