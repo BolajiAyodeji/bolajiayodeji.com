@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   branch: master
   site_url: https://www.bolajiayodeji.com
-  logo_url: https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png
 
 publish_mode: editorial_workflow
 
@@ -18,5 +17,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Type", name: "type", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}     
+      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {name: tag, label: Tag, widget: string}     
