@@ -28,6 +28,7 @@ Here's how:
 ```
 git remote set-url origin git@github.com:username/repo.git
 ```
+or
 
 - Make Git store the username and password and it will never ask for them. 
 
@@ -48,7 +49,7 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=600'
 ```
 
-Bingo, you've fixed it.
+Bingo, you just fixed it, Git will never ask for your credentials again.
 
 ---
 
