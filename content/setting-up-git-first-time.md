@@ -47,8 +47,8 @@ Install for Debian-based linux systems
 
 ```
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install git
+ sudo apt-get upgrade
+ sudo apt-get install git
 ```
 
 or <br>
@@ -56,34 +56,35 @@ Install for Red Hat-based linux systems
 
 ```
 sudo yum upgrade
-sudo yum install git
+ sudo yum install git
 ```
 
 ### For Windows OS: <br>
 
 [Download Git for Windows](https://git-scm.com/download/win)
 
-Here's a more detailed installation guide for different systems on [Git official docs](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+> Here's a more detailed installation guide for different systems on [Git official docs](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 ---
 
-Now that you have Git on your system, let's setup the Git environment. 
+Now that you have Git on your system, let's setup the Git environment. <br> 
 Git comes with a tool called `git config` that lets you get and set configuration variables that control all aspects of how Git looks and operates.
 
 - First set your identity, your name and email address like so:
 
 ```
 git config --global user.name "bolajiayodeji"
-git config --global user.email mailtobolaji@gmail.com
+ git config --global user.email mailtobolaji@gmail.com
 ```
 the `--global` option makes sure these values are used throughout your system
 
-- Next setup the default text editor you'll use whenever you need to enter a message in Git. THis is not compulsory, if you don't configure this, Git will use your default editor. If you want to use something else, configure like so:
+- Next setup the default text editor you'll use whenever you need to enter a message in Git. This is not compulsory, if you don't configure this, Git will use your default editor. If you want to use something else, configure like so:
 
 ```
 git config --global core.editor emacs
 ```
 
 - Next, setup colors for your Git console. <br>
+
 > For Linux OS users, you can use third pary Zsh configurators like [oh my zsh](https://ohmyz.sh/) to customize your terminal look with themes :). <br>
 To configure this, do this:
 
@@ -102,8 +103,8 @@ git config --list
 
 ```
 user.name=bolajiayodeji
-user.email=mailtobolaji@gmail.com
-color.ui=true
+ user.email=mailtobolaji@gmail.com
+ color.ui=true
 ```
 
 ---
