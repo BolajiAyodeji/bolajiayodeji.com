@@ -29,11 +29,11 @@ If a mistake is made, developers can restore and compare earlier versions of the
 
 - - -
 
-Now that you know what Version Control and Git means, let's install it.
+Now that you know what Version Control and Git mean, let's install it.
 
 ### For Mac OS: <br>
 
-[Download Git for MacOS](http://git-scm.com/download/mac)
+[Download Git for macOS](http://git-scm.com/download/mac)
 or install using [Homebrew](https://brew.sh)
 
 ```
@@ -43,7 +43,7 @@ brew install git
 ### For Linux OS: <br>
 
 [Download Git for Linux](https://git-scm.com/download/linux) or <br>
-Install for Debian-based linux systems 
+Install for Debian-based Linux systems 
 
 ```
 sudo apt-get update
@@ -52,7 +52,7 @@ sudo apt-get update
 ```
 
 or <br>
-Install for Red Hat-based linux systems
+Install for Red Hat-based Linux systems
 
 ```
 sudo yum upgrade
@@ -67,7 +67,7 @@ sudo yum upgrade
 
 ---
 
-Now that you have Git on your system, let's setup the Git environment. <br> 
+Now that you have Git on your system, let's set up the Git environment. <br> 
 Git comes with a tool called `git config` that lets you get and set configuration variables that control all aspects of how Git looks and operates.
 
 - First set your identity, your name and email address like so:
@@ -78,13 +78,13 @@ git config --global user.name "bolajiayodeji"
 ```
 the `--global` option makes sure these values are used throughout your system
 
-- Next setup the default text editor you'll use whenever you need to enter a message in Git. This is not compulsory, if you don't configure this, Git will use your default editor. If you want to use something else, configure like so:
+- Next set up the default text editor you'll use whenever you need to enter a message in Git. This is not compulsory, if you don't configure this, Git will use your default editor. If you want to use something else, configure like so:
 
 ```
 git config --global core.editor emacs
 ```
 
-- Next, setup colors for your Git console. <br>
+- Next, set up colors for your Git console. <br>
 
 > For Linux OS users, you can use third pary Zsh configurators like [oh my zsh](https://ohmyz.sh/) to customize your terminal look with themes :). <br>
 To configure this, do this:
@@ -116,5 +116,4 @@ I wrote an article: [Git Cheat Sheet](https://www.bolajiayodeji.com/git-cheat-sh
 
 # Conclusion
 
-Version control software is an essential part of the every-day of the modern day software developer practices.
-Once accustomed to the powerful benefits of version control systems, many developers wouldn't consider working without it even for non-software projects.
+Version control software is an essential part of the every-day of modern-day software developer practices. Once accustomed to the powerful benefits of version control systems, many developers wouldn’t consider working without it even for non-software projects.
