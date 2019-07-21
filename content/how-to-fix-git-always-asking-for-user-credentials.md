@@ -6,7 +6,7 @@ tags: '["Git", "Bash", "Version Control"]'
 ---
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1563722428/blog/0003/banner.png)
 
-Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well this is a very common problem among users who use the HTTPS clone URL for their repository.
+Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well, this is a very common problem among users who use the HTTPS clone URL for their repository.
 In this article, I'll show you how to fix this.
 
 ---
@@ -23,7 +23,7 @@ Well using an HTTPS remote URL has some advantages: it's easier to set up than S
 ---
 Here's how:
 
-- Update the URL of origin remote like, using SSH instead HTTPS;
+- Update the URL of origin remote using SSH instead of HTTPS;
 
 ```
 git remote set-url origin git@github.com:username/repo.git
@@ -56,5 +56,5 @@ Bingo, you just fixed it, Git will never ask for your credentials again.
 # Conclusion
 However, due to security reasons, it is advisable that you use SSH to interact with GitHub, especially if you work for a company or you're using a computer that isn't yours. <br>
 
-Using the SSH protocol, you can connect to GitHub without supplying your username or password everytime. <br>
+Using the SSH protocol, you can connect to GitHub without supplying your username or password every time. <br>
 Learn how to connect to GitHub with SSH [here](https://help.github.com/en/articles/connecting-to-github-with-ssh)
