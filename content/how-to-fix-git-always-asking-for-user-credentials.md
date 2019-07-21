@@ -4,7 +4,6 @@ type: post
 date: 2019-07-21T14:52:13.541Z
 tags: '["Git", "Bash", "Version Control"]'
 ---
-
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1563722428/blog/0003/banner.png)
 
 Have you ever encountered Git asking you for your username and password every time you try to interact with GitHub even after configuring it? Well this is a very common problem among users who use the HTTPS clone URL for their repository.
