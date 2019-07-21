@@ -2,7 +2,7 @@
 title: Git first time setup
 type: post
 date: 2019-07-21T12:24:04.696Z
-tags: '["git", "bash", "version control"]'
+tags: ["git", "bash", "version control"]
 ---
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1563720476/blog/0002/banner.png)
 
@@ -83,7 +83,9 @@ the `--global` option makes sure these values are used throughout your system
 git config --global core.editor emacs
 ```
 
-- Next, setup colors for your Git console. For Linux OS users, you can use third pary Zsh configurators like [oh my zsh](https://ohmyz.sh/) to customize your terminal look with themes :). To configure this, do this:
+- Next, setup colors for your Git console. <br>
+> For Linux OS users, you can use third pary Zsh configurators like [oh my zsh](https://ohmyz.sh/) to customize your terminal look with themes :). <br>
+To configure this, do this:
 
 ```
 git config --global color.ui true
@@ -105,6 +107,7 @@ color.ui=true
 ```
 
 ---
+
 Want to learn some super Git commands? <br>
 I wrote an article: [Git Cheat Sheet](https://www.bolajiayodeji.com/git-cheat-sheet/) that covers some important Git commands you'll need. 
 
