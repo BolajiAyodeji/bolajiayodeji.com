@@ -70,7 +70,7 @@ Git comes with a tool called `git config` that lets you get and set configuratio
 - First set your identity, your name and email address like so:
 
 ```
-git config --global user.name "Bolaji Ayodeji"
+git config --global user.name "bolajiayodeji"
 git config --global user.email mailtobolaji@gmail.com
 ```
 the `--global` option makes sure these values are used throughout your system
@@ -81,10 +81,30 @@ the `--global` option makes sure these values are used throughout your system
 git config --global core.editor emacs
 ```
 
+- Next, setup colors for your Git console. For Linux OS users, you can use third pary Zsh configurators like [oh my zsh](https://ohmyz.sh/) to customize your terminal look with themes :). To configure this, do this:
 
+```
+git config --global color.ui true
+```
+The color.ui is a meta configuration that includes all the various color.* configurations available with git commands. 
 
+Now Git is ready for use. 
 
+## Check your settings
 
+```
+git config --list
+```
+
+```
+user.name=bolajiayodeji
+user.email=mailtobolaji@gmail.com
+color.ui=true
+```
+
+---
+Want to learn some super Git commands? <br>
+I wrote an article: [Git Cheat Sheet](https://www.bolajiayodeji.com/git-cheat-sheet/) that covers some important Git commands you'll need. 
 
 
 # Conclusion
