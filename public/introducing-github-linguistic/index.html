@@ -638,13 +638,13 @@ html {
   }
 
   .menu-list {
-    margin-top: 10px;
+    margin-top: 60px;
     list-style: none;
     padding: 0
   }
 
   .menu-item {
-    padding: 5px;
+    padding: 10px;
   }
 
   .menu-item a {
@@ -678,6 +678,23 @@ html {
   #codefund {
     width: 100%;
     padding-top: 20px;
+  }
+
+  .about-me {
+    text-decoration: none;
+  }
+
+  .about-me:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2363D1F4' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    padding-bottom: 3px;
+  }
+
+  .social-btns {
+    margin-top: 40px !important;
   }
 
   @media screen and (min-width:800px) {
@@ -1439,19 +1456,23 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </amp-sidebar>
 <header class=header>
 <p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<section>
-<div style="padding-bottom: 5px">
-<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
+<p class=subtitle>I create contents around web and frontend development.</p>
+<p class="subtitle about-me"><a href=/portfolio>About Me →</a></p>
+<section class=social-btns>
+<div style="padding-bottom: 10px">
+<a href=https://www.patreon.com/bolajiayodeji data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
+</div>
+<div>
+<script src=https://apis.google.com/js/platform.js></script>
+<div class=g-ytsubscribe data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
 </div>
 <div>
 <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
 <script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
 </div>
 <div>
-<script src=https://apis.google.com/js/platform.js></script>
-<div class=g-ytsubscribe data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
+<a class=github-button href=https://github.com/bolajiayodeji data-show-count=true aria-label="Follow @bolajiayodeji on GitHub">Follow @bolajiayodeji</a>
+<script async defer src=https://buttons.github.io/buttons.js></script>
 </div>
 </section>
 <button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
@@ -1465,9 +1486,6 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <a href=/search>Search 🔍</a></li>
 <li class=menu-item>
 <a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
 </ul>
 </nav>
 </header>
@@ -1621,6 +1639,10 @@ may result in files identified in the language statistics not appearing in the s
 <li class=post-tag><a href=/tags/github><span class=tag>Github</span></a></li>
 <li class=post-tag><a href=/tags/linguistic><span class=tag>Linguistic</span></a></li>
 </ul>
+<div class=sharing>
+<div class=addthis_inline_share_toolbox></div>
+<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+</div>
 <div id=newsletter>
 <div class=container>
 <div class=description>Get notified when I write something cool.</div>
@@ -1633,11 +1655,8 @@ may result in files identified in the language statistics not appearing in the s
 </form>
 </div>
 </div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
 <div id=disqus_thread></div>
+<div id=codefund></div>
 <script async custom-element=amp-iframe>
 (function () { 
         var d = document, s = d.createElement('script');
@@ -1650,7 +1669,6 @@ may result in files identified in the language statistics not appearing in the s
 </footer>
 </section>
 <footer class=footer>
-<div id=codefund></div>
 <p>Copyright © 2018-2019</p>
 <ul class=social-list>
 <li class=social-item>

@@ -6,7 +6,7 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 
 [params]
   titleName = "Hi, I'm Bolaji."
-  subtitle = "I write articles on web and frontend development."
+  subtitle = "I create contents around web and frontend development."
   portfolio = "About Me →"
   author = "⚡️Bolaji Ayodeji⚡️"
   logo = "https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"

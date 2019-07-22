@@ -17,6 +17,14 @@
     </ul>
     {{ end }}
 
+    <div class="sharing">
+        {{ partial "addthis" . }}
+  
+        <!-- some content !-->
+  
+        {{ partial "addthis-script" . }}
+    </div>
+
     <div id="newsletter">
       <div class="container">
         <div class="description"> Get notified when I write something cool. </div>
@@ -33,16 +41,8 @@
       </div>
     </div>
 
-    <div class="sharing">
-      {{ partial "addthis" . }}
-
-      <!-- some content !-->
-
-      {{ partial "addthis-script" . }}
-    </div>
-
-
     <div id="disqus_thread"></div>
+    <div id="codefund"></div>
     <script async custom-element="amp-iframe">
       (function () { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
