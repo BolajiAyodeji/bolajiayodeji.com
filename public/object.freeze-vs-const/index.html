@@ -8,7 +8,7 @@
 <script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
 <title>Object.freeze() vs Const</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
+<meta name=author content="Bolaji Ayodeji">
 <meta name=description content="ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!const and Object.freeze() are totally different.">
 <meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
@@ -682,6 +682,7 @@ html {
 
   .about-me {
     text-decoration: none;
+    padding-top: 10px !important;
   }
 
   .about-me:hover {
@@ -1449,9 +1450,9 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
 <ul class=sidebar-list>
 <li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
+<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/search>Search</a></li>
+<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
 </ul>
 </amp-sidebar>
 <header class=header>
@@ -1460,7 +1461,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p class="subtitle about-me"><a href=/portfolio>About Me →</a></p>
 <section class=social-btns>
 <div style="padding-bottom: 10px">
-<a href=https://www.patreon.com/bolajiayodeji data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
+<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
 </div>
 <div>
 <script src=https://apis.google.com/js/platform.js></script>
@@ -1481,11 +1482,11 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <nav class=menu>
 <ul class=menu-list>
 <li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
+<a href=/ >Home</a></li>
 <li class=menu-item>
-<a href=/search>Search 🔍</a></li>
+<a href=/search>Search</a></li>
 <li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
+<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
 </ul>
 </nav>
 </header>
