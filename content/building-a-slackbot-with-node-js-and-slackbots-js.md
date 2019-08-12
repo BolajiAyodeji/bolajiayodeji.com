@@ -594,8 +594,10 @@ This isn't cool, right? We'll want to host it somewhere it can run every time. I
 Also, don't forget to add this in your `.gitignore` before pushing to GitHub
 
 ```
+
 /.env
 /node_modules
+
 ```
 
 > Subscribe to my newsletter to get updated.
