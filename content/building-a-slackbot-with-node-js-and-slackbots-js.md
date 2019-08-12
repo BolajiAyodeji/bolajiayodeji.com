@@ -580,7 +580,7 @@ Automation is one thing we should learn as developers, we have a lot to do, we s
 
 Our bot only runs in development now, to use it we always have to `npm start`.
 
-This isn't really cool right? We'll want to host it somewhere it can run everytime. In my next article, I'll show you how to host this on either [Heroku](https://herokuapp.com/), [Zeit](https://zeit.co/) or [Netlify(https://netlify.com) and publish it to the Slack Apps store so any one around the world can use it. 
+This isn't really cool right? We'll want to host it somewhere it can run everytime. In my next article, I'll show you how to host this on either [Heroku](https://herokuapp.com/), [Zeit](https://zeit.co/) or [Netlify](https://netlify.com) and publish it to the Slack Apps store so any one around the world can use it. 
 
 > Subscribe to my newsletter to get updated.
 
