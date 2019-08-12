@@ -8,6 +8,8 @@ tags:
   - Node.js
   - JavaScript
 ---
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565610388/blog/0004/banner.png)
+
 Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is basically a work space where teams can communicate and collaborate.
 
 > Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate together.
