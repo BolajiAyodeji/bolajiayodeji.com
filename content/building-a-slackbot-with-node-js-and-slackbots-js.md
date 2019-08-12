@@ -486,10 +486,12 @@ We just used Axios to get the JSON file which returns some data:
 This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:
 
 ```
+
 const quotes = res.data;
 const random = Math.floor(Math.random() * quotes.length);
 const quote = quotes[random].quote
 const author = quotes[random].author
+
 ```
 
 And just like we did with the welcome message, we just return the quote and author instead of a string message:
