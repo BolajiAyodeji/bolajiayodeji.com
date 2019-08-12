@@ -499,3 +499,13 @@ And just like we did with the welcome message, we just return the quote and auth
 ```
 `:zap: ${quote} - *${author}*`
 ```
+
+Let's test this
+
+> Type `@inspirenuggets inspire me`
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565608562/blog/0004/capture20.png)
+
+> Yayyy! It worked!
+
+> PS: You can always change the emoji type for every request, if you noticed I changed the inspireMe() to `:male-technologist:`
