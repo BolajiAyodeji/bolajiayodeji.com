@@ -253,4 +253,8 @@ Click the `Add a Bot User` button
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600959/blog/0004/capture8.png)
 
-Now, toggle the `Always Show My Bot as Online` switch to always show your bit as Online, remember this bot is just like a user in your workspace. Afterwards, click the `Add Bot User` button
+Now, toggle the `Always Show My Bot as Online` switch to always show your bot as Online, remember this bot is just like a user in your workspace. Afterwards, click the `Add Bot User` button
+
+- Save all changes now
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture9.png)
