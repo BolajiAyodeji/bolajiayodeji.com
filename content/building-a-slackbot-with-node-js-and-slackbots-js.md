@@ -26,19 +26,6 @@ If you use Slack already, you should be familiar with some creative Slack bots l
 
 In this article, I'll walk you through building your first Slack bot from start to finish with [Node.js](http://nodejs.org/) and [SlackBots.js](https://github.com/mishk0/slack-bot-api)
 
-
-* Slackbot Description
-* Prerequisites
-* Setup environment
-* Install Dependencies
-* Create a Slack workspace
-* Register your Slack bot
-* Customize Slack bot
-* Slack bot OAuth Tokens
-* Building the bot
-* What next?
-* Useful Resources
-
 # SlackBot Description
 
 We're going to build a simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers.
