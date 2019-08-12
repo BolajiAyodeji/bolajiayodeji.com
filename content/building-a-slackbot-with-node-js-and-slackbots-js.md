@@ -32,6 +32,8 @@ In this article, I'll walk you through building your first Slack bot from start 
 * Install Dependencies
 * Create a Slack workspace
 * Register your Slack bot
+* Customize Slack bot
+* Slack bot OAuth Tokens
 * Building the bot
 
 # SlackBot Description
@@ -65,13 +67,17 @@ This bot will be built with Node.js and SlackBots.js. You don't really need to k
 
 Let's setup and install Node.js and Npm first.
 
-- Download node [here](https://nodejs.org/en/), If you have it installed already, skip this step. If you prefer to use a package manager to install, read [this](https://nodejs.org/en/download/package-manager/#windows) for all operating systems.
+* Download node [here](https://nodejs.org/en/), If you have it installed already, skip this step. If you prefer to use a package manager to install, read [this](https://nodejs.org/en/download/package-manager/#windows) for all operating systems.
+* Check if you have Node installed
 
-- Check if you have Node installed
+
 ```
 node -v
 ```
-- Node.js comes with Npm, you don't have to install that again.
+
+* Node.js comes with Npm, you don't have to install that again.
+
+
 ```
 npm -v
 ```
@@ -81,11 +87,13 @@ Now that we have Node.js setup, let's initialize out project
 * Create your project directory (I called mine Slackbot)
 * Initialize git
 
+
 ```
 git init
 ```
 
 * create a `index.js` file
+
 
 ```
 touch index.js
@@ -93,9 +101,11 @@ touch index.js
 
 * Initialize Npm
 
+
 ```
 npm init
 ```
+
 Simply answer all questions that come afterwards, if you're having issues, here's my own `package.json`
 
 ```
@@ -178,7 +188,7 @@ If you run `npm start`, the file will run but won't restart on change. To fix th
 
 # Dotenv
 
-I won't explain this in depth, in a few days, I'll publish an article around Environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack token key we would be using. This way you don't have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, [Dotenv](https://github.com/motdotla/dotenv) is a zero-dependency module that loads environment variables from a .env file into process.env.
+I won't explain this in depth, in a few days, I'll publish an article around Environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don't have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, [Dotenv](https://github.com/motdotla/dotenv) is a zero-dependency module that loads environment variables from a .env file into process.env.
 
 ```
 npm install dotenv
@@ -231,30 +241,123 @@ Now that we have all setup, we need a Slack workspace to run our bot in developm
 
 Now that you have a workspace, you should have a Slack URL wihth your workspace name, mine is `mekafindteam.slack.com`.
 
-- Now you'll need to create a Slack App. Create one [here](https://api.slack.com/apps/new)
+* Now you'll need to create a Slack App. Create one [here](https://api.slack.com/apps/new)
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600492/blog/0004/capture5.png)
 
 > Enter your App name and ensure you're in the workspace you created if you're in multiple workspaces.
 
-- Now you'll see the settings > Basic Information page. Click the first tab `Add features and functionality`
+* Now you'll see the settings > Basic Information page. Click the first tab `Add features and functionality`
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600643/blog/0004/capture6.png)
 
 Since we're building a bot, select the **Bots** field.
 
-- Now you'll see the Bot user page
+* Now you'll see the Bot user page
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600858/blog/0004/capture7.png)
 
 Click the `Add a Bot User` button
 
-- Your display name will automatically be filled in from your already chosen App name, you can update but I'll advice you use the same name everywhere with the same alphabet case to avoid errors.
+* Your display name will automatically be filled in from your already chosen App name, you can update but I'll advice you use the same name everywhere with the same alphabet case to avoid errors.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600959/blog/0004/capture8.png)
 
 Now, toggle the `Always Show My Bot as Online` switch to always show your bot as Online, remember this bot is just like a user in your workspace. Afterwards, click the `Add Bot User` button
 
-- Save all changes now
+* Save all changes now
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture9.png)
+
+* Return back to the `Basic Information` page and select the `Install your app to your workspace` tab.
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture10.png)
+
+Click the `Install App to Workspace`
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565602315/blog/0004/capture11.png)
+
+Click allow and wait to be redirected back to the `Basic Information` page.
+
+> Note the `Manage distribution` tab, this section is needed when you want to make your Bot available for installation by others, for now we're just building in development and I won't be covering distribution in this article, in my next article, I'll show you how to deploy your Slack bot and make it available as an App to other workspaces.
+
+- If you check your Slack workspaace now, you should see the App installed in the Apps section
+
+> For now it's offline, once we start building the bot, we'll turn this on.
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565603471/blog/0004/capture15.png)
+
+# Customize your Slack bot
+
+Now we've created our bot, let's do some customization
+
+- Still on the `Basic Information` page, scroll down to the `Display Information` section
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565602833/blog/0004/capture12.png)
+
+This is basic stuff, just upload a logo, change your background color and add a short description
+
+
+> Your icon should be `512x512px` or bigger and your background color should be in HEX. Read more on the App guidelines [here](https://api.slack.com/docs/slack-apps-guidelines)
+
+Here's what mine looks like after customization:
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565603043/blog/0004/capture13.png)
+
+# Slack bot OAuth Tokens
+
+Now we have our Slack bot setup, let's grab out token keys.
+
+- In the navigation bar, locate the Features section and click the `OAuth & Permission` tab
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565604021/blog/0004/capture16.png)
+
+You'll see two Access Tokens
+
+- OAuth Access Token
+- Bot User OAuth Access Token
+
+Copy the **Bot User OAuth Access Token** 
+
+> This would change everytime you Reinstall this app or when you install it in another workspace. The token should start with `xoxb-`
+
+> Keeping credentials secure is important whether you're developing open source libraries and tools, internal integrations for your workspace, or Slack apps for distribution to workspaces across the world. - Slack
+
+This is why we have installed Dotenv and we'll set that up in the next section.
+
+# Building the bot
+
+Now let's build our bot :).
+
+- First let's keep our Access Token somewhere.
+create a `.env` file and add this:
+
+```
+BOT_TOKEN=YOUR_SLACK_ACCESS_TOKEN_HERE
+```
+
+- Now let's start our SlackBot.js
+
+```
+const bot = new SlackBot({
+    token: `${process.env.BOT_TOKEN}`,
+    name: 'inspirenuggets'
+})
+```
+
+We've just created a bot variable that initializes a new SlackBot instance which has to values, out token and app name.
+
+> I used the [ES6 template string syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) to bring in our token key from our `.env` file, dotenv got this covered for us.
+
+> Ensure to use the same name you used while creating your Slack app else you'll have authentication errors.
+
+- Now start the app
+
+```
+npm start
+```
+nodemon should be running now and our Slack app should be online too.
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture17.png)
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture18.png)
