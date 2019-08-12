@@ -1,5 +1,5 @@
 ---
-title: Guide to handling Environmental Variables for Create React App
+title: Handling Environmental Variables in Create React App
 type: post
 date: 2019-08-02T11:31:44.328Z
 tags:
