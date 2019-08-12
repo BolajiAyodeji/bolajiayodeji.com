@@ -42,6 +42,8 @@ When a user mentions our bot and adds **inspire me**, the bot returns a random q
 
 > This article is not really about what we'll be building, it's just to show you the concept behind Slack bots and how to build yours, after now, you can think about something else and build a different bot, there're several possibilities.
 
+> You can clone or fork the final project [here](https://github.com/BolajiAyodeji/inspireNuggetsSlackBot)
+
 Pretty interesting right? Let's  get started
 
 # Prerequisite
@@ -598,6 +600,11 @@ Also, don't forget to add this in your `.gitignore` before pushing to GitHub
 
 # Useful Resources
 
-* x
-* y
-* z
+* [Slack API](https://api.slack.com/)
+* [Slack API Docs](https://api.slack.com/#read_the_docs)
+* [SlackBot.js](https://github.com/slackapi/node-slack-sdk)
+* [Slack Apps](slack.com/apps)
+* [Slack Apps Guidelines](https://api.slack.com/docs/slack-apps-guidelines)
+* [An introduction to Slack apps](https://api.slack.com/start/overview)
+* [inspireNuggets](https://github.com/BolajiAyodeji/inspireNuggets)
+* [inspireNuggetsSlackBot](https://github.com/BolajiAyodeji/inspireNuggetsSlackBot)
