@@ -438,7 +438,9 @@ Now let's create the three function we need
 
 > Our demo JSON is not really an API, it's just some JSON I used in the Chrome Extension, we're only accessing it from GitHub raw contents, you can use any API you prefer, you'll just have to iterate differently to get your data depending if your API returns an array or object, whichever it returns, it's not a big deal. 
 
-> Check out my previous articles on `[Manipulating Arrays in JavaScript](https://www.bolajiayodeji.com/manipulating-arrays-in-javascript/)` and `[Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.](https://www.bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/)`
+> Check out my previous articles on:
+- [Manipulating Arrays in JavaScript](https://www.bolajiayodeji.com/manipulating-arrays-in-javascript/) and
+- [Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.](https://www.bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/)
 
 ```
 function inspireMe() {
@@ -486,10 +488,10 @@ We just used used Axios to get the JSON file which returns some data:
 This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:
 
 ```
-        const quotes = res.data;
-        const random = Math.floor(Math.random() * quotes.length);
-        const quote = quotes[random].quote
-        const author = quotes[random].author
+const quotes = res.data;
+const random = Math.floor(Math.random() * quotes.length);
+const quote = quotes[random].quote
+const author = quotes[random].author
 ```
 
 And just like we did with the welcome message, we just return the quote and author instead of a string message:
