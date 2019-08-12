@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Object.freeze() vs Const">
 <meta name=twitter:description content="ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!const and Object.freeze() are totally different.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.40.1">
+<meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/object.freeze-vs-const/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1497,6 +1497,26 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </p>
 </header>
 <article class=post-content>
+<h1>Table of Contents</h1>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#examples>Examples:</a>
+<ul>
+<li><a href=#const>Const</a></li>
+<li><a href=#the-problem-with-const>The problem with const</a></li>
+<li><a href=#behold-object-freeze>Behold Object.freeze()</a></li>
+<li><a href=#objects-with-nested-properties-are-not-actually-frozen>Objects with nested properties are not actually frozen</a></li>
+</ul></li>
+<li><a href=#conclusion>Conclusion</a></li>
+<li><a href=#bonus-tip>Bonus Tip</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*JaXLkOnChRrhugh6jlQS7A.png alt=""></p>
 <p>ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are <code>Object.freeze()</code> method and <code>const</code> .</p>
 <p>It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. <code>Object.freeze()</code> and <code>const</code> work differently. Let me show you how!</p>

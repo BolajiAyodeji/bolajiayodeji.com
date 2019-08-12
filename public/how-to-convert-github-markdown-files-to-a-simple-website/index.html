@@ -8,15 +8,15 @@
 <script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
 <title>How to convert GitHub Markdown files to a simple website</title>
-<meta name=author content="⚡️Bolaji Ayodeji⚡️">
+<meta name=author content="Bolaji Ayodeji">
 <meta name=description content="Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll. You don&amp;rsquo;t need to use the command line or anything other than your browser. It doesn&amp;rsquo;t require any knowledge in Jekyll. It&amp;rsquo;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibity,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibility,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
 <meta name=twitter:title content="How to convert GitHub Markdown files to a simple website">
 <meta name=twitter:description content="Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll. You don&amp;rsquo;t need to use the command line or anything other than your browser. It doesn&amp;rsquo;t require any knowledge in Jekyll. It&amp;rsquo;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.55.6">
+<meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -638,13 +638,13 @@ html {
   }
 
   .menu-list {
-    margin-top: 10px;
+    margin-top: 60px;
     list-style: none;
     padding: 0
   }
 
   .menu-item {
-    padding: 5px;
+    padding: 10px;
   }
 
   .menu-item a {
@@ -678,6 +678,24 @@ html {
   #codefund {
     width: 100%;
     padding-top: 20px;
+  }
+
+  .about-me {
+    text-decoration: none;
+    padding-top: 10px !important;
+  }
+
+  .about-me:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2363D1F4' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    padding-bottom: 3px;
+  }
+
+  .social-btns {
+    margin-top: 40px !important;
   }
 
   @media screen and (min-width:800px) {
@@ -1432,33 +1450,43 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
 <ul class=sidebar-list>
 <li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home 🏠</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search 🔍</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
+<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/search>Search</a></li>
+<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
 </ul>
 </amp-sidebar>
 <header class=header>
 <p class=subtitle>Hi, I'm Bolaji.</p>
-<p class=subtitle>I write articles on web and frontend development.</p>
-<p class=subtitle><a href=/portfolio>About Me →</a></p>
-<p>
+<p class=subtitle>I create contents around web and frontend development.</p>
+<p class="subtitle about-me"><a href=/portfolio>About Me →</a></p>
+<section class=social-btns>
+<div style="padding-bottom: 10px">
+<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
+</div>
+<div>
+<script src=https://apis.google.com/js/platform.js></script>
+<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
+</div>
+<div>
 <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
 <script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</p>
+</div>
+<div>
+<a class=github-button href=https://github.com/bolajiayodeji data-show-count=true aria-label="Follow @bolajiayodeji on GitHub">Follow @bolajiayodeji</a>
+<script async defer src=https://buttons.github.io/buttons.js></script>
+</div>
+</section>
 <button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
 <span class="icon icon-menu"></span>
 </button>
 <nav class=menu>
 <ul class=menu-list>
 <li class="menu-item is-active">
-<a href=/ >Home 🏠</a></li>
+<a href=/ >Home</a></li>
 <li class=menu-item>
-<a href=/search>Search 🔍</a></li>
+<a href=/search>Search</a></li>
 <li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter 📩</a></li>
-<li>
-<div id=codefund></div>
-</li>
+<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
 </ul>
 </nav>
 </header>
@@ -1469,6 +1497,25 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </p>
 </header>
 <article class=post-content>
+<h1>Table of Contents</h1>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#easy-markdown-to-github-pages>Easy Markdown to GitHub Pages</a></li>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#step-by-step-instructions>Step by step instructions</a></li>
+<li><a href=#determine-the-repository-where-you-want-to-activate-github-pages>Determine the repository where you want to activate GitHub Pages</a></li>
+<li><a href=#create-the-config-yml-file>Create the <code>_.config.yml</code> file</a></li>
+<li><a href=#activate-github-pages-in-your-repository-configuration>Activate GitHub Pages in your repository configuration</a></li>
+<li><a href=#usage-guide>Usage guide</a></li>
+<li><a href=#known-differences-between-github-and-github-pages>Known differences between GitHub and GitHub Pages</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 <h3 id=easy-markdown-to-github-pages>Easy Markdown to GitHub Pages</h3>
 <h3 id=introduction>Introduction</h3>
 <p>This little guide demonstrates how to turn any <a href=https://github.com/ >Github</a>
@@ -1537,6 +1584,10 @@ include:
 <li class=post-tag><a href=/tags/github><span class=tag>GitHub</span></a></li>
 <li class=post-tag><a href=/tags/website><span class=tag>Website</span></a></li>
 </ul>
+<div class=sharing>
+<div class=addthis_inline_share_toolbox></div>
+<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+</div>
 <div id=newsletter>
 <div class=container>
 <div class=description>Get notified when I write something cool.</div>
@@ -1549,11 +1600,8 @@ include:
 </form>
 </div>
 </div>
-<div class=sharing>
-<div class=addthis_inline_share_toolbox></div>
-<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
-</div>
 <div id=disqus_thread></div>
+<div id=codefund></div>
 <script async custom-element=amp-iframe>
 (function () { 
         var d = document, s = d.createElement('script');
@@ -1566,7 +1614,6 @@ include:
 </footer>
 </section>
 <footer class=footer>
-<div id=codefund></div>
 <p>Copyright © 2018-2019</p>
 <ul class=social-list>
 <li class=social-item>

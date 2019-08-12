@@ -42,5 +42,16 @@ Unlike older centralized version control systems such as SVN and CVS, Git is dis
 In this article, I’d show you the basic Git commands to help you learn Git, and more advanced concepts around Git branches, remote repositories, reverting changes, and more.</description>
     </item>
     
+    <item>
+      <title>How to test a Pull Request locally before Merging.</title>
+      <link>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</link>
+      <pubDate>Sun, 11 Nov 2018 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</guid>
+      <description>In this tutorial, I would show you how to check, test and make changes to a pull request before merging.
+So your repository got a new Pull Request?, You don&amp;rsquo;t want to merge it before testing it out yourself locally on your machine. How do you go about it ?
+The pull request is available on this git ref pull/{ID}/head which you can fetch using this, where ID is the pull request id.</description>
+    </item>
+    
   </channel>
 </rss>

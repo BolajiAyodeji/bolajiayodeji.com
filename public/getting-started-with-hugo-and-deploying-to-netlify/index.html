@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Getting Started With Hugo and Deploying to Netlify">
 <meta name=twitter:description content="Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like https://bolajiayodeji.com. In technical terms, Hugo takes a source directory of files and templates and uses these as input to create a complete website.Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost, GitHub Pages, GitLab Pages, Surge, Aerobatic, Firebase, Google Cloud Storage, Amazon S3, Rackspace, Azure, and CloudFront and work well with CDNs.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.40.1">
+<meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/getting-started-with-hugo-and-deploying-to-netlify/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1497,6 +1497,40 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </p>
 </header>
 <article class=post-content>
+<h1>Table of Contents</h1>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#hugo-features>Hugo Features</a></li>
+<li><a href=#getting-started>Getting Started</a>
+<ul>
+<li><a href=#prerequisites>Prerequisites</a></li>
+<li><a href=#steps>Steps</a></li>
+<li><a href=#installation-guide>Installation guide</a></li>
+<li><a href=#installing-on-mac>Installing on Mac</a></li>
+<li><a href=#installing-on-windows>Installing on Windows</a></li>
+<li><a href=#installing-on-linux>Installing on Linux</a></li>
+<li><a href=#installing-on-openbsd>Installing on OpenBSD</a></li>
+</ul></li>
+<li><a href=#creating-a-new-site>Creating a new site</a></li>
+<li><a href=#deploying-to-netlify>Deploying to Netlify</a>
+<ul>
+<li><a href=#create-a-netlify-account><strong>Create a Netlify account</strong></a></li>
+<li><a href=#create-a-new-site-with-continuous-deployment><strong>Create a New Site with Continuous Deployment</strong></a></li>
+<li><a href=#select-your-git-provider><strong>Select your git provider</strong></a></li>
+<li><a href=#select-the-repository-you-want-to-use-for-continuous-deployment><strong>Select the repository you want to use for continuous deployment.</strong></a></li>
+<li><a href=#deploy-settings><strong>Deploy settings</strong></a></li>
+<li><a href=#build-and-deploy-site>Build and Deploy Site</a></li>
+</ul></li>
+<li><a href=#conclusion>Conclusion</a></li>
+<li><a href=#credits>Credits</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*oIEz4ooK0G4XUVViipHHjA.png alt=""></p>
 <p>Hugo is a fast and modern static site generator written in
 <a href=https://golang.org/ >Go</a>, and designed to make website creation fun again. It builds pages when you create or update your content. Websites built with Hugo are extremely fast and secure like
@@ -1554,14 +1588,14 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 <h4 id=installing-on-mac>Installing on Mac</h4>
 <p>Follow the video below to install Hugo on your macOS or read the <a href=https://gohugo.io/getting-started/installing#macos>Installation guide</a>. There are several techniques for installing Hugo on mac, so I won’t be going through them. BTW, I’m using a windows machine so I possibly don’t know how to guide you :)</p>
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-<iframe src=//www.youtube.com/embed/WvhCGlLcrF8 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder=0 title="YouTube Video"></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<iframe src=//www.youtube.com/embed/WvhCGlLcrF8 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 <h4 id=installing-on-windows>Installing on Windows</h4>
 <p>Follow the video below to install Hugo on your windows machine or read the
 <a href=https://gohugo.io/getting-started/installing#windows>Installation guide</a>. This video is a complete guide, but if you have installation issues, please let me know in comments.</p>
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-<iframe src=//www.youtube.com/embed/G7umPCU-8xc style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder=0 title="YouTube Video"></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<iframe src=//www.youtube.com/embed/G7umPCU-8xc style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 <h4 id=installing-on-linux>Installing on Linux</h4>
 <ul>
@@ -1613,8 +1647,8 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p>Full directory structure explanation can be found
 <a href=https://gohugo.io/getting-started/directory-structure/ >here</a></p>
 <p>Additional resource:</p>
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-<iframe src=//www.youtube.com/embed/sB0HLHjgQ7E style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder=0 title="YouTube Video"></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<iframe src=//www.youtube.com/embed/sB0HLHjgQ7E style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 <ul>
 <li>Add a new theme. All Hugo themes can be found <a href=https://themes.gohugo.io/ >here</a>. For this tutorial, we’d be using the <a href=https://github.com/htdvisser/hugo-base16-theme>Hugo Base16
@@ -1622,8 +1656,8 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 <p>This video would show you how to install and use themes on Hugo. Installing is very simple, you just need to find the theme you like and download it into the
 <code>themes</code> subdirectory. If you’re using the starter file, I’ve done that already.</p>
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-<iframe src=//www.youtube.com/embed/L34JL_3Jkyc style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder=0 title="YouTube Video"></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<iframe src=//www.youtube.com/embed/L34JL_3Jkyc style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 <ul>
 <li>After installing the theme or cloning the starter file, start the Hugo server</li>

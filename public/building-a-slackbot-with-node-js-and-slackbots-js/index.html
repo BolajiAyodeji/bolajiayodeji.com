@@ -1,0 +1,2061 @@
+<!doctype html>
+<html ⚡ lang=en-us>
+<head>
+<meta charset=utf-8>
+<script async src=https://cdn.ampproject.org/v0.js></script>
+<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
+<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
+<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
+<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
+<title>Building a SlackBot with Node.js and SlackBots.js</title>
+<meta name=author content="Bolaji Ayodeji">
+<meta name=description content="Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate. Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate. One awesome feature of Slack is Slack Apps, integrations and Slack Bots. A Slack bot is a type of Slack App designed to interact with users via conversation.">
+<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibility,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+<meta name=twitter:card content=summary>
+<meta name=twitter:site content="@Bolaji Ayodeji">
+<meta name=twitter:title content="Building a SlackBot with Node.js and SlackBots.js">
+<meta name=twitter:description content="Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate. Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate. One awesome feature of Slack is Slack Apps, integrations and Slack Bots. A Slack bot is a type of Slack App designed to interact with users via conversation.">
+<meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
+<meta name=generator content="Hugo 0.55.4">
+<link rel=canonical href=https://bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/ >
+<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
+<meta name=renderer content=webkit>
+<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name=format-detection content="telephone=no,email=no,adress=no">
+<meta name=robots content=index,follow>
+<meta name=referrer content=origin-when-cross-origin>
+<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
+<meta name=msvalidate.01 content=bing_site_verification_code>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
+<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<meta name=apple-mobile-web-app-capable content=yes>
+<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<link rel=manifest href=/manifest.json>
+<meta name=theme-color content=#20242b>
+<script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
+<style amp-boilerplate>
+body {
+    -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+    animation: -amp-start 8s steps(1, end) 0s 1 normal both
+  }
+
+  @-webkit-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @-moz-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @-ms-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @-o-keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+
+  @keyframes -amp-start {
+    from {
+      visibility: hidden
+    }
+
+    to {
+      visibility: visible
+    }
+  }
+</style><noscript>
+<style amp-boilerplate>
+body {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      animation: none
+    }
+</style>
+</noscript>
+<style amp-custom>
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+  }
+
+  ::selection {
+    background: #63D1F4;
+  }
+
+  ::-moz-selection {
+    background:
+      #ddd;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #63D1F4;
+    border-radius: 5px;
+  }
+
+  body {
+    margin: 0
+  }
+
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+    display: block
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: .67em 0
+  }
+
+  figcaption,
+  figure,
+  main {
+    display: block
+  }
+
+  figure {
+    margin: 1em 40px
+  }
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+  }
+
+  pre {
+    font-family: 'Roboto Mono',
+      monospace;
+    font-size: 1em
+  }
+
+  a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+  }
+
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+  }
+
+  b,
+  strong {
+    font-weight: inherit;
+    font-weight: bolder
+  }
+
+  code,
+  kbd,
+  samp {
+    font-family: monospace;
+    font-size: 1em
+  }
+
+  dfn {
+    font-style: italic
+  }
+
+  mark {
+    background-color: #ff0;
+    color: #424242
+  }
+
+  small {
+    font-size: 80%
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+  }
+
+  sub {
+    bottom: -.25em
+  }
+
+  sup {
+    top: -.5em
+  }
+
+  audio,
+  video {
+    display: inline-block
+  }
+
+  audio:not([controls]) {
+    display: none;
+    height: 0
+  }
+
+  img {
+    border-style: none;
+    max-width: 100%;
+  }
+
+  svg:not(:root) {
+    overflow: hidden
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family:
+      'Poppins',
+      sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+  }
+
+  button,
+  input {
+    overflow: visible
+  }
+
+  button,
+  select {
+    text-transform: none
+  }
+
+  [type=reset],
+  [type=submit],
+  button,
+  html [type=button] {
+    -webkit-appearance: button
+  }
+
+  [type=button]::-moz-focus-inner,
+  [type=reset]::-moz-focus-inner,
+  [type=submit]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+  }
+
+  [type=button]:-moz-focusring,
+  [type=reset]:-moz-focusring,
+  [type=submit]:-moz-focusring,
+  button:-moz-focusring {
+    outline: 1px dotted ButtonText
+  }
+
+  fieldset {
+    padding: .35em .75em .625em
+  }
+
+  legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+  }
+
+  progress {
+    display: inline-block;
+    vertical-align: baseline
+  }
+
+  textarea {
+    overflow: auto
+  }
+
+  [type=checkbox],
+  [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+  }
+
+  [type=number]::-webkit-inner-spin-button,
+  [type=number]::-webkit-outer-spin-button {
+    height: auto
+  }
+
+  [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+  }
+
+  [type=search]::-webkit-search-cancel-button,
+  [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+  }
+
+  details,
+  menu {
+    display: block
+  }
+
+  summary {
+    display: list-item
+  }
+
+  canvas {
+    display: inline-block
+  }
+
+  [hidden],
+  template {
+    display: none
+  }
+
+  @font-face {
+    font-family: fe;
+    font-weight: 400;
+    font-style: normal;
+    src: url(/fonts/fe.eot);
+    src: url(/fonts/fe.eot#iefix) format("embedded-opentype"), url(/fonts/fe.woff2) format("woff2"), url(/fonts/fe.woff) format("woff"), url(/fonts/fe.ttf) format("truetype"), url(/fonts/fe.svg#fe) format("svg")
+  }
+
+  .icon {
+    font-family: fe;
+    font-style: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+
+  .icon-menu:before {
+    content: "\e802";
+    color: #fff;
+  }
+
+  .icon-email:before {
+    content: "\e804"
+  }
+
+  .icon-rss:before {
+    content: "\e803"
+  }
+
+  .icon-github:before {
+    content: "\f09b"
+  }
+
+  .icon-dribbble:before {
+    content: "\f31b"
+  }
+
+  .icon-linkedin:before {
+    content: "\f318"
+  }
+
+  .icon-twitter:before {
+    content: "\f309"
+  }
+
+  .icon-facebook:before {
+    content: "\f30c"
+  }
+
+  .icon-instagram:before {
+    content: "\f16d"
+  }
+
+  .icon-youtube:before {
+    content: "\f16a"
+  }
+
+  .icon-google:before {
+    content: "\f30f"
+  }
+
+  .icon-clock:before {
+    content: "\e800"
+  }
+
+  .share {
+    font-family: fe;
+    font-weight: 400;
+    margin-left: .2rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #20242b;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%
+  }
+
+  .share-twitter {
+    background-color: #55acee
+  }
+
+  .share-twitter:before {
+    content: "\f309"
+  }
+
+  .share-facebook {
+    background-color: #3b5998
+  }
+
+  .share-facebook:before {
+    content: "\f30c"
+  }
+
+  .share-google {
+    background-color: #dd4b39
+  }
+
+  .share-google:before {
+    content: "\f30f"
+  }
+
+  body {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.618;
+    font-family:
+      'Roboto Mono',
+      monospace;
+    color: #fff;
+    background: #20242b;
+    text-rendering: optimizeLegibility;
+    -webkit-overflow-scrolling: touch
+  }
+
+  a {
+    color: #63D1F4;
+    text-decoration: none;
+    font-weight: 300
+  }
+
+  a:focus,
+  a:hover {
+    color: #63D1F4;
+    outline: none;
+    pacity: .9;
+  }
+
+  amp-img {
+    margin: 0 auto;
+    box-shadow: 2px 20px 40px 10px rgba(0, 0, 0, .15)
+  }
+
+  button:hover {
+    cursor: pointer
+  }
+
+  .main {
+    margin-left: 20rem;
+    padding: 1rem 2rem;
+    max-width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box
+  }
+
+  @media screen and (max-width:1440px) {
+    .main {
+      width: calc(100% - 20rem)
+    }
+  }
+
+  @media (min-width:800px) and (max-width:960px) {
+    .main {
+      margin-left: 15rem;
+      width: calc(100% - 15rem)
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .main {
+      margin-left: 0;
+      padding: 0 1rem 1rem;
+      width: 100%;
+      min-height: 0;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd
+    }
+  }
+
+  .footer {
+    display: none
+  }
+
+  @media screen and (max-width:800px) {
+    .footer {
+      display: block;
+      padding: 1rem;
+      font-size: .8rem;
+      text-align: center;
+      font-family: 'Roboto Mono',
+        monospace
+    }
+  }
+
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #20242b;
+  }
+
+  @media screen and (max-width:800px) {
+    .header {
+      width: 100%;
+      position: relative
+    }
+  }
+
+  @media (min-width:800px) and (max-width:960px) {
+    .header {
+      width: 15rem
+    }
+  }
+
+  .logo {
+    padding-top: 591.44px / 1127.34px * 100%;
+    margin-top: 0.1rem;
+    border-radius: 10%;
+    border: 3px solid #63D1F4;
+    transition: all .5s ease-out
+  }
+
+  .logo:hover {
+    padding-top:
+      591.44px / 1127.34px * 100%;
+    border-radius: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3)
+  }
+
+  @media screen and (max-width:800px) {
+    .logo {
+      padding-top: 591.44px / 1127.34px * 100%;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 2rem;
+      height: 2rem;
+      margin-top: 0;
+      border: 2px solid #fff
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    margin: 1rem auto
+  }
+
+  @media screen and (max-width:800px) {
+    .title {
+      margin: 0 auto
+    }
+  }
+
+  .subtitle,
+  .title a {
+    color: #63D1F4;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
+
+  .title a {
+    font-size: 23px;
+  }
+
+  .menu {
+    display: none
+  }
+
+  @media screen and (min-width:800px) {
+    .menu {
+      display: block
+    }
+  }
+
+  .menu-list {
+    margin-top: 60px;
+    list-style: none;
+    padding: 0
+  }
+
+  .menu-item {
+    padding: 10px;
+  }
+
+  .menu-item a {
+    font-weight: 450;
+    opacity: .8;
+    color: #fff
+  }
+
+  .menu-item a:focus,
+  .menu-item a:hover {
+    opacity: 1
+  }
+
+  .menu-item.is-active a {
+    color: #63D1F4;
+    opacity: 1;
+    font-weight: 500
+  }
+
+  .menu-toggle {
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #20242b;
+    position: absolute;
+    top: 1rem;
+    right: 1rem
+  }
+
+  #codefund {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .about-me {
+    text-decoration: none;
+    padding-top: 10px !important;
+  }
+
+  .about-me:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2363D1F4' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    padding-bottom: 3px;
+  }
+
+  .social-btns {
+    margin-top: 40px !important;
+  }
+
+  @media screen and (min-width:800px) {
+    .menu-toggle {
+      display: none
+    }
+  }
+
+  .sidebar {
+    background-color: #20242b;
+    width: 100vw
+  }
+
+  @media screen and (min-width:640px) {
+    .sidebar {
+      width: 50vw
+    }
+  }
+
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0
+  }
+
+  .sidebar-menu {
+    text-align: right;
+    padding: 16px
+  }
+
+  .sidebar-item {
+    font-size: 2rem;
+    padding: 20px 25px 20px 15px;
+    border-top: 1px solid #ddd
+  }
+
+  .sidebar-icon {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Roboto Mono',
+      monospace;
+    font-weight: 100;
+    font-size: 2rem
+  }
+
+  .sidebar-link {
+    color: #fff;
+    font-weight: 200
+  }
+
+  .social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none
+  }
+
+  @media screen and (min-width:800px) {
+    .social-list {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0
+    }
+  }
+
+  .social-item {
+    display: inline-block;
+    margin: 0 .2rem
+  }
+
+  .social-item a {
+    color: #63D1F4;
+    font-weight: 500
+  }
+
+  .entry-list {
+    background-color: #8c8a8a
+  }
+
+  @media screen and (max-width:800px) {
+    .entry-list {
+      padding-top: 30px;
+    }
+  }
+
+  .entry-single {
+    line-height: 1.8;
+    margin-bottom: 22px;
+    background-color: #20242b;
+    box-shadow: 0 0 2px 0 rgba(137, 146, 177, .15), 0 3px 10px 0 rgba(137, 146, 177, .1);
+    border-radius: 7px
+  }
+
+  .entry-single:hover {
+    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.3);
+    transform: translatey(-4px);
+  }
+
+  .entry-cover {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    box-shadow: none
+  }
+
+  .entry-title {
+    margin: 0;
+    padding: 20px 30px 0
+  }
+
+  .entry-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff
+  }
+
+  .entry-summary {
+    padding: 0 30px;
+    text-align: justify;
+    max-height: 4rem;
+    overflow: hidden
+  }
+
+  .entry-footer {
+    margin: 0 30px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .entry-meta {
+    margin: 0;
+    font-size: .6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase
+  }
+
+  .entry-time {
+    color: #fff
+  }
+
+  .entry-time:after {
+    content: "";
+    border-right: 1px solid #ddd;
+    margin: 0 8px 0 10px
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-start
+  }
+
+  .pagination-btn {
+    color: #fff;
+    padding: .8rem;
+    background-color: #20242b;
+    border: 1px solid #ddd;
+    font-size: .8rem;
+    text-transform: uppercase;
+    border-radius: 5px
+  }
+
+  .pagination-btn:focus,
+  .pagination-btn:hover {
+    color: #20242b;
+    background-color: #63D1F4;
+    border-color: #63D1F4
+  }
+
+  .pagination-next {
+    margin-left: auto
+  }
+
+  .post-header:after {
+    display: block;
+    content: "";
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    width: 60px;
+    padding-top: 10px;
+    border-bottom-color: #63D1F4
+  }
+
+  .post-title {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem
+  }
+
+  .post-footer {
+    margin: 1rem 0;
+    line-height: 1.8
+  }
+
+  .post-tags {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0
+  }
+
+  .post-tag {
+    display: inline-block;
+    margin: 0 .5rem 0 0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: #f1f0ea;
+    font-size: .8rem
+  }
+
+  .post-tag:hover {
+    background: #eee;
+    box-shadow: 0 1px 15px 0 rgba(137, 146, 177, .15), 0 10px 20px 0 rgba(137, 146, 177, .15)
+  }
+
+  .post-tag a {
+    color: #444;
+  }
+
+  .post-content {
+    line-height: 1.8;
+  }
+
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    color: #63D1F4;
+    font-weight: 600;
+    line-height: 1.125;
+    text-transform: uppercase;
+  }
+
+  .post-content h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem
+  }
+
+  .post-content h2 {
+    margin-top: 1.75rem;
+    margin-bottom: .75rem;
+    font-size: 1.5rem
+  }
+
+  .post-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: 1.25rem
+  }
+
+  .post-content h4 {
+    margin-top: 1.25rem;
+    margin-bottom: .25rem;
+    font-size: 1rem
+  }
+
+  .post-content h5,
+  .post-content h6 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: .8rem
+  }
+
+  .post-content li+li {
+    margin-top: .5rem
+  }
+
+  .post-content em {
+    color: #fff;
+    font-style: italic
+  }
+
+  .post-content strong {
+    color: #fff
+  }
+
+  .post-content del {
+    color: #fff;
+    text-decoration: line-through
+  }
+
+  .post-content ins {
+    color: #fff;
+    text-decoration: underline
+  }
+
+  .post-content hr {
+    position: relative;
+    margin: 2rem auto;
+    border-top: 1px dashed #ddd;
+    border-bottom: none
+  }
+
+  .post-content hr:before {
+    content: "sep line";
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 40px);
+    padding: 0 .5rem;
+    background-color: #20242b;
+    color: #ddd;
+    font-size: .8rem;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .post-content p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: justify
+  }
+
+  .post-content blockquote {
+    background-color: transparent;
+    border-left: 5px solid #ddd;
+    opacity: 0.7;
+    padding: .5rem 1rem;
+    margin: 2rem 0
+  }
+
+  .post-content blockquote p {
+    margin-top: .5rem;
+    margin-bottom: .5rem
+  }
+
+  .post-content blockquote cite {
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: .9rem
+  }
+
+  .post-content code,
+  .post-content tt {
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    margin: 0;
+    font-size: .9em;
+    background-color: #282c34;
+    color: #fff;
+    font-family:
+      'Roboto Mono', monospace;
+  }
+
+  .post-content code:after,
+  .post-content code:before,
+  .post-content tt:after,
+  .post-content tt:before {
+    letter-spacing: -.2em;
+    content: "\00a0"
+  }
+
+  .post-content kbd {
+    display: inline-block;
+    padding: .25em;
+    background-color: #8c8a8a;
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .05);
+    font-size: .8em;
+    line-height: 1.25;
+    font-family: 'Roboto Mono', monospace;
+    ;
+    color: #fff
+  }
+
+  .post-content pre {
+    margin: 2rem auto;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    font-size: .9rem;
+    line-height: 1.618;
+    white-space: pre;
+    word-wrap: normal;
+    word-break: normal;
+    background: #2b313a;
+    color: #fff
+  }
+
+  .post-content pre code {
+    font-size: .9rem;
+    background-color: transparent
+  }
+
+  .post-content pre code:after,
+  .post-content pre code:before {
+    content: none
+  }
+
+  .post-content sub,
+  .post-content sup {
+    font-size: .8rem
+  }
+
+  .post-content sub a,
+  .post-content sub a:focus,
+  .post-content sub a:hover,
+  .post-content sup a,
+  .post-content sup a:focus,
+  .post-content sup a:hover {
+    border-bottom: none
+  }
+
+  .post-content ol {
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    list-style: decimal outside
+  }
+
+  .post-content ol ol {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: lower-roman outside
+  }
+
+  .post-content ol ul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: disc outside
+  }
+
+  .post-content ul {
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    list-style: disc outside
+  }
+
+  .post-content ul ul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: circle outside
+  }
+
+  .post-content ul ol {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style: decimal outside
+  }
+
+  .post-content dl {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+  }
+
+  .post-content dl dt {
+    color: #63D1F4;
+    margin-top: 1rem
+  }
+
+  .post-content dl dt:after {
+    content: ":"
+  }
+
+  .post-content dl dd {
+    text-indent: 2rem;
+    margin-left: 0;
+    margin-top: .25rem
+  }
+
+  .post-content figure {
+    display: block;
+    margin: 2rem auto
+  }
+
+  .post-content figure img {
+    max-width: 100%;
+    box-shadow: 2px 20px 40px 10px rgba(0, 0, 0, .15)
+  }
+
+  @media screen and (max-width:800px) {
+    .post-content figure img {
+      box-shadow: none;
+      max-width:
+        100%;
+    }
+  }
+
+  .post-content figure figcaption h4 {
+    color: #ddd;
+    font-size: .9rem;
+    text-align: center
+  }
+
+  table {
+    background-color: #8c8a8a;
+    color: #000;
+    font-family: 'Roboto
+Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{border:1px solid #ddd;border-width:0 0
+1px;
+    padding: .5em .75em;
+    vertical-align: center
+  }
+
+  table th {
+    color: #fff
+  }
+
+  table tr:hover {
+    background-color: #ddd
+  }
+
+  table thead td,
+  table thead th {
+    border-width: 0 0 2px;
+    color: #000
+  }
+
+  table tfoot td,
+  table tfoot th {
+    border-width: 2px 0 0;
+    color: #000
+  }
+
+  table tbody tr:last-child td,
+  table tbody tr:last-child th {
+    border-bottom-width: 0
+  }
+
+  table tr:first-child th:first-child {
+    border-top-left-radius: 5px
+  }
+
+  table tr:first-child th:last-child {
+    border-top-right-radius: 5px
+  }
+
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px
+  }
+
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px
+  }
+
+  .not-found {
+    margin: 5rem auto 0;
+    font-family: 'Roboto Mono',
+      monospace;
+    text-align: center
+  }
+
+  .error-emoji {
+    color: #fff;
+    font-size: 3rem
+  }
+
+  .error-text {
+    font-size: 1.25rem
+  }
+
+  .error-link {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #63D1F4
+  }
+
+  .container {
+    position: relative;
+    border-width: 0 !important;
+    border-color: transparent !important;
+    margin: 0;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 40px;
+    margin-bottom: 20px;
+    line-height: 150%;
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, .12);
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .12);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .12);
+  }
+
+  .clear {
+    clear: both;
+  }
+
+   
+
+  form {
+    display: block;
+    padding: 6px 0 10px 0;
+  }
+
+  label {
+    clear: both;
+    display: block;
+    margin: 8px 0;
+    font-weight: bold;
+    position: relative;
+    line-height: 150%;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  .email-group input {
+    display: block;
+    float: left;
+    width: 60%;
+    margin: 0 10px 0 0;
+    min-width: 200px;
+    padding: 12px 10px 11px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: none;
+    font-family: inherit;
+  }
+
+  .email-group .button {
+    width: 30%;
+    margin: 0;
+    min-width: 75px;
+  }
+
+  .rounded {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+
+  .button,
+  .button-small {
+    display: inline-block;
+    white-space: nowrap;
+    height: 40px;
+    line-height: 42px;
+    margin: 0 5px 0 0;
+    padding: 0 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    cursor: pointer;
+    border: 0;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+
+  .button-small {
+    float: none;
+    display: inline-block;
+    height: auto;
+    line-height: 18px !important;
+    padding: 2px 15px !important;
+    font-size: 11px !important;
+  }
+
+  .button:hover,
+  .button-small:hover {
+    opacity: .8;
+  }
+
+   
+
+  body {
+    background-color: #20242B;
+  }
+
+  .byline {
+    font-size: 18px;
+    color: #111111;
+  }
+
+  .description,
+  label,
+  .fake-label {
+    color: #111111;
+  }
+
+  .button {
+    color: #FFFFFF;
+    background-color: #333333;
+    font-family: inherit;
+  }
+
+   
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+   
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  @media only screen and (max-width: 50em) {
+    body {
+      padding-top: 30px;
+      min-width: 100%;
+    }
+
+    .wrapper {
+      width: 96%
+    }
+
+    .container {
+      padding: 30px 15px
+    }
+  }
+
+  @media only screen and (max-width: 40em) {
+    body {
+      background-image: none !important;
+    }
+
+    .email-group input {
+      float: none;
+      width: 100%;
+      margin: 0 0 12px 0;
+      min-width: inherit;
+    }
+
+    .email-group .button {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
+<ul class=sidebar-list>
+<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
+<li class="sidebar-item is-active"><a class=sidebar-link href=/ >Home</a></li>
+<li class=sidebar-item><a class=sidebar-link href=/search>Search</a></li>
+<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
+</ul>
+</amp-sidebar>
+<header class=header>
+<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>I create contents around web and frontend development.</p>
+<p class="subtitle about-me"><a href=/portfolio>About Me →</a></p>
+<section class=social-btns>
+<div style="padding-bottom: 10px">
+<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
+</div>
+<div>
+<script src=https://apis.google.com/js/platform.js></script>
+<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
+</div>
+<div>
+<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
+<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
+</div>
+<div>
+<a class=github-button href=https://github.com/bolajiayodeji data-show-count=true aria-label="Follow @bolajiayodeji on GitHub">Follow @bolajiayodeji</a>
+<script async defer src=https://buttons.github.io/buttons.js></script>
+</div>
+</section>
+<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
+<span class="icon icon-menu"></span>
+</button>
+<nav class=menu>
+<ul class=menu-list>
+<li class="menu-item is-active">
+<a href=/ >Home</a></li>
+<li class=menu-item>
+<a href=/search>Search</a></li>
+<li class=menu-item>
+<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
+</ul>
+</nav>
+</header>
+<section class="main post-detail">
+<header class=post-header>
+<h1 class=post-title>Building a SlackBot with Node.js and SlackBots.js</h1>
+<p class=entry-meta><span class=entry-time>Aug 12, 2019</span> 13 min read
+</p>
+</header>
+<article class=post-content>
+<h1>Table of Contents</h1>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#slackbot-description>SlackBot Description</a></li>
+<li><a href=#prerequisite>Prerequisite</a></li>
+<li><a href=#setup-environment>Setup environment</a></li>
+<li><a href=#install-dependencies>Install Dependencies</a>
+<ul>
+<li><a href=#slackbots-js>SlackBots.js</a></li>
+<li><a href=#axios>Axios</a></li>
+<li><a href=#nodemon>Nodemon</a></li>
+</ul></li>
+<li><a href=#dotenv>Dotenv</a></li>
+<li><a href=#create-your-slack-workspace>Create your Slack workspace</a></li>
+<li><a href=#register-your-slack-bot>Register your Slack Bot</a></li>
+<li><a href=#customize-your-slack-bot>Customize your Slack bot</a></li>
+<li><a href=#slack-bot-oauth-tokens>Slack bot OAuth Tokens</a></li>
+<li><a href=#building-the-bot>Building the bot</a>
+<ul>
+<li>
+<ul>
+<li><a href=#first-let-s-keep-our-access-token-somewhere>First, let’s keep our Access Token somewhere.</a></li>
+<li><a href=#start-handler>Start handler</a></li>
+<li><a href=#error-handler>Error Handler</a></li>
+<li><a href=#message-handler>Message Handler</a></li>
+</ul></li>
+</ul></li>
+<li><a href=#what-next>What Next?</a></li>
+<li><a href=#useful-resources>Useful Resources</a></li>
+</ul>
+</nav>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565610388/blog/0004/banner.png alt=""></p>
+<p>Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate.</p>
+<blockquote>
+<p>Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate.</p>
+</blockquote>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565594320/blog/0004/organize-conversations-slack-product-desktop.png alt=""></p>
+<hr>
+<p>One awesome feature of Slack is <a href=https://slack.com/apps>Slack Apps</a>, integrations and <a href=https://api.slack.com/bot-users>Slack Bots</a>.</p>
+<blockquote>
+<p>A Slack bot is a type of Slack App designed to interact with users via conversation. Your bot can send DMs, it can be mentioned by users, it can post messages or upload files, and it can be invited to channels. Cool right?</p>
+</blockquote>
+<p>If you use Slack already, you should be familiar with some creative Slack bots like <a href=https://standupbot.com/ >Standupbot</a>, <a href=https://birthdaybot.io/ >Birthdaybot</a> and more.</p>
+<p>In this article, I’ll walk you through building your first Slack bot from start to finish with <a href=http://nodejs.org/ >Node.js</a> and <a href=https://github.com/mishk0/slack-bot-api>SlackBots.js</a></p>
+<h1 id=slackbot-description>SlackBot Description</h1>
+<p>We’re going to build a simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers.</p>
+<p>I built a <a href=https://github.com/BolajiAyodeji/inspireNuggets>chrome extension</a> before now that displays random inspiring techie quotes for developers/designers on your new tab (you can download it <a href=https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb>here</a>), we’ll be using the quotes JSON from this extension as our quotes API and <a href=https://api.chucknorris.io/ >Chuck Norris Jokes API</a> for the jokes.</p>
+<p>When a user mentions our bot and adds <strong>inspire me</strong>, the bot returns a random quote from <a href=https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb>inspireNuggets</a>, when the user types <strong>random joke</strong>, it returns a random joke from <a href=https://api.chucknorris.io/ >Chuck Norris</a> API and when the user types help, it returns the instruction guide.</p>
+<blockquote>
+<p>@inspirenuggets inspire me<br>
+@inspirenuggets random joke<br>
+@inspirenuggets help</p>
+</blockquote>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png alt=""></p>
+<blockquote>
+<p>This article is not really about what we’ll be building, it’s just to show you the concept behind Slack bots and how to build yours, after now, you can think about something else and build a different bot, there’re several possibilities.</p>
+<p>You can clone or fork the final project <a href=https://github.com/BolajiAyodeji/inspireNuggetsSlackBot>here</a></p>
+</blockquote>
+<p>Pretty interesting right? Let’s get started</p>
+<h1 id=prerequisite>Prerequisite</h1>
+<p>This bot will be built with Node.js and SlackBots.js. You don’t need to know how to write Node.js, I’ll walk you through it, but knowing it is an advantage.</p>
+<ul>
+<li>Basic JavaScript knowledge</li>
+<li>ES6 JavaScript</li>
+<li>Slack workspace</li>
+<li>Some experience with Slack</li>
+<li>Some version control skills</li>
+</ul>
+<h1 id=setup-environment>Setup environment</h1>
+<p>Let’s set up and install Node.js and Npm first.</p>
+<ul>
+<li>Download node <a href=https://nodejs.org/en/ >here</a>, If you have it installed already, skip this step. If you prefer to use a package manager to install, read <a href=https://nodejs.org/en/download/package-manager/#windows>this</a> for all operating systems.</li>
+<li>Check if you have Node installed</li>
+</ul>
+<pre><code>node -v
+</code></pre>
+<ul>
+<li>Node.js comes with Npm, you don’t have to install that again.</li>
+</ul>
+<pre><code>npm -v
+</code></pre>
+<p>Now that we have Node.js setup, let’s initialize our project</p>
+<ul>
+<li>Create your project directory (I called mine Slackbot)</li>
+<li>Initialize git</li>
+</ul>
+<pre><code>git init
+</code></pre>
+<ul>
+<li>create an <code>index.js</code> file</li>
+</ul>
+<pre><code>touch index.js
+</code></pre>
+<ul>
+<li>Initialize Npm</li>
+</ul>
+<pre><code>npm init
+</code></pre>
+<p>Simply answer all questions that come afterwards, if you’re having issues, here’s my own <code>package.json</code></p>
+<pre><code>{
+  "name": "slackbot",
+  "version": "1.0.0",
+  "description": "A simple Slackbot that displays random inspiring techie quotes for developers/designers.",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BolajiAyodeji/slackbot.git"
+  },
+  "author": "Bolaji Ayodeji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BolajiAyodeji/slackbot/issues"
+  },
+  "homepage": "https://github.com/BolajiAyodeji/slackbot#readme"
+}
+</code></pre>
+<h1 id=install-dependencies>Install Dependencies</h1>
+<p><strong>Now let’s install and setup all libraries we need.</strong></p>
+<h2 id=slackbots-js>SlackBots.js</h2>
+<p><a href=https://github.com/mishk0/slack-bot-api>SlackBots.js</a> is Node.js library for easy operation with Slack API.</p>
+<pre><code>npm install slackbots
+</code></pre>
+<p>In <code>index.js</code></p>
+<pre><code>const SlackBot = require('slackbots');
+</code></pre>
+<h2 id=axios>Axios</h2>
+<p><a href=https://github.com/axios/axios>Axios</a> is a promise based HTTP client for the browser and node.js. If you know Fetch or AJAX, this is just a library that does same with far way cooler features. You can see them <a href=https://github.com/axios/axios>here</a></p>
+<pre><code>npm install axios
+</code></pre>
+<p>In <code>index.js</code></p>
+<pre><code>const axios = require('axios')
+</code></pre>
+<h2 id=nodemon>Nodemon</h2>
+<p>To run a script in Node.js, you have to run <code>node index.js</code>. Whenever you make changes to this file, you have to rerun <code>node index.js</code>, this sucks right when you’ll making so many changes like we’ll be doing. That’s why we need <a href=https://github.com/remy/nodemon>nodemon</a>, nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.</p>
+<pre><code>npm install -g nodemon
+</code></pre>
+<p>In <code>package.json</code>, locate the scripts section and add a new start script</p>
+<pre><code>"scripts": {
+    "start": "node index.js"
+  }
+</code></pre>
+<p>If you run <code>npm start</code>, the file will run but won’t restart on change. To fix this use the nodemon we installed instead of node like so:</p>
+<pre><code>"scripts": {
+    "start": "nodemon index.js"
+  }
+</code></pre>
+<h1 id=dotenv>Dotenv</h1>
+<p>I won’t explain this in-depth, in a few days, I’ll publish an article around Environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don’t have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, <a href=https://github.com/motdotla/dotenv>Dotenv</a> is a zero-dependency module that loads environment variables from a .env file into process.env.</p>
+<pre><code>npm install dotenv
+</code></pre>
+<p>In <code>index.js</code></p>
+<pre><code>const dotenv = require('dotenv')
+
+dotenv.config()
+</code></pre>
+<p>After all installation, your <code>package.json</code> should look like this:</p>
+<pre><code>{
+  "name": "inspireNuggetsSlackBot",
+  "version": "1.0.0",
+  "description": "A simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BolajiAyodeji/inspireNuggetsSlackBot.git"
+  },
+  "author": "Bolaji Ayodeji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BolajiAyodeji/inspireNuggetsSlackBot/issues"
+  },
+  "homepage": "https://github.com/BolajiAyodeji/inspireNuggetsSlackBot#readme",
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "slackbots": "^1.2.0"
+  }
+}
+</code></pre>
+<h1 id=create-your-slack-workspace>Create your Slack workspace</h1>
+<p>Now that we have all set up, we need a Slack workspace to run our bot in development. Creating a workspace is pretty easy, read <a href=https://get.slack.help/hc/en-us/articles/206845317-Create-a-Slack-workspace>this</a>.</p>
+<h1 id=register-your-slack-bot>Register your Slack Bot</h1>
+<p>Now that you have a workspace, you should have a Slack URL with your workspace name, mine is <code>mekafindteam.slack.com</code>.</p>
+<ul>
+<li>Now you’ll need to create a Slack App. Create one <a href=https://api.slack.com/apps/new>here</a></li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600492/blog/0004/capture5.png alt=""></p>
+<blockquote>
+<p>Enter your App name and ensure you’re in the workspace you created if you’re in multiple workspaces.</p>
+</blockquote>
+<ul>
+<li>Now you’ll see the settings > Basic Information page. Click the first tab <code>Add features and functionality</code></li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600643/blog/0004/capture6.png alt=""></p>
+<p>Since we’re building a bot, select the <strong>Bots</strong> field.</p>
+<ul>
+<li>Now you’ll see the Bot user page</li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600858/blog/0004/capture7.png alt=""></p>
+<p>Click the <code>Add a Bot User</code> button</p>
+<ul>
+<li>Your display name will automatically be filled in from your already chosen App name, you can update but I’ll advise you use the same name everywhere with the same alphabet case to avoid errors.</li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600959/blog/0004/capture8.png alt=""></p>
+<p>Now, toggle the <code>Always Show My Bot as Online</code> switch to always show your bot as Online, remember this bot is just like a user in your workspace. Afterwards, click the <code>Add Bot User</code> button</p>
+<ul>
+<li>Save all changes now</li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture9.png alt=""></p>
+<ul>
+<li>Return to the <code>Basic Information</code> page and select the <code>Install your app to your workspace</code> tab.</li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture10.png alt=""></p>
+<p>Click the <code>Install App to Workspace</code></p>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565602315/blog/0004/capture11.png alt=""></p>
+<p>Click allow and wait to be redirected back to the <code>Basic Information</code> page.</p>
+<blockquote>
+<p>Note the <code>Manage distribution</code> tab, this section is needed when you want to make your Bot available for installation by others, for now we’re just building in development and I won’t be covering distribution in this article, in my next article, I’ll show you how to deploy your Slack bot and make it available as an App to other workspaces.</p>
+</blockquote>
+<ul>
+<li>If you check your Slack workspace now, you should see the App installed in the Apps section</li>
+</ul>
+<blockquote>
+<p>For now, it’s offline, once we start building the bot, we’ll turn this on.</p>
+</blockquote>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565603471/blog/0004/capture15.png alt=""></p>
+<h1 id=customize-your-slack-bot>Customize your Slack bot</h1>
+<p>Now we’ve created our bot, let’s do some customization</p>
+<ul>
+<li>Still, on the <code>Basic Information</code> page, scroll down to the <code>Display Information</code> section</li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565602833/blog/0004/capture12.png alt=""></p>
+<p>This is basic stuff, just upload a logo, change your background color and add a short description</p>
+<blockquote>
+<p>Your icon should be <code>512x512px</code> or bigger and your background color should be in HEX. Read more on the App guidelines <a href=https://api.slack.com/docs/slack-apps-guidelines>here</a></p>
+</blockquote>
+<p>Here’s what mine looks like after customization:</p>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565603043/blog/0004/capture13.png alt=""></p>
+<h1 id=slack-bot-oauth-tokens>Slack bot OAuth Tokens</h1>
+<p>Now we have our Slack bot setup, let’s grab out token keys.</p>
+<ul>
+<li>In the navigation bar, locate the Features section and click the <code>OAuth & Permission</code> tab</li>
+</ul>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565604021/blog/0004/capture16.png alt=""></p>
+<p>You’ll see two Access Tokens</p>
+<ul>
+<li>OAuth Access Token</li>
+<li>Bot User OAuth Access Token</li>
+</ul>
+<p>Copy the <strong>Bot User OAuth Access Token</strong></p>
+<blockquote>
+<p>This would change every time you Reinstall this app or when you install it in another workspace. The token should start with <code>xoxb-</code></p>
+<p>Keeping credentials secure is important whether you’re developing open source libraries and tools, internal integrations for your workspace, or Slack apps for distribution to workspaces across the world. - Slack</p>
+</blockquote>
+<p>This is why we have installed Dotenv and we’ll set that up in the next section.</p>
+<h1 id=building-the-bot>Building the bot</h1>
+<p>Now let’s build our bot :).</p>
+<h3 id=first-let-s-keep-our-access-token-somewhere>First, let’s keep our Access Token somewhere.</h3>
+<p>create a <code>.env</code> file and add this:</p>
+<pre><code>BOT_TOKEN=YOUR_SLACK_ACCESS_TOKEN_HERE
+</code></pre>
+<ul>
+<li>Now let’s start our SlackBot.js</li>
+</ul>
+<pre><code>const bot = new SlackBot({
+    token: `${process.env.BOT_TOKEN}`,
+    name: 'inspirenuggets'
+})
+</code></pre>
+<p>We’ve just created a bot variable that initializes a new SlackBot instance which has to values, out token and app name.</p>
+<blockquote>
+<p>I used the <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals>ES6 template string syntax</a> to bring in our token key from our <code>.env</code> file, dotenv got this covered for us.</p>
+<p>Ensure to use the same name you used while creating your Slack app else you’ll have authentication errors.</p>
+</blockquote>
+<ul>
+<li>Now start the app</li>
+</ul>
+<pre><code>npm start
+</code></pre>
+<p>nodemon should be running now and our Slack app should be online too.</p>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture17.png alt=""></p>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture18.png alt=""></p>
+<h3 id=start-handler>Start handler</h3>
+<p>Our Bot does nothing now even though it’s running, let’s return a message.</p>
+<pre><code>bot.on('start', () => {
+    const params = {
+        icon_emoji: ':robot_face:'
+    }
+
+    bot.postMessageToChannel(
+        'random',
+        'Get inspired while working with @inspirenuggets',
+        params
+    );
+})
+</code></pre>
+<blockquote>
+<p>The <code>bot.on</code> handler sends the welcome message. We passed two parameters, the <code>'start'</code> and a function which holds a params variable which also holds the slack emoji. Slack emoji have codes, you can find them <a href=https://slackmojis.com/ >here</a>. I used <code>:robot_face:</code>, you can change this to your preferred emoji.</p>
+<p>We also initialized the <code>bot.postMessageToChannel</code> function which is a SlackBot.js method to post a message to a channel In this function, we pass the channel name we want to post to, the message in a string and the params variable we declared earlier for the emoji. I used the <strong>#random</strong> channel and sent <code>Get inspired while working with @inspirenuggets</code> to it. Your app should restart automatically and your bot should do this:</p>
+</blockquote>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565605878/blog/0004/capture19.png alt=""></p>
+<p>Cool right? You can also post messages to users and groups.</p>
+<pre><code>    // define existing username instead of 'user_name'
+    bot.postMessageToUser('user_name', 'Hello world!', params); 
+   
+    
+    // define private group instead of 'private_group', where bot exist
+    bot.postMessageToGroup('private_group', 'Hello world!', params); 
+</code></pre>
+<h3 id=error-handler>Error Handler</h3>
+<p>Let’s also write a function to check for errors and return them:</p>
+<pre><code>bot.on('error', (err) => {
+    console.log(err);
+})
+</code></pre>
+<h3 id=message-handler>Message Handler</h3>
+<p>Now let’s build the main bot functionality.</p>
+<p>Like I said earlier, we’ll be using the quotes JSON from the extension I built as our quotes API. The JSON can be found with this URL: <code>https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json</code></p>
+<blockquote>
+<p>When a user mentions our bot and adds <strong>inspire me</strong>, the bot returns a random quote from <a href=https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb>inspireNuggets</a>, when the user types <strong>random joke</strong>, it returns a random joke from <a href=https://api.chucknorris.io/ >Chuck Norris</a> API and when the user types help, it returns the instruction guide.</p>
+</blockquote>
+<p>First, let’s check for our command words from the user message (<strong>inspire me</strong>, <strong>random joke</strong> and <strong>help</strong>)</p>
+<pre><code>function handleMessage(message) {
+    if(message.includes(' inspire me')) {
+        inspireMe()
+    } else if(message.includes(' random joke')) {
+        randomJoke()
+    } else if(message.includes(' help')) {
+        runHelp()
+    }
+}
+</code></pre>
+<p>Now let’s create the three function we need</p>
+<ul>
+<li><strong>inspireMe()</strong></li>
+</ul>
+<blockquote>
+<p>Our demo JSON is not really an API, it’s just some JSON I used in the Chrome Extension, we’re only accessing it from GitHub raw contents, you can use any API you prefer, you’ll just have to iterate differently to get your data depending if your API returns an array or object, whichever it returns, it’s not a big deal.</p>
+<p>Check out my previous articles on:</p>
+</blockquote>
+<ul>
+<li><a href=https://www.bolajiayodeji.com/manipulating-arrays-in-javascript/ >Manipulating Arrays in JavaScript</a> and</li>
+<li><a href=https://www.bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/ >Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</a></li>
+</ul>
+<pre><code>function inspireMe() {
+    axios.get('https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json')
+      .then(res => {
+            const quotes = res.data;
+            const random = Math.floor(Math.random() * quotes.length);
+            const quote = quotes[random].quote
+            const author = quotes[random].author
+
+            const params = {
+                icon_emoji: ':male-technologist:'
+            }
+        
+            bot.postMessageToChannel(
+                'random',
+                `:zap: ${quote} - *${author}*`,
+                params
+            );
+
+      })
+}
+</code></pre>
+<p>We just used Axios to get the JSON file which returns some data:</p>
+<pre><code>[
+    {
+        "number": "1",
+        "author": "Von R. Glitschka",
+        "quote": "The client may be king, but he's not the art director."
+    },
+    {
+        "number": "2",
+        "author": "Frank Capra",
+        "quote": "A hunch is creativity trying to tell you something."
+    },
+.
+.
+.
+.
+]
+</code></pre>
+<p>This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:</p>
+<pre><code>const quotes = res.data;
+const random = Math.floor(Math.random() * quotes.length);
+const quote = quotes[random].quote
+const author = quotes[random].author
+</code></pre>
+<p>And just like we did with the welcome message, we just return the quote and author instead of a string message:</p>
+<pre><code>`:zap: ${quote} - *${author}*`
+</code></pre>
+<p>Let’s test this</p>
+<blockquote>
+<p>Type <code>@inspirenuggets inspire me</code></p>
+</blockquote>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565608562/blog/0004/capture20.png alt=""></p>
+<blockquote>
+<p>Yayyy! It worked!</p>
+<p>PS: You can always change the emoji type for every request, if you noticed I changed the inspireMe() to <code>:male-technologist:</code></p>
+</blockquote>
+<ul>
+<li><strong>randomJoke()</strong></li>
+</ul>
+<blockquote>
+<p>We’re getting the jokes from Chuck Norris API from this endpoint <code>https://api.chucknorris.io/jokes/random</code>.</p>
+</blockquote>
+<pre><code>{
+"categories": [],
+"created_at": "2016-05-01 10:51:41.584544",
+"icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+"id": "6vUvusBeSVqdsU9C5-ZJZw",
+"updated_at": "2016-05-01 10:51:41.584544",
+"url": "https://api.chucknorris.io/jokes/6vUvusBeSVqdsU9C5-ZJZw",
+"value": "Chuck Norris once choked a wildcat to death with his sphincter muscle."
+}
+</code></pre>
+<p>This is a real API that returns a random joke on every request, so we don’t have to do <code>Math.floor()</code> again.</p>
+<pre><code>function randomJoke() {
+    axios.get('https://api.chucknorris.io/jokes/random')
+      .then(res => {
+            const joke = res.data.value;
+
+            const params = {
+                icon_emoji: ':smile:'
+            }
+        
+            bot.postMessageToChannel(
+                'random',
+                `:zap: ${joke}`,
+                params
+            );
+
+      })
+}
+</code></pre>
+<p>By now, you should understand how this works already, make a post with the channel name, message and params.</p>
+<ul>
+<li><strong>runHelp()</strong></li>
+</ul>
+<p>This is similar to our welcome message, we just want to return a custom text when the user adds <strong>help</strong> to the request.</p>
+<pre><code>function runHelp() {
+    const params = {
+        icon_emoji: ':question:'
+    }
+
+    bot.postMessageToChannel(
+        'random',
+        `Type *@inspirenuggets* with *inspire me* to get an inspiring techie quote, *random joke* to get a Chuck Norris random joke and *help* to get this instruction again`,
+        params
+    );
+}
+</code></pre>
+<p>Now let’s test all three commands:</p>
+<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png alt=""></p>
+<p>Everything works fine now, congratulations!!!! you just built your SlackBot.</p>
+<hr>
+<p>There is an endless number of possibilities of Bots you can build with this to automate your own work or teamwork.</p>
+<p>You can build a bot that: fetches your tasks from somewhere and reminds you when you type <code>hey what next</code>, welcomes every user to your workspace (I built this during one of the <a href=https://hng.tech/ >HNG Internship</a>), gives you football matches updates while you’re working, tell your team when you hit a milestone in number of registered users and many more…</p>
+<p>It’s just about having somewhere to get the data from, and some basic iteration skills and the <code>bot.postMessageToChannel()</code> method.</p>
+<p>Automation is one thing we should learn as developers, we have a lot to do, we should automate the simpler one so we have time for the more tasking ones. I hope with this you can automate your tasks and I look forward to the creative ideas you’ll bring to life.</p>
+<hr>
+<h1 id=what-next>What Next?</h1>
+<p>Our bot only runs in development now, to use it we always have to <code>npm start</code>.</p>
+<p>This isn’t cool, right? We’ll want to host it somewhere it can run every time. In my next article, I’ll show you how to host this on either <a href=https://herokuapp.com/ >Heroku</a>, <a href=https://zeit.co/ >Zeit</a> or <a href=https://netlify.com>Netlify</a> and publish it to the Slack Apps store so anyone around the world can use it. Also, don’t forget to add this in your <code>.gitignore</code> before pushing to GitHub</p>
+<pre><code>/.env
+/node_modules
+</code></pre>
+<blockquote>
+<p>Subscribe to my newsletter to get updated.</p>
+</blockquote>
+<h1 id=useful-resources>Useful Resources</h1>
+<ul>
+<li><a href=https://api.slack.com/ >Slack API</a></li>
+<li><a href=https://api.slack.com/#read_the_docs>Slack API Docs</a></li>
+<li><a href=https://github.com/slackapi/node-slack-sdk>SlackBot.js</a></li>
+<li><a href=slack.com/apps>Slack Apps</a></li>
+<li><a href=https://api.slack.com/docs/slack-apps-guidelines>Slack Apps Guidelines</a></li>
+<li><a href=https://api.slack.com/start/overview>An introduction to Slack apps</a></li>
+<li><a href=https://github.com/BolajiAyodeji/inspireNuggets>inspireNuggets</a></li>
+<li><a href=https://github.com/BolajiAyodeji/inspireNuggetsSlackBot>inspireNuggetsSlackBot</a></li>
+</ul>
+</article>
+<footer class=post-footer>
+<ul class=post-tags>
+<li class=post-tag><a href=/tags/slack-bots><span class=tag>Slack Bots</span></a></li>
+<li class=post-tag><a href=/tags/slack-api><span class=tag>Slack API</span></a></li>
+<li class=post-tag><a href=/tags/node.js><span class=tag>Node.js</span></a></li>
+<li class=post-tag><a href=/tags/javascript><span class=tag>JavaScript</span></a></li>
+</ul>
+<div class=sharing>
+<div class=addthis_inline_share_toolbox></div>
+<script async custom-element=amp-addthis src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c60f134dfdba39d" async></script>
+</div>
+<div id=newsletter>
+<div class=container>
+<div class=description>Get notified when I write something cool.</div>
+<form id=subscribe-form action=https://tinyletter.com/bolajiayodeji method=post target=popupwindow onsubmit="window.open('https://tinyletter.com/bolajiayodeji', 'popupwindow', 'scrollbars=yes,width=800,height=500');return true">
+<div class=email-group>
+<label for=email class=sr-only>Email</label>
+<input type=email id=email name=email placeholder=" Your Email Address... " required>
+<button class=button type=submit>Subscribe 📩</button>
+</div>
+</form>
+</div>
+</div>
+<div id=disqus_thread></div>
+<div id=codefund></div>
+<script async custom-element=amp-iframe>
+(function () { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bolajiayodeji-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+</footer>
+</section>
+<footer class=footer>
+<p>Copyright © 2018-2019</p>
+<ul class=social-list>
+<li class=social-item>
+<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
+</li>
+<li class=social-item>
+<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
+</li>
+<li class=social-item>
+<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
+</li>
+</ul>
+</footer>
+<amp-analytics type=googleanalytics>
+<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
+    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
+<amp-install-serviceworker src=/sw.js layout=nodisplay>
+</amp-install-serviceworker>
+<script>
+if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+</script>

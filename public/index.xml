@@ -6,10 +6,34 @@
     <description>Recent content on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jul 2019 14:52:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 06:24:42 +0000</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building a SlackBot with Node.js and SlackBots.js</title>
+      <link>https://bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/</link>
+      <pubDate>Mon, 12 Aug 2019 06:24:42 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/</guid>
+      <description>Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate.
+ Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate.
+ One awesome feature of Slack is Slack Apps, integrations and Slack Bots.
+ A Slack bot is a type of Slack App designed to interact with users via conversation.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m joining Hashnode 🎉🎉</title>
+      <link>https://bolajiayodeji.com/im-joining-hashnode-/</link>
+      <pubDate>Thu, 25 Jul 2019 10:21:00 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/im-joining-hashnode-/</guid>
+      <description>Hello, Awesome,
+Super excited to announce that I&amp;rsquo;ll be joining the awesome team at Hashnode 🎉🎉
+I&amp;rsquo;ll be handling Developer Relations and my main priority would be building relationships with the super awesome developers using our platform(s) and creating a thriving ecosystem for our own community of developers.
+At Hashnode, we focus more on inclusion, compassion and collaboration and our mission is to build a community of software developers, collaborating together to build an open and inclusive environment.</description>
+    </item>
     
     <item>
       <title>How to fix Git always asking for user credentials</title>
@@ -132,10 +156,10 @@ Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost
     
     <item>
       <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
-      <link>https://bolajiayodeji.com/iterating-through-javascript--objects-5-techniques-and-performance-tests/</link>
+      <link>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
       <pubDate>Sun, 10 Mar 2019 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/iterating-through-javascript--objects-5-techniques-and-performance-tests/</guid>
+      <guid>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
       <description>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
 * Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
     </item>
@@ -286,10 +310,10 @@ The pull request is available on this git ref pull/{ID}/head which you can fetch
     
     <item>
       <title>How to convert GitHub Markdown files to a simple website</title>
-      <link>https://bolajiayodeji.com/how-to-convert--github--markdown-files-to-a-simple-website/</link>
+      <link>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</link>
       <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
       
-      <guid>https://bolajiayodeji.com/how-to-convert--github--markdown-files-to-a-simple-website/</guid>
+      <guid>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</guid>
       <description>Easy Markdown to GitHub Pages Introduction This little guide demonstrates how to turn any Github repository with a bunch of Markdown files into a simple website using Github Pages and Jekyll.
  You don&amp;rsquo;t need to use the command line or anything other than your browser. It doesn&amp;rsquo;t require any knowledge in Jekyll. It&amp;rsquo;s completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files.</description>
     </item>

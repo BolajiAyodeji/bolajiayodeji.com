@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Introducing GitHub Linguist">
 <meta name=twitter:description content="The files and directories within a repository determine the languages that make up the repository. With GitHub, you can view a repository’s languages to get a quick overview of the repository. But how does this happen? What powers this repository language overview?In this article I would: Introduce you to GitHub Linguist How it works How to fix common Linguist issues How to use gitattributesto override Linguist :) How to use Emacs or Vim modelines to override Linguist How to contribute to GitHub LinguistLet’s Roll!">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.40.1">
+<meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/introducing-github-linguistic/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1497,6 +1497,32 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </p>
 </header>
 <article class=post-content>
+<h1>Table of Contents</h1>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#what-is-github-linguist>What is GitHub Linguist?</a></li>
+<li><a href=#how-does-linguist-work>How does Linguist work?</a></li>
+<li><a href=#how-to-fix-common-linguist-issues>How to fix common Linguist issues</a>
+<ul>
+<li><a href=#my-repository-isn-t-showing-my-language>* My repository isn’t showing my language. :(</a></li>
+<li><a href=#my-repository-is-detected-as-a-wrong-language-ಠ-ಠ>* My repository is detected as a wrong language. ಠ_ಠ</a></li>
+</ul></li>
+<li><a href=#how-to-use-gitattributes-to-overriding-linguist>How to use gitattributes to overriding Linguist</a>
+<ul>
+<li><a href=#here-s-how-to-use-the-linguist-override-feature><strong>Here’s how to use the Linguist override feature</strong></a></li>
+</ul></li>
+<li><a href=#using-emacs-or-vim-modelines>Using Emacs or Vim modelines</a></li>
+<li><a href=#how-to-contribute-to-github-linguist>How to contribute to GitHub Linguist</a></li>
+<li><a href=#reference>Reference</a></li>
+<li><a href=#conclusion>Conclusion</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*N80Y9PGa8PQf_90PZAaXog.png alt=""></p>
 <p>The files and directories within a repository determine the languages that make up the repository. With GitHub, you can view a repository’s languages to get a quick overview of the repository. But how does this happen? What powers this repository language overview?</p>
 <p>In this article I would:</p>

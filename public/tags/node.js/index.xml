@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on Bolaji Ayodeji</title>
+    <link>https://bolajiayodeji.com/tags/node.js/</link>
+    <description>Recent content in Node.js on Bolaji Ayodeji</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2019 06:24:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://bolajiayodeji.com/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a SlackBot with Node.js and SlackBots.js</title>
+      <link>https://bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/</link>
+      <pubDate>Mon, 12 Aug 2019 06:24:42 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/</guid>
+      <description>Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate.
+ Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate.
+ One awesome feature of Slack is Slack Apps, integrations and Slack Bots.
+ A Slack bot is a type of Slack App designed to interact with users via conversation.</description>
+    </item>
+    
+  </channel>
+</rss>

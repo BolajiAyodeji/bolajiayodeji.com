@@ -16,7 +16,7 @@
 <meta name=twitter:title content="Introduction to Babel and JavaScript Bundlers">
 <meta name=twitter:description content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
-<meta name=generator content="Hugo 0.40.1">
+<meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
 <meta name=renderer content=webkit>
@@ -1497,6 +1497,31 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </p>
 </header>
 <article class=post-content>
+<h1>Table of Contents</h1>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#introducing-babel>Introducing Babel</a></li>
+<li><a href=#things-you-should-know>Things you should know!</a></li>
+<li><a href=#starter-files>Starter files</a></li>
+<li><a href=#installing-babel-cli>Installing Babel CLI</a></li>
+<li><a href=#setting-up-babel-presets>Setting up Babel Presets</a></li>
+<li><a href=#babelrc-configurations>.babelrc Configurations</a>
+<ul>
+<li><a href=#folder-structure>Folder Structure</a></li>
+</ul></li>
+<li><a href=#npm-scripts-configurations><strong>NPM Scripts Configurations</strong></a></li>
+<li><a href=#let-s-test-babel>Let’s test Babel</a></li>
+<li><a href=#working-with-browserify>Working with Browserify</a></li>
+<li><a href=#working-with-parcel>Working with Parcel</a></li>
+<li><a href=#conclusion>Conclusion</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 <p><img src=https://cdn-images-1.medium.com/max/2560/1*j8camHQHTexkYljhEHLdvg.png alt="">
 <span class=figcaption_hack></span></p>
 <p>As earlier stated in my <a href=https://bolajiayodeji.com/js/introduction-to-es6-modules/ >previous article</a> ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use
