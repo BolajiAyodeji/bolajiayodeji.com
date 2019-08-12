@@ -492,3 +492,8 @@ This JSON currently contains 210 quotes and I update them frequently. So we want
         const author = quotes[random].author
 ```
 
+And just like we did with the welcome message, we just return the quote and author instead of a string message:
+
+```
+`:zap: ${quote} - *${author}*`
+```
