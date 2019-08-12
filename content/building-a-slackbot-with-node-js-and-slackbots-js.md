@@ -441,7 +441,6 @@ Now let's create the three function we need
 > Check out my previous articles on `[Manipulating Arrays in JavaScript](https://www.bolajiayodeji.com/manipulating-arrays-in-javascript/)` and `[Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.](https://www.bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/)`
 
 ```
-// inspire Me
 function inspireMe() {
     axios.get('https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json')
       .then(res => {
@@ -462,5 +461,34 @@ function inspireMe() {
 
       })
 }
+```
+
+We just used used Axios to get the JSON file which returns some data:
+
+```
+[
+    {
+        "number": "1",
+        "author": "Von R. Glitschka",
+        "quote": "The client may be king, but he's not the art director."
+    },
+    {
+        "number": "2",
+        "author": "Frank Capra",
+        "quote": "A hunch is creativity trying to tell you something."
+    },
+.
+.
+.
+.
+]
+```
+This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:
+
+```
+        const quotes = res.data;
+        const random = Math.floor(Math.random() * quotes.length);
+        const quote = quotes[random].quote
+        const author = quotes[random].author
 ```
 
