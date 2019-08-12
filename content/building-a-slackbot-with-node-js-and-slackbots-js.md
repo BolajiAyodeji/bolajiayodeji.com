@@ -24,7 +24,6 @@ If you use Slack already, you should be familiar with some creative Slack bots l
 
 In this article, I'll walk you through building your first Slack bot from start to finish with [Node.js](http://nodejs.org/) and [SlackBots.js](https://github.com/mishk0/slack-bot-api)
 
-# **Table of contents**
 
 * Slackbot Description
 * Prerequisites
@@ -35,6 +34,8 @@ In this article, I'll walk you through building your first Slack bot from start 
 * Customize Slack bot
 * Slack bot OAuth Tokens
 * Building the bot
+* What next?
+* Useful Resources
 
 # SlackBot Description
 
@@ -509,3 +510,90 @@ Let's test this
 > Yayyy! It worked!
 
 > PS: You can always change the emoji type for every request, if you noticed I changed the inspireMe() to `:male-technologist:`
+
+- **randomJoke()**
+
+> We're getting the jokes from Chuck Norris API from this endpoint `https://api.chucknorris.io/jokes/random`.
+
+```
+{
+"categories": [],
+"created_at": "2016-05-01 10:51:41.584544",
+"icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+"id": "6vUvusBeSVqdsU9C5-ZJZw",
+"updated_at": "2016-05-01 10:51:41.584544",
+"url": "https://api.chucknorris.io/jokes/6vUvusBeSVqdsU9C5-ZJZw",
+"value": "Chuck Norris once choked a wildcat to death with his sphincter muscle."
+}
+```
+
+This is a real API that returns a random joke on every request, so we don't have to do `Math.floor()` again.
+
+```
+function randomJoke() {
+    axios.get('https://api.chucknorris.io/jokes/random')
+      .then(res => {
+            const joke = res.data.value;
+
+            const params = {
+                icon_emoji: ':smile:'
+            }
+        
+            bot.postMessageToChannel(
+                'random',
+                `:zap: ${joke}`,
+                params
+            );
+
+      })
+}
+```
+
+By now, you should understand how this works already, make a post with the channel name, message and params.
+
+- **runHelp()**
+
+This is similar to our welcome message, we just want to return a custom text when the user adds **help** to the request.
+
+```
+function runHelp() {
+    const params = {
+        icon_emoji: ':question:'
+    }
+
+    bot.postMessageToChannel(
+        'random',
+        `Type *@inspirenuggets* with *inspire me* to get an inspiring techie quote, *random joke* to get a Chuck Norris random joke and *help* to get this instruction again`,
+        params
+    );
+}
+```
+
+Now let's test all three commands:
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png)
+
+Everything works fine now, congratulations!!!! you just built your SlackBot.
+
+----
+
+There is an endless number of possibilities of Bots you can build with this to automate your own personal work or team work.
+
+You can build a bot that: fetches your tasks from somewhere and reminds you when you type `hey what next`, welcomes every user to your workspace (I built this during one of the [HNG INternship](https://hng.tech/)), gives you football matches updates while you're working, tell your team when you hit a milestone in numbser of registered users and many more...
+
+It's just about having somewhere to get the data from, and some basic iteration skills and the `bot.postMessageToChannel()` method.
+
+Automation is one thing we should learn as developers, we have a lot to do, we should automate the simpler one so we have time for the more tasking ones. I hope with this you can automate your tasks and I look forward to the creative ideas you'll bring to live.
+
+----
+
+# What Next?
+
+Our bot only runs in development now, to use it we always have to `npm start`.
+
+This isn't really cool right? We'll want to host it somewhere it can run everytime. In my next article, I'll show you how to host this on either [Heroku](https://herokuapp.com/), [Zeit](https://zeit.co/) or [Netlify(https://netlify.com) and publish it to the Slack Apps store so any one around the world can use it. 
+
+> Subscribe to my newsletter to get updated.
+
+# Useful Resources
+
