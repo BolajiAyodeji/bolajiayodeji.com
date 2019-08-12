@@ -409,3 +409,58 @@ bot.on('error', (err) => {
     console.log(err);
 })
 ```
+
+### Message Handler
+
+Now let's build the main bot functionality.
+
+Like I said earlier, we'll be using the quotes JSON from the extension I built as our quotes API. The JSON can be found with this URL: `https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json`
+
+> When a user mentions our bot and adds **inspire me**, the bot returns a random quote from [inspireNuggets](https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb), when the user types **random joke**, it returns a random joke from [Chuck Norris](https://api.chucknorris.io/) API and when the user types help, it returns the instruction guide.
+
+First, let's check for our command words from the user message (**inspire me**, **random joke** and **help**)
+
+```
+function handleMessage(message) {
+    if(message.includes(' inspire me')) {
+        inspireMe()
+    } else if(message.includes(' random joke')) {
+        randomJoke()
+    } else if(message.includes(' help')) {
+        runHelp()
+    }
+}
+```
+
+Now let's create the three function we need
+
+- **inspireMe()**
+
+> Our demo JSON is not really an API, it's just some JSON I used in the Chrome Extension, we're only accessing it from GitHub raw contents, you can use any API you prefer, you'll just have to iterate differently to get your data depending if your API returns an array or object, whichever it returns, it's not a big deal. 
+
+> Check out my previous articles on `[Manipulating Arrays in JavaScript](https://www.bolajiayodeji.com/manipulating-arrays-in-javascript/)` and `[Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.](https://www.bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/)`
+
+```
+// inspire Me
+function inspireMe() {
+    axios.get('https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json')
+      .then(res => {
+            const quotes = res.data;
+            const random = Math.floor(Math.random() * quotes.length);
+            const quote = quotes[random].quote
+            const author = quotes[random].author
+
+            const params = {
+                icon_emoji: ':male-technologist:'
+            }
+        
+            bot.postMessageToChannel(
+                'random',
+                `:zap: ${quote} - *${author}*`,
+                params
+            );
+
+      })
+}
+```
+
