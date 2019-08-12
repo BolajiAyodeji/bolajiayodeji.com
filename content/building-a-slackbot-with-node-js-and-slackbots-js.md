@@ -572,6 +572,10 @@ Now let's test all three commands:
 
 Everything works fine now, congratulations!!!! you just built your SlackBot.
 
+# Final `index.js` code
+
+{{< gist BolajiAyodeji a1fe5fe40f9c8d5abbc08f84edef5b74 >}}
+
 - - -
 
 There is an endless number of possibilities of Bots you can build with this to automate your own work or teamwork.
