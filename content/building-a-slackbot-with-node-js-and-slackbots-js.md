@@ -157,7 +157,7 @@ const axios = require('axios')
 
 ## Nodemon
 
-To run a script in Node.js, you have to run `node index.js`. Whenever you make changes to this file, you have to rerun `node index.js`, this sucks right when you'll making so many changes like we'll be doing. That's why we need [nodemon](https://github.com/remy/nodemon), nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+To run a script in Node.js, you have to run `node index.js`. Whenever you make changes to this file, you have to rerun `node index.js`, this sucks right when you're making so many changes like we'll be doing. That's why we need [nodemon](https://github.com/remy/nodemon), nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
 ```
 npm install -g nodemon
@@ -571,10 +571,6 @@ Now let's test all three commands:
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png)
 
 Everything works fine now, congratulations!!!! you just built your SlackBot.
-
-# Final `index.js` code
-
-{{< gist BolajiAyodeji a1fe5fe40f9c8d5abbc08f84edef5b74 >}}
 
 - - -
 
