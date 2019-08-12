@@ -578,7 +578,7 @@ Everything works fine now, congratulations!!!! you just built your SlackBot.
 
 There is an endless number of possibilities of Bots you can build with this to automate your own work or teamwork.
 
-You can build a bot that: fetches your tasks from somewhere and reminds you when you type `hey what next`, welcomes every user to your workspace (I built this during one of the [HNG Internship](https://hng.tech/)), gives you football matches updates while you're working, tell your team when you hit a milestone in number of registered users and many more...
+You can build a bot that: fetches your tasks from somewhere and reminds you when you type `hey what next`, welcomes every user to your workspace (I built this during one of the [HNG Internship's](https://hng.tech/)), gives you football matches updates while you're working, tell your team when you hit a milestone in number of registered users and many more...
 
 It's just about having somewhere to get the data from, and some basic iteration skills and the `bot.postMessageToChannel()` method.
 
