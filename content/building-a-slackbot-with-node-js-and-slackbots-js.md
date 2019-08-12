@@ -181,7 +181,7 @@ If you run `npm start`, the file will run but won't restart on change. To fix th
 
 # Dotenv
 
-I won't explain this in-depth, in a few days, I'll publish an article around Environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don't have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, [Dotenv](https://github.com/motdotla/dotenv) is a zero-dependency module that loads environment variables from a .env file into process.env.
+I won't explain this in-depth, in a few days, I'll publish an article around environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don't have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, [Dotenv](https://github.com/motdotla/dotenv) is a zero-dependency module that loads environment variables from a .env file into process.env.
 
 ```
 npm install dotenv
