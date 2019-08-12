@@ -157,7 +157,7 @@ const axios = require('axios')
 
 ## Nodemon
 
-To run a script in Node.js, you have to run `node index.js`. Whenever you make changes to this file, you have to rerun `node index.js`, this sucks right when you'll making so many changes like we'll be doing. That's why we need [nodemon](https://github.com/remy/nodemon), nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+To run a script in Node.js, you have to run `node index.js`. Whenever you make changes to this file, you have to rerun `node index.js`, this sucks right when you're making so many changes like we'll be doing. That's why we need [nodemon](https://github.com/remy/nodemon), nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
 ```
 npm install -g nodemon
@@ -181,7 +181,7 @@ If you run `npm start`, the file will run but won't restart on change. To fix th
 
 # Dotenv
 
-I won't explain this in-depth, in a few days, I'll publish an article around Environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don't have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, [Dotenv](https://github.com/motdotla/dotenv) is a zero-dependency module that loads environment variables from a .env file into process.env.
+I won't explain this in-depth, in a few days, I'll publish an article around environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don't have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, [Dotenv](https://github.com/motdotla/dotenv) is a zero-dependency module that loads environment variables from a .env file into process.env.
 
 ```
 npm install dotenv
@@ -339,7 +339,7 @@ const bot = new SlackBot({
 })
 ```
 
-We've just created a bot variable that initializes a new SlackBot instance which has to values, out token and app name.
+We've just created a bot variable that initializes a new SlackBot instance which has two values, our token and app name.
 
 > I used the [ES6 template string syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) to bring in our token key from our `.env` file, dotenv got this covered for us.
 >
@@ -411,7 +411,7 @@ Now let's build the main bot functionality.
 
 Like I said earlier, we'll be using the quotes JSON from the extension I built as our quotes API. The JSON can be found with this URL: `https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json`
 
-> When a user mentions our bot and adds **inspire me**, the bot returns a random quote from [inspireNuggets](https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb), when the user types **random joke**, it returns a random joke from [Chuck Norris](https://api.chucknorris.io/) API and when the user types help, it returns the instruction guide.
+> When a user mentions our bot and adds **inspire me**, the bot returns a random quote from [inspireNuggets](https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb), when the user types **random joke**, it returns a random joke from [Chuck Norris](https://api.chucknorris.io/) API and when the user types **help**, it returns the instruction guide.
 
 First, let's check for our command words from the user message (**inspire me**, **random joke** and **help**)
 
@@ -486,10 +486,12 @@ We just used Axios to get the JSON file which returns some data:
 This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:
 
 ```
+
 const quotes = res.data;
 const random = Math.floor(Math.random() * quotes.length);
 const quote = quotes[random].quote
 const author = quotes[random].author
+
 ```
 
 And just like we did with the welcome message, we just return the quote and author instead of a string message:
@@ -572,15 +574,11 @@ Now let's test all three commands:
 
 Everything works fine now, congratulations!!!! you just built your SlackBot.
 
-# Final `index.js` code
-
-{{< gist BolajiAyodeji a1fe5fe40f9c8d5abbc08f84edef5b74 >}}
-
 - - -
 
 There is an endless number of possibilities of Bots you can build with this to automate your own work or teamwork.
 
-You can build a bot that: fetches your tasks from somewhere and reminds you when you type `hey what next`, welcomes every user to your workspace (I built this during one of the [HNG Internship](https://hng.tech/)), gives you football matches updates while you're working, tell your team when you hit a milestone in number of registered users and many more...
+You can build a bot that: fetches your tasks from somewhere and reminds you when you type `hey what next`, welcomes every user to your workspace (I built this during one of the [HNG Internship's](https://hng.tech/)), gives you football matches updates while you're working, tell your team when you hit a milestone in number of registered users and many more...
 
 It's just about having somewhere to get the data from, and some basic iteration skills and the `bot.postMessageToChannel()` method.
 
@@ -596,8 +594,10 @@ This isn't cool, right? We'll want to host it somewhere it can run every time. I
 Also, don't forget to add this in your `.gitignore` before pushing to GitHub
 
 ```
+
 /.env
 /node_modules
+
 ```
 
 > Subscribe to my newsletter to get updated.
