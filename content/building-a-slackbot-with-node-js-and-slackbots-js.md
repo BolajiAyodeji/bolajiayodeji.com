@@ -44,8 +44,8 @@ I built a [chrome extension](https://github.com/BolajiAyodeji/inspireNuggets) be
 
 Basically, when a user mentions our bot and adds **inspire me**, the bot returns a random quote from [inspireNuggets](https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb), when the user types **random joke**, it returns a random joke from [Chuck Norris](https://api.chucknorris.io/) API and when the user types help, it returns the instruction guide. 
 
-> @inspirenuggets inspire me
-> @inspirenuggets random joke
+> @inspirenuggets inspire me <br>
+> @inspirenuggets random joke <br>
 > @inspirenuggets help
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png)
@@ -59,6 +59,7 @@ Pretty interesting right? Let's  get started
 This bot will be built with Node.js and SlackBots.js. You don't really need to know how to write Node.js, I'll walk you through it, but knowing it is an advantage.
 
 * Basic JavaScript knowledge
+* ES6 JavaScript
 * Slack workspace
 * Some experience with Slack
 * Some version control skills
@@ -329,7 +330,7 @@ This is why we have installed Dotenv and we'll set that up in the next section.
 
 Now let's build our bot :).
 
-- First let's keep our Access Token somewhere.
+### First let's keep our Access Token somewhere.
 create a `.env` file and add this:
 
 ```
@@ -361,3 +362,50 @@ nodemon should be running now and our Slack app should be online too.
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture17.png)
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture18.png)
+
+### Start handler
+
+Our Bot does nothing now even though it's running, let's return a message.
+
+```
+bot.on('start', () => {
+    const params = {
+        icon_emoji: ':robot_face:'
+    }
+
+    bot.postMessageToChannel(
+        'random',
+        'Get inspired while working with @inspirenuggets',
+        params
+    );
+})
+```
+
+> The `bot.on` handler sends the welcome message. We passed two parameters, the `'start'` and a function which holds a params variable which also holds the slack emoji. Slack emoji's have codes, you can find them [here](https://slackmojis.com/). I used `:robot_face:`, you can change this to your preferred emoji.
+
+> We also initialized the `bot.postMessageToChannel` function which is a SlackBot.js method to post a message to a channel
+In this function, we pass the channel name we want to post to, the message in a string and the params variable we declared earlier for the emoji. I used the **#random** channel and sent `Get inspired while working with @inspirenuggets` to it. You app should restart automatically and your bot should do this:
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605878/blog/0004/capture19.png)
+
+Cool right?
+You can also post messages to users and groups.
+
+``` 
+    // define existing username instead of 'user_name'
+    bot.postMessageToUser('user_name', 'Hello world!', params); 
+   
+    
+    // define private group instead of 'private_group', where bot exist
+    bot.postMessageToGroup('private_group', 'Hello world!', params); 
+```
+
+### Error Handler
+
+Let's also write a function to check for errors and return them:
+
+```
+bot.on('error', (err) => {
+    console.log(err);
+})
+```
