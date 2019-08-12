@@ -7,7 +7,11 @@
     </p>
   </header>
   {{ partial "adsense.html" . }}
-  <article class="post-content">{{ .Content }}</article>
+  <article class="post-content">
+    <h1>Table of Contents</h1>
+    {{ .TableOfContents }}
+    {{ .Content }}
+  </article>
   <footer class="post-footer">
     {{ if isset .Params "tags" }}
     <ul class="post-tags">
