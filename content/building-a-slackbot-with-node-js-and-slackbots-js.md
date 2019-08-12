@@ -339,7 +339,7 @@ const bot = new SlackBot({
 })
 ```
 
-We've just created a bot variable that initializes a new SlackBot instance which has to values, out token and app name.
+We've just created a bot variable that initializes a new SlackBot instance which has two values, our token and app name.
 
 > I used the [ES6 template string syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) to bring in our token key from our `.env` file, dotenv got this covered for us.
 >
