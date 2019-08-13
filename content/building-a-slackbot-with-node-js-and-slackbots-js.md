@@ -586,6 +586,12 @@ Automation is one thing we should learn as developers, we have a lot to do, we s
 
 - - -
 
+# Final Code
+
+Here's our final `index.js`
+
+{{< gist BolajiAyodeji a1fe5fe40f9c8d5abbc08f84edef5b74 >}}
+
 # What Next?
 
 Our bot only runs in development now, to use it we always have to `npm start`.
