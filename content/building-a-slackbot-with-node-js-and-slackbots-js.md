@@ -606,7 +606,7 @@ Also, don't forget to add this in your `.gitignore` before pushing to GitHub
 
 ```
 
-> Subscribe to my newsletter to get updated.
+> Subscribe to my [newsletter](https://tinyletter.com/bolajiayodeji/) to get updated.
 
 # Useful Resources
 
