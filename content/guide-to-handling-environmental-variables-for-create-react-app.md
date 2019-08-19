@@ -12,4 +12,4 @@ An environment variable is a dynamic-named value that can affect the way running
 
 > Generally, an environment variable is a dynamic "object" on a computer, containing an editable value, which may be used by one or more software programs in Windows. Environment variables help programs know what directory to install files in, where to store temporary files, and where to find user profile settings. They help shape the environment in which programs run on your computer.
 
-In computer programming, environmental variables are used to hide certain secret 
+In computer programming, environmental variables are used to hide certain secret values
