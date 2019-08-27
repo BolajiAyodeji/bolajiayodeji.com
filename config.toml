@@ -9,9 +9,9 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   subtitle = "I create contents around web and frontend development."
   portfolio = "About Me →"
   author = "Bolaji Ayodeji"
-  logo = "https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png"
+  logo = "https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png"
   description = "Articles on web & frontend development, all written by Bolaji Ayodeji. 🚀"
-  paginate = 15
+  paginate = 10
 
   # Addthis
   addThis = "ra-5c60f134dfdba39d"
