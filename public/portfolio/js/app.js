@@ -43,7 +43,7 @@
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
-        this.period = parseInt(period, 10) || 3000;
+        this.period = parseInt(period, 10) || 3500;
         this.txt = "";
         this.tick();
         this.isDeleting = false;
