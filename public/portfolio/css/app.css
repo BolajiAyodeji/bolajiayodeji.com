@@ -136,7 +136,7 @@ a:hover {
 }
 
 .section-btn {
-	background: #24a46d;
+	background: #63D1F4;
 	border: 0;
 	border-radius: 8px;
 	color: #fff;
@@ -149,7 +149,7 @@ a:hover {
 
 .section-btn:focus,
 .section-btn:hover {
-	background: #2dce89;
+	background: #1cbcef;
 	border-color: transparent;
 	color: #fff
 }
@@ -157,10 +157,8 @@ a:hover {
 .overlay {
 	border-bottom-left-radius: 50% 20%;
 	border-bottom-right-radius: 50% 20%;
-	background: #2dce89;
-	background: -webkit-linear-gradient(to right, #2dce89, #63D1F4);
-	background: linear-gradient(to right, #2dce89, #63D1F4);
-	opacity: .7;
+	background: #63D1F4;
+	opacity: .3;
 	position: absolute;
 	right: 0
 }
@@ -222,7 +220,7 @@ a:hover {
 }
 
 .custom-navbar .section-btn:hover {
-	background: #2dce89
+	background: #1cbcef
 }
 
 .custom-navbar .section-btn a {
@@ -250,7 +248,7 @@ a:hover {
 
 .custom-navbar .nav li.active>a {
 	background-color: transparent;
-	color: #2dce89
+	color: #1cbcef
 }
 
 .custom-navbar .navbar-toggle {
@@ -290,7 +288,7 @@ a:hover {
 #home {
 	border-bottom-left-radius: 50% 20%;
 	border-bottom-right-radius: 50% 20%;
-	background: url(../images/header.jpg) center center no-repeat;
+	background: url(https://res.cloudinary.com/iambeejayayo/image/upload/v1566879398/website/header.jpg) center center no-repeat;
 	background-size: cover;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -316,7 +314,7 @@ a:hover {
 
 .home-info .section-btn:focus,
 .home-info .section-btn:hover {
-	background: #24a46d;
+	background: #1cbcef;
 	border-color: transparent;
 	color: #FFF
 }
@@ -407,7 +405,7 @@ footer {
 }
 
 .blog-thumb small {
-	color: #2dce89;
+	color: #63D1F4;
 	font-weight: 500;
 	display: block
 }
@@ -470,7 +468,7 @@ footer {
 
 .link-btn:hover {
 	color: #FFF;
-	background: #2dce89
+	background: #1cbcef
 }
 
 .quote {
@@ -502,7 +500,7 @@ footer {
 }
 
 #fade-quote-carousel.carousel .carousel-indicators>li {
-	background-color: #2dce89;
+	background-color: #1cbcef;
 	border: none
 }
 
@@ -520,13 +518,11 @@ footer {
 }
 
 .testi {
-	color: #2dce89
+	color: #1cbcef
 }
 
 #contact {
-	background: #2dce89;
-	background: -webkit-linear-gradient(to right, #2dce89, #63D1F4);
-	background: linear-gradient(to right, #2dce89, #63D1F4)
+	background:#63D1F4;
 }
 
 #contact .section-title h2 {
@@ -583,7 +579,7 @@ footer {
 #contact input[type=submit]:hover,
 #contact input[type=reset]:hover {
 	box-shadow: inset 0 0 0 2px #e9ecef;
-	background: linear-gradient(to left, #2dce89, #63D1F4);
+	background: linear-gradient(to left, #1cbcef, #63D1F4);
 	color: #000
 }
 
@@ -616,7 +612,7 @@ footer span {
 }
 
 .footer-link li a:hover {
-	color: #2dce89
+	color: #63D1F4
 }
 
 .copyright-text p,
@@ -673,7 +669,7 @@ footer span {
 }
 
 .social-icon li a:hover {
-	color: #2dce89
+	color:#63D1F4
 }
 
 @media screen and (max-width:1170px) {

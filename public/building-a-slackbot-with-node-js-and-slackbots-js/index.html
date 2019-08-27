@@ -9,12 +9,12 @@
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
 <title>Building a SlackBot with Node.js and SlackBots.js</title>
 <meta name=author content="Bolaji Ayodeji">
-<meta name=description content="Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate. Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate. One awesome feature of Slack is Slack Apps, integrations and Slack Bots. A Slack bot is a type of Slack App designed to interact with users via conversation.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,a11y,media accessibility,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+<meta name=description content="Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate. Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate. One of the awesome features of Slack is Slack Apps, integrations and Slack Bots. A Slack bot is a type of Slack App designed to interact with users via conversation.">
+<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
 <meta name=twitter:title content="Building a SlackBot with Node.js and SlackBots.js">
-<meta name=twitter:description content="Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate. Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate. One awesome feature of Slack is Slack Apps, integrations and Slack Bots. A Slack bot is a type of Slack App designed to interact with users via conversation.">
+<meta name=twitter:description content="Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate. Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate. One of the awesome features of Slack is Slack Apps, integrations and Slack Bots. A Slack bot is a type of Slack App designed to interact with users via conversation.">
 <meta name=twitter:image content=https://bolajiayodeji.com/img/fav-500.png>
 <meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/ >
@@ -27,9 +27,9 @@
 <meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
 <meta name=msvalidate.01 content=bing_site_verification_code>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
 <meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png>
+<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
 <link rel=manifest href=/manifest.json>
 <meta name=theme-color content=#20242b>
 <script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
@@ -1524,6 +1524,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li><a href=#message-handler>Message Handler</a></li>
 </ul></li>
 </ul></li>
+<li><a href=#final-code>Final Code</a></li>
 <li><a href=#what-next>What Next?</a></li>
 <li><a href=#useful-resources>Useful Resources</a></li>
 </ul>
@@ -1535,7 +1536,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </blockquote>
 <p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565594320/blog/0004/organize-conversations-slack-product-desktop.png alt=""></p>
 <hr>
-<p>One awesome feature of Slack is <a href=https://slack.com/apps>Slack Apps</a>, integrations and <a href=https://api.slack.com/bot-users>Slack Bots</a>.</p>
+<p>One of the awesome features of Slack is <a href=https://slack.com/apps>Slack Apps</a>, integrations and <a href=https://api.slack.com/bot-users>Slack Bots</a>.</p>
 <blockquote>
 <p>A Slack bot is a type of Slack App designed to interact with users via conversation. Your bot can send DMs, it can be mentioned by users, it can post messages or upload files, and it can be invited to channels. Cool right?</p>
 </blockquote>
@@ -1633,7 +1634,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <pre><code>const axios = require('axios')
 </code></pre>
 <h2 id=nodemon>Nodemon</h2>
-<p>To run a script in Node.js, you have to run <code>node index.js</code>. Whenever you make changes to this file, you have to rerun <code>node index.js</code>, this sucks right when you’ll making so many changes like we’ll be doing. That’s why we need <a href=https://github.com/remy/nodemon>nodemon</a>, nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.</p>
+<p>To run a script in Node.js, you have to run <code>node index.js</code>. Whenever you make changes to this file, you have to rerun <code>node index.js</code>, this sucks right when you’re making so many changes like we’ll be doing. That’s why we need <a href=https://github.com/remy/nodemon>nodemon</a>, nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.</p>
 <pre><code>npm install -g nodemon
 </code></pre>
 <p>In <code>package.json</code>, locate the scripts section and add a new start script</p>
@@ -1647,7 +1648,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
   }
 </code></pre>
 <h1 id=dotenv>Dotenv</h1>
-<p>I won’t explain this in-depth, in a few days, I’ll publish an article around Environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don’t have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, <a href=https://github.com/motdotla/dotenv>Dotenv</a> is a zero-dependency module that loads environment variables from a .env file into process.env.</p>
+<p>I won’t explain this in-depth, in a few days, I’ll publish an article around environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don’t have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, <a href=https://github.com/motdotla/dotenv>Dotenv</a> is a zero-dependency module that loads environment variables from a .env file into process.env.</p>
 <pre><code>npm install dotenv
 </code></pre>
 <p>In <code>index.js</code></p>
@@ -1773,7 +1774,7 @@ dotenv.config()
     name: 'inspirenuggets'
 })
 </code></pre>
-<p>We’ve just created a bot variable that initializes a new SlackBot instance which has to values, out token and app name.</p>
+<p>We’ve just created a bot variable that initializes a new SlackBot instance which has two values, our token and app name.</p>
 <blockquote>
 <p>I used the <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals>ES6 template string syntax</a> to bring in our token key from our <code>.env</code> file, dotenv got this covered for us.</p>
 <p>Ensure to use the same name you used while creating your Slack app else you’ll have authentication errors.</p>
@@ -1823,7 +1824,7 @@ dotenv.config()
 <p>Now let’s build the main bot functionality.</p>
 <p>Like I said earlier, we’ll be using the quotes JSON from the extension I built as our quotes API. The JSON can be found with this URL: <code>https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json</code></p>
 <blockquote>
-<p>When a user mentions our bot and adds <strong>inspire me</strong>, the bot returns a random quote from <a href=https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb>inspireNuggets</a>, when the user types <strong>random joke</strong>, it returns a random joke from <a href=https://api.chucknorris.io/ >Chuck Norris</a> API and when the user types help, it returns the instruction guide.</p>
+<p>When a user mentions our bot and adds <strong>inspire me</strong>, the bot returns a random quote from <a href=https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb>inspireNuggets</a>, when the user types <strong>random joke</strong>, it returns a random joke from <a href=https://api.chucknorris.io/ >Chuck Norris</a> API and when the user types <strong>help</strong>, it returns the instruction guide.</p>
 </blockquote>
 <p>First, let’s check for our command words from the user message (<strong>inspire me</strong>, <strong>random joke</strong> and <strong>help</strong>)</p>
 <pre><code>function handleMessage(message) {
@@ -1888,10 +1889,12 @@ dotenv.config()
 ]
 </code></pre>
 <p>This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:</p>
-<pre><code>const quotes = res.data;
+<pre><code>
+const quotes = res.data;
 const random = Math.floor(Math.random() * quotes.length);
 const quote = quotes[random].quote
 const author = quotes[random].author
+
 </code></pre>
 <p>And just like we did with the welcome message, we just return the quote and author instead of a string message:</p>
 <pre><code>`:zap: ${quote} - *${author}*`
@@ -1962,18 +1965,23 @@ const author = quotes[random].author
 <p>Everything works fine now, congratulations!!!! you just built your SlackBot.</p>
 <hr>
 <p>There is an endless number of possibilities of Bots you can build with this to automate your own work or teamwork.</p>
-<p>You can build a bot that: fetches your tasks from somewhere and reminds you when you type <code>hey what next</code>, welcomes every user to your workspace (I built this during one of the <a href=https://hng.tech/ >HNG Internship</a>), gives you football matches updates while you’re working, tell your team when you hit a milestone in number of registered users and many more…</p>
+<p>You can build a bot that: fetches your tasks from somewhere and reminds you when you type <code>hey what next</code>, welcomes every user to your workspace (I built this during one of the <a href=https://hng.tech/ >HNG Internship’s</a>), gives you football matches updates while you’re working, tell your team when you hit a milestone in number of registered users and many more…</p>
 <p>It’s just about having somewhere to get the data from, and some basic iteration skills and the <code>bot.postMessageToChannel()</code> method.</p>
 <p>Automation is one thing we should learn as developers, we have a lot to do, we should automate the simpler one so we have time for the more tasking ones. I hope with this you can automate your tasks and I look forward to the creative ideas you’ll bring to life.</p>
 <hr>
+<h1 id=final-code>Final Code</h1>
+<p>Here’s our final <code>index.js</code></p>
+<script src=//gist.github.com/BolajiAyodeji/a1fe5fe40f9c8d5abbc08f84edef5b74.js></script>
 <h1 id=what-next>What Next?</h1>
 <p>Our bot only runs in development now, to use it we always have to <code>npm start</code>.</p>
 <p>This isn’t cool, right? We’ll want to host it somewhere it can run every time. In my next article, I’ll show you how to host this on either <a href=https://herokuapp.com/ >Heroku</a>, <a href=https://zeit.co/ >Zeit</a> or <a href=https://netlify.com>Netlify</a> and publish it to the Slack Apps store so anyone around the world can use it. Also, don’t forget to add this in your <code>.gitignore</code> before pushing to GitHub</p>
-<pre><code>/.env
+<pre><code>
+/.env
 /node_modules
+
 </code></pre>
 <blockquote>
-<p>Subscribe to my newsletter to get updated.</p>
+<p>Subscribe to my <a href=https://tinyletter.com/bolajiayodeji/ >newsletter</a> to get updated.</p>
 </blockquote>
 <h1 id=useful-resources>Useful Resources</h1>
 <ul>
