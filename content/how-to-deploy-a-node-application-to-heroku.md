@@ -1,5 +1,5 @@
 ---
-title: How to deploy a Node Application to Heroku
+title: How to deploy a Node Application and Database to Heroku
 type: post
 date: 2019-08-26T06:52:24.006Z
 tags:
@@ -8,4 +8,4 @@ tags:
   - Heroku
   - Express
 ---
-test...
+This article covers how to deploy and existing Node.js app and Database to Heroku.
