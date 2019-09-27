@@ -25,3 +25,13 @@ One of Heroku's core feature is deploying, managing, and scaling apps with your 
 In this article, I'll show you how to take an existing Node.js app and deploy it to Heroku. From creating your Heroku account, till adding a Database to your deployed application.
 
 ## Prerequisites
+
+In my previous article, I wrote about "[Building a SlackBot with Node.js and SlackBots.js](https://www.bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/)" and I promised to write a follow up article to show how to host the SlackBot on either Heroku, Zeit or Netlify and publish it to the Slack Apps store. Well, this is the follow up article but without the "Publishing to Slack Apps" part, we'll cover that in another article.
+
+I assume you have/ know the following already:
+
+- Read my previous article
+- Built the [inspireNuggets SlackBot](https://github.com/BolajiAyodeji/inspireNuggetsSlackBot)
+- Npm and Node installed
+- A free [Heroku account](https://signup.heroku.com/)
+- Heroku CLI installed
