@@ -174,4 +174,25 @@ heroku local web
 
 **🚀 Let's Deploy**
 
+How this works is, you have the project working on local already and you've pushed to your favorite Git Hosting already (e.g GitHub)
+
+- Run `heroku create`
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569625900/blog/0005/heroku-create.png)
+
+Basically this command creates a new Heroku app for you with some random domain and adds Heroku to your local git repository.
+
+
+- Now run `git push heroku master`
+
+This is the magic command, it pushes your app to Heroku, installs it there and launches it on your allocated domain (In the example above, it's https://lit-cove-58897.herokuapp.com/)
+
+> You can always make changes to your app settings and domains in your [Heroku Dashboard](https://dashboard.heroku.com/)
+
+- Now visit your app in your browser
+
+```
+heroku open
+```
+
 #### Deploy via GitHub integration
