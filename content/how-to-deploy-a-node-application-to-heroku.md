@@ -180,7 +180,7 @@ How this works is, you have the project working on local already and you've push
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569625900/blog/0005/heroku-create.png)
 
-Basically this command creates a new Heroku app for you with some random domain and adds Heroku to your local git repository.
+Basically this command creates a new Heroku app for you with some randomly generated domain and adds Heroku to your local git repository.
 
 
 - Now run `git push heroku master`
@@ -196,3 +196,23 @@ heroku open
 ```
 
 #### Deploy via GitHub integration
+
+> This is done in the Heroku Dashboard
+
+**☑️ Checklist**
+
+- All previous checklists apply here
+- Deploy the app to GitHub
+
+**🚀 Let's Deploy**
+
+How this method works is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHUb to Heroku. Pretty cool right? This is my favorite method
+
+- Login to your Heroku Dashboard
+- Create a new app
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569626896/blog/0005/create-app.png)
+
+Now select your app name and Region
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569626958/blog/0005/new-app.png)                                                                                               
