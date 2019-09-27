@@ -30,8 +30,20 @@ In my previous article, I wrote about "[Building a SlackBot with Node.js and Sla
 
 I assume you have/ know the following already:
 
-- Read my previous article
+- Read my [previous article](https://www.bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/)
 - Built the [inspireNuggets SlackBot](https://github.com/BolajiAyodeji/inspireNuggetsSlackBot)
-- Npm and Node installed
+- Node and npm installed
 - A free [Heroku account](https://signup.heroku.com/)
 - [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed
+
+## Bonus
+
+If you don't have npm, Node and Heroku CLI installed, here's a quick bonus [Yes, you're welcome :)].
+
+### Installing Npm and Node
+
+> [Node.js](https://nodejs.org) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
+
+> [npm]() npm is the package manager for Node.js. It was created in 2009 as an open source project to help JavaScript developers easily share packaged modules of code.
+
+You can simply download Node.js [here](https://nodejs.org/en/). Don't worry, npm comes with Node.js, so doing this installs both ✨
