@@ -48,6 +48,6 @@ If you don't have npm, Node and Heroku CLI installed, here's a quick bonus [Yes,
 
 > [Node.js](https://nodejs.org) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
 
-> [npm]() npm is the package manager for Node.js. It was created in 2009 as an open source project to help JavaScript developers easily share packaged modules of code.
+> [npm](https://www.npmjs.com/) npm is the package manager for Node.js. An open source project created to help JavaScript developers easily share packaged modules of code.
 
 You can simply download Node.js [here](https://nodejs.org/en/). Don't worry, npm comes with Node.js, so doing this installs both ✨
