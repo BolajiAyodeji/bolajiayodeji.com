@@ -137,7 +137,7 @@ I'll show you two ways to do this:
 
 > This is done via the Heroku CLI.
 
-**Checklist**
+**☑️ Checklist**
 
 - Specify the version of Node.js that will be used to run your application on Heroku in your `package.json` file.
 
@@ -171,5 +171,7 @@ heroku local web
 .DS_Store
 /*.env
 ```
+
+**🚀 Let's Deploy**
 
 #### Deploy via GitHub integration
