@@ -133,5 +133,33 @@ git clone https://github.com/BolajiAyodeji/inspireNuggetsSlackBot.git && cd insp
 Now let's deploy our app to Heroku 🎉🎉.
 I'll show you two ways to do this:
 
-- Via the Heroku CLI and
-- Via GitHub integration
+#### Deploy via the Heroku CLI
+
+**Checklist**
+
+- Specify the version of Node.js that will be used to run your application on Heroku in your `package.json` file.
+
+```
+"engines": {
+    "node": "10.16.0"
+  },
+```
+
+- Specify your start script.
+Simply create a `Procfile` (without any file extension) and add
+
+```
+ web: node index.js
+```
+
+> Heroku first looks for this Procfile. If none is found, Heroku will attempt to start a default web process via the start script in your `package.json`.
+
+- Start your app locally using the heroku local command to be sure everything works fine
+
+```
+heroku local web
+```
+
+> Your app should now be running on http://localhost:5000.
+
+#### Deploy via GitHub integration
