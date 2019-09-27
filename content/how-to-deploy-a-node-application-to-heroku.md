@@ -20,4 +20,8 @@ With features like: Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons
 
 ----
 
-One of Heroku's core feature deploying, managing, and scaling apps with your favorite languages [Node, Ruby, Python, Java, PHP, Go and more]. In this article, I'll show you how to take an existing Node.js app and deploy it to Heroku.
+One of Heroku's core feature is deploying, managing, and scaling apps with your favorite languages [Node, Ruby, Python, Java, PHP, Go and more].
+
+In this article, I'll show you how to take an existing Node.js app and deploy it to Heroku. From creating your Heroku account, till adding a Database to your deployed application.
+
+## Prerequisites
