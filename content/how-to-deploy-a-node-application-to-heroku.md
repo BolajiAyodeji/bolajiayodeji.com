@@ -34,4 +34,4 @@ I assume you have/ know the following already:
 - Built the [inspireNuggets SlackBot](https://github.com/BolajiAyodeji/inspireNuggetsSlackBot)
 - Npm and Node installed
 - A free [Heroku account](https://signup.heroku.com/)
-- Heroku CLI installed
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed
