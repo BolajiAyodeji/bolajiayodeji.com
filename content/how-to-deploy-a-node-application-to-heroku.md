@@ -90,5 +90,30 @@ Please read [this](https://devcenter.heroku.com/articles/heroku-cli#other-instal
 ```
 heroku --version
 ```
+> heroku/7.30.1 linux-x64 node-v11.14.0
 
 - Login to your Heroku account
+
+There are two ways to do this:
+
+- Web based auth
+
+```
+heroku login
+```
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621496/blog/0005/heroku-web-auth.png)
+
+Follow the instructions and login via your web browser then return to your terminal.
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621617/blog/0005/heroku-web-auth2.png)
+
+- CLI auth
+
+This is a safer option as it saves your email address and an API token to `~/.netrc` for future use. 
+
+```
+heroku login -i
+```
+
+!                                                                                                                                                                                                                                                                                                                       [](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621890/blog/0005/heroku-cli-auth.png)
