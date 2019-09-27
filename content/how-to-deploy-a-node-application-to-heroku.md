@@ -16,11 +16,7 @@ The Heroku experience provides services, tools, workflows, and polyglot support�
 
 With features like: Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons, Data Clips, App metrics, Smart containers, Enterprise-grade support, GitHub Integration and lots more, Heroku gives developers the freedom to focus on their core product without the distraction of maintaining servers, hardware, or infrastructure.
 
-<div align="center">
-
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569615494/blog/0005/heroku.png)
-
-</div>
 
 ----
 
@@ -36,18 +32,63 @@ I assume you have/ know the following already:
 
 - Read my [previous article](https://www.bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/)
 - Built the [inspireNuggets SlackBot](https://github.com/BolajiAyodeji/inspireNuggetsSlackBot)
+- Git installed
 - Node and npm installed
 - A free [Heroku account](https://signup.heroku.com/)
 - [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed
 
 ## Bonus
 
-If you don't have npm, Node and Heroku CLI installed, here's a quick bonus [Yes, you're welcome :)].
+If you don't have npm, Node and Heroku CLI installed or a Heroku account already, here's a quick bonus [ Yes, you're welcome :) ].
 
-### Installing Npm and Node
+### Installing npm and Node
 
 > [Node.js](https://nodejs.org) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
 
 > [npm](https://www.npmjs.com/) npm is the package manager for Node.js. An open source project created to help JavaScript developers easily share packaged modules of code.
 
 You can simply download Node.js [here](https://nodejs.org/en/). Don't worry, npm comes with Node.js, so doing this installs both ✨
+
+### Creating a free Heroku account
+
+Kindly head [here](https://signup.heroku.com/) and fill the Signup form, it's pretty simple.
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569620776/blog/0005/heroku-signup.png)
+
+### Installing Heroku CLI
+
+The Heroku Command Line Interface (CLI) makes it easy to create and manage your Heroku apps directly from the terminal. It’s an essential part of using Heroku. [ Well, you can decide to use the GitHub integration feature and Heroku Dashboard but yes you should learn how to use the CLI ]
+
+Heroku CLI requires Git, the popular version control system. If you don’t already have Git installed, I wrote [this article](https://www.bolajiayodeji.com/setting-up-git-first-time/) to help you.
+
+#### Heroku CLI for MacOS
+
+```
+brew tap heroku/brew && brew install heroku
+```
+
+or [download the installer](https://devcenter.heroku.com/articles/heroku-cli)
+
+#### Heroku CLI for Ubuntu
+
+```
+sudo snap install --classic heroku
+```
+
+#### Heroku CLI for Windows
+
+Download the installer for [64-Bit](https://cli-assets.heroku.com/heroku-x64.exe) or [32-Bit](https://cli-assets.heroku.com/heroku-x86.exe)
+
+#### Other installation methods
+
+Please read [this](https://devcenter.heroku.com/articles/heroku-cli#other-installation-methods)
+
+#### Getting started with Heroku CLI
+
+- Verify your installation
+
+```
+heroku --version
+```
+
+- Login to your Heroku account
