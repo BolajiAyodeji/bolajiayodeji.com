@@ -133,7 +133,9 @@ git clone https://github.com/BolajiAyodeji/inspireNuggetsSlackBot.git && cd insp
 Now let's deploy our app to Heroku 🎉🎉.
 I'll show you two ways to do this:
 
-#### Deploy via the Heroku CLI
+#### Deploy via the Heroku Git
+
+> This is done via the Heroku CLI.
 
 **Checklist**
 
@@ -161,5 +163,13 @@ heroku local web
 ```
 
 > Your app should now be running on http://localhost:5000.
+
+- Don't forget to `.gitignore`
+
+```
+/node_modules
+.DS_Store
+/*.env
+```
 
 #### Deploy via GitHub integration
