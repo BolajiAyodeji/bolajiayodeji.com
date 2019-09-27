@@ -96,7 +96,7 @@ heroku --version
 
 There are two ways to do this:
 
-- Web based auth
+- **Web based auth**
 
 ```
 heroku login
@@ -108,7 +108,7 @@ Follow the instructions and login via your web browser then return to your termi
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621617/blog/0005/heroku-web-auth2.png)
 
-- CLI auth
+- **CLI auth**
 
 This is a safer option as it saves your email address and an API token to `~/.netrc` for future use. 
 
@@ -116,4 +116,22 @@ This is a safer option as it saves your email address and an API token to `~/.ne
 heroku login -i
 ```
 
-!                                                                                                                                                                                                                                                                                                                    [](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621890/blog/0005/heroku-cli-auth.png)
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621890/blog/0005/heroku-cli-auth.png)
+
+----
+
+### Deploying your Node.js App
+
+I presume you've built the SlackBot already, if you haven't, please clone the [finished project](https://github.com/BolajiAyodeji/inspireNuggetsSlackBot).
+
+> The project is a simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers.
+
+```
+git clone https://github.com/BolajiAyodeji/inspireNuggetsSlackBot.git && cd inspireNuggetsSlackBot
+```
+
+Now let's deploy our app to Heroku 🎉🎉.
+I'll show you two ways to do this:
+
+- Via the Heroku CLI and
+- Via GitHub integration
