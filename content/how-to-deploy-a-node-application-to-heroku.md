@@ -16,7 +16,11 @@ The Heroku experience provides services, tools, workflows, and polyglot supportâ
 
 With features like: Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons, Data Clips, App metrics, Smart containers, Enterprise-grade support, GitHub Integration and lots more, Heroku gives developers the freedom to focus on their core product without the distraction of maintaining servers, hardware, or infrastructure.
 
+<div align="center">
+
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569615494/blog/0005/heroku.png)
+
+</div>
 
 ----
 
