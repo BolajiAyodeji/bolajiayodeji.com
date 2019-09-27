@@ -61,13 +61,13 @@ The Heroku Command Line Interface (CLI) makes it easy to create and manage your 
 
 Heroku CLI requires Git, the popular version control system. If you don’t already have Git installed, I wrote [this article](https://www.bolajiayodeji.com/setting-up-git-first-time/) to help you.
 
-#### Heroku CLI for MacOS
+#### Heroku CLI for Mac OS
 
 ```
 brew tap heroku/brew && brew install heroku
 ```
 
-or [download the installer](https://devcenter.heroku.com/articles/heroku-cli)
+or [download the installer](https://devcenter.heroku.com/articles/heroku-cli).
 
 #### Heroku CLI for Ubuntu
 
@@ -77,11 +77,11 @@ sudo snap install --classic heroku
 
 #### Heroku CLI for Windows
 
-Download the installer for [64-Bit](https://cli-assets.heroku.com/heroku-x64.exe) or [32-Bit](https://cli-assets.heroku.com/heroku-x86.exe)
+Download the installer for [64-Bit](https://cli-assets.heroku.com/heroku-x64.exe) or [32-Bit](https://cli-assets.heroku.com/heroku-x86.exe).
 
 #### Other installation methods
 
-Please read [this](https://devcenter.heroku.com/articles/heroku-cli#other-installation-methods)
+Please read [this](https://devcenter.heroku.com/articles/heroku-cli#other-installation-methods).
 
 #### Getting started with Heroku CLI
 
@@ -116,4 +116,4 @@ This is a safer option as it saves your email address and an API token to `~/.ne
 heroku login -i
 ```
 
-!                                                                                                                                                                                                                                                                                                                       [](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621890/blog/0005/heroku-cli-auth.png)
+!                                                                                                                                                                                                                                                                                                                    [](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621890/blog/0005/heroku-cli-auth.png)
