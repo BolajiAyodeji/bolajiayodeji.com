@@ -237,3 +237,5 @@ Now your app is successfully created
 - Now your app is deployed successfully
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639330/blog/0005/heroku-200.png)
+
+##### Automatic deploys
