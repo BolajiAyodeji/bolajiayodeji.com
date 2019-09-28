@@ -16,7 +16,7 @@ Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and
 
 The Heroku experience provides services, tools, workflows, and polyglot support—all designed to enhance developer productivity.
 
-With features like: Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons, Data Clips, App metrics, Smart containers, Enterprise-grade support, GitHub Integration and lots more, Heroku gives developers the freedom to focus on their core product without the distraction of maintaining servers, hardware, or infrastructure.
+With features like Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons, Data Clips, App metrics, Smart containers, Enterprise-grade support, GitHub Integration and lots more, Heroku gives developers the freedom to focus on their core product without the distraction of maintaining servers, hardware, or infrastructure.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569615494/blog/0005/heroku.png)
 
@@ -24,11 +24,11 @@ With features like: Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons
 
 One of Heroku's core feature is deploying, managing, and scaling apps with your favorite languages [Node, Ruby, Python, Java, PHP, Go and more].
 
-In this article, I'll show you how to take an existing Node.js app and deploy it to Heroku. From creating your Heroku account, till adding a Database to your deployed application.
+In this article, I'll show you how to take an existing Node.js app and deploy it to Heroku. From creating your Heroku account, until adding a Database to your deployed application.
 
 ## Prerequisites
 
-In my previous article, I wrote about "[Building a SlackBot with Node.js and SlackBots.js](https://www.bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/)" and I promised to write a follow up article to show how to host the SlackBot on either Heroku, Zeit or Netlify and publish it to the Slack Apps store. Well, this is the follow up article but without the "Publishing to Slack Apps" part, we'll cover that in another article.
+In my previous article, I wrote about "[Building a SlackBot with Node.js and SlackBots.js](https://www.bolajiayodeji.com/building-a-slackbot-with-node-js-and-slackbots-js/)" and I promised to write a follow-up article to show how to host the SlackBot on either Heroku, Zeit or Netlify and publish it to the Slack Apps store. Well, this is the follow-up article but without the "Publishing to Slack Apps" part, we'll cover that in another article.
 
 I assume you have/ know the following already:
 
@@ -41,13 +41,13 @@ I assume you have/ know the following already:
 
 ## Bonus
 
-If you don't have npm, Node and Heroku CLI installed or a Heroku account already, here's a quick bonus [ Yes, you're welcome :) ].
+If you don't have npm, Node and Heroku CLI installed or a Heroku account already here's a quick bonus [ Yes, you're welcome :) ].
 
 ### Installing npm and Node
 
 > [Node.js](https://nodejs.org) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
 
-> [npm](https://www.npmjs.com/) npm is the package manager for Node.js. An open source project created to help JavaScript developers easily share packaged modules of code.
+> [npm](https://www.npmjs.com/) npm is the package manager for Node.js. An open-source project created to help JavaScript developers easily share packaged modules of code.
 
 You can simply download Node.js [here](https://nodejs.org/en/). Don't worry, npm comes with Node.js, so doing this installs both ✨
 
@@ -182,7 +182,7 @@ How this works is, you have the project working on local already and you've push
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569625900/blog/0005/heroku-create.png)
 
-Basically this command creates a new Heroku app for you with some randomly generated domain and adds Heroku to your local git repository.
+Basically, this command creates a new Heroku app for you with some randomly generated domain and adds Heroku to your local git repository.
 
 
 - Now run `git push heroku master`
@@ -214,7 +214,7 @@ heroku logs --tail
 
 ##### **🚀 Let's Deploy**
 
-How this method works is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHUb to Heroku. Pretty cool right?
+How this method work is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHub to Heroku. Pretty cool right?
 
 - Login to your Heroku Dashboard
 - Create a new app
@@ -247,13 +247,13 @@ Now your app is successfully created
 
 #### Automatic deploys
 
-Now your app is deployed but you'll have to keep deploying manually. You need to enable automatic deploys for a GitHub branch, so Heroku builds and deploys all pushes to that branch.
+Now your app is deployed but you'll have to keep deploying manually. You need to enable automatic deploys for a GitHub branch, so Heroku builds and deploys all push to that branch.
 
 - Scroll to the **Automatic Deploys** section
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640012/blog/0005/heroku-auto.png)
 
-- Select the branch you want to deploy. Ideally this should be the `master` branch but change this according to your preference.
+- Select the branch you want to deploy. Ideally, this should be the `master` branch but change this according to your preference.
 
 - Now every push to `master` (or the branch you chose) will deploy a new version of this app. 
 
@@ -269,7 +269,7 @@ After deploying your app, ensure you add a Node.js buildpack to your project.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640434/blog/0005/heroku-buildpack.png)
 
-- Click the **Add Buildpack** button and select Node.js in the Pop up
+- Click the **Add Buildpack** button and select Node.js in the Popup modal.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640503/blog/0005/heroku-add-build.png)
 
@@ -280,7 +280,7 @@ After deploying your app, ensure you add a Node.js buildpack to your project.
 
 The Heroku add-on marketplace has a large number of data stores, from Redis and MongoDB providers, to Postgres and MySQL.
 
-Heroku provides three managed data services to all customers in form of Add-ons:
+Heroku provides three managed data services to all customers in the form of Add-ons:
 
 - [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
 - [Heroku Redis](https://elements.heroku.com/addons/heroku-redis)
@@ -296,7 +296,7 @@ Writing about this three will make this article too long. It's pretty simple and
 
 ## Conclusion
 
-Every Heroku account is allocated a pool of free dyno hours. Heroku (free) dynos are great for hosting apps and personal projects. The downside, however, is that your app will fall asleep if it doesn't receive any web traffic within a 30-minute period :(.
+Every Heroku account is allocated a pool of free dyno hours. Heroku (free) dynos are great for hosting apps and personal projects. The downside, however, is that your app will fall asleep if it doesn't receive any web traffic within 30-minutes :(.
 
 You can use external tools to ping your server periodically so it never falls asleep.
 
