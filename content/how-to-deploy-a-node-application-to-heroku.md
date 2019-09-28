@@ -226,4 +226,14 @@ Now your app is successfully created
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569638956/blog/0005/heroku-deploy.png)
 
-- Click connect to GitHub
+- Click the "connect to GitHub" button
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639188/blog/0005/heroku-github.png)
+
+- Now you have the "Connect to GitHub section", search for the repository and deploy.
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639329/blog/0005/heroku-search.png)
+
+- Now your app is deployed successfully
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639330/blog/0005/heroku-200.png)
