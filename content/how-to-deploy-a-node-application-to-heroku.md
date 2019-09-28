@@ -276,4 +276,16 @@ After deploying your app, ensure you add a Node.js buildpack to your project.
 
 ### Adding a Database to your deployed App
 
-Heroku
+Heroku provides three managed data services to all customers in form of Add-ons:
+
+- [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
+- [Heroku Redis](https://elements.heroku.com/addons/heroku-redis)
+- [Apache Kafka on Heroku](https://elements.heroku.com/addons/cloudkarafka)
+
+Heroku allows you to manage your database directly from Heroku.
+
+Writing about this three will make this article too long. It's pretty since and I'll add some links from Heroku Docs.
+
+- [Heroku Postgresql Docs](https://devcenter.heroku.com/categories/postgres-basics)
+- [Heroku Redis Docs](https://devcenter.heroku.com/articles/heroku-redis)
+- [Apache Kafka on Heroku Docs](https://devcenter.heroku.com/articles/kafka-on-heroku)
