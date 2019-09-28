@@ -24,7 +24,7 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
   # SEO configs
   seotitle = "Bolaji Ayodeji"
   googleSiteVerification = "3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk"    # Google Webmaster
-  msValidate = "bing_site_verification_code"                  # Bing Webmaster
+  msValidate = "25B948519E545F3B7F9C4FA5F3204C79"                  # Bing Webmaster
 
   # Social networks
   github = "bolajiayodeji"
