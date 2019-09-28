@@ -226,11 +226,11 @@ Now your app is successfully created
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569638956/blog/0005/heroku-deploy.png)
 
-- Click the "connect to GitHub" button
+- Click the **Connect to GitHub** button
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639188/blog/0005/heroku-github.png)
 
-- Now you have the "Connect to GitHub section", search for the repository and deploy.
+- Now you have the **Connect to GitHub section**, search for the repository and deploy.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639329/blog/0005/heroku-search.png)
 
@@ -238,4 +238,33 @@ Now your app is successfully created
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639330/blog/0005/heroku-200.png)
 
-##### Automatic deploys
+#### Automatic deploys
+
+Now your app is deployed but you'll have to keep deploying manually. You need to enable automatic deploys for a GitHub branch, so Heroku builds and deploys all pushes to that branch.
+
+- Scroll to the **Automatic Deploys** section
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640012/blog/0005/heroku-auto.png)
+
+- Select the branch you want to deploy. Ideally this should be the `master` branch but change this according to your preference.
+
+- Now every push to `master` (or the branch you chose) will deploy a new version of this app. 
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640182/blog/0005/heroku-auto-200.png)
+
+#### Node.js Buildpack
+
+In Heroku, Buildpacks are scripts that are run when your app is deployed. They are used to install dependencies for your app and configure your environment. 
+
+After deploying your app, ensure you add a Node.js buildpack to your project.
+
+- Go to **Settings** and scroll to the **Buildpack section**
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640434/blog/0005/heroku-buildpack.png)
+
+- Click the **Add Buildpack** button and select Node.js in the Pop up
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640503/blog/0005/heroku-add-build.png)
+
+- Now the new buildpack configuration will be used when this app is next deployed.
+- Make some changes to your app and push to GitHub, it will automatically deploy.
