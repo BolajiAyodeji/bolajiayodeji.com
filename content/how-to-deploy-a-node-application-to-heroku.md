@@ -14,8 +14,6 @@ Heroku is a cloud-based, fully-managed platform as a service (Paas) for building
 
 Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and scale apps. Whether you're building a simple prototype or a business-critical product, Heroku's fully-managed platform gives you the simplest path to delivering apps quickly.
 
-The Heroku experience provides services, tools, workflows, and polyglot support—all designed to enhance developer productivity.
-
 With features like Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons, Data Clips, App metrics, Smart containers, Enterprise-grade support, GitHub Integration and lots more, Heroku gives developers the freedom to focus on their core product without the distraction of maintaining servers, hardware, or infrastructure.
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569615494/blog/0005/heroku.png)
@@ -311,7 +309,7 @@ Here are some to consider:
 
 > Heroku is meticulously designed to help developers be as productive as possible. The platform removes frustrating obstacles and mundane tasks, so you can stay free of distraction in your development flow. Wherever you are on the learning path, Heroku helps you love app development even more. - Heroku
 
-There is more to using Heroku and I hope you explore and build amazing stuff with Heroku
+The Heroku experience provides services, tools, workflows, and polyglot support—all designed to enhance developer productivity. There is more to using Heroku and I hope you explore more and build amazing stuff with Heroku.
 
 > If you're a student, Kindly register for the [GitHub Student Developer Pack](https://education.github.com/pack) to get One free [Hobby Dyno](https://www.heroku.com/pricing) for up to two years.
 
