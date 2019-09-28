@@ -289,3 +289,20 @@ Writing about this three will make this article too long. It's pretty since and 
 - [Heroku Postgresql Docs](https://devcenter.heroku.com/categories/postgres-basics)
 - [Heroku Redis Docs](https://devcenter.heroku.com/articles/heroku-redis)
 - [Apache Kafka on Heroku Docs](https://devcenter.heroku.com/articles/kafka-on-heroku)
+
+----
+
+## Conclusion
+
+Every Heroku account is allocated a pool of free dyno hours. Heroku (free) dynos are great for hosting apps and personal projects. The downside, however, is that your app will fall asleep if it doesn't receive any web traffic within a 30-minute period :(.
+
+You can use external tools to ping your server periodically so it never falls asleep.
+
+Here are some to consider:
+
+- [Pingmydyno](https://www.npmjs.com/package/pingmydyno)
+- [Heroku self ping](https://www.npmjs.com/package/heroku-self-ping)
+- [Wakemydyno](http://wakemydyno.com/)
+- [Kaffeine](https://kaffeine.herokuapp.com/)
+
+----
