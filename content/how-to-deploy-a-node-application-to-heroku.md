@@ -306,3 +306,11 @@ Here are some to consider:
 - [Kaffeine](https://kaffeine.herokuapp.com/)
 
 ----
+
+> Heroku is meticulously designed to help developers be as productive as possible. The platform removes frustrating obstacles and mundane tasks, so you can stay free of distraction in your development flow. Wherever you are on the learning path, Heroku helps you love app development even more. - Heroku
+
+There is more to using Heroku and I hope you explore and build amazing stuff with Heroku
+
+> If you're a student, Kindly register for the [GitHub Student Developer Pack](https://education.github.com/pack) to get One free [Hobby Dyno](https://www.heroku.com/pricing) for up to two years.
+
+> The pack give students free access to the best developer tools in one place so you can learn by doing.
