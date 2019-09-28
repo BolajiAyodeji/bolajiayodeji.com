@@ -43,9 +43,9 @@ If you don't have npm, Node and Heroku CLI installed or a Heroku account already
 
 ### Installing npm and Node
 
-> [Node.js](https://nodejs.org) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
->
-> [npm](https://www.npmjs.com/) npm is the package manager for Node.js. An open-source project created to help JavaScript developers easily share packaged modules of code.
+> - [Node.js](https://nodejs.org) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
+
+> - [npm](https://www.npmjs.com/) npm is the package manager for Node.js. An open-source project created to help JavaScript developers easily share packaged modules of code.
 
 You can simply download Node.js [here](https://nodejs.org/en/). Don't worry, npm comes with Node.js, so doing this installs both ✨
 
@@ -191,9 +191,7 @@ Basically, this command creates a new Heroku app for you with some randomly gene
 
 * Now run `git push heroku master`
 
-This is the magic command, it pushes your app to Heroku, installs it there and launches it on your allocated domain.
-
-> In the example above, it's https://lit-cove-58897.herokuapp.com/
+This is the magic command, it pushes your app to Heroku, installs it there and launches it on your allocated domain (In the example above, it's https://lit-cove-58897.herokuapp.com/)
 
 > You can always make changes to your app settings and domains in your [Heroku Dashboard](https://dashboard.heroku.com/)
 
