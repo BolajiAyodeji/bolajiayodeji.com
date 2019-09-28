@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Aug 2019 06:24:42 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2019 06:52:24 +0000</lastBuildDate>
     
 	<atom:link href="https://bolajiayodeji.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Express</title>
+      <link>https://bolajiayodeji.com/tags/express/</link>
+      <pubDate>Mon, 26 Aug 2019 06:52:24 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/express/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>https://bolajiayodeji.com/tags/heroku/</link>
+      <pubDate>Mon, 26 Aug 2019 06:52:24 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/heroku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://bolajiayodeji.com/tags/javascript/</link>
+      <pubDate>Mon, 26 Aug 2019 06:52:24 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NodeJS</title>
+      <link>https://bolajiayodeji.com/tags/nodejs/</link>
+      <pubDate>Mon, 26 Aug 2019 06:52:24 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Node.js</title>
@@ -35,15 +71,6 @@
       <pubDate>Mon, 12 Aug 2019 06:24:42 +0000</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/slack-bots/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://bolajiayodeji.com/tags/javascript/</link>
-      <pubDate>Mon, 12 Aug 2019 06:24:42 +0000</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/javascript/</guid>
       <description></description>
     </item>
     
@@ -84,6 +111,15 @@
     </item>
     
     <item>
+      <title>Version Control</title>
+      <link>https://bolajiayodeji.com/tags/version-control/</link>
+      <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bash</title>
       <link>https://bolajiayodeji.com/tags/bash/</link>
       <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
@@ -98,15 +134,6 @@
       <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>version control</title>
-      <link>https://bolajiayodeji.com/tags/version-control/</link>
-      <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/version-control/</guid>
       <description></description>
     </item>
     
@@ -309,20 +336,20 @@
     </item>
     
     <item>
-      <title>GitHub</title>
-      <link>https://bolajiayodeji.com/tags/github/</link>
-      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>developers</title>
       <link>https://bolajiayodeji.com/tags/developers/</link>
       <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://bolajiayodeji.com/tags/github/</link>
+      <pubDate>Mon, 04 Mar 2019 13:22:14 +2400</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/github/</guid>
       <description></description>
     </item>
     
