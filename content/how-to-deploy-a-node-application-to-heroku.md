@@ -137,7 +137,7 @@ I'll show you two ways to do this:
 
 > This is done via the Heroku CLI.
 
-**☑️ Checklist**
+##### **☑️ Checklist**
 
 - Specify the version of Node.js that will be used to run your application on Heroku in your `package.json` file.
 
@@ -172,7 +172,7 @@ heroku local web
 /*.env
 ```
 
-**🚀 Let's Deploy**
+##### **🚀 Let's Deploy**
 
 How this works is, you have the project working on local already and you've pushed to your favorite Git Hosting already (e.g GitHub)
 
@@ -193,6 +193,11 @@ This is the magic command, it pushes your app to Heroku, installs it there and l
 
 ```
 heroku open
+```
+- You can also view information about your running app using one of the logging commands, this is very useful in debugging errors.
+
+```
+heroku logs --tail
 ```
 
 #### Deploy via GitHub integration
@@ -268,3 +273,5 @@ After deploying your app, ensure you add a Node.js buildpack to your project.
 
 - Now the new buildpack configuration will be used when this app is next deployed.
 - Make some changes to your app and push to GitHub, it will automatically deploy.
+
+### Adding a Database to your deployed App
