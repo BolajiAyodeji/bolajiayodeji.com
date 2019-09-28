@@ -207,12 +207,12 @@ heroku logs --tail
 > You can configure GitHub integration in the Deploy tab of apps in the [Heroku Dashboard](https://dashboard.heroku.com).
 
 
-**☑️ Checklist**
+##### **☑️ Checklist**
 
 - All previous checklists apply here
 - Ensure you have the app deployed to GitHub already
 
-**🚀 Let's Deploy**
+##### **🚀 Let's Deploy**
 
 How this method works is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHUb to Heroku. Pretty cool right?
 
