@@ -275,3 +275,5 @@ After deploying your app, ensure you add a Node.js buildpack to your project.
 - Make some changes to your app and push to GitHub, it will automatically deploy.
 
 ### Adding a Database to your deployed App
+
+Heroku
