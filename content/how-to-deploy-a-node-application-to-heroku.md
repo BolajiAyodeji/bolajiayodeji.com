@@ -197,22 +197,33 @@ heroku open
 
 #### Deploy via GitHub integration
 
-> This is done in the Heroku Dashboard
+> You can configure GitHub integration in the Deploy tab of apps in the [Heroku Dashboard](https://dashboard.heroku.com).
+
 
 **☑️ Checklist**
 
 - All previous checklists apply here
-- Deploy the app to GitHub
+- Ensure you have the app deployed to GitHub already
 
 **🚀 Let's Deploy**
 
-How this method works is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHUb to Heroku. Pretty cool right? This is my favorite method
+How this method works is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHUb to Heroku. Pretty cool right?
 
 - Login to your Heroku Dashboard
 - Create a new app
 
 ![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569626896/blog/0005/create-app.png)
 
-Now select your app name and Region
+- Select your app name and Region
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569626958/blog/0005/new-app.png)                                                                                               
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569626958/blog/0005/new-app.png)
+
+Now your app is successfully created
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569638822/blog/0005/heroku-dash.png)
+
+- Click the deploy tab and scroll to the **Deployment method** section
+
+![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569638956/blog/0005/heroku-deploy.png)
+
+- Click connect to GitHub
