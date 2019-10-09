@@ -7,13 +7,13 @@
 <script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
 <script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Git first time setup</title>
+<title>Git First Time Setup</title>
 <meta name=author content="Bolaji Ayodeji">
 <meta name=description content="Git is a Free and Open Source Distributed Version Control System.By far, Git is the most widely used modern version control system in the world today. Git is a distributed and actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel.Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally.">
 <meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Git first time setup">
+<meta name=twitter:title content="Git First Time Setup">
 <meta name=twitter:description content="Git is a Free and Open Source Distributed Version Control System.By far, Git is the most widely used modern version control system in the world today. Git is a distributed and actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel.Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally.">
 <meta name=twitter:image content=https://res.cloudinary.com/iambeejayayo/image/upload/v1569655144/website/social-logo.png>
 <meta name=generator content="Hugo 0.55.4">
@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,7 +1454,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
@@ -1490,9 +1488,10 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
-<h1 class=post-title>Git first time setup</h1>
+<h1 class=post-title>Git First Time Setup</h1>
 <p class=entry-meta><span class=entry-time>Jul 21, 2019</span> 3 min read
 </p>
 </header>
@@ -1503,21 +1502,15 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>
 <ul>
-<li>
-<ul>
 <li><a href=#for-mac-os-br>For Mac OS:<br></a></li>
 <li><a href=#for-linux-os-br>For Linux OS:<br></a></li>
-<li><a href=#for-windows-os-br>For Windows OS:<br></a>
-<ul>
-<li><a href=#here-s-a-more-detailed-installation-guide-for-different-systems-on-git-official-docs-https-git-scm-com-book-en-v2-getting-started-installing-git>Here’s a more detailed installation guide for different systems on <a href=https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>Git official docs</a></a></li>
-</ul></li>
-</ul></li>
+<li><a href=#for-windows-os-br>For Windows OS:<br></a></li>
 <li><a href=#check-your-settings>Check your settings</a></li>
-</ul></li>
 <li><a href=#conclusion>Conclusion</a></li>
+</ul></li>
 </ul>
 </nav>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1563720476/blog/0002/banner.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636727/null/blog/0002/banner_cxxcyl.png alt=""></p>
 <p>Git is a Free and Open Source Distributed Version Control System.</p>
 <p>By far, Git is the most widely used modern version control system in the world today. Git is a distributed and actively maintained open source project originally developed in 2005 by <a href=https://en.wikipedia.org/wiki/Linus_Torvalds>Linus Torvalds</a>, the famous creator of the Linux operating system kernel.</p>
 <p>Unlike older centralized version control systems such as SVN and CVS, Git is distributed: every developer has the full history of their code repository locally. Git also works well on a wide range of operating systems and IDEs (Integrated Development Environments).</p>
@@ -1531,27 +1524,27 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p>Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can restore and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members or contributors.</p>
 <hr>
 <p>Now that you know what Version Control and Git mean, let’s install it.</p>
-<h3 id=for-mac-os-br>For Mac OS:<br></h3>
+<h2 id=for-mac-os-br>For Mac OS:<br></h2>
 <p><a href=http://git-scm.com/download/mac>Download Git for macOS</a>
 or install using <a href=https://brew.sh>Homebrew</a></p>
-<pre><code>brew install git
+<pre><code class=language-bash>brew install git
 </code></pre>
-<h3 id=for-linux-os-br>For Linux OS:<br></h3>
+<h2 id=for-linux-os-br>For Linux OS:<br></h2>
 <p><a href=https://git-scm.com/download/linux>Download Git for Linux</a> or<br>
 Install for Debian-based Linux systems</p>
-<pre><code>sudo apt-get update
+<pre><code class=language-bash>sudo apt-get update
  sudo apt-get upgrade
  sudo apt-get install git
 </code></pre>
 <p>or<br>
 Install for Red Hat-based Linux systems</p>
-<pre><code>sudo yum upgrade
+<pre><code class=language-bash>sudo yum upgrade
  sudo yum install git
 </code></pre>
-<h3 id=for-windows-os-br>For Windows OS:<br></h3>
+<h2 id=for-windows-os-br>For Windows OS:<br></h2>
 <p><a href=https://git-scm.com/download/win>Download Git for Windows</a></p>
 <blockquote>
-<h4 id=here-s-a-more-detailed-installation-guide-for-different-systems-on-git-official-docs-https-git-scm-com-book-en-v2-getting-started-installing-git>Here’s a more detailed installation guide for different systems on <a href=https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>Git official docs</a></h4>
+<p>Here’s a more detailed installation guide for different systems on <a href=https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>Git official docs</a></p>
 </blockquote>
 <hr>
 <p>Now that you have Git on your system, let’s set up the Git environment.<br>
@@ -1559,14 +1552,14 @@ Git comes with a tool called <code>git config</code> that lets you get and set c
 <ul>
 <li>First set your identity, your name and email address like so:</li>
 </ul>
-<pre><code>git config --global user.name "bolajiayodeji"
+<pre><code class=language-bash>git config --global user.name "bolajiayodeji"
  git config --global user.email mailtobolaji@gmail.com
 </code></pre>
 <p>the <code>--global</code> option makes sure these values are used throughout your system</p>
 <ul>
 <li>Next set up the default text editor you’ll use whenever you need to enter a message in Git. This is not compulsory, if you don’t configure this, Git will use your default editor. If you want to use something else, configure like so:</li>
 </ul>
-<pre><code>git config --global core.editor emacs
+<pre><code class=language-bash>git config --global core.editor emacs
 </code></pre>
 <ul>
 <li>Next, set up colors for your Git console.<br></li>
@@ -1575,21 +1568,21 @@ Git comes with a tool called <code>git config</code> that lets you get and set c
 <p>For Linux OS users, you can use third pary Zsh configurators like <a href=https://ohmyz.sh/ >oh my zsh</a> to customize your terminal look with themes :).<br>
 To configure this, do this:</p>
 </blockquote>
-<pre><code>git config --global color.ui true
+<pre><code class=language-bash>git config --global color.ui true
 </code></pre>
 <p>The color.ui is a meta configuration that includes all the various color.* configurations available with git commands.</p>
 <p>Now Git is ready for use.</p>
 <h2 id=check-your-settings>Check your settings</h2>
-<pre><code>git config --list
+<pre><code class=language-bash>git config --list
 </code></pre>
-<pre><code>user.name=bolajiayodeji
+<pre><code class=language-bash>user.name=bolajiayodeji
  user.email=mailtobolaji@gmail.com
  color.ui=true
 </code></pre>
 <hr>
 <p>Want to learn some super Git commands?<br>
 I wrote an article: <a href=https://www.bolajiayodeji.com/git-cheat-sheet/ >Git Cheat Sheet</a> that covers some important Git commands you’ll need.</p>
-<h1 id=conclusion>Conclusion</h1>
+<h2 id=conclusion>Conclusion</h2>
 <p>Version control software is an essential part of the every-day of modern-day software developer practices. Once accustomed to the powerful benefits of version control systems, many developers wouldn’t consider working without it even for non-software projects.</p>
 </article>
 <footer class=post-footer>
@@ -1624,6 +1617,7 @@ I wrote an article: <a href=https://www.bolajiayodeji.com/git-cheat-sheet/ >Git 
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1651,6 +1645,7 @@ I wrote an article: <a href=https://www.bolajiayodeji.com/git-cheat-sheet/ >Git 
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

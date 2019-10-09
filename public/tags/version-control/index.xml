@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Version Control on Bolaji Ayodeji</title>
+    <title>version control on Bolaji Ayodeji</title>
     <link>https://bolajiayodeji.com/tags/version-control/</link>
-    <description>Recent content in Version Control on Bolaji Ayodeji</description>
+    <description>Recent content in version control on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jul 2019 14:52:13 +0000</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>How to fix Git always asking for user credentials</title>
+      <title>How to Fix Git Always Asking for User Credentials</title>
       <link>https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/</link>
       <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
       
@@ -22,7 +22,7 @@ The https:// clone URLs are available on all public and private repositories. Th
     </item>
     
     <item>
-      <title>Git first time setup</title>
+      <title>Git First Time Setup</title>
       <link>https://bolajiayodeji.com/setting-up-git-first-time/</link>
       <pubDate>Sun, 21 Jul 2019 12:24:04 +0000</pubDate>
       
@@ -43,7 +43,7 @@ In this article, I’d show you the basic Git commands to help you learn Git, an
     </item>
     
     <item>
-      <title>How to test a Pull Request locally before Merging.</title>
+      <title>How to Test a Pull Request Locally Before Merging.</title>
       <link>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</link>
       <pubDate>Sun, 11 Nov 2018 13:22:14 +2400</pubDate>
       

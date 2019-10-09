@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>How to compile your C&#43;&#43; code in Visual Studio Code</title>
+      <title>How to Compile your C&#43;&#43; Code in Visual Studio Code</title>
       <link>https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/</link>
       <pubDate>Sun, 07 Jul 2019 08:03:28 +0000</pubDate>
       
@@ -21,7 +21,7 @@
 In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.
 It was developed by Bjarne Stroustrup in 1979.
 One of C++&amp;rsquo;s main feature is the compiler. This is used to compile and run C++ code.
-  A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.</description>
+ A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.</description>
     </item>
     
   </channel>

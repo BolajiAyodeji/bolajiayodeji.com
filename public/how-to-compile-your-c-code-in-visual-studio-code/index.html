@@ -7,14 +7,14 @@
 <script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
 <script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>How to compile your C++ code in Visual Studio Code</title>
+<title>How to Compile your C++ Code in Visual Studio Code</title>
 <meta name=author content="Bolaji Ayodeji">
-<meta name=description content="C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.It was developed by Bjarne Stroustrup in 1979.One of C++&amp;rsquo;s main feature is the compiler. This is used to compile and run C++ code.A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.">
+<meta name=description content="C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.It was developed by Bjarne Stroustrup in 1979.One of C++&amp;rsquo;s main feature is the compiler. This is used to compile and run C++ code. A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.">
 <meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="How to compile your C++ code in Visual Studio Code">
-<meta name=twitter:description content="C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.It was developed by Bjarne Stroustrup in 1979.One of C++&amp;rsquo;s main feature is the compiler. This is used to compile and run C++ code.A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.">
+<meta name=twitter:title content="How to Compile your C++ Code in Visual Studio Code">
+<meta name=twitter:description content="C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.It was developed by Bjarne Stroustrup in 1979.One of C++&amp;rsquo;s main feature is the compiler. This is used to compile and run C++ code. A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.">
 <meta name=twitter:image content=https://res.cloudinary.com/iambeejayayo/image/upload/v1569655144/website/social-logo.png>
 <meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/ >
@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,7 +1454,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
@@ -1490,9 +1488,10 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
-<h1 class=post-title>How to compile your C++ code in Visual Studio Code</h1>
+<h1 class=post-title>How to Compile your C++ Code in Visual Studio Code</h1>
 <p class=entry-meta><span class=entry-time>Jul 7, 2019</span> 5 min read
 </p>
 </header>
@@ -1500,6 +1499,8 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <article class=post-content>
 <h1>Table of Contents</h1>
 <nav id=TableOfContents>
+<ul>
+<li>
 <ul>
 <li><a href=#prerequisite>Prerequisite</a></li>
 <li><a href=#download-and-install-a-c-compiler>Download and install a C++ compiler</a></li>
@@ -1510,62 +1511,56 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li><a href=#conclusion>Conclusion</a></li>
 <li><a href=#c-resources>C++ resources</a></li>
 <li><a href=#credits>Credits</a></li>
+</ul></li>
 </ul>
 </nav>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1562567274/blog/0001/banner.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/banner_zmgyt2.png alt=""></p>
 <p>C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”</p>
 <p>In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.</p>
 <p>It was developed by <a href=http://www.stroustrup.com/ >Bjarne Stroustrup</a> in 1979.</p>
 <p>One of C++’s main feature is the compiler. This is used to compile and run C++ code.</p>
 <blockquote>
-<blockquote>
 <p>A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or “code” that a computer’s processor uses.</p>
-</blockquote>
 </blockquote>
 <p>I actually wrote this article because I had a C++ assignment which required using a compiler. As usual, everyone was using the <a href=http://www.codeblocks.org/ >CodeBlocks IDE</a> and <a href=https://visualstudio.microsoft.com/ >Visual Studio IDE</a>. But I was already used to Visual Studio Code for all my programming stuff.</p>
 <p>I then set out to find a way of compiling C++ directly inside my own VsCode Editor and hence this article :).</p>
 <p>In this article, I’ll show you how to set up your compiler in VsCode and at the end give you some links to some of the best C++ resources.</p>
 <p><img src=https://media0.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif alt=""></p>
 <hr>
-<h1 id=prerequisite>Prerequisite</h1>
+<h2 id=prerequisite>Prerequisite</h2>
 <ul>
 <li>Prior knowledge of C++<br>
 (I assume you’re learning C++, about to start learning or just reading this for fun, this article is not a C++ 101 tutorial, some understanding of C++ is needed.)</li>
 <li>Visual Studio Code Editor<br>Download <a href=https://code.visualstudio.com/#alt-downloads>here</a> and read the setup docs for <a href="https://code.visualstudio.com/docs/?dv=win">Windows</a>, <a href="https://code.visualstudio.com/docs/?dv=linux64_deb">Linux</a> and <a href="https://code.visualstudio.com/docs/?dv=osx">Mac</a></li>
 <li><strong>Internet connection (!important)</strong></li>
-<li>Your geek glasses :).</li>
 </ul>
 <p><strong>Disclaimer!</strong><br>
 I would be using a Windows OS throughout this article but I’ll provide links to resources that would aid those using other Operating systems.</p>
 <hr>
 <p>Now let’s get started!</p>
-<h1 id=download-and-install-a-c-compiler>Download and install a C++ compiler</h1>
+<h2 id=download-and-install-a-c-compiler>Download and install a C++ compiler</h2>
 <ul>
 <li>Head to <a href=www.mingw.org/ >www.mingw.org</a> and click the “Download/Installer” link to download the MinGW setup file or click <a href=https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/ >here</a> for windows, <a href=http://www.mingw.org/wiki/LinuxCrossMinGW>here</a> for Linux. and <a href=https://brewinstall.org/Install-mingw-w64-on-Mac-with-Brew/ >here</a> for Mac</li>
 </ul>
 <blockquote>
-<blockquote>
 <p>MinGW is a contraction of “Minimalist GNU for Windows”, is a minimalist development environment for native Microsoft Windows applications. * After downloading, install MinGW and wait for the “MinGW Installation Manager” to show up.</p>
 </blockquote>
-</blockquote>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1562569825/blog/0001/Capture1.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/01.png alt=""></p>
 <ul>
 <li>When the “MinGW Installation Manager” shows up, click on <code>mingw32-gcc-g++</code> then select “Mark for Installation”</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1562570172/blog/0001/Capture2.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/02.png alt=""></p>
 <ul>
 <li>In the menu at the top left corner, click on “Installation > Apply Changes”
 <br></li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1562570171/blog/0001/Capture3.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/03.png alt=""></p>
 <ul>
 <li>Wait and allow to install completely. Ensure you have a stable internet during this process.</li>
 </ul>
-<h1 id=edit-your-path-environment-variable-to-include-the-directory-where-the-c-compiler-is-located>Edit your PATH environment variable to include the directory where the C++ compiler is located</h1>
-<blockquote>
+<h2 id=edit-your-path-environment-variable-to-include-the-directory-where-the-c-compiler-is-located>Edit your PATH environment variable to include the directory where the C++ compiler is located</h2>
 <blockquote>
 <p>PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. - <a href=https://en.wikipedia.org/wiki/PATH_(variable)>Wikipedia</a></p>
-</blockquote>
 </blockquote>
 <p>After installing MinGW, it was installed in <code>C:\MinGW\bin</code>. Now you have to include this directory in your environment variable PATH. if you’ve been using computers for a while now, you should know how to do this already, but if you don’t, here are a few resources:</p>
 <ul>
@@ -1573,23 +1568,21 @@ I would be using a Windows OS throughout this article but I’ll provide links t
 <li>Click <a href=https://www.cyberciti.biz/faq/unix-linux-adding-path/ >here</a> for Linux</li>
 <li>Click <a href=https://hathaway.cc/2008/06/how-to-edit-your-path-environment-variables-on-mac/ >here</a> for Mac OS guide</li>
 </ul>
-<h1 id=install-code-runner-extension-in-vs-code>Install Code Runner extension in VS Code</h1>
+<h2 id=install-code-runner-extension-in-vs-code>Install Code Runner extension in VS Code</h2>
 <p>Now we have our compiler set up, let’s install Code Runner</p>
 <blockquote>
-<blockquote>
 <p>Code Runner allows you to Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, and custom command.</p>
-</blockquote>
 </blockquote>
 <ul>
 <li>Click <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner">here</a> to download</li>
 <li>Or search in VsCode marketplace tab</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1562571367/blog/0001/Capture4.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/04.png alt=""></p>
 <ul>
 <li>After installation, restart VsCode</li>
 <li>Open your C++ file in Vscode. Here’s a basic hello world program below:</li>
 </ul>
-<pre><code>#include &lt;iostream>
+<pre><code class=language-c++>#include &lt;iostream>
 using namespace std;
 int main() 
 {
@@ -1598,31 +1591,27 @@ int main()
 }
 </code></pre>
 <blockquote>
-<blockquote>
 <p>Save this file as <code>test.cpp</code></p>
 </blockquote>
-</blockquote>
-<h1 id=run-your-code-using-code-runner>Run your code using Code Runner</h1>
+<h2 id=run-your-code-using-code-runner>Run your code using Code Runner</h2>
 <ul>
 <li>Use the shortcut <code>Ctrl+Alt+N</code></li>
 <li>Or press F1 and then select/type Run Code</li>
-<li>Or right-click the Text Editor and then click Run Code in the editor context menu > > The code will run and the output will be shown in the Output Window. Open the output window with `Ctrl+ shortcut.</li>
+<li>Or right-click the Text Editor and then click Run Code in the editor context menu > The code will run and the output will be shown in the Output Window. Open the output window with `Ctrl+ shortcut.</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1562571766/blog/0001/Capture5.png alt=""></p>
-<h1 id=to-stop-the-running-code>To stop the running code</h1>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/05.png alt=""></p>
+<h2 id=to-stop-the-running-code>To stop the running code</h2>
 <ul>
 <li>Use the shortcut <code>Ctrl+Alt+M</code></li>
 <li>Or press F1 and then select/type Stop Code Run</li>
 <li>Or right-click the Output Channel and then click Stop Code Run in the context menu</li>
 </ul>
 <blockquote>
-<blockquote>
 <p>Hurray, you just successfully set up your C++ environment in VsCode.</p>
 </blockquote>
-</blockquote>
-<h1 id=conclusion>Conclusion</h1>
+<h2 id=conclusion>Conclusion</h2>
 <p>Here’s a quick hint: By default VsCode output terminal is read-only, If you’re running a code that requires user input like:</p>
-<pre><code>#include &lt;iostream>
+<pre><code class=language-c++>#include &lt;iostream>
 using namespace std;
 
 const double pi = 3.14159; 
@@ -1654,17 +1643,15 @@ int main()
 <li>Scroll and find a checkbox <code>Run in Terminal</code> (Whether to run code in Integrated Terminal) Check the box.</li>
 </ul>
 <blockquote>
-<blockquote>
 <p>OR</p>
-</blockquote>
 </blockquote>
 <ul>
 <li>In your <code>setting.json</code> file, add:</li>
 </ul>
-<pre><code>"code-runner.runInTerminal": true
+<pre><code class=language-bash>"code-runner.runInTerminal": true
 </code></pre>
 <p>Hurray, you’re done and ready to roll :).</p>
-<h1 id=c-resources>C++ resources</h1>
+<h2 id=c-resources>C++ resources</h2>
 <p>Here are some C++ resources you can use to get started with learning C++</p>
 <ul>
 <li><a href=https://www.learncpp.com/ >https://www.learncpp.com/</a></li>
@@ -1675,16 +1662,14 @@ int main()
 <li><a href=https://www.tutorialspoint.com/cplusplus/cpp_useful_resources.htm>https://www.tutorialspoint.com/cplusplus/cpp_useful_resources.htm</a></li>
 <li><a href=https://www.tutorialspoint.com/cplusplus/cpp_useful_resources.htm>https://makeawebsitehub.com/learning-c/</a></li>
 </ul>
-<h1 id=credits>Credits</h1>
+<h2 id=credits>Credits</h2>
 <ul>
 <li><a href=http://www.mingw.org/ >MinGW Project</a></li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner">Code Runner</a> by <a href=https://marketplace.visualstudio.com/publishers/formulahendry>Jun Han</a></li>
 <li><a href=https://www.netlifycms.org/ >NetlifyCMS</a></li>
 </ul>
 <blockquote>
-<blockquote>
 <p>I wrote this article with my new NetlifyCMS setup, I’ll write an article to show you how I did it soon :).</p>
-</blockquote>
 </blockquote>
 <p>Thank you for reading!</p>
 </article>
@@ -1720,6 +1705,7 @@ int main()
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1747,6 +1733,7 @@ int main()
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

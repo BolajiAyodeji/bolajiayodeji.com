@@ -19,17 +19,17 @@
       <guid>https://bolajiayodeji.com/object.freeze-vs-const/</guid>
       <description>ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .
 It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!
-const and Object.freeze() are totally different.</description>
+const and Object.freeze() const and Object.</description>
     </item>
     
     <item>
-      <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
+      <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests</title>
       <link>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
       <pubDate>Sun, 10 Mar 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
       <description>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
-* Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
+Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
     </item>
     
   </channel>

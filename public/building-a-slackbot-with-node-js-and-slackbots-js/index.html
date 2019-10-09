@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,7 +1454,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
@@ -1490,6 +1488,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>Building a SlackBot with Node.js and SlackBots.js</h1>
@@ -1530,12 +1529,12 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li><a href=#useful-resources>Useful Resources</a></li>
 </ul>
 </nav>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565610388/blog/0004/banner.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636695/null/blog/0004/banner_gjdzno.png alt=""></p>
 <p>Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate.</p>
 <blockquote>
 <p>Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate.</p>
 </blockquote>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565594320/blog/0004/organize-conversations-slack-product-desktop.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/01.png alt=""></p>
 <hr>
 <p>One of the awesome features of Slack is <a href=https://slack.com/apps>Slack Apps</a>, integrations and <a href=https://api.slack.com/bot-users>Slack Bots</a>.</p>
 <blockquote>
@@ -1552,7 +1551,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 @inspirenuggets random joke<br>
 @inspirenuggets help</p>
 </blockquote>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/02.png alt=""></p>
 <blockquote>
 <p>This article is not really about what we’ll be building, it’s just to show you the concept behind Slack bots and how to build yours, after now, you can think about something else and build a different bot, there’re several possibilities.</p>
 <p>You can clone or fork the final project <a href=https://github.com/BolajiAyodeji/inspireNuggetsSlackBot>here</a></p>
@@ -1573,32 +1572,32 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li>Download node <a href=https://nodejs.org/en/ >here</a>, If you have it installed already, skip this step. If you prefer to use a package manager to install, read <a href=https://nodejs.org/en/download/package-manager/#windows>this</a> for all operating systems.</li>
 <li>Check if you have Node installed</li>
 </ul>
-<pre><code>node -v
+<pre><code class=language-bash>node -v
 </code></pre>
 <ul>
 <li>Node.js comes with Npm, you don’t have to install that again.</li>
 </ul>
-<pre><code>npm -v
+<pre><code class=language-bash>npm -v
 </code></pre>
 <p>Now that we have Node.js setup, let’s initialize our project</p>
 <ul>
 <li>Create your project directory (I called mine Slackbot)</li>
 <li>Initialize git</li>
 </ul>
-<pre><code>git init
+<pre><code class=language-bash>git init
 </code></pre>
 <ul>
 <li>create an <code>index.js</code> file</li>
 </ul>
-<pre><code>touch index.js
+<pre><code class=language-bash>touch index.js
 </code></pre>
 <ul>
 <li>Initialize Npm</li>
 </ul>
-<pre><code>npm init
+<pre><code class=language-bash>npm init
 </code></pre>
 <p>Simply answer all questions that come afterwards, if you’re having issues, here’s my own <code>package.json</code></p>
-<pre><code>{
+<pre><code class=language-json>{
   "name": "slackbot",
   "version": "1.0.0",
   "description": "A simple Slackbot that displays random inspiring techie quotes for developers/designers.",
@@ -1622,43 +1621,43 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p><strong>Now let’s install and setup all libraries we need.</strong></p>
 <h2 id=slackbots-js>SlackBots.js</h2>
 <p><a href=https://github.com/mishk0/slack-bot-api>SlackBots.js</a> is Node.js library for easy operation with Slack API.</p>
-<pre><code>npm install slackbots
+<pre><code class=language-bash>npm install slackbots
 </code></pre>
 <p>In <code>index.js</code></p>
-<pre><code>const SlackBot = require('slackbots');
+<pre><code class=language-js>const SlackBot = require('slackbots');
 </code></pre>
 <h2 id=axios>Axios</h2>
 <p><a href=https://github.com/axios/axios>Axios</a> is a promise based HTTP client for the browser and node.js. If you know Fetch or AJAX, this is just a library that does same with far way cooler features. You can see them <a href=https://github.com/axios/axios>here</a></p>
-<pre><code>npm install axios
+<pre><code class=language-bash>npm install axios
 </code></pre>
 <p>In <code>index.js</code></p>
-<pre><code>const axios = require('axios')
+<pre><code class=language-js>const axios = require('axios')
 </code></pre>
 <h2 id=nodemon>Nodemon</h2>
 <p>To run a script in Node.js, you have to run <code>node index.js</code>. Whenever you make changes to this file, you have to rerun <code>node index.js</code>, this sucks right when you’re making so many changes like we’ll be doing. That’s why we need <a href=https://github.com/remy/nodemon>nodemon</a>, nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.</p>
-<pre><code>npm install -g nodemon
+<pre><code class=language-bash>npm install -g nodemon
 </code></pre>
 <p>In <code>package.json</code>, locate the scripts section and add a new start script</p>
-<pre><code>"scripts": {
+<pre><code class=language-json>"scripts": {
     "start": "node index.js"
   }
 </code></pre>
 <p>If you run <code>npm start</code>, the file will run but won’t restart on change. To fix this use the nodemon we installed instead of node like so:</p>
-<pre><code>"scripts": {
+<pre><code class=language-json>"scripts": {
     "start": "nodemon index.js"
   }
 </code></pre>
 <h1 id=dotenv>Dotenv</h1>
 <p>I won’t explain this in-depth, in a few days, I’ll publish an article around environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don’t have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, <a href=https://github.com/motdotla/dotenv>Dotenv</a> is a zero-dependency module that loads environment variables from a .env file into process.env.</p>
-<pre><code>npm install dotenv
+<pre><code class=language-bash>npm install dotenv
 </code></pre>
 <p>In <code>index.js</code></p>
-<pre><code>const dotenv = require('dotenv')
+<pre><code class=language-js>const dotenv = require('dotenv')
 
 dotenv.config()
 </code></pre>
 <p>After all installation, your <code>package.json</code> should look like this:</p>
-<pre><code>{
+<pre><code class=language-json>{
   "name": "inspireNuggetsSlackBot",
   "version": "1.0.0",
   "description": "A simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers.",
@@ -1692,35 +1691,35 @@ dotenv.config()
 <ul>
 <li>Now you’ll need to create a Slack App. Create one <a href=https://api.slack.com/apps/new>here</a></li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600492/blog/0004/capture5.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/03.png alt=""></p>
 <blockquote>
 <p>Enter your App name and ensure you’re in the workspace you created if you’re in multiple workspaces.</p>
 </blockquote>
 <ul>
 <li>Now you’ll see the settings > Basic Information page. Click the first tab <code>Add features and functionality</code></li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600643/blog/0004/capture6.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/04.png alt=""></p>
 <p>Since we’re building a bot, select the <strong>Bots</strong> field.</p>
 <ul>
 <li>Now you’ll see the Bot user page</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600858/blog/0004/capture7.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/05.png alt=""></p>
 <p>Click the <code>Add a Bot User</code> button</p>
 <ul>
 <li>Your display name will automatically be filled in from your already chosen App name, you can update but I’ll advise you use the same name everywhere with the same alphabet case to avoid errors.</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565600959/blog/0004/capture8.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636695/null/blog/0004/06.png alt=""></p>
 <p>Now, toggle the <code>Always Show My Bot as Online</code> switch to always show your bot as Online, remember this bot is just like a user in your workspace. Afterwards, click the <code>Add Bot User</code> button</p>
 <ul>
 <li>Save all changes now</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture9.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/07.png alt=""></p>
 <ul>
 <li>Return to the <code>Basic Information</code> page and select the <code>Install your app to your workspace</code> tab.</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture10.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/08.png alt=""></p>
 <p>Click the <code>Install App to Workspace</code></p>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565602315/blog/0004/capture11.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/09.png alt=""></p>
 <p>Click allow and wait to be redirected back to the <code>Basic Information</code> page.</p>
 <blockquote>
 <p>Note the <code>Manage distribution</code> tab, this section is needed when you want to make your Bot available for installation by others, for now we’re just building in development and I won’t be covering distribution in this article, in my next article, I’ll show you how to deploy your Slack bot and make it available as an App to other workspaces.</p>
@@ -1731,25 +1730,25 @@ dotenv.config()
 <blockquote>
 <p>For now, it’s offline, once we start building the bot, we’ll turn this on.</p>
 </blockquote>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565603471/blog/0004/capture15.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636697/null/blog/0004/10.png alt=""></p>
 <h1 id=customize-your-slack-bot>Customize your Slack bot</h1>
 <p>Now we’ve created our bot, let’s do some customization</p>
 <ul>
 <li>Still, on the <code>Basic Information</code> page, scroll down to the <code>Display Information</code> section</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565602833/blog/0004/capture12.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/11.png alt=""></p>
 <p>This is basic stuff, just upload a logo, change your background color and add a short description</p>
 <blockquote>
 <p>Your icon should be <code>512x512px</code> or bigger and your background color should be in HEX. Read more on the App guidelines <a href=https://api.slack.com/docs/slack-apps-guidelines>here</a></p>
 </blockquote>
 <p>Here’s what mine looks like after customization:</p>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565603043/blog/0004/capture13.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/12.png alt=""></p>
 <h1 id=slack-bot-oauth-tokens>Slack bot OAuth Tokens</h1>
 <p>Now we have our Slack bot setup, let’s grab out token keys.</p>
 <ul>
 <li>In the navigation bar, locate the Features section and click the <code>OAuth & Permission</code> tab</li>
 </ul>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565604021/blog/0004/capture16.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/13.png alt=""></p>
 <p>You’ll see two Access Tokens</p>
 <ul>
 <li>OAuth Access Token</li>
@@ -1765,12 +1764,12 @@ dotenv.config()
 <p>Now let’s build our bot :).</p>
 <h3 id=first-let-s-keep-our-access-token-somewhere>First, let’s keep our Access Token somewhere.</h3>
 <p>create a <code>.env</code> file and add this:</p>
-<pre><code>BOT_TOKEN=YOUR_SLACK_ACCESS_TOKEN_HERE
+<pre><code class=language-dotfile>BOT_TOKEN=YOUR_SLACK_ACCESS_TOKEN_HERE
 </code></pre>
 <ul>
 <li>Now let’s start our SlackBot.js</li>
 </ul>
-<pre><code>const bot = new SlackBot({
+<pre><code class=language-js>const bot = new SlackBot({
     token: `${process.env.BOT_TOKEN}`,
     name: 'inspirenuggets'
 })
@@ -1783,14 +1782,14 @@ dotenv.config()
 <ul>
 <li>Now start the app</li>
 </ul>
-<pre><code>npm start
+<pre><code class=language-bash>npm start
 </code></pre>
 <p>nodemon should be running now and our Slack app should be online too.</p>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture17.png alt=""></p>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture18.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/14.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636697/null/blog/0004/15.png alt=""></p>
 <h3 id=start-handler>Start handler</h3>
 <p>Our Bot does nothing now even though it’s running, let’s return a message.</p>
-<pre><code>bot.on('start', () => {
+<pre><code class=language-js>bot.on('start', () => {
     const params = {
         icon_emoji: ':robot_face:'
     }
@@ -1806,9 +1805,9 @@ dotenv.config()
 <p>The <code>bot.on</code> handler sends the welcome message. We passed two parameters, the <code>'start'</code> and a function which holds a params variable which also holds the slack emoji. Slack emoji have codes, you can find them <a href=https://slackmojis.com/ >here</a>. I used <code>:robot_face:</code>, you can change this to your preferred emoji.</p>
 <p>We also initialized the <code>bot.postMessageToChannel</code> function which is a SlackBot.js method to post a message to a channel In this function, we pass the channel name we want to post to, the message in a string and the params variable we declared earlier for the emoji. I used the <strong>#random</strong> channel and sent <code>Get inspired while working with @inspirenuggets</code> to it. Your app should restart automatically and your bot should do this:</p>
 </blockquote>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565605878/blog/0004/capture19.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/16.png alt=""></p>
 <p>Cool right? You can also post messages to users and groups.</p>
-<pre><code>    // define existing username instead of 'user_name'
+<pre><code class=language-js>    // define existing username instead of 'user_name'
     bot.postMessageToUser('user_name', 'Hello world!', params); 
    
     
@@ -1817,7 +1816,7 @@ dotenv.config()
 </code></pre>
 <h3 id=error-handler>Error Handler</h3>
 <p>Let’s also write a function to check for errors and return them:</p>
-<pre><code>bot.on('error', (err) => {
+<pre><code class=language-js>bot.on('error', (err) => {
     console.log(err);
 })
 </code></pre>
@@ -1828,7 +1827,7 @@ dotenv.config()
 <p>When a user mentions our bot and adds <strong>inspire me</strong>, the bot returns a random quote from <a href=https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb>inspireNuggets</a>, when the user types <strong>random joke</strong>, it returns a random joke from <a href=https://api.chucknorris.io/ >Chuck Norris</a> API and when the user types <strong>help</strong>, it returns the instruction guide.</p>
 </blockquote>
 <p>First, let’s check for our command words from the user message (<strong>inspire me</strong>, <strong>random joke</strong> and <strong>help</strong>)</p>
-<pre><code>function handleMessage(message) {
+<pre><code class=language-js>function handleMessage(message) {
     if(message.includes(' inspire me')) {
         inspireMe()
     } else if(message.includes(' random joke')) {
@@ -1850,7 +1849,7 @@ dotenv.config()
 <li><a href=https://www.bolajiayodeji.com/manipulating-arrays-in-javascript/ >Manipulating Arrays in JavaScript</a> and</li>
 <li><a href=https://www.bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/ >Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</a></li>
 </ul>
-<pre><code>function inspireMe() {
+<pre><code class=language-js>function inspireMe() {
     axios.get('https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json')
       .then(res => {
             const quotes = res.data;
@@ -1872,7 +1871,7 @@ dotenv.config()
 }
 </code></pre>
 <p>We just used Axios to get the JSON file which returns some data:</p>
-<pre><code>[
+<pre><code class=language-json>[
     {
         "number": "1",
         "author": "Von R. Glitschka",
@@ -1890,7 +1889,7 @@ dotenv.config()
 ]
 </code></pre>
 <p>This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:</p>
-<pre><code>
+<pre><code class=language-js>
 const quotes = res.data;
 const random = Math.floor(Math.random() * quotes.length);
 const quote = quotes[random].quote
@@ -1898,13 +1897,13 @@ const author = quotes[random].author
 
 </code></pre>
 <p>And just like we did with the welcome message, we just return the quote and author instead of a string message:</p>
-<pre><code>`:zap: ${quote} - *${author}*`
+<pre><code class=language-js>`:zap: ${quote} - *${author}*`
 </code></pre>
 <p>Let’s test this</p>
 <blockquote>
 <p>Type <code>@inspirenuggets inspire me</code></p>
 </blockquote>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565608562/blog/0004/capture20.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/17.png alt=""></p>
 <blockquote>
 <p>Yayyy! It worked!</p>
 <p>PS: You can always change the emoji type for every request, if you noticed I changed the inspireMe() to <code>:male-technologist:</code></p>
@@ -1915,7 +1914,7 @@ const author = quotes[random].author
 <blockquote>
 <p>We’re getting the jokes from Chuck Norris API from this endpoint <code>https://api.chucknorris.io/jokes/random</code>.</p>
 </blockquote>
-<pre><code>{
+<pre><code class=language-json>{
 "categories": [],
 "created_at": "2016-05-01 10:51:41.584544",
 "icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
@@ -1926,7 +1925,7 @@ const author = quotes[random].author
 }
 </code></pre>
 <p>This is a real API that returns a random joke on every request, so we don’t have to do <code>Math.floor()</code> again.</p>
-<pre><code>function randomJoke() {
+<pre><code class=language-js>function randomJoke() {
     axios.get('https://api.chucknorris.io/jokes/random')
       .then(res => {
             const joke = res.data.value;
@@ -1949,7 +1948,7 @@ const author = quotes[random].author
 <li><strong>runHelp()</strong></li>
 </ul>
 <p>This is similar to our welcome message, we just want to return a custom text when the user adds <strong>help</strong> to the request.</p>
-<pre><code>function runHelp() {
+<pre><code class=language-js>function runHelp() {
     const params = {
         icon_emoji: ':question:'
     }
@@ -1962,7 +1961,7 @@ const author = quotes[random].author
 }
 </code></pre>
 <p>Now let’s test all three commands:</p>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/02.png alt=""></p>
 <p>Everything works fine now, congratulations!!!! you just built your SlackBot.</p>
 <hr>
 <p>There is an endless number of possibilities of Bots you can build with this to automate your own work or teamwork.</p>
@@ -1976,10 +1975,8 @@ const author = quotes[random].author
 <h1 id=what-next>What Next?</h1>
 <p>Our bot only runs in development now, to use it we always have to <code>npm start</code>.</p>
 <p>This isn’t cool, right? We’ll want to host it somewhere it can run every time. In my next article, I’ll show you how to host this on either <a href=https://herokuapp.com/ >Heroku</a>, <a href=https://zeit.co/ >Zeit</a> or <a href=https://netlify.com>Netlify</a> and publish it to the Slack Apps store so anyone around the world can use it. Also, don’t forget to add this in your <code>.gitignore</code> before pushing to GitHub</p>
-<pre><code>
-/.env
+<pre><code class=language-env>/.env
 /node_modules
-
 </code></pre>
 <blockquote>
 <p>Subscribe to my <a href=https://tinyletter.com/bolajiayodeji/ >newsletter</a> to get updated.</p>
@@ -2029,6 +2026,7 @@ const author = quotes[random].author
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -2056,6 +2054,7 @@ const author = quotes[random].author
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

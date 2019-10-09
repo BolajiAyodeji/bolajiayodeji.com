@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,7 +1454,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
@@ -1490,6 +1488,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>Introduction to ES6 modules</h1>
@@ -1503,22 +1502,19 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href=#what-exactly-is-a-module><strong>What exactly is a module?</strong></a></li>
+<li><a href=#what-exactly-is-a-module>What exactly is a module?</a></li>
 <li><a href=#what-are-es6-modules>What are ES6 Modules?</a></li>
 <li><a href=#what-you-should-know>What you should know!</a></li>
 <li><a href=#how-to-use-es6-modules>How to use ES6 modules</a></li>
 <li><a href=#some-advantages-of-using-modules>Some Advantages of using modules</a></li>
 <li><a href=#conclusion>CONCLUSION</a></li>
 </ul></li>
-</ul></li>
 </ul>
 </nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*DDHE2Adf04v4EYcYbAUWSg.png alt=""></p>
 <p>An essential aspect of software engineering is <strong>efficiency.</strong> Every successful app needs a solid architectural structure that allows it to scale at all levels without breaking. In respect to this, several techniques and patterns are engaged to ensure code efficiency.</p>
 <p>In this article, I would introduce you to ES6 modules, what they are, how to use them and why you should care {0[]0}</p>
-<h3 id=what-exactly-is-a-module><strong>What exactly is a module?</strong></h3>
+<h2 id=what-exactly-is-a-module>What exactly is a module?</h2>
 <p>In JavaScript, the word <strong>“modules”</strong> refers to small units of independent, reusable code. They are the foundation of many JavaScript design patterns and are critically necessary when building any substantial JavaScript-based application.</p>
 <p>In simpler terms, modules help you to write code in your module and <strong>expose only</strong> those parts of the code that should be <strong>accessed by other parts of your code.</strong></p>
 <p>JavaScript has had modules for a long time. However, they were implemented via libraries, not built into the language. ES6 is the first time that JavaScript has built-in modules.</p>
@@ -1527,10 +1523,9 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li>In that code, there may be declarations (variables, functions, classes e.t.c).</li>
 <li>By default, every declaration in that file stay local to that module and cannot be accessed in other modules unless the module file exports them.</li>
 </ul>
-<hr>
-<h3 id=what-are-es6-modules>What are ES6 Modules?</h3>
+<h2 id=what-are-es6-modules>What are ES6 Modules?</h2>
 <p>Before now, it was impossible to directly reference or include one JavaScript file in another, as such, developers therefore resorted to alternative options like multiple HTML script tags</p>
-<pre><code>&lt;script src="app.js">&lt;/script>
+<pre><code class=language-js>&lt;script src="app.js">&lt;/script>
  &lt;script src="search.js">&lt;/script>
  &lt;script src="user.js">&lt;/script>
  &lt;script>
@@ -1539,12 +1534,12 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </code></pre>
 <p>This is a bad practice as each script initiates a new HTTP request, which affects page performance and disrupts further processing while it runs.</p>
 <p>Let’s say we have a file, <code>app.js</code> and included in this file is a function which checks every limit in a number and returns if it’s EVEN or ODD.</p>
-<pre><code>function showNumbers(limit) {
- (let i = 0; i &lt;= limit; i++) {
-const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
-console.log(i, message);
-  }
-}
+<pre><code class=language-js>    function showNumbers(limit) {
+     (let i = 0; i &lt;= limit; i++) {
+    const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+    console.log(i, message);
+      }
+    }
 </code></pre>
 <p>Now this function is only available within <code>app.js</code> . Wherever you need this function, you have to either rewrite the function or attach the script again.</p>
 <p>This is where <strong>ES6 Modules</strong> come in :)</p>
@@ -1571,41 +1566,43 @@ console.log(i, message);
 </blockquote>
 <p><em>Browsers with ES6 modules support, May 2017. [</em><a href=https://codepen.io/samthor/pen/MmvdOM>Source</a><em>]</em></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*XzKcB3WRsVg3K2TapBbghg.png alt=""></p>
-<h3 id=what-you-should-know>What you should know!</h3>
+<h2 id=what-you-should-know>What you should know!</h2>
 <ul>
 <li>Everything inside an ES6 module is private by default, and runs in strict mode (there’s no need for <code>'use strict'</code>).</li>
 <li>Public variables, functions and classes are exposed using <code>export</code>.</li>
 <li>Exposed modules are called into other modules using <code>import</code></li>
-<li><p>Modules must be included in your HTML with <code>type="module"</code>, which can be an inline or external script tag.</p>
-<script src=main.js></script>
-<script>
-// or an inline script
-</script></li>
-<li><p>Modules are
+<li>Modules must be included in your HTML with <code>type="module"</code>, which can be an inline or external script tag.</li>
+</ul>
+<pre><code class=language-js>  &lt;script src="main.js">&lt;/script>
+    &lt;script>
+      // or an inline script
+    &lt;/script>
+</code></pre>
+<ul>
+<li>Modules are
 <a href=https://developer.mozilla.org/en/docs/Web/HTML/Element/script#attr-defer>deferred</a>, and only run after a document is loaded</li>
 </ul>
 <p>For an in-depth knowledge about ES6 modules, read
 <a href=https://ponyfoo.com/articles/es6-modules-in-depth>here</a></p>
-<hr>
-<h3 id=how-to-use-es6-modules>How to use ES6 modules</h3>
+<h2 id=how-to-use-es6-modules>How to use ES6 modules</h2>
 <p>For this article, let’s create three files, (<code>app.js</code> ,<code>math.js</code> and <code>max.js</code> )</p>
 <p>In <code>math.js</code> , let’s write a basic arithmetic algorithm</p>
-<pre><code>let sumAll = (a, b) => {return a + b;}
+<pre><code class=language-js>    let sumAll = (a, b) => {return a + b;}
 
-let subtractAll = (a, b) => {return a - b;}
+    let subtractAll = (a, b) => {return a - b;}
 
-let divideAll = (a, b) => {return a / b;}
+    let divideAll = (a, b) => {return a / b;}
 
-let multiplyAll = (a, b) => {return a * b;}
+    let multiplyAll = (a, b) => {return a * b;}
 
-let findModulus = (a, b) => {return a % b;}
+    let findModulus = (a, b) => {return a % b;}
 </code></pre>
 <p>Now to make this module accessible to other parts of our code, we need to
 <code>export</code> them. There are several ways of doing this;</p>
 <ul>
 <li>You can export each module individually:</li>
 </ul>
-<pre><code>export let sumAll = (a, b) => {return a + b;}
+<pre><code class=language-js>export let sumAll = (a, b) => {return a + b;}
 
  export let subtractAll = (a, b) => {return a - b;}
 
@@ -1618,7 +1615,7 @@ let findModulus = (a, b) => {return a % b;}
 <ul>
 <li>A better way is to use a single export statement:</li>
 </ul>
-<pre><code>let sumAll = (a, b) => {return a + b;}
+<pre><code class=language-js>let sumAll = (a, b) => {return a + b;}
 
  let subtractAll = (a, b) => {return a - b;}
 
@@ -1633,7 +1630,7 @@ let findModulus = (a, b) => {return a % b;}
 <ul>
 <li>You can also export default values</li>
 </ul>
-<pre><code>export default {sumAll, subtractAll, multiplyAll, divideAll};
+<pre><code class=language-js>export default {sumAll, subtractAll, multiplyAll, divideAll};
 </code></pre>
 <blockquote>
 <p><strong>Note:</strong> You only export modules you want to use in other parts of your code, its not mandatory for you to export every module in this script</p>
@@ -1642,15 +1639,15 @@ let findModulus = (a, b) => {return a % b;}
 <ul>
 <li>You can import individually</li>
 </ul>
-<pre><code>import {sumAll} from './math.js';
+<pre><code class=language-js>import {sumAll} from './math.js';
 </code></pre>
 <p>Let’s test our import</p>
-<pre><code>console.log(sumAll(9, 8)); //17
+<pre><code class=language-js>console.log(sumAll(9, 8)); //17
 </code></pre>
 <ul>
 <li>You can import multiple modules at once:</li>
 </ul>
-<pre><code>import {sumAll, subtractAll, divideAll} from './math.js';
+<pre><code class=language-js>import {sumAll, subtractAll, divideAll} from './math.js';
 </code></pre>
 <ul>
 <li>You can import modules as aliases</li>
@@ -1660,10 +1657,10 @@ let findModulus = (a, b) => {return a % b;}
 is an alternative and usually easier-to-understand or more significant name for a defined data object. More details
 <a href=https://searchmicroservices.techtarget.com/definition/alias>here</a></p>
 </blockquote>
-<pre><code>import * as math from './math.js';
+<pre><code class=language-js>import * as math from './math.js';
 </code></pre>
 <p>Here we have imported all the modules in <code>math.js</code> and assigned them to the alias <code>math</code> . To use this imported module we do this:</p>
-<pre><code>console.log(math.sumAll(50, 10)); // 60
+<pre><code class=language-js>console.log(math.sumAll(50, 10)); // 60
 
  console.log(math.subtractAll(50, 10)); // 40
 
@@ -1676,7 +1673,7 @@ is an alternative and usually easier-to-understand or more significant name for 
 <ul>
 <li>You can also import default values</li>
 </ul>
-<pre><code>import math from './math.js';
+<pre><code class=language-js>import math from './math.js';
  console.log(math.sumAll(5, 2)); // 7
 </code></pre>
 <p>Here we have imported <code>sumAll()</code> in <code>math.js</code> and assigned it to the alias
@@ -1688,12 +1685,12 @@ is an alternative and usually easier-to-understand or more significant name for 
  provide an export named 'default'
 </code></pre>
 <p>To use this method, you must export <code>sumAll()</code> as <code>default</code></p>
-<pre><code>export default {sumAll};
+<pre><code class=language-js>export default {sumAll};
 </code></pre>
 <ul>
 <li>You can also use an absolute path for the module import, to reference modules defined on another domain:</li>
 </ul>
-<pre><code>import {sumAll} from 'https://bolaji-module.glitch.me/sumAll.js';
+<pre><code class=language-js>import {sumAll} from 'https://bolaji-module.glitch.me/sumAll.js';
  console.log(sumAll(50, 10)); // 60
 </code></pre>
 <blockquote>
@@ -1701,7 +1698,7 @@ is an alternative and usually easier-to-understand or more significant name for 
 <a href=https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>CORS.</a> This means that if you reference scripts from other domains, they must have a valid CORS header that allows cross-site loading.</p>
 <p>Modules are imported with either absolute or Relative references and must start with either “/”, “./”, or “../”.</p>
 </blockquote>
-<pre><code>import {sumAll} from 'math.js'; ❌
+<pre><code class=language-js>import {sumAll} from 'math.js'; ❌
  import {sumAll} from 'lib/max.js'; ❌
 
  import {sumAll} from './math.js'; ✔️
@@ -1711,13 +1708,13 @@ is an alternative and usually easier-to-understand or more significant name for 
 <ul>
 <li>You can import several modules from different files, in our <code>max.js</code> add this:</li>
 </ul>
-<pre><code>let max = (a, b) => {
+<pre><code class=language-js>let max = (a, b) => {
 return (a > b) ? a : b;
 }
 export {max};
 </code></pre>
 <p>Now you can import <code>max.js</code> and <code>math.js</code> together in <code>app.js</code></p>
-<pre><code>import * as math from './math.js';
+<pre><code class=language-js>import * as math from './math.js';
  import {max} from './max.js';
 
  console.log(max(50, 10)); // 50
@@ -1731,8 +1728,7 @@ export {max};
 <blockquote>
 <p>You can import multiple files but we must also remember that having more than a few modules is going to reduce our app’s performance , only use modules when needed.</p>
 </blockquote>
-<hr>
-<h3 id=some-advantages-of-using-modules>Some Advantages of using modules</h3>
+<h2 id=some-advantages-of-using-modules>Some Advantages of using modules</h2>
 <ul>
 <li>Code can be split into smaller files of self-contained functionality.</li>
 <li>Multiple scripts can be concatenated thereby increasing performance.</li>
@@ -1742,8 +1738,7 @@ export {max};
 <li>ES6 Modules are always executed in <code>strict mode</code>, so there is no need for <code>‘use strict’</code> .</li>
 <li>ES6 modules help you to organize your code better</li>
 </ul>
-<hr>
-<h3 id=conclusion>CONCLUSION</h3>
+<h2 id=conclusion>CONCLUSION</h2>
 <p>ES6 Modules are one of the biggest features introduced in modern browsers. Modern JavaScript frameworks like Vue JS and React JS use this feature.</p>
 <p>You should also know that <strong>ES6 modules are not supported in all browsers.</strong> For production applications, transpilers like Webpack and Babel are used to convert our code from ES6 to ES5 to ensure cross-browser compatibility</p>
 <blockquote>
@@ -1797,6 +1792,7 @@ export {max};
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1824,6 +1820,7 @@ export {max};
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,7 +1454,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
@@ -1490,6 +1488,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>Manipulating Arrays in JavaScript</h1>
@@ -1503,9 +1502,8 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>
 <ul>
-<li>
+<li><a href=#what-are-arrays-in-javascript>What are Arrays in JavaScript?</a>
 <ul>
-<li><a href=#what-are-arrays-in-javascript>What are Arrays in JavaScript?</a></li>
 <li><a href=#tostring>toString()</a></li>
 <li><a href=#join>join()</a></li>
 <li><a href=#concat>concat</a></li>
@@ -1533,17 +1531,16 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p>Arrays have become an important part of any programming language. Most times we need to do several operations on arrays, hence this article.</p>
 <p>In this article, I would show you various methods of manipulating arrays in JavaScript [^^]</p>
 <p><img src=https://cdn-images-1.medium.com/max/880/1*EK3RyHqvMS-ZIy9UyNMxTA.png alt=""></p>
-<hr>
-<h3 id=what-are-arrays-in-javascript>What are Arrays in JavaScript?</h3>
+<h2 id=what-are-arrays-in-javascript>What are Arrays in JavaScript?</h2>
 <p>Before we proceed, you need to understand what arrays really mean.</p>
 <blockquote>
 <p>In JavaScript, an array is a variable that is used to store different data types. It basically stores different elements in one box and can be later assesssed with the variable.</p>
 </blockquote>
 <p>Declaring an array:</p>
-<pre><code>let myBox = [];   // Initial Array declaration in JS
+<pre><code class=language-js> let myBox = [];   // Initial Array declaration in JS
 </code></pre>
 <p>Arrays can contain multiple data types</p>
-<pre><code>let myBox = ['hello', 1, 2, 3, true, 'hi'];
+<pre><code class=language-js> let myBox = ['hello', 1, 2, 3, true, 'hi'];
 </code></pre>
 <hr>
 <p>Arrays can be manipulated by using several actions known as <strong>methods.</strong> Some of these methods allow us to add, remove, modify and do lots more to arrays.</p>
@@ -1552,57 +1549,56 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p>NB: I used <strong>Arrow functions</strong> in this post, If you don’t know what this means, you should read
 <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions>here</a>. Arrow function is an <strong>ES6 feature</strong>.</p>
 </blockquote>
-<hr>
 <h3 id=tostring>toString()</h3>
 <p>The JavaScript method <code>toString()</code> converts an array to a string separated by a comma.</p>
-<pre><code>let colors = ['green', 'yellow', 'blue'];
-
-console.log(colors.toString()); // green,yellow,blue
+<pre><code class=language-js> let colors = ['green', 'yellow', 'blue'];
+ 
+ console.log(colors.toString()); // green,yellow,blue
 </code></pre>
 <h3 id=join>join()</h3>
 <p>The JavaScript <code>join()</code> method combines all array elements into a string.</p>
 <p>It is similar to <code>toString()</code> method, but here you can specify the separator instead of the default comma.</p>
-<pre><code>let colors = ['green', 'yellow', 'blue'];
+<pre><code class=language-js> let colors = ['green', 'yellow', 'blue'];
 
-console.log(colors.join('-')); // green-yellow-blue
+ console.log(colors.join('-')); // green-yellow-blue
 </code></pre>
 <h3 id=concat>concat</h3>
 <p>This method combines two arrays together or add more items to an array and then return a new array.</p>
-<pre><code>let firstNumbers = [1, 2, 3];
-let secondNumbers = [4, 5, 6];
+<pre><code class=language-js> let firstNumbers = [1, 2, 3];
+ let secondNumbers = [4, 5, 6];
 
-let merged = firstNumbers.concat(secondNumbers);
+ let merged = firstNumbers.concat(secondNumbers);
 
-console.log(merged); // [1, 2, 3, 4, 5, 6]
+ console.log(merged); // [1, 2, 3, 4, 5, 6]
 </code></pre>
 <h3 id=push>push()</h3>
 <p>This method adds items to the end of an array and <strong>changes</strong> the original array.</p>
-<pre><code>let browsers = ['chrome', 'firefox', 'edge'];
-browsers.push('safari', 'opera mini');
+<pre><code class=language-js> let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.push('safari', 'opera mini');
 
-console.log(browsers); 
-// ["chrome", "firefox", "edge", "safari", "opera mini"]
+ console.log(browsers); 
+ // ["chrome", "firefox", "edge", "safari", "opera mini"]
 </code></pre>
 <h3 id=pop>pop()</h3>
 <p>This method removes the last item of an array and <strong>returns</strong> it</p>
-<pre><code>let browsers = ['chrome', 'firefox', 'edge'];
-browsers.pop(); // "edge"
+<pre><code class=language-js> let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.pop(); // "edge"
 
-console.log(browsers); // ["chrome", "firefox"]
+ console.log(browsers); // ["chrome", "firefox"]
 </code></pre>
 <h3 id=shift>shift()</h3>
 <p>This method removes the first item of an array and <strong>returns</strong> it</p>
-<pre><code>let browsers = ['chrome', 'firefox', 'edge'];
-browsers.shift(); // "chrome"
+<pre><code class=language-js> let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.shift(); // "chrome"
 
-console.log(browsers); // ["firefox", "edge"]
+ console.log(browsers); // ["firefox", "edge"]
 </code></pre>
 <h3 id=unshift>unshift()</h3>
 <p>This method adds an item(s) to the beginning of an array and <strong>changes</strong> the original array.</p>
-<pre><code>let browsers = ['chrome', 'firefox', 'edge'];
-browsers.unshift('safari');
+<pre><code class=language-js> let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.unshift('safari');
 
-console.log(browsers); //  ["safari", "chrome", "firefox", "edge"]
+ console.log(browsers); //  ["safari", "chrome", "firefox", "edge"]
 </code></pre>
 <blockquote>
 <p>You can also add multiple items at once</p>
@@ -1610,7 +1606,7 @@ console.log(browsers); //  ["safari", "chrome", "firefox", "edge"]
 <h3 id=splice>splice()</h3>
 <p>This method <strong>changes</strong> an array, by adding, removing and inserting elements.</p>
 <p>The syntax is:</p>
-<pre><code>array.splice(index[, deleteCount, element1, ..., elementN])
+<pre><code class=language-js>array.splice(index[, deleteCount, element1, ..., elementN])
 </code></pre>
 <ul>
 <li><code>Index</code> here is the starting point for removing elements in the array</li>
@@ -1630,25 +1626,25 @@ console.log(colors); // ["purple"]
 <p><strong>NB</strong>: The deleteCount does not include the last index in range.</p>
 </blockquote>
 <p>If the second parameter is not declared, every element starting from the given index will be removed from the array:</p>
-<pre><code>let colors = ['green', 'yellow', 'blue', 'purple'];
-colors.splice(3);
-console.log(colors); // ["green", "yellow", "blue"]
-// deletes ['purple']
+<pre><code class=language-js> let colors = ['green', 'yellow', 'blue', 'purple'];
+ colors.splice(3);
+ console.log(colors); // ["green", "yellow", "blue"]
+ // deletes ['purple']
 </code></pre>
 <p>In the next example we will remove 3 elements from the array and replace them with more items:</p>
-<pre><code>let schedule = ['I', 'have', 'a', 'meeting', 'tommorrow'];
-// removes 4 first elements and replace them with another
-schedule.splice(0, 4, 'we', 'are', 'going', 'to', 'swim');
-console.log(schedule); 
-// ["we", "are", "going", "to", "swim", "tommorrow"]
+<pre><code class=language-js> let schedule = ['I', 'have', 'a', 'meeting', 'tommorrow'];
+ // removes 4 first elements and replace them with another
+ schedule.splice(0, 4, 'we', 'are', 'going', 'to', 'swim');
+ console.log(schedule); 
+ // ["we", "are", "going", "to", "swim", "tommorrow"]
 </code></pre>
 <p><strong>Adding items</strong></p>
 <p>To add items, we need to set the <code>deleteCount</code> to zero</p>
-<pre><code>let schedule = ['I', 'have', 'a', 'meeting', 'with'];
-// adds 3 new elements to the array
-schedule.splice(5, 0, 'some', 'clients', 'tommorrow');
-console.log(schedule); 
-// ["I", "have", "a", "meeting", "with", "some", "clients", "tommorrow"]
+<pre><code class=language-js> let schedule = ['I', 'have', 'a', 'meeting', 'with'];
+ // adds 3 new elements to the array
+ schedule.splice(5, 0, 'some', 'clients', 'tommorrow');
+ console.log(schedule); 
+ // ["I", "have", "a", "meeting", "with", "some", "clients", "tommorrow"]
 </code></pre>
 <h3 id=slice>slice()</h3>
 <blockquote>
@@ -1656,94 +1652,94 @@ console.log(schedule);
 </blockquote>
 <p>This method <strong>copies</strong> a given part of an array and returns that copied part as a new array. <strong>It does not change the original array.</strong></p>
 <p>The syntax is:</p>
-<pre><code>array.slice(start, end)
+<pre><code class=language-js>array.slice(start, end)
 </code></pre>
 <p>Here’s a basic example:</p>
-<pre><code>let numbers = [1, 2, 3, 4]
-numbers.slice(0, 3)
-// returns [1, 2, 3]
+<pre><code class=language-js> let numbers = [1, 2, 3, 4]
+ numbers.slice(0, 3)
+ // returns [1, 2, 3]
 
-console.log(numbers) // returns the original array
+ console.log(numbers) // returns the original array
 </code></pre>
 <p>The best way to use <code>slice()</code> is to assign it to a new variable.</p>
-<pre><code>let message = 'congratulations'
-const abbrv = message.slice(0, 7) + 's!'; 
-console.log(abbrv) // returns "congrats!"
+<pre><code class=language-js> let message = 'congratulations'
+ const abbrv = message.slice(0, 7) + 's!'; 
+ console.log(abbrv) // returns "congrats!"
 </code></pre>
 <h3 id=split>split()</h3>
 <p>This method is used for <strong>strings</strong>. It divides a string into substrings and returns them as an array.</p>
 <p>Here’s the syntax:</p>
-<pre><code>string.split(separator, limit);
+<pre><code class=language-js> string.split(separator, limit);
 </code></pre>
 <ul>
 <li>The <code>separator</code> here defines how to split a string either by a comma.</li>
 <li>The <code>limit</code> determines the number of splits to be carried out
 <br></li>
 </ul>
-<pre><code>let firstName = 'Bolaji';
-// return the string as an array
-firstName.split() // ["Bolaji"]
+<pre><code class=language-js> let firstName = 'Bolaji';
+ // return the string as an array
+ firstName.split() // ["Bolaji"]
 </code></pre>
 <p>another example:</p>
-<pre><code>let firstName = 'hello, my name is bolaji, I am a dev.';
-firstName.split(',', 2); // ["hello", " my name is bolaji"]
+<pre><code class=language-js> let firstName = 'hello, my name is bolaji, I am a dev.';
+ firstName.split(',', 2); // ["hello", " my name is bolaji"]
 </code></pre>
 <blockquote>
 <p><strong>NB:</strong> If we declare an empty array, like this: <em><code>firstName.split('');</code></em> then each item in the string will be divided as substrings:</p>
 </blockquote>
-<pre><code>let firstName = 'Bolaji';
-firstName.split('') // ["B", "o", "l", "a", "j", "i"]
+<pre><code class=language-js> let firstName = 'Bolaji';
+ firstName.split('') // ["B", "o", "l", "a", "j", "i"]
 </code></pre>
 <h3 id=indexof>indexOf()</h3>
 <p>This method looks for an item in an array and returns <strong>the index</strong> where it was found else it returns <code>-1</code></p>
-<pre><code>let fruits = ['apple', 'orange', false, 3]
-fruits.indexOf('orange'); // returns 1
-fruits.indexOf(3); // returns 3
-friuts.indexOf(null); // returns -1 (not found)
+<pre><code class=language-js> let fruits = ['apple', 'orange', false, 3]
+ fruits.indexOf('orange'); // returns 1
+ fruits.indexOf(3); // returns 3
+ friuts.indexOf(null); // returns -1 (not found)
 </code></pre>
 <h3 id=lastindexof>lastIndexOf()</h3>
 <p>This method works the same way <strong>indexOf()</strong> does except that it works from right to left. It returns the last index where the item was found</p>
-<pre><code>let fruits = ['apple', 'orange', false, 3, 'apple']
-fruits.lastIndexOf('apple'); // returns 4
+<pre><code class=language-js> let fruits = ['apple', 'orange', false, 3, 'apple']
+ fruits.lastIndexOf('apple'); // returns 4
 </code></pre>
 <h3 id=filter>filter()</h3>
 <p>This method creates a new array if the items of an array pass a certain condition.</p>
 <p>The syntax is:</p>
-<pre><code>let results = array.filter(function(item, index, array) {
-  // returns true if the item passes the filter
+<pre><code class=language-js> let results = array.filter(function(item, index, array) {
+ // returns true if the item passes the filter
 });
 </code></pre>
 <p>Example:</p>
 <p>Checks users from Nigeria</p>
-<pre><code>const countryCode = ['+234', '+144', '+233', '+234'];
-const nigerian = countryCode.filter( code => code === '+234');
-console.log(nigerian); // ["+234", "+234"]
+<pre><code class=language-js> const countryCode = ['+234', '+144', '+233', '+234'];
+ const nigerian = countryCode.filter( code => code === '+234');
+ console.log(nigerian); // ["+234", "+234"]
 </code></pre>
 <h3 id=map>map()</h3>
 <p>This method creates a new array by manipulating the values in an array.</p>
 <p>Example:</p>
 <p>Displays usernames on a page. (Basic friend list display)</p>
-<pre><code>const userNames = ['tina', 'danny', 'mark', 'bolaji'];
-const display = userNames.map(item => {
- '&lt;li>' + item + '&lt;/li>';
+<pre><code class=language-js> const userNames = ['tina', 'danny', 'mark', 'bolaji'];
+ const display = userNames.map(item => {
+    '&lt;li>' + item + '&lt;/li>';
 })
-const render = '&lt;ul>' + display.join('') + '&lt;/ul>';
+ const render = '&lt;ul>' + display.join('') + '&lt;/ul>';
 
-document.write(render);
+ document.write(render);
 </code></pre>
 <p><img src=https://cdn-images-1.medium.com/max/880/1*obuBZKFb5vKmUP7D4TX2XA.png alt=""></p>
 <p>another example:</p>
-<pre><code>// adds dollar sign to numbers
-const numbers = [10, 3, 4, 6];
-const dollars = numbers.map( number => '$' + number);
-console.log(dollars);
-// ['$10', '$3', '$4', '$6'];
+<pre><code class=language-js> // adds dollar sign to numbers
+ const numbers = [10, 3, 4, 6];
+ const dollars = numbers.map( number => '$' + number);
+ console.log(dollars);
+ // ['$10', '$3', '$4', '$6'];
 </code></pre>
 <h3 id=reduce>reduce()</h3>
 <p>This method is good for calculating totals.</p>
 <p><strong>reduce()</strong> is used to calculate a single value based on an array.</p>
 <p>The syntax is:</p>
-<pre><code>let value = array.reduce(function(previousValue, item, index, array) {
+<pre><code class=language-js> let value = array.reduce(function(previousValue, item, index, array) {
   // ...
 }, initial);
 </code></pre>
@@ -1751,28 +1747,28 @@ console.log(dollars);
 <blockquote>
 <p>To loop through an array and sum all numbers in the array up, we can use the for of loop.</p>
 </blockquote>
-<pre><code>const numbers = [100, 300, 500, 70];
-let sum = 0;
-for (let n of numbers) {
-sum += n;
+<pre><code class=language-js> const numbers = [100, 300, 500, 70];
+ let sum = 0;
+ for (let n of numbers) {
+ sum += n;
 }
-console.log(sum);
+ console.log(sum);
 </code></pre>
 <p>Here’s how to do same with <code>reduce()</code></p>
-<pre><code>const numbers = [100, 300, 500, 70];
-const sum = numbers.reduce((accummulator, value) =>
-accummulator + value
-, 0);
+<pre><code class=language-js> const numbers = [100, 300, 500, 70];
+ const sum = numbers.reduce((accummulator, value) =>
+ accummulator + value
+ , 0);
 
-console.log(sum); // 970
+ console.log(sum); // 970
 </code></pre>
 <blockquote>
 <p>If you omit the initial value, the <em>total</em> will by default start from the first item in the array.</p>
 </blockquote>
-<pre><code>const numbers = [100, 300, 500, 70];
-const sum = numbers.reduce((accummulator, value) => accummulator + value);
+<pre><code class=language-js> const numbers = [100, 300, 500, 70];
+ const sum = numbers.reduce((accummulator, value) => accummulator + value);
 
-console.log(sum); // still returns 970
+ console.log(sum); // still returns 970
 </code></pre>
 <p>The snippet below shows how the <strong>reduce()</strong> method works with all four arguments.</p>
 <p><strong>source: MDN Docs</strong></p>
@@ -1782,52 +1778,52 @@ console.log(sum); // still returns 970
 <h3 id=foreach>forEach()</h3>
 <p>This method is good for iterating through an array.</p>
 <p>It applies a function on all items in an array</p>
-<pre><code>const colors = ['green', 'yellow', 'blue'];
+<pre><code class=language-js> const colors = ['green', 'yellow', 'blue'];
 
-colors.forEach((item, index) => console.log(index, item));
-// returns the index and the every item in the array
-// 0 "green"
-// 1 "yellow"
-// 2 "blue"
+ colors.forEach((item, index) => console.log(index, item));
+ // returns the index and the every item in the array
+ // 0 "green"
+ // 1 "yellow"
+ // 2 "blue"
 </code></pre>
 <p>iteration can be done without passing the index argument</p>
-<pre><code>const colors = ['green', 'yellow', 'blue'];
+<pre><code class=language-js> const colors = ['green', 'yellow', 'blue'];
 
-colors.forEach((item) => console.log(item));
-// returns every item in the array
-// "green"
-// "yellow"
-// "blue"
+ colors.forEach((item) => console.log(item));
+ // returns every item in the array
+ // "green"
+ // "yellow"
+ // "blue"
 </code></pre>
 <h3 id=every>every()</h3>
 <p>This method checks if all items in an array pass the specified condition and return <code>true</code> if passed, else <code>false</code>.</p>
 <blockquote>
 <p>check if all numbers are positive</p>
 </blockquote>
-<pre><code>const numbers = [1, -1, 2, 3];
-let allPositive = numbers.every((value) => {
+<pre><code class=language-js> const numbers = [1, -1, 2, 3];
+ let allPositive = numbers.every((value) => {
  value >= 0;
 })
 
-console.log(allPositive); 
+ console.log(allPositive); 
 </code></pre>
 <h3 id=some>some()</h3>
 <p>This method checks if an item (one or more) in an array pass the specified condition and return true if passed, else false.</p>
 <blockquote>
-<p>c<em>hecks if at least one number is positive</em></p>
+<p>checks if at least one number is positive</p>
 </blockquote>
-<pre><code>const numbers = [1, -1, 2, 3];
+<pre><code class=language-js> const numbers = [1, -1, 2, 3];
 
-let atLeastOnePositive = numbers.some((value) => {
+ let atLeastOnePositive = numbers.some((value) => {
  value >= 0;
 })
-console.log(atLeastOnePositive); 
+ console.log(atLeastOnePositive); 
 </code></pre>
 <h3 id=includes>includes()</h3>
 <p>This method checks if an array contains a certain item. It is similar to
 <code>.some()</code>, but instead of looking for a specific condition to pass, it checks if the array contains a specific item.</p>
-<pre><code>let users = ['paddy', 'zaddy', 'faddy', 'baddy'];
-users.includes('baddy'); // returns true
+<pre><code class=language-js> let users = ['paddy', 'zaddy', 'faddy', 'baddy'];
+ users.includes('baddy'); // returns true
 </code></pre>
 <p>If the item is not found, it returns <code>false</code></p>
 <hr>
@@ -1864,15 +1860,15 @@ for deeper insights.</p>
 </blockquote>
 <p>When you write an article on <strong><a href=https://medium.com>Medium</a></strong> or any other writing platform, your post title is automatically converted to a slug with white spaces removed, characters turned to lowercase and each word in the title separated by a hyphen.</p>
 <p>Here’s a basic function that does that using some of the methods we learnt just now.</p>
-<pre><code>const url = 'https://bolajiayodeji.com/'
-const urlSlug = (postTitle, category) => {
-let postUrl = postTitle.toLowerCase().split(' ');
-let postSlug = `${url}` + category + '/' + postUrl.join('-');
-return postSlug;
+<pre><code class=language-js> const url = 'https://bolajiayodeji.com/'
+ const urlSlug = (postTitle, category) => {
+ let postUrl = postTitle.toLowerCase().split(' ');
+ let postSlug = `${url}` + category + '/' + postUrl.join('-');
+ return postSlug;
 }
-let postTitle = 'Introduction to Chrome Lighthouse'
-let category = 'dt'
-console.log(urlSlug(postTitle, category));
+ let postTitle = 'Introduction to Chrome Lighthouse'
+ let category = 'dt'
+ console.log(urlSlug(postTitle, category));
 
 // https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse
 </code></pre>
@@ -1932,6 +1928,7 @@ postUrl.join('-') // introduction-to-chrome-lighthouse
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1959,6 +1956,7 @@ postUrl.join('-') // introduction-to-chrome-lighthouse
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

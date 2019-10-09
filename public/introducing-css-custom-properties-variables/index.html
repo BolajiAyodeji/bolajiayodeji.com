@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,7 +1454,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
@@ -1490,6 +1488,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>Introducing CSS Custom Properties (Variables)</h1>
@@ -1503,8 +1502,6 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>
 <ul>
-<li>
-<ul>
 <li><a href=#what-are-css-variables>What are CSS variables?</a></li>
 <li><a href=#css-variables-syntax>CSS variables syntax</a></li>
 <li><a href=#accessing-the-variable>Accessing the variable</a></li>
@@ -1515,7 +1512,6 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li><a href=#browser-support>Browser Support</a></li>
 <li><a href=#conclusion>Conclusion</a></li>
 </ul></li>
-</ul></li>
 </ul>
 </nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*JEnrE7aT2K6vfV0nQlbFIw.png alt=""></p>
@@ -1525,32 +1521,32 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p>In this article, I’d show you how to start using CSS variables. Let’s roll :)</p>
 <hr>
 <p>If you’re familiar with JavaScript or other programming languages, you should understand how variables work already.</p>
-<pre><code>let name = 'Bolaji Ayodeji'
+<pre><code class=language-js>    let name = 'Bolaji Ayodeji'
 </code></pre>
 <p>A variable stores some sort of information or data, that would be used later in your program.</p>
-<pre><code>console.log(name);
+<pre><code class=language-js>    console.log(name);
 </code></pre>
-<h3 id=what-are-css-variables>What are CSS variables?</h3>
+<h2 id=what-are-css-variables>What are CSS variables?</h2>
 <blockquote>
 <p><strong>Custom properties</strong> (sometimes referred to as <strong><em>CSS variables</em></strong> or
 <strong><em>cascading variables</em></strong>) are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation. — <strong>MDN DOCS</strong></p>
 </blockquote>
-<h3 id=css-variables-syntax>CSS variables syntax</h3>
+<h2 id=css-variables-syntax>CSS variables syntax</h2>
 <p>A CSS Variable is defined with a special syntax, with <strong>two dashes</strong> before the variable name (<code>--variable-name</code>), then a colon and the variable value.</p>
-<pre><code>.container {
- --black: #000;
-}
+<pre><code class=language-css>    .container {
+     --black: #000;
+    }
 </code></pre>
-<h3 id=accessing-the-variable>Accessing the variable</h3>
+<h2 id=accessing-the-variable>Accessing the variable</h2>
 <p>You can access the already declared variable using <code>var()</code></p>
-<pre><code>.container {
- --black: #000
- color: var(--black);
-}
+<pre><code class=language-css>    .container {
+     --black: #000
+     color: var(--black);
+    }
 </code></pre>
-<h3 id=variables-scope>Variables Scope</h3>
+<h2 id=variables-scope>Variables Scope</h2>
 <p>CSS Variables can be defined inside any CSS element.</p>
-<pre><code>body {
+<pre><code class=language-css>body {
   --color: red;
 }
 h1 {
@@ -1569,31 +1565,31 @@ a {
 <p>However, adding variables to a selector makes them available to <strong>ONLY</strong> their children. If you add a variable inside a <code>.container</code> selector, it’s only going to be available to children of <code>.container</code> . Outside <code>.container</code> , the variable will not work.</p>
 <script data-slug-hash=BbMGqr data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
 <p>Though we set <code>p</code> to be red, it works for only <code>p</code> tags within <code>.container</code> , any <code>p</code> outside <code>.container</code> will not inherit this style.</p>
-<h3 id=root>: root</h3>
+<h2 id=root>: root</h2>
 <p><code>:root</code> is a CSS pseudo-class that identifies the document itself.</p>
 <p>A better way to declare CSS variables is to add the variable to <code>:root</code>, this makes it available to all the elements in the page.</p>
 <script data-slug-hash=gEqZOe data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
 <p>Now all <code>p</code> tags are red irrespective of their position or parent.</p>
-<h3 id=css-variables-are-case-sensitive>CSS Variables are case sensitive</h3>
+<h2 id=css-variables-are-case-sensitive>CSS Variables are case sensitive</h2>
 <p>This variable:</p>
-<pre><code>--color: red;
+<pre><code class=language-css>--color: red;
 </code></pre>
 <p>is not the same as:</p>
-<pre><code>--Color: red;
+<pre><code class=language-css>--Color: red;
 </code></pre>
-<h3 id=setting-a-fallback-value-for-var>Setting a fallback value for var()</h3>
+<h2 id=setting-a-fallback-value-for-var>Setting a fallback value for var()</h2>
 <p><code>var()</code> accepts a second parameter, which is the default fallback value when the variable value is not set:</p>
-<pre><code>p {
-  color: var(--red, #f00);
-}
+<pre><code class=language-css>    p {
+      color: var(--red, #f00);
+    }
 </code></pre>
 <script data-slug-hash=xBMmrq data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
 <p>Here we forgot to declare <code>--red</code> but <code>p</code> still has the red color because we already have a fallback value.</p>
-<h3 id=browser-support>Browser Support</h3>
+<h2 id=browser-support>Browser Support</h2>
 <p><img src=https://cdn-images-1.medium.com/max/1200/1*-HHDutFGICwb84UsH91rsQ.png alt="">
 <span class=figcaption_hack>Browser support for CSS Variables <a href="https://www.caniuse.com/#feat=css-variables">according to Can I Use</a>.</span></p>
 <p>CSS variables are supported in modern browsers. I personally don’t focus on IE and far older browsers because a large number of internet users are using modern browsers now, just a few aren’t. So If you don’t need to support Internet Explorer and old versions of the other browsers, CSS variables should be your best friend.</p>
-<h3 id=conclusion>Conclusion</h3>
+<h2 id=conclusion>Conclusion</h2>
 <p>CSS Variables follow the normal CSS cascading rules, with precedence set according to the specificity. We can also use the values of custom properties in JavaScript, just like standard properties.</p>
 <p>Complex websites have very large amounts of CSS, often with a lot of repeated values. For example, the same color might be used in hundreds of different places, requiring global search and replace if that color needs to change. Custom properties allow a value to be stored in one place, then referenced in multiple other places. An additional benefit is semantic identifiers. For example, <code>--black</code> is easier to understand than <code>#00000</code>, especially if this same color is also used in other contexts. -<strong>MDN</strong></p>
 <p>CSS variables are cool and have come to stay, if you want your CSS styles and development to become clean, easier and more efficient, you should stick to CSS variables :)</p>
@@ -1632,6 +1628,7 @@ a {
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1659,6 +1656,7 @@ a {
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

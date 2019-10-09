@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,7 +1454,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
@@ -1490,6 +1488,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>Handling Static Forms - The Client-side Way</h1>
@@ -1500,8 +1499,6 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <article class=post-content>
 <h1>Table of Contents</h1>
 <nav id=TableOfContents>
-<ul>
-<li>
 <ul>
 <li>
 <ul>
@@ -1519,7 +1516,6 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li><a href=#conclusion>Conclusion</a></li>
 <li><a href=#useful-links>Useful Links</a></li>
 </ul></li>
-</ul></li>
 </ul>
 </nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*NjU8ApeQC0wK4NgIaOjALw.png alt=""></p>
@@ -1532,31 +1528,31 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p>Using a server here is not ideal and is only an overkill, a very common way of doing this is via <a href=https://github.com/PHPMailer/PHPMailer>PHPMailer</a> ( The classic email sending library for PHP). PHPMailer is used with PHP and requires a lot of boring server configurations. What if you’re just building a static site? There should be an easier way of doing this client side right?</p>
 <p>In this article, I’ll introduce you to two methods of handling form data client side in static sites. There are other methods but I’ve used these two and considered them to be the best and easiest (no hard feelings :) ).</p>
 <p>NO hectic configurations, NO servers, NO serious stuff, just build your form, do some little tweaks, the user submits and bingo it heads straight to your designated email. :)</p>
-<h3 id=starter-form>STARTER FORM</h3>
+<h2 id=starter-form>STARTER FORM</h2>
 <p>For the purpose of this article, I’ve built a basic form with HTML5 and Bootstrap 4, you can fork it from the <a href=https://codepen.io/iambolajiayo/pen/MdGdex>Codepen below.</a></p>
 <script data-slug-hash=MdGdex data-user=iambolajiayo data-height=500 data-default-tab=result data-theme-id=8862 class=codepen async src=//codepen.io/assets/embed/ei.js></script>
 <blockquote>
 <p>Currently, this form uses none of the methods we’ll talk about, at the end of the article, I’ll provide the full <code>code</code> for both methods, you can then update the form and test. I’ve added a little validation, don’t worry about that</p>
 </blockquote>
 <p>Now, let’s get started!!</p>
-<h3 id=method-one>METHOD ONE</h3>
+<h2 id=method-one>METHOD ONE</h2>
 <p><br></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/0*7DZwsHAjwcTxTzfR alt=""></p>
 <p><a href=http://formspree.io>Formspree</a> provides functional HTML forms via their platform with no PHP or JavaScript. Send your form to their URL and it’ll be forwarded to your email. No PHP, Javascript or sign up required — perfect for static sites!</p>
 <p>Wait!, wait!!, wait!!! it’s <a href=https://github.com/formspree/formspree>Open Sourced</a> too</p>
-<h4 id=form-handling-with-formspree>Form handling with Formspree</h4>
+<h3 id=form-handling-with-formspree>Form handling with Formspree</h3>
 <ul>
 <li>Build your form, <a href="https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010">we’ve done that already</a></li>
 </ul>
 <p>(Follow the next step and update this form to use this method)</p>
-<pre><code>&lt;form action="https://formspree.io/you@email.com" method="POST">
-    &lt;input type="hidden" name="_subject" value="Bolaji's Form">                 
-    &lt;input type="hidden" name="_next" value="/thanks.html" >
-    &lt;input type="text" name="name">
-    &lt;input type="email" name="_replyto">
-    &lt;input type="text" name="phone">
-    &lt;input type="submit" value="Send">
-&lt;/form>
+<pre><code class=language-html>    &lt;form action="https://formspree.io/you@email.com" method="POST">
+        &lt;input type="hidden" name="_subject" value="Bolaji's Form">                 
+        &lt;input type="hidden" name="_next" value="/thanks.html" >
+        &lt;input type="text" name="name">
+        &lt;input type="email" name="_replyto">
+        &lt;input type="text" name="phone">
+        &lt;input type="submit" value="Send">
+    &lt;/form>
 </code></pre>
 <p>Now let’s go over the new stuff added above.</p>
 <ul>
@@ -1578,7 +1574,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p><img src=https://cdn-images-1.medium.com/max/800/1*lura6hCC_Gs8w5UhtwdIIA.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*hnEhoz4pSb4pNtzXD0pDpw.png alt=""></p>
 <p>That’s all to using formspree :) Although there are other configuration settings for several other features, you can check <a href=https://formspree.io>here</a>.</p>
-<h4 id=things-to-note>Things to note!</h4>
+<h3 id=things-to-note>Things to note!</h3>
 <ul>
 <li>You don’t need to signup to use formspree, just add your action attribute and you’re good to go. You only signup if you want a <a href=https://formspree.io/plans>Paid plan</a>.</li>
 <li>Make sure your form has the <code>method=”POST”</code> attribute</li>
@@ -1597,7 +1593,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>Formspree premium users can submit forms via AJAX. Just set the Accept header to application/json. If you’re using jQuery this can be done like so:</li>
 </ul>
-<pre><code>    $.ajax({
+<pre><code class=language-js>    $.ajax({
         url: "https://formspree.io/FORM_ID",
         method: "POST",
         data: {message: "hello!"},
@@ -1608,28 +1604,28 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <blockquote>
 <p>If you don’t use jQUERY like me and you’re tired of the lengthy AJAX default syntax, check out <a href=https://github.com/BolajiAyodeji/simple-ajax-library>simpleAJAX library</a>, a simple library I built for handling HTTP requests. Like so:</p>
 </blockquote>
-<pre><code>const http = new simpleAJAX;
+<pre><code class=language-js>    const http = new simpleAJAX;
 
-const data = {
-    "name": "Bolaji Ayodeji",
-    "email": "hi@bolajiayodeji.com",
-    "message": "hi"
-};
-http.post('https://formspree.io/FORM_ID', data,
-(err, user) => {
-    if(err) {
-     console.log(err)
-    } else {
-     console.log(user);
-   }
- });
+    const data = {
+        "name": "Bolaji Ayodeji",
+        "email": "hi@bolajiayodeji.com",
+        "message": "hi"
+    };
+    http.post('https://formspree.io/FORM_ID', data,
+    (err, user) => {
+        if(err) {
+         console.log(err)
+        } else {
+         console.log(user);
+       }
+     });
 </code></pre>
 <p>A star would make me happy! :)</p>
-<h3 id=method-two>METHOD TWO</h3>
+<h2 id=method-two>METHOD TWO</h2>
 <p><br></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*XvD7ANv0nt6zkk6jcPJZLg.png alt=""></p>
 <p><a href=https://www.netlify.com/ >Netlify</a> offers form handling for sites deployed on their platform.</p>
-<h4 id=form-handling-with-netlify>Form handling with Netlify</h4>
+<h3 id=form-handling-with-netlify>Form handling with Netlify</h3>
 <ul>
 <li>Create an account on Netlify and deploy your site there.</li>
 </ul>
@@ -1643,7 +1639,7 @@ below if you don’t know what Netlify is. Learn about all of the awesome featur
 <ul>
 <li>Now that you have deployed your site, let’s create the form again</li>
 </ul>
-<pre><code>    &lt;form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">
+<pre><code class=language-html>    &lt;form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">
         &lt;input type="text" name="name">
         &lt;input type="email" name="email">
         &lt;input type="text" name="phone">
@@ -1681,17 +1677,17 @@ below if you don’t know what Netlify is. Learn about all of the awesome featur
 <p><img src=https://cdn-images-1.medium.com/max/800/1*XaWaJi_I6eQq06_ogPEHUg.png alt="">
 <span class=figcaption_hack>form submissions in the admin panel</span></p>
 <p>And that’s all!!</p>
-<h3 id=final-html-form-code>Final HTML Form code</h3>
+<h2 id=final-html-form-code>Final HTML Form code</h2>
 <script src=//gist.github.com/BolajiAyodeji/5fb88278f28302423d657c9a91d2e3f8.js></script>
 <script src=//gist.github.com/BolajiAyodeji/e95ca45355aec76c477ec3cac7fc1d9a.js></script>
 <p><br></p>
-<h3 id=conclusion>Conclusion</h3>
+<h2 id=conclusion>Conclusion</h2>
 <p>One thing to note about formspree is that the free version leaves your email address exposed to scrapers and bots so you might want to set up a temporary disposable email address while you use it. If you want to hide your email address by default, you’ll need to upgrade your plan.</p>
 <p>Do you want extra practice? Watch this tutorial video below by <a href=https://medium.com/u/861216ad5921>Brad Traversy</a> and learn how to add a contact or any type of form to your website by using the Netlify form feature including file uploads and spam filtering. [Full guide + practical code]</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 <iframe src=//www.youtube.com/embed/6ElQ689HRcY style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-<h3 id=useful-links>Useful Links</h3>
+<h2 id=useful-links>Useful Links</h2>
 <ul>
 <li><a href=https://www.netlify.com/docs/form-handling/ >https://www.netlify.com/docs/form-handling/</a></li>
 <li><a href=https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/ >https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/</a></li>
@@ -1733,6 +1729,7 @@ below if you don’t know what Netlify is. Learn about all of the awesome featur
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1760,6 +1757,7 @@ below if you don’t know what Netlify is. Learn about all of the awesome featur
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

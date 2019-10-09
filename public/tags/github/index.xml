@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>github on Bolaji Ayodeji</title>
+    <title>GitHub on Bolaji Ayodeji</title>
     <link>https://bolajiayodeji.com/tags/github/</link>
-    <description>Recent content in github on Bolaji Ayodeji</description>
+    <description>Recent content in GitHub on Bolaji Ayodeji</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Mar 2019 13:22:14 +2400</lastBuildDate>
@@ -34,7 +34,7 @@ In this article I would:
     </item>
     
     <item>
-      <title>How to test a Pull Request locally before Merging.</title>
+      <title>How to Test a Pull Request Locally Before Merging.</title>
       <link>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</link>
       <pubDate>Sun, 11 Nov 2018 13:22:14 +2400</pubDate>
       
@@ -45,7 +45,7 @@ The pull request is available on this git ref pull/{ID}/head which you can fetch
     </item>
     
     <item>
-      <title>How to convert GitHub Markdown files to a simple website</title>
+      <title>How to Convert GitHub Markdown Files to a Simple Website</title>
       <link>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</link>
       <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
       
