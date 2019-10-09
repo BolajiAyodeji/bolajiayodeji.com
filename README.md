@@ -1,6 +1,6 @@
 # bolajiayodeji.com
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/a596dc79-6e68-4927-8d05-2c32cae50786/deploy-status)](https://app.netlify.com/sites/bolaji-ayodeji/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/a596dc79-6e68-4927-8d05-2c32cae50786/deploy-status)](https://app.netlify.com/sites/bolaji-ayodeji/deploys) <a href="https://patreon.com/bolajiayodeji"><img src="https://img.shields.io/endpoint.svg?url=https://shieldsio-patreon.herokuapp.com/bolajiayodeji&style=for-the-badge" alt="Patreon donate button" /> </a>
 
 My personal PWA blog built with Hugo, JavaScript and Hosted on Netlify ⚡ <br>
 
@@ -43,9 +43,7 @@ git push
 
 ## Author
 
-- [Bolaji Ayodeji](https://www.bolajiayodeji.com)
-
-<a href="https://patreon.com/bolajiayodeji"><img src="https://img.shields.io/endpoint.svg?url=https://shieldsio-patreon.herokuapp.com/bolajiayodeji&style=for-the-badge" alt="Patreon donate button" /> </a>
+[Bolaji Ayodeji](https://www.bolajiayodeji.com)
 
 ## License
 
