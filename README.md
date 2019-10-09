@@ -1,6 +1,6 @@
 <div align="center">
   
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636547/null/about/fav_hpjaud.png)
 
 My personal PWA blog built with Hugo, JavaScript and Hosted on Netlify ⚡ <br>
 
