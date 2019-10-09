@@ -34,9 +34,19 @@ Build files and search index <br>
 npm run build
 ```
 
-## Deploying
+Ship
 ```
 git add --all
 git commit -m "commit description"
 git push
 ```
+
+## Author
+
+- [Bolaji Ayodeji](https://www.bolajiayodeji.com)
+
+<a href="https://patreon.com/bolajiayodeji"><img src="https://img.shields.io/endpoint.svg?url=https://shieldsio-patreon.herokuapp.com/bolajiayodeji&style=for-the-badge" alt="Patreon donate button" /> </a>
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
