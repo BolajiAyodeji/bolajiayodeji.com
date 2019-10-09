@@ -64,14 +64,14 @@ Let's set up and install Node.js and Npm first.
 * Check if you have Node installed
 
 
-```
+```bash
 node -v
 ```
 
 * Node.js comes with Npm, you don't have to install that again.
 
 
-```
+```bash
 npm -v
 ```
 
@@ -81,27 +81,27 @@ Now that we have Node.js setup, let's initialize our project
 * Initialize git
 
 
-```
+```bash
 git init
 ```
 
 * create an `index.js` file
 
 
-```
+```bash
 touch index.js
 ```
 
 * Initialize Npm
 
 
-```
+```bash
 npm init
 ```
 
 Simply answer all questions that come afterwards, if you're having issues, here's my own `package.json`
 
-```
+```json
 {
   "name": "slackbot",
   "version": "1.0.0",
@@ -131,13 +131,13 @@ Simply answer all questions that come afterwards, if you're having issues, here'
 
 [SlackBots.js](https://github.com/mishk0/slack-bot-api) is Node.js library for easy operation with Slack API.
 
-```
+```bash
 npm install slackbots
 ```
 
 In `index.js`
 
-```
+```js
 const SlackBot = require('slackbots');
 ```
 
@@ -145,13 +145,13 @@ const SlackBot = require('slackbots');
 
 [Axios](https://github.com/axios/axios) is a promise based HTTP client for the browser and node.js. If you know Fetch or AJAX, this is just a library that does same with far way cooler features. You can see them [here](https://github.com/axios/axios)
 
-```
+```bash
 npm install axios
 ```
 
 In `index.js`
 
-```
+```js
 const axios = require('axios')
 ```
 
@@ -159,13 +159,13 @@ const axios = require('axios')
 
 To run a script in Node.js, you have to run `node index.js`. Whenever you make changes to this file, you have to rerun `node index.js`, this sucks right when you're making so many changes like we'll be doing. That's why we need [nodemon](https://github.com/remy/nodemon), nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
-```
+```bash
 npm install -g nodemon
 ```
 
 In `package.json`, locate the scripts section and add a new start script
 
-```
+```json
 "scripts": {
     "start": "node index.js"
   }
@@ -173,7 +173,7 @@ In `package.json`, locate the scripts section and add a new start script
 
 If you run `npm start`, the file will run but won't restart on change. To fix this use the nodemon we installed instead of node like so:
 
-```
+```json
 "scripts": {
     "start": "nodemon index.js"
   }
@@ -183,13 +183,13 @@ If you run `npm start`, the file will run but won't restart on change. To fix th
 
 I won't explain this in-depth, in a few days, I'll publish an article around environmental variables, for now just know that we use this to hide secret keys and tokens like the Slack Access Token we would be using. This way you don't have to push your secret keys to GitHub. There are several ways to do this, but I prefer using dotenv, [Dotenv](https://github.com/motdotla/dotenv) is a zero-dependency module that loads environment variables from a .env file into process.env.
 
-```
+```bash
 npm install dotenv
 ```
 
 In `index.js`
 
-```
+```js
 const dotenv = require('dotenv')
 
 dotenv.config()
@@ -197,7 +197,7 @@ dotenv.config()
 
 After all installation, your `package.json` should look like this:
 
-```
+```json
 {
   "name": "inspireNuggetsSlackBot",
   "version": "1.0.0",
@@ -332,7 +332,7 @@ BOT_TOKEN=YOUR_SLACK_ACCESS_TOKEN_HERE
 * Now let's start our SlackBot.js
 
 
-```
+```js
 const bot = new SlackBot({
     token: `${process.env.BOT_TOKEN}`,
     name: 'inspirenuggets'
@@ -348,7 +348,7 @@ We've just created a bot variable that initializes a new SlackBot instance which
 * Now start the app
 
 
-```
+```bash
 npm start
 ```
 
@@ -362,7 +362,7 @@ nodemon should be running now and our Slack app should be online too.
 
 Our Bot does nothing now even though it's running, let's return a message.
 
-```
+```js
 bot.on('start', () => {
     const params = {
         icon_emoji: ':robot_face:'
@@ -386,7 +386,7 @@ bot.on('start', () => {
 Cool right?
 You can also post messages to users and groups.
 
-```
+```js
     // define existing username instead of 'user_name'
     bot.postMessageToUser('user_name', 'Hello world!', params); 
    
@@ -399,7 +399,7 @@ You can also post messages to users and groups.
 
 Let's also write a function to check for errors and return them:
 
-```
+```js
 bot.on('error', (err) => {
     console.log(err);
 })
@@ -415,7 +415,7 @@ Like I said earlier, we'll be using the quotes JSON from the extension I built a
 
 First, let's check for our command words from the user message (**inspire me**, **random joke** and **help**)
 
-```
+```js
 function handleMessage(message) {
     if(message.includes(' inspire me')) {
         inspireMe()
@@ -439,7 +439,7 @@ Now let's create the three function we need
 * [Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.](https://www.bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/)
 
 
-```
+```js
 function inspireMe() {
     axios.get('https://raw.githubusercontent.com/BolajiAyodeji/inspireNuggets/master/src/quotes.json')
       .then(res => {
@@ -464,7 +464,7 @@ function inspireMe() {
 
 We just used Axios to get the JSON file which returns some data:
 
-```
+```js
 [
     {
         "number": "1",
@@ -485,7 +485,7 @@ We just used Axios to get the JSON file which returns some data:
 
 This JSON currently contains 210 quotes and I update them frequently. So we want to get a random quote plus the author name every time the user request for it. From our Axios response, we just do this:
 
-```
+```js
 
 const quotes = res.data;
 const random = Math.floor(Math.random() * quotes.length);
@@ -496,7 +496,7 @@ const author = quotes[random].author
 
 And just like we did with the welcome message, we just return the quote and author instead of a string message:
 
-```
+```js
 `:zap: ${quote} - *${author}*`
 ```
 
@@ -514,7 +514,7 @@ Let's test this
 
 > We're getting the jokes from Chuck Norris API from this endpoint `https://api.chucknorris.io/jokes/random`.
 
-```
+```js
 {
 "categories": [],
 "created_at": "2016-05-01 10:51:41.584544",
@@ -528,7 +528,7 @@ Let's test this
 
 This is a real API that returns a random joke on every request, so we don't have to do `Math.floor()` again.
 
-```
+```js
 function randomJoke() {
     axios.get('https://api.chucknorris.io/jokes/random')
       .then(res => {
@@ -554,7 +554,7 @@ By now, you should understand how this works already, make a post with the chann
 
 This is similar to our welcome message, we just want to return a custom text when the user adds **help** to the request.
 
-```
+```js
 function runHelp() {
     const params = {
         icon_emoji: ':question:'
