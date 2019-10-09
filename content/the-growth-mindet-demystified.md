@@ -1,5 +1,5 @@
 ---
-title: "The GROWTH MINDSET demystified"
+title: "The GROWTH MINDSET Demystified"
 date: 2019-01-21T13:22:14+24:00
 draft: false
 type: "post"

@@ -1,7 +1,5 @@
 ﻿---
-title: "
-
-Introduction to Chrome Lighthouse"
+title: "Introduction to Chrome Lighthouse"
 date: 2019-01-28T15:12:21+24:00
 draft: false
 type: "post"

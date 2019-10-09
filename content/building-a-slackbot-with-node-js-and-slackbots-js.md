@@ -8,13 +8,13 @@ tags:
   - Node.js
   - JavaScript
 ---
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565610388/blog/0004/banner.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636695/null/blog/0004/banner_gjdzno.png)
 
 Slack is an American cloud-based set of proprietary team collaboration software tools and online services, developed by Slack Technologies. Slack is a workspace where teams can communicate and collaborate.
 
 > Teamwork in Slack happens in channels — a single place for messaging, tools and files — helping everyone save time and collaborate.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565594320/blog/0004/organize-conversations-slack-product-desktop.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/01.png)
 
 - - -
 
@@ -38,7 +38,7 @@ When a user mentions our bot and adds **inspire me**, the bot returns a random q
 > @inspirenuggets random joke <br>
 > @inspirenuggets help
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/02.png)
 
 > This article is not really about what we'll be building, it's just to show you the concept behind Slack bots and how to build yours, after now, you can think about something else and build a different bot, there're several possibilities.
 
@@ -236,39 +236,39 @@ Now that you have a workspace, you should have a Slack URL with your workspace n
 
 * Now you'll need to create a Slack App. Create one [here](https://api.slack.com/apps/new)
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600492/blog/0004/capture5.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/03.png)
 
 > Enter your App name and ensure you're in the workspace you created if you're in multiple workspaces.
 
 * Now you'll see the settings > Basic Information page. Click the first tab `Add features and functionality`
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600643/blog/0004/capture6.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/04.png)
 
 Since we're building a bot, select the **Bots** field.
 
 * Now you'll see the Bot user page
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600858/blog/0004/capture7.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/05.png)
 
 Click the `Add a Bot User` button
 
 * Your display name will automatically be filled in from your already chosen App name, you can update but I'll advise you use the same name everywhere with the same alphabet case to avoid errors.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565600959/blog/0004/capture8.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636695/null/blog/0004/06.png)
 
 Now, toggle the `Always Show My Bot as Online` switch to always show your bot as Online, remember this bot is just like a user in your workspace. Afterwards, click the `Add Bot User` button
 
 * Save all changes now
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture9.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/07.png)
 
 * Return to the `Basic Information` page and select the `Install your app to your workspace` tab.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565601161/blog/0004/capture10.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/08.png)
 
 Click the `Install App to Workspace`
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565602315/blog/0004/capture11.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/09.png)
 
 Click allow and wait to be redirected back to the `Basic Information` page.
 
@@ -278,7 +278,7 @@ Click allow and wait to be redirected back to the `Basic Information` page.
 
 > For now, it's offline, once we start building the bot, we'll turn this on.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565603471/blog/0004/capture15.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636697/null/blog/0004/10.png)
 
 # Customize your Slack bot
 
@@ -286,7 +286,7 @@ Now we've created our bot, let's do some customization
 
 * Still, on the `Basic Information` page, scroll down to the `Display Information` section
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565602833/blog/0004/capture12.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/11.png)
 
 This is basic stuff, just upload a logo, change your background color and add a short description
 
@@ -294,7 +294,7 @@ This is basic stuff, just upload a logo, change your background color and add a 
 
 Here's what mine looks like after customization:
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565603043/blog/0004/capture13.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/12.png)
 
 # Slack bot OAuth Tokens
 
@@ -302,7 +302,7 @@ Now we have our Slack bot setup, let's grab out token keys.
 
 * In the navigation bar, locate the Features section and click the `OAuth & Permission` tab
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565604021/blog/0004/capture16.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/13.png)
 
 You'll see two Access Tokens
 
@@ -325,7 +325,7 @@ Now let's build our bot :).
 
 create a `.env` file and add this:
 
-```
+```dotfile
 BOT_TOKEN=YOUR_SLACK_ACCESS_TOKEN_HERE
 ```
 
@@ -354,9 +354,9 @@ npm start
 
 nodemon should be running now and our Slack app should be online too.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture17.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/14.png)
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605176/blog/0004/capture18.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636697/null/blog/0004/15.png)
 
 ### Start handler
 
@@ -381,7 +381,7 @@ bot.on('start', () => {
 > We also initialized the `bot.postMessageToChannel` function which is a SlackBot.js method to post a message to a channel
 > In this function, we pass the channel name we want to post to, the message in a string and the params variable we declared earlier for the emoji. I used the **\#random** channel and sent `Get inspired while working with @inspirenuggets` to it. Your app should restart automatically and your bot should do this:
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565605878/blog/0004/capture19.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/16.png)
 
 Cool right?
 You can also post messages to users and groups.
@@ -464,7 +464,7 @@ function inspireMe() {
 
 We just used Axios to get the JSON file which returns some data:
 
-```js
+```json
 [
     {
         "number": "1",
@@ -504,7 +504,7 @@ Let's test this
 
 > Type `@inspirenuggets inspire me`
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565608562/blog/0004/capture20.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636696/null/blog/0004/17.png)
 
 > Yayyy! It worked!
 >
@@ -514,7 +514,7 @@ Let's test this
 
 > We're getting the jokes from Chuck Norris API from this endpoint `https://api.chucknorris.io/jokes/random`.
 
-```js
+```json
 {
 "categories": [],
 "created_at": "2016-05-01 10:51:41.584544",
@@ -570,7 +570,7 @@ function runHelp() {
 
 Now let's test all three commands:
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1565594124/blog/0004/capture2.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636694/null/blog/0004/02.png)
 
 Everything works fine now, congratulations!!!! you just built your SlackBot.
 
@@ -599,11 +599,9 @@ Our bot only runs in development now, to use it we always have to `npm start`.
 This isn't cool, right? We'll want to host it somewhere it can run every time. In my next article, I'll show you how to host this on either [Heroku](https://herokuapp.com/), [Zeit](https://zeit.co/) or [Netlify](https://netlify.com) and publish it to the Slack Apps store so anyone around the world can use it. 
 Also, don't forget to add this in your `.gitignore` before pushing to GitHub
 
-```
-
+```env
 /.env
 /node_modules
-
 ```
 
 > Subscribe to my [newsletter](https://tinyletter.com/bolajiayodeji/) to get updated.

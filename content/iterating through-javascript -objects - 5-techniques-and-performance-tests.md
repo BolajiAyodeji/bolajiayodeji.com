@@ -1,5 +1,5 @@
 ﻿---
-title: "Iterating through JavaScript Objects  -  5 Techniques and Performance Tests."
+title: "Iterating through JavaScript Objects  -  5 Techniques and Performance Tests"
 date: 2019-03-10T13:22:14+24:00
 draft: false
 type: "post"

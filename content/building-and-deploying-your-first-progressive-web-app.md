@@ -1,5 +1,5 @@
 ﻿---
-title: "Building & Deploying your first Progressive Web App"
+title: "Building & Deploying your First Progressive Web App"
 date: 2019-04-01T13:22:14+24:00
 draft: false
 type: "post"

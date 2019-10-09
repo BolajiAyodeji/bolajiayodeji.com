@@ -6,7 +6,7 @@ googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
 pygmentsUseClassic=true
 
 [params]
-  titleName = "Hi, I'm Bolaji."
+  titleName = "Hi, I'm Bolaji ✨"
   subtitle = "I create contents around web and frontend development."
   about = "About Me →"
   author = "Bolaji Ayodeji"

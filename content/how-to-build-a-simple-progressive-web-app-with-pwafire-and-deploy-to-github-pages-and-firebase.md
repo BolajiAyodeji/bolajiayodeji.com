@@ -1,5 +1,5 @@
 ﻿---
-title: "How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase."
+title: "How to Build a Simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase"
 date: 2018-11-26T13:22:14+24:00
 draft: false
 type: "post"

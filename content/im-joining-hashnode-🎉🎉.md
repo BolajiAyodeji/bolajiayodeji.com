@@ -1,5 +1,5 @@
 ---
-title: "I'm joining Hashnode \U0001F389\U0001F389"
+title: "I'm Joining Hashnode \U0001F389\U0001F389"
 type: post
 date: 2019-07-25T10:21:00.000Z
 tags:
