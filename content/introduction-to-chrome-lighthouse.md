@@ -6,7 +6,6 @@ type: "post"
 tags: ["Chrome", "Lighthouse", "devtools"]
 ---
 
-
 Chrome Lighthouse has been around for a while now, but what if I ask you to
 explain what it does can you explain vividly?
 
@@ -82,9 +81,9 @@ your sites performance, accessibility and user experience.
 
 <br> 
 
-*****
+## Getting Started
 
-Now, let's move to the interesting part, **HOW TO GET STARTED!!**
+Now, let's move to the interesting part.
 
 LightHouse is available in three workflows
 
@@ -105,7 +104,7 @@ Using lighthouse on the command line is really cool also,(For geeks :))
 
 *****
 
-**[1] Run Lighthouse in Chrome DevTools**
+### Run Lighthouse in Chrome DevTools
 
 * Download Google Chrome web browser
 [here](https://www.google.com/chrome/browser/desktop/) 
@@ -118,7 +117,7 @@ Using lighthouse on the command line is really cool also,(For geeks :))
 
 * Open Chrome DevTools
 
-```
+```bash
 Command+Option+C (Mac)
 Control+Shift+C (Windows, Linux, Chrome OS).
 ```
@@ -146,7 +145,7 @@ mode](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop
 
 <br> 
 
-**[2] Run Lighthouse in Command line**
+### Run Lighthouse in Command line**
 
 * Download Google Chrome web browser
 [here](https://www.google.com/chrome/browser/desktop/)
@@ -154,7 +153,7 @@ mode](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop
 skip this step!
 * Install Lighthouse
 
-```
+```bash
 npm install -g lighthouse
 
 # or use yarn:
@@ -178,6 +177,7 @@ The report can be displayed in **HTML** or **JSON** format
 
 Output samples:
 
+```json
     lighthouse
     # saves `./<HOST>_<DATE>.report.html`
     lighthouse --output json
@@ -195,10 +195,11 @@ Output samples:
     # saves `~/mydir/foo-0.trace.json` and `~/mydir/foo-0.devtoolslog.json`
     lighthouse --output-path=./report.json --output json
     # saves `./report.json`
+```
 
 Run `$ lighthouse --help` for CLI options
 
-**[3] Run Lighthouse with the Chrome extension**
+### Run Lighthouse with the Chrome extension**
 
 *As I earlier said, The DevTools workflow is the best as it provides the same
 benefits as the Extension workflow, with the added bonus of no installation
@@ -226,7 +227,7 @@ clicking, the Lighthouse menu expands.
 
 Bingo! You did it
 
-*****
+## Conclusion
 
 That’s pretty much it, Lighthouse is a great tool, especially for beginners.
 

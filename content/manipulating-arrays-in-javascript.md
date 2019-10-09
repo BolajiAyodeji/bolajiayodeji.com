@@ -14,9 +14,8 @@ JavaScript [^^]
 
 ![](https://cdn-images-1.medium.com/max/880/1*EK3RyHqvMS-ZIy9UyNMxTA.png)
 
-*****
 
-### What are Arrays in JavaScript?
+## What are Arrays in JavaScript?
 
 Before we proceed, you need to understand what arrays really mean.
 
@@ -26,13 +25,17 @@ assesssed with the variable.
 
 Declaring an array:
 
-    let myBox = [];   // Initial Array declaration in JS
+```js
+ let myBox = [];   // Initial Array declaration in JS
+```
 
 Arrays can contain multiple data types
 
-    let myBox = ['hello', 1, 2, 3, true, 'hi'];
+```js
+ let myBox = ['hello', 1, 2, 3, true, 'hi'];
+```
 
-*****
+----
 
 Arrays can be manipulated by using several actions known as **methods.** Some of
 these methods allow us to add, remove, modify and do lots more to arrays.
@@ -44,16 +47,17 @@ I would be showing you a few in this article, let’s roll :)
 [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 Arrow function is an **ES6 feature**.
 
-*****
 
 ### toString()
 
 The JavaScript method `toString()` converts an array to a string separated by a
 comma.
 
-    let colors = ['green', 'yellow', 'blue'];
+```js
+ let colors = ['green', 'yellow', 'blue'];
  
-    console.log(colors.toString()); // green,yellow,blue
+ console.log(colors.toString()); // green,yellow,blue
+```
 
 ### join()
 
@@ -62,60 +66,72 @@ The JavaScript `join()` method combines all array elements into a string.
 It is similar to `toString()` method, but here you can specify the separator
 instead of the default comma.
 
-    let colors = ['green', 'yellow', 'blue'];
+```js
+ let colors = ['green', 'yellow', 'blue'];
 
-    console.log(colors.join('-')); // green-yellow-blue
+ console.log(colors.join('-')); // green-yellow-blue
+```
 
 ### concat
 
 This method combines two arrays together or add more items to an array and then
 return a new array.
 
-    let firstNumbers = [1, 2, 3];
-    let secondNumbers = [4, 5, 6];
+```js
+ let firstNumbers = [1, 2, 3];
+ let secondNumbers = [4, 5, 6];
 
-    let merged = firstNumbers.concat(secondNumbers);
+ let merged = firstNumbers.concat(secondNumbers);
 
-    console.log(merged); // [1, 2, 3, 4, 5, 6]
+ console.log(merged); // [1, 2, 3, 4, 5, 6]
+```
 
 ### push()
 
 This method adds items to the end of an array and **changes** the original
 array.
 
-    let browsers = ['chrome', 'firefox', 'edge'];
-    browsers.push('safari', 'opera mini');
+```js
+ let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.push('safari', 'opera mini');
 
-    console.log(browsers); 
-    // ["chrome", "firefox", "edge", "safari", "opera mini"]
+ console.log(browsers); 
+ // ["chrome", "firefox", "edge", "safari", "opera mini"]
+```
 
 ### pop()
 
 This method removes the last item of an array and **returns** it
 
-    let browsers = ['chrome', 'firefox', 'edge'];
-    browsers.pop(); // "edge"
+```js
+ let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.pop(); // "edge"
 
-    console.log(browsers); // ["chrome", "firefox"]
+ console.log(browsers); // ["chrome", "firefox"]
+```
 
 ### shift()
 
 This method removes the first item of an array and **returns** it
 
-    let browsers = ['chrome', 'firefox', 'edge'];
-    browsers.shift(); // "chrome"
+```js
+ let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.shift(); // "chrome"
 
-    console.log(browsers); // ["firefox", "edge"]
+ console.log(browsers); // ["firefox", "edge"]
+```
 
 ### unshift()
 
 This method adds an item(s) to the beginning of an array and **changes** the
 original array.
 
-    let browsers = ['chrome', 'firefox', 'edge'];
-    browsers.unshift('safari');
+```js
+ let browsers = ['chrome', 'firefox', 'edge'];
+ browsers.unshift('safari');
 
-    console.log(browsers); //  ["safari", "chrome", "firefox", "edge"]
+ console.log(browsers); //  ["safari", "chrome", "firefox", "edge"]
+```
 
 > You can also add multiple items at once
 
@@ -125,7 +141,8 @@ This method **changes** an array, by adding, removing and inserting
 elements.
 
 The syntax is:
-```
+
+```js
 array.splice(index[, deleteCount, element1, ..., elementN])
 ```
 
@@ -149,35 +166,35 @@ array.splice(index[, deleteCount, element1, ..., elementN])
 If the second parameter is not declared, every element starting from the given
 index will be removed from the array:
 
-    let colors = ['green', 'yellow', 'blue', 'purple'];
-    colors.splice(3);
-    console.log(colors); // ["green", "yellow", "blue"]
-    // deletes ['purple']
+```js
+ let colors = ['green', 'yellow', 'blue', 'purple'];
+ colors.splice(3);
+ console.log(colors); // ["green", "yellow", "blue"]
+ // deletes ['purple']
+```
 
 In the next example we will remove 3 elements from the array and replace them
 with more items:
 
+```js
+ let schedule = ['I', 'have', 'a', 'meeting', 'tommorrow'];
+ // removes 4 first elements and replace them with another
+ schedule.splice(0, 4, 'we', 'are', 'going', 'to', 'swim');
+ console.log(schedule); 
+ // ["we", "are", "going", "to", "swim", "tommorrow"]
 ```
-let schedule = ['I', 'have', 'a', 'meeting', 'tommorrow'];
-// removes 4 first elements and replace them with another
-schedule.splice(0, 4, 'we', 'are', 'going', 'to', 'swim');
-console.log(schedule); 
-// ["we", "are", "going", "to", "swim", "tommorrow"]
-```
-
 
 **Adding items**
 
 To add items, we need to set the `deleteCount` to zero
-```
-let schedule = ['I', 'have', 'a', 'meeting', 'with'];
-// adds 3 new elements to the array
-schedule.splice(5, 0, 'some', 'clients', 'tommorrow');
-console.log(schedule); 
-// ["I", "have", "a", "meeting", "with", "some", "clients", "tommorrow"]
-```
 
-
+```js
+ let schedule = ['I', 'have', 'a', 'meeting', 'with'];
+ // adds 3 new elements to the array
+ schedule.splice(5, 0, 'some', 'clients', 'tommorrow');
+ console.log(schedule); 
+ // ["I", "have", "a", "meeting", "with", "some", "clients", "tommorrow"]
+```
 
 ### slice()
 
@@ -188,24 +205,28 @@ This method **copies** a given part of an array and returns that copied part as
 a new array. **It does not change the original array.**
 
 The syntax is:
-```
+
+```js
 array.slice(start, end)
 ```
 
-
 Here’s a basic example:
 
-    let numbers = [1, 2, 3, 4]
-    numbers.slice(0, 3)
-    // returns [1, 2, 3]
+```js
+ let numbers = [1, 2, 3, 4]
+ numbers.slice(0, 3)
+ // returns [1, 2, 3]
 
-    console.log(numbers) // returns the original array
+ console.log(numbers) // returns the original array
+```
 
 The best way to use `slice()` is to assign it to a new variable.
 
-    let message = 'congratulations'
-    const abbrv = message.slice(0, 7) + 's!'; 
-    console.log(abbrv) // returns "congrats!"
+```js
+ let message = 'congratulations'
+ const abbrv = message.slice(0, 7) + 's!'; 
+ console.log(abbrv) // returns "congrats!"
+```
 
 ### split()
 
@@ -214,45 +235,55 @@ returns them as an array.
 
 Here’s the syntax:
 
-    string.split(separator, limit);
+```js
+ string.split(separator, limit);
+```
 
 * The `separator` here defines how to split a string either by a comma.
 * The `limit` determines the number of splits to be carried out
     
-```
-let firstName = 'Bolaji';
-// return the string as an array
-firstName.split() // ["Bolaji"]
+```js
+ let firstName = 'Bolaji';
+ // return the string as an array
+ firstName.split() // ["Bolaji"]
 ```
 
 another example:
 
-    let firstName = 'hello, my name is bolaji, I am a dev.';
-    firstName.split(',', 2); // ["hello", " my name is bolaji"]
+```js
+ let firstName = 'hello, my name is bolaji, I am a dev.';
+ firstName.split(',', 2); // ["hello", " my name is bolaji"]
+```
 
 > **NB:** If we declare an empty array, like this: *`firstName.split('');`* then
 > each item in the string will be divided as substrings:
 
-    let firstName = 'Bolaji';
-    firstName.split('') // ["B", "o", "l", "a", "j", "i"]
+```js
+ let firstName = 'Bolaji';
+ firstName.split('') // ["B", "o", "l", "a", "j", "i"]
+```
 
 ### indexOf()
 
 This method looks for an item in an array and returns **the index** where it was
 found else it returns `-1`
 
-    let fruits = ['apple', 'orange', false, 3]
-    fruits.indexOf('orange'); // returns 1
-    fruits.indexOf(3); // returns 3
-    friuts.indexOf(null); // returns -1 (not found)
+```js
+ let fruits = ['apple', 'orange', false, 3]
+ fruits.indexOf('orange'); // returns 1
+ fruits.indexOf(3); // returns 3
+ friuts.indexOf(null); // returns -1 (not found)
+```
 
 ### lastIndexOf()
 
 This method works the same way **indexOf()** does except that it works from
 right to left. It returns the last index where the item was found
 
-    let fruits = ['apple', 'orange', false, 3, 'apple']
-    fruits.lastIndexOf('apple'); // returns 4
+```js
+ let fruits = ['apple', 'orange', false, 3, 'apple']
+ fruits.lastIndexOf('apple'); // returns 4
+```
 
 ### filter()
 
@@ -260,20 +291,21 @@ This method creates a new array if the items of an array pass a certain
 condition.
 
 The syntax is:
-```
-let results = array.filter(function(item, index, array) {
-  // returns true if the item passes the filter
+
+```js
+ let results = array.filter(function(item, index, array) {
+ // returns true if the item passes the filter
 });
 ```
-
 
 Example:
 
 Checks users from Nigeria
-```
-const countryCode = ['+234', '+144', '+233', '+234'];
-const nigerian = countryCode.filter( code => code === '+234');
-console.log(nigerian); // ["+234", "+234"]
+
+```js
+ const countryCode = ['+234', '+144', '+233', '+234'];
+ const nigerian = countryCode.filter( code => code === '+234');
+ console.log(nigerian); // ["+234", "+234"]
 ```
 
 ### map()
@@ -284,23 +316,26 @@ Example:
 
 Displays usernames on a page. (Basic friend list display)
 
-    const userNames = ['tina', 'danny', 'mark', 'bolaji'];
-    const display = userNames.map(item => {
-     '<li>' + item + '</li>';
-    })
-    const render = '<ul>' + display.join('') + '</ul>';
+```js
+ const userNames = ['tina', 'danny', 'mark', 'bolaji'];
+ const display = userNames.map(item => {
+    '<li>' + item + '</li>';
+})
+ const render = '<ul>' + display.join('') + '</ul>';
 
-    document.write(render);
+ document.write(render);
+```    
 
 ![](https://cdn-images-1.medium.com/max/880/1*obuBZKFb5vKmUP7D4TX2XA.png)
 
 another example:
-```
-// adds dollar sign to numbers
-const numbers = [10, 3, 4, 6];
-const dollars = numbers.map( number => '$' + number);
-console.log(dollars);
-// ['$10', '$3', '$4', '$6'];
+
+```js
+ // adds dollar sign to numbers
+ const numbers = [10, 3, 4, 6];
+ const dollars = numbers.map( number => '$' + number);
+ console.log(dollars);
+ // ['$10', '$3', '$4', '$6'];
 ```
 
 ### reduce()
@@ -310,8 +345,9 @@ This method is good for calculating totals.
 **reduce()** is used to calculate a single value based on an array.
 
 The syntax is:
-```
-let value = array.reduce(function(previousValue, item, index, array) {
+
+```js
+ let value = array.reduce(function(previousValue, item, index, array) {
   // ...
 }, initial);
 ```
@@ -321,31 +357,35 @@ example:
 > To loop through an array and sum all numbers in the array up, we can use the for
 > of loop.
 
-```
-const numbers = [100, 300, 500, 70];
-let sum = 0;
-for (let n of numbers) {
-sum += n;
+```js
+ const numbers = [100, 300, 500, 70];
+ let sum = 0;
+ for (let n of numbers) {
+ sum += n;
 }
-console.log(sum);
+ console.log(sum);
 ```
 
 Here’s how to do same with `reduce()`
 
-    const numbers = [100, 300, 500, 70];
-    const sum = numbers.reduce((accummulator, value) =>
-    accummulator + value
-    , 0);
+```js
+ const numbers = [100, 300, 500, 70];
+ const sum = numbers.reduce((accummulator, value) =>
+ accummulator + value
+ , 0);
 
-    console.log(sum); // 970
+ console.log(sum); // 970
+```
 
 > If you omit the initial value, the *total* will by default start from the first
 > item in the array.
 
-    const numbers = [100, 300, 500, 70];
-    const sum = numbers.reduce((accummulator, value) => accummulator + value);
+```js
+ const numbers = [100, 300, 500, 70];
+ const sum = numbers.reduce((accummulator, value) => accummulator + value);
 
-    console.log(sum); // still returns 970
+ console.log(sum); // still returns 970
+```
 
 The snippet below shows how the **reduce()** method works with all four
 arguments.
@@ -364,23 +404,27 @@ This method is good for iterating through an array.
 
 It applies a function on all items in an array
 
-    const colors = ['green', 'yellow', 'blue'];
+```js
+ const colors = ['green', 'yellow', 'blue'];
 
-    colors.forEach((item, index) => console.log(index, item));
-    // returns the index and the every item in the array
-    // 0 "green"
-    // 1 "yellow"
-    // 2 "blue"
+ colors.forEach((item, index) => console.log(index, item));
+ // returns the index and the every item in the array
+ // 0 "green"
+ // 1 "yellow"
+ // 2 "blue"
+```
 
 iteration can be done without passing the index argument
 
-    const colors = ['green', 'yellow', 'blue'];
+```js
+ const colors = ['green', 'yellow', 'blue'];
 
-    colors.forEach((item) => console.log(item));
-    // returns every item in the array
-    // "green"
-    // "yellow"
-    // "blue"
+ colors.forEach((item) => console.log(item));
+ // returns every item in the array
+ // "green"
+ // "yellow"
+ // "blue"
+```
 
 ### every()
 
@@ -389,26 +433,30 @@ return `true` if passed, else `false`.
 
 > check if all numbers are positive
 
-    const numbers = [1, -1, 2, 3];
-    let allPositive = numbers.every((value) => {
-     value >= 0;
-    })
+```js
+ const numbers = [1, -1, 2, 3];
+ let allPositive = numbers.every((value) => {
+ value >= 0;
+})
 
-    console.log(allPositive); 
+ console.log(allPositive); 
+```
 
 ### some()
 
 This method checks if an item (one or more) in an array pass the specified
 condition and return true if passed, else false.
 
-> c*hecks if at least one number is positive*
+> checks if at least one number is positive
 
-    const numbers = [1, -1, 2, 3];
+```js
+ const numbers = [1, -1, 2, 3];
 
-    let atLeastOnePositive = numbers.some((value) => {
-     value >= 0;
-    })
-    console.log(atLeastOnePositive); 
+ let atLeastOnePositive = numbers.some((value) => {
+ value >= 0;
+})
+ console.log(atLeastOnePositive); 
+```
 
 ### includes()
 
@@ -416,12 +464,14 @@ This method checks if an array contains a certain item. It is similar to
 `.some()`, but instead of looking for a specific condition to pass, it checks if
 the array contains a specific item.
 
-    let users = ['paddy', 'zaddy', 'faddy', 'baddy'];
-    users.includes('baddy'); // returns true
+```js
+ let users = ['paddy', 'zaddy', 'faddy', 'baddy'];
+ users.includes('baddy'); // returns true
+```
 
 If the item is not found, it returns `false`
 
-*****
+----
 
 There are more array methods, this is just a few of them. Also, there are tons
 of other actions that can be performed on arrays, try checking MDN docs
@@ -460,7 +510,7 @@ return true if passed, else false.
 condition and return true if passed, else false.
 * **includes()** checks if an array contains a certain item.
 
-*****
+----
 
 Let’s wrap it here; Arrays are powerful and using methods to manipulate them
 creates the Algorithms real-world applications use.
@@ -476,16 +526,17 @@ turned to lowercase and each word in the title separated by a hyphen.
 
 Here’s a basic function that does that using some of the methods we learnt just
 now.
-```
-const url = 'https://bolajiayodeji.com/'
-const urlSlug = (postTitle, category) => {
-let postUrl = postTitle.toLowerCase().split(' ');
-let postSlug = `${url}` + category + '/' + postUrl.join('-');
-return postSlug;
+
+```js
+ const url = 'https://bolajiayodeji.com/'
+ const urlSlug = (postTitle, category) => {
+ let postUrl = postTitle.toLowerCase().split(' ');
+ let postSlug = `${url}` + category + '/' + postUrl.join('-');
+ return postSlug;
 }
-let postTitle = 'Introduction to Chrome Lighthouse'
-let category = 'dt'
-console.log(urlSlug(postTitle, category));
+ let postTitle = 'Introduction to Chrome Lighthouse'
+ let category = 'dt'
+ console.log(urlSlug(postTitle, category));
 
 // https://bolajiayodeji.com/dt/introduction-to-chrome-lighthouse
 ```

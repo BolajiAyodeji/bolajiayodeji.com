@@ -25,7 +25,7 @@ In this article I would:
 
 Let’s Roll!
 
-*****
+----
 
 You might have noticed this section at the top of your GitHub repositories that
 gives you an overview of languages contained in the repository
@@ -37,7 +37,7 @@ library](https://github.com/github/linguist) to determine file languages for
 syntax highlighting and repository statistics. Language statistics will update
 after you push changes to your default branch (which is usually `master`).
 
-### What is GitHub Linguist?
+## What is GitHub Linguist?
 
 > GitHub Linguist is a library is used on GitHub.com to detect blob languages,
 > ignore binary or vendored files, suppress generated files in diffs, and generate
@@ -46,7 +46,7 @@ language breakdown graphs. Source: GitHub Linguist Docs
 Basically, Linguist is a library that runs on every GitHub repository. It checks
 every file and directory and detects the programming language used in that file.
 
-### How does Linguist work?
+## How does Linguist work?
 
 Linguist takes the list of languages it knows from `languages.yml` and uses a
 number of methods to try and determine the language used by each file, and the
@@ -63,13 +63,13 @@ percentages are calculated based on the bytes of code for each language as
 reported by the [List
 Languages](https://developer.github.com/v3/repos/#list-languages) API.
 
-### How to fix common Linguist issues
+## How to fix common Linguist issues
 
 Some files are hard to identify, and sometimes projects contain more library and
 vendor files than their primary code. If you’re receiving incorrect language
 analysis, then read below for common Linguist issues and how to fix them.
 
-#### * My repository isn’t showing my language. :(
+### My repository isn’t showing my language. :(
 
 Linguist does not consider [vendored
 code](https://github.com/github/linguist#vendored-code), [generated
@@ -100,7 +100,7 @@ extension.
 > You can also to tell Linguist to include your files in the language statistics
 > by overidding it. (I’d explain how in a bit, read along)
 
-#### * My repository is detected as a wrong language. ಠ_ಠ
+### My repository is detected as a wrong language. ಠ_ಠ
 
 If the language stats bar is reporting a language that you don’t expect:
 
@@ -128,7 +128,7 @@ another change will correct the stats.
 > A great way to fix this is using the manual override feature to correctly
 > classify languages in your repository.
 
-### How to use gitattributes to overriding Linguist
+## How to use gitattributes to overriding Linguist
 
 Just as you can customize an override the default configurations of a gaming
 control pad, you can also use custom override strategies for language
@@ -137,11 +137,11 @@ definitions and file paths in Linguist.
 Basically, gitattributes is just a file used to command or tell Git to perform
 some specific tasks, sort of a way to tweaking it.
 
-#### **Here’s how to use the Linguist override feature**
+## How to use the Linguist override feature
 
 * Add a `.gitattributes` file to the root of your project
 
-```
+```bash
 touch .gitattributes
 ```
 
@@ -192,7 +192,7 @@ them not to be included in the language statistics.
      *.sch linguist-detectable=true
      tools/export_bom.py linguist-detectable=false
 
-### Using Emacs or Vim modelines
+## Using Emacs or Vim modelines
 
 If you do not want to use `.gitattributes` to override the syntax highlighting
 used on GitHub.com, you can use Vim or Emacs style modelines to set the language
@@ -200,7 +200,7 @@ for a single file. Modelines can be placed anywhere within a file and are
 respected when determining how to syntax-highlight a file on GitHub.com
 
 Vim
-```
+```vim
 # Some examples of various styles:
 
  vim: syntax=java
@@ -214,14 +214,14 @@ Vim
 
 
 Emacs
-```
+```emacs
 -*- mode: php; -*-
 
  -*- c++ -*-
 ```
 
 
-### How to contribute to GitHub Linguist
+## How to contribute to GitHub Linguist
 
 If you experience any issue with Linguist, a quick way to get help is by
 contributing via [Pull Requests](https://github.com/github/linguist/pulls) or
@@ -233,11 +233,11 @@ GitHub Linguist is an Open sourced library and can be found
 The contribution guide can also be found
 [here](https://github.com/github/linguist/blob/master/CONTRIBUTING.md)
 
-### Reference
+## Reference
 
 [GitHub Linguist docs](https://github.com/github/linguist)
 
-### Conclusion
+## Conclusion
 
 Linguist defines the list of all languages known to GitHub in a [yaml
 file](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).

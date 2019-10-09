@@ -21,7 +21,7 @@ Control Best Practice**s.
 
 Let’s get started :)
 
-### Cheat Sheet Contents
+## Cheat Sheet Contents
 
 * Git Basics
 * Reverting Changes
@@ -49,7 +49,7 @@ Here’s the cheat sheet. You can also find it
 
 <br>
 
-### Version Control Best Practises
+## Version Control Best Practices
 
 * Commit Related Changes
 * Don’t commit an unfinished work
@@ -63,7 +63,7 @@ made that commit
 * Always pull before you push
 * Fix merge conflicts as soon as possible
 
-### Conclusion
+## Conclusion
 
 Git is a tricky tool to get your head around. Knowing the commands is one thing,
 but knowing how and when to use them is another. This cheat-sheet would come in
@@ -71,7 +71,7 @@ handy whenever you forget any command.
 
 Do share with your friends also, :)
 
-### Reference
+## Reference
 
 [https://git-scm.com/](https://git-scm.com/)
 

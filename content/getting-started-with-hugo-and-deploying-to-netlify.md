@@ -5,7 +5,7 @@ title: "Getting Started With Hugo and Deploying to Netlify"
 date: 2019-03-18T13:50:26+01:00
 draft: false
 type: "post"
-tags: ["hugo", "go", "netlify"]
+tags: ["hugo", "JAMstack", "netlify"]
 ---
 
 
@@ -37,9 +37,9 @@ runtimes like Ruby, Python, or PHP.
 In this tutorial, I’d show you how to build your first Hugo site and deploy to
 Netlify. Let’s roll :)
 
-*****
+----
 
-### Hugo Features
+## Hugo Features
 
 * Hugo is the fastest tool of its kind. At <1 ms per page, the average site builds
 in less than a second.
@@ -56,9 +56,9 @@ AMP and makes it easy to create your own.
 
 All features can be found [here](https://gohugo.io/about/features/)
 
-*****
+----
 
-### Getting Started
+## Getting Started
 
 For this tutorial, we’re going to build a Simple Blog with Hugo.
 
@@ -70,12 +70,12 @@ I’ve also created a repository with starter files which can be found
 get Hugo running on your machine and fork the starter files. Ensure you follow
 the steps.
 
-#### Prerequisites
+## Prerequisites
 
 * Git
 * Code Explorer
 
-#### Steps
+## Steps
 
 * Install Hugo
 * Fork the starter repository
@@ -83,7 +83,7 @@ the steps.
 * Create a new site
 * Deploy to Netlify
 
-#### Installation guide
+## Installation guide
 
 To start using Hugo, you need to first install it.
 
@@ -98,7 +98,7 @@ Hugo currently provides pre-built binaries for the following:
 * OpenBSD
 * FreeBSD
 
-#### Installing on Mac
+### Installing on Mac
 
 Follow the video below to install Hugo on your macOS or read the [Installation
 guide](https://gohugo.io/getting-started/installing#macos). There are several
@@ -107,7 +107,7 @@ I’m using a windows machine so I possibly don't know how to guide you :)
 
 {{< youtube WvhCGlLcrF8 >}}
 
-#### Installing on Windows
+### Installing on Windows
 
 Follow the video below to install Hugo on your windows machine or read the
 [Installation guide](https://gohugo.io/getting-started/installing#windows). This
@@ -116,42 +116,50 @@ know in comments.
 
 {{< youtube G7umPCU-8xc >}}
 
-#### Installing on Linux
+### Installing on Linux
 
 * [Using Snaps](https://docs.snapcraft.io/installing-snapd/6735)
 
 To install the “extended” Sass/SCSS:
 
-    snap install hugo --channel=extended
+```bash
+ snap install hugo --channel=extended
+```
 
 To install the non-extended version without Sass/SCSS support:
 
-    snap install hugo
+```bash
+ snap install hugo
+```
 
 * Using the [Debian Package](https://packages.debian.org/search?keywords=hugo) for
 Ubuntu.
 
 This installs the “extended” Sass/SCSS version.
 
-    sudo apt-get install hugo
+```bash
+ sudo apt-get install hugo
+```
 
 * For Arch Linux
 
-```
-sudo pacman -Syu hugo
+```bash
+ sudo pacman -Syu hugo
 ```
 
 * For Fedora, Red Hat and CentOS
 
+```bash
+ sudo dnf install hugo
 ```
-sudo dnf install hugo
+
+### Installing on OpenBSD
+
+```bash
+ doas pkg_add hugo
 ```
 
-#### Installing on OpenBSD
-
-    doas pkg_add hugo
-
-### Creating a new site
+## Creating a new site
 
 You can simply fork the starter repository. It contains the finished work with
 Theme and custom posts. Creating a site with Hugo is quite simple, just follow
@@ -159,8 +167,8 @@ the following steps.
 
 * Create a new site with name `Hugo101`
 
-```
-hugo new site Hugo101
+```bash
+ hugo new site Hugo101
 ```
 
 Now you should have a new folder `Hugo101` with subfolders:
@@ -195,16 +203,16 @@ very simple, you just need to find the theme you like and download it into the
 
 * After installing the theme or cloning the starter file, start the Hugo server
 
-```
-hugo server -D
+```bash
+ hugo server -D
 ```
 
 Now your new site should be available at **[localhost:1313](http://localhost:1313/).**
 
 * To add a new post
 
-```
-hugo new post/my-first-post.md
+```bash
+ hugo new post/my-first-post.md
 ```
 
 This would be added in `/contents/post`
@@ -212,7 +220,7 @@ This would be added in `/contents/post`
 * Some posts parameters would be added at the top of the file. I’ve added some
 additional parameters you might need.
 
-```
+```markdown
    ---
     title: "my first post"
     date: 2018-11-05T13:22:14+24:00
@@ -224,8 +232,8 @@ additional parameters you might need.
 
 * To build files, run
 
-```
-hugo
+```bash
+ hugo
 ```
 Now your directory would have a new subfolder `public` , this is the final
 build. *Hugo takes a source directory of files and templates and uses these as
@@ -253,10 +261,13 @@ that, we need to configure Hugo for Netlify.
 Create a new file in the root of your project, If you’re using the starter file,
 I’ve added this already.
 
-    touch netlify.toml
+```bash
+ touch netlify.toml
+```
 
 Paste this in it: (This is just configuring how Hugo should work with Netlify)
 
+```toml
     [build]
     publish = "public"
     command = "hugo --gc --minify"
@@ -287,8 +298,9 @@ Paste this in it: (This is just configuring how Hugo should work with Netlify)
 
     [context.next.environment]
     HUGO_ENABLEGITINFO = "true"
+```
 
-### Deploying to Netlify
+## Deploying to Netlify
 
 [Netlify](https://www.netlify.com/) is an all-in-one workflow that combines
 global deployment, continuous integration, automatic HTTPS and many other
@@ -298,31 +310,31 @@ Ensure you have a forked version of the [starter
 files](https://github.com/BolajiAyodeji/hugo101) or a version of your own
 project hosted on GitHub
 
-#### **Create a Netlify account**
+### **Create a Netlify account**
 
 Visit [app.netlify.com](https://app.netlify.com/) and select your preferred
 signup method.
 
 ![](https://cdn-images-1.medium.com/max/800/0*Io0Yvvzt0avlMLJt.jpg)
 
-#### **Create a New Site with Continuous Deployment**
+### **Create a New Site with Continuous Deployment**
 
 Select the “New site from git.” button
 
 ![](https://cdn-images-1.medium.com/max/800/0*vFXRkn0f-D22wQdP.jpg)
 
-#### **Select your git provider**
+### **Select your git provider**
 
 ![](https://cdn-images-1.medium.com/max/800/1*wVPVKGmAZgI0dJanJ6XDNw.png)
 
-#### **Select the repository you want to use for continuous deployment.**
+### **Select the repository you want to use for continuous deployment.**
 
 For this tutorial, I assume its `Hugo101`, else you can filter through your
 repositories in real time.
 
 ![](https://cdn-images-1.medium.com/max/800/1*eLqmQvQ-EO_gdgSdlu3jjQ.png)
 
-#### **Deploy settings**
+### **Deploy settings**
 
 Here you select the branch you wanted published, your [build
 command](https://gohugo.io/getting-started/usage/#the-hugo-command), and your
@@ -331,7 +343,7 @@ following steps assume you are publishing from the `master` branch.
 
 ![](https://cdn-images-1.medium.com/max/800/1*eS_547o7sh8vVqiHAopqNw.png)
 
-#### Build and Deploy Site
+### Build and Deploy Site
 
 In the Netlify console, select “Deploy site” and wait for it to build
 
@@ -346,7 +358,7 @@ Now every time you push changes to your hosted git repository, Netlify will
 rebuild and redeploy your site. You can add your own changes to the starter
 files and tweak as you wish.
 
-### Conclusion
+## Conclusion
 
 Hugo is the world’s fastest framework for building websites. It is one of the
 most popular open-source static site generators. With its amazing speed and
@@ -371,7 +383,7 @@ Netlify](https://www.netlify.com/docs/custom-domains/)
 * [How Netlify handles Hugo
 versions](https://www.netlify.com/blog/2017/04/11/netlify-plus-hugo-0.20-and-beyond/)
 
-### Credits
+## Credits
 
 * [Hugo Docs](https://gohugo.io/documentation/)
 * [Mike Dane Youtube
