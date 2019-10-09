@@ -1,14 +1,11 @@
-<div align="center">
-  
-![](https://res.cloudinary.com/bolaji/image/upload/v1570636547/null/about/fav_hpjaud.png)
+# bolajiayodeji.com
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/a596dc79-6e68-4927-8d05-2c32cae50786/deploy-status)](https://app.netlify.com/sites/bolaji-ayodeji/deploys)
 
 My personal PWA blog built with Hugo, JavaScript and Hosted on Netlify ⚡ <br>
 
 Syntax theme based on [Hugo Lamp Theme](https://github.com/huyb1991/hugo-lamp) with tons of tweaks & modifications.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a596dc79-6e68-4927-8d05-2c32cae50786/deploy-status)](https://app.netlify.com/sites/bolaji-ayodeji/deploys)
-
-</div>
 
 ## Contributing Guide
 
