@@ -140,7 +140,7 @@ I'll show you two ways to do this:
 
 > This is done via the Heroku CLI.
 
-##### **☑️ Checklist**
+##### ☑️ Checklist
 
 * Specify the version of Node.js that will be used to run your application on Heroku in your `package.json` file.
 
@@ -178,7 +178,7 @@ heroku local web
 /*.env
 ```
 
-##### **🚀 Let's Deploy**
+##### 🚀 Let's Deploy
 
 How this works is, you have the project working on local already and you've pushed to GitHub already.
 
@@ -214,12 +214,12 @@ heroku logs --tail
 
 > You can configure GitHub integration in the Deploy tab of apps in the [Heroku Dashboard](https://dashboard.heroku.com).
 
-##### **☑️ Checklist**
+##### ☑️ Checklist
 
 * All previous checklists apply here
 * Ensure you have the app deployed to GitHub already
 
-##### **🚀 Let's Deploy**
+##### 🚀 Let's Deploy
 
 How this method work is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHub to Heroku. Pretty cool right?
 
