@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>How to deploy a Node Application and Database to Heroku</title>
+      <title>How to Deploy a Node Application and Database to Heroku</title>
       <link>https://bolajiayodeji.com/how-to-deploy-a-node-application-to-heroku/</link>
       <pubDate>Mon, 26 Aug 2019 06:52:24 +0000</pubDate>
       
@@ -34,7 +34,7 @@ Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and
     </item>
     
     <item>
-      <title>I&#39;m joining Hashnode 🎉🎉</title>
+      <title>I&#39;m Joining Hashnode 🎉🎉</title>
       <link>https://bolajiayodeji.com/im-joining-hashnode-/</link>
       <pubDate>Thu, 25 Jul 2019 10:21:00 +0000</pubDate>
       
@@ -46,7 +46,7 @@ At Hashnode, we focus more on inclusion, compassion and collaboration and our mi
     </item>
     
     <item>
-      <title>How to fix Git always asking for user credentials</title>
+      <title>How to Fix Git Always Asking for User Credentials</title>
       <link>https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/</link>
       <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
       
@@ -56,7 +56,7 @@ The https:// clone URLs are available on all public and private repositories. Th
     </item>
     
     <item>
-      <title>Git first time setup</title>
+      <title>Git First Time Setup</title>
       <link>https://bolajiayodeji.com/setting-up-git-first-time/</link>
       <pubDate>Sun, 21 Jul 2019 12:24:04 +0000</pubDate>
       
@@ -67,7 +67,7 @@ Unlike older centralized version control systems such as SVN and CVS, Git is dis
     </item>
     
     <item>
-      <title>How to compile your C&#43;&#43; code in Visual Studio Code</title>
+      <title>How to Compile your C&#43;&#43; Code in Visual Studio Code</title>
       <link>https://bolajiayodeji.com/how-to-compile-your-c-code-in-visual-studio-code/</link>
       <pubDate>Sun, 07 Jul 2019 08:03:28 +0000</pubDate>
       
@@ -76,7 +76,7 @@ Unlike older centralized version control systems such as SVN and CVS, Git is dis
 In simple terms, C++ is a sophisticated, efficient and general-purpose programming language based on C.
 It was developed by Bjarne Stroustrup in 1979.
 One of C++&amp;rsquo;s main feature is the compiler. This is used to compile and run C++ code.
-  A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.</description>
+ A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or &amp;ldquo;code&amp;rdquo; that a computer&amp;rsquo;s processor uses.</description>
     </item>
     
     <item>
@@ -120,7 +120,7 @@ Over the years, Google has created a healthy ecosystem for the sustainability of
       <guid>https://bolajiayodeji.com/object.freeze-vs-const/</guid>
       <description>ES6 has brought several new features and methods into JavaScript since its release. These features have better improved our workflow and productivity as JavaScript developers. Amongst these new features are Object.freeze() method and const .
 It is argued among a few developers especially newbies that these two feature works the same way, but NO it doesn’t. Object.freeze() and const work differently. Let me show you how!
-const and Object.freeze() are totally different.</description>
+const and Object.freeze() const and Object.</description>
     </item>
     
     <item>
@@ -134,13 +134,13 @@ Many developers have only a little or blurred understanding of what accessibilit
     </item>
     
     <item>
-      <title>Building &amp; Deploying your first Progressive Web App</title>
+      <title>Building &amp; Deploying your First Progressive Web App</title>
       <link>https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/</link>
       <pubDate>Mon, 01 Apr 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/</guid>
       <description>Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let&amp;rsquo;s roll :)
-TABLE OF CONTENTS  Introduction Starter files App description Building the UI Add JavaScript Functionality Build the Progressive Web App Deploy to Netlify Conclusion  INTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications.</description>
+INTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications. Progressive Web Applications are experiences that combine the best of web applications features and the best of mobile applications features.</description>
     </item>
     
     <item>
@@ -165,13 +165,13 @@ Hugo sites can be hosted anywhere, including Netlify, Heroku, GoDaddy, DreamHost
     </item>
     
     <item>
-      <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
+      <title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests</title>
       <link>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</link>
       <pubDate>Sun, 10 Mar 2019 13:22:14 +2400</pubDate>
       
       <guid>https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/</guid>
       <description>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.
-* Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
+Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):</description>
     </item>
     
     <item>
@@ -240,8 +240,7 @@ What are Arrays in JavaScript? Before we proceed, you need to understand what ar
     </item>
     
     <item>
-      <title>
-Introduction to Chrome Lighthouse</title>
+      <title>Introduction to Chrome Lighthouse</title>
       <link>https://bolajiayodeji.com/introduction-to-chrome-lighthouse/</link>
       <pubDate>Mon, 28 Jan 2019 15:12:21 +2400</pubDate>
       
@@ -252,7 +251,7 @@ In this article, I would introduce you Chrome Lighthouse, what it does and how t
     </item>
     
     <item>
-      <title>The GROWTH MINDSET demystified</title>
+      <title>The GROWTH MINDSET Demystified</title>
       <link>https://bolajiayodeji.com/the-growth-mindet-demystified/</link>
       <pubDate>Mon, 21 Jan 2019 13:22:14 +2400</pubDate>
       
@@ -276,7 +275,7 @@ Prerequisites.  Basic JavaScript knowledge Code editor Web Browser Your brain :)
     </item>
     
     <item>
-      <title>How to build a simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase.</title>
+      <title>How to Build a Simple Progressive Web App with PWAFire and Deploy to GitHub Pages and Firebase</title>
       <link>https://bolajiayodeji.com/how-to-build-a-simple-progressive-web-app-with-pwafire-and-deploy-to-github-pages-and-firebase/</link>
       <pubDate>Mon, 26 Nov 2018 13:22:14 +2400</pubDate>
       
@@ -296,7 +295,7 @@ What is SSL? SSL (Secure Sockets Layer) is a standard security protocol for esta
     </item>
     
     <item>
-      <title>HTTP status codes and their meanings</title>
+      <title>HTTP Status Codes and their Meanings</title>
       <link>https://bolajiayodeji.com/http-status-codes-and-their-meanings/</link>
       <pubDate>Sat, 24 Nov 2018 13:22:14 +2400</pubDate>
       
@@ -308,7 +307,7 @@ For every request from a web browser the server responds with a status code. If 
     </item>
     
     <item>
-      <title>How to test a Pull Request locally before Merging.</title>
+      <title>How to Test a Pull Request Locally Before Merging.</title>
       <link>https://bolajiayodeji.com/how-to-test-a-pull-request-locally-before-merging/</link>
       <pubDate>Sun, 11 Nov 2018 13:22:14 +2400</pubDate>
       
@@ -319,7 +318,7 @@ The pull request is available on this git ref pull/{ID}/head which you can fetch
     </item>
     
     <item>
-      <title>How to convert GitHub Markdown files to a simple website</title>
+      <title>How to Convert GitHub Markdown Files to a Simple Website</title>
       <link>https://bolajiayodeji.com/how-to-convert-github-markdown-files-to-a-simple-website/</link>
       <pubDate>Mon, 05 Nov 2018 13:22:14 +2400</pubDate>
       

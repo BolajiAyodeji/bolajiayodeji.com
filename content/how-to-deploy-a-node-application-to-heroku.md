@@ -1,5 +1,5 @@
 ---
-title: How to deploy a Node Application and Database to Heroku
+title: How to Deploy a Node Application and Database to Heroku
 type: post
 date: 2019-08-26T06:52:24.006Z
 tags:
@@ -8,7 +8,7 @@ tags:
   - Heroku
   - Express
 ---
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569642946/blog/0005/banner.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636678/null/blog/0005/banner_uiuv9r.png)
 
 Heroku is a cloud-based, fully-managed platform as a service (Paas) for building, running, and managing apps. The platform is flexible and designed with DX support for you and your team’s preferred development style and to help you stay focused and productive.
 
@@ -16,7 +16,7 @@ Developers, teams, and businesses of all sizes use Heroku to deploy, manage, and
 
 With features like Heroku Runtime, Heroku Postgres (SQL), Heroku Redis, Add-ons, Data Clips, App metrics, Smart containers, Enterprise-grade support, GitHub Integration and lots more, Heroku gives developers the freedom to focus on their core product without the distraction of maintaining servers, hardware, or infrastructure.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569615494/blog/0005/heroku.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/01.png)
 
 - - -
 
@@ -44,7 +44,7 @@ If you don't have npm, Node and Heroku CLI installed or a Heroku account already
 ### Installing npm and Node
 
 > [Node.js](https://nodejs.org) is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https://v8.dev/).
->
+
 > [npm](https://www.npmjs.com/) is the package manager for Node.js. An open-source project created to help JavaScript developers easily share packaged modules of code.
 
 You can simply download Node.js [here](https://nodejs.org/en/). Don't worry, npm comes with Node.js, so doing this installs both ✨
@@ -53,7 +53,7 @@ You can simply download Node.js [here](https://nodejs.org/en/). Don't worry, npm
 
 Kindly head [here](https://signup.heroku.com/) and fill the Signup form, it's pretty simple.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569620776/blog/0005/heroku-signup.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636678/null/blog/0005/02.png)
 
 ### Installing Heroku CLI
 
@@ -63,7 +63,7 @@ Heroku CLI requires Git, the popular version control system. If you don’t alre
 
 #### Heroku CLI for Mac OS
 
-```
+```bash
 brew tap heroku/brew && brew install heroku
 ```
 
@@ -71,7 +71,7 @@ or [download the installer](https://devcenter.heroku.com/articles/heroku-cli).
 
 #### Heroku CLI for Ubuntu
 
-```
+```bash
 sudo snap install --classic heroku
 ```
 
@@ -88,7 +88,7 @@ Please read [this](https://devcenter.heroku.com/articles/heroku-cli#other-instal
 * Verify your installation
 
 
-```
+```bash
 heroku --version
 ```
 
@@ -101,25 +101,25 @@ There are two ways to do this:
 * **Web based auth**
 
 
-```
+```bash
 heroku login
 ```
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621496/blog/0005/heroku-web-auth.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636680/null/blog/0005/03.png)
 
 Follow the instructions and login via your web browser then return to your terminal.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621617/blog/0005/heroku-web-auth2.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/04.png)
 
 * **CLI auth**
 
 This is a safer option as it saves your email address and an API token to `~/.netrc` for future use. 
 
-```
+```bash
 heroku login -i
 ```
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569621890/blog/0005/heroku-cli-auth.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/05.png)
 
 - - -
 
@@ -129,7 +129,7 @@ I presume you've built the SlackBot already, if you haven't, please clone the [f
 
 > The project is a simple Slackbot that displays random inspiring techie quotes and jokes for developers/designers.
 
-```
+```bash
 git clone https://github.com/BolajiAyodeji/inspireNuggetsSlackBot.git && cd inspireNuggetsSlackBot
 ```
 
@@ -140,12 +140,12 @@ I'll show you two ways to do this:
 
 > This is done via the Heroku CLI.
 
-##### **☑️ Checklist**
+##### ☑️ Checklist
 
 * Specify the version of Node.js that will be used to run your application on Heroku in your `package.json` file.
 
 
-```
+```json
 "engines": {
     "node": "10.16.0"
   },
@@ -155,7 +155,7 @@ I'll show you two ways to do this:
   Simply create a `Procfile` (without any file extension) and add
 
 
-```
+```bash
  web: node index.js
 ```
 
@@ -164,7 +164,7 @@ I'll show you two ways to do this:
 * Start your app locally using the heroku local command to be sure everything works fine
 
 
-```
+```bash
 heroku local web
 ```
 
@@ -172,20 +172,19 @@ heroku local web
 
 * Don't forget to `.gitignore`
 
-
-```
+```dotfile
 /node_modules
 .DS_Store
 /*.env
 ```
 
-##### **🚀 Let's Deploy**
+##### 🚀 Let's Deploy
 
 How this works is, you have the project working on local already and you've pushed to GitHub already.
 
 * Run `heroku create`
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569625900/blog/0005/heroku-create.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/06.png)
 
 Basically, this command creates a new Heroku app for you with some randomly generated domain and adds Heroku to your local git repository.
 
@@ -200,14 +199,14 @@ This is the magic command, it pushes your app to Heroku, installs it there and l
 * Now visit your app in your browser
 
 
-```
+```bash
 heroku open
 ```
 
 * You can also view information about your running app using one of the logging commands, this is very useful in debugging errors.
 
 
-```
+```bash
 heroku logs --tail
 ```
 
@@ -215,43 +214,43 @@ heroku logs --tail
 
 > You can configure GitHub integration in the Deploy tab of apps in the [Heroku Dashboard](https://dashboard.heroku.com).
 
-##### **☑️ Checklist**
+##### ☑️ Checklist
 
 * All previous checklists apply here
 * Ensure you have the app deployed to GitHub already
 
-##### **🚀 Let's Deploy**
+##### 🚀 Let's Deploy
 
 How this method work is that you push your entire project to GitHub and integrate it to Heroku. Every time you push, it deploys from GitHub to Heroku. Pretty cool right?
 
 * Login to your Heroku Dashboard
 * Create a new app
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569626896/blog/0005/create-app.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/07.png)
 
 * Select your app name and Region
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569626958/blog/0005/new-app.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/08.png)
 
 Now your app is successfully created
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569638822/blog/0005/heroku-dash.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/09.png)
 
 * Click the deploy tab and scroll to the **Deployment method** section
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569638956/blog/0005/heroku-deploy.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/10.png)
 
 * Click the **Connect to GitHub** button
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639188/blog/0005/heroku-github.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/11.png)
 
 * Now you have the **Connect to GitHub section**, search for the repository and deploy.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639329/blog/0005/heroku-search.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636678/null/blog/0005/12.png)
 
 * Now your app is deployed successfully
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569639330/blog/0005/heroku-200.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/13.png)
 
 #### Automatic deploys
 
@@ -259,12 +258,12 @@ Now your app is deployed but you'll have to keep deploying manually. You need to
 
 * Scroll to the **Automatic Deploys** section
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640012/blog/0005/heroku-auto.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636678/null/blog/0005/14.png)
 
 * Select the branch you want to deploy. Ideally, this should be the `master` branch but change this according to your preference.
 * Now every push to `master` (or the branch you chose) will deploy a new version of this app. 
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640182/blog/0005/heroku-auto-200.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636678/null/blog/0005/15.png)
 
 #### Node.js Buildpack
 
@@ -274,11 +273,11 @@ After deploying your app, ensure you add a Node.js buildpack to your project.
 
 * Go to **Settings** and scroll to the **Buildpack section**
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640434/blog/0005/heroku-buildpack.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636679/null/blog/0005/16.png)
 
 * Click the **Add Buildpack** button and select Node.js in the Popup modal.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1569640503/blog/0005/heroku-add-build.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636678/null/blog/0005/17.png)
 
 * Now the new buildpack configuration will be used when this app is next deployed.
 * Make some changes to your app and push to GitHub, it will automatically deploy.

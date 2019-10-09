@@ -24,7 +24,7 @@ In this article, I’d take you through:
 
 Let’s roll :)
 
-### What is GitHub Student Developer Pack?
+## What is GitHub Student Developer Pack?
 
 [GitHub Education](https://education.github.com/) offers students real-world
 experience with free access to various developer tools from GitHub’s partners.
@@ -35,7 +35,7 @@ Virtual Reality, Augmented Reality, APIs, Integrated Development Environments,
 Version Control Systems, Cloud Hosting Platforms, Code tutorials, BootCamps,
 Continous Integration platforms, payment platforms and lots more.
 
-### Contents of the pack
+## Contents of the pack
 
 ![](https://cdn-images-1.medium.com/max/800/0*hTCP1sPTcYih-srY.jpg)
 <span class="figcaption_hack">algolia.com</span>
@@ -195,7 +195,7 @@ a global market from the start.
 > [pass us a note to GitHub](https://github.com/contact) and get it added to the
 pack.
 
-### Terms and Conditions
+## Terms and Conditions
 
 To be eligible for the GitHub Student Developer Pack, you must:
 
@@ -206,7 +206,7 @@ your current student status
 account](https://help.github.com/en/articles/signing-up-for-a-new-github-account)
 * Be at least 13 years old
 
-### How to apply for the pack
+## How to apply for the pack
 
 If you meet the above requirements, you can apply for the GitHub Student
 Developer Pack, which includes offers and benefits from GitHub partners.
@@ -262,7 +262,7 @@ during peak times, such as during the start of a new semester. I got mine within
 
 ![](https://cdn-images-1.medium.com/max/800/1*c_wOx5-iMjLrz0X3Oy6VgQ.png)
 
-### Expiration and renewals
+## Expiration and renewals
 
 Once your GitHub Student Developer Pack access expires, you may reapply if
 you’re still eligible, although some of the tools are not renewable as some
@@ -272,7 +272,7 @@ Student Developer Pack](https://education.github.com/pack) page.
 To see when your free access to the GitHub Student Developer Pack expires, visit
 your account’s [billing settings](https://github.com/settings/billing).
 
-### Conclusion
+## Conclusion
 
 The GitHub Student Developer Pack helps you as a student to ship software like a
 pro. Ensure you **learn by doing,** use these tools to improve and advance your
@@ -284,7 +284,7 @@ For more information about the pack, check
 
 Thank you for reading!
 
-### Reference
+## Reference
 
 All guides used in this post were gotten from [GitHub
 Education](https://education.github.com/pack)

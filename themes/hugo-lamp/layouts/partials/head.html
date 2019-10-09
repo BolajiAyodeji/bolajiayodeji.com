@@ -1,5 +1,5 @@
 {{ $gohugoio := "Bolaji Ayodeji" }}
-{{ $logo := "https://res.cloudinary.com/iambeejayayo/image/upload/v1569655144/website/social-logo.png" }}
+{{ $logo := "https://res.cloudinary.com/bolaji/image/upload/v1570636548/null/about/social-logo_mjlfq4.png" }}
 <!-- Site & Page Meta Data -->
 {{ if eq .Type "post" }}
 {{ $description := .Description | default .Summary }}
@@ -11,7 +11,7 @@
   content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
 <meta name="description" content="{{ $description | plainify }}">
 <meta name="keywords"
-  content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+  content="Bolaji Ayodeji,HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 
 <!-- Twitter Card -->
 {{ if isset .Params "cover" }}
@@ -73,10 +73,10 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel="stylesheet">
 
 <!-- Favicon and Touch icons -->
-<link rel="icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png" />
+<link rel="icon" href="https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="apple-touch-icon" sizes="120x120"
-  href="https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png">
+  href="https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png">
 
 <!--Manifest setup-->
 <link rel="manifest" href="/manifest.json" />
@@ -155,7 +155,7 @@
 </noscript>
 <style amp-custom>
   /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-  html {
+html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -171,7 +171,7 @@
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -871,7 +871,6 @@
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1066,7 +1065,6 @@
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {

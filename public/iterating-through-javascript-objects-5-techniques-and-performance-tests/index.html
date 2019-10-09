@@ -7,15 +7,15 @@
 <script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
 <script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</title>
+<title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests</title>
 <meta name=author content="Bolaji Ayodeji">
-<meta name=description content="Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.* Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+<meta name=description content="Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):">
+<meta name=keywords content="Bolaji Ayodeji,HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Iterating through JavaScript Objects-5 Techniques and Performance Tests.">
-<meta name=twitter:description content="Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.* Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):">
-<meta name=twitter:image content=https://res.cloudinary.com/iambeejayayo/image/upload/v1569655144/website/social-logo.png>
+<meta name=twitter:title content="Iterating through JavaScript Objects-5 Techniques and Performance Tests">
+<meta name=twitter:description content="Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.Useful tips :) Property flags Object properties, besides a value, have three special attributes (also known as “flags”):">
+<meta name=twitter:image content=https://res.cloudinary.com/bolaji/image/upload/v1570636548/null/about/social-logo_mjlfq4.png>
 <meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/iterating-through-javascript-objects-5-techniques-and-performance-tests/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
@@ -27,9 +27,9 @@
 <meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
 <meta name=msvalidate.01 content=25B948519E545F3B7F9C4FA5F3204C79>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
+<link rel=icon href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
 <meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
+<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
 <link rel=manifest href=/manifest.json>
 <meta name=theme-color content=#20242b>
 <script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,17 +1454,10 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
-<div style="padding-bottom: 10px">
-<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
-</div>
-<div>
-<script src=https://apis.google.com/js/platform.js></script>
-<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
-</div>
 <div>
 <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
 <script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
@@ -1474,6 +1465,13 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <div>
 <a class=github-button href=https://github.com/bolajiayodeji data-show-count=true aria-label="Follow @bolajiayodeji on GitHub">Follow @bolajiayodeji</a>
 <script async defer src=https://buttons.github.io/buttons.js></script>
+</div>
+<div>
+<script src=https://apis.google.com/js/platform.js></script>
+<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
+</div>
+<div style="padding-bottom: 10px">
+<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
 </div>
 </section>
 <button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
@@ -1490,9 +1488,10 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
-<h1 class=post-title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests.</h1>
+<h1 class=post-title>Iterating through JavaScript Objects  -  5 Techniques and Performance Tests</h1>
 <p class=entry-meta><span class=entry-time>Mar 10, 2019</span> 3 min read
 </p>
 </header>
@@ -1503,30 +1502,27 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href=#useful-tips>* Useful tips :)</a>
+<li><a href=#useful-tips>Useful tips :)</a>
 <ul>
 <li><a href=#property-flags>Property flags</a></li>
 <li><a href=#what-does-an-enumerable-property-mean><strong>What does an enumerable property mean?</strong></a></li>
 </ul></li>
-<li><a href=#1-for-in-loop>1. for…in loop</a></li>
-<li><a href=#2-object-keys>2. Object.keys</a></li>
-<li><a href=#3-object-values>3. Object.values</a></li>
-<li><a href=#4-object-getownpropertynames>4. Object.getOwnPropertyNames</a></li>
-<li><a href=#5-object-entries>5. Object.entries</a></li>
+<li><a href=#for-in-loop>for…in loop</a></li>
+<li><a href=#object-keys>Object.keys</a></li>
+<li><a href=#object-values>Object.values</a></li>
+<li><a href=#object-getownpropertynames>Object.getOwnPropertyNames</a></li>
+<li><a href=#object-entries>Object.entries</a></li>
 <li><a href=#performance-comparison>Performance Comparison</a></li>
 <li><a href=#test-results>Test Results</a></li>
 <li><a href=#reference>Reference</a></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*KWR1E4S6N5uZiWPd0x9KRg.png alt=""></p>
 <p>Developers tend to know how to iterate through JavaScript Arrays easily but most times they tend to get confused while working with JavaScript Objects especially beginners and intermediates. In this article, I’d show you Five (5) different ways of iterating through JavaScript Objects and some performance comparison tests to show you which is faster and more efficient.</p>
 <hr>
-<h3 id=useful-tips>* Useful tips :)</h3>
-<h4 id=property-flags>Property flags</h4>
+<h2 id=useful-tips>Useful tips :)</h2>
+<h3 id=property-flags>Property flags</h3>
 <p>Object properties, besides a <code>value</code>, have three special attributes (also known as “flags”):</p>
 <ul>
 <li><code>writable</code> – if <code>true</code>, can be edited, else it’s read-only.</li>
@@ -1538,36 +1534,36 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor>Object.getOwnPropertyDescriptor</a>
 allows us to query the <em>full</em> information about a property.</p>
 <script src=//gist.github.com/BolajiAyodeji/a6b43032adb5dab84361a3437ed9e977.js></script>
-<h4 id=what-does-an-enumerable-property-mean><strong>What does an enumerable property mean?</strong></h4>
+<h3 id=what-does-an-enumerable-property-mean><strong>What does an enumerable property mean?</strong></h3>
 <p><strong>Enumerable properties</strong> are those <strong>properties</strong> whose internal <strong>enumerable</strong>
 flag is set to true, which is the default for <strong>properties</strong> created via simple assignment.</p>
 <p>Basically, if you create an object via <code>obj = {foo: 'bar'}</code> or something thereabouts, all the properties are enumerable.</p>
 <hr>
-<h3 id=1-for-in-loop>1. for…in loop</h3>
+<h2 id=for-in-loop>for…in loop</h2>
 <p>The <strong>for…in loop statement</strong> can be used to iterate over all non-<a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol>Symbol</a>,
 <a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties>enumerable properties</a>
 of an object.</p>
 <script src=//gist.github.com/BolajiAyodeji/30f496fc4546fd2ecd6fec24f75a7ba0.js></script>
-<h3 id=2-object-keys>2. Object.keys</h3>
+<h2 id=object-keys>Object.keys</h2>
 <p>The <code>Object.keys()</code> method returns an array of Object keys. This creates an array that contains the properties of the object. You can then loop through the array to get the keys and values you need.</p>
 <script src=//gist.github.com/BolajiAyodeji/96f4d8012b961c790224503985a759ff.js></script>
-<h3 id=3-object-values>3. Object.values</h3>
+<h2 id=object-values>Object.values</h2>
 <p>The <code>Object.values()</code> method returns an array of Objects Values. This creates an array that contains the properties of the object. You can then loop through the array to get the keys and values you need.</p>
 <script src=//gist.github.com/BolajiAyodeji/fc94861337260f9c8ab16153801e847c.js></script>
-<h3 id=4-object-getownpropertynames>4. Object.getOwnPropertyNames</h3>
+<h2 id=object-getownpropertynames>Object.getOwnPropertyNames</h2>
 <p>The <code>Object.getOwnPropertyNames()</code> method returns an array of all properties (including non-enumerable properties except for those which use Symbol) found directly in a given object. This creates an array that contains the properties of the object. You can then loop through the array to get the keys and values you need.</p>
 <script src=//gist.github.com/BolajiAyodeji/ae8829a2efffa7fa93a6e0511d9d4158.js></script>
-<h3 id=5-object-entries>5. Object.entries</h3>
+<h2 id=object-entries>Object.entries</h2>
 <p>The <code>Object.entries()</code> method returns an array of a given object’s own enumerable property <code>[key, value]</code> pairs.</p>
 <script src=//gist.github.com/BolajiAyodeji/c5aa111881e504d4d99669cbd685e112.js></script>
 <p><br></p>
-<h3 id=performance-comparison>Performance Comparison</h3>
+<h2 id=performance-comparison>Performance Comparison</h2>
 <p>Now let’s test all these techniques and compare each one based on their speed and performance to determine which is faster and much efficient</p>
 <p>Most browsers like Chrome and Firefox implement high-resolution timing in
 <code>performance.now()</code>. The <code>performance.now()</code> method returns a
 <code>DOMHighResTimeStamp</code>, measured in milliseconds.</p>
 <p><strong>Usage</strong></p>
-<pre><code>let start = performance.now();
+<pre><code class=language-js>let start = performance.now();
 
 
 // code to be timed...
@@ -1578,15 +1574,15 @@ let duration = performance.now() - start;
 </code></pre>
 <p>Let’s begin testing…</p>
 <script src=//gist.github.com/BolajiAyodeji/f42e98d723eb4e5629691d7a148ee550.js></script>
-<h3 id=test-results>Test Results</h3>
+<h2 id=test-results>Test Results</h2>
 <p>According to our tests, here are the results in ascending order;</p>
-<p><img src=https://res.cloudinary.com/iambeejayayo/image/upload/v1552257253/loop.png alt=""></p>
+<p><img src=https://res.cloudinary.com/bolaji/image/upload/v1570641888/null/blog/loop_rzwxcj.png alt=""></p>
 <p>So, according to these results, the fastest way to iterate through JavaScript Objects is the <strong>for…in loop.</strong> Now, this doesn’t mean the other methods are void or useless, it all depends on use cases.</p>
 <p>The problem with a <code>for...in</code> loop is that it iterates through properties in the Prototype chain. It iterates over object properties. Javascript arrays are just a specific kind of object with some handy properties that help you treat them as arrays, but they still have internal object properties and you don’t mean to iterate over these. <code>for...in</code>also iterates over **all enumerable properties ** and not just the array’s elements. This can also lead to unexpected results.</p>
 <p>When you loop through an object with the <code>for...in</code> loop, you need to check if the property belongs to the object. You can do this with <code>hasOwnProperty</code>.</p>
 <p>A better and more efficient way to loop through objects in ES6 is to first convert the object into an array using <code>Object.keys()</code> , <code>Object.values()</code> ,
 <code>Object.getOwnPropertyNames</code> or <code>Object.entries()</code> . Then you loop through the array to get the keys and values.</p>
-<h3 id=reference>Reference</h3>
+<h2 id=reference>Reference</h2>
 <ul>
 <li><a href=http://javascript.info/ >http://javascript.info/</a></li>
 <li><a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript>https://developer.mozilla.org/en-US/docs/Web/JavaScript</a></li>
@@ -1624,6 +1620,7 @@ let duration = performance.now() - start;
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1651,6 +1648,7 @@ let duration = performance.now() - start;
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

@@ -7,15 +7,15 @@
 <script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
 <script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
 <script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>Building & Deploying your first Progressive Web App</title>
+<title>Building & Deploying your First Progressive Web App</title>
 <meta name=author content="Bolaji Ayodeji">
-<meta name=description content="Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let&amp;rsquo;s roll :)TABLE OF CONTENTSIntroduction Starter files App description Building the UI Add JavaScript Functionality Build the Progressive Web App Deploy to Netlify ConclusionINTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+<meta name=description content="Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let&amp;rsquo;s roll :)INTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications. Progressive Web Applications are experiences that combine the best of web applications features and the best of mobile applications features.">
+<meta name=keywords content="Bolaji Ayodeji,HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Building & Deploying your first Progressive Web App">
-<meta name=twitter:description content="Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let&amp;rsquo;s roll :)TABLE OF CONTENTSIntroduction Starter files App description Building the UI Add JavaScript Functionality Build the Progressive Web App Deploy to Netlify ConclusionINTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications.">
-<meta name=twitter:image content=https://res.cloudinary.com/iambeejayayo/image/upload/v1569655144/website/social-logo.png>
+<meta name=twitter:title content="Building & Deploying your First Progressive Web App">
+<meta name=twitter:description content="Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let&amp;rsquo;s roll :)INTRODUCTION I’m sure by now you must have heard or read about Progressive Web Applications. Progressive Web Applications are experiences that combine the best of web applications features and the best of mobile applications features.">
+<meta name=twitter:image content=https://res.cloudinary.com/bolaji/image/upload/v1570636548/null/about/social-logo_mjlfq4.png>
 <meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/building-and-deploying-your-first-progressive-web-app/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
@@ -27,9 +27,9 @@
 <meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
 <meta name=msvalidate.01 content=25B948519E545F3B7F9C4FA5F3204C79>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
+<link rel=icon href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
 <meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
+<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
 <link rel=manifest href=/manifest.json>
 <meta name=theme-color content=#20242b>
 <script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,17 +1454,10 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
-<div style="padding-bottom: 10px">
-<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
-</div>
-<div>
-<script src=https://apis.google.com/js/platform.js></script>
-<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
-</div>
 <div>
 <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
 <script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
@@ -1474,6 +1465,13 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <div>
 <a class=github-button href=https://github.com/bolajiayodeji data-show-count=true aria-label="Follow @bolajiayodeji on GitHub">Follow @bolajiayodeji</a>
 <script async defer src=https://buttons.github.io/buttons.js></script>
+</div>
+<div>
+<script src=https://apis.google.com/js/platform.js></script>
+<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
+</div>
+<div style="padding-bottom: 10px">
+<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
 </div>
 </section>
 <button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
@@ -1490,9 +1488,10 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
-<h1 class=post-title>Building & Deploying your first Progressive Web App</h1>
+<h1 class=post-title>Building & Deploying your First Progressive Web App</h1>
 <p class=entry-meta><span class=entry-time>Apr 1, 2019</span> 9 min read
 </p>
 </header>
@@ -1503,10 +1502,9 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href=#table-of-contents>TABLE OF CONTENTS</a></li>
 <li><a href=#introduction>INTRODUCTION</a></li>
+<li><a href=#why-build-progressive-web-apps>WHY BUILD PROGRESSIVE WEB APPS?</a></li>
+<li><a href=#the-three-basic-criteria-for-a-pwa>THE THREE BASIC CRITERIA FOR A PWA</a></li>
 <li><a href=#starter-files>STARTER FILES</a></li>
 <li><a href=#app-description>APP DESCRIPTION</a></li>
 <li><a href=#building-the-ui>BUILDING THE UI</a></li>
@@ -1517,29 +1515,14 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li><a href=#mobile>MOBILE</a></li>
 </ul></li>
 <li><a href=#deploying-to-netlify>DEPLOYING TO NETLIFY</a></li>
-<li><a href=#conclusion>CONCLUSION</a>
-<ul>
+<li><a href=#conclusion>CONCLUSION</a></li>
 <li><a href=#credits>Credits</a></li>
-</ul></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*5MB2BgLFKmsLfgNCwli4EA.png alt=""></p>
 <p>Progressive Web Apps are very much in use by some of the biggest companies like Twitter, Forbes, Alibaba, Instagram, Flipkart e.t.c and have gained popularity. Building a PWA is quite easy and simple. In this tutorial, we’re going to build a simple Progressive web app (A weight converter app). Let’s roll :)</p>
-<h3 id=table-of-contents>TABLE OF CONTENTS</h3>
-<ul>
-<li>Introduction</li>
-<li>Starter files</li>
-<li>App description</li>
-<li>Building the UI</li>
-<li>Add JavaScript Functionality</li>
-<li>Build the Progressive Web App</li>
-<li>Deploy to Netlify</li>
-<li>Conclusion</li>
-</ul>
-<hr>
-<h3 id=introduction>INTRODUCTION</h3>
+<h2 id=introduction>INTRODUCTION</h2>
 <p>I’m sure by now you must have heard or read about Progressive Web Applications. Progressive Web Applications are experiences that combine the best of web applications features and the best of mobile applications features. They use service workers, HTTPS, a manifest file and an app shell architecture to deliver native app experiences to web applications.</p>
 <p>The term <em>Progressive Web Apps</em> was first coined by <a href=https://twitter.com/phae>Frances Berriman</a> and <a href=https://twitter.com/slightlylate>Alex Russell</a> in 2015, as a way of describing applications that take advantage of new features supported by modern browsers, including service workers and web app manifests.</p>
 <p>Progressive Web Apps are largely characterized by the following:</p>
@@ -1548,7 +1531,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <li><strong>Fast</strong> — They respond quickly to user interactions with smooth animations.</li>
 <li><strong>Engaging</strong> — They feel like a natural app on the device, with immersive user experience.</li>
 </ul>
-<p><strong>WHY BUILD PROGRESSIVE WEB APPS?</strong></p>
+<h2 id=why-build-progressive-web-apps>WHY BUILD PROGRESSIVE WEB APPS?</h2>
 <p>Building a high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase traffic.</p>
 <ul>
 <li>They’re installable — if a user visits your website for the second, third, or fourth time, they get the option of adding it to their home screen. (Desktop, Android or iOS) After that, it works like a mobile application.</li>
@@ -1559,7 +1542,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <a href=https://developers.google.com/web/showcase/2016/pdfs/housing.pdf>housing.com</a>, PWAs can significantly reduce page load times and thus improve overall UX.</li>
 <li>They are progressive — They will work for any user on any device even with a poor internet connection.</li>
 </ul>
-<p><strong>THE THREE BASIC CRITERIA FOR A PWA</strong></p>
+<h2 id=the-three-basic-criteria-for-a-pwa>THE THREE BASIC CRITERIA FOR A PWA</h2>
 <ol>
 <li>You need to be running on HTTPS</li>
 <li>You need a web manifest</li>
@@ -1572,16 +1555,16 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <iframe src=//www.youtube.com/embed/m-sCdS0sQO8 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 <hr>
-<h3 id=starter-files>STARTER FILES</h3>
+<h2 id=starter-files>STARTER FILES</h2>
 <p>You can find the starter repository
 <a href=https://github.com/BolajiAyodeji/weight-converter>here</a> with all files and final demo <a href=https://bolaji-wc.netlify.com/ >here</a></p>
-<h3 id=app-description>APP DESCRIPTION</h3>
+<h2 id=app-description>APP DESCRIPTION</h2>
 <p>We’re going to build a simple weight converter that converts a given weight from Pounds to its equivalent in Gram, Kilogram and Ounce.</p>
 <p>This project is just to help you understand how PWA’s work, after this, you can build your own project. We’d use Bootstrap 4 for the UI and JavaScript for the main functionality.</p>
 <p>Here’s how the final project looks:</p>
 <p><img src=https://cdn-images-1.medium.com/max/600/1*J5fWtuat_i-YG7u771_1rA.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/600/1*9MwTrHHOVXTVqmVofQdXCg.png alt=""></p>
-<h3 id=building-the-ui>BUILDING THE UI</h3>
+<h2 id=building-the-ui>BUILDING THE UI</h2>
 <p>Now, let’s build the User interface of our application.</p>
 <p>First, create the following files</p>
 <ul>
@@ -1598,7 +1581,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <p><span class=figcaption_hack><script src=//gist.github.com/BolajiAyodeji/82dfa8ca5f7bb903999c2dd3b5813678.js></script></span></p>
 <p>Now your app should look like this:</p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*dVU0ojt4fRoxPsIFyVobfw.png alt=""></p>
-<h3 id=add-javascript-functionality>ADD JAVASCRIPT FUNCTIONALITY</h3>
+<h2 id=add-javascript-functionality>ADD JAVASCRIPT FUNCTIONALITY</h2>
 <blockquote>
 <p>Basically, we want to get the input value from the input field and process then return results to each of the following id’s: <code>gOutput</code> for Grams, <code>kgOutput</code>
 for Kilogram, <code>ozOutput</code> for Ounces. In <code>index.html</code> , we wrapped all this id’s in <code>output</code> . We also want to hide the results and display after a user enters a value in the input field.</p>
@@ -1616,7 +1599,7 @@ for Kilogram, <code>ozOutput</code> for Ounces. In <code>index.html</code> , we 
 </blockquote>
 <p>Now you should have a functioning app</p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*h2u8Y76_VSqkARDDujoz5Q.png alt=""></p>
-<h3 id=build-the-progressive-web-app>BUILD THE PROGRESSIVE WEB APP</h3>
+<h2 id=build-the-progressive-web-app>BUILD THE PROGRESSIVE WEB APP</h2>
 <p>The three basic criteria for a PWA:</p>
 <ul>
 <li><strong>Service worker</strong></li>
@@ -1646,13 +1629,13 @@ for Kilogram, <code>ozOutput</code> for Ounces. In <code>index.html</code> , we 
 <p>First, we need to check if the browser supports service workers and register a new one.</p>
 </blockquote>
 <p>In <code>js/app.js</code> add</p>
-<pre><code>if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-   navigator.serviceWorker.register('../sw.js').then( () => {
-    console.log('Service Worker Registered')
-   })
- })
-}
+<pre><code class=language-js>    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+       navigator.serviceWorker.register('../sw.js').then( () => {
+        console.log('Service Worker Registered')
+       })
+     })
+    }
 </code></pre>
 <p>If the browser supports it, you should get this in your console</p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*TSVpFT5aDstf_Lbi2sOP6g.png alt=""></p>
@@ -1669,19 +1652,19 @@ for Kilogram, <code>ozOutput</code> for Ounces. In <code>index.html</code> , we 
 <p>— In <code>sw.js</code> , add this:</p>
 <p><span class=figcaption_hack><script src=//gist.github.com/BolajiAyodeji/724f0e782981f4d24bba324a4274e854.js></script></span></p>
 <p>So basically we imported <code>workbox-sw.js</code> which is Workbox’s service worker file, then we checked if Workbox is loaded in our own service worker.</p>
-<pre><code>if (workbox) {
-  console.log(`Yay! Workbox is loaded 🎉`);
-} else {
-  console.log(`Boo! Workbox didn't load 😬`);
-}
+<pre><code class=language-js>    if (workbox) {
+      console.log(`Yay! Workbox is loaded 🎉`);
+    } else {
+      console.log(`Boo! Workbox didn't load 😬`);
+    }
 </code></pre>
 <p>One of Workbox’s primary features is it’s routing and caching strategy modules. It allows you to listen for requests from your web page and determine if and how that request should be cached and responded to.</p>
 <p>Routing in Workbox is the process of a Router <em>matching</em> a request to a route and the route then <em>handling</em> that request (i.e. providing a response).</p>
 <p>In <code>sw.js</code> , we did something like this:</p>
-<pre><code>workbox.routing.registerRoute(
-  /\.(?:js|css|scss)$/,
-  new workbox.strategies.StaleWhileRevalidate(),
-);
+<pre><code class=language-js>    workbox.routing.registerRoute(
+      /\.(?:js|css|scss)$/,
+      new workbox.strategies.StaleWhileRevalidate(),
+    );
 </code></pre>
 <p>Basically, this tells Workbox that when a request is made, it should see if the regular expression matches part of the URL (<code>.css, .scss, .js</code>) and if it does, cache that file.</p>
 <p>The <code>StaleWhileRevalidate()</code> function allows us to use this cache in our application but still update in the background if the file has changed. You would need to refresh again to see the new files.</p>
@@ -1700,7 +1683,7 @@ to generate your <code>manifest.json</code></p>
 </blockquote>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*CdXaaSSg8Oc5OaTe1lnPFA.png alt=""></p>
 <p>Now we need to connect our web app to the manifest to allow “add to home screen” from that page. Add this to your <code>index.html</code></p>
-<pre><code>&lt;link rel="manifest" href="/manifest.json" />
+<pre><code class=language-html>&lt;link rel="manifest" href="/manifest.json" />
  &lt;meta name="theme-color" content="#333" />
 </code></pre>
 <blockquote>
@@ -1714,18 +1697,18 @@ to generate your <code>manifest.json</code></p>
 <hr>
 <p>Congratulations, you’ve successfully built your first Progressive Web App.</p>
 <p>It can be installed on Mobile (Android and iOS) and Desktop.</p>
-<h4 id=desktop>DESKTOP</h4>
+<h3 id=desktop>DESKTOP</h3>
 <p><img src=https://cdn-images-1.medium.com/max/600/1*U8CZYQgPl2xH-AJ95gs4qQ.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/600/1*rB4UOawcidknFpDCErGc1A.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*RqMIFcuMNE1wT-_4bsWNkA.png alt=""></p>
-<h4 id=mobile>MOBILE</h4>
+<h3 id=mobile>MOBILE</h3>
 <p><img src=https://cdn-images-1.medium.com/max/400/1*iQh2SPEqrqNvoiZFn-_BwA.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/400/1*3Dfi5wyG-s2q5jtY3JxG4Q.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/400/1*2i1PmDqbJ8R7WlrOVdvWTQ.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/400/1*6fqa9EFrg4BhZTDhsU047Q.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/400/1*M9NwHDDkchnA8RtEHpxDWg.png alt=""></p>
 <p><img src=https://cdn-images-1.medium.com/max/400/1*Kf1nVW6XMBFGawiFlKmAuA.png alt=""></p>
-<h3 id=deploying-to-netlify>DEPLOYING TO NETLIFY</h3>
+<h2 id=deploying-to-netlify>DEPLOYING TO NETLIFY</h2>
 <p>Now let’s deploy our app to <a href=https://www.netlify.com/ >Netlify</a>.</p>
 <blockquote>
 <p>Netlify is an all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. It builds, deploys, and manage modern web projects.</p>
@@ -1758,9 +1741,8 @@ to generate your <code>manifest.json</code></p>
 <p>If you make any changes to your repository, Netlify will deploy automatically.</p>
 <p>PS: Netlify generates random domains for each app deployed, you can change that in <strong>Domain settings.</strong></p>
 </blockquote>
-<h3 id=conclusion>CONCLUSION</h3>
+<h2 id=conclusion>CONCLUSION</h2>
 <p>Building a high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase conversions.</p>
-<hr>
 <ul>
 <li><a href=https://developers.google.com/web/fundamentals/app-install-banners>Worthy of being on the home screen</a><br>
 When the Progressive Web App criteria are met, Chrome prompts users to add the Progressive Web App to their home screen.</li>
@@ -1778,7 +1760,7 @@ PWA, and how to take that a step further with an
 PWA by providing a more meaningful offline experience, reaching interactive even faster and taking care of many more important details.</p>
 </blockquote>
 <p>Thank you for reading!</p>
-<h4 id=credits>Credits</h4>
+<h2 id=credits>Credits</h2>
 <ul>
 <li><a href=https://developers.google.com/web/progressive-web-apps/ >Google Developer Docs</a></li>
 <li><a href=https://developers.google.com/web/tools/workbox/ >Workbox</a></li>
@@ -1817,6 +1799,7 @@ PWA by providing a more meaningful offline experience, reaching interactive even
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1844,6 +1827,7 @@ PWA by providing a more meaningful offline experience, reaching interactive even
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

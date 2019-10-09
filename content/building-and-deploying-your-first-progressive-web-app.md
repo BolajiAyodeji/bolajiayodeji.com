@@ -1,5 +1,5 @@
 ﻿---
-title: "Building & Deploying your first Progressive Web App"
+title: "Building & Deploying your First Progressive Web App"
 date: 2019-04-01T13:22:14+24:00
 draft: false
 type: "post"
@@ -15,20 +15,7 @@ Building a PWA is quite easy and simple. In this tutorial, we’re going to buil
 a simple Progressive web app (A weight converter app).
 Let's roll :)
 
-### TABLE OF CONTENTS
-
-* Introduction
-* Starter files
-* App description
-* Building the UI
-* Add JavaScript Functionality
-* Build the Progressive Web App
-* Deploy to Netlify
-* Conclusion
-
-*****
-
-### INTRODUCTION
+## INTRODUCTION
 
 I’m sure by now you must have heard or read about Progressive Web Applications.
 Progressive Web Applications are experiences that combine the best of web
@@ -51,7 +38,7 @@ caching.
 * **Engaging** — They feel like a natural app on the device, with immersive user
 experience.
 
-**WHY BUILD PROGRESSIVE WEB APPS?**
+## WHY BUILD PROGRESSIVE WEB APPS?
 
 Building a high-quality Progressive Web App has incredible benefits, making it
 easy to delight your users, grow engagement and increase traffic.
@@ -73,7 +60,7 @@ PWAs can significantly reduce page load times and thus improve overall UX.
 * They are progressive — They will work for any user on any device even with a
 poor internet connection.
 
-**THE THREE BASIC CRITERIA FOR A PWA**
+## THE THREE BASIC CRITERIA FOR A PWA
 
 1.  You need to be running on HTTPS
 1.  You need a web manifest
@@ -87,15 +74,15 @@ reach more users.
 
 {{< youtube m-sCdS0sQO8 >}}
 
-*****
+----
 
-### STARTER FILES
+## STARTER FILES
 
 You can find the starter repository
 [here](https://github.com/BolajiAyodeji/weight-converter) with all files and
 final demo [here](https://bolaji-wc.netlify.com/)
 
-### APP DESCRIPTION
+## APP DESCRIPTION
 
 We’re going to build a simple weight converter that converts a given weight from
 Pounds to its equivalent in Gram, Kilogram and Ounce.
@@ -110,7 +97,7 @@ Here’s how the final project looks:
 
 ![](https://cdn-images-1.medium.com/max/600/1*9MwTrHHOVXTVqmVofQdXCg.png)
 
-### BUILDING THE UI
+## BUILDING THE UI
 
 Now, let’s build the User interface of our application.
 
@@ -138,7 +125,7 @@ Now your app should look like this:
 
 ![](https://cdn-images-1.medium.com/max/800/1*dVU0ojt4fRoxPsIFyVobfw.png)
 
-### ADD JAVASCRIPT FUNCTIONALITY
+## ADD JAVASCRIPT FUNCTIONALITY
 
 > Basically, we want to get the input value from the input field and process then
 > return results to each of the following id’s: `gOutput` for Grams, `kgOutput`
@@ -166,7 +153,7 @@ Now you should have a functioning app
 
 ![](https://cdn-images-1.medium.com/max/800/1*h2u8Y76_VSqkARDDujoz5Q.png)
 
-### BUILD THE PROGRESSIVE WEB APP
+## BUILD THE PROGRESSIVE WEB APP
 
 The three basic criteria for a PWA:
 
@@ -213,6 +200,7 @@ Create the following files:
 
 In `js/app.js` add
 
+```js
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
        navigator.serviceWorker.register('../sw.js').then( () => {
@@ -220,6 +208,7 @@ In `js/app.js` add
        })
      })
     }
+```
 
 If the browser supports it, you should get this in your console
 
@@ -253,11 +242,13 @@ and how it should be returned to the user.
 So basically we imported `workbox-sw.js` which is Workbox’s service worker file,
 then we checked if Workbox is loaded in our own service worker.
 
+```js
     if (workbox) {
       console.log(`Yay! Workbox is loaded 🎉`);
     } else {
       console.log(`Boo! Workbox didn't load 😬`);
     }
+```
 
 One of Workbox’s primary features is it’s routing and caching strategy modules.
 It allows you to listen for requests from your web page and determine if and how
@@ -268,10 +259,12 @@ and the route then *handling* that request (i.e. providing a response).
 
 In `sw.js` , we did something like this:
 
+```js
     workbox.routing.registerRoute(
       /\.(?:js|css|scss)$/,
       new workbox.strategies.StaleWhileRevalidate(),
     );
+```
 
 Basically, this tells Workbox that when a request is made, it should see if the
 regular expression matches part of the URL (`.css, .scss, .js`) and if it does,
@@ -308,7 +301,7 @@ Now let's make our app installable.
 Now we need to connect our web app to the manifest to allow “add to home screen”
 from that page. Add this to your `index.html` 
 
-```
+```html
 <link rel="manifest" href="/manifest.json" />
  <meta name="theme-color" content="#333" />
 ```
@@ -325,13 +318,13 @@ Now caching will begin once the page loads
 
 ![](https://cdn-images-1.medium.com/max/800/1*1dVXSr5lmoaiTo5s9JME-A.png)
 
-*****
+----
 
 Congratulations, you’ve successfully built your first Progressive Web App. 
 
 It can be installed on Mobile (Android and iOS) and Desktop.
 
-#### DESKTOP
+### DESKTOP
 
 ![](https://cdn-images-1.medium.com/max/600/1*U8CZYQgPl2xH-AJ95gs4qQ.png)
 
@@ -339,7 +332,7 @@ It can be installed on Mobile (Android and iOS) and Desktop.
 
 ![](https://cdn-images-1.medium.com/max/800/1*RqMIFcuMNE1wT-_4bsWNkA.png)
 
-#### MOBILE
+### MOBILE
 
 ![](https://cdn-images-1.medium.com/max/400/1*iQh2SPEqrqNvoiZFn-_BwA.png)
 
@@ -353,7 +346,7 @@ It can be installed on Mobile (Android and iOS) and Desktop.
 
 ![](https://cdn-images-1.medium.com/max/400/1*Kf1nVW6XMBFGawiFlKmAuA.png)
 
-### DEPLOYING TO NETLIFY
+## DEPLOYING TO NETLIFY
 
 Now let’s deploy our app to [Netlify](https://www.netlify.com/).
 
@@ -391,12 +384,11 @@ Before you proceed, ensure you’ve hosted this project on
 > PS: Netlify generates random domains for each app deployed, you can change that
 > in **Domain settings.**
 
-### CONCLUSION
+## CONCLUSION
 
 Building a high-quality Progressive Web App has incredible benefits, making it
 easy to delight your users, grow engagement and increase conversions.
 
-*****
 
 * [Worthy of being on the home
 screen](https://developers.google.com/web/fundamentals/app-install-banners)<br>
@@ -429,7 +421,7 @@ faster and taking care of many more important details.
 
 Thank you for reading! 
 
-#### Credits
+## Credits
 
 * [Google Developer Docs](https://developers.google.com/web/progressive-web-apps/)
 * [Workbox](https://developers.google.com/web/tools/workbox/)

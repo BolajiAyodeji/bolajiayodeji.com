@@ -6,8 +6,6 @@ type: "post"
 tags: ["javascript", "es6", "modules"]
 ---
 
- 
-
 ![](https://cdn-images-1.medium.com/max/800/1*DDHE2Adf04v4EYcYbAUWSg.png)
 
 An essential aspect of software engineering is **efficiency.** Every successful
@@ -18,7 +16,7 @@ engaged to ensure code efficiency.
 In this article, I would introduce you to ES6 modules, what they are, how to use
 them and why you should care {0[]0}
 
-### **What exactly is a module?**
+## What exactly is a module?
 
 In JavaScript, the word **“modules”** refers to small units of independent,
 reusable code. They are the foundation of many JavaScript design patterns and
@@ -39,15 +37,14 @@ loaded.
 * By default, every declaration in that file stay local to that module and cannot
 be accessed in other modules unless the module file exports them.
 
-*****
 
-### What are ES6 Modules?
+## What are ES6 Modules?
 
 Before now, it was impossible to directly reference or include one JavaScript
 file in another, as such, developers therefore resorted to alternative options
 like multiple HTML script tags
 
-```
+```js
 <script src="app.js"></script>
  <script src="search.js"></script>
  <script src="user.js"></script>
@@ -56,19 +53,20 @@ like multiple HTML script tags
  </script>
 ```
 
-
 This is a bad practice as each script initiates a new HTTP request, which
 affects page performance and disrupts further processing while it runs.
 
 Let's say we have a file, `app.js` and included in this file is a function which
 checks every limit in a number and returns if it’s EVEN or ODD.
 
+```js
     function showNumbers(limit) {
      (let i = 0; i <= limit; i++) {
     const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
     console.log(i, message);
       }
     }
+```
 
 Now this function is only available within `app.js` . Wherever you need this
 function, you have to either rewrite the function or attach the script again.
@@ -84,7 +82,7 @@ This is where **ES6 Modules** come in :)
 <br>
 <span class="figcaption_hack">How ES6 modules work.</span>
 
-*****
+----
 
 Before ES2015 release, there were at least 3 major modules competing standards:
 
@@ -109,7 +107,7 @@ language. (Wikipedia)
 
 ![](https://cdn-images-1.medium.com/max/800/1*XzKcB3WRsVg3K2TapBbghg.png)
 
-### What you should know!
+## What you should know!
 
 * Everything inside an ES6 module is private by default, and runs in strict mode
 (there’s no need for `'use strict'`). 
@@ -118,12 +116,12 @@ language. (Wikipedia)
 * Modules must be included in your HTML with `type="module"`, which can be an
 inline or external script tag.
 
-    <script 
-     src="main.js"></script>
-    <script 
-    >
+```js
+  <script src="main.js"></script>
+    <script>
       // or an inline script
     </script>
+```
 
 * Modules are
 [deferred](https://developer.mozilla.org/en/docs/Web/HTML/Element/script#attr-defer),
@@ -132,14 +130,14 @@ and only run after a document is loaded
 For an in-depth knowledge about ES6 modules, read
 [here](https://ponyfoo.com/articles/es6-modules-in-depth)
 
-*****
 
-### How to use ES6 modules
+## How to use ES6 modules
 
 For this article, let's create three files, (`app.js` ,`math.js` and `max.js` )
 
 In `math.js` , let's write a basic arithmetic algorithm
 
+```js
     let sumAll = (a, b) => {return a + b;}
 
     let subtractAll = (a, b) => {return a - b;}
@@ -149,13 +147,14 @@ In `math.js` , let's write a basic arithmetic algorithm
     let multiplyAll = (a, b) => {return a * b;}
 
     let findModulus = (a, b) => {return a % b;}
+```
 
 Now to make this module accessible to other parts of our code, we need to
 `export` them. There are several ways of doing this;
 
 * You can export each module individually:
 
-```
+```js
 export let sumAll = (a, b) => {return a + b;}
 
  export let subtractAll = (a, b) => {return a - b;}
@@ -169,7 +168,7 @@ export let sumAll = (a, b) => {return a + b;}
 
 * A better way is to use a single export statement:
 
-```
+```js
 let sumAll = (a, b) => {return a + b;}
 
  let subtractAll = (a, b) => {return a - b;}
@@ -185,9 +184,7 @@ let sumAll = (a, b) => {return a + b;}
 
 * You can also export default values
 
-
-
-```
+```js
 export default {sumAll, subtractAll, multiplyAll, divideAll};
 ```
 
@@ -199,18 +196,19 @@ several ways of doing this also;
 
 * You can import individually
 
-```
+```js
 import {sumAll} from './math.js';
 ```
 
 Let's test our import
-```
+
+```js
 console.log(sumAll(9, 8)); //17
 ```
 
 * You can import multiple modules at once:
 
-```
+```js
 import {sumAll, subtractAll, divideAll} from './math.js';
 ```
 
@@ -221,13 +219,14 @@ import {sumAll, subtractAll, divideAll} from './math.js';
 a defined data object. More details
 [here](https://searchmicroservices.techtarget.com/definition/alias)
 
-```
+```js
 import * as math from './math.js';
 ```
 
 Here we have imported all the modules in `math.js` and assigned them to the
 alias `math` . To use this imported module we do this:
-```
+
+```js
 console.log(math.sumAll(50, 10)); // 60
 
  console.log(math.subtractAll(50, 10)); // 40
@@ -241,7 +240,7 @@ console.log(math.sumAll(50, 10)); // 60
 
 * You can also import default values
 
-```
+```js
 import math from './math.js';
  console.log(math.sumAll(5, 2)); // 7
 ```
@@ -259,14 +258,14 @@ Uncaught SyntaxError: The requested module './math.js' does not
 
 To use this method, you must export `sumAll()` as `default`
 
-```
+```js
 export default {sumAll};
 ```
 
 * You can also use an absolute path for the module import, to reference modules
 defined on another domain:
 
-```
+```js
 import {sumAll} from 'https://bolaji-module.glitch.me/sumAll.js';
  console.log(sumAll(50, 10)); // 60
 ```
@@ -279,7 +278,7 @@ that allows cross-site loading.
 > Modules are imported with either absolute or Relative references and must start with
 > either “/”, “./”, or “../”.
 
-```
+```js
 import {sumAll} from 'math.js'; ❌
  import {sumAll} from 'lib/max.js'; ❌
 
@@ -290,7 +289,7 @@ import {sumAll} from 'math.js'; ❌
 
 * You can import several modules from different files, in our `max.js` add this:
 
-```
+```js
 let max = (a, b) => {
 return (a > b) ? a : b;
 }
@@ -299,7 +298,7 @@ export {max};
 
 Now you can import `max.js` and `math.js` together in `app.js` 
 
-```
+```js
 import * as math from './math.js';
  import {max} from './max.js';
 
@@ -316,9 +315,8 @@ import * as math from './math.js';
 > few modules is going to reduce our app’s performance , only use modules when
 needed.
 
-*****
 
-### Some Advantages of using modules
+## Some Advantages of using modules
 
 * Code can be split into smaller files of self-contained functionality.
 * Multiple scripts can be concatenated thereby increasing performance.
@@ -332,9 +330,8 @@ useful here, it becomes `module1.sumAll()` and `module2.sumAll()`.
 strict’` .
 * ES6 modules help you to organize your code better 
 
-*****
 
-### CONCLUSION
+## CONCLUSION
 
 ES6 Modules are one of the biggest features introduced in modern browsers.
 Modern JavaScript frameworks like Vue JS and React JS use this feature.

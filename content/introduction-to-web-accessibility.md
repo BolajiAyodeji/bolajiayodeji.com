@@ -24,7 +24,7 @@ In this article, I’ll introduce you to accessibility, what it means, why you s
 
 *****
 
-### What is Accessibility?
+## What is Accessibility?
 
 Let’s start by defining accessibility and inclusion.
 
@@ -32,21 +32,20 @@ Let’s start by defining accessibility and inclusion.
 > dictionary](https://www.dictionary.com/browse/accessibility), accessibility
 simply means: easy to approach, reach, enter, speak with, or use.
 
-*****
+_
 
 > **Inclusion** is a societal ideology regarding individuals with disabilities and
 > special education. I**nclusion** describes a group that’s particularly welcoming
 to all kinds of people irrespective of their differences.
 
-*****
+_
 
 > In computer-human interaction, accessibility simply means making the web
 > accessible and having functionalities that can be operated by literally everyone
 including those with all forms of disabilities, limitations and conditions..
 
-*****
 
-#### Those with Disabilities
+## Those with Disabilities
 
 According to WHO, there are about 285,000,000 people in the world today. Blind
 and visually impaired make up of the 285,000,000 people according to the [World
@@ -67,7 +66,7 @@ individuals and blind people.)
 * **Neurological disabilities** ( Disabilities associated with damage to the
 nervous system that results in the loss of some physical or mental functions.)
 
-#### Those with limitations/ conditions
+## Those with limitations/ conditions
 
 Disabilities can also be conditional. 
 
@@ -77,19 +76,17 @@ Disabilities can also be conditional.
 
 All these are examples where someone may benefit from accessible practices.
 
-> Everybody is a keyboard user when they are eating with their mouse hand.
+> Everybody is a keyboard user when they are eating with their mouse hand. — Adrian Roselli
 
-> — Adrian Roselli
-
-#### How can we help these people?
+## How can we help these people?
 
 Web Accessibility comes to the rescue. It is a practice whereby web applications
 are designed and developed so that its functionality can be operated by people
 with disabilities. 
 
-*****
+----
 
-### Web Accessibility Guidelines
+## Web Accessibility Guidelines
 
 > Throughout this article, I’ll refer to the [Web Content Accessibility Guidelines
 > (WCAG) 2.0](https://www.w3.org/TR/WCAG20/), a set of guidelines and best
@@ -119,7 +116,7 @@ browsers or operating systems.
 
 *****
 
-### Web accessibility tips
+## Web accessibility tips
 
 Now that you understand what Web Accessibility means and why you should care,
 let me walk you through a few tips that would help you to build accessible
@@ -148,7 +145,9 @@ assistive technologies.*
 
 You add alternative texts to images with the *`alt`* attribute
 
+```html
     <img src="./school.png" alt="a private school in Kogi State.">
+```
 
 Another important aspect of the `alt` attribute is that you should be specific
 when adding these texts. For example, examine the images below:
@@ -160,11 +159,15 @@ when adding these texts. For example, examine the images below:
 
 <br> 
 
+```html
     <img src="./lady.png" alt="a beautiful lady">
+```
 
---
+----
 
+```html
     <img src="./lady.png" alt="a beautiful lady smiling in front of a brown door">
+```
 
 <br> 
 
@@ -176,11 +179,15 @@ Which of the code above would support accessibility more, 1 or 2?
 
 <br> 
 
+```html
     <img src="./dog.png" alt="a cute dog">
+```
 
---
+----
 
+```html
     <img src="./dog.png" alt="a cute dog sitting beside a pillow on a gray couch">
+```
 
 <br> 
 
@@ -198,7 +205,7 @@ Ensure you add `<label>` to your form elements though they might not be visible.
 You can add labels for screen readers and still hide them from displaying to
 other users.
 
-```
+```html
 <form action="./contact.php" method="POST">
   <label for="fullname">Full name</label>
   <input type="text" name="fullname" id="fullname">
@@ -213,7 +220,7 @@ Ensure that your `for` attribute matches the `id`
 
 * **Always specify your web app language**
 
-```
+```html
 <html lang="en-US"> // American english
 
  <html lang="en-UK"> // British english
@@ -233,7 +240,7 @@ colour**
 Skipping to main content links are useful for users who use keyboard navigation
 only
 
-```
+```html
 <body>
 ...
   <a href="#main">Get Started</a>
@@ -256,12 +263,12 @@ only
 HTML5 provides additional elements, such as `<nav>` , `section` and `<aside>`,
 to better structure your content.
 
-*****
+----
 
 I’d stop here as we have tons of accessibility guidelines, but don’t worry, I’ve
 included links for further reading below :)
 
-### The A11y project
+## The A11y project
 
 This is a community-driven effort to make web accessibility easier with tons of
 resources, events, patterns, checklists and lots more to help you build more
@@ -270,7 +277,7 @@ accessible applications. [https://a11yproject.com/](https://a11yproject.com/)
 > Accessibility can be a complex and difficult topic. The Accessibility Project
 > understands this and wants to help make it easier to implement on the web.
 
-### Web accessibility tools
+## Web accessibility tools
 
 * **ally.css**
 
@@ -305,12 +312,12 @@ A chrome extension which is helpful for understanding the problems faced by
 people with slight to extreme vision problems. Download
 [here](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl)
 
-#### A full list of web accessibility tools can be found
+> A full list of web accessibility tools can be found
 [here](https://www.w3.org/WAI/ER/tools/)
 
 *****
 
-### Resources
+## Resources
 
 * [Web Content Accessibility Guidelines (WCAG 2.0)](https://www.w3.org/TR/WCAG20/)
 * [HTML Language
@@ -330,12 +337,12 @@ video](https://a11yproject.com/posts/using-caption-services-with-html5-video/)
 * [Basic screen reader commands for accessibility
 testing](https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
 
-#### A full list of web accessibility resources can be found
+> A full list of web accessibility resources can be found
 [here](https://a11yproject.com/resources)
 
 *****
 
-### Conclusion
+## Conclusion
 
 Everyone should be able to access and enjoy the web irrespective of their
 challenges or limitations. As developers, we’re building solutions for **every

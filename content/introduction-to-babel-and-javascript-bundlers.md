@@ -24,7 +24,7 @@ installations and configurations.
 
 Let's roll :)
 
-### Introducing Babel
+## Introducing Babel
 
 [Babel](https://babeljs.io/) is a free and open-source **JavaScript** compiler
 and configurable transpiler which is commonly used for transpiling ES6.
@@ -45,11 +45,12 @@ waiting for browser support.
 ![](https://cdn-images-1.medium.com/max/800/0*DCOgES9vSiGtSUyp.jpg)
 <span class="figcaption_hack">How Babel works</span>
 
-### Things you should know!
+## Things you should know!
 
 * **Transpilers**, or source-to-source compilers, are tools that read source code
 written in one programming language and produce the equivalent code in another
 language. (Wikipedia)
+
 * **[NPM](https://www.npmjs.com/)** is a **package manager** for **JavaScript**
 with a huge listing of reusable code modules and **packages**. You can [specify
 all of your project’s
@@ -57,9 +58,11 @@ dependencies](https://docs.npmjs.com/files/package.json#dependencies) inside
 your `package.json` file, then any time you (or anyone else) needs to get
 started with your project they can just run `npm install` and immediately have
 all of the dependencies installed.
+
 * **local packages** are installed in the directory where you run, `npm
 install<package-name>` and they are put in the `node_modules` folder inside this
 directory *[You must install in the project directory].*
+
 * **global packages** are all put in a single place in your system (exactly where
 depends on your setup and OS), regardless of where you run `npm install -g
 <package-name>` *[You can install anywhere].*
@@ -86,7 +89,7 @@ This guide would be split into five parts:
 * **NPM Scripts Configurations**
 * **Installing Babel for Browser (Browserify & Parcel)**
 
-### Starter files
+## Starter files
 
 For testing purposes, create these files in the right structure as shown below:
 
@@ -103,9 +106,9 @@ For testing purposes, create these files in the right structure as shown below:
 > **Tip:** you can create files in the command line by running `touch` followed by
 > the file name **+ extension** i.e `touch app.js`
 
-*****
+----
 
-### Installing Babel CLI
+## Installing Babel CLI
 
 * Before we proceed, you need to install [Node.js](https://nodejs.org/)
 
@@ -114,9 +117,11 @@ For testing purposes, create these files in the right structure as shown below:
 
 To confirm if node.js is installed properly,
 
+```bash
      node -v
     // should return the version the installed
     // v10.13.0
+```
 
 * Next, you need to generate your `package.json` file.
 
@@ -126,7 +131,9 @@ file is used to give information to `npm` that allows it to identify the project
 as well as handle the project's dependencies.
 [Source](https://docs.nodejitsu.com/articles/getting-started/npm/what-is-the-file-package-json/)
 
-    npm init
+```bash
+ npm init
+```
 
 This will walk you through a few questions like what is the name of your
 project, version, description, etc. When it asks you about the “entry point”,
@@ -143,7 +150,9 @@ Now let's install Babel CLI **(NB: we’re installing locally)**
 > recommended built-in method that works on the command line. Othertools can be
 found [here](https://babeljs.io/setup#installation).
 
-    npm install --save-dev @babel/core @babel/cli
+```bash
+ npm install --save-dev @babel/core @babel/cli
+```
 
 This might take a while pending on your network strength.
 
@@ -154,36 +163,42 @@ where all packages are installed)
 
 — Your `package.json` should have some new entry
 
+```json
     "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2"
     }
+```
 
 — You should have a new file also `package-lock.json` (This files basically
 stores all information about the newly installed packages, so if someone else
 would want to work on that project, they could `npm insatll` and get the same
 dependencies on their machine.
 
-### Setting up Babel Presets
+## Setting up Babel Presets
 
 As mentioned earlier, Babel does not transpile to ES6 by default. We have to
 include some [plugins](https://babeljs.io/docs/plugins). To start, you can use
 the [env preset](https://babeljs.io/docs/plugins/preset-env), which enables
 transforms for ES2015+
 
-    npm install @babel/preset-env --save-dev
+```bash
+ npm install @babel/preset-env --save-dev
+```
 
 Now your `package-lock.json` should be updated with more dependencies
 
-### .babelrc Configurations
+## .babelrc Configurations
 
 `.babelrc` is the configuration file used to manage your presets and plugins
 
-    touch .babelrc
+```bash
+ touch .babelrc
+```
 
 * Inside the created file, add this:
 
-```
+```json
 {
  "presets": ["@babel/preset-env"]
  }
@@ -197,7 +212,7 @@ configuration might change depending on your setup
 [JSBin](http://jsbin.com/rokimopuse/edit?html,js,console,output),
 [Codepen](http://codepen.io/anon/pen/dOGgeO).
 
-#### Folder Structure
+## Folder Structure
 
 At the end of all this, your folder structure should look like this:
 
@@ -215,7 +230,7 @@ At the end of all this, your folder structure should look like this:
 ```
 
 
-### **NPM Scripts Configurations**
+## NPM Scripts Configurations
 
 Now let’s setup NPM to run babel on the CLI
 
@@ -223,7 +238,7 @@ Now let’s setup NPM to run babel on the CLI
 various commands to be performed on your project. Some common commands are:
 `start` , `build` , `test` e.t.c
 
-```
+```json
 "scripts": {
  // some commands here
 },
@@ -233,7 +248,7 @@ various commands to be performed on your project. Some common commands are:
 
 * Now add this to the script section
 
-```
+```json
 "scripts": {
   "build": "babel src -d public"
 },
@@ -251,17 +266,19 @@ A common practice is to set up watching.
 
 edit your build script and add `-w` or `-watch`
 
+```json
     "scripts": {
     "build": "babel src -d public -w"
     },
+```
 
-### Let’s test Babel
+## Let’s test Babel
 
 Let’s use the files from my last tutorial
 
 In `src/math.js` , add this
 
-```
+```js
 let sumAll = (a, b) => {return a + b;}
  let subtractAll = (a, b) => {return a - b;}
  let divideAll = (a, b) => {return a / b;}
@@ -272,7 +289,7 @@ let sumAll = (a, b) => {return a + b;}
 
 In `src/app.js` , add this
 
-```
+```js
 import math from './math.js';
 
  console.log(math.sumAll(50, 10));
@@ -284,7 +301,7 @@ import math from './math.js';
 
 To test this code, add `src/app.js` to the `index.html`
 
-```
+```html
 <script type="module" src="../src/app.js"></script>
 
 ```
@@ -298,14 +315,17 @@ Open the HTML and view console, you should get
 
 Now let's reset out script path to the transpiled JavaScript
 
-```
+```html
 <script src="./app.js"></script>
 
 ```
 
 To begin Babel transpiling, run:
 
-    npm run build
+```bash
+ npm run build
+```
+
 ![](https://cdn-images-1.medium.com/max/800/1*LAgfdweuunW2Mn2XZyrMIA.png)
 
 Now Babel has done its magic;
@@ -327,7 +347,7 @@ Now, If you run your HTML, you’d get this error in the console;
 This is because in `app.js` our `import` statement is transpiled into ES5 and it
 becomes `require` ;
 
-```
+```js
 var math = _interopRequireWildcard(require("./math.js"));
 ```
 
@@ -337,7 +357,9 @@ If you run `app.js` in node, you will get the right results;
 
 Open your CLI and run
 
-    node public/app.js
+```bash
+ node public/app.js
+```
 
 ![](https://cdn-images-1.medium.com/max/800/1*uZv33lB3pLT0csriGsMATg.png)
 
@@ -353,27 +375,35 @@ Angular.
 > optimized **bundles** for the browser. This lets you use **require(‘modules’)**
 in the browser by bundling up all of your dependencies.
 
-### Working with Browserify
+## Working with Browserify
 
-    npm install -g browserify
+```bash
+ npm install -g browserify
+```
 
 Install the uniq module with [npm](https://npmjs.org/):
 
 > Uniq removes all duplicates from an array in place. More details
 > [here](https://www.npmjs.com/package/uniq)
 
-    npm install uniq
+```bash
+ npm install uniq
+```
 
 Now recursively bundle up all the required modules starting at `app.js` into a
 single file called `bundle.js` with the browserify command:
 
-    browserify app.js -o bundle.js
+```bash
+ browserify app.js -o bundle.js
+```
 
 Add to your HTML:
 
-    <script src="bundle.js"></script>
+```html
+ <script src="bundle.js"></script>
+```
 
-### Working with Parcel
+## Working with Parcel
 
 > Parcel is a web application bundler, differentiated by its developer experience.
 > It offers blazing fast performance utilizing multicore processing, and requires
@@ -381,17 +411,16 @@ zero configuration. [source](https://parceljs.org/getting_started.html)
 
 To install:
 
-```
+```bash
 npm install parcel-bundler --save-dev
 ```
-
 
 Parcel can take any type of file as an entry point, but an HTML or JavaScript
 file is a good place to start.
 
 Modify your scripts in `package.json`
 
-```
+```json
 {
   "scripts": {
     "dev": "parcel .src/index.html",
@@ -400,16 +429,16 @@ Modify your scripts in `package.json`
 }
 ```
 
-
 To run in development mode:
-
 
 Now open [http://localhost:1234/](http://localhost:1234/) in your browser.
 Everything should log correctly now.
 
 To build for production
 
-    npm run build
+```bash
+ npm run build
+```
 
 You’d get a new subfolder `dist` which contains your bundled files, here you
 won’t need `public` subfolder anymore, you can delete it.
@@ -417,7 +446,7 @@ won’t need `public` subfolder anymore, you can delete it.
 > Read [Parcel docs](https://parceljs.org/getting_started.html) for a complete and
 > deep guide to all the features of Parcel.
 
-### Conclusion
+## Conclusion
 
 Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a
 backwards compatible version of JavaScript in current and older browsers or

@@ -1,5 +1,5 @@
 ﻿---
-title: "Iterating through JavaScript Objects  -  5 Techniques and Performance Tests."
+title: "Iterating through JavaScript Objects  -  5 Techniques and Performance Tests"
 date: 2019-03-10T13:22:14+24:00
 draft: false
 type: "post"
@@ -16,9 +16,9 @@ tests to show you which is faster and more efficient.
 
 *****
 
-### * Useful tips :)
+## Useful tips :)
 
-#### Property flags
+### Property flags
 
 Object properties, besides a `value`, have three special attributes (also known
 as “flags”):
@@ -37,7 +37,7 @@ allows us to query the *full* information about a property.
 
 {{< gist BolajiAyodeji a6b43032adb5dab84361a3437ed9e977 >}}
 
-#### **What does an enumerable property mean?**
+### **What does an enumerable property mean?**
 
 **Enumerable properties** are those **properties** whose internal **enumerable**
 flag is set to true, which is the default for **properties** created via simple
@@ -46,9 +46,9 @@ assignment.
 Basically, if you create an object via `obj = {foo: 'bar'}` or something
 thereabouts, all the properties are enumerable.
 
-*****
+----
 
-### 1. for…in loop
+## for…in loop
 
 The **for...in loop statement** can be used to iterate over all
 non-[Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol),
@@ -58,7 +58,7 @@ of an object.
 
 {{< gist BolajiAyodeji 30f496fc4546fd2ecd6fec24f75a7ba0 >}}
 
-### 2. Object.keys
+## Object.keys
 
 The `Object.keys()` method returns an array of Object keys. This creates an
 array that contains the properties of the object. You can then loop through the
@@ -66,7 +66,7 @@ array to get the keys and values you need.
 
 {{< gist BolajiAyodeji 96f4d8012b961c790224503985a759ff >}}
 
-### 3. Object.values
+## Object.values
 
 The `Object.values()` method returns an array of Objects Values. This creates an
 array that contains the properties of the object. You can then loop through the
@@ -74,7 +74,7 @@ array to get the keys and values you need.
 
 {{< gist BolajiAyodeji fc94861337260f9c8ab16153801e847c >}}
 
-### 4. Object.getOwnPropertyNames
+## Object.getOwnPropertyNames
 
 The `Object.getOwnPropertyNames()` method returns an array of all properties
 (including non-enumerable properties except for those which use Symbol) found
@@ -84,7 +84,7 @@ you need.
 
 {{< gist BolajiAyodeji ae8829a2efffa7fa93a6e0511d9d4158 >}}
 
-### 5. Object.entries
+## Object.entries
 
 The `Object.entries()` method returns an array of a given object's own
 enumerable property `[key, value]` pairs. 
@@ -93,7 +93,7 @@ enumerable property `[key, value]` pairs.
 
 <br> 
 
-### Performance Comparison
+## Performance Comparison
 
 Now let's test all these techniques and compare each one based on their speed
 and performance to determine which is faster and much efficient
@@ -104,7 +104,7 @@ Most browsers like Chrome and Firefox implement high-resolution timing in
 
 **Usage**
 
-```
+```js
 let start = performance.now();
 
 
@@ -119,11 +119,11 @@ Let’s begin testing…
 
 {{< gist BolajiAyodeji f42e98d723eb4e5629691d7a148ee550 >}}
 
-### Test Results
+## Test Results
 
 According to our tests, here are the results in ascending order;
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1552257253/loop.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570641888/null/blog/loop_rzwxcj.png)
 
 So, according to these results, the fastest way to iterate through JavaScript
 Objects is the **for…in loop.** Now, this doesn't mean the other methods are
@@ -144,7 +144,7 @@ convert the object into an array using `Object.keys()` , `Object.values()` ,
 `Object.getOwnPropertyNames` or `Object.entries()` . Then you loop through the
 array to get the keys and values.
 
-### Reference
+## Reference
 
 * [http://javascript.info/](http://javascript.info/)
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)

@@ -10,12 +10,12 @@
 <title>Introduction to Babel and JavaScript Bundlers</title>
 <meta name=author content="Bolaji Ayodeji">
 <meta name=description content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.">
-<meta name=keywords content="HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
+<meta name=keywords content="Bolaji Ayodeji,HTML,CSS,XML,JavaScript,JAMstack,web accessibility,media accessibility,a11y,m16y,Blog,Web,PWA,Frontend development,Web development,developer,Bolaji,Nigeria,UI/UX,Design,coder,git,github,react,nodejs,pwafire,hugo,markdown,APIs,Redux,typescript,100daysofcode,technical writer">
 <meta name=twitter:card content=summary>
 <meta name=twitter:site content="@Bolaji Ayodeji">
 <meta name=twitter:title content="Introduction to Babel and JavaScript Bundlers">
 <meta name=twitter:description content="As earlier stated in my previous article ES6 modules is a very powerful concept. Although support is not available everywhere yet, a common way of using it is to transpile into ES5. You can use Grunt, Gulp, Webpack, Babel or some other transpiler to compile the modules during a build process.In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify.">
-<meta name=twitter:image content=https://res.cloudinary.com/iambeejayayo/image/upload/v1569655144/website/social-logo.png>
+<meta name=twitter:image content=https://res.cloudinary.com/bolaji/image/upload/v1570636548/null/about/social-logo_mjlfq4.png>
 <meta name=generator content="Hugo 0.55.4">
 <link rel=canonical href=https://bolajiayodeji.com/introduction-to-babel-and-javascript-bundlers/ >
 <link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
@@ -27,9 +27,9 @@
 <meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
 <meta name=msvalidate.01 content=25B948519E545F3B7F9C4FA5F3204C79>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
+<link rel=icon href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
 <meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/iambeejayayo/image/upload/v1566876795/website/favicon.png>
+<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
 <link rel=manifest href=/manifest.json>
 <meta name=theme-color content=#20242b>
 <script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
@@ -117,7 +117,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
@@ -817,7 +817,6 @@ html {
 
   .entry-summary {
     padding: 0 30px;
-    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1012,7 +1011,6 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    text-align: justify
   }
 
   .post-content blockquote {
@@ -1456,17 +1454,10 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </amp-sidebar>
 <header class=header>
-<p class=subtitle>Hi, I'm Bolaji.</p>
+<p class=subtitle>Hi, I'm Bolaji ✨</p>
 <p class=subtitle>I create contents around web and frontend development.</p>
 <p class="subtitle about-me"><a href=/about>About Me →</a></p>
 <section class=social-btns>
-<div style="padding-bottom: 10px">
-<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
-</div>
-<div>
-<script src=https://apis.google.com/js/platform.js></script>
-<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
-</div>
 <div>
 <a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
 <script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
@@ -1474,6 +1465,13 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <div>
 <a class=github-button href=https://github.com/bolajiayodeji data-show-count=true aria-label="Follow @bolajiayodeji on GitHub">Follow @bolajiayodeji</a>
 <script async defer src=https://buttons.github.io/buttons.js></script>
+</div>
+<div>
+<script src=https://apis.google.com/js/platform.js></script>
+<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
+</div>
+<div style="padding-bottom: 10px">
+<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
 </div>
 </section>
 <button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
@@ -1490,6 +1488,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 </ul>
 </nav>
 </header>
+<link href=/prism.css rel=stylesheet>
 <section class="main post-detail">
 <header class=post-header>
 <h1 class=post-title>Introduction to Babel and JavaScript Bundlers</h1>
@@ -1503,23 +1502,18 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <ul>
 <li>
 <ul>
-<li>
-<ul>
 <li><a href=#introducing-babel>Introducing Babel</a></li>
 <li><a href=#things-you-should-know>Things you should know!</a></li>
 <li><a href=#starter-files>Starter files</a></li>
 <li><a href=#installing-babel-cli>Installing Babel CLI</a></li>
 <li><a href=#setting-up-babel-presets>Setting up Babel Presets</a></li>
-<li><a href=#babelrc-configurations>.babelrc Configurations</a>
-<ul>
+<li><a href=#babelrc-configurations>.babelrc Configurations</a></li>
 <li><a href=#folder-structure>Folder Structure</a></li>
-</ul></li>
-<li><a href=#npm-scripts-configurations><strong>NPM Scripts Configurations</strong></a></li>
+<li><a href=#npm-scripts-configurations>NPM Scripts Configurations</a></li>
 <li><a href=#let-s-test-babel>Let’s test Babel</a></li>
 <li><a href=#working-with-browserify>Working with Browserify</a></li>
 <li><a href=#working-with-parcel>Working with Parcel</a></li>
 <li><a href=#conclusion>Conclusion</a></li>
-</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -1530,7 +1524,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
 <a href=https://webpack.js.org/ >Webpack</a>, <a href=https://babeljs.io/ >Babe</a>l or some other transpiler to compile the modules during a build process.</p>
 <p>In this article, I’d guide through an introduction to transpiling ES6 with babel and bundling your modules with Browserify. This guide will cover basic installations and configurations.</p>
 <p>Let’s roll :)</p>
-<h3 id=introducing-babel>Introducing Babel</h3>
+<h2 id=introducing-babel>Introducing Babel</h2>
 <p><a href=https://babeljs.io/ >Babel</a> is a free and open-source <strong>JavaScript</strong> compiler and configurable transpiler which is commonly used for transpiling ES6.</p>
 <p>Babel was created by <a href=https://github.com/kittens>Sebastian McKenzien</a>
 JavaScript Developer <a href=http://facebook.com/ >@facebook </a>in September of 2014. It was originally called <strong>6to5</strong> but was later renamed to <strong>Babel</strong>. With the release of Babel 6, the focus turned more towards making Babel pluggable. The default action for Babel in version 6 is not to transform your ES6 to ES5 anymore, but towards making Babel pluggable (Allows you to create plugins to transform your code) so you now have to include various <a href=https://babeljs.io/docs/en/presets/ >presets</a>. The latest release is <strong>Babel 7</strong></p>
@@ -1539,13 +1533,13 @@ JavaScript Developer <a href=http://facebook.com/ >@facebook </a>in September of
 </blockquote>
 <p><img src=https://cdn-images-1.medium.com/max/800/0*DCOgES9vSiGtSUyp.jpg alt="">
 <span class=figcaption_hack>How Babel works</span></p>
-<h3 id=things-you-should-know>Things you should know!</h3>
+<h2 id=things-you-should-know>Things you should know!</h2>
 <ul>
-<li><strong>Transpilers</strong>, or source-to-source compilers, are tools that read source code written in one programming language and produce the equivalent code in another language. (Wikipedia)</li>
-<li><strong><a href=https://www.npmjs.com/ >NPM</a></strong> is a <strong>package manager</strong> for <strong>JavaScript</strong>
+<li><p><strong>Transpilers</strong>, or source-to-source compilers, are tools that read source code written in one programming language and produce the equivalent code in another language. (Wikipedia)</li>
+<li><p><strong><a href=https://www.npmjs.com/ >NPM</a></strong> is a <strong>package manager</strong> for <strong>JavaScript</strong>
 with a huge listing of reusable code modules and <strong>packages</strong>. You can <a href=https://docs.npmjs.com/files/package.json#dependencies>specify all of your project’s dependencies</a> inside your <code>package.json</code> file, then any time you (or anyone else) needs to get started with your project they can just run <code>npm install</code> and immediately have all of the dependencies installed.</li>
-<li><strong>local packages</strong> are installed in the directory where you run, <code>npm install&lt;package-name></code> and they are put in the <code>node_modules</code> folder inside this directory <em>[You must install in the project directory].</em></li>
-<li><strong>global packages</strong> are all put in a single place in your system (exactly where depends on your setup and OS), regardless of where you run <code>npm install -g &lt;package-name></code> <em>[You can install anywhere].</em></li>
+<li><p><strong>local packages</strong> are installed in the directory where you run, <code>npm install&lt;package-name></code> and they are put in the <code>node_modules</code> folder inside this directory <em>[You must install in the project directory].</em></li>
+<li><p><strong>global packages</strong> are all put in a single place in your system (exactly where depends on your setup and OS), regardless of where you run <code>npm install -g &lt;package-name></code> <em>[You can install anywhere].</em></li>
 </ul>
 <blockquote>
 <p>In general, <strong>all packages should be installed locally, t</strong>here are two primary reasons for this.</p>
@@ -1567,7 +1561,7 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <li><strong>NPM Scripts Configurations</strong></li>
 <li><strong>Installing Babel for Browser (Browserify & Parcel)</strong></li>
 </ul>
-<h3 id=starter-files>Starter files</h3>
+<h2 id=starter-files>Starter files</h2>
 <p>For testing purposes, create these files in the right structure as shown below:</p>
 <pre><code>.
 ├── public
@@ -1580,7 +1574,7 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <p><strong>Tip:</strong> you can create files in the command line by running <code>touch</code> followed by the file name <strong>+ extension</strong> i.e <code>touch app.js</code></p>
 </blockquote>
 <hr>
-<h3 id=installing-babel-cli>Installing Babel CLI</h3>
+<h2 id=installing-babel-cli>Installing Babel CLI</h2>
 <ul>
 <li>Before we proceed, you need to install <a href=https://nodejs.org/ >Node.js</a></li>
 </ul>
@@ -1588,9 +1582,9 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <p>Head <a href=https://nodejs.org/en/download/ >here</a>, download and install the latest version for your Operating system.</p>
 </blockquote>
 <p>To confirm if node.js is installed properly,</p>
-<pre><code> node -v
-// should return the version the installed
-// v10.13.0
+<pre><code class=language-bash>     node -v
+    // should return the version the installed
+    // v10.13.0
 </code></pre>
 <ul>
 <li>Next, you need to generate your <code>package.json</code> file.</li>
@@ -1600,7 +1594,7 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <code>package.json</code> - this file holds various metadata relevant to the project. This file is used to give information to <code>npm</code> that allows it to identify the project as well as handle the project’s dependencies.
 <a href=https://docs.nodejitsu.com/articles/getting-started/npm/what-is-the-file-package-json/ >Source</a></p>
 </blockquote>
-<pre><code>npm init
+<pre><code class=language-bash> npm init
 </code></pre>
 <p>This will walk you through a few questions like what is the name of your project, version, description, etc. When it asks you about the “entry point”, you can leave it as <code>app.js</code> for now. Typically this is the primary entry point to your program. Read <a href=https://docs.npmjs.com/files/package.json>npm docs</a> for a full guide on setting up your <code>package.json</code></p>
 <p>Once you’re done with this, your <code>package.json</code> file should be created now in your project root.</p>
@@ -1608,31 +1602,31 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <blockquote>
 <p>There are several tools for installing Babel, Babel CLI is a common and recommended built-in method that works on the command line. Othertools can be found <a href=https://babeljs.io/setup#installation>here</a>.</p>
 </blockquote>
-<pre><code>npm install --save-dev @babel/core @babel/cli
+<pre><code class=language-bash> npm install --save-dev @babel/core @babel/cli
 </code></pre>
 <p>This might take a while pending on your network strength.</p>
 <p>After running this, three things should happen</p>
 <p>— You should have a new subfolder in your project root <code>node_modules</code> (This is where all packages are installed)</p>
 <p>— Your <code>package.json</code> should have some new entry</p>
-<pre><code>"devDependencies": {
-"@babel/cli": "^7.2.3",
-"@babel/core": "^7.2.2"
-}
+<pre><code class=language-json>    "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2"
+    }
 </code></pre>
 <p>— You should have a new file also <code>package-lock.json</code> (This files basically stores all information about the newly installed packages, so if someone else would want to work on that project, they could <code>npm insatll</code> and get the same dependencies on their machine.</p>
-<h3 id=setting-up-babel-presets>Setting up Babel Presets</h3>
+<h2 id=setting-up-babel-presets>Setting up Babel Presets</h2>
 <p>As mentioned earlier, Babel does not transpile to ES6 by default. We have to include some <a href=https://babeljs.io/docs/plugins>plugins</a>. To start, you can use the <a href=https://babeljs.io/docs/plugins/preset-env>env preset</a>, which enables transforms for ES2015+</p>
-<pre><code>npm install @babel/preset-env --save-dev
+<pre><code class=language-bash> npm install @babel/preset-env --save-dev
 </code></pre>
 <p>Now your <code>package-lock.json</code> should be updated with more dependencies</p>
-<h3 id=babelrc-configurations>.babelrc Configurations</h3>
+<h2 id=babelrc-configurations>.babelrc Configurations</h2>
 <p><code>.babelrc</code> is the configuration file used to manage your presets and plugins</p>
-<pre><code>touch .babelrc
+<pre><code class=language-bash> touch .babelrc
 </code></pre>
 <ul>
 <li>Inside the created file, add this:</li>
 </ul>
-<pre><code>{
+<pre><code class=language-json>{
  "presets": ["@babel/preset-env"]
  }
 </code></pre>
@@ -1643,7 +1637,7 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <a href=http://jsbin.com/rokimopuse/edit?html,js,console,output>JSBin</a>,
 <a href=http://codepen.io/anon/pen/dOGgeO>Codepen</a>.</p>
 </blockquote>
-<h4 id=folder-structure>Folder Structure</h4>
+<h2 id=folder-structure>Folder Structure</h2>
 <p>At the end of all this, your folder structure should look like this:</p>
 <pre><code>.
 ├── node_modules
@@ -1656,13 +1650,13 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 ├── package.json
 ├── package-lock.json
 </code></pre>
-<h3 id=npm-scripts-configurations><strong>NPM Scripts Configurations</strong></h3>
+<h2 id=npm-scripts-configurations>NPM Scripts Configurations</h2>
 <p>Now let’s setup NPM to run babel on the CLI</p>
 <ul>
 <li>In your <code>package.json</code> , there is a section called <code>"scripts"</code> This holds various commands to be performed on your project. Some common commands are:
 <code>start</code> , <code>build</code> , <code>test</code> e.t.c</li>
 </ul>
-<pre><code>"scripts": {
+<pre><code class=language-json>"scripts": {
  // some commands here
 },
 </code></pre>
@@ -1672,7 +1666,7 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <ul>
 <li>Now add this to the script section</li>
 </ul>
-<pre><code>"scripts": {
+<pre><code class=language-json>"scripts": {
   "build": "babel src -d public"
 },
 </code></pre>
@@ -1685,14 +1679,14 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <p>Watching simply <strong>listens for file changes</strong> and <strong>automatically transpiles.Y</strong>ou don’t need to run the command everytime you make a change.</p>
 </blockquote>
 <p>edit your build script and add <code>-w</code> or <code>-watch</code></p>
-<pre><code>"scripts": {
-"build": "babel src -d public -w"
-},
+<pre><code class=language-json>    "scripts": {
+    "build": "babel src -d public -w"
+    },
 </code></pre>
-<h3 id=let-s-test-babel>Let’s test Babel</h3>
+<h2 id=let-s-test-babel>Let’s test Babel</h2>
 <p>Let’s use the files from my last tutorial</p>
 <p>In <code>src/math.js</code> , add this</p>
-<pre><code>let sumAll = (a, b) => {return a + b;}
+<pre><code class=language-js>let sumAll = (a, b) => {return a + b;}
  let subtractAll = (a, b) => {return a - b;}
  let divideAll = (a, b) => {return a / b;}
  let multiplyAll = (a, b) => {return a * b;}
@@ -1700,7 +1694,7 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
  export default {sumAll, subtractAll, divideAll, multiplyAll};
 </code></pre>
 <p>In <code>src/app.js</code> , add this</p>
-<pre><code>import math from './math.js';
+<pre><code class=language-js>import math from './math.js';
 
  console.log(math.sumAll(50, 10));
  console.log(math.subtractAll(50, 10));
@@ -1709,7 +1703,7 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 
 </code></pre>
 <p>To test this code, add <code>src/app.js</code> to the <code>index.html</code></p>
-<pre><code>&lt;script type="module" src="../src/app.js">&lt;/script>
+<pre><code class=language-html>&lt;script type="module" src="../src/app.js">&lt;/script>
 
 </code></pre>
 <p>Open the HTML and view console, you should get</p>
@@ -1719,11 +1713,11 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
  5
 </code></pre>
 <p>Now let’s reset out script path to the transpiled JavaScript</p>
-<pre><code>&lt;script src="./app.js">&lt;/script>
+<pre><code class=language-html>&lt;script src="./app.js">&lt;/script>
 
 </code></pre>
 <p>To begin Babel transpiling, run:</p>
-<pre><code>npm run build
+<pre><code class=language-bash> npm run build
 </code></pre>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*LAgfdweuunW2Mn2XZyrMIA.png alt=""></p>
 <p>Now Babel has done its magic;</p>
@@ -1735,12 +1729,12 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <pre><code>Uncaught ReferenceError: require is not defined
 </code></pre>
 <p>This is because in <code>app.js</code> our <code>import</code> statement is transpiled into ES5 and it becomes <code>require</code> ;</p>
-<pre><code>var math = _interopRequireWildcard(require("./math.js"));
+<pre><code class=language-js>var math = _interopRequireWildcard(require("./math.js"));
 </code></pre>
 <p>Browsers don’t have the <strong>require</strong> method defined, but Node.js does.</p>
 <p>If you run <code>app.js</code> in node, you will get the right results;</p>
 <p>Open your CLI and run</p>
-<pre><code>node public/app.js
+<pre><code class=language-bash> node public/app.js
 </code></pre>
 <p><img src=https://cdn-images-1.medium.com/max/800/1*uZv33lB3pLT0csriGsMATg.png alt=""></p>
 <p>So basically using Babel for Vanilla JavaScript is an overkill, you would run into errors. Babel is mostly used with Node or frameworks like React and Angular.</p>
@@ -1751,32 +1745,32 @@ with a huge listing of reusable code modules and <strong>packages</strong>. You 
 <p>Module <strong>bundlers</strong> are used to bundle several modules into one or more optimized <strong>bundles</strong> for the browser. This lets you use <strong>require(‘modules’)</strong>
 in the browser by bundling up all of your dependencies.</p>
 </blockquote>
-<h3 id=working-with-browserify>Working with Browserify</h3>
-<pre><code>npm install -g browserify
+<h2 id=working-with-browserify>Working with Browserify</h2>
+<pre><code class=language-bash> npm install -g browserify
 </code></pre>
 <p>Install the uniq module with <a href=https://npmjs.org/ >npm</a>:</p>
 <blockquote>
 <p>Uniq removes all duplicates from an array in place. More details
 <a href=https://www.npmjs.com/package/uniq>here</a></p>
 </blockquote>
-<pre><code>npm install uniq
+<pre><code class=language-bash> npm install uniq
 </code></pre>
 <p>Now recursively bundle up all the required modules starting at <code>app.js</code> into a single file called <code>bundle.js</code> with the browserify command:</p>
-<pre><code>browserify app.js -o bundle.js
+<pre><code class=language-bash> browserify app.js -o bundle.js
 </code></pre>
 <p>Add to your HTML:</p>
-<pre><code>&lt;script src="bundle.js">&lt;/script>
+<pre><code class=language-html> &lt;script src="bundle.js">&lt;/script>
 </code></pre>
-<h3 id=working-with-parcel>Working with Parcel</h3>
+<h2 id=working-with-parcel>Working with Parcel</h2>
 <blockquote>
 <p>Parcel is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration. <a href=https://parceljs.org/getting_started.html>source</a></p>
 </blockquote>
 <p>To install:</p>
-<pre><code>npm install parcel-bundler --save-dev
+<pre><code class=language-bash>npm install parcel-bundler --save-dev
 </code></pre>
 <p>Parcel can take any type of file as an entry point, but an HTML or JavaScript file is a good place to start.</p>
 <p>Modify your scripts in <code>package.json</code></p>
-<pre><code>{
+<pre><code class=language-json>{
   "scripts": {
     "dev": "parcel .src/index.html",
     "build": "parcel build .src/index.html"
@@ -1786,13 +1780,13 @@ in the browser by bundling up all of your dependencies.</p>
 <p>To run in development mode:</p>
 <p>Now open <a href=http://localhost:1234/ >http://localhost:1234/</a> in your browser. Everything should log correctly now.</p>
 <p>To build for production</p>
-<pre><code>npm run build
+<pre><code class=language-bash> npm run build
 </code></pre>
 <p>You’d get a new subfolder <code>dist</code> which contains your bundled files, here you won’t need <code>public</code> subfolder anymore, you can delete it.</p>
 <blockquote>
 <p>Read <a href=https://parceljs.org/getting_started.html>Parcel docs</a> for a complete and deep guide to all the features of Parcel.</p>
 </blockquote>
-<h3 id=conclusion>Conclusion</h3>
+<h2 id=conclusion>Conclusion</h2>
 <p>Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.</p>
 <p>Here are the main things Babel can do for you:</p>
 <ul>
@@ -1840,6 +1834,7 @@ in the browser by bundling up all of your dependencies.</p>
       })();
 </script>
 <noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<script src=/prism.js></script>
 </footer>
 </section>
 <footer class=footer>
@@ -1867,6 +1862,7 @@ in the browser by bundling up all of your dependencies.</p>
     : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
 <amp-install-serviceworker src=/sw.js layout=nodisplay>
 </amp-install-serviceworker>
+<link rel=stylesheet href=/Prism/prism.js>
 <script>
 if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {

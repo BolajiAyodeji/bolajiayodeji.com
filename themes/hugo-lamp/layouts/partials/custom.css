@@ -1,110 +1,4 @@
-<!doctype html>
-<html ⚡ lang=en-us>
-<head>
-<meta charset=utf-8>
-<script async src=https://cdn.ampproject.org/v0.js></script>
-<script async custom-element=amp-install-serviceworker src=https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js></script>
-<script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script>
-<script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script>
-<script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script>
-<title>
-Tag → php | Bolaji Ayodeji
-</title>
-<meta name=author content="Bolaji Ayodeji">
-<meta name=description content="Articles on Web & Frontend Development, all Written by Bolaji Ayodeji.">
-<meta property=og:image content=https://res.cloudinary.com/bolaji/image/upload/v1570636548/null/about/social-logo_mjlfq4.png>
-<meta property=og:url content=https://bolajiayodeji.com>
-<meta property=og:type content=article>
-<meta name=twitter:card content=summary>
-<meta name=twitter:site content="@Bolaji Ayodeji">
-<meta name=twitter:title content="Bolaji Ayodeji">
-<meta name=twitter:description content="Articles on Web & Frontend Development, all Written by Bolaji Ayodeji.">
-<meta name=twitter:image content=https://res.cloudinary.com/bolaji/image/upload/v1570636548/null/about/social-logo_mjlfq4.png>
-<meta name=generator content="Hugo 0.55.4">
-<link rel=canonical href=https://bolajiayodeji.com/tags/php/ >
-<link rel=alternative href=/index.xml title="Bolaji Ayodeji" type=application/atom+xml>
-<meta name=renderer content=webkit>
-<meta name=viewport content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name=format-detection content="telephone=no,email=no,adress=no">
-<meta name=robots content=index,follow>
-<meta name=referrer content=origin-when-cross-origin>
-<meta name=google-site-verification content=3BSMr7WxHkkxpM0Kfol42yWYvocFLiKQ3GPjsUSYnuk>
-<meta name=msvalidate.01 content=25B948519E545F3B7F9C4FA5F3204C79>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400" rel=stylesheet>
-<link rel=icon href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
-<meta name=apple-mobile-web-app-capable content=yes>
-<link rel=apple-touch-icon sizes=120x120 href=https://res.cloudinary.com/bolaji/image/upload/v1570636546/null/about/favicon_ue9vpd.png>
-<link rel=manifest href=/manifest.json>
-<meta name=theme-color content=#20242b>
-<script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
-<style amp-boilerplate>
-body {
-    -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-    -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-    -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-    animation: -amp-start 8s steps(1, end) 0s 1 normal both
-  }
-
-  @-webkit-keyframes -amp-start {
-    from {
-      visibility: hidden
-    }
-
-    to {
-      visibility: visible
-    }
-  }
-
-  @-moz-keyframes -amp-start {
-    from {
-      visibility: hidden
-    }
-
-    to {
-      visibility: visible
-    }
-  }
-
-  @-ms-keyframes -amp-start {
-    from {
-      visibility: hidden
-    }
-
-    to {
-      visibility: visible
-    }
-  }
-
-  @-o-keyframes -amp-start {
-    from {
-      visibility: hidden
-    }
-
-    to {
-      visibility: visible
-    }
-  }
-
-  @keyframes -amp-start {
-    from {
-      visibility: hidden
-    }
-
-    to {
-      visibility: visible
-    }
-  }
-</style><noscript>
-<style amp-boilerplate>
-body {
-      -webkit-animation: none;
-      -moz-animation: none;
-      -ms-animation: none;
-      animation: none
-    }
-</style>
-</noscript>
-<style amp-custom>
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -121,7 +15,7 @@ html {
   }
 
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 7px;
   }
 
   ::-webkit-scrollbar-track {
@@ -821,6 +715,7 @@ html {
 
   .entry-summary {
     padding: 0 30px;
+    text-align: justify;
     max-height: 4rem;
     overflow: hidden
   }
@@ -1015,6 +910,7 @@ html {
   .post-content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: justify
   }
 
   .post-content blockquote {
@@ -1289,7 +1185,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     clear: both;
   }
 
-   
+  /* Newsletter Form */
 
   form {
     display: block;
@@ -1371,7 +1267,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     opacity: .8;
   }
 
-   
+  /* Customizable Theme Bits */
 
   body {
     background-color: #20242B;
@@ -1394,7 +1290,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     font-family: inherit;
   }
 
-   
+  /* apply a natural box layout model to all elements */
   *,
   *:before,
   *:after {
@@ -1403,7 +1299,7 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
     box-sizing: border-box;
   }
 
-   
+  /* Hide for all but screen readers */
   .sr-only {
     position: absolute;
     width: 1px;
@@ -1446,103 +1342,3 @@ Mono';width:100%;border-collapse:collapse;border-radius:5px}table td,table th{bo
       width: 100%;
     }
   }
-</style>
-</head>
-<body>
-<amp-sidebar id=sidebar class=sidebar layout=nodisplay side=right>
-<ul class=sidebar-list>
-<li class=sidebar-menu><button class=sidebar-icon aria-hidden=true on=tap:sidebar.close>❌</button></li>
-<li class=sidebar-item><a class=sidebar-link href=/ >Home</a></li>
-<li class=sidebar-item><a class=sidebar-link href=/search>Search</a></li>
-<li class=sidebar-item><a class=sidebar-link href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
-</ul>
-</amp-sidebar>
-<header class=header>
-<p class=subtitle>Hi, I'm Bolaji ✨</p>
-<p class=subtitle>I create contents around web and frontend development.</p>
-<p class="subtitle about-me"><a href=/about>About Me →</a></p>
-<section class=social-btns>
-<div>
-<a href="https://twitter.com/iambolajiayo?ref_src=twsrc%5Etfw" class=twitter-follow-button></a>
-<script async src=https://platform.twitter.com/widgets.js charset=utf-8></script>
-</div>
-<div>
-<a class=github-button href=https://github.com/bolajiayodeji data-show-count=true aria-label="Follow @bolajiayodeji on GitHub">Follow @bolajiayodeji</a>
-<script async defer src=https://buttons.github.io/buttons.js></script>
-</div>
-<div>
-<script src=https://apis.google.com/js/platform.js></script>
-<div class=g-ytsubscribe title=subscribeYouTube data-channelid=UCpFxuQyjQYal738TW0TJUNw data-layout=default data-count=default></div>
-</div>
-<div style="padding-bottom: 10px">
-<a href="https://www.patreon.com/bePatron?u=22442419" data-patreon-widget-type=become-patron-button>Become a Patron!</a><script async src=https://c6.patreon.com/becomePatronButton.bundle.js></script>
-</div>
-</section>
-<button class=menu-toggle aria-hidden=true type=button on=tap:sidebar.open>
-<span class="icon icon-menu"></span>
-</button>
-<nav class=menu>
-<ul class=menu-list>
-<li class=menu-item>
-<a href=/ >Home</a></li>
-<li class=menu-item>
-<a href=/search>Search</a></li>
-<li class=menu-item>
-<a href=https://tinyletter.com/bolajiayodeji/ >Newsletter</a></li>
-</ul>
-</nav>
-</header>
-<section class="main entry-list">
-<header class=list-header>
-</header>
-<article class=entry-single>
-<header class=entry-header>
-<h3 class=entry-title><a href=https://bolajiayodeji.com/how-to-connect-mysql-with-php/ title="How to Connect Mysql with PHP" class=entry-link>How to Connect Mysql with PHP</a></h3>
-</header>
-<p class=entry-summary>When many developers refer to a database, they are usually referring to MySQL, a very popular DBMS that powers projects of all sizes. The USP of MySQL is its ability to handle huge volumes of data without breaking a sweat. In this article I will discuss how to connect MySQL Database using Localhost Server. Create MySQL Database at the Localhost First, let me tell you what PHPMyAdmin is. It is a control panel from where you can manage your database that you have created.</p>
-<footer class=entry-footer>
-<p class=entry-meta><span class=entry-time>Apr 28, 2018</span> 4 min read
-</p>
-<div class=sharing>
-<h6 class=entry-meta><a href=https://bolajiayodeji.com/how-to-connect-mysql-with-php/ title="How to Connect Mysql with PHP">READ ARTICLE →</a></h6>
-</div>
-</footer>
-</article>
-</section>
-<footer class=footer>
-<p>Copyright © 2018-2019</p>
-<ul class=social-list>
-<li class=social-item>
-<a href=//github.com/bolajiayodeji title=GitHub target=_blank rel=noopener><span class="icon icon-github"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.linkedin.com/in/iambolajiayo title=Linkedin target=_blank rel=noopener><span class="icon icon-linkedin"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.instagram.com/iambolajiayo title=Instagram target=_blank rel=noopener><span class="icon icon-instagram"></span></a>
-</li>
-<li class=social-item>
-<a href=//www.youtube.com/channel/UCpFxuQyjQYal738TW0TJUNw title=YouTube target=_blank rel=noopener><span class="icon icon-youtube"></span></a>
-</li>
-<li class=social-item>
-<a href=/index.xml title=RSS target=_blank><span class="icon icon-rss" rel=noopener></span></a>
-</li>
-</ul>
-</footer>
-<amp-analytics type=googleanalytics>
-<script type=application/json>{ "vars" : { "account" : "UA-123719673-3" }, "triggers" : { "trackPageview"
-    : { "on" : "visible" , "request" : "pageview" } } }</script></amp-analytics><script src=https://codefund.app/properties/273/funder.js async></script>
-<amp-install-serviceworker src=/sw.js layout=nodisplay>
-</amp-install-serviceworker>
-<link rel=stylesheet href=/Prism/prism.js>
-<script>
-if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-</script>

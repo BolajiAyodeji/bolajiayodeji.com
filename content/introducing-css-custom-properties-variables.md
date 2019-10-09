@@ -9,8 +9,6 @@ type: "post"
 tags: ["CSS", "variables", "web development"]
 ---
 
-
-
 ![](https://cdn-images-1.medium.com/max/800/1*JEnrE7aT2K6vfV0nQlbFIw.png)
 
 In the past years, maintaining CSS was a very big problem for bigger projects or
@@ -29,48 +27,56 @@ directly in your CSS without having to use CSS Preprocessors.
 
 In this article, I’d show you how to start using CSS variables. Let’s roll :)
 
-*****
+----
 
 If you’re familiar with JavaScript or other programming languages, you should
 understand how variables work already.
 
+```js
     let name = 'Bolaji Ayodeji'
+```
 
 A variable stores some sort of information or data, that would be used
 later in your program.
 
+```js
     console.log(name);
+```
 
-### What are CSS variables?
+## What are CSS variables?
 
 > **Custom properties** (sometimes referred to as ***CSS variables*** or
 > ***cascading variables***) are entities defined by CSS authors that contain
 specific values to be reused throughout a document. They are set using custom
 property notation. — **MDN DOCS**
 
-### CSS variables syntax
+## CSS variables syntax
 
 A CSS Variable is defined with a special syntax, with **two dashes** before the
 variable name (`--variable-name`), then a colon and the variable value.
 
+```css
     .container {
      --black: #000;
     }
+```
 
-### Accessing the variable
+## Accessing the variable
 
 You can access the already declared variable using `var()`
 
+```css
     .container {
      --black: #000
      color: var(--black);
     }
+```
 
-### Variables Scope
+## Variables Scope
 
 CSS Variables can be defined inside any CSS element.
 
-```
+```css
 body {
   --color: red;
 }
@@ -87,6 +93,7 @@ a {
   --color: red;
 }
 ```
+
 However, adding variables to a selector makes them available to **ONLY** their
 children. If you add a variable inside a `.container` selector, it’s only going
 to be available to children of `.container` . Outside `.container` , the
@@ -97,7 +104,7 @@ variable will not work.
 Though we set `p` to be red, it works for only `p` tags within `.container` ,
 any `p` outside `.container` will not inherit this style.
 
-### : root
+## : root
 
 `:root` is a CSS pseudo-class that identifies the document itself.
 
@@ -108,35 +115,37 @@ makes it available to all the elements in the page.
 
 Now all `p` tags are red irrespective of their position or parent.
 
-### CSS Variables are case sensitive
+## CSS Variables are case sensitive
 
 This variable:
 
-```
+```css
 --color: red;
 ```
 
 is not the same as:
-```
+```css
 --Color: red;
 ```
 
 
-### Setting a fallback value for var()
+## Setting a fallback value for var()
 
 `var()` accepts a second parameter, which is the default fallback value when the
 variable value is not set:
 
+```css
     p {
       color: var(--red, #f00);
     }
+```
 
 {{% pen id="xBMmrq" %}}
 
 Here we forgot to declare `--red` but `p` still has the red color because we
 already have a fallback value.
 
-### Browser Support
+## Browser Support
 
 ![](https://cdn-images-1.medium.com/max/1200/1*-HHDutFGICwb84UsH91rsQ.png)
 <span class="figcaption_hack">Browser support for CSS Variables [according to Can I
@@ -148,7 +157,7 @@ browsers now, just a few aren’t. So If you don’t need to support Internet
 Explorer and old versions of the other browsers, CSS variables should be your
 best friend.
 
-### Conclusion
+## Conclusion
 
 CSS Variables follow the normal CSS cascading rules, with precedence set
 according to the specificity. We can also use the values of custom properties in

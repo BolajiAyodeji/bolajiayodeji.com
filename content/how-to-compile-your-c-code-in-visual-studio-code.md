@@ -1,10 +1,10 @@
 ---
-title: How to compile your C++ code in Visual Studio Code
+title: How to Compile your C++ Code in Visual Studio Code
 type: post
 date: 2019-07-07T08:03:28.000Z
 tags: [ "C++", "VsCode", "Compiler" ]
 ---
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562567274/blog/0001/banner.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/banner_zmgyt2.png)
 
 C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”
 
@@ -14,7 +14,7 @@ It was developed by [Bjarne Stroustrup](http://www.stroustrup.com/) in 1979.
 
 One of C++'s main feature is the compiler. This is used to compile and run C++ code.
 
-> > A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or "code" that a computer's processor uses. 
+> A compiler is a special program that processes statements written in a particular programming language like C++ and turns them into machine language or "code" that a computer's processor uses. 
 
 I actually wrote this article because I had a C++ assignment which required using a compiler. As usual, everyone was using the [CodeBlocks IDE](http://www.codeblocks.org/) and [Visual Studio IDE](https://visualstudio.microsoft.com/). But I was already used to Visual Studio Code for all my programming stuff.
 
@@ -26,13 +26,12 @@ In this article, I'll show you how to set up your compiler in VsCode and at the 
 
 - - -
 
-# Prerequisite
+## Prerequisite
 
 * Prior knowledge of C++ </br>
   (I assume you're learning C++, about to start learning or just reading this for fun, this article is not a C++ 101 tutorial, some understanding of C++ is needed.)
 * Visual Studio Code Editor </br> Download [here](https://code.visualstudio.com/#alt-downloads) and read the setup docs for [Windows](https://code.visualstudio.com/docs/?dv=win), [Linux](https://code.visualstudio.com/docs/?dv=linux64_deb) and [Mac](https://code.visualstudio.com/docs/?dv=osx)
 * **Internet connection (!important)**
-* Your geek glasses :).
 
 **Disclaimer!** </br>
 I would be using a Windows OS throughout this article but I'll provide links to resources that would aid those using other Operating systems.
@@ -41,28 +40,28 @@ I would be using a Windows OS throughout this article but I'll provide links to 
 
 Now let's get started!
 
-# Download and install a C++ compiler
+## Download and install a C++ compiler
 
 * Head to [www.mingw.org](www.mingw.org/) and click the “Download/Installer” link to download the MinGW setup file or click [here](https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/) for windows, [here](http://www.mingw.org/wiki/LinuxCrossMinGW) for Linux. and [here](https://brewinstall.org/Install-mingw-w64-on-Mac-with-Brew/) for Mac
 
-> > MinGW is a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
+> MinGW is a contraction of "Minimalist GNU for Windows", is a minimalist development environment for native Microsoft Windows applications.
 * After downloading, install MinGW and wait for the “MinGW Installation Manager” to show up.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562569825/blog/0001/Capture1.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/01.png)
 
 * When the “MinGW Installation Manager” shows up, click on `mingw32-gcc-g++` then select “Mark for Installation”
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562570172/blog/0001/Capture2.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/02.png)
 
 * In the menu at the top left corner, click on “Installation  > Apply Changes”
   
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562570171/blog/0001/Capture3.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/03.png)
 
 * Wait and allow to install completely. Ensure you have a stable internet during this process.
 
-# Edit your PATH environment variable to include the directory where the C++ compiler is located
+## Edit your PATH environment variable to include the directory where the C++ compiler is located
 
-> > PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. - [Wikipedia](https://en.wikipedia.org/wiki/PATH_(variable))
+> PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. - [Wikipedia](https://en.wikipedia.org/wiki/PATH_(variable))
 
 After installing MinGW, it was installed in `C:\MinGW\bin`. Now you have to include this directory in your environment variable PATH. if you've been using computers for a while now, you should know how to do this already, but if you don't, here are a few resources:
 
@@ -70,22 +69,22 @@ After installing MinGW, it was installed in `C:\MinGW\bin`. Now you have to incl
 * Click [here](https://www.cyberciti.biz/faq/unix-linux-adding-path/) for Linux
 * Click [here](https://hathaway.cc/2008/06/how-to-edit-your-path-environment-variables-on-mac/) for Mac OS guide
 
-# Install Code Runner extension in VS Code
+## Install Code Runner extension in VS Code
 
 Now we have our compiler set up, let's install Code Runner
 
-> > Code Runner allows you to Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, and custom command.
+> Code Runner allows you to Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, and custom command.
 
 * Click [here](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) to download
 * Or search in VsCode marketplace tab
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562571367/blog/0001/Capture4.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/04.png)
 
 * After installation, restart VsCode
 * Open your C++ file in Vscode. Here's a basic hello world program below:
 
 
-```
+```c++
 #include <iostream>
 using namespace std;
 int main() 
@@ -95,32 +94,32 @@ int main()
 }
 ```
 
-> > Save this file as `test.cpp`
+> Save this file as `test.cpp`
 
-# Run your code using Code Runner
+## Run your code using Code Runner
 
 * Use the shortcut `Ctrl+Alt+N`
 * Or press F1 and then select/type Run Code
 * Or right-click the Text Editor and then click Run Code in the editor context menu
-  > > The code will run and the output will be shown in the Output Window. Open the output window with `Ctrl+ shortcut.
+  > The code will run and the output will be shown in the Output Window. Open the output window with `Ctrl+ shortcut.
 
-![](https://res.cloudinary.com/iambeejayayo/image/upload/v1562571766/blog/0001/Capture5.png)
+![](https://res.cloudinary.com/bolaji/image/upload/v1570636748/null/blog/0001/05.png)
 
 
 
-# To stop the running code
+## To stop the running code
 
 * Use the shortcut `Ctrl+Alt+M`
 * Or press F1 and then select/type Stop Code Run
 * Or right-click the Output Channel and then click Stop Code Run in the context menu
 
-> > Hurray, you just successfully set up your C++ environment in VsCode.
+> Hurray, you just successfully set up your C++ environment in VsCode.
 
-# Conclusion
+## Conclusion
 
 Here's a quick hint: By default VsCode output terminal is read-only, If you're running a code that requires user input like:
 
-```
+```c++
 #include <iostream>
 using namespace std;
 
@@ -154,18 +153,18 @@ To fix this, you need to manually enable read-write.
 * Scroll and find 'Run Code Configuration'
 * Scroll and find a checkbox `Run in Terminal` (Whether to run code in Integrated Terminal) Check the box.
 
-> > OR
+> OR
 
 * In your `setting.json` file, add:
 
 
-```
+```bash
 "code-runner.runInTerminal": true
 ```
 
 Hurray, you're done and ready to roll :).
 
-# C++ resources
+## C++ resources
 
 Here are some C++ resources you can use to get started with learning C++
 
@@ -177,12 +176,12 @@ Here are some C++ resources you can use to get started with learning C++
 * <https://www.tutorialspoint.com/cplusplus/cpp_useful_resources.htm>
 * [https://makeawebsitehub.com/learning-c/](https://www.tutorialspoint.com/cplusplus/cpp_useful_resources.htm)
 
-# Credits
+## Credits
 
 * [MinGW Project](http://www.mingw.org/)
 * [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) by [Jun Han](https://marketplace.visualstudio.com/publishers/formulahendry)
 * [NetlifyCMS](https://www.netlifycms.org/)
 
-> > I wrote this article with my new NetlifyCMS setup, I'll write an article to show you how I did it soon :).
+> I wrote this article with my new NetlifyCMS setup, I'll write an article to show you how I did it soon :).
 
 Thank you for reading!

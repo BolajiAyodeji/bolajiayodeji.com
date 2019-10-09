@@ -42,7 +42,7 @@ NO hectic configurations, NO servers, NO serious stuff, just build your form, do
 some little tweaks, the user submits and bingo it heads straight to your
 designated email. :)
 
-### STARTER FORM
+## STARTER FORM
 
 For the purpose of this article, I’ve built a basic form with HTML5 and
 Bootstrap 4, you can fork it from the [Codepen
@@ -56,7 +56,7 @@ the form and test. I’ve added a little validation, don’t worry about that
 
 Now, let’s get started!!
 
-### METHOD ONE
+## METHOD ONE
 
 <br> 
 
@@ -70,13 +70,14 @@ static sites!
 Wait!, wait!!, wait!!! it’s [Open
 Sourced](https://github.com/formspree/formspree) too
 
-#### Form handling with Formspree
+### Form handling with Formspree
 
 * Build your form, [we’ve done that
 already](https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010) 
 
 (Follow the next step and update this form to use this method)
 
+```html
     <form action="https://formspree.io/you@email.com" method="POST">
         <input type="hidden" name="_subject" value="Bolaji's Form">                 
         <input type="hidden" name="_next" value="/thanks.html" >
@@ -85,6 +86,7 @@ already](https://codepen.io/iambolajiayo/pen/MdGdex?editors=1010)
         <input type="text" name="phone">
         <input type="submit" value="Send">
     </form>
+```
 
 Now let’s go over the new stuff added above.
 
@@ -124,7 +126,7 @@ sent to your email.
 That’s all to using formspree :) Although there are other configuration settings
 for several other features, you can check [here](https://formspree.io).
 
-#### Things to note!
+### Things to note!
 
 * You don’t need to signup to use formspree, just add your action attribute and
 you’re good to go. You only signup if you want a [Paid
@@ -156,7 +158,7 @@ would cover all your needs. I use this for some client projects too :)
 * Formspree premium users can submit forms via AJAX. Just set the Accept header to
 application/json. If you’re using jQuery this can be done like so:
 
-```
+```js
     $.ajax({
         url: "https://formspree.io/FORM_ID",
         method: "POST",
@@ -172,6 +174,7 @@ Well, this is for paid users :)
 library](https://github.com/BolajiAyodeji/simple-ajax-library), a simple library
 I built for handling HTTP requests. Like so:
 
+```js
     const http = new simpleAJAX;
 
     const data = {
@@ -187,10 +190,11 @@ I built for handling HTTP requests. Like so:
          console.log(user);
        }
      });
+```
 
 A star would make me happy! :)
 
-### METHOD TWO
+## METHOD TWO
 
 <br> 
 
@@ -199,7 +203,7 @@ A star would make me happy! :)
 [Netlify](https://www.netlify.com/) offers form handling for sites deployed on
 their platform.
 
-#### Form handling with Netlify
+### Form handling with Netlify
 
 * Create an account on Netlify and deploy your site there. 
 
@@ -212,7 +216,7 @@ Branches, and more!
 
 * Now that you have deployed your site, let’s create the form again
 
-```
+```html
     <form action="/thanks.html" name="Bolaji's form" method="POST" data-netlify="true">
         <input type="text" name="name">
         <input type="email" name="email">
@@ -268,7 +272,7 @@ the FREE plan, If you want more, you’ll need to upgrade
 
 And that’s all!!
 
-### Final HTML Form code
+## Final HTML Form code
 
 {{< gist BolajiAyodeji 5fb88278f28302423d657c9a91d2e3f8 >}}
 
@@ -276,7 +280,7 @@ And that’s all!!
 
 <br> 
 
-### Conclusion
+## Conclusion
 
 One thing to note about formspree is that the free version leaves your email
 address exposed to scrapers and bots so you might want to set up a temporary
@@ -290,7 +294,7 @@ file uploads and spam filtering. [Full guide + practical code]
 
 {{< youtube 6ElQ689HRcY >}}
 
-### Useful Links
+## Useful Links
 
 * [https://www.netlify.com/docs/form-handling/](https://www.netlify.com/docs/form-handling/)
 * [https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/](https://forestry.io/blog/5-ways-to-handle-forms-on-your-static-site/)

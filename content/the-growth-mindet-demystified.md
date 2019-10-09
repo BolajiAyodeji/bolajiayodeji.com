@@ -1,5 +1,5 @@
 ---
-title: "The GROWTH MINDSET demystified"
+title: "The GROWTH MINDSET Demystified"
 date: 2019-01-21T13:22:14+24:00
 draft: false
 type: "post"
@@ -28,7 +28,7 @@ Let's get started!!
 
 *****
 
-### WHAT DOES THE GROWTH MINDSET MEAN?
+## WHAT DOES THE GROWTH MINDSET MEAN?
 
 > Carol Dweck is the Lewis & Virginia Eaton Professor of Psychology at Stanford
 > University and the author of [Mindset: The New Psychology of
@@ -96,7 +96,7 @@ rather learning. Learning is a process, you just need to keep moving!
 
 *****
 
-### Advantages of The Growth Mindset
+## Advantages of The Growth Mindset
 
 The Growth Mindset is a very buzzing topic and research has shown how much
 increase in success it has birthed after its evolution.
@@ -125,9 +125,7 @@ This is how we operate as humans too, you need to undergo a lot of good
 strategies and consistency to grow.
 
 
-*****
-
-### How do you build a Growth Mindset?
+## How do you build a Growth Mindset?
 
 Truth be told, we all had fixed mindsets at some point in our lives, we probably
 did not know it was called that, but we can build The GROWTH MINDSET.
@@ -186,7 +184,7 @@ Learning is not an easy trade, you need to challenge yourself, pick up tasks you
 don't know and work on getting them done. Spend more time doing stuff you don't
 know and get better doing them repeatedly.
 
-*****
+## Conclusion
 
 Your mindset is the view you adopt of yourself whether your abilities and
 characteristics can change, or whether they are set in stone, the decision is

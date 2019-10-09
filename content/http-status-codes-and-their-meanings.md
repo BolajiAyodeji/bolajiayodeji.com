@@ -1,5 +1,5 @@
 ---
-title: "HTTP status codes and their meanings"
+title: "HTTP Status Codes and their Meanings"
 date: 2018-11-24T13:22:14+24:00
 draft: false
 type: "post"
