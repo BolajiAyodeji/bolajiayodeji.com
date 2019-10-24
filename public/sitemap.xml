@@ -96,17 +96,6 @@
   </url>
   
   <url>
-    <loc>https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/</loc>
-    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
-    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://bolajiayodeji.com/tags/bash/</loc>
     <lastmod>2019-07-21T14:52:13+00:00</lastmod>
     <priority>0</priority>
@@ -114,6 +103,17 @@
   
   <url>
     <loc>https://bolajiayodeji.com/tags/git/</loc>
+    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/how-to-fix-git-always-asking-for-user-credentials/</loc>
+    <lastmod>2019-07-21T14:52:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bolajiayodeji.com/tags/version-control/</loc>
     <lastmod>2019-07-21T14:52:13+00:00</lastmod>
     <priority>0</priority>
   </url>

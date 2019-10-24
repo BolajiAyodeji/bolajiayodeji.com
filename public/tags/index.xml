@@ -111,16 +111,7 @@
     </item>
     
     <item>
-      <title>Version Control</title>
-      <link>https://bolajiayodeji.com/tags/version-control/</link>
-      <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
-      
-      <guid>https://bolajiayodeji.com/tags/version-control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bash</title>
+      <title>Bash</title>
       <link>https://bolajiayodeji.com/tags/bash/</link>
       <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
       
@@ -129,11 +120,20 @@
     </item>
     
     <item>
-      <title>git</title>
+      <title>Git</title>
       <link>https://bolajiayodeji.com/tags/git/</link>
       <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
       
       <guid>https://bolajiayodeji.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Version Control</title>
+      <link>https://bolajiayodeji.com/tags/version-control/</link>
+      <pubDate>Sun, 21 Jul 2019 14:52:13 +0000</pubDate>
+      
+      <guid>https://bolajiayodeji.com/tags/version-control/</guid>
       <description></description>
     </item>
     
@@ -192,7 +192,7 @@
     </item>
     
     <item>
-      <title>JAMstack</title>
+      <title>jamstack</title>
       <link>https://bolajiayodeji.com/tags/jamstack/</link>
       <pubDate>Tue, 14 May 2019 13:22:14 +0000</pubDate>
       
