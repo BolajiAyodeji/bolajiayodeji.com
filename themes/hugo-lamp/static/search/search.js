@@ -70,7 +70,7 @@ function initUI() {
 * @return {Array}  results
 */
 function search(query) {
-// Find the item in our index corresponding to the lunr one to have more info
+    // Find the item in our index corresponding to the lunr one to have more info
     return lunrIndex.search(query).map(function (result) {
         return pagesIndex.filter(function (page) {
             return page.href === result.ref;
@@ -91,8 +91,8 @@ function renderResults(results) {
     // Only show the ten first results
     $results = document.getElementById("results");
     results.slice(0, 10).forEach(function (result) {
-        $results.style.backgroundColor="#1b2f3d";
-        $results.style.borderRadius="10px";
+        $results.style.backgroundColor = "#1b2f3d";
+        $results.style.borderRadius = "10px";
 
         var li = document.createElement("li");
         var ahref = document.createElement("a");
