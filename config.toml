@@ -2,7 +2,7 @@ baseURL = "https://bolajiayodeji.com/"
 languageCode = "en-us"
 title = "Bolaji Ayodeji"
 theme = "hugo-lamp"
-googleAnalytics = "UA-123719673-3"          # Google Analytics UA number
+googleAnalytics = ""          # Google Analytics UA number
 pygmentsUseClassic=true
 
 [params]
