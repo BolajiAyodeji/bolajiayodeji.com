@@ -1,51 +1,54 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>
+          Bolaji Ayodeji - Software Engineer, Content Creator & Developer
+          Advocate
+        </title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>Coming Soon!</h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Bolaji is a JAMstack Developer and Content Creator who currently works
+          as a Developer Advocate at{" "}
+          <a href="https://commercelayer.io" target="_blank" rel="noopener noreferrer">
+            Commerce Layer
+          </a>
+          . I'm passionate about sharing knowledge, documentation, web
+          engineering, JAMstack, communities, and FOSS. I create technical
+          content on my <a href="https://blog.bolajiayodeji.com" target="_blank" rel="noopener noreferrer">Blog</a> &&{" "}
+          <a href="https://www.youtube.com/c/bolajiayodeji" target="_blank" rel="noopener noreferrer">YouTube</a>, speak
+          at some conferences/meetups and build technical communities.
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+          <a href="http://blog.bolajiayodeji.com" className={styles.card}>
+            <h3>Blog &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Read web engineering, JAMstack, productivity and random articles.
             </p>
+          </a>
+
+          <a href="https://github.com/BolajiAyodeji" className={styles.card}>
+            <h3>GitHub &rarr;</h3>
+            <p>Checkout or contribute to my open source projects.</p>
+          </a>
+
+          <a href="https://twitter.com/iambolajiayo" className={styles.card}>
+            <h3>Twitter &rarr;</h3>
+            <p>Follow me, interact with my tweets and maybe send a DM.</p>
+          </a>
+
+          <a href="https://patreon.com/bolajiayodeji" className={styles.card}>
+            <h3>Patreon &rarr;</h3>
+            <p>Become my patron and $upport my work.</p>
           </a>
         </div>
       </main>
@@ -56,10 +59,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          © 2018 - Today | Copyright Bolaji Ayodeji.
         </a>
       </footer>
     </div>
-  )
+  );
 }
