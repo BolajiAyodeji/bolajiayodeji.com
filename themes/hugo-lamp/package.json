@@ -32,7 +32,7 @@
   "devDependencies": {
     "autoprefixer": "^8.5.1",
     "cssnano": "^3.10.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.17.5",
     "postcss": "^6.0.22"
   },
