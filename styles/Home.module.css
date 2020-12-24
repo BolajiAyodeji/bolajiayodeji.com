@@ -16,28 +16,20 @@
   align-items: center;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 6rem;
   color: #3a7ebf;
-}
-
-.title {
   text-align: center;
+  text-shadow: #3a7ebf 1px 0 8px;
 }
 
 .description {
   line-height: 2;
   font-size: 1.5rem;
-  padding: 1.5rem 15rem;
-  align-items: center;
+  padding: 1.5rem 10rem;
+  text-align: center;
 }
 
 .description a {
@@ -69,8 +61,10 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #3a7ebf;
   border-color: #3a7ebf;
+  -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
 }
 
 .card h3 {
@@ -82,13 +76,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
 
 .footer {
@@ -108,4 +95,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .description {
+    padding: 1.5rem;
+  }
 }
