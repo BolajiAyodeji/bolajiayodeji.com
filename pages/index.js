@@ -18,14 +18,32 @@ export default function Home() {
         <p className={styles.description}>
           Bolaji is a JAMstack Developer and Content Creator who currently works
           as a Developer Advocate at{" "}
-          <a href="https://commercelayer.io" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://commercelayer.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Commerce Layer
           </a>
           . He's passionate about sharing knowledge, documentation, web
           engineering, JAMstack, communities, and FOSS. He creates technical
-          content on his <a href="https://blog.bolajiayodeji.com" target="_blank" rel="noopener noreferrer">Blog</a> &&{" "}
-          <a href="https://www.youtube.com/c/bolajiayodeji" target="_blank" rel="noopener noreferrer">YouTube</a>, speak
-          at some conferences/meetups and build technical communities.
+          content on his{" "}
+          <a
+            href="https://blog.bolajiayodeji.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blog
+          </a>{" "}
+          &&{" "}
+          <a
+            href="https://www.youtube.com/c/bolajiayodeji"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube
+          </a>
+          , speak at some conferences/meetups and build technical communities.
         </p>
 
         <div className={styles.grid}>
@@ -54,7 +72,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-          © 2018 - Today | Copyright Bolaji Ayodeji.
+        © 2018 - Today | Copyright Bolaji Ayodeji.
       </footer>
     </div>
   );
