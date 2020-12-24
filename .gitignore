@@ -16,8 +16,8 @@
 /build
 
 # misc
-.vscode
-.firebase
+/.vscode
+/.firebase
 .DS_Store
 *.pem
 
