@@ -49,14 +49,20 @@ export default function Home() {
         <meta property="og:description" content={description} key="ogdesc" />
         <meta property="og:type" content={type} key="ogtype" />
 
+        <link
+          rel="preload"
+          href="/fonts/RobotoMono-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
         <link rel="icon" href={favicon} />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Bolaji Ayodeji</h1>
+        <h1 className={styles.title}>BOLAJI AYODEJI</h1>
 
         <p className={styles.description}>
-          Hi 👋🏾 <br />
+          Hi 👋🏾 <br /><br />
           I'm a JAMstack Developer and Content Creator who currently works as a
           Developer Advocate at{" "}
           <a
@@ -84,15 +90,13 @@ export default function Home() {
           >
             YouTube
           </a>
-          , speak at some conferences/meetups and build technical communities.
+          , speak at some conferences/meetups, and build technical communities.
         </p>
 
         <div className={styles.grid}>
           <a href="https://blog.bolajiayodeji.com" className={styles.card}>
             <h3>✍🏾 Blog</h3>
-            <p>
-              Read web engineering, JAMstack, productivity and random articles.
-            </p>
+            <p>Read my technical and non-technical articles.</p>
           </a>
 
           <a
@@ -129,7 +133,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        © 2019 - Today | Copyright Bolaji Ayodeji.
+        &copy; 2019 - Today | &copy; Bolaji Ayodeji.
       </footer>
     </div>
   );

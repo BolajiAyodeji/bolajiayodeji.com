@@ -1,10 +1,17 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  border: 5px solid #3a7ebf;
+  font-family: "Roboto Mono", monospace;
+  border: 10px solid #3a7ebf;
 }
 
 a {
@@ -14,4 +21,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    border: 3px solid #3a7ebf;
+  }
 }
