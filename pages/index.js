@@ -5,7 +5,7 @@ const metaData = {
   pageTitle:
     "Bolaji Ayodeji - Software Engineer, Content Creator & Developer Advocate",
   description:
-    "Bolaji is a JAMstack Developer and Content Creator who currently works as a Developer Advocate. He's passionate about sharing knowledge, documentation, web engineering, JAMstack, communities, and FOSS.",
+    "Bolaji is a JAMstack Developer and Content Creator who currently works as a Developer Advocate.",
   keywords:
     "Software Engineer, Content Creator, Developer Advocate, JAMstack Developer, Community Engineer, Web Engineer, Christian, Nigeria",
   previewImage: "/social.png",
@@ -41,6 +41,7 @@ export default function Home() {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+        <meta name="twitter:image" content={previewImage} />
 
         {/* Open Graph */}
         <meta property="og:url" content={url} key="ogurl" />
