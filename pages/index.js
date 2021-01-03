@@ -35,6 +35,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="robots" content="index, follow" />
+        <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
 
         {/* Twitter */}
@@ -62,7 +63,8 @@ export default function Home() {
         <h1 className={styles.title}>BOLAJI AYODEJI</h1>
 
         <p className={styles.description}>
-          Hi 👋🏾 <br /><br />
+          Hi 👋🏾 <br />
+          <br />
           I'm a JAMstack Developer and Content Creator who currently works as a
           Developer Advocate at{" "}
           <a
@@ -95,7 +97,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://blog.bolajiayodeji.com" className={styles.card}>
-            <h3>✍🏾 Blog</h3>
+            <h2>✍🏾 Blog</h2>
             <p>Read my technical and non-technical articles.</p>
           </a>
 
@@ -103,12 +105,12 @@ export default function Home() {
             href="https://tinyletter.com/bolajiayodeji"
             className={styles.card}
           >
-            <h3>💌 Newsletter</h3>
+            <h2>💌 Newsletter</h2>
             <p>Subscribe to and read my weekly newsletter.</p>
           </a>
 
           <a href="https://twitter.com/iambolajiayo" className={styles.card}>
-            <h3>🐦 Twitter</h3>
+            <h2>🐦 Twitter</h2>
             <p>Follow me, interact with my tweets and maybe send a DM.</p>
           </a>
 
@@ -116,24 +118,24 @@ export default function Home() {
             href="https://www.youtube.com/c/bolajiayodeji"
             className={styles.card}
           >
-            <h3>🎥 YouTube</h3>
+            <h2>🎥 YouTube</h2>
             <p>Watch my videos or join my live streams (Coming soon!).</p>
           </a>
 
           <a href="https://github.com/BolajiAyodeji" className={styles.card}>
-            <h3>👨🏾‍💻 GitHub</h3>
+            <h2>👨🏾‍💻 GitHub</h2>
             <p>Checkout or contribute to my open source projects.</p>
           </a>
 
           <a href="https://patreon.com/bolajiayodeji" className={styles.card}>
-            <h3>💰 Patreon</h3>
+            <h2>💰 Patreon</h2>
             <p>Become my patron and $upport my work.</p>
           </a>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        &copy; 2019 - Today | &copy; Bolaji Ayodeji.
+        &copy; Bolaji Ayodeji | 2019 - Today.
       </footer>
     </div>
   );

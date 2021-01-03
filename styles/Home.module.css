@@ -39,11 +39,12 @@
 }
 
 .description a {
-  color: #3a7ebf;
+  border-bottom: 2px dotted #3a7ebf;
   text-decoration: none;
 }
 
 .description a:hover {
+  color: #3a7ebf;
   border-bottom: 2px dotted #000000;
 }
 
@@ -75,7 +76,7 @@
   transition: transform 0.5s ease;
 }
 
-.card h3 {
+.card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.3rem;
 }
