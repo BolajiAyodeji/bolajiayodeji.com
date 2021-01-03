@@ -39,7 +39,7 @@ export default function Home() {
         <meta name="keywords" content={keywords} />
 
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
 
         {/* Open Graph */}
