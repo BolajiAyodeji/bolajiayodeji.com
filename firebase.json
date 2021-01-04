@@ -1,15 +1,21 @@
 {
   "hosting": {
     "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/newsletter",
+        "destination": "https://tinyletter.com/bolajiayodeji",
+        "type": 301
+      },
+      {
+        "source": "/blog",
+        "destination": "https://blog.bolajiayodeji.com",
+        "type": 301
       }
     ]
   }
