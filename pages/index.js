@@ -38,12 +38,9 @@ export default function Home() {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
 
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
-        <meta name="twitter:image" content={previewImage} />
 
-        {/* Open Graph */}
         <meta property="og:url" content={url} key="ogurl" />
         <meta property="og:image" content={previewImage} key="ogimage" />
         <meta property="og:site_name" content={pageTitle} key="ogsitename" />
