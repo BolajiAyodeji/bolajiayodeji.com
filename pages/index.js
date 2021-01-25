@@ -38,15 +38,14 @@ export default function Home() {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
 
-        <meta name="twitter:card" content="summary_large_image" key="twcard" />
-        <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
-
         <meta property="og:url" content={url} key="ogurl" />
         <meta property="og:image" content={previewImage} key="ogimage" />
         <meta property="og:site_name" content={pageTitle} key="ogsitename" />
         <meta property="og:title" content={pageTitle} key="ogtitle" />
         <meta property="og:description" content={description} key="ogdesc" />
         <meta property="og:type" content={type} key="ogtype" />
+        <meta name="twitter:card" content="summary_large_image" key="twcard" />
+        <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
 
         <link
           rel="preload"
@@ -100,7 +99,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://tinyletter.com/bolajiayodeji"
+            href="https://bawd.bolajiayodeji.com"
             className={styles.card}
           >
             <h2>💌 Newsletter</h2>
@@ -117,7 +116,7 @@ export default function Home() {
             className={styles.card}
           >
             <h2>🎥 YouTube</h2>
-            <p>Watch my videos or join my live streams (Coming soon!).</p>
+            <p>Watch my videos or join my live streams (coming soon!).</p>
           </a>
 
           <a href="https://github.com/BolajiAyodeji" className={styles.card}>
@@ -129,6 +128,7 @@ export default function Home() {
             <h2>💰 Patreon</h2>
             <p>Become my patron and $upport my work.</p>
           </a>
+
         </div>
       </main>
 
