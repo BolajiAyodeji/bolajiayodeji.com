@@ -3,9 +3,9 @@ import styles from "../styles/Home.module.css";
 
 const metaData = {
   pageTitle:
-    "Bolaji Ayodeji - Software Engineer, Content Creator & Developer Advocate",
+    "Bolaji Ayodeji — Software Engineer, Content Creator, and Developer Advocate.",
   description:
-    "Bolaji is a JAMstack Developer and Content Creator who currently works as a Developer Advocate.",
+    "Bolaji is a Software Engineer, Content Creator, and Community Engineer who currently works as a Developer Advocate at Commerce Layer.",
   keywords:
     "Software Engineer, Content Creator, Developer Advocate, JAMstack Developer, Community Engineer, Web Engineer, Christian, Nigeria",
   previewImage: "/social.png",
@@ -62,8 +62,8 @@ export default function Home() {
         <p className={styles.description}>
           Hi 👋🏾 <br />
           <br />
-          I'm a JAMstack Developer and Content Creator who currently works as a
-          Developer Advocate at{" "}
+          I'm a Software Engineer, Content Creator, and Community Engineer who
+          currently works as a Developer Advocate at{" "}
           <a
             href="https://commercelayer.io"
             target="_blank"
@@ -72,8 +72,17 @@ export default function Home() {
             Commerce Layer
           </a>
           . I'm passionate about sharing knowledge, documentation, web
-          engineering, JAMstack, communities, and FOSS. I create technical
-          content on my{" "}
+          engineering, Jamstack, headless commerce, communities, FOSS, and the{" "}
+          <a
+            href="https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A1-11&version=NKJV"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            gospel of Jesus Christ
+          </a>
+          .
+          <br />
+          <br />I create technical content (on my{" "}
           <a
             href="https://blog.bolajiayodeji.com"
             target="_blank"
@@ -81,16 +90,27 @@ export default function Home() {
           >
             Blog
           </a>{" "}
-          &&{" "}
+          ,{" "}
+          <a
+            href="https://bawd.bolajiayodeji.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Newsletter
+          </a>
+          , and{" "}
           <a
             href="https://www.youtube.com/c/bolajiayodeji"
             target="_blank"
             rel="noopener noreferrer"
           >
-            YouTube
+            YouTube)
           </a>
-          , speak at some conferences/meetups, and build technical communities.
+          , build useful <a href="https://github.com/BolajiAyodeji" target="_blank"
+            rel="noopener noreferrer">open-source projects</a>, speak at some meetups/conferences, and build technical communities.
         </p>
+
+        
 
         <div className={styles.grid}>
           <a href="https://blog.bolajiayodeji.com" className={styles.card}>
@@ -98,10 +118,7 @@ export default function Home() {
             <p>Read my technical and non-technical articles.</p>
           </a>
 
-          <a
-            href="https://bawd.bolajiayodeji.com"
-            className={styles.card}
-          >
+          <a href="https://bawd.bolajiayodeji.com" className={styles.card}>
             <h2>💌 Newsletter</h2>
             <p>Subscribe to and read my weekly newsletter.</p>
           </a>
@@ -128,7 +145,6 @@ export default function Home() {
             <h2>💰 Patreon</h2>
             <p>Become my patron and $upport my work.</p>
           </a>
-
         </div>
       </main>
 
