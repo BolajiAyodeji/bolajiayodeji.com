@@ -1,5 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import DarkModeToggle from "../components/DarkModeToggle";
+import Footer from "../components/Footer/Footer";
 
 const metaData = {
   pageTitle:
@@ -56,6 +58,8 @@ export default function Home() {
         <link rel="icon" href={favicon} />
       </Head>
 
+      <DarkModeToggle />
+
       <main className={styles.main}>
         <h1 className={styles.title}>BOLAJI AYODEJI</h1>
 
@@ -106,11 +110,16 @@ export default function Home() {
           >
             YouTube)
           </a>
-          , build useful <a href="https://github.com/BolajiAyodeji" target="_blank"
-            rel="noopener noreferrer">open-source projects</a>, speak at some meetups/conferences, and build technical communities.
+          , build useful{" "}
+          <a
+            href="https://github.com/BolajiAyodeji"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-source projects
+          </a>
+          , speak at some meetups/conferences, and build technical communities.
         </p>
-
-        
 
         <div className={styles.grid}>
           <a href="https://blog.bolajiayodeji.com" className={styles.card}>
@@ -148,9 +157,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        &copy; Bolaji Ayodeji | 2019 - Today.
-      </footer>
+      <Footer />
     </div>
   );
 }

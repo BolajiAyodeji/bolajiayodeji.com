@@ -6,12 +6,85 @@
   font-display: swap;
 }
 
-html,
+:root {
+  --primaryBackgroundColor: #ffffff;
+  --primaryTextColor: #000000;
+  --primaryMainColor: #3a7ebf;
+  --secondaryBackgroundColor: #01192f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: "Roboto Mono", monospace;
-  border: 10px solid #3a7ebf;
+  border: 10px solid var(--primaryMainColor);
+}
+
+body.light-mode {
+  background-color: var(--primaryBackgroundColor);
+  color: var(--primaryTextColor);
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--secondaryBackgroundColor);
+  color: var(--primaryBackgroundColor);
+}
+
+body.dark-mode .dark-mode-toggle > button {
+  color: var(--primaryMainColor);
+}
+
+.dark-mode-toggle {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.dark-mode-toggle > button {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: var(--secondaryBackgroundColor);
+  transition: color 0.3s ease;
+}
+
+.toggle-control {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"].dmcheck {
+  width: 55px;
+  height: 30px;
+  background: #ddd;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type="checkbox"].dmcheck:checked + label {
+  left: 33px;
+}
+
+input[type="checkbox"].dmcheck + label {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 13px;
+  opacity: 0.9;
+  background-color: var(--primaryMainColor);
 }
 
 a {
@@ -19,13 +92,9 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 @media (max-width: 600px) {
   html,
   body {
-    border: 3px solid #3a7ebf;
+    border: 3px solid var(--primaryMainColor);
   }
 }

@@ -3,7 +3,7 @@ module.exports = {
       return [
         {
           source: "/newsletter",
-          destination: "https://tinyletter.com/bolajiayodeji",
+          destination: "https://bawd.bolajiayodeji.com",
         },
         {
           source: "/blog",

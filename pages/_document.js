@@ -11,6 +11,7 @@ class MyDocument extends Document {
           <script src="/__/firebase/8.2.1/firebase-app.js"></script>
           <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
           <script src="/__/firebase/init.js"></script>
+          <script src="noflash.js" />
         </body>
       </Html>
     );
