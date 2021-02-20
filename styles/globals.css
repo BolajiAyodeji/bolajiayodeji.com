@@ -51,6 +51,7 @@ body.dark-mode .dark-mode-toggle > button {
   border: none;
   color: var(--secondaryBackgroundColor);
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .toggle-control {
@@ -69,6 +70,7 @@ input[type="checkbox"].dmcheck {
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  cursor: pointer;
 }
 
 input[type="checkbox"].dmcheck:checked + label {
