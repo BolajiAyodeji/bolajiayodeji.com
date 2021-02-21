@@ -61,7 +61,7 @@ body.dark-mode .dark-mode-toggle > button {
   align-items: center;
 }
 
-input[type="checkbox"].dmcheck {
+input[type="checkbox"].dark-mode-check {
   width: 55px;
   height: 30px;
   background: #ddd;
@@ -73,11 +73,11 @@ input[type="checkbox"].dmcheck {
   cursor: pointer;
 }
 
-input[type="checkbox"].dmcheck:checked + label {
+input[type="checkbox"].dark-mode-check:checked + span {
   left: 33px;
 }
 
-input[type="checkbox"].dmcheck + label {
+input[type="checkbox"].dark-mode-check + span {
   display: inline-block;
   width: 25px;
   height: 20px;

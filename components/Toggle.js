@@ -3,13 +3,14 @@ import React from "react";
 const Toggle = ({ checked, onChange }) => (
   <span className="toggle-control">
     <input
-      className="dmcheck"
+      className="dark-mode-check"
       type="checkbox"
       checked={checked}
       onChange={onChange}
-      id="dmcheck"
+      id="dark-mode-check"
+      aria-label="Toggle dark mode theme"
     />
-    <label htmlFor="dmcheck" />
+    <span></span>
   </span>
 );
 
