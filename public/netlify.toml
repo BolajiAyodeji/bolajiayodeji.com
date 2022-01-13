@@ -1,5 +1,4 @@
 [[redirects]]
-  from = "http://revue.bolajiayodeji.com"
-  to = "https://bawd.bolajiayodeji.com"
+  from = "revue.bolajiayodeji.com"
+  to = "bawd.bolajiayodeji.com"
   status = 200
-  force = true
