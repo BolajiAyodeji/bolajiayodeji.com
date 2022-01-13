@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "http://revue.bolajiayodeji.com"
+  to = "https://bawd.bolajiayodeji.com"
+  status = 200
+  force = true
