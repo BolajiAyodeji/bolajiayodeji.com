@@ -10,7 +10,7 @@ export default function Home() {
         <p className={styles.description}>
           Hi <span className="wave">👋🏾</span> <br />
           <br />
-          I'm a Software Engineer, Content Creator, and Developer Advocate who
+          I&apos;m a Software Engineer, Content Creator, and Developer Advocate who
           currently works at{" "}
           <a
             href="https://commercelayer.io"
@@ -18,8 +18,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Commerce Layer
-          </a>
-          . I'm passionate about web engineering, data, embedded systems,
+          </a>. I&apos;m passionate about web engineering, data, embedded systems,
           documentation, Jamstack, headless commerce, composable
           infrastructures, learning, sharing knowledge, teaching, building
           communities, open-source, and the{" "}

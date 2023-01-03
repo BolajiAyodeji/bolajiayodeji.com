@@ -1,4 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from "next/document";
+import Script from 'next/script'
 
 class MyDocument extends Document {
   render() {
@@ -22,7 +23,7 @@ class MyDocument extends Document {
           `,
           }}
         />
-        <script src="noflash.js" />
+        <Script src="noflash.js" />
         <body>
           <Main />
           <NextScript />

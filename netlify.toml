@@ -1,8 +1,8 @@
 [build]
   command = "npm run build"
-  publish = "/out"
+  publish = "/.next"
 
 [dev]
   command = "npm run dev"
   port = 4000
-  publish = "/out"
+  publish = "/.next"
