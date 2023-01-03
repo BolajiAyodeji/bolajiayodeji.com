@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import Toggle from "./Toggle";
 import useDarkMode from "use-dark-mode";

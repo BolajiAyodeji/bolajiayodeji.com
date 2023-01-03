@@ -1,6 +1,7 @@
 import React from "react";
 
-const Toggle = ({ checked, onChange }) => (
+//temporary type
+const Toggle = ({ checked, onChange }:any) => (
   <span className="toggle-control">
     <input
       className="dark-mode-check"

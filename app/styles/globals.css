@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Roboto Mono";
-  src: url("/fonts/RobotoMono-Regular.ttf");
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBMPlexSans-Regular.ttf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -15,12 +15,13 @@
 
 * {
   box-sizing: border-box;
+  cursor: url("/cursor.png"), auto;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: "IBM Plex Sans";
   border: 10px solid var(--primaryMainColor);
 }
 
@@ -42,7 +43,6 @@ body.dark-mode .dark-mode-toggle > button {
 .dark-mode-toggle {
   display: flex;
   margin: 0 auto;
-  padding-top: 4rem;
 }
 
 .dark-mode-toggle > button {

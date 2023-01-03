@@ -1,6 +1,5 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +7,7 @@
 }
 
 .main {
-  padding: 4rem 0;
+  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -16,26 +15,11 @@
   align-items: center;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 5.5rem;
-  color: var(--primaryMainColor);
-  text-align: center;
-}
-
-.title:hover {
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-  transition: transform 0.1s ease;
-}
-
 .description {
   line-height: 2;
   font-size: 1.3rem;
   padding: 1.5rem 10rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .description a {
@@ -93,11 +77,9 @@
     width: 100%;
     flex-direction: column;
   }
-  .title {
-    font-size: 4.5rem;
-  }
   .description {
     padding: 1.5rem;
+    text-align: center;
   }
   .card {
     border: 3px solid var(--primaryMainColor);
