@@ -64,7 +64,7 @@ export default function Home() {
         <h1 className={styles.title}>BOLAJI AYODEJI</h1>
 
         <p className={styles.description}>
-          Hi 👋🏾 <br />
+          Hi <span className="wave">👋🏾</span> <br />
           <br />
           I'm a Software Engineer, Content Creator, and Community Engineer who
           currently works as a Developer Advocate at{" "}
