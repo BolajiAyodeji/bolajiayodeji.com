@@ -39,13 +39,14 @@
 }
 
 .description a {
-  border-bottom: 2px dotted var(--primaryMainColor);
+  border-bottom: 2px solid var(--primaryMainColor);
   text-decoration: none;
 }
 
 .description a:hover {
-  color: var(--primaryMainColor);
-  border-bottom: 2px dotted var(--primaryTextColor);
+  background-color: var(--primaryMainColor);
+  color: var(--primaryBackgroundColor);
+  border-bottom: 0px;
 }
 
 .grid {

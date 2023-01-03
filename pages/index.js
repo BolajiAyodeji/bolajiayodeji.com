@@ -108,9 +108,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            YouTube)
+            YouTube
           </a>
-          , build useful{" "}
+          ), build useful{" "}
           <a
             href="https://github.com/BolajiAyodeji"
             target="_blank"
