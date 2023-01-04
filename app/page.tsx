@@ -10,18 +10,27 @@ export default function Home() {
         <p className={styles.description}>
           Hi <span className="wave">👋🏾</span> <br />
           <br />
-          I&apos;m a Software Engineer, Content Creator, and Developer Advocate who
-          currently works at{" "}
+          I&apos;m a Software Engineer, Content Creator, and Developer Advocate
+          who currently works at{" "}
           <a
             href="https://commercelayer.io"
             target="_blank"
             rel="noopener noreferrer"
           >
             Commerce Layer
-          </a>. I&apos;m passionate about web engineering, data, embedded systems,
+          </a>
+          . I&apos;m passionate about web engineering, data, embedded systems,
           documentation, Jamstack, headless commerce, composable
           infrastructures, learning, sharing knowledge, teaching, building
-          communities, open-source, and the{" "}
+          communities, open-source,{" "}
+          <a
+            href="https://chess.com/member/bolajiayodeji"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chess
+          </a>
+          , and the{" "}
           <a
             href="https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A1-11&version=NKJV"
             target="_blank"
@@ -29,7 +38,7 @@ export default function Home() {
           >
             gospel of Jesus Christ
           </a>
-          . I create technical content, build some{" "}
+          . I create content, build some{" "}
           <a
             href="https://github.com/BolajiAyodeji"
             target="_blank"
@@ -52,7 +61,7 @@ export default function Home() {
           </a>
 
           <a href="https://slides.com/bolajiayodeji" className={styles.card}>
-            <h2>👨🏾‍🏫  Public Speaking</h2>
+            <h2>👨🏾‍🏫 Public Speaking</h2>
             <p>Explore my talks and workshops (detailed page coming soon!).</p>
           </a>
 
@@ -66,7 +75,10 @@ export default function Home() {
             <p>Follow me, interact with my tweets, and maybe send a DM.</p>
           </a>
 
-          <a href="https://linkedin.com/in/iambolajiayo" className={styles.card}>
+          <a
+            href="https://linkedin.com/in/iambolajiayo"
+            className={styles.card}
+          >
             <h2>💙 LinkedIn</h2>
             <p>Explore my professional network and maybe send a DM.</p>
           </a>

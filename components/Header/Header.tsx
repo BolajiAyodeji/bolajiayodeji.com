@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import DarkModeToggle from "../themeToggle/ThemeToggle";
+import DarkModeToggle from "../ThemeToggle/ThemeToggle";
 
 const Header = () => {
   return (
