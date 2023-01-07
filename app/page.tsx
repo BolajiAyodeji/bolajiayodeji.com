@@ -1,8 +1,8 @@
 "use client";
 
 import { ThemeProvider } from "next-themes";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import styles from "./styles/Page.module.css";
 
 export default function Home() {
