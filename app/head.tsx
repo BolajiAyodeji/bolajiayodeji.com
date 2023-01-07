@@ -9,7 +9,7 @@ const metaData = {
   favicon: "/favicon.png",
   twitterHandle: "@iambolajiayo",
   url: "https://bolajiayodeji.com",
-  type: "website"
+  type: "website",
 };
 
 const {
@@ -20,7 +20,7 @@ const {
   favicon,
   twitterHandle,
   url,
-  type
+  type,
 } = metaData;
 
 export default function Head() {

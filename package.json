@@ -11,15 +11,15 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "@types/jest": "^29.2.5",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "eslint-config-next": "^13.1.1",
     "next": "^13.1.1",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "use-dark-mode": "^2.3.1"
+    "save": "^2.9.0"
   },
   "devDependencies": {
     "eslint": "^8.31.0",

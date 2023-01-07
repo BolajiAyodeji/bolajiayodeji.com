@@ -7,15 +7,21 @@
 }
 
 :root {
-  --primaryBackgroundColor: #ffffff;
-  --primaryTextColor: #000000;
   --primaryMainColor: #3a7ebf;
+  --primaryBackgroundColor: #ffffff;
   --secondaryBackgroundColor: #01192f;
+  --primaryTextColor: #000000;
+  --secondaryTextColor: #ffffff;
+}
+
+[data-theme="dark"] {
+  --font-color: var(--secondaryTextColor);
+  --background-color: var(--secondaryBackgroundColor);
 }
 
 * {
   box-sizing: border-box;
-  cursor: url("/cursor.png"), auto;
+  cursor: url("/cursor.svg"), auto;
 }
 
 body {
@@ -23,75 +29,28 @@ body {
   margin: 0;
   font-family: "IBM Plex Sans";
   border: 10px solid var(--primaryMainColor);
-}
-
-body.light-mode {
-  background-color: var(--primaryBackgroundColor);
-  color: var(--primaryTextColor);
+  color: var(--font-color);
+  background-color: var(--background-color);
   transition: background-color 0.3s ease;
-}
-
-body.dark-mode {
-  background-color: var(--secondaryBackgroundColor);
-  color: var(--primaryBackgroundColor);
-}
-
-body.dark-mode .dark-mode-toggle > button {
-  color: var(--primaryMainColor);
-}
-
-.dark-mode-toggle {
-  display: flex;
-  margin: 0 auto;
-}
-
-.dark-mode-toggle > button {
-  font-size: 1.5em;
-  background: none;
-  border: none;
-  color: var(--secondaryBackgroundColor);
-  transition: color 0.3s ease;
-  cursor: pointer;
-}
-
-.toggle-control {
-  position: relative;
-  padding: 0 4px;
-  display: flex;
-  align-items: center;
-}
-
-input[type="checkbox"].dark-mode-check {
-  width: 55px;
-  height: 30px;
-  background: #ddd;
-  position: relative;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-}
-
-input[type="checkbox"].dark-mode-check:checked + span {
-  left: 33px;
-}
-
-input[type="checkbox"].dark-mode-check + span {
-  display: inline-block;
-  width: 25px;
-  height: 20px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: absolute;
-  left: 13px;
-  opacity: 0.9;
-  background-color: var(--primaryMainColor);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.toggle-theme {
+  background-color: var(--background-color);
+  border: none;
+  display: flex;
+  items-align: center;
+  justify-content: center;
+  padding: 0.25rem;
 }
 
 .wave {

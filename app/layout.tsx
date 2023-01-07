@@ -1,6 +1,8 @@
-import "./styles/globals.css";
+"use client";
+
 import React from "react";
 import Script from "next/script";
+import "./styles/globals.css";
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -30,7 +32,6 @@ export default function RootLayout({
           `
         }}
       />
-      <Script src="noflash.js" />
       <body>{children}</body>
     </html>
   );
