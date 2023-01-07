@@ -39,17 +39,9 @@ a {
   text-decoration: none;
 }
 
-svg {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
 .toggle-theme {
   background-color: var(--background-color);
   border: none;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .wave {
