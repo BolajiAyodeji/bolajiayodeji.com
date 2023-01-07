@@ -47,10 +47,9 @@ svg {
 .toggle-theme {
   background-color: var(--background-color);
   border: none;
-  display: flex;
-  items-align: center;
-  justify-content: center;
-  padding: 0.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .wave {
