@@ -17,7 +17,7 @@ async function generate() {
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         ${pages
           .map((page) => {
-            const path = page.replace("app", "").replace(/\.[^/.]+$/, ""); // Remove "src/pages" and file extension
+            const path = page.replace("app", "").replace(/\.[^/.]+$/, ""); // Remove "/app" and file extension
             const indexPath = path === "/index";
             const route = indexPath ? path.replace("/index", "/") : path;
             const changeFreq = "<changefreq>weekly</changefreq>";
