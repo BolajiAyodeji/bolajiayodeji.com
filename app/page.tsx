@@ -14,9 +14,9 @@ export default function Home() {
           <p className={styles.description}>
             Hi <span className="wave">👋🏾</span> <br />
             <br />
-            I&apos;m a Software Engineer, Content Creator, Teacher, and Developer Advocate. I&apos;m passionate about
-            web engineering, data, embedded systems, API documentation, composable infrastructures, open-source,
-            jamstack, learning, sharing knowledge, teaching, building communities,{" "}
+            I&apos;m a Software Engineer (JavaScript/Python), Content Creator, Teacher, and Developer Advocate. I&apos;m
+            passionate about web engineering, data, embedded systems, API documentation, composable infrastructures,
+            open-source, jamstack, learning, sharing knowledge, building communities,{" "}
             <a href="https://chess.com/member/bolajiayodeji" target="_blank" rel="noopener noreferrer">
               chess
             </a>
@@ -28,12 +28,12 @@ export default function Home() {
             >
               gospel of Jesus Christ
             </a>
-            . I create technical content, build some{" "}
+            . I create technical content, build{" "}
             <a href="https://github.com/BolajiAyodeji" target="_blank" rel="noopener noreferrer">
               open-source projects
             </a>
-            , speak at some meetups/conferences, organize developer conferences/educational programs, and build
-            technical communities.
+            , speak/teach at developer meetups/conferences, organize developer conferences/educational programs, and
+            build technical communities.
           </p>
 
           <div className={styles.grid}>
