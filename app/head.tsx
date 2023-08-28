@@ -1,5 +1,5 @@
 const metaData = {
-  pageTitle: "Bolaji Ayodeji — Software Engineer, Content Creator, Teacher, and Developer Advocate.",
+  pageTitle: "Bolaji Ayodeji — Software Engineer and Developer Advocate.",
   description:
     "Bolaji is an innovative technology professional with progressive IT, web engineering, data, embedded systems, developer relations, documentation, technical writing, open-source, community building, and entrepreneurship experience in for-profit startups and non-profit technology and education organizations.",
   keywords:
