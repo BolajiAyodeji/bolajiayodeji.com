@@ -3,7 +3,7 @@ const metaData = {
   description:
     "Bolaji is an innovative technology professional with progressive IT, web engineering, data, embedded systems, developer relations, documentation, technical writing, open-source, community building, and entrepreneurship experience in for-profit startups and non-profit technology and education organizations.",
   keywords:
-    "Software Engineer, Data Engineer, Content Creator, Developer Advocate, Developer Educator, Jamstack Developer, Community Engineer, Web Engineer, Christian, Nigeria, Africa",
+    "Software Engineer, Data Engineer, Developer Advocate, Developer Experience Engineer, Content Creator, Developer Educator, Teacher, Jamstack Developer, Community Engineer, Web Engineer, Christian, Nigeria, Africa",
   previewImage: "/social.png",
   favicon: "/favicon.png",
   twitterHandle: "@iambolajiayo",
