@@ -17,6 +17,7 @@
 }
 
 .description {
+  max-width: 80rem;
   line-height: 2;
   font-size: 1.3rem;
   padding: 1.5rem 10rem;
@@ -39,7 +40,7 @@
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 50rem;
   margin-top: 1rem;
 }
 

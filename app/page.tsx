@@ -14,25 +14,11 @@ export default function Home() {
           <p className={styles.description}>
             Hi <span className="wave">👋🏾</span> <br />
             <br />
-            I&apos;m a Software Engineer, Content Creator, and Developer
-            Advocate who currently works at{" "}
-            <a
-              href="https://commercelayer.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Commerce Layer
-            </a>
-            . I&apos;m passionate about web engineering, data, embedded systems,
-            documentation, Jamstack, headless commerce, composable
-            infrastructures, learning, sharing knowledge, teaching, building
-            communities, open-source,{" "}
-            <a
-              href="https://chess.com/member/bolajiayodeji"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Chess
+            I&apos;m a Software Engineer, Content Creator, Teacher, and Developer Advocate. I&apos;m passionate about
+            web engineering, data, embedded systems, API documentation, composable infrastructures, open-source,
+            jamstack, learning, sharing knowledge, teaching, building communities,{" "}
+            <a href="https://chess.com/member/bolajiayodeji" target="_blank" rel="noopener noreferrer">
+              chess
             </a>
             , and the{" "}
             <a
@@ -42,16 +28,12 @@ export default function Home() {
             >
               gospel of Jesus Christ
             </a>
-            . I create content, build some{" "}
-            <a
-              href="https://github.com/BolajiAyodeji"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            . I create technical content, build some{" "}
+            <a href="https://github.com/BolajiAyodeji" target="_blank" rel="noopener noreferrer">
               open-source projects
             </a>
-            , speak at some meetups/conferences, and build technical
-            communities.
+            , speak at some meetups/conferences, organize developer conferences/educational programs, and build
+            technical communities.
           </p>
 
           <div className={styles.grid}>
@@ -67,9 +49,7 @@ export default function Home() {
 
             <a href="https://slides.com/bolajiayodeji" className={styles.card}>
               <h2>👨🏾‍🏫 Public Speaking</h2>
-              <p>
-                Explore my talks and workshops (detailed page coming soon!).
-              </p>
+              <p>Explore my talks and workshops (detailed page coming soon!).</p>
             </a>
 
             <a href="https://github.com/BolajiAyodeji" className={styles.card}>
@@ -82,18 +62,12 @@ export default function Home() {
               <p>Follow me, interact with my tweets, and maybe send a DM.</p>
             </a>
 
-            <a
-              href="https://linkedin.com/in/iambolajiayo"
-              className={styles.card}
-            >
+            <a href="https://linkedin.com/in/iambolajiayo" className={styles.card}>
               <h2>💙 LinkedIn</h2>
               <p>Explore my professional network and maybe send a DM.</p>
             </a>
 
-            <a
-              href="https://www.youtube.com/c/bolajiayodeji"
-              className={styles.card}
-            >
+            <a href="https://www.youtube.com/c/bolajiayodeji" className={styles.card}>
               <h2>🎥 YouTube</h2>
               <p>Watch my videos or join my live streams (coming soon!).</p>
             </a>

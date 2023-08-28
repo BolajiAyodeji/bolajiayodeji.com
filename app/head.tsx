@@ -1,10 +1,9 @@
 const metaData = {
-  pageTitle:
-    "Bolaji Ayodeji — Software Engineer, Content Creator, and Developer Advocate.",
+  pageTitle: "Bolaji Ayodeji — Software Engineer, Content Creator, Teacher, and Developer Advocate.",
   description:
-    "Bolaji is a Software Engineer, Content Creator, and Developer Advocate.",
+    "Bolaji is an innovative technology professional with progressive IT, web engineering, data, embedded systems, developer relations, documentation, technical writing, open-source, community building, and entrepreneurship experience in for-profit startups and non-profit technology and education organizations.",
   keywords:
-    "Software Engineer, Data Engineer, Content Creator, Developer Advocate, Jamstack Developer, Community Engineer, Web Engineer, Christian, Nigeria, Africa",
+    "Software Engineer, Data Engineer, Content Creator, Developer Advocate, Developer Educator, Jamstack Developer, Community Engineer, Web Engineer, Christian, Nigeria, Africa",
   previewImage: "/social.png",
   favicon: "/favicon.png",
   twitterHandle: "@iambolajiayo",
@@ -12,16 +11,7 @@ const metaData = {
   type: "website"
 };
 
-const {
-  pageTitle,
-  description,
-  keywords,
-  previewImage,
-  favicon,
-  twitterHandle,
-  url,
-  type
-} = metaData;
+const { pageTitle, description, keywords, previewImage, favicon, twitterHandle, url, type } = metaData;
 
 export default function Head() {
   return (
@@ -43,12 +33,7 @@ export default function Head() {
       <meta name="twitter:card" content="summary_large_image" key="twcard" />
       <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
 
-      <link
-        rel="preload"
-        href="/fonts/IBMPlexSans-Regular.ttf"
-        as="font"
-        crossOrigin=""
-      />
+      <link rel="preload" href="/fonts/IBMPlexSans-Regular.ttf" as="font" crossOrigin="" />
       <link rel="icon" href={favicon} />
     </>
   );
