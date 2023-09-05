@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 Host: https://bolajiayodeji.com
 Sitemap: https://bolajiayodeji.com/sitemap.xml
+
+User-agent: Googlebot-Image
+Disallow: /dark.svg
+Disallow: /light.svg
+Disallow: /cursor.svg
