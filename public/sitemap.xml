@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://bolajiayodeji.com/</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2023-01-07T15:27:11.466Z</lastmod></url>
+    <url>
+        <loc>https://bolajiayodeji.com</loc>
+        <image:image>
+            <image:loc>https://bolajiayodeji.com/social.png</image:loc>
+        </image:image>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <lastmod>2023-09-05</lastmod>
+    </url>
 </urlset>
