@@ -21,7 +21,7 @@
 
 * {
   box-sizing: border-box;
-  cursor: url("/cursor.svg"), auto;
+  cursor: url("/icons/cursor.svg"), auto;
 }
 
 body {

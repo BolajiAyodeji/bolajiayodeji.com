@@ -20,19 +20,9 @@ const Header = () => {
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       >
         {mounted && resolvedTheme === "dark" ? (
-          <Image
-            src="/light.svg"
-            alt="Toggle light mode icon"
-            width={50}
-            height={50}
-          />
+          <Image src="/icons/light.svg" alt="Toggle light mode icon" width={50} height={50} />
         ) : (
-          <Image
-            src="/dark.svg"
-            alt="Toggle dark mode icon"
-            width={50}
-            height={50}
-          />
+          <Image src="/icons/dark.svg" alt="Toggle dark mode icon" width={50} height={50} />
         )}
       </button>
       <h1 className={styles.title}>Bọ́lájí Ayọ̀dejì</h1>

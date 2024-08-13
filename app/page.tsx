@@ -71,7 +71,7 @@ export default function Home() {
               <p>Explore my professional work history and maybe send a DM.</p>
             </a>
 
-            <a href="https://www.youtube.com/c/bolajiayodeji" className={styles.card}>
+            <a href="https://youtube.com/c/bolajiayodeji" className={styles.card}>
               <h2>🎥 YouTube</h2>
               <p>Watch my videos or join my live streams (coming soon!).</p>
             </a>
