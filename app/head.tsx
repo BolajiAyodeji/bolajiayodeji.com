@@ -1,9 +1,9 @@
 const metaData = {
   pageTitle: "Bolaji Ayodeji — Software Engineer and Developer Advocate.",
   description:
-    "Bolaji is an innovative technology professional with progressive IT, web engineering, data, embedded systems, developer relations, documentation, technical writing, open-source, community building, and entrepreneurship experience in for-profit startups and non-profit technology and education organizations.",
+    "Bolaji is an innovative technology professional with progressive IT, web engineering, data, embedded systems, developer relations, technical documentation/writing, open-source, and community/programs management experience in for-profit startups and non-profit technology and education organizations.",
   keywords:
-    "Software Engineer, Data Engineer, Developer Advocate, Developer Experience Engineer, Content Creator, Developer Educator, Teacher, Jamstack Developer, Community Engineer, Web Engineer, Christian, Nigeria, Africa",
+    "Software Engineer, Data Engineer, Developer Advocate, Developer Experience Engineer, Content Creator, Developer Educator, Teacher, Jamstack Developer, Community Engineer, Web Engineer, Christian, Nigeria, Africa, Open Source Advocate, DPG Advocate",
   previewImage: "/social.png",
   favicon: "/favicon.png",
   twitterHandle: "@iambolajiayo",
