@@ -23,7 +23,7 @@ export default function Home() {
             >
               digital public goods
             </a>
-            . I&apos;m passionate about web engineering, open-source, data, embedded systems, technical documentation,
+            , for digital transformation efforts and social impact. I&apos;m passionate about web engineering, open-source, data, embedded systems, technical documentation,
             composable infrastructures, jamstack, learning, sharing knowledge, educating developers,{" "}
             <a href="https://chess.com/member/bolajiayodeji" target="_blank" rel="noopener noreferrer">
               chess
