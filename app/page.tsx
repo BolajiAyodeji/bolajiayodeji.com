@@ -23,8 +23,8 @@ export default function Home() {
             >
               digital public goods
             </a>
-            , for digital transformation efforts and social impact. I&apos;m passionate about web engineering, open-source, data, embedded systems, technical documentation,
-            composable infrastructures, jamstack, learning, sharing knowledge, educating developers,{" "}
+            . I&apos;m passionate about digital transformation, web engineering, open source, data, embedded systems, technical documentation,
+            composable infrastructures, jamstack, learning, sharing knowledge, chess, educating developers,{" "}
             <a href="https://chess.com/member/bolajiayodeji" target="_blank" rel="noopener noreferrer">
               chess
             </a>
@@ -36,7 +36,7 @@ export default function Home() {
             >
               gospel of Jesus Christ
             </a>
-            . I create technical content, build open-source projects, speak/teach at developer events, organize
+            . I create technical content, build open source projects, speak/teach at developer events, organize
             developer conferences/summits/educational programs, and build technical communities.
           </p>
 
