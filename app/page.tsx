@@ -23,8 +23,9 @@ export default function Home() {
             >
               digital public goods
             </a>
-            . I&apos;m passionate about digital transformation, web engineering, open source, data, embedded systems, technical documentation,
-            composable infrastructures, jamstack, learning, sharing knowledge, chess, educating developers,{" "}
+            . I&apos;m passionate about digital transformation, web engineering, open source, data, embedded systems,
+            technical documentation, composable infrastructures, jamstack, learning, sharing knowledge, chess, educating
+            developers,{" "}
             <a href="https://chess.com/member/bolajiayodeji" target="_blank" rel="noopener noreferrer">
               chess
             </a>
@@ -46,14 +47,9 @@ export default function Home() {
               <p>Read my technical and non-technical articles.</p>
             </a>
 
-            <a href="https://bawd.bolajiayodeji.com" className={styles.card}>
+            <a href="https://letters.bolajiayodeji.com" className={styles.card}>
               <h2>💌 Newsletter</h2>
-              <p>Subscribe to and read my bi-weekly newsletter.</p>
-            </a>
-
-            <a href="https://slides.com/bolajiayodeji" className={styles.card}>
-              <h2>👨🏾‍🏫 Public Speaking</h2>
-              <p>Explore my talks and workshops (detailed page coming soon!).</p>
+              <p>Subscribe to and read my bi-weekly letters.</p>
             </a>
 
             <a href="https://github.com/BolajiAyodeji" className={styles.card}>
@@ -61,14 +57,29 @@ export default function Home() {
               <p>Explore or contribute to my open source projects.</p>
             </a>
 
+            <a href="https://linkedin.com/in/bolajiayodeji" className={styles.card}>
+              <h2>💙 LinkedIn</h2>
+              <p>Explore my professional work history and maybe reach out to connect.</p>
+            </a>
+
+            <a rel="me" href="https://mastodon.social/@bolajiayodeji" className={styles.card}>
+              <h2>🐘 Mastodon</h2>
+              <p>Follow me, interact with my posts, and maybe leave a comment.</p>
+            </a>
+
             <a href="https://twitter.com/iambolajiayo" className={styles.card}>
               <h2>🐦 X (Twitter)</h2>
               <p>Follow me, interact with my tweets, and maybe send a DM.</p>
             </a>
 
-            <a href="https://linkedin.com/in/bolajiayodeji" className={styles.card}>
-              <h2>💙 LinkedIn</h2>
-              <p>Explore my professional work history and maybe send a DM.</p>
+            <a href="https://bsky.app/profile/bolajiayodeji.com" className={styles.card}>
+              <h2>🦋 Bluesky</h2>
+              <p>Follow me, interact with my posts, and maybe leave a comment.</p>
+            </a>
+
+            <a href="https://slides.com/bolajiayodeji" className={styles.card}>
+              <h2>👨🏾‍🏫 Public Speaking</h2>
+              <p>Explore my talks and workshops (detailed page coming soon!).</p>
             </a>
 
             <a href="https://youtube.com/c/bolajiayodeji" className={styles.card}>
@@ -76,9 +87,9 @@ export default function Home() {
               <p>Watch my videos or join my live streams (coming soon!).</p>
             </a>
 
-            <a href="https://patreon.com/bolajiayodeji" className={styles.card}>
-              <h2>💰 Patreon</h2>
-              <p>Become my patron, encourage me, and $upport my educational work.</p>
+            <a href="https://letters.bolajiayodeji.com/p/sponsor" className={styles.card}>
+              <h2>💰 Sponsor</h2>
+              <p>Become my patron, encourage me, and $upport my tech educational work.</p>
             </a>
           </div>
         </main>
