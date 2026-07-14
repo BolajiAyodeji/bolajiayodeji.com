@@ -35,6 +35,7 @@ export default function Head() {
 
       <link rel="preload" href="/fonts/IBMPlexSans-Regular.ttf" as="font" crossOrigin="" />
       <link rel="icon" href={favicon} />
+      <link rel="me" href="https://mastodon.social/@bolajiayodeji">Mastodon</link>
     </>
   );
 }
